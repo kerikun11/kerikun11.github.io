@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/latex/</link>
+    <description>Recent content in Latex on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Mon, 14 Jan 2019 10:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VSCodeでTeXを書こう</title>
+      <link>https://kerikeri.top/posts/2019-01-14-vscode-latex/</link>
+      <pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-01-14-vscode-latex/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;今回は私が使っているTeXのエディタ環境を紹介します．&lt;/p&gt;
+&lt;p&gt;注目機能は以下の通りです．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;コード補完&lt;/li&gt;
+&lt;li&gt;コード整形&lt;/li&gt;
+&lt;li&gt;環境に依存しにくい&lt;a href=&#34;https://texwiki.texjp.org/?Latexmk&#34; target=&#34;_blank&#34;&gt;.latexmk&lt;/a&gt;
+でコンパイル&lt;/li&gt;
+&lt;li&gt;散らかりがちな生成物を &lt;code&gt;build&lt;/code&gt; ディレクトリにまとめる&lt;/li&gt;
+&lt;li&gt;TeXコードのとなりにPDFを表示&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SyncTex&lt;/code&gt;によりTeXコードとPDFの相互ジャンプ&lt;/li&gt;
+&lt;li&gt;VSCode Vim を使ってvimキーバインド (オプション)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

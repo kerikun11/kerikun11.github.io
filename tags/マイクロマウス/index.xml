@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>マイクロマウス on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</link>
+    <description>Recent content in マイクロマウス on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Sat, 25 Apr 2020 22:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>マイクロマウス記事のまとめ</title>
+      <link>https://kerikeri.top/works/micromouse/</link>
+      <pubDate>Sat, 25 Apr 2020 22:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/works/micromouse/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;この記事では，私が書いたマイクロマウスの記事をカテゴリごとに列挙します．&lt;br&gt;
+新しい記事が追加され次第，更新していきたいと思います．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかなスラロームの設計④ 生成結果</title>
+      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-4/</link>
+      <pubDate>Sat, 25 Apr 2020 14:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-4/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2020-04-25-slalom-trajectory-3/&#34;&gt;前回の記事&lt;/a&gt;
+の続きです．&lt;/p&gt;
+&lt;p&gt;今回の記事では，
+前回までに紹介してきた内容をもとに，
+&lt;a href=&#34;https://kerikeri.top/posts/2017-09-03-pattern-of-turn/&#34;&gt;マイクロマウスの走行パターン&lt;/a&gt;
+の軌道設計結果を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかなスラロームの設計③ C&#43;&#43;による実装</title>
+      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-3/</link>
+      <pubDate>Sat, 25 Apr 2020 13:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2020-04-25-slalom-trajectory-2/&#34;&gt;前回の記事&lt;/a&gt;
+の続きです．&lt;/p&gt;
+&lt;p&gt;今回の記事では，なめらかなスラローム軌道の C++による実装例を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかなスラロームの設計② 設計方法</title>
+      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-2/</link>
+      <pubDate>Sat, 25 Apr 2020 12:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2020-04-25-slalom-trajectory-1/&#34;&gt;前回の記事&lt;/a&gt;
+の続きです．&lt;/p&gt;
+&lt;p&gt;今回の記事では，なめらかなスラローム軌道の具体的な設計方法を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかなスラロームの設計① スラローム概要</title>
+      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-1/</link>
+      <pubDate>Sat, 25 Apr 2020 11:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-1/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;今回はマイクロマウスにおけるスラローム走行のお話です．&lt;/p&gt;
+&lt;p&gt;私が使っているスラローム走行の概要とその軌道の生成方法などを紹介します．&lt;/p&gt;
+&lt;p&gt;特にマイクロマウスを例に話を進めますが，2輪車両の軌道生成方法として汎用的に使える内容です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>New KERISE v5，登場</title>
+      <link>https://kerikeri.top/posts/2020-04-15-kerise-v5-coming/</link>
+      <pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-15-kerise-v5-coming/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;新作マイクロマウス「KERISE v5」を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>マイクロマウスの迷路探索概要</title>
+      <link>https://kerikeri.top/posts/2020-04-07-maze-solving-algorithm/</link>
+      <pubDate>Tue, 07 Apr 2020 14:10:54 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-07-maze-solving-algorithm/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;この記事では，
+マイクロマウス探索初心者向けに，
+マイクロマウスの迷路探索アルゴリズムに必要な処理とアルゴリズムの概要について記述する．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>マイクロマウス迷路の自動生成</title>
+      <link>https://kerikeri.top/posts/2020-03-23-maze-generator/</link>
+      <pubDate>Mon, 23 Mar 2020 17:51:37 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-03-23-maze-generator/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;マイクロマウスを作るにあたり，
+普段は迷路を解くことばかり考えていますが，
+今回はその迷路を作成するお話です．&lt;/p&gt;
+&lt;p&gt;試してみたのは，
+ランダムウォークによる迷路の自動生成です．&lt;/p&gt;
+&lt;p&gt;果たしてマイクロマウスっぽい迷路はできるのでしょうか？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>過去の全日本マイクロマウス大会32x32迷路の分析</title>
+      <link>https://kerikeri.top/posts/2020-03-08-all-japan-32x32-maze/</link>
+      <pubDate>Sun, 08 Mar 2020 16:26:06 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-03-08-all-japan-32x32-maze/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは．けりです．&lt;br&gt;
+今回はマイクロマウスの迷路探索のお話です．&lt;/p&gt;
+&lt;p&gt;過去10年分のマイクロマウス全日本大会の32x32迷路を比較してみました．&lt;/p&gt;
+&lt;p&gt;まずは探索走行の比較を，次に最短経路の比較を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>M5Stackで作るマイクロマウスのタイム表示機</title>
+      <link>https://kerikeri.top/posts/2020-03-07-m5stack-micromouse-timer/</link>
+      <pubDate>Sat, 07 Mar 2020 12:08:12 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-03-07-m5stack-micromouse-timer/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは．
+春休みに行きたい予定が重なっていてどちらに行くか迷っていたのに，
+どちらの予定も中止になって虚無になったけりです．&lt;/p&gt;
+&lt;p&gt;今回は先日制作したマイクロマウスのタイム表示機の紹介です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheese Timer の紹介</title>
+      <link>https://kerikeri.top/posts/2019-12-23-cheese-timer/</link>
+      <pubDate>Mon, 23 Dec 2019 09:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-12-23-cheese-timer/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;先日，12月15日(日) に &lt;strong&gt;第3回Cheese杯&lt;/strong&gt; を開催しました．&lt;/p&gt;
+&lt;p&gt;Cheese杯とは，東京工業大学ロボット技術会Cheeseが主催するマイクロマウスのプチ大会です．&lt;/p&gt;
+&lt;p&gt;おかげさまで，今年，第3回目を開催することができました！&lt;/p&gt;
+&lt;p&gt;今回の記事では，そのとき登場した，
+マイクロマウス計測装置 &lt;strong&gt;Cheese Timer&lt;/strong&gt; を簡単に紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheese杯2019の迷路紹介</title>
+      <link>https://kerikeri.top/posts/2019-12-21-cheese-cup-2019-maze/</link>
+      <pubDate>Sat, 21 Dec 2019 21:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-12-21-cheese-cup-2019-maze/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;先日，12/15(日) に
+Cheese主催のマイクロマウス・プチ大会
+&lt;strong&gt;第3回Cheese杯&lt;/strong&gt; を開催しました．&lt;/p&gt;
+&lt;p&gt;今回はそのとき出題された迷路を簡単に紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新機能・クラッシュ後の自動復帰！</title>
+      <link>https://kerikeri.top/posts/2019-12-18-auto-recovery-micromouse/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-12-18-auto-recovery-micromouse/</guid>
+      <description>&lt;p&gt;この記事は，&lt;a href=&#34;https://adventar.org/calendars/4007&#34; target=&#34;_blank&#34;&gt;Micro Mouse Advent Calendar&lt;/a&gt;
+ 18日目の記事です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>全日本マイクロマウス2019の結果報告</title>
+      <link>https://kerikeri.top/posts/2019-12-04-micromouse2019/</link>
+      <pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-12-04-micromouse2019/</guid>
+      <description>&lt;p&gt;この記事は
+&lt;a href=&#34;https://adventar.org/calendars/4126&#34; target=&#34;_blank&#34;&gt;東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a&gt;
+の
+4日目の記事です．&lt;/p&gt;
+&lt;p&gt;こんにちは．けりです．&lt;br&gt;
+今回は，2019年12月1日(日) に行われた，&lt;br&gt;
+&lt;strong&gt;第40回全日本マイクロマウス大会2019&lt;/strong&gt;の結果報告です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新機能・未知区間加速！</title>
+      <link>https://kerikeri.top/posts/2019-10-12-unknown-accel/</link>
+      <pubDate>Sat, 12 Oct 2019 01:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-10-12-unknown-accel/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは．そろそろ修論研究が佳境になってきた けり です．&lt;/p&gt;
+&lt;p&gt;今回の記事では，
+マイクロマウス KERISE v4 に
+最近搭載した，
+新機能「未知区間加速」を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>吸引ファンで音を鳴らす</title>
+      <link>https://kerikeri.top/posts/2018-11-03-fan-sound/</link>
+      <pubDate>Sat, 03 Nov 2018 18:40:42 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-11-03-fan-sound/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;マイクロマウスでは，User Interface (UI) のために，スピーカーを載せることが多いです．&lt;/p&gt;
+&lt;p&gt;しかしながら，小さなマウスを作るうえで，そのわずかなスペースでも惜しいものです．&lt;/p&gt;
+&lt;p&gt;今回は，既にマウスに乗っている&lt;strong&gt;モーター&lt;/strong&gt;で音を鳴らすことができたので紹介します．&lt;/p&gt;
+&lt;p&gt;偶然ですが，&lt;a href=&#34;https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/&#34;&gt;KERISEv4&lt;/a&gt;
+には(ほとんど使われていない)&lt;strong&gt;吸引ファン&lt;/strong&gt;がついていたので，今回はそれを使ってみました．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MATLABで迷路画像をパースする</title>
+      <link>https://kerikeri.top/posts/2018-07-04-maze-img-parser/</link>
+      <pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-07-04-maze-img-parser/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p&gt;
+&lt;p&gt;自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>New KERISE v4, 登場</title>
+      <link>https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/</link>
+      <pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;ようやく形になった今年の新作「KERISEv4」を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかな加速の設計④ C&#43;&#43;による実装例</title>
+      <link>https://kerikeri.top/posts/2018-04-29-accel-designer4/</link>
+      <pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer4/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer3/&#34;&gt;前回の記事&lt;/a&gt;
+の続きです．&lt;/p&gt;
+&lt;p&gt;今回の記事では，今までに示した設計法のC++による実装例を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかな加速の設計③ 走行距離を考慮した速度設計</title>
+      <link>https://kerikeri.top/posts/2018-04-29-accel-designer3/</link>
+      <pubDate>Sun, 29 Apr 2018 14:35:38 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer3/</guid>
+      <description>&lt;h2 id=&#34;設計2走行距離を考慮した速度設計&#34;&gt;設計2・走行距離を考慮した速度設計&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer2/&#34;&gt;前回の記事&lt;/a&gt;
+の続きです．&lt;/p&gt;
+&lt;p&gt;この記事では，設計1の曲線加速を組み合わせて，走行距離を考慮した速度設計について考えます．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかな加速の設計② 曲線加速の設計</title>
+      <link>https://kerikeri.top/posts/2018-04-29-accel-designer2/</link>
+      <pubDate>Sun, 29 Apr 2018 13:35:38 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer2/</guid>
+      <description>&lt;h2 id=&#34;設計1加速曲線の設計&#34;&gt;設計1・加速曲線の設計&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer1/&#34;&gt;前回の記事&lt;/a&gt;
+の続きです．&lt;/p&gt;
+&lt;p&gt;この記事では，前回紹介した&lt;strong&gt;設計1&lt;/strong&gt;の曲線加速の設計について考えます．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>なめらかな加速の設計① 台形加速と曲線加速</title>
+      <link>https://kerikeri.top/posts/2018-04-29-accel-designer1/</link>
+      <pubDate>Sun, 29 Apr 2018 12:35:38 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer1/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;今回はマイクロマウスにおける速度設計のお話です．&lt;/p&gt;
+&lt;p&gt;長い直線などを走行するとき，タイムを縮めるため，最大速度まで加速して，ターン直前に減速します．&lt;/p&gt;
+&lt;p&gt;ここで注意したのが，途中経過の如何にかかわらず，終点の位置や速度は守らなければならないということです．&lt;/p&gt;
+&lt;p&gt;今回の記事では，終点位置，終点速度や最大速度などの拘束条件から，走行途中の速度軌道を算出するアルゴリズムを紹介します．&lt;/p&gt;
+&lt;p&gt;最後にはC++での実装したクラスも簡単に紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>マイクロマウス2017HX決勝迷路の探索結果</title>
+      <link>https://kerikeri.top/posts/2017-11-27-result-of-hx2017-maze/</link>
+      <pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-11-27-result-of-hx2017-maze/</guid>
+      <description>&lt;p&gt;先日，&lt;a href=&#34;http://www.ntf.or.jp/mouse/micromouse2017/&#34; target=&#34;_blank&#34;&gt;全日本マイクロマウス大会2017&lt;/a&gt;
+が開催されました．結果報告の記事は&lt;a href=&#34;https://kerikeri.top/posts/2017-11-22-micromouse2017/&#34;&gt;こちら&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;ハーフサイズエキスパートクラス決勝の32x32迷路は，サイズが大きすぎて(私の知る限り)どの団体も所持しておらず，年に一回全日本大会でしか見ることができない激レア迷路となっています．&lt;/p&gt;
+&lt;p&gt;今回はその迷路の探索結果についてお話しします．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>全日本マイクロマウス2017の結果報告</title>
+      <link>https://kerikeri.top/posts/2017-11-22-micromouse2017/</link>
+      <pubDate>Wed, 22 Nov 2017 01:10:24 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-11-22-micromouse2017/</guid>
+      <description>&lt;p&gt;こんにちは．&lt;br&gt;
+マイクロマウス全日本大会の3日後に待ち構えていた&lt;strong&gt;卒論中間発表&lt;/strong&gt;を終えたけりです．&lt;/p&gt;
+&lt;p&gt;マウサーの皆さん，中間発表を終えた皆さん，本当にお疲れ様でした&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;全日本マイクロマウス2017&#34;&gt;全日本マイクロマウス2017&lt;/h2&gt;
+&lt;p&gt;さて，11月17日(金)～19日(日)の3日間，全日本マイクロマウス2017が開催されました．&lt;/p&gt;
+&lt;p&gt;僕は去年に引き続き，2回目となる参加をしてきました！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>調整用の小さな迷路</title>
+      <link>https://kerikeri.top/posts/2017-11-05-small-maze/</link>
+      <pubDate>Sun, 05 Nov 2017 15:26:06 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-11-05-small-maze/</guid>
+      <description>&lt;p&gt;こんにちは．&lt;/p&gt;
+&lt;p&gt;エクストリーム新作のKERISEv3-2を諦めてKERISEv3-1を必死に調整している，けりです．&lt;/p&gt;
+&lt;p&gt;今回は自作の調整用迷路の紹介です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>僕の迷路クラスの紹介</title>
+      <link>https://kerikeri.top/posts/2017-11-01-maze-class/</link>
+      <pubDate>Wed, 01 Nov 2017 10:31:52 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-11-01-maze-class/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;今回もマイクロマウスの話題です．僕が使っている迷路クラスを紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>フォトリフレクタの感度をソフトで調整</title>
+      <link>https://kerikeri.top/posts/2017-10-20-2range-reflector/</link>
+      <pubDate>Fri, 20 Oct 2017 12:15:04 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-10-20-2range-reflector/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;br&gt;
+今回は，マイクロマウスに使っているフォトリフレクタのお話です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CNCでM0.3のギアを作った</title>
+      <link>https://kerikeri.top/posts/2017-09-21-cnc-gear/</link>
+      <pubDate>Thu, 21 Sep 2017 11:25:11 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-09-21-cnc-gear/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;こんにちは，ESP32と格闘していてなかなか前に進めないけりです．&lt;/p&gt;
+&lt;p&gt;今回は，自作したギアの紹介です．&lt;/p&gt;
+&lt;p&gt;マイクロマウスのハーフサイズで使用する小さなギアをCNCフライスで作ってみました．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MATLABでスラローム軌道生成</title>
+      <link>https://kerikeri.top/posts/2017-09-04-matlab-trajectory/</link>
+      <pubDate>Mon, 04 Sep 2017 14:55:01 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-09-04-matlab-trajectory/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2017-09-03-pattern-of-turn/&#34;&gt;前回&lt;/a&gt;
+の記事ではマイクロマウスのターンの紹介をしました．今回は，そのカーブの軌道の生成方法を紹介したいと思います．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>マイクロマウスのターン一覧</title>
+      <link>https://kerikeri.top/posts/2017-09-03-pattern-of-turn/</link>
+      <pubDate>Sun, 03 Sep 2017 18:32:03 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-09-03-pattern-of-turn/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;こんにちは，けりです．久々にマイクロマウスの話題です．&lt;/p&gt;
+&lt;p&gt;今回は，私のマウスで使用しているスラロームパターンを紹介します．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

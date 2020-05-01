@@ -1,0 +1,160 @@
+/* background */
+body {
+	background: #228;
+	font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+.header, 
+.wrapper
+{
+	background-color: rgba(255,255,255,0.9);
+}
+
+/* text transform */
+.logo__link,
+.tags__item,
+.toc_title,
+.widget__title,
+.menu__btn-title,
+.menu__link
+{
+	text-transform: none;
+}
+
+/* text shadow */
+.logo__title,
+.main__title,
+.list__title,
+.post__title
+{
+	text-shadow: 2px 2px 4px #888;
+}
+/* box shadow */
+.post__thumbnail,
+.post__content img,
+.list__thumbnail img
+{
+	box-shadow: 2px 2px 4px #888;
+}
+
+/* widget */
+.widget__title {
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 2px #888;
+}
+.widget-toc li>ul{
+	padding-left: 5px;
+	margin-left: 15px;
+	list-style-type: square;
+}
+.widget-toc li{
+	margin-top: 0.5em;
+}
+
+/* toc */
+.toc__menu a {
+	color: #333;
+	font-size: 0.8em;
+}
+
+/* meta */
+.meta, .meta a {
+	color: #333;
+}
+.meta__icon {
+	fill: #787878;
+}
+
+/* list */
+.list__meta,
+.post__meta
+{
+	overflow:hidden; /* important */
+}
+.list__meta>.meta__item {
+	display: block;
+	margin-left: 0;
+}
+.list__thumbnail,
+.post__thumbnail
+{
+	float: left;
+	max-width: 100px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+}
+.list__excerpt p,
+.list__excerpt h2,
+.list__excerpt h3,
+.list__excerpt h4,
+.list__excerpt ul>li,
+.list__excerpt ol>li
+{
+	font-size: 1em;
+	margin: 0;
+}
+.list__item {
+	border-bottom: 2px dotted #AAA;
+}
+.list__item .post__content figure {
+	display: none;
+}
+.list__title {
+	padding-top: 5px;
+}
+
+/* post */
+.post:not(.list__item) 
+.post__title {
+	font-size: 28px;
+	font-size: 1.75rem;
+}
+/* h2, h3 */
+.post:not(.list__item) 
+.post__content h2 {
+	padding-top: 6px;
+	padding-left: 8px;
+	border-left: 10px solid #46A;
+	border-bottom: 2px solid #46A;
+	background: rgba(200,200,200,0.5);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+}
+.post:not(.list__item) 
+.post__content h3 {
+	padding-top: 4px;
+	padding-left: 8px;
+	border-left: 6px solid rgb(45, 156, 45);
+	border-bottom: 2px solid rgb(45, 156, 45);
+	background: rgba(200,200,200,0.5);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+}
+/* content */
+.post__content {
+	clear: both; /* important! */
+}
+.post__content>* {
+	margin: 0.75rem 0;
+}
+/* figure */
+figcaption {
+	color: black;
+}
+/* Tables */
+table {
+	border-left: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+}
+td, th {
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	min-width: 4em;
+}
+th {
+	font-weight: 700;
+	background: rgba(200, 200, 200, 0.7);
+}
+tr:nth-child(even) {
+	background: rgba(220, 220, 220, 0.7);
+}
+tr:nth-child(odd) {
+	background: rgba(230, 230, 230, 0.7);
+}

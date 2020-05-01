@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ターミナル on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/</link>
+    <description>Recent content in ターミナル on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Mon, 06 Apr 2020 10:17:40 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UNIX環境の設定ファイルの管理</title>
+      <link>https://kerikeri.top/posts/2020-04-06-dotfiles/</link>
+      <pubDate>Mon, 06 Apr 2020 10:17:40 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-06-dotfiles/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;今回は、ターミナルなどの設定ファイルの管理方法の紹介です。&lt;/p&gt;
+&lt;p&gt;設定ファイルの多くは &lt;code&gt;.zshrc&lt;/code&gt; というようにドットから始まる隠しファイルになっているので、
+これらをまとめて &lt;code&gt;.dotfiles&lt;/code&gt; と呼んでいます。&lt;/p&gt;
+&lt;p&gt;GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SSHのPort Forwarding</title>
+      <link>https://kerikeri.top/posts/2016-07-20-ssh-port-forwarding/</link>
+      <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-07-20-ssh-port-forwarding/</guid>
+      <description>&lt;h2 id=&#34;port-forwardingとは&#34;&gt;Port Forwardingとは&lt;/h2&gt;
+&lt;p&gt;SSHは通常ターミナル上で使うが，接続をlocalhostの適当なポートに転送してくれるのがPort Forwardingらしい．これにより，ブラウザからLAN内にアクセスできる．&lt;/p&gt;
+&lt;p&gt;LANの外からLAN内のルータの設定やNASなどを使えるようになるのだ．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>写真から位置情報タグを削除する</title>
+      <link>https://kerikeri.top/posts/2016-04-08-remove-geotag/</link>
+      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-04-08-remove-geotag/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;写真をブログやSNSにアップロードするときに位置情報のタグをつけたままだと自宅を特定される可能性があり、非常に危険である。今回はそれを削除する方法を紹介する。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cygwinの使い方</title>
+      <link>https://kerikeri.top/posts/2015-12-04-cygwin/</link>
+      <pubDate>Fri, 04 Dec 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-12-04-cygwin/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;Cygwinとは仮想UNIX環境をつくるソフトである。WindowsはUNIXベースの環境ではないので、コマンドライン操作がとてもやりづらい。Cygwinを使えば、C言語をはじめとしてrubyやpythonなど様々な開発をWindows上でできる。しかも、GUIでなくCUIなのでとても軽い。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ファイアウォールの設定</title>
+      <link>https://kerikeri.top/posts/2015-11-17-firewall/</link>
+      <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-11-17-firewall/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;ufw&#34;&gt;ufw&lt;/h3&gt;
+&lt;p&gt;iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので，今回は初心者でも使いやすいufwというソフトを使う．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>linkを作る「ln」コマンド</title>
+      <link>https://kerikeri.top/posts/2015-10-28-link/</link>
+      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-10-28-link/</guid>
+      <description>&lt;h2 id=&#34;ハードリンクとシンボリックリンク&#34;&gt;ハードリンクとシンボリックリンク&lt;/h2&gt;
+&lt;p&gt;ハードリンクは、別名の同じファイルといえる。ターゲットとリンクの区別がなく、すべてのファイルに実体があり（ディスク容量を消費）、削除するにはすべてのファイルを削除する必要がある。
+シンボリックリンクは、いわゆるショートカットと同じで、パス情報のみを保持している。したがって、実体を削除するとシンボリックリンはエラーになる。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gitの使い方</title>
+      <link>https://kerikeri.top/posts/2015-10-21-git/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-10-21-git/</guid>
+      <description>&lt;p&gt;ここではGitHubを使ったGitの使い方を説明する。&lt;/p&gt;
+&lt;h2 id=&#34;主なコマンド&#34;&gt;主なコマンド&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>vimの設定</title>
+      <link>https://kerikeri.top/posts/2015-10-07-vim/</link>
+      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-10-07-vim/</guid>
+      <description>&lt;h2 id=&#34;vim-の設定&#34;&gt;vim の設定&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>メダカの照明の自作</title>
+      <link>https://kerikeri.top/posts/2015-06-04-killifish-light/</link>
+      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-06-04-killifish-light/</guid>
+      <description>こんにちは。 けり(@kerikun11)です。 みなさん、進捗いかがですか？ 僕は、ぼちぼちです。 今回紹介するのは、 メダカの水槽の照明です。 高校</description>
+    </item>
+    
+  </channel>
+</rss>

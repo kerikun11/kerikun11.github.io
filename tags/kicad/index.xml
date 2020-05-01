@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KiCad on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/kicad/</link>
+    <description>Recent content in KiCad on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Sat, 25 May 2019 13:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/kicad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>KiCadのフットプリントをPythonで一括編集</title>
+      <link>https://kerikeri.top/posts/2019-05-25-kicad-script/</link>
+      <pubDate>Sat, 25 May 2019 13:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-05-25-kicad-script/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;KiCad の基板エディタ Pcbnew では，デフォルトでPythonスクリプトエディタが付属していて，すでにフットプリントがオブジェクトとして定義されています．&lt;/p&gt;
+&lt;p&gt;今回は私がよく使う一括変更を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP-WROOM-32の短冊基板の紹介</title>
+      <link>https://kerikeri.top/posts/2017-08-18-esp32-sip-board/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-08-18-esp32-sip-board/</guid>
+      <description>&lt;h2 id=&#34;また作ったesp-wroom-32の変換基板&#34;&gt;また作ったESP-WROOM-32の変換基板&lt;/h2&gt;
+&lt;p&gt;以前にも&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2017-03-02-keriesp32/&#34;&gt;C基板型ESP-WROOM-32ブレークアウト基板&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2017-07-23-keriesp32-trapezoid/&#34;&gt;台形型ESP32-WROOM-32ブレークアウト基板&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を作りましたが，今回は短冊形のものを作りました．&lt;/p&gt;
+&lt;p&gt;Micro-USBコネクタとシリアル変換ICが乗っているので，PCにつなぐだけですぐに使うことができます．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>KERIESP32 Trapezoid</title>
+      <link>https://kerikeri.top/posts/2017-07-23-keriesp32-trapezoid/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-07-23-keriesp32-trapezoid/</guid>
+      <description>&lt;h2 id=&#34;esp-wroom-32のブレークアウトボード&#34;&gt;ESP-WROOM-32のブレークアウトボード&lt;/h2&gt;
+&lt;p&gt;WiFiとBluetoothが載ったデュアルコアなマイコン&lt;strong&gt;ESP32&lt;/strong&gt;のピッチ変換基板を新たに作ったので紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP-WROOM-32のブレイクアウトボード</title>
+      <link>https://kerikeri.top/posts/2017-03-02-keriesp32/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-03-02-keriesp32/</guid>
+      <description>&lt;h2 id=&#34;esp-wroom-32とは&#34;&gt;ESP-WROOM-32とは&lt;/h2&gt;
+&lt;p&gt;ESP-WROOM-32とは，ESP32というハイスペックなマイコンが搭載されたWiFi&amp;amp;Bluetoothモジュールです．無線モジュールとしてだけでなく，メインマイコンとしても十分使用できます．&lt;/p&gt;
+&lt;p&gt;ESP-WROOM-32のすごいところはその価格です．ハイスペックなマイコンとWiFiとBluetoothがついているのに，2017年2月現在たったの700円なのです！！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-11647/&#34; target=&#34;_blank&#34;&gt;秋月電子&lt;/a&gt;
+で購入できます．&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP-WROOM-32&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp-wroom-32.jpg&#34; alt=&#34;ESP-WROOM-32&#34; style=&#34;width: 240px;&#34;/&gt;
+	
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>KERISE v1の設計(回路編)</title>
+      <link>https://kerikeri.top/posts/2016-12-27-kerisev1/</link>
+      <pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-12-27-kerisev1/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;今年の全日本マイクロマウス大会2016に出場したKERISE v1．今回はその回路設計を紹介します．&lt;/p&gt;
+&lt;p&gt;全日本マイクロマウス大会2016の結果報告は&lt;a href=&#34;https://kerikeri.top/posts/2016-11-21-micromouse2016/&#34;&gt;こちら&lt;/a&gt;
+&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;KERISEv1&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;KERISEv1.jpg&#34; alt=&#34;KERISEv1&#34; style=&#34;width: 240px;&#34;/&gt;
+	
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>KiCadで自動配線</title>
+      <link>https://kerikeri.top/posts/2016-04-22-freerouting/</link>
+      <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-04-22-freerouting/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;KiCad&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;kicad.jpg&#34; alt=&#34;KiCad&#34; /&gt;
+	
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;自動配線ツールを使おう&#34;&gt;自動配線ツールを使おう&lt;/h3&gt;
+&lt;p&gt;KiCadが流行ってきて，使う人が増えてきている．&lt;/p&gt;
+&lt;p&gt;しかし，自動配線ツールを使っている人は少ない．&lt;/p&gt;
+&lt;p&gt;それでははもったいない！！&lt;/p&gt;
+&lt;p&gt;今回は自動配線ツールの使い方を説明する．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

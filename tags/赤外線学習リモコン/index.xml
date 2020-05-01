@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>赤外線学習リモコン on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/%E8%B5%A4%E5%A4%96%E7%B7%9A%E5%AD%A6%E7%BF%92%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/</link>
+    <description>Recent content in 赤外線学習リモコン on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Thu, 20 Oct 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/%E8%B5%A4%E5%A4%96%E7%B7%9A%E5%AD%A6%E7%BF%92%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IR-Stationのデモンストレーションサイト</title>
+      <link>https://kerikeri.top/posts/2016-10-20-ir-station-demo/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-10-20-ir-station-demo/</guid>
+      <description>&lt;h2 id=&#34;ir-stationの操作を体験できます&#34;&gt;IR-Stationの操作を体験できます！&lt;/h2&gt;
+&lt;h3 id=&#34;ir-stationとは&#34;&gt;IR-Stationとは&lt;/h3&gt;
+&lt;p&gt;IR-Stationとは，WiFi接続に対応した赤外線学習リモコンです．これがあればスマートフォンなどから家電製品をコントロールすることができます．&lt;/p&gt;
+&lt;p&gt;IR-Stationについては，&lt;a href=&#34;https://kerikeri.top/tags/ir-station&#34;&gt;IR-Stationについての記事一覧&lt;/a&gt;
+をご覧ください．&lt;/p&gt;
+&lt;h3 id=&#34;ir-stationのデモンストレーション&#34;&gt;IR-Stationのデモンストレーション&lt;/h3&gt;
+&lt;p&gt;IR-Stationを持っていない方でもIR-Stationの操作を体験できるように，操作画面を再現したサイトを作りました．&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://ir-station.kerikeri.top&#34; target=&#34;_blank&#34;&gt;IR-Stationのデモンストレーションサイト&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IR-Station v1.5.0 アップデート</title>
+      <link>https://kerikeri.top/posts/2016-10-16-ir-station-v1.5.0/</link>
+      <pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-10-16-ir-station-v1.5.0/</guid>
+      <description>&lt;h2 id=&#34;ir-stationがv150にアップデート&#34;&gt;IR-Stationがv1.5.0にアップデート&lt;/h2&gt;
+&lt;p&gt;この度，IR-Stationのファームウェアがv1.5.0にアップデートされ，新機能が追加されました．&lt;/p&gt;
+&lt;p&gt;IR-Stationについては，&lt;a href=&#34;https://kerikeri.top/tags/ir-station&#34;&gt;IR-Stationについての記事一覧&lt;/a&gt;
+をご覧ください．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IR-Stationの赤外線ダウンロード機能</title>
+      <link>https://kerikeri.top/posts/2016-08-14-download-upload/</link>
+      <pubDate>Sun, 14 Aug 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-08-14-download-upload/</guid>
+      <description>&lt;h2 id=&#34;ir-stationとは&#34;&gt;IR-Stationとは&lt;/h2&gt;
+&lt;p&gt;自作のWiFi接続の赤外線学習リモコンです．IR-Stationを使えば，スマホやPCから家電製品をコントロールすることができます．&lt;/p&gt;
+&lt;p&gt;詳しくは，&lt;a href=&#34;https://kerikeri.top/tags/ir-station&#34;&gt;IR-Stationについての記事一覧&lt;/a&gt;
+をご覧ください．&lt;/p&gt;
+&lt;h2 id=&#34;ir-stationの新機能&#34;&gt;IR-Stationの新機能&lt;/h2&gt;
+&lt;p&gt;夏休みになり，IR-Stationを本格的に開発しています．今回は，いくつかの新機能を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IR-Stationの使い方</title>
+      <link>https://kerikeri.top/posts/2016-07-25-how-to-use-ir-station/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-07-25-how-to-use-ir-station/</guid>
+      <description>&lt;h2 id=&#34;ir-stationとは&#34;&gt;IR-Stationとは&lt;/h2&gt;
+&lt;p&gt;自作のWiFi接続の赤外線学習リモコンです．IR-Stationを使えば，スマホやPCから家電製品をコントロールすることができます．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>赤外線学習リモコン完成</title>
+      <link>https://kerikeri.top/posts/2016-07-18-ir-station/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-07-18-ir-station/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;赤外線学習リモコンとは，市販の家電製品などのリモコンの赤外線信号を記憶し，送信することができるものです．&lt;/p&gt;
+&lt;p&gt;今回は，WiFi接続に対応した赤外線学習リモコンを作りました．スマートフォンやパソコンなどから，家電製品をコントロールすることができます．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

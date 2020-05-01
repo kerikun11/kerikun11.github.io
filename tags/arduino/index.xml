@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/arduino/</link>
+    <description>Recent content in Arduino on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Wed, 30 Aug 2017 10:55:38 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ESP32 Timeライブラリを作りました</title>
+      <link>https://kerikeri.top/posts/2017-08-30-esp32-time-lib/</link>
+      <pubDate>Wed, 30 Aug 2017 10:55:38 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-08-30-esp32-time-lib/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;こんにちは，けりです．
+みなさん，ESP32使ってますか？&lt;/p&gt;
+&lt;p&gt;今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP32とMicro SDカード</title>
+      <link>https://kerikeri.top/posts/2017-07-29-esp32-wifi-sd/</link>
+      <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-07-29-esp32-wifi-sd/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;今回は，ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP32でデュアルコアを使おう！</title>
+      <link>https://kerikeri.top/posts/2017-06-24-esp32-dual-core/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-06-24-esp32-dual-core/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;esp32とは&#34;&gt;ESP32とは&lt;/h3&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP32&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp32.jpg&#34; alt=&#34;ESP32&#34; style=&#34;width: 240px;&#34;/&gt;
+	
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.espressif.com/en/products/hardware/esp32/overview&#34; target=&#34;_blank&#34;&gt;ESP32 Overview | Espressif Systems&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;ESP32は上海の企業であるEspressif Systemsから発売されているWiFi&amp;amp;Bluetoothモジュールです．同時にgccで開発できるマイコンでもあります．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP32の設定管理ライブラリの紹介</title>
+      <link>https://kerikeri.top/posts/2017-06-16-esp32-preferences/</link>
+      <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-06-16-esp32-preferences/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;みなさん，ESP32使ってますか？僕は使っています．その偉大さには驚くばかりです．&lt;/p&gt;
+&lt;p&gt;さて，今回紹介するのは，Arduino core for ESP32に含まれているライブラリ「&lt;a href=&#34;https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences&#34; target=&#34;_blank&#34;&gt;Preferences&lt;/a&gt;
+」です．&lt;/p&gt;
+&lt;p&gt;ESP32で何か物を作るとき，電源を切っても保存しておきたいデータなどがあると思います．独自の形式やJSONなどでファイルに保存する方法もありますが，保存と復元の処理を実装するのはなかなか面倒です．&lt;/p&gt;
+&lt;p&gt;みんなどうせ同じようなことをするでしょうということで，ESP32ではライブラリが用意されていました．&lt;/p&gt;
+&lt;p&gt;不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP32からメールを送る</title>
+      <link>https://kerikeri.top/posts/2017-04-08-esp32-mail/</link>
+      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-04-08-esp32-mail/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;ESP32にはHTTPSクライアントライブラリがあるので，SMTPプロトコルを使ってGmailを送信してみました．意外にもうまくいってしまったので，共有します．&lt;/p&gt;
+&lt;p&gt;Arduino上で動くコードです．esp32-arduino-coreは最新のものを使用してください．古いものだと，SSLまわりでエラーが発生します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP32用UIライブラリ</title>
+      <link>https://kerikeri.top/posts/2017-03-26-user-interface/</link>
+      <pubDate>Sun, 26 Mar 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-03-26-user-interface/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;ESP32も徐々に使い慣れてきました．今回の記事では，ちょっとした工作には欠かせないユーザーインターフェースのコードを紹介します．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;スピーカーから音階を鳴らすブザークラス&lt;/li&gt;
+&lt;li&gt;タクトスイッチなどのボタンを扱うボタンクラス&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;今回のコードは，ESP32用に書かれています．ご注意ください．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>赤外線学習リモコン完成</title>
+      <link>https://kerikeri.top/posts/2016-07-18-ir-station/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-07-18-ir-station/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;赤外線学習リモコンとは，市販の家電製品などのリモコンの赤外線信号を記憶し，送信することができるものです．&lt;/p&gt;
+&lt;p&gt;今回は，WiFi接続に対応した赤外線学習リモコンを作りました．スマートフォンやパソコンなどから，家電製品をコントロールすることができます．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ソーラー発電量モニター</title>
+      <link>https://kerikeri.top/posts/2016-04-20-power-monitor/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-04-20-power-monitor/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2014-09-14-solar-system/&#34;&gt;100W級ソーラーシステム&lt;/a&gt;
+の発電量を&lt;a href=&#34;https://thingspeak.com/&#34; target=&#34;_blank&#34;&gt;ThingSpeak.com&lt;/a&gt;
+というサイトに送ってグラフ化しました。&lt;/p&gt;
+&lt;p&gt;データの送信には、自作の&lt;a href=&#34;https://kerikeri.top/posts/2016-03-23-relay-sensor/&#34;&gt;中継型電力計&lt;/a&gt;
+を使用しています。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>電力つぶやきbot</title>
+      <link>https://kerikeri.top/posts/2016-04-03-power-tweeter/</link>
+      <pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-04-03-power-tweeter/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;中継型電力計&#34;&gt;中継型電力計&lt;/h3&gt;
+&lt;p&gt;先日の記事で&lt;a href=&#34;https://kerikeri.top/posts/2016-03-23-relay-sensor/&#34;&gt;ESP-WROOM-02による中継型電力計&lt;/a&gt;
+を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p&gt;
+&lt;h3 id=&#34;何の電力をつぶやくのか&#34;&gt;何の電力をつぶやくのか&lt;/h3&gt;
+&lt;p&gt;僕の家には&lt;a href=&#34;https://kerikeri.top/posts/2014-09-14-solar-system/&#34;&gt;自作の100W級ソーラーシステム&lt;/a&gt;
+があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;Solar&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;solar.jpg&#34; alt=&#34;Solar&#34; style=&#34;width: 480px;&#34;/&gt;
+	
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP-WROOM-02による中継型電力計</title>
+      <link>https://kerikeri.top/posts/2016-03-23-relay-sensor/</link>
+      <pubDate>Wed, 23 Mar 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-03-23-relay-sensor/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;話題のesp-wroom-02&#34;&gt;話題のESP-WROOM-02&lt;/h3&gt;
+&lt;p&gt;ESP8266という高性能マイコンを積んだ話題のESP-WROOM-02モジュール。&lt;/p&gt;
+&lt;p&gt;今回はこれを使って中継型電力計を作りました。&lt;/p&gt;
+&lt;figure &gt;
+	&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-09607/&#34; target=&#34;blank&#34;&gt;
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP8266&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp8266.jpg&#34; alt=&#34;ESP8266&#34; style=&#34;width: 240px;&#34;/&gt;
+	&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;中継型とは&#34;&gt;中継型とは&lt;/h3&gt;
+&lt;p&gt;電源端子としてよく使われてるDCジャックに中継するだけで、そこから電力をもらいつつ電力を計測します。&lt;/p&gt;
+&lt;h3 id=&#34;wifi経由でサーバーへ&#34;&gt;WiFi経由でサーバーへ&lt;/h3&gt;
+&lt;p&gt;測定した電力データはWiFiを使って任意のサーバーに送ることができます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>メダカの照明 Ver.2</title>
+      <link>https://kerikeri.top/posts/2016-03-14-killifish-light-2/</link>
+      <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-03-14-killifish-light-2/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;メダカの水槽の照明&#34;&gt;メダカの水槽の照明&lt;/h3&gt;
+&lt;p&gt;以前、PICで作った&lt;a href=&#34;https://kerikeri.top/posts/2015-06-04-killifish-light/&#34;&gt;メダカの水槽の照明&lt;/a&gt;
+(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;めだか&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;fish.jpg&#34; alt=&#34;めだか&#34; /&gt;
+	
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;格安wifiモジュール&#34;&gt;格安WiFiモジュール&lt;/h3&gt;
+&lt;p&gt;今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p&gt;
+&lt;p&gt;このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2015-12-30-ir-station/&#34;&gt;赤外線学習リモコン（日本語による紹介記事）&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2016-03-11-ir-station-reference/&#34;&gt;赤外線学習リモコン（英語によるリファレンス）&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-09607/&#34; target=&#34;_blank&#34;&gt;ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a&gt;
+&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP-WROOM-02&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp-wroom-02.jpg&#34; alt=&#34;ESP-WROOM-02&#34; style=&#34;width: 240px;&#34;/&gt;
+	
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP8266で赤外線学習リモコン</title>
+      <link>https://kerikeri.top/posts/2015-12-30-ir-station/</link>
+      <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-12-30-ir-station/</guid>
+      <description>&lt;h2 id=&#34;esp8266とは&#34;&gt;ESP8266とは&lt;/h2&gt;
+&lt;h3 id=&#34;日本の技適を取得済みwifiモジュール&#34;&gt;日本の技適を取得済みWiFiモジュール！！&lt;/h3&gt;
+&lt;p&gt;ESP8266とはWiFi制御用マイコンです。もともと中国で流行っていました。そのマイコンを内蔵したESP-WROOM-02というWiFiモジュールが日本の技適を取得したので、日本でも人気になりました。&lt;/p&gt;
+&lt;h3 id=&#34;とにかく安い&#34;&gt;とにかく安い！&lt;/h3&gt;
+&lt;p&gt;その価格はなんと、たったの&lt;strong&gt;550円&lt;/strong&gt;です！！&lt;br&gt;
+&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-09607/&#34; target=&#34;_blank&#34;&gt;ESP-WROOM-02&lt;/a&gt;
+←秋月電子などで売っています。&lt;br&gt;
+&lt;figure &gt;
+	&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-09607/&#34; target=&#34;blank&#34;&gt;
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP8266&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp8266.jpg&#34; alt=&#34;ESP8266&#34; style=&#34;width: 240px;&#34;/&gt;
+	&lt;/a&gt;
+&lt;/figure&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

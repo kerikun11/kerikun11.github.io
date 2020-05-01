@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FT232RL on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/ft232rl/</link>
+    <description>Recent content in FT232RL on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/ft232rl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ESP-WROOM-32のブレイクアウトボード</title>
+      <link>https://kerikeri.top/posts/2017-03-02-keriesp32/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-03-02-keriesp32/</guid>
+      <description>&lt;h2 id=&#34;esp-wroom-32とは&#34;&gt;ESP-WROOM-32とは&lt;/h2&gt;
+&lt;p&gt;ESP-WROOM-32とは，ESP32というハイスペックなマイコンが搭載されたWiFi&amp;amp;Bluetoothモジュールです．無線モジュールとしてだけでなく，メインマイコンとしても十分使用できます．&lt;/p&gt;
+&lt;p&gt;ESP-WROOM-32のすごいところはその価格です．ハイスペックなマイコンとWiFiとBluetoothがついているのに，2017年2月現在たったの700円なのです！！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-11647/&#34; target=&#34;_blank&#34;&gt;秋月電子&lt;/a&gt;
+で購入できます．&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP-WROOM-32&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp-wroom-32.jpg&#34; alt=&#34;ESP-WROOM-32&#34; style=&#34;width: 240px;&#34;/&gt;
+	
+&lt;/figure&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

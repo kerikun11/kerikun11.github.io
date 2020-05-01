@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/linux/</link>
+    <description>Recent content in Linux on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Fri, 24 Apr 2020 12:05:29 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Manjaro Linux でデスクトップがしばしばフリーズする問題の解決方法</title>
+      <link>https://kerikeri.top/posts/2020-04-24-manjaro-desktop-crash-fix/</link>
+      <pubDate>Fri, 24 Apr 2020 12:05:29 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-24-manjaro-desktop-crash-fix/</guid>
+      <description>&lt;p&gt;今回の記事は，同じような不具合を抱えている方への情報共有です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linuxで画面を3分割して表示する</title>
+      <link>https://kerikeri.top/posts/2020-04-10-linux-split-3-windows/</link>
+      <pubDate>Fri, 10 Apr 2020 11:13:33 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-10-linux-split-3-windows/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;最近，縦横比が21:9のウルトラワイドモニタを購入しました．&lt;/p&gt;
+&lt;p&gt;今回は，そのモニタの画面を3列に分割してウィンドウを配置する方法を紹介します．&lt;/p&gt;
+&lt;p&gt;私のPCのOSは &lt;strong&gt;Manjaro Linux (Cinnamon)&lt;/strong&gt; ですが，他のLinuxでも使える方法だと思います．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Mint 19.3 をインストールしたら設定すること</title>
+      <link>https://kerikeri.top/posts/2020-04-07-linux-mint-19/</link>
+      <pubDate>Tue, 07 Apr 2020 12:33:15 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-07-linux-mint-19/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;この記事では，&lt;code&gt;Linux Mint 19.3&lt;/code&gt; をクリーンインストールした際に行う自己流の設定について紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>UNIX環境の設定ファイルの管理</title>
+      <link>https://kerikeri.top/posts/2020-04-06-dotfiles/</link>
+      <pubDate>Mon, 06 Apr 2020 10:17:40 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-04-06-dotfiles/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;今回は、ターミナルなどの設定ファイルの管理方法の紹介です。&lt;/p&gt;
+&lt;p&gt;設定ファイルの多くは &lt;code&gt;.zshrc&lt;/code&gt; というようにドットから始まる隠しファイルになっているので、
+これらをまとめて &lt;code&gt;.dotfiles&lt;/code&gt; と呼んでいます。&lt;/p&gt;
+&lt;p&gt;GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Surface Pro 3 に Ubuntu15.10を入れる(UEFI環境のデュアルブート)</title>
+      <link>https://kerikeri.top/posts/2015-11-03-surface-ubuntu/</link>
+      <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-11-03-surface-ubuntu/</guid>
+      <description>&lt;h2 id=&#34;uefiとは&#34;&gt;UEFIとは&lt;/h2&gt;
+&lt;p&gt;　BIOSの代わりに最近のパソコンに導入されたインターフェース。BIOS特有の制約を解消したものと言える。UEFI環境でブートするには、ディスクの先頭にUEFIシステムパティションというものを置かなければならない。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>linkを作る「ln」コマンド</title>
+      <link>https://kerikeri.top/posts/2015-10-28-link/</link>
+      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-10-28-link/</guid>
+      <description>&lt;h2 id=&#34;ハードリンクとシンボリックリンク&#34;&gt;ハードリンクとシンボリックリンク&lt;/h2&gt;
+&lt;p&gt;ハードリンクは、別名の同じファイルといえる。ターゲットとリンクの区別がなく、すべてのファイルに実体があり（ディスク容量を消費）、削除するにはすべてのファイルを削除する必要がある。
+シンボリックリンクは、いわゆるショートカットと同じで、パス情報のみを保持している。したがって、実体を削除するとシンボリックリンはエラーになる。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gitの使い方</title>
+      <link>https://kerikeri.top/posts/2015-10-21-git/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-10-21-git/</guid>
+      <description>&lt;p&gt;ここではGitHubを使ったGitの使い方を説明する。&lt;/p&gt;
+&lt;h2 id=&#34;主なコマンド&#34;&gt;主なコマンド&lt;/h2&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

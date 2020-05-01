@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>サーバー on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
+    <description>Recent content in サーバー on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Sun, 11 Feb 2018 14:58:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>自宅サーバーにNextcloudを導入した</title>
+      <link>https://kerikeri.top/posts/2018-02-11-nextcloud/</link>
+      <pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-02-11-nextcloud/</guid>
+      <description>&lt;p&gt;こんにちは．
+今回は久しぶりにサーバーの話題です．&lt;/p&gt;
+&lt;p&gt;自宅のサーバーにNextcloudを導入したので，それを紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ブログのサーバーをラズパイ3からPINE64 A&#43;に移行</title>
+      <link>https://kerikeri.top/posts/2017-05-07-new-pine64/</link>
+      <pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-05-07-new-pine64/</guid>
+      <description>&lt;h2 id=&#34;新登場のpine64を購入&#34;&gt;新登場のPINE64を購入&lt;/h2&gt;
+&lt;p&gt;秋月電子の新商品で，「PINE64」というボードが登場しました．CPUのスペックはほぼラズパイ3と同等ですが，Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p&gt;
+&lt;p&gt;さらに，ラズパイ3の価格が$35なのに対して，PINE64は$19です．半額近いです．&lt;/p&gt;
+&lt;p&gt;そのかわり，WiFiやBluetoothが技適の関係かわかりませんが今は載っていません．ただ，ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache2でIR-Stationデモ</title>
+      <link>https://kerikeri.top/posts/2016-12-04-ir-station-demo-apache2/</link>
+      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-12-04-ir-station-demo-apache2/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る．&lt;/p&gt;
+&lt;p&gt;この記事は，デモサイトを作るときのメモ．&lt;br&gt;
+デモサイト紹介記事は&lt;a href=&#34;https://kerikeri.top/posts/2016-10-20-ir-station-demo/&#34;&gt;こちら&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CrontabでMyDNS.jpのIP通知</title>
+      <link>https://kerikeri.top/posts/2016-12-04-update-mydns/</link>
+      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-12-04-update-mydns/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;家のIPアドレスは固定ではないのでDDNSで追いかける．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ラズパイセットアップのコマンド群</title>
+      <link>https://kerikeri.top/posts/2016-08-28-raspi-setup/</link>
+      <pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-08-28-raspi-setup/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;これらの作業はすべてSSHで行う．fingなどを使ってIPアドレスを調べる．&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ssh pi@192.168.11.13
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>メダカの照明 Ver.2</title>
+      <link>https://kerikeri.top/posts/2016-03-14-killifish-light-2/</link>
+      <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-03-14-killifish-light-2/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;メダカの水槽の照明&#34;&gt;メダカの水槽の照明&lt;/h3&gt;
+&lt;p&gt;以前、PICで作った&lt;a href=&#34;https://kerikeri.top/posts/2015-06-04-killifish-light/&#34;&gt;メダカの水槽の照明&lt;/a&gt;
+(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;めだか&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;fish.jpg&#34; alt=&#34;めだか&#34; /&gt;
+	
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;格安wifiモジュール&#34;&gt;格安WiFiモジュール&lt;/h3&gt;
+&lt;p&gt;今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p&gt;
+&lt;p&gt;このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2015-12-30-ir-station/&#34;&gt;赤外線学習リモコン（日本語による紹介記事）&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2016-03-11-ir-station-reference/&#34;&gt;赤外線学習リモコン（英語によるリファレンス）&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-09607/&#34; target=&#34;_blank&#34;&gt;ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a&gt;
+&lt;/p&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP-WROOM-02&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp-wroom-02.jpg&#34; alt=&#34;ESP-WROOM-02&#34; style=&#34;width: 240px;&#34;/&gt;
+	
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sinatraでアプリケーションを作る</title>
+      <link>https://kerikeri.top/posts/2016-03-12-sinatra/</link>
+      <pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-03-12-sinatra/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;格安WiFiモジュールESP-WROOM-02を使って電流を計測してそれを受信し表示するアプリケーションを作りました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi で NAS 作り</title>
+      <link>https://kerikeri.top/posts/2015-11-23-samba/</link>
+      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-11-23-samba/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;NASがほしい！&lt;br&gt;
+じゃあ作ろう。&lt;/p&gt;
+&lt;p&gt;スペック&lt;br&gt;
+サーバ：Raspberrypi 2 Type B&lt;br&gt;
+HDD：Western Digital 2TB 3.5 inch&lt;br&gt;
+転送速度：10MB/s（ラズパイのイーサーネットが100Baseなので仕方ない&amp;hellip;）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ファイアウォールの設定</title>
+      <link>https://kerikeri.top/posts/2015-11-17-firewall/</link>
+      <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-11-17-firewall/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;ufw&#34;&gt;ufw&lt;/h3&gt;
+&lt;p&gt;iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので，今回は初心者でも使いやすいufwというソフトを使う．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SSHの使い方</title>
+      <link>https://kerikeri.top/posts/2015-10-31-ssh/</link>
+      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-10-31-ssh/</guid>
+      <description>&lt;h2 id=&#34;ssh&#34;&gt;SSH&lt;/h2&gt;
+&lt;h3 id=&#34;sshとは&#34;&gt;SSHとは&lt;/h3&gt;
+&lt;p&gt;　Secure Shell。暗号や認証の技術を利用して、安全にリモートコンピュータと通信するためのプロトコル。 パスワードなどの認証部分を含むすべてのネットワーク上の通信が暗号化される。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi 2 Type Bでサーバー作り</title>
+      <link>https://kerikeri.top/posts/2015-10-05-raspi-server/</link>
+      <pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2015-10-05-raspi-server/</guid>
+      <description>&lt;h2 id=&#34;ラズパイの用意&#34;&gt;ラズパイの用意&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;ラズパイ用のOS「NOOBS」を&lt;a href=&#34;http://raspberrypi.org/downloads/&#34; target=&#34;_blank&#34;&gt;raspberrypi.org&lt;/a&gt;
+からDLして解凍する。&lt;/li&gt;
+&lt;li&gt;microSDカードをFAT32でフォーマットする。&lt;/li&gt;
+&lt;li&gt;解凍したファイルをSDカードにコピーする。&lt;/li&gt;
+&lt;li&gt;ラズパイにSDカード、キーボード、LANケーブル（またはWiFiドングル）をつないで電源を入れる。&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

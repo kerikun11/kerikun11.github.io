@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ブログ on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/%E3%83%96%E3%83%AD%E3%82%B0/</link>
+    <description>Recent content in ブログ on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Sun, 07 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/%E3%83%96%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ブログのサーバーをラズパイ3からPINE64 A&#43;に移行</title>
+      <link>https://kerikeri.top/posts/2017-05-07-new-pine64/</link>
+      <pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-05-07-new-pine64/</guid>
+      <description>&lt;h2 id=&#34;新登場のpine64を購入&#34;&gt;新登場のPINE64を購入&lt;/h2&gt;
+&lt;p&gt;秋月電子の新商品で，「PINE64」というボードが登場しました．CPUのスペックはほぼラズパイ3と同等ですが，Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p&gt;
+&lt;p&gt;さらに，ラズパイ3の価格が$35なのに対して，PINE64は$19です．半額近いです．&lt;/p&gt;
+&lt;p&gt;そのかわり，WiFiやBluetoothが技適の関係かわかりませんが今は載っていません．ただ，ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ブログを更新するスクリプト</title>
+      <link>https://kerikeri.top/posts/2016-08-28-update-blog-script/</link>
+      <pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-08-28-update-blog-script/</guid>
+      <description>&lt;h2 id=&#34;github上にあるブログを同期するシェルスクリプト&#34;&gt;github上にあるブログを同期するシェルスクリプト&lt;/h2&gt;
+&lt;p&gt;自分用のメモ&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ブログのサーバーが新しくなりました！</title>
+      <link>https://kerikeri.top/posts/2016-08-21-raspi3/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2016-08-21-raspi3/</guid>
+      <description>&lt;h2 id=&#34;ラズパイ3を購入&#34;&gt;ラズパイ3を購入&lt;/h2&gt;
+&lt;h3 id=&#34;ハイスペックなラズパイ3&#34;&gt;ハイスペックなラズパイ3&lt;/h3&gt;
+&lt;p&gt;64bitのARM-CPUが搭載されたラズパイ3が話題になったのは記憶に新しいですが，ラズパイ3は，秋月では6,200円ですし，公式でも5,000円ほどします．&lt;/p&gt;
+&lt;h3 id=&#34;税込4000円かつカード払いok&#34;&gt;税込4,000円かつカード払いOK！&lt;/h3&gt;
+&lt;p&gt;そんなラズパイ3が，Maker Faire Tokyo 2016 で税込4,000円かつカード払いOKで販売しているではありませんか！！&lt;/p&gt;
+&lt;p&gt;これは安い！と思い，使う予定もないのに衝動買いしちゃいました&amp;hellip;(汗&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

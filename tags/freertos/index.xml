@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FreeRTOS on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/freertos/</link>
+    <description>Recent content in FreeRTOS on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/freertos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FreeRTOSのTaskにC&#43;&#43;のメンバ関数を割り当てる</title>
+      <link>https://kerikeri.top/posts/2017-09-27-freertos-member/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-09-27-freertos-member/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．そこで，今回はその解決策のひとつを紹介する．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ESP32でデュアルコアを使おう！</title>
+      <link>https://kerikeri.top/posts/2017-06-24-esp32-dual-core/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2017-06-24-esp32-dual-core/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;h3 id=&#34;esp32とは&#34;&gt;ESP32とは&lt;/h3&gt;
+&lt;figure &gt;
+	
+		
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP32&lt;/h4&gt;
+		&lt;/figcaption&gt;
+		
+		&lt;img src=&#34;esp32.jpg&#34; alt=&#34;ESP32&#34; style=&#34;width: 240px;&#34;/&gt;
+	
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.espressif.com/en/products/hardware/esp32/overview&#34; target=&#34;_blank&#34;&gt;ESP32 Overview | Espressif Systems&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;ESP32は上海の企業であるEspressif Systemsから発売されているWiFi&amp;amp;Bluetoothモジュールです．同時にgccで開発できるマイコンでもあります．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

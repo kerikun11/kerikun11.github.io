@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheese on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/cheese/</link>
+    <description>Recent content in Cheese on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Fri, 28 Feb 2020 15:33:09 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/cheese/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>台湾旅行のメモ</title>
+      <link>https://kerikeri.top/posts/2020-02-28-cheese-trip-in-taiwan/</link>
+      <pubDate>Fri, 28 Feb 2020 15:33:09 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-02-28-cheese-trip-in-taiwan/</guid>
+      <description>&lt;p&gt;2020年2月23日から4泊5日，Cheeseの6人で行った台湾旅行のメモ．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheese Timer の紹介</title>
+      <link>https://kerikeri.top/posts/2019-12-23-cheese-timer/</link>
+      <pubDate>Mon, 23 Dec 2019 09:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-12-23-cheese-timer/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;先日，12月15日(日) に &lt;strong&gt;第3回Cheese杯&lt;/strong&gt; を開催しました．&lt;/p&gt;
+&lt;p&gt;Cheese杯とは，東京工業大学ロボット技術会Cheeseが主催するマイクロマウスのプチ大会です．&lt;/p&gt;
+&lt;p&gt;おかげさまで，今年，第3回目を開催することができました！&lt;/p&gt;
+&lt;p&gt;今回の記事では，そのとき登場した，
+マイクロマウス計測装置 &lt;strong&gt;Cheese Timer&lt;/strong&gt; を簡単に紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheese杯2019の迷路紹介</title>
+      <link>https://kerikeri.top/posts/2019-12-21-cheese-cup-2019-maze/</link>
+      <pubDate>Sat, 21 Dec 2019 21:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2019-12-21-cheese-cup-2019-maze/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;先日，12/15(日) に
+Cheese主催のマイクロマウス・プチ大会
+&lt;strong&gt;第3回Cheese杯&lt;/strong&gt; を開催しました．&lt;/p&gt;
+&lt;p&gt;今回はそのとき出題された迷路を簡単に紹介します．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

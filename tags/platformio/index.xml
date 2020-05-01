@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PlatformIO on KERI&#39;s Lab</title>
+    <link>https://kerikeri.top/tags/platformio/</link>
+    <description>Recent content in PlatformIO on KERI&#39;s Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
+    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
+    <lastBuildDate>Sat, 22 Dec 2018 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kerikeri.top/tags/platformio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PlatformIOでESP32の開発をしよう</title>
+      <link>https://kerikeri.top/posts/2018-12-22-platformio/</link>
+      <pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2018-12-22-platformio/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;この記事は &lt;a href=&#34;https://adventar.org/calendars/3279&#34; target=&#34;_blank&#34;&gt;rogy Advent Calendar 2018&lt;/a&gt;
+ の
+22日目の記事です．&lt;/p&gt;
+&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;今回は，PlatformIOという強力な&lt;strong&gt;マイコン開発環境&lt;/strong&gt;の紹介です．&lt;/p&gt;
+&lt;h3 id=&#34;platformio-とは&#34;&gt;PlatformIO とは？&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://platformio.org/&#34; target=&#34;_blank&#34;&gt;PlatformIO&lt;/a&gt;
+とは，mbedやArduinoと似たような感じで，さまざまなボードやライブラリを統一的に開発できる開発環境です．&lt;/p&gt;
+&lt;p&gt;PlatformIO はESP32マイコンを公式にサポートしていて，&lt;a href=&#34;https://github.com/espressif/esp-idf&#34; target=&#34;_blank&#34;&gt;ESP-IDF&lt;/a&gt;
+と&lt;a href=&#34;https://github.com/espressif/arduino-esp32&#34; target=&#34;_blank&#34;&gt;Arduino Core for the ESP32&lt;/a&gt;
+から選んで開発することができます．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
