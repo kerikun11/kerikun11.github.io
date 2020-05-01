@@ -1,3 +1,100 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# file:     config.toml
+# author:   Ryotaro Onuki
+# hugo:     v0.61.0 or higher
+# base:     https://themes.gohugo.io/mainroad/
+
+baseurl = "https://kerikeri.top/"
+title = "KERI's Lab"
+languageCode = "ja-jp"
+DefaultContentLanguage = "ja"
+hasCJKLanguage = true # handle japanese character
+theme = "mainroad" # Mainroad Theme https://github.com/vimux/mainroad/
+paginate = "20" # Number of posts per page
+disqusShortname = "kerikeri" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "UA-103856564-1" # Enable Google Analytics by entering your tracking id
+rssLimit = 30 # default: 15
+
+pygmentsUseClasses = true
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+
+# allow raw html in markdown
+[markup.goldmark.renderer]
+  unsafe = true
+
+[Author] # Used in authorbox
+    name = "けり"
+    bio = "趣味は電子工作．最近はマイクロマウス競技に参加しています．"
+    avatar = "/img/avatar.jpg"
+    email = "kerikun11+web@gmail.com"
+    location = "Earth"
+
+[Params]
+    subtitle = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Subtitle of your site. Used in site header
+    description = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Site description. Used in meta description
+    copyright = "KERI's Lab" # copyright holder, otherwise will use site title
+    opengraph = true # Enable OpenGraph if true
+    twitter_cards = true # Enable Twitter Cards if true
+    readmore = true # Show "Read more" button in list if true
+    authorbox = true # Show authorbox at bottom of pages if true
+    # toc = true # Enable Table of Contents
+    pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+    post_meta = ["date", "categories", "tags", "translations"] # Order of post meta information
+    dateformat = "2006-01-02" # change the format of dates
+    mathjax = true # Enable MathJax
+    mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+    mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+    highlightColor = "#0000ff" # Override highlight color
+    customCSS = ["css/custom.css", "/css/syntax.css"] # Include custom CSS files
+    customJS = ["js/custom.js"] # Include custom JS files
+    thumbnailDefault = "/img/avatar.jpg"
+
+[Params.sidebar]
+    home = "right" # Configure layout for home page
+    list = "right"  # Configure layout for list pages
+    single = "right" # Configure layout for single pages
+    widgets = ["search", "social", "ads", "toc", "spotlight", "recent", "categories", "taglist", "languages"]
+
+[Params.widgets]
+    recent_num = 5 # Set the number of articles in the "Recent articles" widget
+    tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+    # facebook = "username"
+    twitter = "kerikun11"
+    # instagram = "username"
+    # linkedin = "username"
+    # telegram = "username"
+    github = "kerikun11"
+    # gitlab = "username"
+    # bitbucket = "username"
+    email = "kerikun11+web@gmail.com"
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/kerikun11"
+  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+
+[Social]
+    twitter = "kerikun11"
+
+[permalinks]
+    post = "/posts/:filename/"
+    work = "/works/:filename/"
+
+[sitemap]
+    filename = "sitemap.xml"  # c.f. https://gohugo.io/templates/sitemap-template/#configure-sitemap-xml
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 4
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 5

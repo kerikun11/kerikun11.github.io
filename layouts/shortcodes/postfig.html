@@ -1,0 +1,10 @@
+<figure {{ with .Get "class" }}class="{{.}} fig-responsive"{{ end }}>
+	{{ with .Get "link"}}<a href="{{.}}" target="blank">{{ end }}
+		{{ with .Get "title" }}
+		<figcaption>
+			<h4>{{.}}</h4>
+		</figcaption>
+		{{ end }}
+		<img src="{{ .Get "src" }}" alt="{{ with .Get "title" }}{{.}}{{ end }}" {{ with .Get "width" }}style="width: {{.}};"{{ end }}/>
+	{{ with .Get "link"}}</a>{{ end }}
+</figure>

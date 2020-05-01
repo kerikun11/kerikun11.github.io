@@ -1,0 +1,117 @@
+---
+date: "2016-06-15"
+title: "割れちゃったiPhoneの液晶を直したお話"
+categories:
+  - "作品紹介"
+tags:
+  - "iPhone"
+  - "分解"
+thumbnail: "icon.jpg"
+---
+
+== 概要
+=== 割れた iPhone 6 Plus
+他のことに夢中になっているときに机から落として割ってしまいました．ショックです...
+[.img-medium]
+image:broken-iphone.jpg[割れたiPhone]
+
+=== 自力で液晶パネルを交換する
+割れた液晶を使用して手を怪我したり，Appleに高いお金を支払って修理するのは嫌なので，ここは技術者として自力で交換してみたいと思います．
+
+++++
+<!--more-->
+++++
+
+== Amazonで必要なものを注文
+=== フロントパネル
+iPhone 6 Plusなので1枚\12,880でした．iPhone5sやiPhone6ならもっと安いです．
+純正品ではありませんが，とてもきれいです．
+[.img-medium]
+image:box.jpg[箱]
+
+届いた液晶には保護フィルムが貼ってありました．
+[.img-medium]
+image:new-lcd1.jpg[届いた液晶パネル]
+
+[.img-medium]
+image:new-lcd2.jpg[裏側]
+
+=== 道具
+これもAmazonで300円ほどで購入できます．今回，液晶パネルに道具がついてきました．※ピンセットは自前です．
+[.img-medium]
+image:tools.jpg[道具]
+
+== 分解過程
+=== 分解開始
+iPhoneの下側にある星形ネジを外し，吸盤で画面を引っ張りながら分解していきます．
+
+[.img-medium]
+image:repair1.jpg[吸盤で引っ張る]
+
+ちょっと隙間ができたら工具を差し込む．
+[.img-medium]
+image:repair2.jpg[工具を差し込む]
+
+配線が切れないように慎重に開ける．
+[.img-medium]
+image:repair3.jpg[ゆっくり開く]
+開きました．
+[.img-medium]
+image:repair4.jpg[開いた]
+
+=== コネクタを外す
+接続はすべてコネクタになっているので外すのは簡単です．
+[.img-medium]
+image:connector.jpg[コネクタ]
+
+=== 液晶が外れました
+[.img-medium]
+image:back.jpg[背面]
+
+大きな電池が載ってます．
+[.img-medium]
+image:inside.jpg[内部]
+
+画面，割れてます．
+[.img-medium]
+image:broken-lcd.jpg[割れた画面]
+
+=== 液晶パネルから種々の部品を外す
+[.img-medium]
+image:back-metal.jpg[背面の金属板を外す]
+
+ネジがわからなくならないようにちゃんと書いておきましょう．
+[.img-medium]
+image:map.jpg[ネジの配置図]
+
+インカメなどを外します．
+[.img-medium]
+image:inside-camera.jpg[インカメ]
+
+ホームボタンです．
+[.img-medium]
+image:home-button.jpg[ホームボタン]
+
+=== 新しい液晶パネルに外した部品を移植
+[.img-medium]
+image:back2.jpg[部品を移植]
+
+[.img-medium]
+image:new-lcd3.jpg[新しい液晶]
+
+=== 新しい液晶をiPhone本体に取り付ける
+あとは取り外したときと逆の手順で取り付けるだけです．
+[.img-medium]
+image:complete.jpg[取り付け完了]
+
+作業時間は15分ほどでした．
+[.img-medium]
+image:compare.jpg[比較]
+
+== 完成！
+完全復活しました！
+13,000円ほどかかり，決して安くないですがAppleの修理よりは安いと思います．
+一番大切なことはiPhoneは落とさないことです．以後気を付けましょう．
+[.img-medium]
+image:lock-screen.jpg[できあがり]
+

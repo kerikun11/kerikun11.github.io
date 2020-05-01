@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="60mm"
+   height="60mm"
+   viewBox="0 0 60 60"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="icon.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="133.80402"
+     inkscape:cy="104.46679"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-others="false"
+     showguides="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.8898811,-235.48811)">
+    <rect
+       style="fill:#eae385;stroke-width:0.37195826"
+       id="rect19"
+       width="60"
+       height="60"
+       x="1.8898811"
+       y="235.48811" />
+    <rect
+       id="rect3713"
+       width="55.279018"
+       height="24.001488"
+       x="4.380106"
+       y="250.97221"
+       style="stroke-width:0.26458332" />
+    <rect
+       id="rect3715"
+       width="3.1183035"
+       height="9.0714283"
+       x="30.176981"
+       y="271.47745"
+       style="stroke-width:0.26458332" />
+    <ellipse
+       id="path3717"
+       cx="31.830626"
+       cy="280.36465"
+       rx="10.399333"
+       ry="1.7953869"
+       style="stroke-width:0.17988315" />
+    <rect
+       id="rect3721"
+       width="16.610086"
+       height="20.599703"
+       x="5.9865055"
+       y="252.57861"
+       style="fill:#ffffff;stroke-width:0.32720396" />
+    <rect
+       id="rect3721-3"
+       width="17.561647"
+       height="20.599703"
+       x="23.030907"
+       y="252.57861"
+       style="fill:#ffffff;stroke-width:0.3364459" />
+    <rect
+       id="rect3721-3-6"
+       width="17.172665"
+       height="20.599703"
+       x="40.993462"
+       y="252.57861"
+       style="fill:#ffffff;stroke-width:0.33269894" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="11.656146"
+       y="266.84726"
+       id="text3757"><tspan
+         sodipodi:role="line"
+         id="tspan3755"
+         x="11.656146"
+         y="266.84726"
+         style="stroke-width:0.26458332">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="28.992853"
+       y="266.89746"
+       id="text3757-7"><tspan
+         sodipodi:role="line"
+         id="tspan3755-5"
+         x="28.992853"
+         y="266.89746"
+         style="stroke-width:0.26458332">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="46.849274"
+       y="267.27542"
+       id="text3757-7-3"><tspan
+         sodipodi:role="line"
+         id="tspan3755-5-5"
+         x="46.849274"
+         y="267.27542"
+         style="stroke-width:0.26458332">3</tspan></text>
+  </g>
+</svg>
