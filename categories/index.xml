@@ -8,10 +8,19 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sat, 25 Apr 2020 14:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 17:16:53 +0900</lastBuildDate>
     
 	<atom:link href="https://kerikeri.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>作品紹介</title>
+      <link>https://kerikeri.top/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link>
+      <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>説明記事</title>
@@ -28,15 +37,6 @@
       <pubDate>Fri, 24 Apr 2020 12:05:29 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/categories/%E5%82%99%E5%BF%98%E9%8C%B2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>作品紹介</title>
-      <link>https://kerikeri.top/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link>
-      <pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</guid>
       <description></description>
     </item>
     

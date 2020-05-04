@@ -8,10 +8,20 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sat, 25 Apr 2020 14:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 17:16:53 +0900</lastBuildDate>
     
 	<atom:link href="https://kerikeri.top/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pythonによる迷路クラスと迷路エディタの実装</title>
+      <link>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</link>
+      <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;今回はPythonで記述した迷路クラスと迷路エディタの紹介です．&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>なめらかなスラロームの設計④ 生成結果</title>
@@ -375,20 +385,6 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer1/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;この記事では，前回紹介した&lt;strong&gt;設計1&lt;/strong&gt;の曲線加速の設計について考えます．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>なめらかな加速の設計① 台形加速と曲線加速</title>
-      <link>https://kerikeri.top/posts/2018-04-29-accel-designer1/</link>
-      <pubDate>Sun, 29 Apr 2018 12:35:38 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer1/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;今回はマイクロマウスにおける速度設計のお話です．&lt;/p&gt;
-&lt;p&gt;長い直線などを走行するとき，タイムを縮めるため，最大速度まで加速して，ターン直前に減速します．&lt;/p&gt;
-&lt;p&gt;ここで注意したのが，途中経過の如何にかかわらず，終点の位置や速度は守らなければならないということです．&lt;/p&gt;
-&lt;p&gt;今回の記事では，終点位置，終点速度や最大速度などの拘束条件から，走行途中の速度軌道を算出するアルゴリズムを紹介します．&lt;/p&gt;
-&lt;p&gt;最後にはC++での実装したクラスも簡単に紹介します．&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -32,6 +32,16 @@
     </item>
     
     <item>
+      <title>Pythonによる迷路クラスと迷路エディタの実装</title>
+      <link>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</link>
+      <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</guid>
+      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
+&lt;p&gt;今回はPythonで記述した迷路クラスと迷路エディタの紹介です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>マイクロマウス記事のまとめ</title>
       <link>https://kerikeri.top/works/micromouse/</link>
       <pubDate>Sat, 25 Apr 2020 22:00:00 +0900</pubDate>
@@ -368,18 +378,6 @@ Cheese主催のマイクロマウス・プチ大会
       <guid>https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;ようやく形になった今年の新作「KERISEv4」を紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>なめらかな加速の設計④ C&#43;&#43;による実装例</title>
-      <link>https://kerikeri.top/posts/2018-04-29-accel-designer4/</link>
-      <pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer4/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer3/&#34;&gt;前回の記事&lt;/a&gt;
-の続きです．&lt;/p&gt;
-&lt;p&gt;今回の記事では，今までに示した設計法のC++による実装例を紹介します．&lt;/p&gt;</description>
     </item>
     
   </channel>
