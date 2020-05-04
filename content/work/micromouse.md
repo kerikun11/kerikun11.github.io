@@ -1,8 +1,10 @@
 ---
-date: "2020-04-25T22:00:00+09:00"
+date: "2020-05-04T18:00:00+09:00"
 title: "マイクロマウス記事のまとめ"
 tags:
   - "マイクロマウス"
+  - "KERISE"
+  - "迷路"
 thumbnail: "icon.jpg"
 ---
 
@@ -45,6 +47,7 @@ thumbnail: "icon.jpg"
 - [Cheese杯2019の迷路紹介](/posts/2019-12-21-cheese-cup-2019-maze/)
 - [過去の全日本マイクロマウス大会32x32迷路の分析](/posts/2020-03-08-all-japan-32x32-maze/)
 - [マイクロマウス迷路の自動生成](/posts/2020-03-23-maze-generator/)
+- [Pythonによる迷路クラスと迷路エディタの実装](/posts/2020-05-04-python-maze-editor/)
 
 ## 制御
 
