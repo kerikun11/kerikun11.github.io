@@ -83,7 +83,7 @@ tags:
 
 ## 実装例
 
-[GitHub/kerikun11/MazeLibrary](https://github.com/kerikun11/MazeLibrary)
+- [micromouse-maze-library - GitHub](https://github.com/kerikun11/micromouse-maze-library)
 
 ## おわりに
 
