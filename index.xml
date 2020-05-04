@@ -32,6 +32,17 @@
     </item>
     
     <item>
+      <title>マイクロマウス記事のまとめ</title>
+      <link>https://kerikeri.top/works/micromouse/</link>
+      <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/works/micromouse/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;この記事では，私が書いたマイクロマウスの記事をカテゴリごとに列挙します．&lt;br&gt;
+新しい記事が追加され次第，更新していきたいと思います．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Pythonによる迷路クラスと迷路エディタの実装</title>
       <link>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</link>
       <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
@@ -39,17 +50,6 @@
       <guid>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;今回はPythonで記述した迷路クラスと迷路エディタの紹介です．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>マイクロマウス記事のまとめ</title>
-      <link>https://kerikeri.top/works/micromouse/</link>
-      <pubDate>Sat, 25 Apr 2020 22:00:00 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/works/micromouse/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;この記事では，私が書いたマイクロマウスの記事をカテゴリごとに列挙します．&lt;br&gt;
-新しい記事が追加され次第，更新していきたいと思います．&lt;/p&gt;</description>
     </item>
     
     <item>

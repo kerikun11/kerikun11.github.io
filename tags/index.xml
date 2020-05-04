@@ -8,15 +8,24 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Mon, 04 May 2020 17:16:53 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 18:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kerikeri.top/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>KERISE</title>
+      <link>https://kerikeri.top/tags/kerise/</link>
+      <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/tags/kerise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>マイクロマウス</title>
       <link>https://kerikeri.top/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</link>
-      <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
+      <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</guid>
       <description></description>
@@ -25,7 +34,7 @@
     <item>
       <title>迷路</title>
       <link>https://kerikeri.top/tags/%E8%BF%B7%E8%B7%AF/</link>
-      <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
+      <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/tags/%E8%BF%B7%E8%B7%AF/</guid>
       <description></description>
@@ -46,15 +55,6 @@
       <pubDate>Fri, 24 Apr 2020 12:05:29 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>KERISE</title>
-      <link>https://kerikeri.top/tags/kerise/</link>
-      <pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/kerise/</guid>
       <description></description>
     </item>
     
