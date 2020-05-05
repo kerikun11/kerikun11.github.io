@@ -4,11 +4,17 @@
   
   <url>
     <loc>https://kerikeri.top/about/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://kerikeri.top/works/</loc>
     <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kerikeri.top/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -274,11 +280,6 @@
   <url>
     <loc>https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/</loc>
     <lastmod>2018-05-02T14:53:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kerikeri.top/</loc>
-    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
