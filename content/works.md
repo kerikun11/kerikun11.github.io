@@ -11,9 +11,9 @@ authorbox: false
 
 今までに私が製作した作品を紹介します．詳しくはそれぞれの記事をご覧ください．
 
-## KERISE
+## マイクロマウス KERISE
 
-2016年からマイクロマウスというロボコンに参加しています．  
+2016年から [マイクロマウス](https://www.ntf.or.jp/mouse/) というロボット競技に参加しています．  
 手のひらサイズのロボットが巨大な迷路を駆け抜けるとても魅力的な競技です．
 
 [マイクロマウスについての記事一覧](/tags/マイクロマウス/)
@@ -23,6 +23,8 @@ authorbox: false
 
 IR-Stationとは，WiFi接続の赤外線学習リモコンです．  
 赤外線学習リモコンとは，家電製品などのリモコンの赤外線信号を記憶してそれを送信することで家電製品をコントロールする機器です．「IR-Station」という名称は，私が命名しました．
+
+オープンソースプロジェクトとして [GitHub](https://github.com/kerikun11/IR-Station) に公開しています．
 
 [IR-Stationについての記事一覧](/tags/ir-station/)
 {{< postfig src="ir-station-body.jpg" title="IR-Station" width="240px" link="/tags/ir-station/" >}}
