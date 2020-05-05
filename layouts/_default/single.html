@@ -15,6 +15,7 @@
 			<div class="post__meta meta">{{ . }}</div>
 			{{- end }}
 		</header>
+		{{ partial "twitter-share.html" . }}
 		{{- partial "post_toc.html" . -}}
 		<div class="content post__content clearfix">
 			{{ .Content }}

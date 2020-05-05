@@ -1,7 +1,7 @@
 # file:     config.toml
 # author:   Ryotaro Onuki
 # hugo:     v0.61.0 or higher
-# base:     https://github.com/Vimux/Mainroad/blob/master/exampleSite/config.toml
+# base:     https://github.com/vimux/mainroad/#configtoml-example
 
 baseurl = "https://kerikeri.top/"
 title = "KERI's Lab"
@@ -69,12 +69,6 @@ pygmentsCodefencesGuessSyntax = true
     # gitlab = "username"
     # bitbucket = "username"
     email = "kerikun11+web@gmail.com"
-
-# Custom social links
-[[Params.widgets.social.custom]]
-  title = "Youtube"
-  url = "https://youtube.com/user/kerikun11"
-  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
 
 [Social]
     twitter = "kerikun11"

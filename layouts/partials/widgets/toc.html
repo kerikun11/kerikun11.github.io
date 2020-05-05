@@ -1,12 +1,8 @@
 {{- if not .IsHome }}
-{{- if isset .Site.Taxonomies "categories" }}
-{{- if not (eq (len .Site.Taxonomies.categories) 0) }}
 <div class="widget-toc widget">
 	<h4 class="widget__title">Table of Contents</h4>
 	<div class="widget__content">
     	{{ .Page.TableOfContents}}
 	</div>
 </div>
-{{- end }}
-{{- end }}
 {{- end }}
