@@ -629,13 +629,15 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .content a,
-.warning a {
+.warning a,
+.authorbox__description a {
 	font-weight: 700;
 	color: #0000ff;
 }
 
 .content a:hover,
-.warning a:hover {
+.warning a:hover,
+.authorbox__description a:hover {
 	color: #0000ff;
 	text-decoration: underline;
 }
