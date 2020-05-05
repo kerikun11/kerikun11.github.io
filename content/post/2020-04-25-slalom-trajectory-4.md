@@ -61,39 +61,39 @@ thumbnail: "icon.png"
 
 ![スラローム形状](shape/shape_0_xy.svg)
 
-![スラローム軌道](shape/shape_0_t.svg)
+角速度曲線のグラフは[こちら](shape/shape_0_t.svg)
 
 #### #1 最短 45 度
 
 ![スラローム形状](shape/shape_1_xy.svg)
 
-![スラローム軌道](shape/shape_1_t.svg)
+角速度曲線のグラフは[こちら](shape/shape_1_t.svg)
 
 #### #2 最短 90 度
 
 ![スラローム形状](shape/shape_2_xy.svg)
 
-![スラローム軌道](shape/shape_2_t.svg)
+角速度曲線のグラフは[こちら](shape/shape_2_t.svg)
 
 #### #3 最短 135 度
 
 ![スラローム形状](shape/shape_3_xy.svg)
 
-![スラローム軌道](shape/shape_3_t.svg)
+角速度曲線のグラフは[こちら](shape/shape_3_t.svg)
 
 #### #4 最短 180 度
 
 ![スラローム形状](shape/shape_4_xy.svg)
 
-![スラローム軌道](shape/shape_4_t.svg)
+角速度曲線のグラフは[こちら](shape/shape_4_t.svg)
 
 #### #5 最短斜め 90 度
 
 ![スラローム形状](shape/shape_5_xy.svg)
 
-![スラローム軌道](shape/shape_5_t.svg)
+角速度曲線のグラフは[こちら](shape/shape_5_t.svg)
 
-角速度がなめらかなスラロームの軌道が生成されていますね！
+なめらかなスラロームの軌道が生成されていますね！
 
 ## おわりに
 

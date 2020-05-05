@@ -1,7 +1,7 @@
 # file:     config.toml
 # author:   Ryotaro Onuki
 # hugo:     v0.61.0 or higher
-# base:     https://themes.gohugo.io/mainroad/
+# base:     https://github.com/Vimux/Mainroad/blob/master/exampleSite/config.toml
 
 baseurl = "https://kerikeri.top/"
 title = "KERI's Lab"
@@ -53,7 +53,7 @@ pygmentsCodefencesGuessSyntax = true
     home = "right" # Configure layout for home page
     list = "right"  # Configure layout for list pages
     single = "right" # Configure layout for single pages
-    widgets = ["search", "social", "ads", "toc", "spotlight", "recent", "categories", "taglist", "languages"]
+    widgets = ["search", "toc", "social", "ads", "spotlight", "recent", "categories", "taglist", "languages"]
 
 [Params.widgets]
     recent_num = 5 # Set the number of articles in the "Recent articles" widget
