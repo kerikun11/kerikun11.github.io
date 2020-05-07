@@ -22,7 +22,7 @@ thumbnail: "icon.png"
 - [なめらかなスラロームの設計③ C++による実装](/posts/2020-04-25-slalom-trajectory-3/)
 - [なめらかなスラロームの設計④ 生成結果](/posts/2020-04-25-slalom-trajectory-4/)
 
-## 最新のソースコード
+## ソースコードの取得
 
 今回紹介するソースコードは，マイクロマウス制御モジュールの一部として
 
@@ -30,15 +30,28 @@ thumbnail: "icon.png"
 
 に公開しています．
 
-GitHub のコードが最新なので，そちらも合わせてご覧ください．
+GitHub のコードが最新なので，実際に使用する際はそちらのほうがいいかもしれません．
+
+### 執筆時点のソースコードの取得方法
+
+以下では，[執筆時点のソースコード](https://github.com/kerikun11/micromouse-control-module/tree/v1.0.1) の設計内容を説明します．
+
+GitHubのリポジトリにタグをつけたので，以下のコマンドによって下記で説明されているバージョンのソースコードを取得できます．
+
+```sh
+git clone -b v1.0.1 https://github.com/kerikun11/micromouse-control-module.git
+cd micromouse-control-module
+```
+
+zipファイルでのダウンロードは [こちら](https://github.com/kerikun11/micromouse-control-module/archive/v1.0.1.zip)
 
 ## C++クラス設計
 
 以下では，スラロームの軌道生成に必要なC++クラスを簡単に紹介します．
 
-これらのコードはすべて名前空間 `ctrl` に収められています．
+これらのクラスはすべて名前空間 `ctrl` に収められています．
 
-### ctrl::AccelDesigner
+### AccelDesigner
 
 [以前の記事](/posts/2018-04-29-accel-designer1)で紹介した，拘束条件を満たす曲線加減速の軌道を生成するクラスです．
 
@@ -73,22 +86,18 @@ public:
                 const float x_start = 0, const float t_start = 0);
   /**
    * @brief 時刻 t [s] における躍度 j [m/s/s/s]
-   * @param t 時刻 [s]
    */
   float j(const float t) const;
   /**
    * @brief 時刻 t [s] における加速度 a [m/s/s]
-   * @param t 時刻 [s]
    */
   float a(const float t) const;
   /**
    * @brief 時刻 t [s] における速度 v [m/s]
-   * @param t 時刻 [s]
    */
   float v(const float t) const;
   /**
    * @brief 時刻 t [s] における位置 x [m]
-   * @param t 時刻 [s]
    */
   float x(const float t) const;
   /**
@@ -103,7 +112,7 @@ protected:
 };
 ```
 
-### ctrl::Pose
+### Pose
 
 平面上の位置および姿勢を表現する座標を表します．
 
@@ -118,7 +127,7 @@ struct Pose {
 };
 ```
 
-### ctrl::State
+### State
 
 生成した軌道をやりとりするための状態変数です．
 
@@ -136,7 +145,7 @@ struct State {
 };
 ```
 
-### ctrl::slalom::Shape
+### slalom::Shape
 
 事前設計によって得られるスラロームの形状を管理するクラスです．
 

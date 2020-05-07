@@ -27,14 +27,18 @@ Python3の勉強のためにマイクロマウスの迷路ファイルのエデ�
 
 ## ソースコード
 
-最新のソースコードは [GitHub](https://github.com/kerikun11/micromouse-mazedata) で公開しています．
+最新のソースコードは
+
+- [GitHub - kerikun11/micromouse-mazedata](https://github.com/kerikun11/micromouse-mazedata)
+  
+に公開しています．
 
 また，今回紹介するPythonによる迷路クラスは，私が普段マイクロマウスに使用しているC++によるマイクロマウス迷路ライブラリがベースになっています．
 
 C++による実装に興味がある方はそちらも合わせてご覧ください．
 
-- [C++ MicroMouse Maze Library](https://github.com/kerikun11/micromouse-maze-library)
-- [C++ MicroMouse Maze Library Reference](https://kerikeri.top/micromouse-maze-library/)
+- [GitHub - C++ MicroMouse Maze Library](https://github.com/kerikun11/micromouse-maze-library)
+- [GitHub Pages - C++ MicroMouse Maze Library Reference](https://kerikeri.top/micromouse-maze-library/)
 
 ### 執筆時点のソースコードの取得方法
 
