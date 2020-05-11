@@ -32,6 +32,22 @@
     </item>
     
     <item>
+      <title>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</title>
+      <link>https://kerikeri.top/posts/2020-05-11-esp-idf-to-platformio/</link>
+      <pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-05-11-esp-idf-to-platformio/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;ESP32 の公式開発環境は &lt;a href=&#34;https://github.com/espressif/esp-idf&#34; target=&#34;_blank&#34;&gt;ESP-IDF&lt;/a&gt;
+ ですが，コマンドライン開発環境なので初心者向けではないかもしれません．&lt;/p&gt;
+&lt;p&gt;一方，以前の記事 &lt;a href=&#34;https://kerikeri.top/posts/2018-12-22-platformio/&#34;&gt;PlatformIOでESP32の開発をしよう&lt;/a&gt;
+で紹介した &lt;a href=&#34;https://platformio.org/&#34; target=&#34;_blank&#34;&gt;PlatformIO&lt;/a&gt;
+ では，GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です．&lt;/p&gt;
+&lt;p&gt;しかしながら，ESP-IDFやGitHubなどにあるたくさんのサンプルコードは，PlatformIOで直接実行することができません．&lt;/p&gt;
+&lt;p&gt;そこで今回は，単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>マイクロマウス記事のまとめ</title>
       <link>https://kerikeri.top/works/micromouse/</link>
       <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
@@ -373,16 +389,6 @@ Cheese主催のマイクロマウス・プチ大会
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/posts/2018-06-28-esp32-power-management/</guid>
       <description>&lt;p&gt;この記事では，ESP32をバッテリー駆動するためのヒントをお届けします．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>New KERISE v4, 登場</title>
-      <link>https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/</link>
-      <pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/</guid>
-      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
-&lt;p&gt;ようやく形になった今年の新作「KERISEv4」を紹介します．&lt;/p&gt;</description>
     </item>
     
   </channel>

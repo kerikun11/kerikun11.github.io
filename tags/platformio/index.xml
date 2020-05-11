@@ -8,10 +8,26 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sat, 22 Dec 2018 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 23:11:57 +0900</lastBuildDate>
     
 	<atom:link href="https://kerikeri.top/tags/platformio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</title>
+      <link>https://kerikeri.top/posts/2020-05-11-esp-idf-to-platformio/</link>
+      <pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/posts/2020-05-11-esp-idf-to-platformio/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;ESP32 の公式開発環境は &lt;a href=&#34;https://github.com/espressif/esp-idf&#34; target=&#34;_blank&#34;&gt;ESP-IDF&lt;/a&gt;
+ ですが，コマンドライン開発環境なので初心者向けではないかもしれません．&lt;/p&gt;
+&lt;p&gt;一方，以前の記事 &lt;a href=&#34;https://kerikeri.top/posts/2018-12-22-platformio/&#34;&gt;PlatformIOでESP32の開発をしよう&lt;/a&gt;
+で紹介した &lt;a href=&#34;https://platformio.org/&#34; target=&#34;_blank&#34;&gt;PlatformIO&lt;/a&gt;
+ では，GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です．&lt;/p&gt;
+&lt;p&gt;しかしながら，ESP-IDFやGitHubなどにあるたくさんのサンプルコードは，PlatformIOで直接実行することができません．&lt;/p&gt;
+&lt;p&gt;そこで今回は，単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します．&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>PlatformIOでESP32の開発をしよう</title>

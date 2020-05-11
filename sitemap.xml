@@ -13,17 +13,47 @@
   </url>
   
   <url>
+    <loc>https://kerikeri.top/categories/</loc>
+    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kerikeri.top/posts/2020-05-11-esp-idf-to-platformio/</loc>
+    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kerikeri.top/tags/esp32/</loc>
+    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kerikeri.top/tags/platformio/</loc>
+    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kerikeri.top/post/</loc>
+    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kerikeri.top/tags/</loc>
+    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kerikeri.top/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</loc>
+    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kerikeri.top/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://kerikeri.top/tags/kerise/</loc>
-    <lastmod>2020-05-04T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kerikeri.top/tags/</loc>
     <lastmod>2020-05-04T18:00:00+09:00</lastmod>
   </url>
   
@@ -45,21 +75,6 @@
   <url>
     <loc>https://kerikeri.top/tags/%E8%BF%B7%E8%B7%AF/</loc>
     <lastmod>2020-05-04T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kerikeri.top/categories/</loc>
-    <lastmod>2020-05-04T17:16:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kerikeri.top/post/</loc>
-    <lastmod>2020-05-04T17:16:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kerikeri.top/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</loc>
-    <lastmod>2020-05-04T17:16:53+09:00</lastmod>
   </url>
   
   <url>
@@ -240,16 +255,6 @@
   <url>
     <loc>https://kerikeri.top/posts/2019-01-14-vscode-latex/</loc>
     <lastmod>2019-01-14T10:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kerikeri.top/tags/esp32/</loc>
-    <lastmod>2018-12-22T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kerikeri.top/tags/platformio/</loc>
-    <lastmod>2018-12-22T00:00:00+09:00</lastmod>
   </url>
   
   <url>
