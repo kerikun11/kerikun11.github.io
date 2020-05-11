@@ -109,9 +109,14 @@
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/posts/2020-04-07-maze-solving-algorithm/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;この記事では，
-マイクロマウス探索初心者向けに，
-マイクロマウスの迷路探索アルゴリズムに必要な処理とアルゴリズムの概要について記述する．&lt;/p&gt;</description>
+&lt;p&gt;この記事ではマイクロマウス探索初心者向けに，
+マイクロマウスの迷路探索アルゴリズムに必要な処理とアルゴリズムの概要について記述する．&lt;/p&gt;
+&lt;p&gt;なお，この記事は下記リポジトリのドキュメントの転載である．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kerikun11/micromouse-maze-library&#34; target=&#34;_blank&#34;&gt;MicroMouse Maze Library - GitHub&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;探索アルゴリズムの実装例や使用例はこのリポジトリを参照のこと．&lt;/p&gt;</description>
     </item>
     
     <item>

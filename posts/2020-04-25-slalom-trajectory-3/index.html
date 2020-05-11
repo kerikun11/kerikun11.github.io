@@ -132,18 +132,26 @@ if (!doNotTrack) {
 <li><a href="/posts/2020-04-25-slalom-trajectory-4/">なめらかなスラロームの設計④ 生成結果</a>
 </li>
 </ul>
-<h2 id="最新のソースコード">最新のソースコード</h2>
+<h2 id="ソースコードの取得">ソースコードの取得</h2>
 <p>今回紹介するソースコードは，マイクロマウス制御モジュールの一部として</p>
 <ul>
 <li><a href="https://github.com/kerikun11/micromouse-control-module" target="_blank">GitHub - kerikun11/micromouse-control-module</a>
 </li>
 </ul>
 <p>に公開しています．</p>
-<p>GitHub のコードが最新なので，そちらも合わせてご覧ください．</p>
+<p>GitHub のコードが最新なので，実際に使用する際はそちらのほうがいいかもしれません．</p>
+<h3 id="執筆時点のソースコードの取得方法">執筆時点のソースコードの取得方法</h3>
+<p>以下では，<a href="https://github.com/kerikun11/micromouse-control-module/tree/v1.0.1" target="_blank">執筆時点のソースコード</a>
+ の設計内容を説明します．</p>
+<p>GitHubのリポジトリにタグをつけたので，以下のコマンドによって下記で説明されているバージョンのソースコードを取得できます．</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git clone -b v1.0.1 https://github.com/kerikun11/micromouse-control-module.git
+<span class="nb">cd</span> micromouse-control-module
+</code></pre></div><p>zipファイルでのダウンロードは <a href="https://github.com/kerikun11/micromouse-control-module/archive/v1.0.1.zip" target="_blank">こちら</a>
+</p>
 <h2 id="cクラス設計">C++クラス設計</h2>
 <p>以下では，スラロームの軌道生成に必要なC++クラスを簡単に紹介します．</p>
-<p>これらのコードはすべて名前空間 <code>ctrl</code> に収められています．</p>
-<h3 id="ctrlacceldesigner">ctrl::AccelDesigner</h3>
+<p>これらのクラスはすべて名前空間 <code>ctrl</code> に収められています．</p>
+<h3 id="acceldesigner">AccelDesigner</h3>
 <p><a href="/posts/2018-04-29-accel-designer1">以前の記事</a>
 で紹介した，拘束条件を満たす曲線加減速の軌道を生成するクラスです．</p>
 <p>今回はこのクラスに対して，単位 [m] を [rad] とみなして使用します．</p>
@@ -175,22 +183,18 @@ if (!doNotTrack) {
                 <span class="k">const</span> <span class="kt">float</span> <span class="n">x_start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="k">const</span> <span class="kt">float</span> <span class="n">t_start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
   <span class="cm">/**
 </span><span class="cm">   * @brief 時刻 t [s] における躍度 j [m/s/s/s]
-</span><span class="cm">   * @param t 時刻 [s]
 </span><span class="cm">   */</span>
   <span class="kt">float</span> <span class="nf">j</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="n">t</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
   <span class="cm">/**
 </span><span class="cm">   * @brief 時刻 t [s] における加速度 a [m/s/s]
-</span><span class="cm">   * @param t 時刻 [s]
 </span><span class="cm">   */</span>
   <span class="kt">float</span> <span class="nf">a</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="n">t</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
   <span class="cm">/**
 </span><span class="cm">   * @brief 時刻 t [s] における速度 v [m/s]
-</span><span class="cm">   * @param t 時刻 [s]
 </span><span class="cm">   */</span>
   <span class="kt">float</span> <span class="nf">v</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="n">t</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
   <span class="cm">/**
 </span><span class="cm">   * @brief 時刻 t [s] における位置 x [m]
-</span><span class="cm">   * @param t 時刻 [s]
 </span><span class="cm">   */</span>
   <span class="kt">float</span> <span class="nf">x</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="n">t</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
   <span class="cm">/**
@@ -203,7 +207,7 @@ if (!doNotTrack) {
   <span class="kt">float</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x3</span><span class="p">;</span>         <span class="cm">/**&lt; @brief 境界点の位置 [m] */</span>
   <span class="n">AccelCurve</span> <span class="n">ac</span><span class="p">,</span> <span class="n">dc</span><span class="p">;</span> <span class="cm">/**&lt; @brief 曲線加速，曲線減速オブジェクト */</span>
 <span class="p">};</span>
-</code></pre></div><h3 id="ctrlpose">ctrl::Pose</h3>
+</code></pre></div><h3 id="pose">Pose</h3>
 <p>平面上の位置および姿勢を表現する座標を表します．</p>
 <p>以下， <a href="https://github.com/kerikun11/micromouse-control-module/blob/master/include/pose.h" target="_blank">pose.h</a>
  の抜粋:</p>
@@ -213,7 +217,7 @@ if (!doNotTrack) {
 <span class="k">struct</span> <span class="nc">Pose</span> <span class="p">{</span>
   <span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">th</span><span class="p">;</span> <span class="cm">/*&lt; (x, y, theta) 成分 */</span>
 <span class="p">};</span>
-</code></pre></div><h3 id="ctrlstate">ctrl::State</h3>
+</code></pre></div><h3 id="state">State</h3>
 <p>生成した軌道をやりとりするための状態変数です．</p>
 <p>以下， <a href="https://github.com/kerikun11/micromouse-control-module/blob/master/include/state.h" target="_blank">state.h</a>
  の抜粋:</p>
@@ -226,7 +230,7 @@ if (!doNotTrack) {
   <span class="n">Pose</span> <span class="n">ddq</span><span class="p">;</span>
   <span class="n">Pose</span> <span class="n">dddq</span><span class="p">;</span>
 <span class="p">};</span>
-</code></pre></div><h3 id="ctrlslalomshape">ctrl::slalom::Shape</h3>
+</code></pre></div><h3 id="slalomshape">slalom::Shape</h3>
 <p>事前設計によって得られるスラロームの形状を管理するクラスです．</p>
 <p>事前に各ターンごとの <code>Shape</code> オブジェクトを生成することになります．</p>
 <p>コンストラクタが2つあり，生成済みのスラローム形状を代入するものと，拘束条件を与えてスラローム形状を生成するものがあります．</p>
@@ -518,13 +522,17 @@ if (!doNotTrack) {
         <li><a href="#なめらかなスラロームの設計-目次">なめらかなスラロームの設計 目次</a></li>
       </ul>
     </li>
-    <li><a href="#最新のソースコード">最新のソースコード</a></li>
+    <li><a href="#ソースコードの取得">ソースコードの取得</a>
+      <ul>
+        <li><a href="#執筆時点のソースコードの取得方法">執筆時点のソースコードの取得方法</a></li>
+      </ul>
+    </li>
     <li><a href="#cクラス設計">C++クラス設計</a>
       <ul>
-        <li><a href="#ctrlacceldesigner">ctrl::AccelDesigner</a></li>
-        <li><a href="#ctrlpose">ctrl::Pose</a></li>
-        <li><a href="#ctrlstate">ctrl::State</a></li>
-        <li><a href="#ctrlslalomshape">ctrl::slalom::Shape</a></li>
+        <li><a href="#acceldesigner">AccelDesigner</a></li>
+        <li><a href="#pose">Pose</a></li>
+        <li><a href="#state">State</a></li>
+        <li><a href="#slalomshape">slalom::Shape</a></li>
         <li><a href="#slalomtrajectory">slalom::Trajectory</a></li>
       </ul>
     </li>
