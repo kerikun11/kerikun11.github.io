@@ -9,60 +9,72 @@ tags:
 
 ## 概要
 
-FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．そこで，今回はその解決策のひとつを紹介する．
+FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．
 
 <!--more-->
 
 ## サンプルコード
 
+次のようにクラスを実装すると，C++のメンバ関数をC言語のFreeRTOSに渡すことができる．
+
 ~~~cpp
-class Hoge{
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+
+class TaskClass {
 public:
-	/** コンストラクタ.
-	*/
-	Hoge() : handle(NULL) {}
-	/** タスク生成関数.
-	FreeRTOSのTaskを新規作成し，このクラスのメンバ関数task()を割り当てる
-	*/
-	createTask(const char* name, const uint16_t stackSize, const UBaseType_t taskPriority) {
-		// タスクを生成
-		xTaskCreate([](void* obj){
-			// 引数として受け取ったthisポインタをオブジェクトにキャスト
-			static_cast<Hoge*>(obj)->task(); //< メンバ関数のtask()を実行
-		}, name, stackSize, this, taskPriority, &handle); //< 引数にはthisポインタを渡す
-	}
-	/** タスク削除関数.
-	*/
-	deleteTask() {
-		vTaskDelete(handle);
-	}
+  /* コンストラクタ */
+  TaskClass() : handle(NULL) {}
+  /*
+   * FreeRTOS のタスクを生成する関数．
+   * FreeRTOS のタスクを新規作成して，このクラスのメンバ関数 task() を割り当てる
+   */
+  void createTask(const char *name, const uint16_t stackSize,
+                  const UBaseType_t taskPriority) {
+    // タスクを生成
+    xTaskCreate(
+        [](void *this_pointer) {
+          // タスク引数として受け取った this ポインタをオブジェクトにキャストして，
+          // このクラスのメンバ関数である task() を実行
+          static_cast<TaskClass *>(this_pointer)->task();
+        },
+        name,         //< タスク名
+        stackSize,    //< スタックサイズ
+        this,         //< タスク引数には this ポインタを渡す
+        taskPriority, //< タスク優先度
+        &handle       //< タスクハンドル
+    );
+  }
+  /* タスクの削除 */
+  void deleteTask() { vTaskDelete(handle); }
 
 private:
-	TaskHandle_t handle; //< FreeRTOSのタスクハンドル
+  TaskHandle_t handle; //< FreeRTOSのタスクハンドル
 
-	/** 割り当てられる関数.
-	createTask()によりFreeRTOSのTaskが生成され，この関数が実行される．
-	*/
-	void task() {
-		while(1) {
-			// タスクでの処理
-			vTaskDelay(1000 / portTICK_RATE_MS);
-		}
-	}
+  /*
+   * 割り当てられる関数.
+   * createTask()によりFreeRTOSのTaskが生成され，この関数が実行される．
+   */
+  void task() {
+    while (1) {
+      // タスクでの処理を書く
+      // C++メンバー関数なので，メンバー変数を使用可能
+      vTaskDelay(1000 / portTICK_RATE_MS);
+    }
+  }
 };
 
 int main(int argc, char *argv[]) {
-	Hoge hoge;
-	hoge.createTask("TaskName", 1024, 1); //< スタックサイズ1024バイト，優先度1
+  TaskClass task;
+  task.createTask("TaskName", 1024, 1); //< スタックサイズ1024バイト，優先度1
 
-	while(1){
-		// メインループでの処理
-		vTaskDelay(1000 / portTICK_RATE_MS);
-	}
+  while (1) {
+    // メインループでの処理
+    vTaskDelay(1000 / portTICK_RATE_MS);
+  }
 
-	return 0;
+  return 0;
 }
-
 ~~~
 
 ## 解説
