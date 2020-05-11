@@ -20,7 +20,7 @@
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/posts/2017-09-27-freertos-member/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．そこで，今回はその解決策のひとつを紹介する．&lt;/p&gt;</description>
+&lt;p&gt;FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．&lt;/p&gt;</description>
     </item>
     
     <item>

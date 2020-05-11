@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta property="og:title" content="FreeRTOSのTaskにC&#43;&#43;のメンバ関数を割り当てる" />
 <meta property="og:description" content="概要
-FreeRTOSはC言語で書かれているので，C&#43;&#43;のメンバ関数をそのまま渡すことができない．そこで，今回はその解決策のひとつを紹介する．" />
+FreeRTOSはC言語で書かれているので，C&#43;&#43;のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kerikeri.top/posts/2017-09-27-freertos-member/" />
 <meta property="article:published_time" content="2017-09-27T00:00:00+00:00" />
@@ -18,7 +18,7 @@ FreeRTOSはC言語で書かれているので，C&#43;&#43;のメンバ関数を
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="FreeRTOSのTaskにC&#43;&#43;のメンバ関数を割り当てる"/>
 <meta name="twitter:description" content="概要
-FreeRTOSはC言語で書かれているので，C&#43;&#43;のメンバ関数をそのまま渡すことができない．そこで，今回はその解決策のひとつを紹介する．"/>
+FreeRTOSはC言語で書かれているので，C&#43;&#43;のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．"/>
 <meta name="twitter:site" content="@kerikun11"/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -114,55 +114,66 @@ if (!doNotTrack) {
 		<a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <div class="content post__content clearfix">
 			<h2 id="概要">概要</h2>
-<p>FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．そこで，今回はその解決策のひとつを紹介する．</p>
+<p>FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．</p>
 <h2 id="サンプルコード">サンプルコード</h2>
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">class</span> <span class="nc">Hoge</span><span class="p">{</span>
+<p>次のようにクラスを実装すると，C++のメンバ関数をC言語のFreeRTOSに渡すことができる．</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span> <span class="cpf">&lt;freertos/FreeRTOS.h&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;freertos/task.h&gt;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="k">class</span> <span class="nc">TaskClass</span> <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
-	<span class="cm">/** コンストラクタ.
-</span><span class="cm">	*/</span>
-	<span class="n">Hoge</span><span class="p">()</span> <span class="o">:</span> <span class="n">handle</span><span class="p">(</span><span class="nb">NULL</span><span class="p">)</span> <span class="p">{}</span>
-	<span class="cm">/** タスク生成関数.
-</span><span class="cm">	FreeRTOSのTaskを新規作成し，このクラスのメンバ関数task()を割り当てる
-</span><span class="cm">	*/</span>
-	<span class="n">createTask</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">uint16_t</span> <span class="n">stackSize</span><span class="p">,</span> <span class="k">const</span> <span class="n">UBaseType_t</span> <span class="n">taskPriority</span><span class="p">)</span> <span class="p">{</span>
-		<span class="c1">// タスクを生成
-</span><span class="c1"></span>		<span class="n">xTaskCreate</span><span class="p">([](</span><span class="kt">void</span><span class="o">*</span> <span class="n">obj</span><span class="p">){</span>
-			<span class="c1">// 引数として受け取ったthisポインタをオブジェクトにキャスト
-</span><span class="c1"></span>			<span class="k">static_cast</span><span class="o">&lt;</span><span class="n">Hoge</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">task</span><span class="p">();</span> <span class="c1">//&lt; メンバ関数のtask()を実行
-</span><span class="c1"></span>		<span class="p">},</span> <span class="n">name</span><span class="p">,</span> <span class="n">stackSize</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="n">taskPriority</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">handle</span><span class="p">);</span> <span class="c1">//&lt; 引数にはthisポインタを渡す
-</span><span class="c1"></span>	<span class="p">}</span>
-	<span class="cm">/** タスク削除関数.
-</span><span class="cm">	*/</span>
-	<span class="n">deleteTask</span><span class="p">()</span> <span class="p">{</span>
-		<span class="n">vTaskDelete</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span>
-	<span class="p">}</span>
+  <span class="cm">/* コンストラクタ */</span>
+  <span class="n">TaskClass</span><span class="p">()</span> <span class="o">:</span> <span class="n">handle</span><span class="p">(</span><span class="nb">NULL</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="cm">/*
+</span><span class="cm">   * FreeRTOS のタスクを生成する関数．
+</span><span class="cm">   * FreeRTOS のタスクを新規作成して，このクラスのメンバ関数 task() を割り当てる
+</span><span class="cm">   */</span>
+  <span class="kt">void</span> <span class="nf">createTask</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="kt">uint16_t</span> <span class="n">stackSize</span><span class="p">,</span>
+                  <span class="k">const</span> <span class="n">UBaseType_t</span> <span class="n">taskPriority</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// タスクを生成
+</span><span class="c1"></span>    <span class="n">xTaskCreate</span><span class="p">(</span>
+        <span class="p">[](</span><span class="kt">void</span> <span class="o">*</span><span class="n">this_pointer</span><span class="p">)</span> <span class="p">{</span>
+          <span class="c1">// タスク引数として受け取った this ポインタをオブジェクトにキャストして，
+</span><span class="c1"></span>          <span class="c1">// このクラスのメンバ関数である task() を実行
+</span><span class="c1"></span>          <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">TaskClass</span> <span class="o">*&gt;</span><span class="p">(</span><span class="n">this_pointer</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">task</span><span class="p">();</span>
+        <span class="p">},</span>
+        <span class="n">name</span><span class="p">,</span>         <span class="c1">//&lt; タスク名
+</span><span class="c1"></span>        <span class="n">stackSize</span><span class="p">,</span>    <span class="c1">//&lt; スタックサイズ
+</span><span class="c1"></span>        <span class="k">this</span><span class="p">,</span>         <span class="c1">//&lt; タスク引数には this ポインタを渡す
+</span><span class="c1"></span>        <span class="n">taskPriority</span><span class="p">,</span> <span class="c1">//&lt; タスク優先度
+</span><span class="c1"></span>        <span class="o">&amp;</span><span class="n">handle</span>       <span class="c1">//&lt; タスクハンドル
+</span><span class="c1"></span>    <span class="p">);</span>
+  <span class="p">}</span>
+  <span class="cm">/* タスクの削除 */</span>
+  <span class="kt">void</span> <span class="nf">deleteTask</span><span class="p">()</span> <span class="p">{</span> <span class="n">vTaskDelete</span><span class="p">(</span><span class="n">handle</span><span class="p">);</span> <span class="p">}</span>
 
 <span class="k">private</span><span class="o">:</span>
-	<span class="n">TaskHandle_t</span> <span class="n">handle</span><span class="p">;</span> <span class="c1">//&lt; FreeRTOSのタスクハンドル
+  <span class="n">TaskHandle_t</span> <span class="n">handle</span><span class="p">;</span> <span class="c1">//&lt; FreeRTOSのタスクハンドル
 </span><span class="c1"></span>
-	<span class="cm">/** 割り当てられる関数.
-</span><span class="cm">	createTask()によりFreeRTOSのTaskが生成され，この関数が実行される．
-</span><span class="cm">	*/</span>
-	<span class="kt">void</span> <span class="nf">task</span><span class="p">()</span> <span class="p">{</span>
-		<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-			<span class="c1">// タスクでの処理
-</span><span class="c1"></span>			<span class="n">vTaskDelay</span><span class="p">(</span><span class="mi">1000</span> <span class="o">/</span> <span class="n">portTICK_RATE_MS</span><span class="p">);</span>
-		<span class="p">}</span>
-	<span class="p">}</span>
+  <span class="cm">/*
+</span><span class="cm">   * 割り当てられる関数.
+</span><span class="cm">   * createTask()によりFreeRTOSのTaskが生成され，この関数が実行される．
+</span><span class="cm">   */</span>
+  <span class="kt">void</span> <span class="nf">task</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// タスクでの処理を書く
+</span><span class="c1"></span>      <span class="c1">// C++メンバー関数なので，メンバー変数を使用可能
+</span><span class="c1"></span>      <span class="n">vTaskDelay</span><span class="p">(</span><span class="mi">1000</span> <span class="o">/</span> <span class="n">portTICK_RATE_MS</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
-	<span class="n">Hoge</span> <span class="n">hoge</span><span class="p">;</span>
-	<span class="n">hoge</span><span class="p">.</span><span class="n">createTask</span><span class="p">(</span><span class="s">&#34;TaskName&#34;</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">//&lt; スタックサイズ1024バイト，優先度1
+  <span class="n">TaskClass</span> <span class="n">task</span><span class="p">;</span>
+  <span class="n">task</span><span class="p">.</span><span class="n">createTask</span><span class="p">(</span><span class="s">&#34;TaskName&#34;</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">//&lt; スタックサイズ1024バイト，優先度1
 </span><span class="c1"></span>
-	<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-		<span class="c1">// メインループでの処理
-</span><span class="c1"></span>		<span class="n">vTaskDelay</span><span class="p">(</span><span class="mi">1000</span> <span class="o">/</span> <span class="n">portTICK_RATE_MS</span><span class="p">);</span>
-	<span class="p">}</span>
+  <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// メインループでの処理
+</span><span class="c1"></span>    <span class="n">vTaskDelay</span><span class="p">(</span><span class="mi">1000</span> <span class="o">/</span> <span class="n">portTICK_RATE_MS</span><span class="p">);</span>
+  <span class="p">}</span>
 
-	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-
 </code></pre></div><h2 id="解説">解説</h2>
 <p>FreeRTOSに関数を渡す際，メンバ関数は渡せないので，とりあえずラムダを使った「<code>void*</code>を引数とするstaticな関数」を渡し，引数にthisポインタを指定する．</p>
 <p>受け取ったポインタは<code>void*</code>になっているので，<code>static_cast&lt;&gt;()</code>によりクラスのポインタに直し，メンバ関数を呼ぶ．</p>
