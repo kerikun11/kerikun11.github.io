@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main class="main" role="main">
+    {{- with .Title }}
+    <header class="main__header">
+        <h1 class="main__title">{{ . }}</h1>
+    </header>
+    {{- end }}
+    {{- with .Content }}
+    <div class="content main__content clearfix">
+        {{ . }}
+    </div>
+    {{- end }}
+    <div class="content main__content clearfix">
+        {{ range (.Site.RegularPages.GroupByDate "2006") }}
+        {{ $posts := where .Pages "Type" "post" -}}
+        {{ if gt (len $posts) 0 }}
+        <h3 class="archives__year">{{ .Key }}.</h3>
+        <ul class="archives__list">
+            {{ range $posts }}
+            <li class="archives__item">
+                {{ .PublishDate.Format "01.02. " }}
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+        {{ end }}
+    </div>
+</main>
+{{ end }}
