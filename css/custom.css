@@ -24,7 +24,8 @@ body {
 .logo__title,
 .main__title,
 .list__title,
-.post__title
+.post__title,
+.archives__year
 {
 	text-shadow: 2px 2px 4px #888;
 }
@@ -157,4 +158,15 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
 	background: rgba(230, 230, 230, 0.7);
+}
+
+/* archives */
+ul.archives__list {
+	margin-left: 2em;
+}
+.archives__year {
+
+}
+.archives__item {
+	list-style: none;
 }

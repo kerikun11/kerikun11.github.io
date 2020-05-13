@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>About KERI</title>
+      <title>けり</title>
       <link>https://kerikeri.top/about/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
@@ -29,6 +29,15 @@
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://kerikeri.top/works/</guid>
       <description>今までに私が製作した作品を紹介します．詳しくはそれぞれの記事をご覧ください． マイクロマウス KERISE 2016年から マイクロマウス というロボット競技に</description>
+    </item>
+    
+    <item>
+      <title>アーカイブス</title>
+      <link>https://kerikeri.top/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://kerikeri.top/archives/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -380,15 +389,6 @@ Cheese主催のマイクロマウス・プチ大会
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p&gt;
 &lt;p&gt;自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ESP32 の Power Management 機能</title>
-      <link>https://kerikeri.top/posts/2018-06-28-esp32-power-management/</link>
-      <pubDate>Thu, 28 Jun 2018 08:50:59 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-06-28-esp32-power-management/</guid>
-      <description>&lt;p&gt;この記事では，ESP32をバッテリー駆動するためのヒントをお届けします．&lt;/p&gt;</description>
     </item>
     
   </channel>
