@@ -4,6 +4,8 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 {{- with $.Params.thumbnail -}}
 <meta property="og:image" content="{{ $.Permalink }}{{ . }}"/>
+{{- else }}
+<meta property="og:image" content="{{ .Site.Params.thumbnailDefault | absURL }}"/>
 {{- end }}
 {{ with $.Params.images }}{{ range first 6 . -}}
 <meta property="og:image" content="{{ . | absURL }}" />
