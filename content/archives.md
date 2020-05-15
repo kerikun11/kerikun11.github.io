@@ -1,6 +1,6 @@
 ---
 layout: "archives"
-title: "アーカイブス"
+title: "Article Archives"
 menu:
   main:
     name: "Archives"
