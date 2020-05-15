@@ -1,6 +1,6 @@
 ---
 date: "2020-05-05"
-title: "About KERI"
+title: "管理人"
 type: "about"
 menu:
   main:

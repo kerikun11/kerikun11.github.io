@@ -9,6 +9,7 @@ tags:
   - "ESP-WROOM-02"
   - "赤外線学習リモコン"
 thumbnail: "icon.png"
+spotlight: "true"
 ---
 
 ## IR-Stationとは
