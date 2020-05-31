@@ -1,6 +1,6 @@
 # KERI's Lab
 
-けりのホームページ [KERI's Lab](https://kerikeri.top/) のソースコード
+けりのホームページ [KERI's Lab](https://www.kerislab.jp/) のソースコード
 
 ## 構成
 

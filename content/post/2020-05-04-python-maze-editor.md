@@ -38,7 +38,7 @@ Python3の勉強のためにマイクロマウスの迷路ファイルのエデ�
 C++による実装に興味がある方はそちらも合わせてご覧ください．
 
 - [GitHub - C++ MicroMouse Maze Library](https://github.com/kerikun11/micromouse-maze-library)
-- [GitHub Pages - C++ MicroMouse Maze Library Reference](https://kerikeri.top/micromouse-maze-library/)
+- [GitHub Pages - C++ MicroMouse Maze Library Reference](https://kerikun11.github.io/micromouse-maze-library/)
 
 ### 執筆時点のソースコードの取得方法
 
