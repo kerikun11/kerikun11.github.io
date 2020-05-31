@@ -3,7 +3,7 @@
 # hugo:     v0.61.0 or higher
 # base:     https://github.com/vimux/mainroad/#configtoml-example
 
-baseurl = "https://kerikeri.top/"
+baseurl = "https://www.kerislab.jp/"
 title = "KERI's Lab"
 languageCode = "ja-jp"
 DefaultContentLanguage = "ja"
