@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>説明記事 on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link>
+    <link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link>
     <description>Recent content in 説明記事 on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,19 +10,19 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Mon, 11 May 2020 23:11:57 +0900</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</title>
-      <link>https://kerikeri.top/posts/2020-05-11-esp-idf-to-platformio/</link>
+      <link>https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/</link>
       <pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-05-11-esp-idf-to-platformio/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;ESP32 の公式開発環境は &lt;a href=&#34;https://github.com/espressif/esp-idf&#34; target=&#34;_blank&#34;&gt;ESP-IDF&lt;/a&gt;
  ですが，コマンドライン開発環境なので初心者向けではないかもしれません．&lt;/p&gt;
-&lt;p&gt;一方，以前の記事 &lt;a href=&#34;https://kerikeri.top/posts/2018-12-22-platformio/&#34;&gt;PlatformIOでESP32の開発をしよう&lt;/a&gt;
+&lt;p&gt;一方，以前の記事 &lt;a href=&#34;https://www.kerislab.jp/posts/2018-12-22-platformio/&#34;&gt;PlatformIOでESP32の開発をしよう&lt;/a&gt;
 で紹介した &lt;a href=&#34;https://platformio.org/&#34; target=&#34;_blank&#34;&gt;PlatformIO&lt;/a&gt;
  では，GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です．&lt;/p&gt;
 &lt;p&gt;しかしながら，ESP-IDFやGitHubなどにあるたくさんのサンプルコードは，PlatformIOで直接実行することができません．&lt;/p&gt;
@@ -31,56 +31,56 @@
     
     <item>
       <title>迷路クラスの設計と迷路エディタの実装 (Python)</title>
-      <link>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</link>
+      <link>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</link>
       <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;今回はPythonで記述した迷路クラスと迷路エディタの紹介です．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかなスラロームの設計④ 生成結果</title>
-      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-4/</link>
+      <link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-4/</link>
       <pubDate>Sat, 25 Apr 2020 14:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-4/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2020-04-25-slalom-trajectory-3/&#34;&gt;前回の記事&lt;/a&gt;
+      <guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-4/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;今回の記事では，
 前回までに紹介してきた内容をもとに，
-&lt;a href=&#34;https://kerikeri.top/posts/2017-09-03-pattern-of-turn/&#34;&gt;マイクロマウスの走行パターン&lt;/a&gt;
+&lt;a href=&#34;https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/&#34;&gt;マイクロマウスの走行パターン&lt;/a&gt;
 の軌道設計結果を紹介します．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかなスラロームの設計③ C&#43;&#43;による実装</title>
-      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-3/</link>
+      <link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/</link>
       <pubDate>Sat, 25 Apr 2020 13:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-3/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2020-04-25-slalom-trajectory-2/&#34;&gt;前回の記事&lt;/a&gt;
+      <guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;今回の記事では，なめらかなスラローム軌道の C++による実装例を紹介します．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかなスラロームの設計② 設計方法</title>
-      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-2/</link>
+      <link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/</link>
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2020-04-25-slalom-trajectory-1/&#34;&gt;前回の記事&lt;/a&gt;
+      <guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;今回の記事では，なめらかなスラローム軌道の具体的な設計方法を紹介します．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかなスラロームの設計① スラローム概要</title>
-      <link>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-1/</link>
+      <link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/</link>
       <pubDate>Sat, 25 Apr 2020 11:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-04-25-slalom-trajectory-1/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;今回はマイクロマウスにおけるスラローム走行のお話です．&lt;/p&gt;
 &lt;p&gt;私が使っているスラローム走行の概要とその軌道の生成方法などを紹介します．&lt;/p&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Linuxで画面を3分割して表示する</title>
-      <link>https://kerikeri.top/posts/2020-04-10-linux-split-3-windows/</link>
+      <link>https://www.kerislab.jp/posts/2020-04-10-linux-split-3-windows/</link>
       <pubDate>Fri, 10 Apr 2020 11:13:33 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-04-10-linux-split-3-windows/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-04-10-linux-split-3-windows/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;最近，縦横比が21:9のウルトラワイドモニタを購入しました．&lt;/p&gt;
 &lt;p&gt;今回は，そのモニタの画面を3列に分割してウィンドウを配置する方法を紹介します．&lt;/p&gt;
@@ -101,10 +101,10 @@
     
     <item>
       <title>マイクロマウスの迷路探索概要</title>
-      <link>https://kerikeri.top/posts/2020-04-07-maze-solving-algorithm/</link>
+      <link>https://www.kerislab.jp/posts/2020-04-07-maze-solving-algorithm/</link>
       <pubDate>Tue, 07 Apr 2020 14:10:54 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-04-07-maze-solving-algorithm/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-04-07-maze-solving-algorithm/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;この記事ではマイクロマウス探索初心者向けに，
 マイクロマウスの迷路探索アルゴリズムに必要な処理とアルゴリズムの概要について記述する．&lt;/p&gt;
@@ -118,10 +118,10 @@
     
     <item>
       <title>UNIX環境の設定ファイルの管理</title>
-      <link>https://kerikeri.top/posts/2020-04-06-dotfiles/</link>
+      <link>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</link>
       <pubDate>Mon, 06 Apr 2020 10:17:40 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-04-06-dotfiles/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;今回は、ターミナルなどの設定ファイルの管理方法の紹介です。&lt;/p&gt;
 &lt;p&gt;設定ファイルの多くは &lt;code&gt;.zshrc&lt;/code&gt; というようにドットから始まる隠しファイルになっているので、
@@ -131,10 +131,10 @@
     
     <item>
       <title>過去の全日本マイクロマウス大会32x32迷路の分析</title>
-      <link>https://kerikeri.top/posts/2020-03-08-all-japan-32x32-maze/</link>
+      <link>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</link>
       <pubDate>Sun, 08 Mar 2020 16:26:06 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-03-08-all-japan-32x32-maze/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは．けりです．&lt;br&gt;
 今回はマイクロマウスの迷路探索のお話です．&lt;/p&gt;
@@ -144,10 +144,10 @@
     
     <item>
       <title>VSCodeでTeXを書こう</title>
-      <link>https://kerikeri.top/posts/2019-01-14-vscode-latex/</link>
+      <link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link>
       <pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2019-01-14-vscode-latex/</guid>
+      <guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;今回は私が使っているTeXのエディタ環境を紹介します．&lt;/p&gt;
 &lt;p&gt;注目機能は以下の通りです．&lt;/p&gt;
@@ -165,10 +165,10 @@
     
     <item>
       <title>PlatformIOでESP32の開発をしよう</title>
-      <link>https://kerikeri.top/posts/2018-12-22-platformio/</link>
+      <link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link>
       <pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-12-22-platformio/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;この記事は &lt;a href=&#34;https://adventar.org/calendars/3279&#34; target=&#34;_blank&#34;&gt;rogy Advent Calendar 2018&lt;/a&gt;
  の
@@ -185,69 +185,69 @@
     
     <item>
       <title>吸引ファンで音を鳴らす</title>
-      <link>https://kerikeri.top/posts/2018-11-03-fan-sound/</link>
+      <link>https://www.kerislab.jp/posts/2018-11-03-fan-sound/</link>
       <pubDate>Sat, 03 Nov 2018 18:40:42 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-11-03-fan-sound/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-11-03-fan-sound/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;マイクロマウスでは，User Interface (UI) のために，スピーカーを載せることが多いです．&lt;/p&gt;
 &lt;p&gt;しかしながら，小さなマウスを作るうえで，そのわずかなスペースでも惜しいものです．&lt;/p&gt;
 &lt;p&gt;今回は，既にマウスに乗っている&lt;strong&gt;モーター&lt;/strong&gt;で音を鳴らすことができたので紹介します．&lt;/p&gt;
-&lt;p&gt;偶然ですが，&lt;a href=&#34;https://kerikeri.top/posts/2018-05-03-kerise-v4-coming/&#34;&gt;KERISEv4&lt;/a&gt;
+&lt;p&gt;偶然ですが，&lt;a href=&#34;https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/&#34;&gt;KERISEv4&lt;/a&gt;
 には(ほとんど使われていない)&lt;strong&gt;吸引ファン&lt;/strong&gt;がついていたので，今回はそれを使ってみました．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ESP32 の Power Management 機能</title>
-      <link>https://kerikeri.top/posts/2018-06-28-esp32-power-management/</link>
+      <link>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</link>
       <pubDate>Thu, 28 Jun 2018 08:50:59 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-06-28-esp32-power-management/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</guid>
       <description>&lt;p&gt;この記事では，ESP32をバッテリー駆動するためのヒントをお届けします．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかな加速の設計④ C&#43;&#43;による実装例</title>
-      <link>https://kerikeri.top/posts/2018-04-29-accel-designer4/</link>
+      <link>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</link>
       <pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer4/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer3/&#34;&gt;前回の記事&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2018-04-29-accel-designer3/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;今回の記事では，今までに示した設計法のC++による実装例を紹介します．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかな加速の設計③ 走行距離を考慮した速度設計</title>
-      <link>https://kerikeri.top/posts/2018-04-29-accel-designer3/</link>
+      <link>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</link>
       <pubDate>Sun, 29 Apr 2018 14:35:38 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer3/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</guid>
       <description>&lt;h2 id=&#34;設計2走行距離を考慮した速度設計&#34;&gt;設計2・走行距離を考慮した速度設計&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer2/&#34;&gt;前回の記事&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2018-04-29-accel-designer2/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;この記事では，設計1の曲線加速を組み合わせて，走行距離を考慮した速度設計について考えます．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかな加速の設計② 曲線加速の設計</title>
-      <link>https://kerikeri.top/posts/2018-04-29-accel-designer2/</link>
+      <link>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</link>
       <pubDate>Sun, 29 Apr 2018 13:35:38 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer2/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</guid>
       <description>&lt;h2 id=&#34;設計1加速曲線の設計&#34;&gt;設計1・加速曲線の設計&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://kerikeri.top/posts/2018-04-29-accel-designer1/&#34;&gt;前回の記事&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2018-04-29-accel-designer1/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;この記事では，前回紹介した&lt;strong&gt;設計1&lt;/strong&gt;の曲線加速の設計について考えます．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>なめらかな加速の設計① 台形加速と曲線加速</title>
-      <link>https://kerikeri.top/posts/2018-04-29-accel-designer1/</link>
+      <link>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</link>
       <pubDate>Sun, 29 Apr 2018 12:35:38 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-04-29-accel-designer1/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;今回はマイクロマウスにおける速度設計のお話です．&lt;/p&gt;
 &lt;p&gt;長い直線などを走行するとき，タイムを縮めるため，最大速度まで加速して，ターン直前に減速します．&lt;/p&gt;
@@ -258,24 +258,24 @@
     
     <item>
       <title>ESP32にSmartConfigでWiFi情報を伝える</title>
-      <link>https://kerikeri.top/posts/2018-02-16-esp32-smartconfig/</link>
+      <link>https://www.kerislab.jp/posts/2018-02-16-esp32-smartconfig/</link>
       <pubDate>Fri, 16 Feb 2018 18:51:25 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-02-16-esp32-smartconfig/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-02-16-esp32-smartconfig/</guid>
       <description>&lt;h2 id=&#34;wifiのssidとパスワードをどう伝えるか問題&#34;&gt;WiFiのSSIDとパスワードをどう伝えるか問題&lt;/h2&gt;
 &lt;p&gt;ESP32はWiFiに接続することができますが，ソースコードにWiFiのSSIDとパスワードを書いてしまうと，後から変更できません．&lt;/p&gt;
 &lt;p&gt;さらに，ソースコードを公開するときは，SSIDとパスワードの部分をいちいち削除しなければならず，けっこう面倒です．&lt;/p&gt;
-&lt;p&gt;以前は&lt;a href=&#34;https://kerikeri.top/posts/2017-07-29-esp32-wifi-sd/&#34;&gt;SDカードを使ってWiFi情報を伝える方法&lt;/a&gt;
+&lt;p&gt;以前は&lt;a href=&#34;https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/&#34;&gt;SDカードを使ってWiFi情報を伝える方法&lt;/a&gt;
 を紹介しましたが，これも割と手間でした．&lt;/p&gt;
 &lt;p&gt;SmartConfigとは，そんな悩みをスマホで解決する機能です．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ESP32のすゝめ</title>
-      <link>https://kerikeri.top/posts/2017-12-06-introduction-to-esp32/</link>
+      <link>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-12-06-introduction-to-esp32/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</guid>
       <description>&lt;p&gt;こんにちは，けりです．&lt;br&gt;
 これは &lt;a href=&#34;https://adventar.org/calendars/2361&#34; target=&#34;_blank&#34;&gt;rogy Advent Calender 2017&lt;/a&gt;
  の6日目の記事です.&lt;/p&gt;
@@ -284,20 +284,20 @@
     
     <item>
       <title>フォトリフレクタの感度をソフトで調整</title>
-      <link>https://kerikeri.top/posts/2017-10-20-2range-reflector/</link>
+      <link>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</link>
       <pubDate>Fri, 20 Oct 2017 12:15:04 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-10-20-2range-reflector/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;br&gt;
 今回は，マイクロマウスに使っているフォトリフレクタのお話です．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>マイクロマウスのターン一覧</title>
-      <link>https://kerikeri.top/posts/2017-09-03-pattern-of-turn/</link>
+      <link>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</link>
       <pubDate>Sun, 03 Sep 2017 18:32:03 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-09-03-pattern-of-turn/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;こんにちは，けりです．久々にマイクロマウスの話題です．&lt;/p&gt;
 &lt;p&gt;今回は，私のマウスで使用しているスラロームパターンを紹介します．&lt;/p&gt;</description>
@@ -305,20 +305,20 @@
     
     <item>
       <title>ESP32とMicro SDカード</title>
-      <link>https://kerikeri.top/posts/2017-07-29-esp32-wifi-sd/</link>
+      <link>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</link>
       <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-07-29-esp32-wifi-sd/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;今回は，ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ESP32でデュアルコアを使おう！</title>
-      <link>https://kerikeri.top/posts/2017-06-24-esp32-dual-core/</link>
+      <link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link>
       <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-06-24-esp32-dual-core/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;h3 id=&#34;esp32とは&#34;&gt;ESP32とは&lt;/h3&gt;
 &lt;figure &gt;
@@ -339,10 +339,10 @@
     
     <item>
       <title>ESP32の設定管理ライブラリの紹介</title>
-      <link>https://kerikeri.top/posts/2017-06-16-esp32-preferences/</link>
+      <link>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-06-16-esp32-preferences/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;みなさん，ESP32使ってますか？僕は使っています．その偉大さには驚くばかりです．&lt;/p&gt;
 &lt;p&gt;さて，今回紹介するのは，Arduino core for ESP32に含まれているライブラリ「&lt;a href=&#34;https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences&#34; target=&#34;_blank&#34;&gt;Preferences&lt;/a&gt;
@@ -354,20 +354,20 @@
     
     <item>
       <title>おすすめ PDF Viewer</title>
-      <link>https://kerikeri.top/posts/2016-06-14-pdf/</link>
+      <link>https://www.kerislab.jp/posts/2016-06-14-pdf/</link>
       <pubDate>Tue, 14 Jun 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-06-14-pdf/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-06-14-pdf/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;世の中にはたくさんのPDF Viewerがあり一長一短である．AdobeのPDF Readerが有名であるが，もっと使いやすいものを見つけたのでそれを紹介する．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>回路講習会2015</title>
-      <link>https://kerikeri.top/posts/2016-05-18-circuit-lecture/</link>
+      <link>https://www.kerislab.jp/posts/2016-05-18-circuit-lecture/</link>
       <pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-05-18-circuit-lecture/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-05-18-circuit-lecture/</guid>
       <description>&lt;h2 id=&#34;回路講習会&#34;&gt;回路講習会&lt;/h2&gt;
 &lt;p&gt;東京工業大学ロボット技術研究会の平成27年度回路講習会の資料です．&lt;br&gt;
 講習会は90分の講義を4回行いました．&lt;br&gt;
@@ -376,10 +376,10 @@
     
     <item>
       <title>KiCadで自動配線</title>
-      <link>https://kerikeri.top/posts/2016-04-22-freerouting/</link>
+      <link>https://www.kerislab.jp/posts/2016-04-22-freerouting/</link>
       <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-04-22-freerouting/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-04-22-freerouting/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;figure &gt;
 	
@@ -401,13 +401,13 @@
     
     <item>
       <title>PICでブートローダ</title>
-      <link>https://kerikeri.top/posts/2016-01-13-pic-bootloader/</link>
+      <link>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</link>
       <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-01-13-pic-bootloader/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;h3 id=&#34;pic18f27j53を使おう&#34;&gt;PIC18F27J53を使おう&lt;/h3&gt;
-&lt;p&gt;以前 &lt;a href=&#34;https://kerikeri.top/posts/2016-01-08-pic18f27j53/&#34;&gt;PIC18F27J53のすすめ&lt;/a&gt;
+&lt;p&gt;以前 &lt;a href=&#34;https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/&#34;&gt;PIC18F27J53のすすめ&lt;/a&gt;
  という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。&lt;/p&gt;
 &lt;h3 id=&#34;ブートローダとは&#34;&gt;ブートローダとは&lt;/h3&gt;
 &lt;p&gt;ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。&lt;/p&gt;
@@ -418,12 +418,12 @@
     
     <item>
       <title>PICでUSB通信</title>
-      <link>https://kerikeri.top/posts/2016-01-10-pic-usb/</link>
+      <link>https://www.kerislab.jp/posts/2016-01-10-pic-usb/</link>
       <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-01-10-pic-usb/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-01-10-pic-usb/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;以前 &lt;a href=&#34;https://kerikeri.top/posts/2016-01-08-pic18f27j53/&#34;&gt;PIC18F27J53のすすめ&lt;/a&gt;
+&lt;p&gt;以前 &lt;a href=&#34;https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/&#34;&gt;PIC18F27J53のすすめ&lt;/a&gt;
  という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。&lt;/p&gt;
 &lt;p&gt;今回紹介する方法では、USBをUARTの代わりに使えるようにするものです。PICをPCにつなぐとCOMポートが現れます。&lt;/p&gt;
 &lt;p&gt;これならUSBシリアル変換モジュールを使う必要はなくります。&lt;/p&gt;

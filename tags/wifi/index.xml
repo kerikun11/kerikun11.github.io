@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WiFi on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/wifi/</link>
+    <link>https://www.kerislab.jp/tags/wifi/</link>
     <description>Recent content in WiFi on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Wed, 29 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP-WROOM-32で秋月の売場表示</title>
-      <link>https://kerikeri.top/posts/2017-03-29-aki-shelf/</link>
+      <link>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</link>
       <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-03-29-aki-shelf/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</guid>
       <description>&lt;h2 id=&#34;まずはじめに&#34;&gt;まずはじめに&lt;/h2&gt;
 &lt;h3 id=&#34;秋月の通販サイトが進化&#34;&gt;秋月の通販サイトが進化&lt;/h3&gt;
 &lt;p&gt;少し前から，&lt;a href=&#34;http://akizukidenshi.com/&#34; target=&#34;_blank&#34;&gt;秋月の通販サイト&lt;/a&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>赤外線学習リモコン完成</title>
-      <link>https://kerikeri.top/posts/2016-07-18-ir-station/</link>
+      <link>https://www.kerislab.jp/posts/2016-07-18-ir-station/</link>
       <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-07-18-ir-station/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-07-18-ir-station/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;赤外線学習リモコンとは，市販の家電製品などのリモコンの赤外線信号を記憶し，送信することができるものです．&lt;/p&gt;
 &lt;p&gt;今回は，WiFi接続に対応した赤外線学習リモコンを作りました．スマートフォンやパソコンなどから，家電製品をコントロールすることができます．&lt;/p&gt;</description>
@@ -39,13 +39,13 @@
     
     <item>
       <title>メダカの照明 Ver.2</title>
-      <link>https://kerikeri.top/posts/2016-03-14-killifish-light-2/</link>
+      <link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link>
       <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-03-14-killifish-light-2/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;h3 id=&#34;メダカの水槽の照明&#34;&gt;メダカの水槽の照明&lt;/h3&gt;
-&lt;p&gt;以前、PICで作った&lt;a href=&#34;https://kerikeri.top/posts/2015-06-04-killifish-light/&#34;&gt;メダカの水槽の照明&lt;/a&gt;
+&lt;p&gt;以前、PICで作った&lt;a href=&#34;https://www.kerislab.jp/posts/2015-06-04-killifish-light/&#34;&gt;メダカの水槽の照明&lt;/a&gt;
 (←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p&gt;
 &lt;figure &gt;
 	
@@ -62,9 +62,9 @@
 &lt;p&gt;今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p&gt;
 &lt;p&gt;このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2015-12-30-ir-station/&#34;&gt;赤外線学習リモコン（日本語による紹介記事）&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2015-12-30-ir-station/&#34;&gt;赤外線学習リモコン（日本語による紹介記事）&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kerikeri.top/posts/2016-03-11-ir-station-reference/&#34;&gt;赤外線学習リモコン（英語によるリファレンス）&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/&#34;&gt;赤外線学習リモコン（英語によるリファレンス）&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-09607/&#34; target=&#34;_blank&#34;&gt;ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a&gt;
@@ -83,10 +83,10 @@
     
     <item>
       <title>ESP8266で赤外線学習リモコン</title>
-      <link>https://kerikeri.top/posts/2015-12-30-ir-station/</link>
+      <link>https://www.kerislab.jp/posts/2015-12-30-ir-station/</link>
       <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2015-12-30-ir-station/</guid>
+      <guid>https://www.kerislab.jp/posts/2015-12-30-ir-station/</guid>
       <description>&lt;h2 id=&#34;esp8266とは&#34;&gt;ESP8266とは&lt;/h2&gt;
 &lt;h3 id=&#34;日本の技適を取得済みwifiモジュール&#34;&gt;日本の技適を取得済みWiFiモジュール！！&lt;/h3&gt;
 &lt;p&gt;ESP8266とはWiFi制御用マイコンです。もともと中国で流行っていました。そのマイコンを内蔵したESP-WROOM-02というWiFiモジュールが日本の技適を取得したので、日本でも人気になりました。&lt;/p&gt;

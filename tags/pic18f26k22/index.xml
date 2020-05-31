@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PIC18F26K22 on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/pic18f26k22/</link>
+    <link>https://www.kerislab.jp/tags/pic18f26k22/</link>
     <description>Recent content in PIC18F26K22 on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Tue, 05 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/pic18f26k22/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/pic18f26k22/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>変なキーボード</title>
-      <link>https://kerikeri.top/posts/2016-04-05-strange-keyboard/</link>
+      <link>https://www.kerislab.jp/posts/2016-04-05-strange-keyboard/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-04-05-strange-keyboard/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-04-05-strange-keyboard/</guid>
       <description>&lt;h2 id=&#34;つくったもの&#34;&gt;つくったもの&lt;/h2&gt;
 &lt;p&gt;ASCIIキーボードとスクロール表示器を作りました。&lt;/p&gt;
 &lt;figure &gt;

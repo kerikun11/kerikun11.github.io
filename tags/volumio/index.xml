@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Volumio on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/volumio/</link>
+    <link>https://www.kerislab.jp/tags/volumio/</link>
     <description>Recent content in Volumio on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/volumio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/volumio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ラズパイでミュージックサーバー</title>
-      <link>https://kerikeri.top/posts/2016-09-01-raspi-music-server/</link>
+      <link>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-09-01-raspi-music-server/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</guid>
       <description>&lt;h2 id=&#34;作ったもの&#34;&gt;作ったもの&lt;/h2&gt;
 &lt;h3 id=&#34;ラズパイミュージックサーバー&#34;&gt;ラズパイミュージックサーバー&lt;/h3&gt;
 &lt;p&gt;スマートフォンでコントロールできるステレオコンポです．&lt;/p&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>VolumioでiTunesのプレイリストを使う</title>
-      <link>https://kerikeri.top/posts/2016-08-31-volumio-playlist/</link>
+      <link>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-08-31-volumio-playlist/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;h3 id=&#34;volumio&#34;&gt;Volumio&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Volumio&lt;/strong&gt;というミュージックサーバーソフトウェアがある．&lt;/p&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>E-mail on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/e-mail/</link>
+    <link>https://www.kerislab.jp/tags/e-mail/</link>
     <description>Recent content in E-mail on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Sat, 08 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/e-mail/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/e-mail/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP32からメールを送る</title>
-      <link>https://kerikeri.top/posts/2017-04-08-esp32-mail/</link>
+      <link>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</link>
       <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-04-08-esp32-mail/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;ESP32にはHTTPSクライアントライブラリがあるので，SMTPプロトコルを使ってGmailを送信してみました．意外にもうまくいってしまったので，共有します．&lt;/p&gt;
 &lt;p&gt;Arduino上で動くコードです．esp32-arduino-coreは最新のものを使用してください．古いものだと，SSLまわりでエラーが発生します．&lt;/p&gt;</description>

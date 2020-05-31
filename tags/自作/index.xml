@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>自作 on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/%E8%87%AA%E4%BD%9C/</link>
+    <link>https://www.kerislab.jp/tags/%E8%87%AA%E4%BD%9C/</link>
     <description>Recent content in 自作 on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Mon, 16 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/%E8%87%AA%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/%E8%87%AA%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Charge Station の紹介</title>
-      <link>https://kerikeri.top/posts/2015-02-16-charge-station-1-5/</link>
+      <link>https://www.kerislab.jp/posts/2015-02-16-charge-station-1-5/</link>
       <pubDate>Mon, 16 Feb 2015 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2015-02-16-charge-station-1-5/</guid>
+      <guid>https://www.kerislab.jp/posts/2015-02-16-charge-station-1-5/</guid>
       <description>みなさん、こんにちは。 14の けり @kerikun11 です。 春休みになりました。 みなさん、進捗どうですか？ 今日ご紹介するのは Charge Station です。 これだけだと何かわからない</description>
     </item>
     

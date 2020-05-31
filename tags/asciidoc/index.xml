@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asciidoc on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/asciidoc/</link>
+    <link>https://www.kerislab.jp/tags/asciidoc/</link>
     <description>Recent content in Asciidoc on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Thu, 26 May 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/asciidoc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/asciidoc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jekyll &amp; Asciidocでシンタックスハイライト</title>
-      <link>https://kerikeri.top/posts/2016-05-26-syntax/</link>
+      <link>https://www.kerislab.jp/posts/2016-05-26-syntax/</link>
       <pubDate>Thu, 26 May 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-05-26-syntax/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-05-26-syntax/</guid>
       <description>&lt;div class=&#34;sect1&#34;&gt;
 &lt;h2 id=&#34;_jekyllのシンタックスハイライトテーマを変更する&#34;&gt;Jekyllのシンタックスハイライトテーマを変更する&lt;/h2&gt;
 &lt;div class=&#34;sectionbody&#34;&gt;</description>

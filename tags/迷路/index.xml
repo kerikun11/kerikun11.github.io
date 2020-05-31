@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>迷路 on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/%E8%BF%B7%E8%B7%AF/</link>
+    <link>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</link>
     <description>Recent content in 迷路 on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Mon, 04 May 2020 18:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/%E8%BF%B7%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>マイクロマウス記事のまとめ</title>
-      <link>https://kerikeri.top/works/micromouse/</link>
+      <link>https://www.kerislab.jp/works/micromouse/</link>
       <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/works/micromouse/</guid>
+      <guid>https://www.kerislab.jp/works/micromouse/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;この記事では，私が書いたマイクロマウスの記事をカテゴリごとに列挙します．&lt;br&gt;
 新しい記事が追加され次第，更新していきたいと思います．&lt;/p&gt;</description>
@@ -26,20 +26,20 @@
     
     <item>
       <title>迷路クラスの設計と迷路エディタの実装 (Python)</title>
-      <link>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</link>
+      <link>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</link>
       <pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-05-04-python-maze-editor/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;今回はPythonで記述した迷路クラスと迷路エディタの紹介です．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>マイクロマウス迷路の自動生成</title>
-      <link>https://kerikeri.top/posts/2020-03-23-maze-generator/</link>
+      <link>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</link>
       <pubDate>Mon, 23 Mar 2020 17:51:37 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-03-23-maze-generator/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;マイクロマウスを作るにあたり，
@@ -52,10 +52,10 @@
     
     <item>
       <title>過去の全日本マイクロマウス大会32x32迷路の分析</title>
-      <link>https://kerikeri.top/posts/2020-03-08-all-japan-32x32-maze/</link>
+      <link>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</link>
       <pubDate>Sun, 08 Mar 2020 16:26:06 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2020-03-08-all-japan-32x32-maze/</guid>
+      <guid>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは．けりです．&lt;br&gt;
 今回はマイクロマウスの迷路探索のお話です．&lt;/p&gt;
@@ -65,10 +65,10 @@
     
     <item>
       <title>Cheese Timer の紹介</title>
-      <link>https://kerikeri.top/posts/2019-12-23-cheese-timer/</link>
+      <link>https://www.kerislab.jp/posts/2019-12-23-cheese-timer/</link>
       <pubDate>Mon, 23 Dec 2019 09:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2019-12-23-cheese-timer/</guid>
+      <guid>https://www.kerislab.jp/posts/2019-12-23-cheese-timer/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;先日，12月15日(日) に &lt;strong&gt;第3回Cheese杯&lt;/strong&gt; を開催しました．&lt;/p&gt;
@@ -80,10 +80,10 @@
     
     <item>
       <title>Cheese杯2019の迷路紹介</title>
-      <link>https://kerikeri.top/posts/2019-12-21-cheese-cup-2019-maze/</link>
+      <link>https://www.kerislab.jp/posts/2019-12-21-cheese-cup-2019-maze/</link>
       <pubDate>Sat, 21 Dec 2019 21:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2019-12-21-cheese-cup-2019-maze/</guid>
+      <guid>https://www.kerislab.jp/posts/2019-12-21-cheese-cup-2019-maze/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;先日，12/15(日) に
 Cheese主催のマイクロマウス・プチ大会
@@ -93,10 +93,10 @@ Cheese主催のマイクロマウス・プチ大会
     
     <item>
       <title>MATLABで迷路画像をパースする</title>
-      <link>https://kerikeri.top/posts/2018-07-04-maze-img-parser/</link>
+      <link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link>
       <pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2018-07-04-maze-img-parser/</guid>
+      <guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p&gt;
 &lt;p&gt;自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p&gt;</description>
@@ -104,12 +104,12 @@ Cheese主催のマイクロマウス・プチ大会
     
     <item>
       <title>マイクロマウス2017HX決勝迷路の探索結果</title>
-      <link>https://kerikeri.top/posts/2017-11-27-result-of-hx2017-maze/</link>
+      <link>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</link>
       <pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-11-27-result-of-hx2017-maze/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</guid>
       <description>&lt;p&gt;先日，&lt;a href=&#34;http://www.ntf.or.jp/mouse/micromouse2017/&#34; target=&#34;_blank&#34;&gt;全日本マイクロマウス大会2017&lt;/a&gt;
-が開催されました．結果報告の記事は&lt;a href=&#34;https://kerikeri.top/posts/2017-11-22-micromouse2017/&#34;&gt;こちら&lt;/a&gt;
+が開催されました．結果報告の記事は&lt;a href=&#34;https://www.kerislab.jp/posts/2017-11-22-micromouse2017/&#34;&gt;こちら&lt;/a&gt;
 &lt;/p&gt;
 &lt;p&gt;ハーフサイズエキスパートクラス決勝の32x32迷路は，サイズが大きすぎて(私の知る限り)どの団体も所持しておらず，年に一回全日本大会でしか見ることができない激レア迷路となっています．&lt;/p&gt;
 &lt;p&gt;今回はその迷路の探索結果についてお話しします．&lt;/p&gt;</description>
@@ -117,10 +117,10 @@ Cheese主催のマイクロマウス・プチ大会
     
     <item>
       <title>調整用の小さな迷路</title>
-      <link>https://kerikeri.top/posts/2017-11-05-small-maze/</link>
+      <link>https://www.kerislab.jp/posts/2017-11-05-small-maze/</link>
       <pubDate>Sun, 05 Nov 2017 15:26:06 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-11-05-small-maze/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-11-05-small-maze/</guid>
       <description>&lt;p&gt;こんにちは．&lt;/p&gt;
 &lt;p&gt;エクストリーム新作のKERISEv3-2を諦めてKERISEv3-1を必死に調整している，けりです．&lt;/p&gt;
 &lt;p&gt;今回は自作の調整用迷路の紹介です．&lt;/p&gt;</description>
@@ -128,33 +128,33 @@ Cheese主催のマイクロマウス・プチ大会
     
     <item>
       <title>僕の迷路クラスの紹介</title>
-      <link>https://kerikeri.top/posts/2017-11-01-maze-class/</link>
+      <link>https://www.kerislab.jp/posts/2017-11-01-maze-class/</link>
       <pubDate>Wed, 01 Nov 2017 10:31:52 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-11-01-maze-class/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-11-01-maze-class/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
 &lt;p&gt;今回もマイクロマウスの話題です．僕が使っている迷路クラスを紹介します．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ハーフサイズ迷路の自作</title>
-      <link>https://kerikeri.top/posts/2017-01-13-half-maze/</link>
+      <link>https://www.kerislab.jp/posts/2017-01-13-half-maze/</link>
       <pubDate>Fri, 13 Jan 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-01-13-half-maze/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-01-13-half-maze/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;昨年夏に始めたマイクロマウス．&lt;br&gt;
-&lt;a href=&#34;https://kerikeri.top/tags/kerisev2&#34;&gt;KERISEv2&lt;/a&gt;
+&lt;a href=&#34;https://www.kerislab.jp/tags/kerisev2&#34;&gt;KERISEv2&lt;/a&gt;
 ができてついにハーフにデビューしました！&lt;br&gt;
 しかし，自宅には迷路がないので試しに自分で作ってみることにしました．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ハーフ迷路を走ってみました！</title>
-      <link>https://kerikeri.top/posts/2017-01-12-1st-half/</link>
+      <link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link>
       <pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-01-12-1st-half/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid>
       <description>&lt;h2 id=&#34;ハーフサイズの迷路を走ってみました&#34;&gt;ハーフサイズの迷路を走ってみました&lt;/h2&gt;
 &lt;p&gt;こんにちは，けりです．&lt;br&gt;
 KERISEv2の制御が落ち着てきたので，ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p&gt;</description>

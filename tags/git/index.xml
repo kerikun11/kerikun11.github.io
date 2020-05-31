@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/git/</link>
+    <link>https://www.kerislab.jp/tags/git/</link>
     <description>Recent content in Git on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Wed, 21 Oct 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gitの使い方</title>
-      <link>https://kerikeri.top/posts/2015-10-21-git/</link>
+      <link>https://www.kerislab.jp/posts/2015-10-21-git/</link>
       <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2015-10-21-git/</guid>
+      <guid>https://www.kerislab.jp/posts/2015-10-21-git/</guid>
       <description>&lt;p&gt;ここではGitHubを使ったGitの使い方を説明する。&lt;/p&gt;
 &lt;h2 id=&#34;主なコマンド&#34;&gt;主なコマンド&lt;/h2&gt;</description>
     </item>

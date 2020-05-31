@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mbed on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/mbed/</link>
+    <link>https://www.kerislab.jp/tags/mbed/</link>
     <description>Recent content in mbed on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,18 +10,18 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/mbed/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/mbed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>KERISE v1の設計(回路編)</title>
-      <link>https://kerikeri.top/posts/2016-12-27-kerisev1/</link>
+      <link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link>
       <pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-12-27-kerisev1/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;今年の全日本マイクロマウス大会2016に出場したKERISE v1．今回はその回路設計を紹介します．&lt;/p&gt;
-&lt;p&gt;全日本マイクロマウス大会2016の結果報告は&lt;a href=&#34;https://kerikeri.top/posts/2016-11-21-micromouse2016/&#34;&gt;こちら&lt;/a&gt;
+&lt;p&gt;全日本マイクロマウス大会2016の結果報告は&lt;a href=&#34;https://www.kerislab.jp/posts/2016-11-21-micromouse2016/&#34;&gt;こちら&lt;/a&gt;
 &lt;/p&gt;
 &lt;figure &gt;
 	

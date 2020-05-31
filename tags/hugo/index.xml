@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/hugo/</link>
+    <link>https://www.kerislab.jp/tags/hugo/</link>
     <description>Recent content in Hugo on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Tue, 29 Aug 2017 09:09:01 +0900</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HPをHugoに移行しました</title>
-      <link>https://kerikeri.top/posts/2017-08-29-hugo-migration/</link>
+      <link>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</link>
       <pubDate>Tue, 29 Aug 2017 09:09:01 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2017-08-29-hugo-migration/</guid>
+      <guid>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</guid>
       <description>&lt;h2 id=&#34;以前のkeris-lab&#34;&gt;以前のKERI&amp;rsquo;s Lab&lt;/h2&gt;
 &lt;h3 id=&#34;jekyllを使っていた&#34;&gt;Jekyllを使っていた&lt;/h3&gt;
 &lt;p&gt;以前のKERI&amp;rsquo;s LabのHPは，静的ブログジェネレータである&lt;a href=&#34;https://jekyllrb-ja.github.io://jekyllrb-ja.github.io/&#34; target=&#34;_blank&#34;&gt;Jekyll&lt;/a&gt;

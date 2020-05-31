@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSH on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/ssh/</link>
+    <link>https://www.kerislab.jp/tags/ssh/</link>
     <description>Recent content in SSH on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Wed, 20 Jul 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SSHのPort Forwarding</title>
-      <link>https://kerikeri.top/posts/2016-07-20-ssh-port-forwarding/</link>
+      <link>https://www.kerislab.jp/posts/2016-07-20-ssh-port-forwarding/</link>
       <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-07-20-ssh-port-forwarding/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-07-20-ssh-port-forwarding/</guid>
       <description>&lt;h2 id=&#34;port-forwardingとは&#34;&gt;Port Forwardingとは&lt;/h2&gt;
 &lt;p&gt;SSHは通常ターミナル上で使うが，接続をlocalhostの適当なポートに転送してくれるのがPort Forwardingらしい．これにより，ブラウザからLAN内にアクセスできる．&lt;/p&gt;
 &lt;p&gt;LANの外からLAN内のルータの設定やNASなどを使えるようになるのだ．&lt;/p&gt;</description>
@@ -26,10 +26,10 @@
     
     <item>
       <title>SSHの使い方</title>
-      <link>https://kerikeri.top/posts/2015-10-31-ssh/</link>
+      <link>https://www.kerislab.jp/posts/2015-10-31-ssh/</link>
       <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2015-10-31-ssh/</guid>
+      <guid>https://www.kerislab.jp/posts/2015-10-31-ssh/</guid>
       <description>&lt;h2 id=&#34;ssh&#34;&gt;SSH&lt;/h2&gt;
 &lt;h3 id=&#34;sshとは&#34;&gt;SSHとは&lt;/h3&gt;
 &lt;p&gt;　Secure Shell。暗号や認証の技術を利用して、安全にリモートコンピュータと通信するためのプロトコル。 パスワードなどの認証部分を含むすべてのネットワーク上の通信が暗号化される。&lt;/p&gt;</description>

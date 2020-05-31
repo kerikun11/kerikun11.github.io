@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crontab on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/crontab/</link>
+    <link>https://www.kerislab.jp/tags/crontab/</link>
     <description>Recent content in Crontab on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,15 +10,15 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Sun, 04 Dec 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/crontab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/crontab/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CrontabでMyDNS.jpのIP通知</title>
-      <link>https://kerikeri.top/posts/2016-12-04-update-mydns/</link>
+      <link>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</link>
       <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/posts/2016-12-04-update-mydns/</guid>
+      <guid>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;家のIPアドレスは固定ではないのでDDNSで追いかける．&lt;/p&gt;</description>
     </item>

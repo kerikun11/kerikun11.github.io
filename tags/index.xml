@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on KERI&#39;s Lab</title>
-    <link>https://kerikeri.top/tags/</link>
+    <link>https://www.kerislab.jp/tags/</link>
     <description>Recent content in Tags on KERI&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
@@ -10,276 +10,276 @@
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
     <lastBuildDate>Mon, 11 May 2020 23:11:57 +0900</lastBuildDate>
     
-	<atom:link href="https://kerikeri.top/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.kerislab.jp/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP32</title>
-      <link>https://kerikeri.top/tags/esp32/</link>
+      <link>https://www.kerislab.jp/tags/esp32/</link>
       <pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/esp32/</guid>
+      <guid>https://www.kerislab.jp/tags/esp32/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PlatformIO</title>
-      <link>https://kerikeri.top/tags/platformio/</link>
+      <link>https://www.kerislab.jp/tags/platformio/</link>
       <pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/platformio/</guid>
+      <guid>https://www.kerislab.jp/tags/platformio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KERISE</title>
-      <link>https://kerikeri.top/tags/kerise/</link>
+      <link>https://www.kerislab.jp/tags/kerise/</link>
       <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/kerise/</guid>
+      <guid>https://www.kerislab.jp/tags/kerise/</guid>
       <description></description>
     </item>
     
     <item>
       <title>マイクロマウス</title>
-      <link>https://kerikeri.top/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</link>
+      <link>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</link>
       <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</guid>
+      <guid>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</guid>
       <description></description>
     </item>
     
     <item>
       <title>迷路</title>
-      <link>https://kerikeri.top/tags/%E8%BF%B7%E8%B7%AF/</link>
+      <link>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</link>
       <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E8%BF%B7%E8%B7%AF/</guid>
+      <guid>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>制御</title>
-      <link>https://kerikeri.top/tags/%E5%88%B6%E5%BE%A1/</link>
+      <link>https://www.kerislab.jp/tags/%E5%88%B6%E5%BE%A1/</link>
       <pubDate>Sat, 25 Apr 2020 14:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E5%88%B6%E5%BE%A1/</guid>
+      <guid>https://www.kerislab.jp/tags/%E5%88%B6%E5%BE%A1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://kerikeri.top/tags/linux/</link>
+      <link>https://www.kerislab.jp/tags/linux/</link>
       <pubDate>Fri, 24 Apr 2020 12:05:29 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/linux/</guid>
+      <guid>https://www.kerislab.jp/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ロボット</title>
-      <link>https://kerikeri.top/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/</link>
+      <link>https://www.kerislab.jp/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/</link>
       <pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/</guid>
+      <guid>https://www.kerislab.jp/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ターミナル</title>
-      <link>https://kerikeri.top/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/</link>
+      <link>https://www.kerislab.jp/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/</link>
       <pubDate>Mon, 06 Apr 2020 10:17:40 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/</guid>
+      <guid>https://www.kerislab.jp/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cheese</title>
-      <link>https://kerikeri.top/tags/cheese/</link>
+      <link>https://www.kerislab.jp/tags/cheese/</link>
       <pubDate>Fri, 28 Feb 2020 15:33:09 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/cheese/</guid>
+      <guid>https://www.kerislab.jp/tags/cheese/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ロボコン</title>
-      <link>https://kerikeri.top/tags/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/</link>
+      <link>https://www.kerislab.jp/tags/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/</link>
       <pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/</guid>
+      <guid>https://www.kerislab.jp/tags/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ロボット技術研究会</title>
-      <link>https://kerikeri.top/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E4%BC%9A/</link>
+      <link>https://www.kerislab.jp/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E4%BC%9A/</link>
       <pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E4%BC%9A/</guid>
+      <guid>https://www.kerislab.jp/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E4%BC%9A/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KiCad</title>
-      <link>https://kerikeri.top/tags/kicad/</link>
+      <link>https://www.kerislab.jp/tags/kicad/</link>
       <pubDate>Sat, 25 May 2019 13:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/kicad/</guid>
+      <guid>https://www.kerislab.jp/tags/kicad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://kerikeri.top/tags/python/</link>
+      <link>https://www.kerislab.jp/tags/python/</link>
       <pubDate>Sat, 25 May 2019 13:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/python/</guid>
+      <guid>https://www.kerislab.jp/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Latex</title>
-      <link>https://kerikeri.top/tags/latex/</link>
+      <link>https://www.kerislab.jp/tags/latex/</link>
       <pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/latex/</guid>
+      <guid>https://www.kerislab.jp/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VSCode</title>
-      <link>https://kerikeri.top/tags/vscode/</link>
+      <link>https://www.kerislab.jp/tags/vscode/</link>
       <pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/vscode/</guid>
+      <guid>https://www.kerislab.jp/tags/vscode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MATLAB</title>
-      <link>https://kerikeri.top/tags/matlab/</link>
+      <link>https://www.kerislab.jp/tags/matlab/</link>
       <pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/matlab/</guid>
+      <guid>https://www.kerislab.jp/tags/matlab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>深圳</title>
-      <link>https://kerikeri.top/tags/%E6%B7%B1%E5%9C%B3/</link>
+      <link>https://www.kerislab.jp/tags/%E6%B7%B1%E5%9C%B3/</link>
       <pubDate>Sun, 11 Mar 2018 22:04:14 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E6%B7%B1%E5%9C%B3/</guid>
+      <guid>https://www.kerislab.jp/tags/%E6%B7%B1%E5%9C%B3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PIC</title>
-      <link>https://kerikeri.top/tags/pic/</link>
+      <link>https://www.kerislab.jp/tags/pic/</link>
       <pubDate>Wed, 14 Feb 2018 22:02:45 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/pic/</guid>
+      <guid>https://www.kerislab.jp/tags/pic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nextcloud</title>
-      <link>https://kerikeri.top/tags/nextcloud/</link>
+      <link>https://www.kerislab.jp/tags/nextcloud/</link>
       <pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/nextcloud/</guid>
+      <guid>https://www.kerislab.jp/tags/nextcloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raspberry Pi</title>
-      <link>https://kerikeri.top/tags/raspberry-pi/</link>
+      <link>https://www.kerislab.jp/tags/raspberry-pi/</link>
       <pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/raspberry-pi/</guid>
+      <guid>https://www.kerislab.jp/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>サーバー</title>
-      <link>https://kerikeri.top/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
+      <link>https://www.kerislab.jp/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
       <pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</guid>
+      <guid>https://www.kerislab.jp/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ESP-WROOM-32</title>
-      <link>https://kerikeri.top/tags/esp-wroom-32/</link>
+      <link>https://www.kerislab.jp/tags/esp-wroom-32/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/esp-wroom-32/</guid>
+      <guid>https://www.kerislab.jp/tags/esp-wroom-32/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FreeRTOS</title>
-      <link>https://kerikeri.top/tags/freertos/</link>
+      <link>https://www.kerislab.jp/tags/freertos/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/freertos/</guid>
+      <guid>https://www.kerislab.jp/tags/freertos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arduino</title>
-      <link>https://kerikeri.top/tags/arduino/</link>
+      <link>https://www.kerislab.jp/tags/arduino/</link>
       <pubDate>Wed, 30 Aug 2017 10:55:38 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/arduino/</guid>
+      <guid>https://www.kerislab.jp/tags/arduino/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://kerikeri.top/tags/hugo/</link>
+      <link>https://www.kerislab.jp/tags/hugo/</link>
       <pubDate>Tue, 29 Aug 2017 09:09:01 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/hugo/</guid>
+      <guid>https://www.kerislab.jp/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Micro SD</title>
-      <link>https://kerikeri.top/tags/micro-sd/</link>
+      <link>https://www.kerislab.jp/tags/micro-sd/</link>
       <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/micro-sd/</guid>
+      <guid>https://www.kerislab.jp/tags/micro-sd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NTP</title>
-      <link>https://kerikeri.top/tags/ntp/</link>
+      <link>https://www.kerislab.jp/tags/ntp/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/ntp/</guid>
+      <guid>https://www.kerislab.jp/tags/ntp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>時計</title>
-      <link>https://kerikeri.top/tags/%E6%99%82%E8%A8%88/</link>
+      <link>https://www.kerislab.jp/tags/%E6%99%82%E8%A8%88/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E6%99%82%E8%A8%88/</guid>
+      <guid>https://www.kerislab.jp/tags/%E6%99%82%E8%A8%88/</guid>
       <description></description>
     </item>
     
     <item>
       <title>秋月</title>
-      <link>https://kerikeri.top/tags/%E7%A7%8B%E6%9C%88/</link>
+      <link>https://www.kerislab.jp/tags/%E7%A7%8B%E6%9C%88/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://kerikeri.top/tags/%E7%A7%8B%E6%9C%88/</guid>
+      <guid>https://www.kerislab.jp/tags/%E7%A7%8B%E6%9C%88/</guid>
       <description></description>
     </item>
     
