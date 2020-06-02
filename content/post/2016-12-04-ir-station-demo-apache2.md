@@ -62,7 +62,7 @@ $ sudo vim /etc/apache2/sites-available/myconf.conf
         # match this virtual host. For the default virtual host (this file) this
         # value is not decisive as it is used as a last resort host regardless.
         # However, you must set it for any further virtual host explicitly.
-        ServerName "ir-station.kerikeri.top"
+        ServerName "ir-station.kerikun11.mydns.jp"
         ServerAdmin "kerikun11@gmail.com"
         DocumentRoot "/var/ir-station/main/public"
 

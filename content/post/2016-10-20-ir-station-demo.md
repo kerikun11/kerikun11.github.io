@@ -22,13 +22,13 @@ IR-Stationについては，[IR-Stationについての記事一覧](/tags/ir-sta
 
 IR-Stationを持っていない方でもIR-Stationの操作を体験できるように，操作画面を再現したサイトを作りました．
 
-[IR-Stationのデモンストレーションサイト](http://ir-station.kerikeri.top)
+[IR-Stationのデモンストレーションサイト](http://ir-station.kerikun11.mydns.jp)
 
 <!--more-->
 
 ## 使い方
 
-  1. まずは，[デモサイト](http://ir-station.kerikeri.top)にアクセスしてください．
+  1. まずは，[デモサイト](http://ir-station.kerikun11.mydns.jp)にアクセスしてください．
   1. 画面のボタンを押すと，赤外線信号が送信されます．(デモサイトなので，実際には送信されません)
   1. 画面下部から各種機能を体験することができます．
 
