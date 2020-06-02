@@ -30,7 +30,6 @@ pygmentsCodefencesGuessSyntax = true
     location = "Earth"
 
 [Params]
-    subtitle = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Subtitle of your site. Used in site header
     description = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Site description. Used in meta description
     copyright = "KERI's Lab" # copyright holder, otherwise will use site title
     opengraph = true # Enable OpenGraph if true
@@ -48,6 +47,9 @@ pygmentsCodefencesGuessSyntax = true
     customCSS = ["css/custom.css", "/css/syntax.css"] # Include custom CSS files
     customJS = ["js/custom.js"] # Include custom JS files
     thumbnailDefault = "/img/avatar.jpg"
+
+[Params.logo]
+    subtitle = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Logo subtitle
 
 [Params.sidebar]
     home = "right" # Configure layout for home page
