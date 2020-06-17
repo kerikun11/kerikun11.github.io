@@ -4,6 +4,7 @@ title: "昔作った電子工作たち～in FRISK 編～"
 categories:
   - "作品紹介"
 tags:
+  - "FRISK"
 thumbnail: "icon.jpg"
 ---
 
@@ -33,4 +34,3 @@ thumbnail: "icon.jpg"
 ## パワーアンプ in FRISK
 
 {{< postfig src="FRISK amp.jpg" title="パワーアンプ" >}}
-

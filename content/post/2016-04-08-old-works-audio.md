@@ -4,6 +4,7 @@ title: "昔作った電子工作たち～オーディオ編～"
 categories:
   - "作品紹介"
 tags:
+  - "オーディオアンプ"
 thumbnail: "icon.jpg"
 ---
 
@@ -71,7 +72,3 @@ thumbnail: "icon.jpg"
 ### 木製スピーカ2
 
 {{< postfig src="Speaker2.jpg" title="Speaker" >}}
-
-
-
-

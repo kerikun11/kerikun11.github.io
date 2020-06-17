@@ -4,7 +4,7 @@ title: "昔作った電子工作たち～ロボット編～"
 categories:
   - "作品紹介"
 tags:
-  - "ロボコン"
+  - "ロボット"
 thumbnail: "icon.png"
 ---
 
@@ -26,4 +26,3 @@ thumbnail: "icon.png"
 {{< postfig src="Line Tracer (3).jpg" title="Line Tracer" >}}
 {{< postfig src="Line Tracer (4).jpg" title="Line Tracer" >}}
 {{< postfig src="Line Tracer (5).jpg" title="Line Tracer" >}}
-

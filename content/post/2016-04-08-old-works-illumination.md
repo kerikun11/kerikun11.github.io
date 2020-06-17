@@ -4,6 +4,8 @@ title: "昔作った電子工作たち～LEDイルミネーション～"
 categories:
   - "作品紹介"
 tags:
+  - "ドットマトリクスLED"
+  - "電光掲示板"
 thumbnail: "icon.jpg"
 ---
 
@@ -82,4 +84,3 @@ thumbnail: "icon.jpg"
 
 {{< postfig src="Traffic Light (1).jpg" title="信号機" >}}
 {{< postfig src="Traffic Light (2).jpg" title="信号機" >}}
-

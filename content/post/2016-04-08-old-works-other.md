@@ -10,9 +10,9 @@ thumbnail: "icon.jpg"
 ## 概要
 
 今回の記事では、昔作った(僕にとって)懐かしい電子工作たちを写真で簡単に紹介します。
+<!--more-->
 
 ## ヘッドライトを分解して調光機能を追加
-<!--more-->
 
 {{< postfig src="Head Light (1).jpg" title="ヘッドライト" >}}
 {{< postfig src="Head Light (2).jpg" title="ヘッドライト" >}}
@@ -42,5 +42,3 @@ thumbnail: "icon.jpg"
 {{< postfig src="Up Down Counter (1).jpg" title="アップダウンカウンタ" >}}
 {{< postfig src="Up Down Counter (2).jpg" title="アップダウンカウンタ" >}}
 {{< postfig src="Up Down Counter (3).png" title="アップダウンカウンタ" >}}
-
-

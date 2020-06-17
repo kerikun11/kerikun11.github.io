@@ -5,6 +5,8 @@ categories:
   - "作品紹介"
 tags:
   - "PIC"
+  - "ドットマトリクスLED"
+  - "電光掲示板"
 thumbnail: "icon.jpg"
 ---
 
