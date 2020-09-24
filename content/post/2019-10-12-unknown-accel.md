@@ -58,7 +58,7 @@ thumbnail: "icon.jpg"
 前向きに[ToFセンサ](https://www.st.com/ja/imaging-and-photonics-solutions/vl6180x.html)がついているので，
 それによって2マス先の壁を見ることができるのです．
 
-{{< postfig src="reflector.jpg" title="ToFセンサ" width="240px" >}}
+{{< postfig src="reflector.jpg" title="中央の長方形がToFセンサ" width="240px" >}}
 
 ## 動画
 
@@ -133,7 +133,7 @@ $$
 僕のマウスのパラメータだと，
 
 $$
-v_e = \sqrt{300^2+2*4800*90} = 976 ~\\mathrm{[mm/s]}
+v_e = \sqrt{300^2+2\*4800\*90} = 976 ~\mathrm{[mm/s]}
 $$
 
 となりました．

@@ -2,6 +2,7 @@
 body {
 	background: #228;
 	font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-size: 1em;
 }
 .header, 
 .wrapper
@@ -90,7 +91,7 @@ body {
 .list__excerpt ul>li,
 .list__excerpt ol>li
 {
-	font-size: 1em;
+	/* font-size: 1em; */
 	margin: 0;
 }
 .list__item {
@@ -100,6 +101,7 @@ body {
 	display: none;
 }
 .list__title {
+	font-size: 1.5em;
 	padding-top: 5px;
 }
 
