@@ -8,11 +8,7 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Fri, 22 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kerislab.jp/tags/%E8%87%AA%E5%8B%95%E9%85%8D%E7%B7%9A/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E8%87%AA%E5%8B%95%E9%85%8D%E7%B7%9A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KiCadで自動配線</title>
       <link>https://www.kerislab.jp/posts/2016-04-22-freerouting/</link>

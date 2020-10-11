@@ -8,11 +8,7 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sat, 08 Apr 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kerislab.jp/tags/e-mail/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 08 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/e-mail/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ESP32からメールを送る</title>
       <link>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</link>

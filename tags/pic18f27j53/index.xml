@@ -8,11 +8,7 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Mon, 12 Sep 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kerislab.jp/tags/pic18f27j53/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 12 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/pic18f27j53/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PICで省エネ時計を作る</title>
       <link>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</link>

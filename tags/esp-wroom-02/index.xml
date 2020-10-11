@@ -8,11 +8,7 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sun, 16 Oct 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kerislab.jp/tags/esp-wroom-02/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 16 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/esp-wroom-02/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IR-Station v1.5.0 アップデート</title>
       <link>https://www.kerislab.jp/posts/2016-10-16-ir-station-v1.5.0/</link>

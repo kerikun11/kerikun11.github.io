@@ -8,11 +8,7 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.kerislab.jp/tags/ft232rl/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/ft232rl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ESP-WROOM-32のブレイクアウトボード</title>
       <link>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</link>

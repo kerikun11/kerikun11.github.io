@@ -8,11 +8,7 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Mon, 11 May 2020 23:11:57 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.kerislab.jp/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 May 2020 23:11:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ESP32</title>
       <link>https://www.kerislab.jp/tags/esp32/</link>
