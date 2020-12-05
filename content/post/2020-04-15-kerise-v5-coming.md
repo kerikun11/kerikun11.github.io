@@ -12,7 +12,7 @@ thumbnail: "icon.jpg"
 
 こんにちは．けりです．
 
-新作マイクロマウス「KERISE v5」を紹介します．
+今回の記事では，新作マイクロマウス「KERISE v5」を紹介します．
 
 <!--more-->
 
@@ -20,7 +20,7 @@ thumbnail: "icon.jpg"
 
 ## New KERISE v5，登場
 
-KERISE v5は，私が制作しているマイクロマウス**KERISE**の第5作目です．
+KERISE v5は私が制作しているマイクロマウス **KERISE** の第5作目です．
 
 {{< postfig src="kerise-v5.jpg" title="KERISE v5" width="300px" >}}
 {{< postfig src="kerise-v5-1.jpg" title="KERISE v5" width="300px" >}}

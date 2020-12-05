@@ -31,7 +31,7 @@ thumbnail: "icon.png"
 ### 設定画面
 画面下方の設定画面では，以下のことができます．
 
-  1. 赤外線信号を新規登録(Recode a new Signal)
+  1. 赤外線信号を新規登録(Record a new Signal)
   1. 既存の赤外線信号の名前を変更(Rename a Signal)
   1. 赤外線信号ファイルをアップロードして新規登録(Upload a new Signal)
   1. 既存の赤外線信号ファイルを端末にダウンロード(Download a Signal)
