@@ -8,7 +8,25 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Mon, 11 May 2020 23:11:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 18:11:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ESP32 でマイクロマウスを作るメリットとデメリット</title>
+      <link>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</link>
+      <pubDate>Fri, 11 Dec 2020 18:11:57 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</guid>
+      <description>&lt;p&gt;この記事は
+&lt;a href=&#34;https://adventar.org/calendars/5829&#34; target=&#34;_blank&#34;&gt;Micro Mouse Advent Calendar 2020&lt;/a&gt;
+
+の 11 日目の記事です．&lt;/p&gt;
+&lt;p&gt;昨日の記事は，FND さんの「今年買ったもの」でした．&lt;br&gt;
+めっちゃいろんなもの買っててやっぱ社会人パワー最高ですね！！&lt;br&gt;
+ぼくもグラボほしーーー&lt;/p&gt;
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;さてさて今回の記事では，私が今までに ESP32 でマウスを作ってきてよかったことと辛かったことを紹介したいと思います．&lt;/p&gt;
+&lt;p&gt;今後 ESP32 でマウスを作ろうと思っている方の参考になれば幸いです．&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</title>
       <link>https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/</link>
@@ -99,7 +117,7 @@
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</guid>
       <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
-&lt;p&gt;新作マイクロマウス「KERISE v5」を紹介します．&lt;/p&gt;</description>
+&lt;p&gt;今回の記事では，新作マイクロマウス「KERISE v5」を紹介します．&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -378,18 +396,6 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2018-04-29-accel-designer3/&#34;&gt;前回の記事&lt;/a&gt;
 の続きです．&lt;/p&gt;
 &lt;p&gt;今回の記事では，今までに示した設計法のC++による実装例を紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>なめらかな加速の設計③ 走行距離を考慮した速度設計</title>
-      <link>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</link>
-      <pubDate>Sun, 29 Apr 2018 14:35:38 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</guid>
-      <description>&lt;h2 id=&#34;設計2走行距離を考慮した速度設計&#34;&gt;設計2・走行距離を考慮した速度設計&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2018-04-29-accel-designer2/&#34;&gt;前回の記事&lt;/a&gt;
-の続きです．&lt;/p&gt;
-&lt;p&gt;この記事では，設計1の曲線加速を組み合わせて，走行距離を考慮した速度設計について考えます．&lt;/p&gt;</description>
     </item>
     
   </channel>

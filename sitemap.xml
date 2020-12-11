@@ -18,7 +18,42 @@
   
   <url>
     <loc>https://www.kerislab.jp/categories/</loc>
-    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/tags/esp32/</loc>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</loc>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/</loc>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/post/</loc>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/tags/</loc>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</loc>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</loc>
+    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
   </url>
   
   <url>
@@ -27,32 +62,7 @@
   </url>
   
   <url>
-    <loc>https://www.kerislab.jp/tags/esp32/</loc>
-    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/</loc>
-    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.kerislab.jp/tags/platformio/</loc>
-    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/post/</loc>
-    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/tags/</loc>
-    <lastmod>2020-05-11T23:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</loc>
     <lastmod>2020-05-11T23:11:57+09:00</lastmod>
   </url>
   
@@ -63,11 +73,6 @@
   
   <url>
     <loc>https://www.kerislab.jp/work/</loc>
-    <lastmod>2020-05-04T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</loc>
     <lastmod>2020-05-04T18:00:00+09:00</lastmod>
   </url>
   
