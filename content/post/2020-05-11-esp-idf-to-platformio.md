@@ -86,7 +86,7 @@ monitor_flags= --raw
 
 `.gitignore`:
 
-```gitignore
+```sh
 # PlatformIO
 .pio
 .pioenvs
