@@ -166,6 +166,17 @@ IoT 界隈でかなり注目されているマイコンです．</p>
 <p>ちなみに，
 KERISE v1, KERISE v2 は STM32F405RGT6 マイコンを使用していましたが，
 それ以降の KERISE v3, KERISE v4, KERISE v5 では ESP32 を使っています．</p>
+<figure >
+	
+		
+		<figcaption>
+			<h4>KERISE v1 - KERISE v5</h4>
+		</figcaption>
+		
+		<img src="kerise-v1-v5.jpg" alt="KERISE v1 - KERISE v5" style="width: 360px;"/>
+	
+</figure>
+
 <h2 id="esp32-でマウスを作るメリット">ESP32 でマウスを作るメリット</h2>
 <p>まずは ESP32 でマウスを作っていてよかった点を紹介します．</p>
 <h3 id="スペックが高い">スペックが高い</h3>
@@ -186,7 +197,9 @@ KERISE v1, KERISE v2 は STM32F405RGT6 マイコンを使用していました�
 <p>例えばシステムクロック <code>std::chrono</code> やマルチスレッド <code>std::thread</code> なども使用可能です．</p>
 <p>マイコンというよりも PC のプログラムを書いているかのようにコーディングが可能です．</p>
 <h3 id="公式ドキュメントがめっちゃわかりやすい">公式ドキュメントがめっちゃわかりやすい</h3>
-<p>ESP32 は製造元の Espressif がけっこう熱心で，ドキュメントやサンプルコードがかなりわかりやすく書いてあります．</p>
+<p>ESP32 は製造元の Espressif がけっこう熱心で，<a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/index.html" target="_blank">ドキュメント</a>
+ や <a href="https://github.com/espressif/esp-idf/tree/master/examples" target="_blank">サンプルコード</a>
+ がかなりわかりやすく書いてあります．</p>
 <p>ESP32 のコードを書こうとしたとき，ググって調べることはほとんどなくて公式ドキュメントだけですべて解決してしまいます．</p>
 <h3 id="ハードフォルトの際にはコアダンプでどの部分で落ちたか教えてくれる">ハードフォルトの際にはコアダンプでどの部分で落ちたか教えてくれる</h3>
 <p>ESP32 は RTOS の組み込みやベース実装がしっかりしていて，
@@ -238,7 +251,7 @@ LED をたくさん光らせたければ I2C LED ドライバなどを使用す�
 <p>ADC 割り込みがないので仕方なくタイマー割り込みで頃合いを見計らって読み取りを行っています．</p>
 <p>また，ESP32 には ADC が 2 器ついているんですが，ADC2 は WiFi と同時に使えないという仕様で，
 使用している例がほとんどありません．</p>
-<h3 id="rtos-の使い方が若干難しい">RTOS の使い方が若干難しい</h3>
+<h3 id="rtos-に慣れないといけない">RTOS に慣れないといけない</h3>
 <p>ESP32 の Dual-Core を有効活用するには RTOS の使い方を勉強しなければなりません．</p>
 <p>また，RTOS が動いているマイコンではあまりタイマー割り込みは使わずに RTOS に時間の管理を任せるので，
 プログラムの書き方が若干変わってきます．</p>
@@ -366,7 +379,7 @@ Flash メモリのファイルシステムにデータを書き込もうとす�
         <li><a href="#消費電流と技適の問題で-wifi-が使えない">消費電流と技適の問題で WiFi が使えない</a></li>
         <li><a href="#使用できるピンが少ない">使用できるピンが少ない</a></li>
         <li><a href="#adc-の割り込みがない">ADC の割り込みがない</a></li>
-        <li><a href="#rtos-の使い方が若干難しい">RTOS の使い方が若干難しい</a></li>
+        <li><a href="#rtos-に慣れないといけない">RTOS に慣れないといけない</a></li>
         <li><a href="#flash-の書き込み時にフリーズする-">Flash の書き込み時にフリーズする (?)</a></li>
       </ul>
     </li>

@@ -8,7 +8,34 @@
     <language>ja-jp</language>
     <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
     <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Fri, 11 Dec 2020 18:11:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KERISE</title>
+      <link>https://www.kerislab.jp/tags/kerise/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://www.kerislab.jp/tags/kerise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>マイクロマウス</title>
+      <link>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>迷路</title>
+      <link>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0900</pubDate>
+      <author>kerikun11&#43;web@gmail.com (けり)</author>
+      <guid>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ESP32</title>
       <link>https://www.kerislab.jp/tags/esp32/</link>
@@ -19,38 +46,11 @@
     </item>
     
     <item>
-      <title>マイクロマウス</title>
-      <link>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</link>
-      <pubDate>Fri, 11 Dec 2020 18:11:57 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>PlatformIO</title>
       <link>https://www.kerislab.jp/tags/platformio/</link>
       <pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
       <guid>https://www.kerislab.jp/tags/platformio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>KERISE</title>
-      <link>https://www.kerislab.jp/tags/kerise/</link>
-      <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/tags/kerise/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>迷路</title>
-      <link>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</link>
-      <pubDate>Mon, 04 May 2020 18:00:00 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</guid>
       <description></description>
     </item>
     

@@ -17,6 +17,41 @@
   </url>
   
   <url>
+    <loc>https://www.kerislab.jp/</loc>
+    <lastmod>2020-12-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/tags/kerise/</loc>
+    <lastmod>2020-12-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/tags/</loc>
+    <lastmod>2020-12-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/work/</loc>
+    <lastmod>2020-12-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</loc>
+    <lastmod>2020-12-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/works/micromouse/</loc>
+    <lastmod>2020-12-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</loc>
+    <lastmod>2020-12-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.kerislab.jp/categories/</loc>
     <lastmod>2020-12-11T18:11:57+09:00</lastmod>
   </url>
@@ -32,22 +67,7 @@
   </url>
   
   <url>
-    <loc>https://www.kerislab.jp/</loc>
-    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.kerislab.jp/post/</loc>
-    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/tags/</loc>
-    <lastmod>2020-12-11T18:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/</loc>
     <lastmod>2020-12-11T18:11:57+09:00</lastmod>
   </url>
   
@@ -64,26 +84,6 @@
   <url>
     <loc>https://www.kerislab.jp/tags/platformio/</loc>
     <lastmod>2020-05-11T23:11:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/tags/kerise/</loc>
-    <lastmod>2020-05-04T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/work/</loc>
-    <lastmod>2020-05-04T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/works/micromouse/</loc>
-    <lastmod>2020-05-04T18:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.kerislab.jp/tags/%E8%BF%B7%E8%B7%AF/</loc>
-    <lastmod>2020-05-04T18:00:00+09:00</lastmod>
   </url>
   
   <url>
