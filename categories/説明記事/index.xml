@@ -390,7 +390,7 @@
     </item>
     
     <item>
-      <title>KiCadで自動配線</title>
+      <title>KiCad で自動配線</title>
       <link>https://www.kerislab.jp/posts/2016-04-22-freerouting/</link>
       <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
       <author>kerikun11&#43;web@gmail.com (けり)</author>
@@ -408,7 +408,7 @@
 &lt;/figure&gt;
 
 &lt;h3 id=&#34;自動配線ツールを使おう&#34;&gt;自動配線ツールを使おう&lt;/h3&gt;
-&lt;p&gt;KiCadが流行ってきて，使う人が増えてきている．&lt;/p&gt;
+&lt;p&gt;KiCad が流行ってきて，使う人が増えてきている．&lt;/p&gt;
 &lt;p&gt;しかし，自動配線ツールを使っている人は少ない．&lt;/p&gt;
 &lt;p&gt;それでははもったいない！！&lt;/p&gt;
 &lt;p&gt;今回は自動配線ツールの使い方を説明する．&lt;/p&gt;</description>
