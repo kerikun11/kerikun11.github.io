@@ -1,0 +1,38 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - hugo # hugo project src branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true # Fetch Hugo themes
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: Setup Asciidoctor
+        run: gem install asciidoctor
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: html
