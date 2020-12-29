@@ -1,163 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>KERISE on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/kerise/</link>
-    <description>Recent content in KERISE on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/kerise/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>マイクロマウス記事のまとめ</title>
-      <link>https://www.kerislab.jp/works/micromouse/</link>
-      <pubDate>Sat, 12 Dec 2020 00:00:00 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/works/micromouse/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;この記事では，私が書いたマイクロマウスの記事をカテゴリごとに列挙します．&lt;br&gt;
-新しい記事が追加され次第，更新していきたいと思います．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>New KERISE v5，登場</title>
-      <link>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</link>
-      <pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</guid>
-      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
-&lt;p&gt;今回の記事では，新作マイクロマウス「KERISE v5」を紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>新機能・クラッシュ後の自動復帰！</title>
-      <link>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</link>
-      <pubDate>Wed, 18 Dec 2019 00:00:00 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</guid>
-      <description>&lt;p&gt;この記事は，&lt;a href=&#34;https://adventar.org/calendars/4007&#34; target=&#34;_blank&#34;&gt;Micro Mouse Advent Calendar&lt;/a&gt;
- 18日目の記事です．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>全日本マイクロマウス2019の結果報告</title>
-      <link>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</link>
-      <pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</guid>
-      <description>&lt;p&gt;この記事は
-&lt;a href=&#34;https://adventar.org/calendars/4126&#34; target=&#34;_blank&#34;&gt;東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KERISE on KERI's Lab</title><link>https://www.kerislab.jp/tags/kerise/</link><description>Recent content in KERISE on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/kerise/index.xml" rel="self" type="application/rss+xml"/><item><title>マイクロマウス記事のまとめ</title><link>https://www.kerislab.jp/works/micromouse/</link><pubDate>Sat, 12 Dec 2020 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/works/micromouse/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>この記事では，私が書いたマイクロマウスの記事をカテゴリごとに列挙します．&lt;br>
+新しい記事が追加され次第，更新していきたいと思います．&lt;/p></description></item><item><title>New KERISE v5，登場</title><link>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</link><pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
+&lt;p>今回の記事では，新作マイクロマウス「KERISE v5」を紹介します．&lt;/p></description></item><item><title>新機能・クラッシュ後の自動復帰！</title><link>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</link><pubDate>Wed, 18 Dec 2019 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</guid><description>&lt;p>この記事は，&lt;a href="https://adventar.org/calendars/4007" target="_blank">Micro Mouse Advent Calendar&lt;/a>
+18日目の記事です．&lt;/p></description></item><item><title>全日本マイクロマウス2019の結果報告</title><link>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</link><pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</guid><description>&lt;p>この記事は
+&lt;a href="https://adventar.org/calendars/4126" target="_blank">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a>
 の
-4日目の記事です．&lt;/p&gt;
-&lt;p&gt;こんにちは．けりです．&lt;br&gt;
-今回は，2019年12月1日(日) に行われた，&lt;br&gt;
-&lt;strong&gt;第40回全日本マイクロマウス大会2019&lt;/strong&gt;の結果報告です．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>新機能・未知区間加速！</title>
-      <link>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</link>
-      <pubDate>Sat, 12 Oct 2019 01:00:00 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;こんにちは．そろそろ修論研究が佳境になってきた けり です．&lt;/p&gt;
-&lt;p&gt;今回の記事では，
+4日目の記事です．&lt;/p>
+&lt;p>こんにちは．けりです．&lt;br>
+今回は，2019年12月1日(日) に行われた，&lt;br>
+&lt;strong>第40回全日本マイクロマウス大会2019&lt;/strong>の結果報告です．&lt;/p></description></item><item><title>新機能・未知区間加速！</title><link>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</link><pubDate>Sat, 12 Oct 2019 01:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは．そろそろ修論研究が佳境になってきた けり です．&lt;/p>
+&lt;p>今回の記事では，
 マイクロマウス KERISE v4 に
 最近搭載した，
-新機能「未知区間加速」を紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>New KERISE v4, 登場</title>
-      <link>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</link>
-      <pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</guid>
-      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
-&lt;p&gt;ようやく形になった今年の新作「KERISEv4」を紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>全日本マイクロマウス2017の結果報告</title>
-      <link>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</link>
-      <pubDate>Wed, 22 Nov 2017 01:10:24 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</guid>
-      <description>&lt;p&gt;こんにちは．&lt;br&gt;
-マイクロマウス全日本大会の3日後に待ち構えていた&lt;strong&gt;卒論中間発表&lt;/strong&gt;を終えたけりです．&lt;/p&gt;
-&lt;p&gt;マウサーの皆さん，中間発表を終えた皆さん，本当にお疲れ様でした&amp;hellip;&lt;/p&gt;
-&lt;h2 id=&#34;全日本マイクロマウス2017&#34;&gt;全日本マイクロマウス2017&lt;/h2&gt;
-&lt;p&gt;さて，11月17日(金)～19日(日)の3日間，全日本マイクロマウス2017が開催されました．&lt;/p&gt;
-&lt;p&gt;僕は去年に引き続き，2回目となる参加をしてきました！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>KERISE v3 ができました！</title>
-      <link>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</link>
-      <pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</guid>
-      <description>&lt;h2 id=&#34;kerisev3&#34;&gt;KERISEv3&lt;/h2&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;KERISEv3&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src=&#34;kerisev3-front-side.jpg&#34; alt=&#34;KERISEv3&#34; style=&#34;width: 240px;&#34;/&gt;
-	
-&lt;/figure&gt;
-
-&lt;h3 id=&#34;3台目のマウス&#34;&gt;3台目のマウス&lt;/h3&gt;
-&lt;p&gt;マイクロマウスを始めて8か月目になりました．けりです．&lt;br&gt;
-作っては壊しを繰り返してはや3台目になります．なぜこんなに壊れるのでしょうか&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ハーフ迷路を走ってみました！</title>
-      <link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link>
-      <pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid>
-      <description>&lt;h2 id=&#34;ハーフサイズの迷路を走ってみました&#34;&gt;ハーフサイズの迷路を走ってみました&lt;/h2&gt;
-&lt;p&gt;こんにちは，けりです．&lt;br&gt;
-KERISEv2の制御が落ち着てきたので，ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>KERISE v2 ができました！</title>
-      <link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link>
-      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid>
-      <description>&lt;h2 id=&#34;マイクロマウスクラシックハーフ兼用マウス&#34;&gt;マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2016-11-21-micromouse2016/&#34;&gt;昨年の大会&lt;/a&gt;
-ではクラシッククラスに出場しましたが，今度はハーフにも出場したい！ということで，試しにハーフ迷路も走れる大きさのマウスを作ってみました．&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;KERISEv2&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src=&#34;with-hand.jpg&#34; alt=&#34;KERISEv2&#34; style=&#34;width: 480px;&#34;/&gt;
-	
-&lt;/figure&gt;</description>
-    </item>
-    
-    <item>
-      <title>全日本マイクロマウス2016の結果報告</title>
-      <link>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</link>
-      <pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</guid>
-      <description>&lt;h2 id=&#34;全日本マイクロマウス大会2016&#34;&gt;全日本マイクロマウス大会2016&lt;/h2&gt;
-&lt;p&gt;今年春に先輩から誘われて8月ごろから設計を始めたマイクロマウス．&lt;br&gt;
-11月に開催された全日本マイクロマウス大会2016に出場してきました！&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+新機能「未知区間加速」を紹介します．&lt;/p></description></item><item><title>New KERISE v4, 登場</title><link>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</link><pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
+&lt;p>ようやく形になった今年の新作「KERISEv4」を紹介します．&lt;/p></description></item><item><title>全日本マイクロマウス2017の結果報告</title><link>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</link><pubDate>Wed, 22 Nov 2017 01:10:24 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</guid><description>&lt;p>こんにちは．&lt;br>
+マイクロマウス全日本大会の3日後に待ち構えていた&lt;strong>卒論中間発表&lt;/strong>を終えたけりです．&lt;/p>
+&lt;p>マウサーの皆さん，中間発表を終えた皆さん，本当にお疲れ様でした&amp;hellip;&lt;/p>
+&lt;h2 id="全日本マイクロマウス2017">全日本マイクロマウス2017&lt;/h2>
+&lt;p>さて，11月17日(金)～19日(日)の3日間，全日本マイクロマウス2017が開催されました．&lt;/p>
+&lt;p>僕は去年に引き続き，2回目となる参加をしてきました！&lt;/p></description></item><item><title>KERISE v3 ができました！</title><link>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</link><pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</guid><description>&lt;h2 id="kerisev3">KERISEv3&lt;/h2>
+&lt;figure >
+&lt;figcaption>
+&lt;h4>KERISEv3&lt;/h4>
+&lt;/figcaption>
+&lt;img src="kerisev3-front-side.jpg" alt="KERISEv3" style="width: 240px;"/>
+&lt;/figure>
+&lt;h3 id="3台目のマウス">3台目のマウス&lt;/h3>
+&lt;p>マイクロマウスを始めて8か月目になりました．けりです．&lt;br>
+作っては壊しを繰り返してはや3台目になります．なぜこんなに壊れるのでしょうか&amp;hellip;&lt;/p></description></item><item><title>ハーフ迷路を走ってみました！</title><link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link><pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid><description>&lt;h2 id="ハーフサイズの迷路を走ってみました">ハーフサイズの迷路を走ってみました&lt;/h2>
+&lt;p>こんにちは，けりです．&lt;br>
+KERISEv2の制御が落ち着てきたので，ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p></description></item><item><title>KERISE v2 ができました！</title><link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link><pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid><description>&lt;h2 id="マイクロマウスクラシックハーフ兼用マウス">マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2>
+&lt;p>&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">昨年の大会&lt;/a>
+ではクラシッククラスに出場しましたが，今度はハーフにも出場したい！ということで，試しにハーフ迷路も走れる大きさのマウスを作ってみました．&lt;/p>
+&lt;figure >
+&lt;figcaption>
+&lt;h4>KERISEv2&lt;/h4>
+&lt;/figcaption>
+&lt;img src="with-hand.jpg" alt="KERISEv2" style="width: 480px;"/>
+&lt;/figure></description></item><item><title>全日本マイクロマウス2016の結果報告</title><link>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</link><pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</guid><description>&lt;h2 id="全日本マイクロマウス大会2016">全日本マイクロマウス大会2016&lt;/h2>
+&lt;p>今年春に先輩から誘われて8月ごろから設計を始めたマイクロマウス．&lt;br>
+11月に開催された全日本マイクロマウス大会2016に出場してきました！&lt;/p></description></item></channel></rss>

@@ -1,24 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Nextcloud on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/nextcloud/</link>
-    <description>Recent content in Nextcloud on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sun, 11 Feb 2018 14:58:18 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/nextcloud/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>自宅サーバーにNextcloudを導入した</title>
-      <link>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</link>
-      <pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</guid>
-      <description>&lt;p&gt;こんにちは．
-今回は久しぶりにサーバーの話題です．&lt;/p&gt;
-&lt;p&gt;自宅のサーバーにNextcloudを導入したので，それを紹介します．&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nextcloud on KERI's Lab</title><link>https://www.kerislab.jp/tags/nextcloud/</link><description>Recent content in Nextcloud on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 11 Feb 2018 14:58:18 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/nextcloud/index.xml" rel="self" type="application/rss+xml"/><item><title>自宅サーバーにNextcloudを導入した</title><link>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</link><pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</guid><description>&lt;p>こんにちは．
+今回は久しぶりにサーバーの話題です．&lt;/p>
+&lt;p>自宅のサーバーにNextcloudを導入したので，それを紹介します．&lt;/p></description></item></channel></rss>

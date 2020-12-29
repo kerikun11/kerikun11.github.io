@@ -1,327 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>備忘録 on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/categories/%E5%82%99%E5%BF%98%E9%8C%B2/</link>
-    <description>Recent content in 備忘録 on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Fri, 24 Apr 2020 12:05:29 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Manjaro Linux でデスクトップがしばしばフリーズする問題の解決方法</title>
-      <link>https://www.kerislab.jp/posts/2020-04-24-manjaro-desktop-crash-fix/</link>
-      <pubDate>Fri, 24 Apr 2020 12:05:29 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2020-04-24-manjaro-desktop-crash-fix/</guid>
-      <description>&lt;p&gt;今回の記事は，同じような不具合を抱えている方への情報共有です．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux Mint 19.3 をインストールしたら設定すること</title>
-      <link>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</link>
-      <pubDate>Tue, 07 Apr 2020 12:33:15 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;この記事では，&lt;code&gt;Linux Mint 19.3&lt;/code&gt; をクリーンインストールした際に行う自己流の設定について紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>KiCadのフットプリントをPythonで一括編集</title>
-      <link>https://www.kerislab.jp/posts/2019-05-25-kicad-script/</link>
-      <pubDate>Sat, 25 May 2019 13:00:00 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2019-05-25-kicad-script/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;KiCad の基板エディタ Pcbnew では，デフォルトでPythonスクリプトエディタが付属していて，すでにフットプリントがオブジェクトとして定義されています．&lt;/p&gt;
-&lt;p&gt;今回は私がよく使う一括変更を紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MATLABで迷路画像をパースする</title>
-      <link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link>
-      <pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid>
-      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
-&lt;p&gt;今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p&gt;
-&lt;p&gt;自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>マイクロマウス2017HX決勝迷路の探索結果</title>
-      <link>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</link>
-      <pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</guid>
-      <description>&lt;p&gt;先日，&lt;a href=&#34;http://www.ntf.or.jp/mouse/micromouse2017/&#34; target=&#34;_blank&#34;&gt;全日本マイクロマウス大会2017&lt;/a&gt;
-が開催されました．結果報告の記事は&lt;a href=&#34;https://www.kerislab.jp/posts/2017-11-22-micromouse2017/&#34;&gt;こちら&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;ハーフサイズエキスパートクラス決勝の32x32迷路は，サイズが大きすぎて(私の知る限り)どの団体も所持しておらず，年に一回全日本大会でしか見ることができない激レア迷路となっています．&lt;/p&gt;
-&lt;p&gt;今回はその迷路の探索結果についてお話しします．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>FreeRTOSのTaskにC&#43;&#43;のメンバ関数を割り当てる</title>
-      <link>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>U-Microコネクタの正体</title>
-      <link>https://www.kerislab.jp/posts/2017-07-02-u-micro-connector/</link>
-      <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-07-02-u-micro-connector/</guid>
-      <description>&lt;h2 id=&#34;u-microコネクタとは&#34;&gt;U-Microコネクタとは&lt;/h2&gt;
-&lt;p&gt;マイクロマウスでよく使われるリチウムポリマー電池「Hyperion」シリーズですが，「U-Micro」という1.27mmピッチの謎のコネクタが付属しています．それの正体がなんとなくわかったので記事にしました．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ESP32で時間取得</title>
-      <link>https://www.kerislab.jp/posts/2017-04-26-esp32-time/</link>
-      <pubDate>Wed, 26 Apr 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-04-26-esp32-time/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;今回はESP32で現在時刻を取得するサンプルコードの紹介です．&lt;/p&gt;
-&lt;p&gt;今回のコードではC++標準の時刻を合わせるので，std::time()関数で時刻を取得することができるようになります．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ESP32からメールを送る</title>
-      <link>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</link>
-      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;ESP32にはHTTPSクライアントライブラリがあるので，SMTPプロトコルを使ってGmailを送信してみました．意外にもうまくいってしまったので，共有します．&lt;/p&gt;
-&lt;p&gt;Arduino上で動くコードです．esp32-arduino-coreは最新のものを使用してください．古いものだと，SSLまわりでエラーが発生します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ESP32用UIライブラリ</title>
-      <link>https://www.kerislab.jp/posts/2017-03-26-user-interface/</link>
-      <pubDate>Sun, 26 Mar 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-03-26-user-interface/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;ESP32も徐々に使い慣れてきました．今回の記事では，ちょっとした工作には欠かせないユーザーインターフェースのコードを紹介します．&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;スピーカーから音階を鳴らすブザークラス&lt;/li&gt;
-&lt;li&gt;タクトスイッチなどのボタンを扱うボタンクラス&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;今回のコードは，ESP32用に書かれています．ご注意ください．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Apache2でIR-Stationデモ</title>
-      <link>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</link>
-      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る．&lt;/p&gt;
-&lt;p&gt;この記事は，デモサイトを作るときのメモ．&lt;br&gt;
-デモサイト紹介記事は&lt;a href=&#34;https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/&#34;&gt;こちら&lt;/a&gt;
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CrontabでMyDNS.jpのIP通知</title>
-      <link>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</link>
-      <pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;家のIPアドレスは固定ではないのでDDNSで追いかける．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PICでリアルタイムクロック</title>
-      <link>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</link>
-      <pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;PIC18F27J53は，リアルタイムクロック&amp;amp;カレンダー(RTCC)モジュールをハードウェアで持っています．今回はそれを使用するためのライブラリを作ったので紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>VolumioでiTunesのプレイリストを使う</title>
-      <link>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</link>
-      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;h3 id=&#34;volumio&#34;&gt;Volumio&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Volumio&lt;/strong&gt;というミュージックサーバーソフトウェアがある．&lt;/p&gt;
-&lt;p&gt;ラズベリーパイにVolumioのOSを書き込むだけで，ミュージックサーバーが出来上がるし，Air Playや，SMBにも対応していて，素晴らしいものだ．&lt;/p&gt;
-&lt;h3 id=&#34;プレイリスト問題&#34;&gt;プレイリスト問題&lt;/h3&gt;
-&lt;p&gt;しかし，そのプレイリストは独自の形式で，iTunesなどのプレイリストを読み込むことができず，新たに作らなくてはならない．&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;めんどくさい！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;ということで，今回は，iTunesのプレイリストをvolumioのプレイリストに変換するスクリプトを紹介する．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ブログを更新するスクリプト</title>
-      <link>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</link>
-      <pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</guid>
-      <description>&lt;h2 id=&#34;github上にあるブログを同期するシェルスクリプト&#34;&gt;github上にあるブログを同期するシェルスクリプト&lt;/h2&gt;
-&lt;p&gt;自分用のメモ&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ラズパイセットアップのコマンド群</title>
-      <link>https://www.kerislab.jp/posts/2016-08-28-raspi-setup/</link>
-      <pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-08-28-raspi-setup/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;これらの作業はすべてSSHで行う．fingなどを使ってIPアドレスを調べる．&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ssh pi@192.168.11.13
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>SSHのPort Forwarding</title>
-      <link>https://www.kerislab.jp/posts/2016-07-20-ssh-port-forwarding/</link>
-      <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-07-20-ssh-port-forwarding/</guid>
-      <description>&lt;h2 id=&#34;port-forwardingとは&#34;&gt;Port Forwardingとは&lt;/h2&gt;
-&lt;p&gt;SSHは通常ターミナル上で使うが，接続をlocalhostの適当なポートに転送してくれるのがPort Forwardingらしい．これにより，ブラウザからLAN内にアクセスできる．&lt;/p&gt;
-&lt;p&gt;LANの外からLAN内のルータの設定やNASなどを使えるようになるのだ．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ラズパイでシリアルモニタを使うには</title>
-      <link>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;ラズパイのシリアルを使うときや、ラズパイにFT232などをつないだ時にターミナルをシリアルモニタにする。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>写真から位置情報タグを削除する</title>
-      <link>https://www.kerislab.jp/posts/2016-04-08-remove-geotag/</link>
-      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-04-08-remove-geotag/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;写真をブログやSNSにアップロードするときに位置情報のタグをつけたままだと自宅を特定される可能性があり、非常に危険である。今回はそれを削除する方法を紹介する。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Sinatraでアプリケーションを作る</title>
-      <link>https://www.kerislab.jp/posts/2016-03-12-sinatra/</link>
-      <pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-03-12-sinatra/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;格安WiFiモジュールESP-WROOM-02を使って電流を計測してそれを受信し表示するアプリケーションを作りました。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi で NAS 作り</title>
-      <link>https://www.kerislab.jp/posts/2015-11-23-samba/</link>
-      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-11-23-samba/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;NASがほしい！&lt;br&gt;
-じゃあ作ろう。&lt;/p&gt;
-&lt;p&gt;スペック&lt;br&gt;
-サーバ：Raspberrypi 2 Type B&lt;br&gt;
-HDD：Western Digital 2TB 3.5 inch&lt;br&gt;
-転送速度：10MB/s（ラズパイのイーサーネットが100Baseなので仕方ない&amp;hellip;）&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ファイアウォールの設定</title>
-      <link>https://www.kerislab.jp/posts/2015-11-17-firewall/</link>
-      <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-11-17-firewall/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;h3 id=&#34;ufw&#34;&gt;ufw&lt;/h3&gt;
-&lt;p&gt;iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので，今回は初心者でも使いやすいufwというソフトを使う．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>delayやwhileを使わないI2C液晶表示プログラム</title>
-      <link>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</link>
-      <pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;秋月やaitendoで売っているI2C液晶を使っている人は多い。しかし、ほとんどのサンプルプログラムは、I2Cの通信をwhile文などにより送信完了待ちしていて、その間に（割り込みを除く）他のプログラムが実行できない。そこで今回は、I2C液晶に表示させる内容を送信バッファに入れておけば自動で送信してくれるプログラムを書く。&lt;/p&gt;
-&lt;p&gt;秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。&lt;br&gt;
-&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gK-06795/&#34; target=&#34;_blank&#34;&gt;秋月のI2C液晶(AQM0802)&lt;/a&gt;
-&lt;br&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;AQM0802&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src=&#34;AQM0802.jpg&#34; alt=&#34;AQM0802&#34; /&gt;
-	
-&lt;/figure&gt;
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>SSHの使い方</title>
-      <link>https://www.kerislab.jp/posts/2015-10-31-ssh/</link>
-      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-10-31-ssh/</guid>
-      <description>&lt;h2 id=&#34;ssh&#34;&gt;SSH&lt;/h2&gt;
-&lt;h3 id=&#34;sshとは&#34;&gt;SSHとは&lt;/h3&gt;
-&lt;p&gt;　Secure Shell。暗号や認証の技術を利用して、安全にリモートコンピュータと通信するためのプロトコル。 パスワードなどの認証部分を含むすべてのネットワーク上の通信が暗号化される。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>linkを作る「ln」コマンド</title>
-      <link>https://www.kerislab.jp/posts/2015-10-28-link/</link>
-      <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-10-28-link/</guid>
-      <description>&lt;h2 id=&#34;ハードリンクとシンボリックリンク&#34;&gt;ハードリンクとシンボリックリンク&lt;/h2&gt;
-&lt;p&gt;ハードリンクは、別名の同じファイルといえる。ターゲットとリンクの区別がなく、すべてのファイルに実体があり（ディスク容量を消費）、削除するにはすべてのファイルを削除する必要がある。
-シンボリックリンクは、いわゆるショートカットと同じで、パス情報のみを保持している。したがって、実体を削除するとシンボリックリンはエラーになる。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Gitの使い方</title>
-      <link>https://www.kerislab.jp/posts/2015-10-21-git/</link>
-      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-10-21-git/</guid>
-      <description>&lt;p&gt;ここではGitHubを使ったGitの使い方を説明する。&lt;/p&gt;
-&lt;h2 id=&#34;主なコマンド&#34;&gt;主なコマンド&lt;/h2&gt;</description>
-    </item>
-    
-    <item>
-      <title>vimの設定</title>
-      <link>https://www.kerislab.jp/posts/2015-10-07-vim/</link>
-      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-10-07-vim/</guid>
-      <description>&lt;h2 id=&#34;vim-の設定&#34;&gt;vim の設定&lt;/h2&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>備忘録 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E5%82%99%E5%BF%98%E9%8C%B2/</link><description>Recent content in 備忘録 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Fri, 24 Apr 2020 12:05:29 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>Manjaro Linux でデスクトップがしばしばフリーズする問題の解決方法</title><link>https://www.kerislab.jp/posts/2020-04-24-manjaro-desktop-crash-fix/</link><pubDate>Fri, 24 Apr 2020 12:05:29 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-04-24-manjaro-desktop-crash-fix/</guid><description>&lt;p>今回の記事は，同じような不具合を抱えている方への情報共有です．&lt;/p></description></item><item><title>Linux Mint 19.3 をインストールしたら設定すること</title><link>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</link><pubDate>Tue, 07 Apr 2020 12:33:15 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>この記事では，&lt;code>Linux Mint 19.3&lt;/code> をクリーンインストールした際に行う自己流の設定について紹介します．&lt;/p></description></item><item><title>KiCadのフットプリントをPythonで一括編集</title><link>https://www.kerislab.jp/posts/2019-05-25-kicad-script/</link><pubDate>Sat, 25 May 2019 13:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-05-25-kicad-script/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>KiCad の基板エディタ Pcbnew では，デフォルトでPythonスクリプトエディタが付属していて，すでにフットプリントがオブジェクトとして定義されています．&lt;/p>
+&lt;p>今回は私がよく使う一括変更を紹介します．&lt;/p></description></item><item><title>MATLABで迷路画像をパースする</title><link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link><pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
+&lt;p>今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p>
+&lt;p>自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p></description></item><item><title>マイクロマウス2017HX決勝迷路の探索結果</title><link>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</link><pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</guid><description>&lt;p>先日，&lt;a href="http://www.ntf.or.jp/mouse/micromouse2017/" target="_blank">全日本マイクロマウス大会2017&lt;/a>
+が開催されました．結果報告の記事は&lt;a href="https://www.kerislab.jp/posts/2017-11-22-micromouse2017/">こちら&lt;/a>
+&lt;/p>
+&lt;p>ハーフサイズエキスパートクラス決勝の32x32迷路は，サイズが大きすぎて(私の知る限り)どの団体も所持しておらず，年に一回全日本大会でしか見ることができない激レア迷路となっています．&lt;/p>
+&lt;p>今回はその迷路の探索結果についてお話しします．&lt;/p></description></item><item><title>FreeRTOSのTaskにC++のメンバ関数を割り当てる</title><link>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．&lt;/p></description></item><item><title>U-Microコネクタの正体</title><link>https://www.kerislab.jp/posts/2017-07-02-u-micro-connector/</link><pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-02-u-micro-connector/</guid><description>&lt;h2 id="u-microコネクタとは">U-Microコネクタとは&lt;/h2>
+&lt;p>マイクロマウスでよく使われるリチウムポリマー電池「Hyperion」シリーズですが，「U-Micro」という1.27mmピッチの謎のコネクタが付属しています．それの正体がなんとなくわかったので記事にしました．&lt;/p></description></item><item><title>ESP32で時間取得</title><link>https://www.kerislab.jp/posts/2017-04-26-esp32-time/</link><pubDate>Wed, 26 Apr 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-04-26-esp32-time/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>今回はESP32で現在時刻を取得するサンプルコードの紹介です．&lt;/p>
+&lt;p>今回のコードではC++標準の時刻を合わせるので，std::time()関数で時刻を取得することができるようになります．&lt;/p></description></item><item><title>ESP32からメールを送る</title><link>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</link><pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ESP32にはHTTPSクライアントライブラリがあるので，SMTPプロトコルを使ってGmailを送信してみました．意外にもうまくいってしまったので，共有します．&lt;/p>
+&lt;p>Arduino上で動くコードです．esp32-arduino-coreは最新のものを使用してください．古いものだと，SSLまわりでエラーが発生します．&lt;/p></description></item><item><title>ESP32用UIライブラリ</title><link>https://www.kerislab.jp/posts/2017-03-26-user-interface/</link><pubDate>Sun, 26 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-26-user-interface/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ESP32も徐々に使い慣れてきました．今回の記事では，ちょっとした工作には欠かせないユーザーインターフェースのコードを紹介します．&lt;/p>
+&lt;ul>
+&lt;li>スピーカーから音階を鳴らすブザークラス&lt;/li>
+&lt;li>タクトスイッチなどのボタンを扱うボタンクラス&lt;/li>
+&lt;/ul>
+&lt;p>今回のコードは，ESP32用に書かれています．ご注意ください．&lt;/p></description></item><item><title>Apache2でIR-Stationデモ</title><link>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る．&lt;/p>
+&lt;p>この記事は，デモサイトを作るときのメモ．&lt;br>
+デモサイト紹介記事は&lt;a href="https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/">こちら&lt;/a>
+&lt;/p></description></item><item><title>CrontabでMyDNS.jpのIP通知</title><link>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>家のIPアドレスは固定ではないのでDDNSで追いかける．&lt;/p></description></item><item><title>PICでリアルタイムクロック</title><link>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</link><pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>PIC18F27J53は，リアルタイムクロック&amp;amp;カレンダー(RTCC)モジュールをハードウェアで持っています．今回はそれを使用するためのライブラリを作ったので紹介します．&lt;/p></description></item><item><title>VolumioでiTunesのプレイリストを使う</title><link>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</link><pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;h3 id="volumio">Volumio&lt;/h3>
+&lt;p>&lt;strong>Volumio&lt;/strong>というミュージックサーバーソフトウェアがある．&lt;/p>
+&lt;p>ラズベリーパイにVolumioのOSを書き込むだけで，ミュージックサーバーが出来上がるし，Air Playや，SMBにも対応していて，素晴らしいものだ．&lt;/p>
+&lt;h3 id="プレイリスト問題">プレイリスト問題&lt;/h3>
+&lt;p>しかし，そのプレイリストは独自の形式で，iTunesなどのプレイリストを読み込むことができず，新たに作らなくてはならない．&lt;/p>
+&lt;p>&lt;strong>めんどくさい！&lt;/strong>&lt;/p>
+&lt;p>ということで，今回は，iTunesのプレイリストをvolumioのプレイリストに変換するスクリプトを紹介する．&lt;/p></description></item><item><title>ブログを更新するスクリプト</title><link>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</link><pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</guid><description>&lt;h2 id="github上にあるブログを同期するシェルスクリプト">github上にあるブログを同期するシェルスクリプト&lt;/h2>
+&lt;p>自分用のメモ&lt;/p></description></item><item><title>ラズパイセットアップのコマンド群</title><link>https://www.kerislab.jp/posts/2016-08-28-raspi-setup/</link><pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-28-raspi-setup/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>これらの作業はすべてSSHで行う．fingなどを使ってIPアドレスを調べる．&lt;/p>
+&lt;pre>&lt;code>$ ssh pi@192.168.11.13
+&lt;/code>&lt;/pre></description></item><item><title>SSHのPort Forwarding</title><link>https://www.kerislab.jp/posts/2016-07-20-ssh-port-forwarding/</link><pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-20-ssh-port-forwarding/</guid><description>&lt;h2 id="port-forwardingとは">Port Forwardingとは&lt;/h2>
+&lt;p>SSHは通常ターミナル上で使うが，接続をlocalhostの適当なポートに転送してくれるのがPort Forwardingらしい．これにより，ブラウザからLAN内にアクセスできる．&lt;/p>
+&lt;p>LANの外からLAN内のルータの設定やNASなどを使えるようになるのだ．&lt;/p></description></item><item><title>ラズパイでシリアルモニタを使うには</title><link>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ラズパイのシリアルを使うときや、ラズパイにFT232などをつないだ時にターミナルをシリアルモニタにする。&lt;/p></description></item><item><title>写真から位置情報タグを削除する</title><link>https://www.kerislab.jp/posts/2016-04-08-remove-geotag/</link><pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-08-remove-geotag/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>写真をブログやSNSにアップロードするときに位置情報のタグをつけたままだと自宅を特定される可能性があり、非常に危険である。今回はそれを削除する方法を紹介する。&lt;/p></description></item><item><title>Sinatraでアプリケーションを作る</title><link>https://www.kerislab.jp/posts/2016-03-12-sinatra/</link><pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-03-12-sinatra/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>格安WiFiモジュールESP-WROOM-02を使って電流を計測してそれを受信し表示するアプリケーションを作りました。&lt;/p></description></item><item><title>Raspberry Pi で NAS 作り</title><link>https://www.kerislab.jp/posts/2015-11-23-samba/</link><pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-11-23-samba/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>NASがほしい！&lt;br>
+じゃあ作ろう。&lt;/p>
+&lt;p>スペック&lt;br>
+サーバ：Raspberrypi 2 Type B&lt;br>
+HDD：Western Digital 2TB 3.5 inch&lt;br>
+転送速度：10MB/s（ラズパイのイーサーネットが100Baseなので仕方ない&amp;hellip;）&lt;/p></description></item><item><title>ファイアウォールの設定</title><link>https://www.kerislab.jp/posts/2015-11-17-firewall/</link><pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-11-17-firewall/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;h3 id="ufw">ufw&lt;/h3>
+&lt;p>iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので，今回は初心者でも使いやすいufwというソフトを使う．&lt;/p></description></item><item><title>delayやwhileを使わないI2C液晶表示プログラム</title><link>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</link><pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>秋月やaitendoで売っているI2C液晶を使っている人は多い。しかし、ほとんどのサンプルプログラムは、I2Cの通信をwhile文などにより送信完了待ちしていて、その間に（割り込みを除く）他のプログラムが実行できない。そこで今回は、I2C液晶に表示させる内容を送信バッファに入れておけば自動で送信してくれるプログラムを書く。&lt;/p>
+&lt;p>秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。&lt;br>
+&lt;a href="http://akizukidenshi.com/catalog/g/gK-06795/" target="_blank">秋月のI2C液晶(AQM0802)&lt;/a>
+&lt;br>
+&lt;figure >
+&lt;figcaption>
+&lt;h4>AQM0802&lt;/h4>
+&lt;/figcaption>
+&lt;img src="AQM0802.jpg" alt="AQM0802" />
+&lt;/figure>
+&lt;/p></description></item><item><title>SSHの使い方</title><link>https://www.kerislab.jp/posts/2015-10-31-ssh/</link><pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-10-31-ssh/</guid><description>&lt;h2 id="ssh">SSH&lt;/h2>
+&lt;h3 id="sshとは">SSHとは&lt;/h3>
+&lt;p>　Secure Shell。暗号や認証の技術を利用して、安全にリモートコンピュータと通信するためのプロトコル。 パスワードなどの認証部分を含むすべてのネットワーク上の通信が暗号化される。&lt;/p></description></item><item><title>linkを作る「ln」コマンド</title><link>https://www.kerislab.jp/posts/2015-10-28-link/</link><pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-10-28-link/</guid><description>&lt;h2 id="ハードリンクとシンボリックリンク">ハードリンクとシンボリックリンク&lt;/h2>
+&lt;p>ハードリンクは、別名の同じファイルといえる。ターゲットとリンクの区別がなく、すべてのファイルに実体があり（ディスク容量を消費）、削除するにはすべてのファイルを削除する必要がある。
+シンボリックリンクは、いわゆるショートカットと同じで、パス情報のみを保持している。したがって、実体を削除するとシンボリックリンはエラーになる。&lt;/p></description></item><item><title>Gitの使い方</title><link>https://www.kerislab.jp/posts/2015-10-21-git/</link><pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-10-21-git/</guid><description>&lt;p>ここではGitHubを使ったGitの使い方を説明する。&lt;/p>
+&lt;h2 id="主なコマンド">主なコマンド&lt;/h2></description></item><item><title>vimの設定</title><link>https://www.kerislab.jp/posts/2015-10-07-vim/</link><pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-10-07-vim/</guid><description>&lt;h2 id="vim-の設定">vim の設定&lt;/h2></description></item></channel></rss>

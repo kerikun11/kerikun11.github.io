@@ -1,38 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>時計 on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/%E6%99%82%E8%A8%88/</link>
-    <description>Recent content in 時計 on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E6%99%82%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>秋月の時計キットをNTP時計化</title>
-      <link>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</guid>
-      <description>&lt;h2 id=&#34;家の玄関で地味に役に立っていた時計&#34;&gt;家の玄関で地味に役に立っていた時計&lt;/h2&gt;
-&lt;p&gt;かなり前に秋月電子で買った&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gK-04379/&#34; target=&#34;_blank&#34;&gt;時計キット&lt;/a&gt;
-．&lt;br&gt;
-数字が大きく，遠くからでもよく見えるので自宅の玄関で地味に役立っていました．&lt;/p&gt;
-&lt;p&gt;しかし，水晶の精度がいまいちでよくズレるので，7セグの表示部だけを残してESP32によるNTP時計にアップデートしました．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PICで省エネ時計を作る</title>
-      <link>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</link>
-      <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;h3 id=&#34;picで時計&#34;&gt;PICで時計&lt;/h3&gt;
-&lt;p&gt;久しぶりにPICの話題です．しばらくESP8266やARMマイコンなど，上級のマイコンを使っていましたが，またPICを使ってみたくなりました．&lt;/p&gt;
-&lt;p&gt;他のマイコンには真似できないような超低消費電力の時計を作ってみました．&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>時計 on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E6%99%82%E8%A8%88/</link><description>Recent content in 時計 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E6%99%82%E8%A8%88/index.xml" rel="self" type="application/rss+xml"/><item><title>秋月の時計キットをNTP時計化</title><link>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</guid><description>&lt;h2 id="家の玄関で地味に役に立っていた時計">家の玄関で地味に役に立っていた時計&lt;/h2>
+&lt;p>かなり前に秋月電子で買った&lt;a href="http://akizukidenshi.com/catalog/g/gK-04379/" target="_blank">時計キット&lt;/a>
+．&lt;br>
+数字が大きく，遠くからでもよく見えるので自宅の玄関で地味に役立っていました．&lt;/p>
+&lt;p>しかし，水晶の精度がいまいちでよくズレるので，7セグの表示部だけを残してESP32によるNTP時計にアップデートしました．&lt;/p></description></item><item><title>PICで省エネ時計を作る</title><link>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</link><pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;h3 id="picで時計">PICで時計&lt;/h3>
+&lt;p>久しぶりにPICの話題です．しばらくESP8266やARMマイコンなど，上級のマイコンを使っていましたが，またPICを使ってみたくなりました．&lt;/p>
+&lt;p>他のマイコンには真似できないような超低消費電力の時計を作ってみました．&lt;/p></description></item></channel></rss>

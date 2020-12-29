@@ -1,23 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>オーディオアンプ on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A2%E3%83%B3%E3%83%97/</link>
-    <description>Recent content in オーディオアンプ on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Fri, 08 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A2%E3%83%B3%E3%83%97/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>昔作った電子工作たち～オーディオ編～</title>
-      <link>https://www.kerislab.jp/posts/2016-04-08-old-works-audio/</link>
-      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-04-08-old-works-audio/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;今回の記事では、昔作った(僕にとって)懐かしい電子工作たちを写真で簡単に紹介します。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>オーディオアンプ on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A2%E3%83%B3%E3%83%97/</link><description>Recent content in オーディオアンプ on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Fri, 08 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A2%E3%83%B3%E3%83%97/index.xml" rel="self" type="application/rss+xml"/><item><title>昔作った電子工作たち～オーディオ編～</title><link>https://www.kerislab.jp/posts/2016-04-08-old-works-audio/</link><pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-08-old-works-audio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>今回の記事では、昔作った(僕にとって)懐かしい電子工作たちを写真で簡単に紹介します。&lt;/p></description></item></channel></rss>

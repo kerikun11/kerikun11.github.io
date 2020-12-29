@@ -1,71 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>電力 on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/%E9%9B%BB%E5%8A%9B/</link>
-    <description>Recent content in 電力 on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E9%9B%BB%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ソーラー発電量モニター</title>
-      <link>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2014-09-14-solar-system/&#34;&gt;100W級ソーラーシステム&lt;/a&gt;
-の発電量を&lt;a href=&#34;https://thingspeak.com/&#34; target=&#34;_blank&#34;&gt;ThingSpeak.com&lt;/a&gt;
-というサイトに送ってグラフ化しました。&lt;/p&gt;
-&lt;p&gt;データの送信には、自作の&lt;a href=&#34;https://www.kerislab.jp/posts/2016-03-23-relay-sensor/&#34;&gt;中継型電力計&lt;/a&gt;
-を使用しています。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>昔作った電子工作たち～充電・電力編～</title>
-      <link>https://www.kerislab.jp/posts/2016-04-08-old-works-power/</link>
-      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-04-08-old-works-power/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;今回の記事では、昔作った(僕にとって)懐かしい電子工作たちを写真で簡単に紹介します。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>電力つぶやきbot</title>
-      <link>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</link>
-      <pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;h3 id=&#34;中継型電力計&#34;&gt;中継型電力計&lt;/h3&gt;
-&lt;p&gt;先日の記事で&lt;a href=&#34;https://www.kerislab.jp/posts/2016-03-23-relay-sensor/&#34;&gt;ESP-WROOM-02による中継型電力計&lt;/a&gt;
-を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p&gt;
-&lt;h3 id=&#34;何の電力をつぶやくのか&#34;&gt;何の電力をつぶやくのか&lt;/h3&gt;
-&lt;p&gt;僕の家には&lt;a href=&#34;https://www.kerislab.jp/posts/2014-09-14-solar-system/&#34;&gt;自作の100W級ソーラーシステム&lt;/a&gt;
-があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;Solar&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src=&#34;solar.jpg&#34; alt=&#34;Solar&#34; style=&#34;width: 480px;&#34;/&gt;
-	
-&lt;/figure&gt;</description>
-    </item>
-    
-    <item>
-      <title>100W級ソーラーシステムの自作</title>
-      <link>https://www.kerislab.jp/posts/2014-09-14-solar-system/</link>
-      <pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2014-09-14-solar-system/</guid>
-      <description>どーも。けり（twitter:@kerikun11）です。id研です。 夏休みにもかかわらず、バイトを入れすぎて 全然遊んでないじゃないか！ じゃ</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>電力 on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E9%9B%BB%E5%8A%9B/</link><description>Recent content in 電力 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E9%9B%BB%E5%8A%9B/index.xml" rel="self" type="application/rss+xml"/><item><title>ソーラー発電量モニター</title><link>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">100W級ソーラーシステム&lt;/a>
+の発電量を&lt;a href="https://thingspeak.com/" target="_blank">ThingSpeak.com&lt;/a>
+というサイトに送ってグラフ化しました。&lt;/p>
+&lt;p>データの送信には、自作の&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">中継型電力計&lt;/a>
+を使用しています。&lt;/p></description></item><item><title>昔作った電子工作たち～充電・電力編～</title><link>https://www.kerislab.jp/posts/2016-04-08-old-works-power/</link><pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-08-old-works-power/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>今回の記事では、昔作った(僕にとって)懐かしい電子工作たちを写真で簡単に紹介します。&lt;/p></description></item><item><title>電力つぶやきbot</title><link>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</link><pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;h3 id="中継型電力計">中継型電力計&lt;/h3>
+&lt;p>先日の記事で&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">ESP-WROOM-02による中継型電力計&lt;/a>
+を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p>
+&lt;h3 id="何の電力をつぶやくのか">何の電力をつぶやくのか&lt;/h3>
+&lt;p>僕の家には&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">自作の100W級ソーラーシステム&lt;/a>
+があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p>
+&lt;figure >
+&lt;figcaption>
+&lt;h4>Solar&lt;/h4>
+&lt;/figcaption>
+&lt;img src="solar.jpg" alt="Solar" style="width: 480px;"/>
+&lt;/figure></description></item><item><title>100W級ソーラーシステムの自作</title><link>https://www.kerislab.jp/posts/2014-09-14-solar-system/</link><pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2014-09-14-solar-system/</guid><description>どーも。けり（twitter:@kerikun11）です。id研です。 夏休みにもかかわらず、バイトを入れすぎて 全然遊んでないじゃないか！ じゃ</description></item></channel></rss>

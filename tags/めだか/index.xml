@@ -1,78 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>めだか on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/%E3%82%81%E3%81%A0%E3%81%8B/</link>
-    <description>Recent content in めだか on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Wed, 13 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%82%81%E3%81%A0%E3%81%8B/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>メダカが増えました！</title>
-      <link>https://www.kerislab.jp/posts/2016-07-13-new-fish/</link>
-      <pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-07-13-new-fish/</guid>
-      <description>&lt;h2 id=&#34;卵がいっぱい-75&#34;&gt;卵がいっぱい！！ 7/5&lt;/h2&gt;
-&lt;p&gt;暖かくなってきたこの時期，ペットのメダカにたくさんの卵ができました．すでに卵の中から目が透けていて今にも孵化しそうです！&lt;/p&gt;
-&lt;p&gt;毎日水替えをしないとカビが生えてしまうので，目が離せません！&lt;/p&gt;
-&lt;p&gt;ちなみに，カビ防止のために，卵の段階では水道水の方がいいらしいです．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>メダカの照明 Ver.2</title>
-      <link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link>
-      <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;h3 id=&#34;メダカの水槽の照明&#34;&gt;メダカの水槽の照明&lt;/h3&gt;
-&lt;p&gt;以前、PICで作った&lt;a href=&#34;https://www.kerislab.jp/posts/2015-06-04-killifish-light/&#34;&gt;メダカの水槽の照明&lt;/a&gt;
-(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;めだか&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src=&#34;fish.jpg&#34; alt=&#34;めだか&#34; /&gt;
-	
-&lt;/figure&gt;
-
-&lt;h3 id=&#34;格安wifiモジュール&#34;&gt;格安WiFiモジュール&lt;/h3&gt;
-&lt;p&gt;今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p&gt;
-&lt;p&gt;このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2015-12-30-ir-station/&#34;&gt;赤外線学習リモコン（日本語による紹介記事）&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/&#34;&gt;赤外線学習リモコン（英語によるリファレンス）&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;http://akizukidenshi.com/catalog/g/gM-09607/&#34; target=&#34;_blank&#34;&gt;ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a&gt;
-&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;ESP-WROOM-02&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src=&#34;esp-wroom-02.jpg&#34; alt=&#34;ESP-WROOM-02&#34; style=&#34;width: 240px;&#34;/&gt;
-	
-&lt;/figure&gt;</description>
-    </item>
-    
-    <item>
-      <title>メダカの照明の自作</title>
-      <link>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</link>
-      <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</guid>
-      <description>こんにちは。 けり(@kerikun11)です。 みなさん、進捗いかがですか？ 僕は、ぼちぼちです。 今回紹介するのは、 メダカの水槽の照明です。 高校</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>めだか on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E3%82%81%E3%81%A0%E3%81%8B/</link><description>Recent content in めだか on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Wed, 13 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%82%81%E3%81%A0%E3%81%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>メダカが増えました！</title><link>https://www.kerislab.jp/posts/2016-07-13-new-fish/</link><pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-13-new-fish/</guid><description>&lt;h2 id="卵がいっぱい-75">卵がいっぱい！！ 7/5&lt;/h2>
+&lt;p>暖かくなってきたこの時期，ペットのメダカにたくさんの卵ができました．すでに卵の中から目が透けていて今にも孵化しそうです！&lt;/p>
+&lt;p>毎日水替えをしないとカビが生えてしまうので，目が離せません！&lt;/p>
+&lt;p>ちなみに，カビ防止のために，卵の段階では水道水の方がいいらしいです．&lt;/p></description></item><item><title>メダカの照明 Ver.2</title><link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link><pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;h3 id="メダカの水槽の照明">メダカの水槽の照明&lt;/h3>
+&lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>
+(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
+&lt;figure >
+&lt;figcaption>
+&lt;h4>めだか&lt;/h4>
+&lt;/figcaption>
+&lt;img src="fish.jpg" alt="めだか" />
+&lt;/figure>
+&lt;h3 id="格安wifiモジュール">格安WiFiモジュール&lt;/h3>
+&lt;p>今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p>
+&lt;p>このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2015-12-30-ir-station/">赤外線学習リモコン（日本語による紹介記事）&lt;/a>
+&lt;/li>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/">赤外線学習リモコン（英語によるリファレンス）&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="_blank">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>
+&lt;/p>
+&lt;figure >
+&lt;figcaption>
+&lt;h4>ESP-WROOM-02&lt;/h4>
+&lt;/figcaption>
+&lt;img src="esp-wroom-02.jpg" alt="ESP-WROOM-02" style="width: 240px;"/>
+&lt;/figure></description></item><item><title>メダカの照明の自作</title><link>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</link><pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</guid><description>こんにちは。 けり(@kerikun11)です。 みなさん、進捗いかがですか？ 僕は、ぼちぼちです。 今回紹介するのは、 メダカの水槽の照明です。 高校</description></item></channel></rss>

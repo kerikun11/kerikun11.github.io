@@ -1,609 +1,128 @@
-<!DOCTYPE html>
-<html class="no-js" lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="google-site-verification" content="EGHRTn1Bed7L7Ntdi0a-iywpUXqKpLm_ISqeeMzi5sY" />
-	<title>新機能・クラッシュ後の自動復帰！ - KERI&#39;s Lab</title>
-	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="">
-		<meta property="og:title" content="新機能・クラッシュ後の自動復帰！" />
-<meta property="og:description" content="この記事は，Micro Mouse Advent Calendar
- 18日目の記事です．" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/" /><meta property="og:image" content="https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/icon.jpg"/>
-<meta property="article:published_time" content="2019-12-18T00:00:00+09:00" />
-<meta property="article:modified_time" content="2019-12-18T00:00:00+09:00" />
-
-		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="新機能・クラッシュ後の自動復帰！"/>
-<meta name="twitter:description" content="この記事は，Micro Mouse Advent Calendar
- 18日目の記事です．"/>
-<meta name="twitter:site" content="@kerikun11"/>
-
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/syntax.css">
-	<link rel="shortcut icon" href="/favicon.ico">
-		
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-103856564-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-</head>
-<body class="body">
-	<div class="container container--outer">
-		<header class="header">
-	<div class="container header__container">
-		
-	<div class="logo">
-		<a class="logo__link" href="/" title="KERI&#39;s Lab" rel="home">
-			<div class="logo__item logo__text">
-					<div class="logo__title">KERI&#39;s Lab</div>
-					<div class="logo__tagline">KERI&#39;s Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。</div>
-				</div>
-		</a>
-	</div>
-		
-<nav class="menu">
-	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
-	</button>
-	<ul class="menu__list">
-		<li class="menu__item">
-			<a class="menu__link" href="/">
-				
-				<span class="menu__text">Home</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/about/">
-				
-				<span class="menu__text">About</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/works/">
-				
-				<span class="menu__text">Works</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/categories/">
-				
-				<span class="menu__text">Categories</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/tags/">
-				
-				<span class="menu__text">Tags</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/archives/">
-				
-				<span class="menu__text">Archives</span>
-				
-			</a>
-		</li>
-	</ul>
-</nav>
-
-	</div>
-</header>
-		<div class="wrapper flex">
-			<div class="primary">
-			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<figure class="post__thumbnail">
-				<img src="icon.jpg" alt="新機能・クラッシュ後の自動復帰！">
-			</figure>
-			<h1 class="post__title">新機能・クラッシュ後の自動復帰！</h1>
-			<div class="post__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-12-18T00:00:00&#43;09:00">2019-12-18</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/" rel="category">作品紹介</a>
-	</span>
-</div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg><span class="meta__text"><a class="meta__link" href="/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/" rel="category">マイクロマウス</a>, <a class="meta__link" href="/tags/kerise/" rel="category">KERISE</a>
-	</span>
-</div></div>
-		</header>
-		<a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<div class="content post__content clearfix">
-			<p>この記事は，<a href="https://adventar.org/calendars/4007" target="_blank">Micro Mouse Advent Calendar</a>
- 18日目の記事です．</p>
-<p>昨日の記事は mako さんの「マイクロマウス2019 機体紹介」でした．<br>
-湾曲したセンサ部にフレキシブル基板を使っているのはいいアイデアですね！<br>
-マウサーたちは積極的に最新技術を取り入れているのですごくワクワクします！！</p>
-<h2 id="はじめに">はじめに</h2>
-<p>改めまして，こんにちは．けりです．</p>
-<p>今回の記事では，<br>
-今年私が制作したマイクロマウス <a href="/posts/2018-05-03-kerise-v4-coming">KERISE v4</a>
- に搭載されている<br>
-新機能「<strong>クラッシュ後の自動復帰</strong>」を紹介します．</p>
-<figure >
-	<a href="kerisev4.jpg" target="blank">
-		
-		<figcaption>
-			<h4>KERISE v4</h4>
-		</figcaption>
-		
-		<img src="kerisev4.jpg" alt="KERISE v4" style="width: 240px;"/>
-	</a>
-</figure>
-
-<h3 id="目指すは自律賞">目指すは自律賞</h3>
-<p>マイクロマウス競技には，「自律賞」という賞があります．<br>
-現行の競技規定では次のように記されています．</p>
-<blockquote>
-<p><a href="https://www.ntf.or.jp/mouse/rule/hyouka_micro-JA.html" target="_blank">自律賞</a>
-: 持ち時間内に全走行が完了（最後にスタート地点まで戻る）するまで、ノータッチで走り切ったマイクロマウスの内、最短走行時間を記録したマイクロマウスに対する評価</p>
-</blockquote>
-<p>つまり，競技の全行程を<strong>完全自律</strong>で終えるというものです．</p>
-<h3 id="32x32迷路での完全自律マウスはまだいない">32x32迷路での完全自律マウスはまだいない</h3>
-<p>実は，過去のマイクロマウス競技では，自律賞を獲得したマウスが毎年存在しました．<br>
-しかし，ここ数年で自律賞を獲得したマウスはありません．</p>
-<p>その理由は，競技ルールの改正があったからです．<br>
-2015年までは，自律賞の規定は次のようになっていました．</p>
-<blockquote>
-<p><a href="http://www.ntf.or.jp/mouse/micromouse2015/hyouka_half.html" target="_blank">自律賞(2015年まで)</a>
-: 1回目のスタートから持ち時間内に全走行が完了(最後にスタート地点まで戻る)するまで、ノータッチで走り切ったマウスの内、最短走行時間を記録したマウスに対する評価。<strong>全走行を完了したマウスがない場合は、最初にタッチした時までの最短完走時間を記録したマウスを評価</strong>する。</p>
-</blockquote>
-<p>以前のルールでは，最後に追加の1文がありました．<br>
-たとえ探索走行だったとしても，1回でもゴールに達したマウスがいれば<strong>必ず受賞者が現れる</strong>というルールでした．</p>
-<p>それが，2016年からは，以下の規定の<strong>ベストマウサー</strong>という賞が追加されて，
-自律賞は，<strong>完全自律マウス</strong>に限定されました．</p>
-<blockquote>
-<p><a href="https://www.ntf.or.jp/mouse/rule/hyouka_micro-JA.html" target="_blank">自律賞(2016年より)</a>
-: 持ち時間内に全走行が完了（最後にスタート地点まで戻る）するまで、ノータッチで走り切ったマイクロマウスの内、最短走行時間を記録したマイクロマウスに対する評価<br>
-<a href="http://www.ntf.or.jp/mouse/rule/hyouka_micro-JA.html" target="_blank">ベストマウサー(2016年より)</a>
-: １回目のスタートから最初に操作者がロボットに触れた時までの最短完走時間を記録したマイクロマウスを評価する</p>
-</blockquote>
-<p>この<strong>ルール改正後に自律賞を獲得したマウスはまだ存在しない</strong>のです．<br>
-僕はこの賞を目指しています！！</p>
-<h3 id="完全自律マウスの課題">完全自律マウスの課題</h3>
-<p>現行の自律賞，つまり完全自律走行を達成するためには，</p>
-<ul>
-<li>制限時間内に全行程を終えるための時間管理</li>
-<li>状況に応じた走行パラメータの自動選択</li>
-<li>タイヤのホコリ耐性</li>
-<li><strong>絶対にクラッシュしない</strong></li>
-</ul>
-<p>が必要となります．</p>
-<h3 id="最短記録と自律走行のトレードオフ">最短記録と自律走行のトレードオフ</h3>
-<p>上記で挙げた<strong>絶対にクラッシュしない</strong>という条件ですが，これはかなり困難な条件です．</p>
-<p>なぜなら，マイクロマウスは走行時間を競う競技なので，
-いい記録を残すためには<strong>クラッシュするギリギリ</strong>を攻めなければなりません．</p>
-<p>最短走行の記録と自律走行にはトレードオフがあるのです．</p>
-<h3 id="新機能自動復帰による解決">新機能・自動復帰による解決</h3>
-<p>そんな困難な<strong>完全自律走行</strong>ですが，別の視点の攻略法があります．</p>
-<p>それが今回紹介する<strong>クラッシュ後に自動復するマウス</strong>です！</p>
-<p>おそらく今までに自動復帰するマウスを作りたいと考えた人は少なくないと思います．<br>
-ただ，実装がかなり複雑で，実現した人はいませんでした．</p>
-<p>僕は<strong>約1年半前</strong>から取り組み始め，遂に今年，<strong>自動復帰マウス</strong>を実現しました！</p>
-<h2 id="自動復帰の様子">自動復帰の様子</h2>
-<p>最短走行でクラッシュしてしまったとき，次の要領で自動復帰して走行に戻ります．</p>
-<ol>
-<li>クラッシュしてしまい，姿勢が乱れる</li>
-<li>前壁補正などを用いて，位置と姿勢を整える</li>
-<li>既知の迷路と比較して，自己位置が一意に定まるまで周辺区画の探索を行う</li>
-<li>自己位置を特定したら，リタイアにならないようにゴール区画を訪問する</li>
-<li>スタート区画に戻り，次の最短走行を行う</li>
-</ol>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年の新機能「クラッシュ後の自動復帰」の様子です！最短走行でクラッシュ → 前壁補正で姿勢を整える → しばらく周辺を探索 → 自己位置を特定 → 記録を残すために一度ゴールを訪問 → スタートへ戻る → 次の最短走行 <a href="https://t.co/1WFvqikmfg">pic.twitter.com/1WFvqikmfg</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1206570447044628481?ref_src=twsrc%5Etfw">December 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<h2 id="クラッシュ後の姿勢復帰方法">クラッシュ後の姿勢復帰方法</h2>
-<p>クラッシュ後は姿勢が乱れ，区画の中央から外れた位置にいる場合がほとんどです．</p>
-<p>そこで，マウスの前向きに取り付けてある<strong>ToF測距センサ</strong>で辺りを<strong>一周走査</strong>して平らな壁を探す方法を取りました．</p>
-<p>平らな壁を見つけたら，前壁用赤外線センサによって姿勢を整えます．</p>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">クラッシュ直後は、姿勢を整えるために1周回って平らな壁を探す。そして前壁補正によって区画の中央へ復帰。 <a href="https://t.co/jMbGSj47mu">pic.twitter.com/jMbGSj47mu</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1206577717228920833?ref_src=twsrc%5Etfw">December 16, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<h2 id="自己位置同定アルゴリズム">自己位置同定アルゴリズム</h2>
-<p>クラッシュした後は，自分の位置がわからなくなってしまうことが大きな問題です．</p>
-<p>そこで登場するのが，既知の迷路情報を用いた<strong>自己位置同定アルゴリズム</strong>です．</p>
-<p>クラッシュする可能性のある最短走行を行うのは，探索走行のあとなので，マウスは<strong>迷路全体の壁情報を保持</strong>しています．</p>
-<p>クラッシュ後，周辺を適当に探索して，<strong>既知の壁情報と比較</strong>することで自己位置を特定するのが自己位置同定アルゴリズムです．</p>
-<p>今回，私が実装した自己位置同定アルゴリズムには，次のような特徴があります．</p>
-<ul>
-<li>探索済みの迷路ならば，<strong>迷路内のどの位置・方向からでも復帰可能！</strong></li>
-<li>自己位置復帰中に<strong>スタート区画</strong>を避ける機能を搭載</li>
-</ul>
-<p>これらについて，簡単に説明をします．</p>
-<h3 id="あらゆる位置方向からでも復帰可能">あらゆる位置・方向からでも復帰可能</h3>
-<p>32x32マス，および東西南北4方向の回転の<strong>すべての場合に対してパターンマッチング</strong>を行い，
-自己位置の候補を洗い出します．</p>
-<p>したがって，迷路の中のどの位置や方向でクラッシュしたとしても復帰が可能です．</p>
-<p>計算はかなり重たいのですが，
+<!doctype html><html class=no-js lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=google-site-verification content="EGHRTn1Bed7L7Ntdi0a-iywpUXqKpLm_ISqeeMzi5sY"><title>新機能・クラッシュ後の自動復帰！ - KERI's Lab</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><meta property="og:title" content="新機能・クラッシュ後の自動復帰！"><meta property="og:description" content="この記事は，Micro Mouse Advent Calendar
+ 18日目の記事です．"><meta property="og:type" content="article"><meta property="og:url" content="https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/"><meta property="og:image" content="https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/icon.jpg"><meta property="article:published_time" content="2019-12-18T00:00:00+09:00"><meta property="article:modified_time" content="2019-12-18T00:00:00+09:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="新機能・クラッシュ後の自動復帰！"><meta name=twitter:description content="この記事は，Micro Mouse Advent Calendar
+ 18日目の記事です．"><meta name=twitter:site content="@kerikun11"><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/syntax.css><link rel="shortcut icon" href=/favicon.ico><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-103856564-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="KERI's Lab" rel=home><div class="logo__item logo__text"><div class=logo__title>KERI's Lab</div><div class=logo__tagline>KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li><li class=menu__item><a class=menu__link href=/works/><span class=menu__text>Works</span></a></li><li class=menu__item><a class=menu__link href=/categories/><span class=menu__text>Categories</span></a></li><li class=menu__item><a class=menu__link href=/tags/><span class=menu__text>Tags</span></a></li><li class=menu__item><a class=menu__link href=/archives/><span class=menu__text>Archives</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><figure class=post__thumbnail><img src=icon.jpg alt=新機能・クラッシュ後の自動復帰！></figure><h1 class=post__title>新機能・クラッシュ後の自動復帰！</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-12-18T00:00:00+09:00>2019-12-18</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/ rel=category>作品紹介</a></span></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><span class=meta__text><a class=meta__link href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=category>マイクロマウス</a>, <a class=meta__link href=/tags/kerise/ rel=category>KERISE</a></span></div></div></header><a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script><div class="content post__content clearfix"><p>この記事は，<a href=https://adventar.org/calendars/4007 target=_blank>Micro Mouse Advent Calendar</a>
+18日目の記事です．</p><p>昨日の記事は mako さんの「マイクロマウス2019 機体紹介」でした．<br>湾曲したセンサ部にフレキシブル基板を使っているのはいいアイデアですね！<br>マウサーたちは積極的に最新技術を取り入れているのですごくワクワクします！！</p><h2 id=はじめに>はじめに</h2><p>改めまして，こんにちは．けりです．</p><p>今回の記事では，<br>今年私が制作したマイクロマウス <a href=/posts/2018-05-03-kerise-v4-coming>KERISE v4</a>
+に搭載されている<br>新機能「<strong>クラッシュ後の自動復帰</strong>」を紹介します．</p><figure><a href=kerisev4.jpg target=blank><figcaption><h4>KERISE v4</h4></figcaption><img src=kerisev4.jpg alt="KERISE v4" style=width:240px></a></figure><h3 id=目指すは自律賞>目指すは自律賞</h3><p>マイクロマウス競技には，「自律賞」という賞があります．<br>現行の競技規定では次のように記されています．</p><blockquote><p><a href=https://www.ntf.or.jp/mouse/rule/hyouka_micro-JA.html target=_blank>自律賞</a>
+: 持ち時間内に全走行が完了（最後にスタート地点まで戻る）するまで、ノータッチで走り切ったマイクロマウスの内、最短走行時間を記録したマイクロマウスに対する評価</p></blockquote><p>つまり，競技の全行程を<strong>完全自律</strong>で終えるというものです．</p><h3 id=32x32迷路での完全自律マウスはまだいない>32x32迷路での完全自律マウスはまだいない</h3><p>実は，過去のマイクロマウス競技では，自律賞を獲得したマウスが毎年存在しました．<br>しかし，ここ数年で自律賞を獲得したマウスはありません．</p><p>その理由は，競技ルールの改正があったからです．<br>2015年までは，自律賞の規定は次のようになっていました．</p><blockquote><p><a href=http://www.ntf.or.jp/mouse/micromouse2015/hyouka_half.html target=_blank>自律賞(2015年まで)</a>
+: 1回目のスタートから持ち時間内に全走行が完了(最後にスタート地点まで戻る)するまで、ノータッチで走り切ったマウスの内、最短走行時間を記録したマウスに対する評価。<strong>全走行を完了したマウスがない場合は、最初にタッチした時までの最短完走時間を記録したマウスを評価</strong>する。</p></blockquote><p>以前のルールでは，最後に追加の1文がありました．<br>たとえ探索走行だったとしても，1回でもゴールに達したマウスがいれば<strong>必ず受賞者が現れる</strong>というルールでした．</p><p>それが，2016年からは，以下の規定の<strong>ベストマウサー</strong>という賞が追加されて，
+自律賞は，<strong>完全自律マウス</strong>に限定されました．</p><blockquote><p><a href=https://www.ntf.or.jp/mouse/rule/hyouka_micro-JA.html target=_blank>自律賞(2016年より)</a>
+: 持ち時間内に全走行が完了（最後にスタート地点まで戻る）するまで、ノータッチで走り切ったマイクロマウスの内、最短走行時間を記録したマイクロマウスに対する評価<br><a href=http://www.ntf.or.jp/mouse/rule/hyouka_micro-JA.html target=_blank>ベストマウサー(2016年より)</a>
+: １回目のスタートから最初に操作者がロボットに触れた時までの最短完走時間を記録したマイクロマウスを評価する</p></blockquote><p>この<strong>ルール改正後に自律賞を獲得したマウスはまだ存在しない</strong>のです．<br>僕はこの賞を目指しています！！</p><h3 id=完全自律マウスの課題>完全自律マウスの課題</h3><p>現行の自律賞，つまり完全自律走行を達成するためには，</p><ul><li>制限時間内に全行程を終えるための時間管理</li><li>状況に応じた走行パラメータの自動選択</li><li>タイヤのホコリ耐性</li><li><strong>絶対にクラッシュしない</strong></li></ul><p>が必要となります．</p><h3 id=最短記録と自律走行のトレードオフ>最短記録と自律走行のトレードオフ</h3><p>上記で挙げた<strong>絶対にクラッシュしない</strong>という条件ですが，これはかなり困難な条件です．</p><p>なぜなら，マイクロマウスは走行時間を競う競技なので，
+いい記録を残すためには<strong>クラッシュするギリギリ</strong>を攻めなければなりません．</p><p>最短走行の記録と自律走行にはトレードオフがあるのです．</p><h3 id=新機能自動復帰による解決>新機能・自動復帰による解決</h3><p>そんな困難な<strong>完全自律走行</strong>ですが，別の視点の攻略法があります．</p><p>それが今回紹介する<strong>クラッシュ後に自動復するマウス</strong>です！</p><p>おそらく今までに自動復帰するマウスを作りたいと考えた人は少なくないと思います．<br>ただ，実装がかなり複雑で，実現した人はいませんでした．</p><p>僕は<strong>約1年半前</strong>から取り組み始め，遂に今年，<strong>自動復帰マウス</strong>を実現しました！</p><h2 id=自動復帰の様子>自動復帰の様子</h2><p>最短走行でクラッシュしてしまったとき，次の要領で自動復帰して走行に戻ります．</p><ol><li>クラッシュしてしまい，姿勢が乱れる</li><li>前壁補正などを用いて，位置と姿勢を整える</li><li>既知の迷路と比較して，自己位置が一意に定まるまで周辺区画の探索を行う</li><li>自己位置を特定したら，リタイアにならないようにゴール区画を訪問する</li><li>スタート区画に戻り，次の最短走行を行う</li></ol><blockquote class=twitter-tweet><p lang=ja dir=ltr>今年の新機能「クラッシュ後の自動復帰」の様子です！最短走行でクラッシュ → 前壁補正で姿勢を整える → しばらく周辺を探索 → 自己位置を特定 → 記録を残すために一度ゴールを訪問 → スタートへ戻る → 次の最短走行 <a href=https://t.co/1WFvqikmfg>pic.twitter.com/1WFvqikmfg</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1206570447044628481?ref_src=twsrc%5Etfw">December 16, 2019</a></blockquote><script async src=https://platform.twitter.com/widgets.js></script><h2 id=クラッシュ後の姿勢復帰方法>クラッシュ後の姿勢復帰方法</h2><p>クラッシュ後は姿勢が乱れ，区画の中央から外れた位置にいる場合がほとんどです．</p><p>そこで，マウスの前向きに取り付けてある<strong>ToF測距センサ</strong>で辺りを<strong>一周走査</strong>して平らな壁を探す方法を取りました．</p><p>平らな壁を見つけたら，前壁用赤外線センサによって姿勢を整えます．</p><blockquote class=twitter-tweet><p lang=ja dir=ltr>クラッシュ直後は、姿勢を整えるために1周回って平らな壁を探す。そして前壁補正によって区画の中央へ復帰。 <a href=https://t.co/jMbGSj47mu>pic.twitter.com/jMbGSj47mu</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1206577717228920833?ref_src=twsrc%5Etfw">December 16, 2019</a></blockquote><script async src=https://platform.twitter.com/widgets.js></script><h2 id=自己位置同定アルゴリズム>自己位置同定アルゴリズム</h2><p>クラッシュした後は，自分の位置がわからなくなってしまうことが大きな問題です．</p><p>そこで登場するのが，既知の迷路情報を用いた<strong>自己位置同定アルゴリズム</strong>です．</p><p>クラッシュする可能性のある最短走行を行うのは，探索走行のあとなので，マウスは<strong>迷路全体の壁情報を保持</strong>しています．</p><p>クラッシュ後，周辺を適当に探索して，<strong>既知の壁情報と比較</strong>することで自己位置を特定するのが自己位置同定アルゴリズムです．</p><p>今回，私が実装した自己位置同定アルゴリズムには，次のような特徴があります．</p><ul><li>探索済みの迷路ならば，<strong>迷路内のどの位置・方向からでも復帰可能！</strong></li><li>自己位置復帰中に<strong>スタート区画</strong>を避ける機能を搭載</li></ul><p>これらについて，簡単に説明をします．</p><h3 id=あらゆる位置方向からでも復帰可能>あらゆる位置・方向からでも復帰可能</h3><p>32x32マス，および東西南北4方向の回転の<strong>すべての場合に対してパターンマッチング</strong>を行い，
+自己位置の候補を洗い出します．</p><p>したがって，迷路の中のどの位置や方向でクラッシュしたとしても復帰が可能です．</p><p>計算はかなり重たいのですが，
 1マスでもズレている場合は壁は食い違いだらけなので，
-すぐに打ち切ることができます．</p>
-<p>いろいろな工夫を凝らして，1マス進むのにかかる時間，約300ミリ秒以内で計算を終えることができました．</p>
-<h3 id="スタート区画を避ける理由とその難しさ">スタート区画を避ける理由とその難しさ</h3>
-<p>マイクロマウスでは，
+すぐに打ち切ることができます．</p><p>いろいろな工夫を凝らして，1マス進むのにかかる時間，約300ミリ秒以内で計算を終えることができました．</p><h3 id=スタート区画を避ける理由とその難しさ>スタート区画を避ける理由とその難しさ</h3><p>マイクロマウスでは，
 ゴールに到達することなくスタート区画に返ってきてしまった場合，
-その走行はリタイア扱いとなってしまうので，自律賞を得ることはできません．</p>
-<p>クラッシュするのはだいたい最短走行時なので，
-まだゴールに達しておらず，自己位置同定中の無作為な探索でスタート区画に行ってしまう可能性があります．</p>
-<p>そもそも自己位置がわかっていないのに，スタート区画をさけることはとても困難です．</p>
-<p>そこで，無作為な探索中でも，<strong>スタート区画にマッチする方向には行かない機能</strong>を実装しました．</p>
-<p>その結果，自己位置同定の初手スタートなどの特殊な場合を除き，スタート区画を避けることに成功しました！</p>
-<h2 id="シミュレータによる検証">シミュレータによる検証</h2>
-<p>自動復帰のアルゴリズムはPC上のシミュレータで動作確認をしています．</p>
-<p>以下の動画では，上の自動復帰の動きをシミュレータで再現してみました．</p>
-<p>画面下に既知の迷路とパターンマッチングしたときの候補数が表示されていて，
-これが1になると自己位置を特定できたことになります．</p>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">この動画の動きをシミュレータで再現してみた。左が正解の迷路で、右がロボット内の迷路。クラッシュ後は自己位置がわからないので、とりあえず迷路の中央から動き始めている。今回の場合、90度回転した状態になってるのでかなりわかりにくい… <a href="https://t.co/BFboHNwQH1">pic.twitter.com/BFboHNwQH1</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1206944089893220355?ref_src=twsrc%5Etfw">December 17, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<h2 id="全日本大会での結果">全日本大会での結果</h2>
-<p>今年の <strong>第40回 全日本マイクロマウス大会 2019</strong> で，
-自動復帰を携えた KERISE v4 は，32x32の迷路で自動復帰を披露し，ノータッチで競技を終えました！！</p>
-<p>だが，しかし&hellip;！<br>
-残念ながら自律賞の獲得はできませんでした&hellip;</p>
-<p>なぜなら，制限時間に間に合わず，走行回数が1回分足りなかったからです&hellip;(泣)</p>
-<p>いやぁ&hellip;とてもショックです&hellip;</p>
-<p>やはり32x32の迷路は壮大でした&hellip;</p>
-<p>ただ，審査員の方には高く評価して頂き，特別賞をもらいました．<br>
-ありがとうございました！</p>
-<p>詳しくは<a href="/posts/2019-12-04-micromouse2019">大会報告の記事</a>
-をご覧ください．</p>
-<h2 id="おわりに">おわりに</h2>
-<p>自律賞を目指して新機能「自動復帰」を搭載したのですが，
-今年は壮大な迷路を前に目標を果たすことができませんでした．</p>
-<p>来年には時間管理を徹底して，完全自律の自律賞を獲得したいと思います！！</p>
-<p>さらに賢く成長した KERISE に好ご期待！</p>
-<figure >
-	<a href="kerisev4-palm.jpg" target="blank">
-		
-		<figcaption>
-			<h4>KERISE v4</h4>
-		</figcaption>
-		
-		<img src="kerisev4-palm.jpg" alt="KERISE v4" style="width: 360px;"/>
-	</a>
-</figure>
-
-<p>明日の <a href="https://adventar.org/calendars/4007" target="_blank">Micro Mouse Advent Calendar</a>
- は，Mice ふくださんの <strong>Pythonでターンシミュレータ</strong> です．お楽しみに！</p>
-		</div>
-		<footer class="post__footer">
-			
-<div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/" rel="tag">マイクロマウス</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/kerise/" rel="tag">KERISE</a>
-		</li>
-	</ul>
-</div>
-		</footer>
-	</article>
-</main>
-<div class="ads-horizontal">
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<ins class="adsbygoogle"
-	     style="display:block; text-align:center;"
-	     data-ad-format="fluid"
-	     data-ad-layout="in-article"
-	     data-ad-client="ca-pub-1668524068659644"
-	     data-ad-slot="3045514441"></ins>
-	<script>
-	     (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-</div>
-
-
-<div class="authorbox clearfix">
-	<figure class="authorbox__avatar">
-		<img alt="けり avatar" src="/img/avatar.jpg" class="avatar" height="90" width="90">
-	</figure>
-	<div class="authorbox__header">
-		<span class="authorbox__name">筆者: けり</span>
-	</div>
-	<div class="authorbox__description">
-		趣味は電子工作．最近はマイクロマウス競技に参加しています．
-	</div>
-</div>
-
-<nav class="pager flex">
-	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/posts/2019-12-04-micromouse2019/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;前の投稿</span>
-			<p class="pager__title">全日本マイクロマウス2019の結果報告</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/posts/2019-12-21-cheese-cup-2019-maze/" rel="next">
-			<span class="pager__subtitle">次の投稿&thinsp;»</span>
-			<p class="pager__title">Cheese杯2019の迷路紹介</p>
-		</a>
-	</div>
-</nav>
-
-<section class="comments">
-	<div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "kerikeri" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
-
-
-			</div>
-			<aside class="sidebar"><div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
-		<label>
-			<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://www.kerislab.jp/" />
-	</form>
-</div>
-<div class="widget-toc widget">
-	<h4 class="widget__title">目次</h4>
-	<div class="widget__content">
-    	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#はじめに">はじめに</a>
-      <ul>
-        <li><a href="#目指すは自律賞">目指すは自律賞</a></li>
-        <li><a href="#32x32迷路での完全自律マウスはまだいない">32x32迷路での完全自律マウスはまだいない</a></li>
-        <li><a href="#完全自律マウスの課題">完全自律マウスの課題</a></li>
-        <li><a href="#最短記録と自律走行のトレードオフ">最短記録と自律走行のトレードオフ</a></li>
-        <li><a href="#新機能自動復帰による解決">新機能・自動復帰による解決</a></li>
-      </ul>
-    </li>
-    <li><a href="#自動復帰の様子">自動復帰の様子</a></li>
-    <li><a href="#クラッシュ後の姿勢復帰方法">クラッシュ後の姿勢復帰方法</a></li>
-    <li><a href="#自己位置同定アルゴリズム">自己位置同定アルゴリズム</a>
-      <ul>
-        <li><a href="#あらゆる位置方向からでも復帰可能">あらゆる位置・方向からでも復帰可能</a></li>
-        <li><a href="#スタート区画を避ける理由とその難しさ">スタート区画を避ける理由とその難しさ</a></li>
-      </ul>
-    </li>
-    <li><a href="#シミュレータによる検証">シミュレータによる検証</a></li>
-    <li><a href="#全日本大会での結果">全日本大会での結果</a></li>
-    <li><a href="#おわりに">おわりに</a></li>
-  </ul>
-</nav>
-	</div>
-</div>
-
-<div class="widget-social widget">
-	<h4 class="widget-social__title widget__title">ソーシャル</h4>
-	<div class="widget-social__content widget__content">
-		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/kerikun11" target="_blank">
-				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
-				<span>Twitter</span>
-			</a>
-		</div>
-		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/kerikun11" target="_blank">
-				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
-				<span>GitHub</span>
-			</a>
-		</div>
-		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Email" href="mailto:kerikun11&#43;web@gmail.com">
-				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
-				<span>E-Mail</span>
-			</a>
-		</div>
-
-		
-	</div>
-</div><div class="widget-categories widget">
-	<h4 class="widget__title">広告</h4>
-	<div class="widget__content">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		
-		<ins class="adsbygoogle"
-			style="display:block"
-			data-ad-client="ca-pub-1668524068659644"
-			data-ad-slot="7974159815"
-			data-ad-format="auto"></ins>
-		<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-
-	</div>
-</div>
-<div class="widget-spotlight widget">
-	<h4 class="widget__title">注目の投稿</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-04-25-slalom-trajectory-1/">なめらかなスラロームの設計① スラローム概要</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2019-12-04-micromouse2019/">全日本マイクロマウス2019の結果報告</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2019-01-14-vscode-latex/">VSCodeでTeXを書こう</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2018-04-29-accel-designer1/">なめらかな加速の設計① 台形加速と曲線加速</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2017-09-03-pattern-of-turn/">マイクロマウスのターン一覧</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2016-07-25-how-to-use-ir-station/">IR-Stationの使い方</a></li>
-		</ul>
-	</div>
-</div>
-<div class="widget-recent widget">
-	<h4 class="widget__title">最近の投稿</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-12-11-esp32-mouse/">ESP32 でマイクロマウスを作るメリットとデメリット</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-05-11-esp-idf-to-platformio/">ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-05-04-python-maze-editor/">迷路クラスの設計と迷路エディタの実装 (Python)</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-04-25-slalom-trajectory-4/">なめらかなスラロームの設計④ 生成結果</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-04-25-slalom-trajectory-3/">なめらかなスラロームの設計③ C&#43;&#43;による実装</a></li>
-		</ul>
-	</div>
-</div>
-<div class="widget-categories widget">
-	<h4 class="widget__title">カテゴリー</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/">イベント</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/">作品紹介</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/%E5%82%99%E5%BF%98%E9%8C%B2/">備忘録</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/">説明記事</a>
-			</li>
-		</ul>
-	</div>
-</div>
-<div class="widget-taglist widget">
-	<h4 class="widget__title">タグ</h4>
-	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/active-record/" title="Active Record">Active Record</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/apache2/" title="Apache2">Apache2</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/arduino/" title="Arduino">Arduino</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bot/" title="bot">bot</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/charge-station/" title="Charge Station">Charge Station</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cheese/" title="Cheese">Cheese</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/crontab/" title="Crontab">Crontab</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cygwin/" title="Cygwin">Cygwin</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ddns/" title="DDNS">DDNS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/e-mail/" title="E-mail">E-mail</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/esp-wroom-02/" title="ESP-WROOM-02">ESP-WROOM-02</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/esp-wroom-32/" title="ESP-WROOM-32">ESP-WROOM-32</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/esp32/" title="ESP32">ESP32</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/esp8266/" title="ESP8266">ESP8266</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/exiftool/" title="Exiftool">Exiftool</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/fft/" title="FFT">FFT</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/freertos/" title="FreeRTOS">FreeRTOS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/frisk/" title="FRISK">FRISK</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ft232rl/" title="FT232RL">FT232RL</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ir-station/" title="IR-Station">IR-Station</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/itunes/" title="iTunes">iTunes</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/jquiry/" title="JQuiry">JQuiry</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kerise/" title="KERISE">KERISE</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kicad/" title="KiCad">KiCad</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/latex/" title="Latex">Latex</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/li-po/" title="Li-Po">Li-Po</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/maker-faire-tokyo/" title="Maker Faire Tokyo">Maker Faire Tokyo</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/matlab/" title="MATLAB">MATLAB</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mbed/" title="mbed">mbed</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/micro-sd/" title="Micro SD">Micro SD</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/nas/" title="NAS">NAS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/nextcloud/" title="Nextcloud">Nextcloud</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ntp/" title="NTP">NTP</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/nucleo/" title="Nucleo">Nucleo</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pdf/" title="pdf">pdf</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pic/" title="PIC">PIC</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pic18f26k22/" title="PIC18F26K22">PIC18F26K22</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pic18f27j53/" title="PIC18F27J53">PIC18F27J53</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pine64-a&#43;/" title="PINE64 A&#43;">PINE64 A&#43;</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/platformio/" title="PlatformIO">PlatformIO</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/raspberry-pi/" title="Raspberry Pi">Raspberry Pi</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/remote-control/" title="Remote Control">Remote Control</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rtcc/" title="RTCC">RTCC</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ruby/" title="Ruby">Ruby</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/samba/" title="Samba">Samba</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/sinatra/" title="Sinatra">Sinatra</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/smtp/" title="SMTP">SMTP</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/sqlite3/" title="SQLite3">SQLite3</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ssh/" title="SSH">SSH</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/stm32/" title="STM32">STM32</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/surface/" title="Surface">Surface</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/thingspeak/" title="ThingSpeak">ThingSpeak</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/twitter/" title="Twitter">Twitter</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/u-micro/" title="U-Micro">U-Micro</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="Ubuntu">Ubuntu</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/uefi/" title="UEFI">UEFI</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/usb/" title="USB">USB</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/volumio/" title="Volumio">Volumio</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/vscode/" title="VSCode">VSCode</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/wi-fi/" title="Wi-Fi">Wi-Fi</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/wifi/" title="WiFi">WiFi</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/windows/" title="Windows">Windows</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/yamy/" title="yamy">yamy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%81%E3%81%A0%E3%81%8B/" title="めだか">めだか</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A2%E3%83%B3%E3%83%97/" title="オーディオアンプ">オーディオアンプ</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89/" title="キーボード">キーボード</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/" title="サーバー">サーバー</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/" title="シェルスクリプト">シェルスクリプト</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E9%80%9A%E4%BF%A1/" title="シリアル通信">シリアル通信</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC/" title="ソーラー">ソーラー</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/" title="ターミナル">ターミナル</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%89%E3%83%83%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/" title="ドットインストール">ドットインストール</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%89%E3%83%83%E3%83%88%E3%83%9E%E3%83%88%E3%83%AA%E3%82%AF%E3%82%B9led/" title="ドットマトリクスLED">ドットマトリクスLED</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB/" title="ファイアウォール">ファイアウォール</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%96%E3%83%AD%E3%82%B0/" title="ブログ">ブログ</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80/" title="ブートローダ">ブートローダ</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9A%E3%83%83%E3%83%88/" title="ペット">ペット</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/" title="マイクロマウス">マイクロマウス</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3/" title="マイコン">マイコン</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/" title="ミュージックサーバー">ミュージックサーバー</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/" title="ロボコン">ロボコン</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/" title="ロボット">ロボット</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E4%BC%9A/" title="ロボット技術研究会">ロボット技術研究会</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%85%85%E9%9B%BB%E5%99%A8/" title="充電器">充電器</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%88%86%E8%A7%A3/" title="分解">分解</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%88%B6%E5%BE%A1/" title="制御">制御</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%9B%9E%E8%B7%AF%E8%AC%9B%E7%BF%92%E4%BC%9A/" title="回路講習会">回路講習会</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%99%82%E8%A8%88/" title="時計">時計</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%B7%B1%E5%9C%B3/" title="深圳">深圳</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E7%A7%8B%E6%9C%88/" title="秋月">秋月</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%87%AA%E4%BD%9C/" title="自作">自作</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%87%AA%E5%8B%95%E9%85%8D%E7%B7%9A/" title="自動配線">自動配線</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%B5%A4%E5%A4%96%E7%B7%9A%E5%AD%A6%E7%BF%92%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/" title="赤外線学習リモコン">赤外線学習リモコン</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E8%BF%B7%E8%B7%AF/" title="迷路">迷路</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E9%9B%BB%E5%85%89%E6%8E%B2%E7%A4%BA%E6%9D%BF/" title="電光掲示板">電光掲示板</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%E9%9B%BB%E5%8A%9B/" title="電力">電力</a>
-	</div>
-</div>
-</aside>
-		</div>
-		<footer class="footer">
-	<div class="container footer__container flex">
-		
-		<div class="footer__copyright">
-			&copy; 2020 KERI&#39;s Lab.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
-		</div>
-	</div>
-</footer>
-	</div>
-<script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
-</body>
-</html>
+その走行はリタイア扱いとなってしまうので，自律賞を得ることはできません．</p><p>クラッシュするのはだいたい最短走行時なので，
+まだゴールに達しておらず，自己位置同定中の無作為な探索でスタート区画に行ってしまう可能性があります．</p><p>そもそも自己位置がわかっていないのに，スタート区画をさけることはとても困難です．</p><p>そこで，無作為な探索中でも，<strong>スタート区画にマッチする方向には行かない機能</strong>を実装しました．</p><p>その結果，自己位置同定の初手スタートなどの特殊な場合を除き，スタート区画を避けることに成功しました！</p><h2 id=シミュレータによる検証>シミュレータによる検証</h2><p>自動復帰のアルゴリズムはPC上のシミュレータで動作確認をしています．</p><p>以下の動画では，上の自動復帰の動きをシミュレータで再現してみました．</p><p>画面下に既知の迷路とパターンマッチングしたときの候補数が表示されていて，
+これが1になると自己位置を特定できたことになります．</p><blockquote class=twitter-tweet><p lang=ja dir=ltr>この動画の動きをシミュレータで再現してみた。左が正解の迷路で、右がロボット内の迷路。クラッシュ後は自己位置がわからないので、とりあえず迷路の中央から動き始めている。今回の場合、90度回転した状態になってるのでかなりわかりにくい… <a href=https://t.co/BFboHNwQH1>pic.twitter.com/BFboHNwQH1</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1206944089893220355?ref_src=twsrc%5Etfw">December 17, 2019</a></blockquote><script async src=https://platform.twitter.com/widgets.js></script><h2 id=全日本大会での結果>全日本大会での結果</h2><p>今年の <strong>第40回 全日本マイクロマウス大会 2019</strong> で，
+自動復帰を携えた KERISE v4 は，32x32の迷路で自動復帰を披露し，ノータッチで競技を終えました！！</p><p>だが，しかし&mldr;！<br>残念ながら自律賞の獲得はできませんでした&mldr;</p><p>なぜなら，制限時間に間に合わず，走行回数が1回分足りなかったからです&mldr;(泣)</p><p>いやぁ&mldr;とてもショックです&mldr;</p><p>やはり32x32の迷路は壮大でした&mldr;</p><p>ただ，審査員の方には高く評価して頂き，特別賞をもらいました．<br>ありがとうございました！</p><p>詳しくは<a href=/posts/2019-12-04-micromouse2019>大会報告の記事</a>
+をご覧ください．</p><h2 id=おわりに>おわりに</h2><p>自律賞を目指して新機能「自動復帰」を搭載したのですが，
+今年は壮大な迷路を前に目標を果たすことができませんでした．</p><p>来年には時間管理を徹底して，完全自律の自律賞を獲得したいと思います！！</p><p>さらに賢く成長した KERISE に好ご期待！</p><figure><a href=kerisev4-palm.jpg target=blank><figcaption><h4>KERISE v4</h4></figcaption><img src=kerisev4-palm.jpg alt="KERISE v4" style=width:360px></a></figure><p>明日の <a href=https://adventar.org/calendars/4007 target=_blank>Micro Mouse Advent Calendar</a>
+は，Mice ふくださんの <strong>Pythonでターンシミュレータ</strong> です．お楽しみに！</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=tag>マイクロマウス</a></li><li class=tags__item><a class="tags__link btn" href=/tags/kerise/ rel=tag>KERISE</a></li></ul></div></footer></article></main><div class=ads-horizontal><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-format=fluid data-ad-layout=in-article data-ad-client=ca-pub-1668524068659644 data-ad-slot=3045514441></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="けり avatar" src=/img/avatar.jpg class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>筆者: けり</span></div><div class=authorbox__description>趣味は電子工作．最近はマイクロマウス競技に参加しています．</div></div><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/posts/2019-12-04-micromouse2019/ rel=prev><span class=pager__subtitle>«&#8201;前の投稿</span><p class=pager__title>全日本マイクロマウス2019の結果報告</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/posts/2019-12-21-cheese-cup-2019-maze/ rel=next><span class=pager__subtitle>次の投稿&#8201;»</span><p class=pager__title>Cheese杯2019の迷路紹介</p></a></div></nav><section class=comments><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"kerikeri"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></section></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=検索… name=q aria-label=検索…></label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=https://www.kerislab.jp/></form></div><div class="widget-toc widget"><h4 class=widget__title>目次</h4><div class=widget__content><nav id=TableOfContents><ul><li><a href=#はじめに>はじめに</a><ul><li><a href=#目指すは自律賞>目指すは自律賞</a></li><li><a href=#32x32迷路での完全自律マウスはまだいない>32x32迷路での完全自律マウスはまだいない</a></li><li><a href=#完全自律マウスの課題>完全自律マウスの課題</a></li><li><a href=#最短記録と自律走行のトレードオフ>最短記録と自律走行のトレードオフ</a></li><li><a href=#新機能自動復帰による解決>新機能・自動復帰による解決</a></li></ul></li><li><a href=#自動復帰の様子>自動復帰の様子</a></li><li><a href=#クラッシュ後の姿勢復帰方法>クラッシュ後の姿勢復帰方法</a></li><li><a href=#自己位置同定アルゴリズム>自己位置同定アルゴリズム</a><ul><li><a href=#あらゆる位置方向からでも復帰可能>あらゆる位置・方向からでも復帰可能</a></li><li><a href=#スタート区画を避ける理由とその難しさ>スタート区画を避ける理由とその難しさ</a></li></ul></li><li><a href=#シミュレータによる検証>シミュレータによる検証</a></li><li><a href=#全日本大会での結果>全日本大会での結果</a></li><li><a href=#おわりに>おわりに</a></li></ul></nav></div></div><div class="widget-social widget"><h4 class="widget-social__title widget__title">ソーシャル</h4><div class="widget-social__content widget__content"><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Twitter rel="noopener noreferrer" href=https://twitter.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5.0-78.8 35.3-78.8 78.8.0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6.0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1.0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4.0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9.0 224.1-120 224.1-224.1.0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg><span>Twitter</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=GitHub rel="noopener noreferrer" href=https://github.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0C85.9.0.0 85.8.0 191.7c0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2.0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8.0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7.0.0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4.0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5.0 25.6-.2 46.3-.2 52.6.0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg><span>GitHub</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Email href=mailto:kerikun11+web@gmail.com><svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16V16 0h-16H16 0zm347 16-139 92.5L69 32zM199 157.5l9 5.5 9-5.5L384 46v210H32V46z"/></svg><span>E-Mail</span></a></div></div></div><div class="widget-categories widget"><h4 class=widget__title>広告</h4><div class=widget__content><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><ins class=adsbygoogle style=display:block data-ad-client=ca-pub-1668524068659644 data-ad-slot=7974159815 data-ad-format=auto></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></div><div class="widget-spotlight widget"><h4 class=widget__title>注目の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a></li><li class=widget__item><a class=widget__link href=/posts/2019-12-04-micromouse2019/>全日本マイクロマウス2019の結果報告</a></li><li class=widget__item><a class=widget__link href=/posts/2019-01-14-vscode-latex/>VSCodeでTeXを書こう</a></li><li class=widget__item><a class=widget__link href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li><li class=widget__item><a class=widget__link href=/posts/2017-09-03-pattern-of-turn/>マイクロマウスのターン一覧</a></li><li class=widget__item><a class=widget__link href=/posts/2016-07-25-how-to-use-ir-station/>IR-Stationの使い方</a></li></ul></div></div><div class="widget-recent widget"><h4 class=widget__title>最近の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2020-12-11-esp32-mouse/>ESP32 でマイクロマウスを作るメリットとデメリット</a></li><li class=widget__item><a class=widget__link href=/posts/2020-05-11-esp-idf-to-platformio/>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</a></li><li class=widget__item><a class=widget__link href=/posts/2020-05-04-python-maze-editor/>迷路クラスの設計と迷路エディタの実装 (Python)</a></li><li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-4/>なめらかなスラロームの設計④ 生成結果</a></li><li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-3/>なめらかなスラロームの設計③ C++による実装</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>カテゴリー</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/>イベント</a></li><li class=widget__item><a class=widget__link href=/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/>作品紹介</a></li><li class=widget__item><a class=widget__link href=/categories/%E5%82%99%E5%BF%98%E9%8C%B2/>備忘録</a></li><li class=widget__item><a class=widget__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/>説明記事</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>タグ</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/active-record/ title="Active Record">Active Record</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apache2/ title=Apache2>Apache2</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/arduino/ title=Arduino>Arduino</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bot/ title=bot>bot</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/charge-station/ title="Charge Station">Charge Station</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cheese/ title=Cheese>Cheese</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/crontab/ title=Crontab>Crontab</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cygwin/ title=Cygwin>Cygwin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ddns/ title=DDNS>DDNS</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/e-mail/ title=E-mail>E-mail</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp-wroom-02/ title=ESP-WROOM-02>ESP-WROOM-02</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp-wroom-32/ title=ESP-WROOM-32>ESP-WROOM-32</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp32/ title=ESP32>ESP32</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp8266/ title=ESP8266>ESP8266</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/exiftool/ title=Exiftool>Exiftool</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/fft/ title=FFT>FFT</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freertos/ title=FreeRTOS>FreeRTOS</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/frisk/ title=FRISK>FRISK</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ft232rl/ title=FT232RL>FT232RL</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/git/ title=Git>Git</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/hugo/ title=Hugo>Hugo</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphone/ title=iPhone>iPhone</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ir-station/ title=IR-Station>IR-Station</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/itunes/ title=iTunes>iTunes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jquiry/ title=JQuiry>JQuiry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kerise/ title=KERISE>KERISE</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kicad/ title=KiCad>KiCad</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/latex/ title=Latex>Latex</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/li-po/ title=Li-Po>Li-Po</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/linux/ title=Linux>Linux</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/maker-faire-tokyo/ title="Maker Faire Tokyo">Maker Faire Tokyo</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/matlab/ title=MATLAB>MATLAB</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mbed/ title=mbed>mbed</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/micro-sd/ title="Micro SD">Micro SD</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nas/ title=NAS>NAS</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nextcloud/ title=Nextcloud>Nextcloud</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ntp/ title=NTP>NTP</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nucleo/ title=Nucleo>Nucleo</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pdf/ title=pdf>pdf</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pic/ title=PIC>PIC</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pic18f26k22/ title=PIC18F26K22>PIC18F26K22</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pic18f27j53/ title=PIC18F27J53>PIC18F27J53</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pine64-a+/ title="PINE64 A+">PINE64 A+</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/platformio/ title=PlatformIO>PlatformIO</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/python/ title=Python>Python</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/raspberry-pi/ title="Raspberry Pi">Raspberry Pi</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/remote-control/ title="Remote Control">Remote Control</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rtcc/ title=RTCC>RTCC</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ruby/ title=Ruby>Ruby</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/samba/ title=Samba>Samba</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sinatra/ title=Sinatra>Sinatra</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/smtp/ title=SMTP>SMTP</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sqlite3/ title=SQLite3>SQLite3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ssh/ title=SSH>SSH</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/stm32/ title=STM32>STM32</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/surface/ title=Surface>Surface</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/thingspeak/ title=ThingSpeak>ThingSpeak</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/twitter/ title=Twitter>Twitter</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/u-micro/ title=U-Micro>U-Micro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ubuntu/ title=Ubuntu>Ubuntu</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uefi/ title=UEFI>UEFI</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/usb/ title=USB>USB</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vim/ title=vim>vim</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/volumio/ title=Volumio>Volumio</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vscode/ title=VSCode>VSCode</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wi-fi/ title=Wi-Fi>Wi-Fi</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wifi/ title=WiFi>WiFi</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/windows/ title=Windows>Windows</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/yamy/ title=yamy>yamy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%81%E3%81%A0%E3%81%8B/ title=めだか>めだか</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A2%E3%83%B3%E3%83%97/ title=オーディオアンプ>オーディオアンプ</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89/ title=キーボード>キーボード</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/ title=サーバー>サーバー</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/ title=シェルスクリプト>シェルスクリプト</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E9%80%9A%E4%BF%A1/ title=シリアル通信>シリアル通信</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC/ title=ソーラー>ソーラー</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/ title=ターミナル>ターミナル</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%89%E3%83%83%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/ title=ドットインストール>ドットインストール</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%89%E3%83%83%E3%83%88%E3%83%9E%E3%83%88%E3%83%AA%E3%82%AF%E3%82%B9led/ title=ドットマトリクスLED>ドットマトリクスLED</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB/ title=ファイアウォール>ファイアウォール</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%96%E3%83%AD%E3%82%B0/ title=ブログ>ブログ</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80/ title=ブートローダ>ブートローダ</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9A%E3%83%83%E3%83%88/ title=ペット>ペット</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ title=マイクロマウス>マイクロマウス</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3/ title=マイコン>マイコン</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/ title=ミュージックサーバー>ミュージックサーバー</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/ title=ロボコン>ロボコン</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/ title=ロボット>ロボット</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E4%BC%9A/ title=ロボット技術研究会>ロボット技術研究会</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%85%85%E9%9B%BB%E5%99%A8/ title=充電器>充電器</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%88%86%E8%A7%A3/ title=分解>分解</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%88%B6%E5%BE%A1/ title=制御>制御</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%9B%9E%E8%B7%AF%E8%AC%9B%E7%BF%92%E4%BC%9A/ title=回路講習会>回路講習会</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E6%99%82%E8%A8%88/ title=時計>時計</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E6%B7%B1%E5%9C%B3/ title=深圳>深圳</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E7%A7%8B%E6%9C%88/ title=秋月>秋月</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%87%AA%E4%BD%9C/ title=自作>自作</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%87%AA%E5%8B%95%E9%85%8D%E7%B7%9A/ title=自動配線>自動配線</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%B5%A4%E5%A4%96%E7%B7%9A%E5%AD%A6%E7%BF%92%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/ title=赤外線学習リモコン>赤外線学習リモコン</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%BF%B7%E8%B7%AF/ title=迷路>迷路</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%85%89%E6%8E%B2%E7%A4%BA%E6%9D%BF/ title=電光掲示板>電光掲示板</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%8A%9B/ title=電力>電力</a></div></div></aside></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2020 KERI's Lab.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script><script src=/js/custom.js></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script></body></html>

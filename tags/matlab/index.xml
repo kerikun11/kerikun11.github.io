@@ -1,35 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>MATLAB on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/matlab/</link>
-    <description>Recent content in MATLAB on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Wed, 04 Jul 2018 15:18:17 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MATLABで迷路画像をパースする</title>
-      <link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link>
-      <pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid>
-      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
-&lt;p&gt;今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p&gt;
-&lt;p&gt;自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MATLABでスラローム軌道生成</title>
-      <link>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</link>
-      <pubDate>Mon, 04 Sep 2017 14:55:01 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/&#34;&gt;前回&lt;/a&gt;
-の記事ではマイクロマウスのターンの紹介をしました．今回は，そのカーブの軌道の生成方法を紹介したいと思います．&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MATLAB on KERI's Lab</title><link>https://www.kerislab.jp/tags/matlab/</link><description>Recent content in MATLAB on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Wed, 04 Jul 2018 15:18:17 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/matlab/index.xml" rel="self" type="application/rss+xml"/><item><title>MATLABで迷路画像をパースする</title><link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link><pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
+&lt;p>今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p>
+&lt;p>自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p></description></item><item><title>MATLABでスラローム軌道生成</title><link>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</link><pubDate>Mon, 04 Sep 2017 14:55:01 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>&lt;a href="https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/">前回&lt;/a>
+の記事ではマイクロマウスのターンの紹介をしました．今回は，そのカーブの軌道の生成方法を紹介したいと思います．&lt;/p></description></item></channel></rss>

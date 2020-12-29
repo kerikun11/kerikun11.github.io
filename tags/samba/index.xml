@@ -1,28 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Samba on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/samba/</link>
-    <description>Recent content in Samba on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Mon, 23 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/samba/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Raspberry Pi で NAS 作り</title>
-      <link>https://www.kerislab.jp/posts/2015-11-23-samba/</link>
-      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-11-23-samba/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;NASがほしい！&lt;br&gt;
-じゃあ作ろう。&lt;/p&gt;
-&lt;p&gt;スペック&lt;br&gt;
-サーバ：Raspberrypi 2 Type B&lt;br&gt;
-HDD：Western Digital 2TB 3.5 inch&lt;br&gt;
-転送速度：10MB/s（ラズパイのイーサーネットが100Baseなので仕方ない&amp;hellip;）&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Samba on KERI's Lab</title><link>https://www.kerislab.jp/tags/samba/</link><description>Recent content in Samba on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Mon, 23 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/samba/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberry Pi で NAS 作り</title><link>https://www.kerislab.jp/posts/2015-11-23-samba/</link><pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-11-23-samba/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>NASがほしい！&lt;br>
+じゃあ作ろう。&lt;/p>
+&lt;p>スペック&lt;br>
+サーバ：Raspberrypi 2 Type B&lt;br>
+HDD：Western Digital 2TB 3.5 inch&lt;br>
+転送速度：10MB/s（ラズパイのイーサーネットが100Baseなので仕方ない&amp;hellip;）&lt;/p></description></item></channel></rss>

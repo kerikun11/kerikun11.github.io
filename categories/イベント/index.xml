@@ -1,178 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>イベント on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link>
-    <description>Recent content in イベント on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Fri, 28 Feb 2020 15:33:09 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>台湾旅行のメモ</title>
-      <link>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</link>
-      <pubDate>Fri, 28 Feb 2020 15:33:09 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</guid>
-      <description>&lt;p&gt;2020年2月23日から4泊5日，Cheeseの6人で行った台湾旅行のメモ．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>全日本マイクロマウス2019の結果報告</title>
-      <link>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</link>
-      <pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</guid>
-      <description>&lt;p&gt;この記事は
-&lt;a href=&#34;https://adventar.org/calendars/4126&#34; target=&#34;_blank&#34;&gt;東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>イベント on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link><description>Recent content in イベント on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Fri, 28 Feb 2020 15:33:09 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml"/><item><title>台湾旅行のメモ</title><link>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</link><pubDate>Fri, 28 Feb 2020 15:33:09 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</guid><description>&lt;p>2020年2月23日から4泊5日，Cheeseの6人で行った台湾旅行のメモ．&lt;/p></description></item><item><title>全日本マイクロマウス2019の結果報告</title><link>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</link><pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</guid><description>&lt;p>この記事は
+&lt;a href="https://adventar.org/calendars/4126" target="_blank">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a>
 の
-4日目の記事です．&lt;/p&gt;
-&lt;p&gt;こんにちは．けりです．&lt;br&gt;
-今回は，2019年12月1日(日) に行われた，&lt;br&gt;
-&lt;strong&gt;第40回全日本マイクロマウス大会2019&lt;/strong&gt;の結果報告です．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>深圳旅行に行ってきました！</title>
-      <link>https://www.kerislab.jp/posts/2018-03-11-shenzhen-trip/</link>
-      <pubDate>Sun, 11 Mar 2018 22:04:14 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-03-11-shenzhen-trip/</guid>
-      <description>&lt;p&gt;先日，中国の深圳(シンセン)へ旅行に行ってきました！&lt;/p&gt;
-&lt;p&gt;深圳は，中国政府指定の経済特区で，産業が活発に行われています．&lt;/p&gt;
-&lt;p&gt;特に，華強北というエリアでは，電子部品が大量に売られていて，秋葉原の中国版という感じです．&lt;/p&gt;
-&lt;p&gt;この記事では今回の深圳旅行を写真をベースに振り返ります．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>自宅サーバーにNextcloudを導入した</title>
-      <link>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</link>
-      <pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</guid>
-      <description>&lt;p&gt;こんにちは．
-今回は久しぶりにサーバーの話題です．&lt;/p&gt;
-&lt;p&gt;自宅のサーバーにNextcloudを導入したので，それを紹介します．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>謹賀新年 2018</title>
-      <link>https://www.kerislab.jp/posts/2018-01-01-new-year-2018/</link>
-      <pubDate>Mon, 01 Jan 2018 11:54:58 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2018-01-01-new-year-2018/</guid>
-      <description>&lt;p&gt;新年，明けましておめでとうございます．&lt;br&gt;
-ブログ &lt;strong&gt;KERI&amp;rsquo;s Lab&lt;/strong&gt; を始めてから早2年が経ちました．&lt;br&gt;
-今年からは年賀状の代わりにブログでの挨拶とさせて頂きます．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>プチコンに参加しました</title>
-      <link>https://www.kerislab.jp/posts/2017-12-24-petitcon/</link>
-      <pubDate>Sun, 24 Dec 2017 15:45:50 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-12-24-petitcon/</guid>
-      <description>&lt;p&gt;こんにちは．けりです．&lt;/p&gt;
-&lt;p&gt;プチコン・Cheese杯 お疲れ様でした！&lt;/p&gt;
-&lt;p&gt;今回は，Cheese杯の傍ら行われていたトレース競技の参加報告です．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>全日本マイクロマウス2017の結果報告</title>
-      <link>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</link>
-      <pubDate>Wed, 22 Nov 2017 01:10:24 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</guid>
-      <description>&lt;p&gt;こんにちは．&lt;br&gt;
-マイクロマウス全日本大会の3日後に待ち構えていた&lt;strong&gt;卒論中間発表&lt;/strong&gt;を終えたけりです．&lt;/p&gt;
-&lt;p&gt;マウサーの皆さん，中間発表を終えた皆さん，本当にお疲れ様でした&amp;hellip;&lt;/p&gt;
-&lt;h2 id=&#34;全日本マイクロマウス2017&#34;&gt;全日本マイクロマウス2017&lt;/h2&gt;
-&lt;p&gt;さて，11月17日(金)～19日(日)の3日間，全日本マイクロマウス2017が開催されました．&lt;/p&gt;
-&lt;p&gt;僕は去年に引き続き，2回目となる参加をしてきました！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>HPをHugoに移行しました</title>
-      <link>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</link>
-      <pubDate>Tue, 29 Aug 2017 09:09:01 +0900</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</guid>
-      <description>&lt;h2 id=&#34;以前のkeris-lab&#34;&gt;以前のKERI&amp;rsquo;s Lab&lt;/h2&gt;
-&lt;h3 id=&#34;jekyllを使っていた&#34;&gt;Jekyllを使っていた&lt;/h3&gt;
-&lt;p&gt;以前のKERI&amp;rsquo;s LabのHPは，静的ブログジェネレータである&lt;a href=&#34;https://jekyllrb-ja.github.io://jekyllrb-ja.github.io/&#34; target=&#34;_blank&#34;&gt;Jekyll&lt;/a&gt;
-で生成されていました．&lt;/p&gt;
-&lt;p&gt;Jekyllは，静的ブログジェネレータの中で最も有名なものの1つです．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ブログのサーバーをラズパイ3からPINE64 A&#43;に移行</title>
-      <link>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</link>
-      <pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</guid>
-      <description>&lt;h2 id=&#34;新登場のpine64を購入&#34;&gt;新登場のPINE64を購入&lt;/h2&gt;
-&lt;p&gt;秋月電子の新商品で，「PINE64」というボードが登場しました．CPUのスペックはほぼラズパイ3と同等ですが，Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p&gt;
-&lt;p&gt;さらに，ラズパイ3の価格が$35なのに対して，PINE64は$19です．半額近いです．&lt;/p&gt;
-&lt;p&gt;そのかわり，WiFiやBluetoothが技適の関係かわかりませんが今は載っていません．ただ，ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>全日本マイクロマウス2016の結果報告</title>
-      <link>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</link>
-      <pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</guid>
-      <description>&lt;h2 id=&#34;全日本マイクロマウス大会2016&#34;&gt;全日本マイクロマウス大会2016&lt;/h2&gt;
-&lt;p&gt;今年春に先輩から誘われて8月ごろから設計を始めたマイクロマウス．&lt;br&gt;
-11月に開催された全日本マイクロマウス大会2016に出場してきました！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ブログのサーバーが新しくなりました！</title>
-      <link>https://www.kerislab.jp/posts/2016-08-21-raspi3/</link>
-      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-08-21-raspi3/</guid>
-      <description>&lt;h2 id=&#34;ラズパイ3を購入&#34;&gt;ラズパイ3を購入&lt;/h2&gt;
-&lt;h3 id=&#34;ハイスペックなラズパイ3&#34;&gt;ハイスペックなラズパイ3&lt;/h3&gt;
-&lt;p&gt;64bitのARM-CPUが搭載されたラズパイ3が話題になったのは記憶に新しいですが，ラズパイ3は，秋月では6,200円ですし，公式でも5,000円ほどします．&lt;/p&gt;
-&lt;h3 id=&#34;税込4000円かつカード払いok&#34;&gt;税込4,000円かつカード払いOK！&lt;/h3&gt;
-&lt;p&gt;そんなラズパイ3が，Maker Faire Tokyo 2016 で税込4,000円かつカード払いOKで販売しているではありませんか！！&lt;/p&gt;
-&lt;p&gt;これは安い！と思い，使う予定もないのに衝動買いしちゃいました&amp;hellip;(汗&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Maker Faire Tokyo 2016 に出展します！</title>
-      <link>https://www.kerislab.jp/posts/2016-08-05-maker-faire-tokyo-2016/</link>
-      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-08-05-maker-faire-tokyo-2016/</guid>
-      <description>&lt;h2 id=&#34;maker-faire-tokyo-2016&#34;&gt;Maker Faire Tokyo 2016&lt;/h2&gt;
-&lt;p&gt;こんにちは．けりです．&lt;br&gt;
-8月6日(土)，8月7日(日)にお台場の国際展示場で開催される，ものつくりの展示イベントのMaker Faire Tokyo 2016に出展することになりました！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>メダカが増えました！</title>
-      <link>https://www.kerislab.jp/posts/2016-07-13-new-fish/</link>
-      <pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-07-13-new-fish/</guid>
-      <description>&lt;h2 id=&#34;卵がいっぱい-75&#34;&gt;卵がいっぱい！！ 7/5&lt;/h2&gt;
-&lt;p&gt;暖かくなってきたこの時期，ペットのメダカにたくさんの卵ができました．すでに卵の中から目が透けていて今にも孵化しそうです！&lt;/p&gt;
-&lt;p&gt;毎日水替えをしないとカビが生えてしまうので，目が離せません！&lt;/p&gt;
-&lt;p&gt;ちなみに，カビ防止のために，卵の段階では水道水の方がいいらしいです．&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>シンガポールでロボコンしてきました</title>
-      <link>https://www.kerislab.jp/posts/2015-08-12-idc-robocon/</link>
-      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2015-08-12-idc-robocon/</guid>
-      <description>みなさんこんにちは！ けり(@kerikun11)です。 夏休みになりました。ロ技研のみなさんは進捗めまぐるしいことでしょう。 今回の話題は僕が参</description>
-    </item>
-    
-  </channel>
-</rss>
+4日目の記事です．&lt;/p>
+&lt;p>こんにちは．けりです．&lt;br>
+今回は，2019年12月1日(日) に行われた，&lt;br>
+&lt;strong>第40回全日本マイクロマウス大会2019&lt;/strong>の結果報告です．&lt;/p></description></item><item><title>深圳旅行に行ってきました！</title><link>https://www.kerislab.jp/posts/2018-03-11-shenzhen-trip/</link><pubDate>Sun, 11 Mar 2018 22:04:14 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-03-11-shenzhen-trip/</guid><description>&lt;p>先日，中国の深圳(シンセン)へ旅行に行ってきました！&lt;/p>
+&lt;p>深圳は，中国政府指定の経済特区で，産業が活発に行われています．&lt;/p>
+&lt;p>特に，華強北というエリアでは，電子部品が大量に売られていて，秋葉原の中国版という感じです．&lt;/p>
+&lt;p>この記事では今回の深圳旅行を写真をベースに振り返ります．&lt;/p></description></item><item><title>自宅サーバーにNextcloudを導入した</title><link>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</link><pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</guid><description>&lt;p>こんにちは．
+今回は久しぶりにサーバーの話題です．&lt;/p>
+&lt;p>自宅のサーバーにNextcloudを導入したので，それを紹介します．&lt;/p></description></item><item><title>謹賀新年 2018</title><link>https://www.kerislab.jp/posts/2018-01-01-new-year-2018/</link><pubDate>Mon, 01 Jan 2018 11:54:58 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-01-01-new-year-2018/</guid><description>&lt;p>新年，明けましておめでとうございます．&lt;br>
+ブログ &lt;strong>KERI&amp;rsquo;s Lab&lt;/strong> を始めてから早2年が経ちました．&lt;br>
+今年からは年賀状の代わりにブログでの挨拶とさせて頂きます．&lt;/p></description></item><item><title>プチコンに参加しました</title><link>https://www.kerislab.jp/posts/2017-12-24-petitcon/</link><pubDate>Sun, 24 Dec 2017 15:45:50 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-12-24-petitcon/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
+&lt;p>プチコン・Cheese杯 お疲れ様でした！&lt;/p>
+&lt;p>今回は，Cheese杯の傍ら行われていたトレース競技の参加報告です．&lt;/p></description></item><item><title>全日本マイクロマウス2017の結果報告</title><link>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</link><pubDate>Wed, 22 Nov 2017 01:10:24 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-22-micromouse2017/</guid><description>&lt;p>こんにちは．&lt;br>
+マイクロマウス全日本大会の3日後に待ち構えていた&lt;strong>卒論中間発表&lt;/strong>を終えたけりです．&lt;/p>
+&lt;p>マウサーの皆さん，中間発表を終えた皆さん，本当にお疲れ様でした&amp;hellip;&lt;/p>
+&lt;h2 id="全日本マイクロマウス2017">全日本マイクロマウス2017&lt;/h2>
+&lt;p>さて，11月17日(金)～19日(日)の3日間，全日本マイクロマウス2017が開催されました．&lt;/p>
+&lt;p>僕は去年に引き続き，2回目となる参加をしてきました！&lt;/p></description></item><item><title>HPをHugoに移行しました</title><link>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</link><pubDate>Tue, 29 Aug 2017 09:09:01 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</guid><description>&lt;h2 id="以前のkeris-lab">以前のKERI&amp;rsquo;s Lab&lt;/h2>
+&lt;h3 id="jekyllを使っていた">Jekyllを使っていた&lt;/h3>
+&lt;p>以前のKERI&amp;rsquo;s LabのHPは，静的ブログジェネレータである&lt;a href="https://jekyllrb-ja.github.io://jekyllrb-ja.github.io/" target="_blank">Jekyll&lt;/a>
+で生成されていました．&lt;/p>
+&lt;p>Jekyllは，静的ブログジェネレータの中で最も有名なものの1つです．&lt;/p></description></item><item><title>ブログのサーバーをラズパイ3からPINE64 A+に移行</title><link>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</link><pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</guid><description>&lt;h2 id="新登場のpine64を購入">新登場のPINE64を購入&lt;/h2>
+&lt;p>秋月電子の新商品で，「PINE64」というボードが登場しました．CPUのスペックはほぼラズパイ3と同等ですが，Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p>
+&lt;p>さらに，ラズパイ3の価格が$35なのに対して，PINE64は$19です．半額近いです．&lt;/p>
+&lt;p>そのかわり，WiFiやBluetoothが技適の関係かわかりませんが今は載っていません．ただ，ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません．&lt;/p></description></item><item><title>全日本マイクロマウス2016の結果報告</title><link>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</link><pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</guid><description>&lt;h2 id="全日本マイクロマウス大会2016">全日本マイクロマウス大会2016&lt;/h2>
+&lt;p>今年春に先輩から誘われて8月ごろから設計を始めたマイクロマウス．&lt;br>
+11月に開催された全日本マイクロマウス大会2016に出場してきました！&lt;/p></description></item><item><title>ブログのサーバーが新しくなりました！</title><link>https://www.kerislab.jp/posts/2016-08-21-raspi3/</link><pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-21-raspi3/</guid><description>&lt;h2 id="ラズパイ3を購入">ラズパイ3を購入&lt;/h2>
+&lt;h3 id="ハイスペックなラズパイ3">ハイスペックなラズパイ3&lt;/h3>
+&lt;p>64bitのARM-CPUが搭載されたラズパイ3が話題になったのは記憶に新しいですが，ラズパイ3は，秋月では6,200円ですし，公式でも5,000円ほどします．&lt;/p>
+&lt;h3 id="税込4000円かつカード払いok">税込4,000円かつカード払いOK！&lt;/h3>
+&lt;p>そんなラズパイ3が，Maker Faire Tokyo 2016 で税込4,000円かつカード払いOKで販売しているではありませんか！！&lt;/p>
+&lt;p>これは安い！と思い，使う予定もないのに衝動買いしちゃいました&amp;hellip;(汗&lt;/p></description></item><item><title>Maker Faire Tokyo 2016 に出展します！</title><link>https://www.kerislab.jp/posts/2016-08-05-maker-faire-tokyo-2016/</link><pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-05-maker-faire-tokyo-2016/</guid><description>&lt;h2 id="maker-faire-tokyo-2016">Maker Faire Tokyo 2016&lt;/h2>
+&lt;p>こんにちは．けりです．&lt;br>
+8月6日(土)，8月7日(日)にお台場の国際展示場で開催される，ものつくりの展示イベントのMaker Faire Tokyo 2016に出展することになりました！&lt;/p></description></item><item><title>メダカが増えました！</title><link>https://www.kerislab.jp/posts/2016-07-13-new-fish/</link><pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-13-new-fish/</guid><description>&lt;h2 id="卵がいっぱい-75">卵がいっぱい！！ 7/5&lt;/h2>
+&lt;p>暖かくなってきたこの時期，ペットのメダカにたくさんの卵ができました．すでに卵の中から目が透けていて今にも孵化しそうです！&lt;/p>
+&lt;p>毎日水替えをしないとカビが生えてしまうので，目が離せません！&lt;/p>
+&lt;p>ちなみに，カビ防止のために，卵の段階では水道水の方がいいらしいです．&lt;/p></description></item><item><title>シンガポールでロボコンしてきました</title><link>https://www.kerislab.jp/posts/2015-08-12-idc-robocon/</link><pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-08-12-idc-robocon/</guid><description>みなさんこんにちは！ けり(@kerikun11)です。 夏休みになりました。ロ技研のみなさんは進捗めまぐるしいことでしょう。 今回の話題は僕が参</description></item></channel></rss>

@@ -1,35 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>STM32 on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/stm32/</link>
-    <description>Recent content in STM32 on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/stm32/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>KERISE v1の設計(回路編)</title>
-      <link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link>
-      <pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-&lt;p&gt;今年の全日本マイクロマウス大会2016に出場したKERISE v1．今回はその回路設計を紹介します．&lt;/p&gt;
-&lt;p&gt;全日本マイクロマウス大会2016の結果報告は&lt;a href=&#34;https://www.kerislab.jp/posts/2016-11-21-micromouse2016/&#34;&gt;こちら&lt;/a&gt;
-&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;KERISEv1&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src=&#34;KERISEv1.jpg&#34; alt=&#34;KERISEv1&#34; style=&#34;width: 240px;&#34;/&gt;
-	
-&lt;/figure&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STM32 on KERI's Lab</title><link>https://www.kerislab.jp/tags/stm32/</link><description>Recent content in STM32 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/stm32/index.xml" rel="self" type="application/rss+xml"/><item><title>KERISE v1の設計(回路編)</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1．今回はその回路設計を紹介します．&lt;/p>
+&lt;p>全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">こちら&lt;/a>
+&lt;/p>
+&lt;figure >
+&lt;figcaption>
+&lt;h4>KERISEv1&lt;/h4>
+&lt;/figcaption>
+&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+&lt;/figure></description></item></channel></rss>

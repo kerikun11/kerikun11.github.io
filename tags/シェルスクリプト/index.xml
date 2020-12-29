@@ -1,23 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>シェルスクリプト on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link>
-    <description>Recent content in シェルスクリプト on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sun, 28 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ブログを更新するスクリプト</title>
-      <link>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</link>
-      <pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</guid>
-      <description>&lt;h2 id=&#34;github上にあるブログを同期するシェルスクリプト&#34;&gt;github上にあるブログを同期するシェルスクリプト&lt;/h2&gt;
-&lt;p&gt;自分用のメモ&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>シェルスクリプト on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link><description>Recent content in シェルスクリプト on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 28 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/index.xml" rel="self" type="application/rss+xml"/><item><title>ブログを更新するスクリプト</title><link>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</link><pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</guid><description>&lt;h2 id="github上にあるブログを同期するシェルスクリプト">github上にあるブログを同期するシェルスクリプト&lt;/h2>
+&lt;p>自分用のメモ&lt;/p></description></item></channel></rss>

@@ -1,27 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>FFT on KERI&#39;s Lab</title>
-    <link>https://www.kerislab.jp/tags/fft/</link>
-    <description>Recent content in FFT on KERI&#39;s Lab</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <managingEditor>kerikun11&#43;web@gmail.com (けり)</managingEditor>
-    <webMaster>kerikun11&#43;web@gmail.com (けり)</webMaster>
-    <lastBuildDate>Sun, 22 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/fft/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>高速フーリエ変換でスペクトル表示</title>
-      <link>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</link>
-      <pubDate>Sun, 22 May 2016 00:00:00 +0000</pubDate>
-      <author>kerikun11&#43;web@gmail.com (けり)</author>
-      <guid>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</guid>
-      <description>&lt;div class=&#34;sect1&#34;&gt;
-&lt;h2 id=&#34;_概要&#34;&gt;概要&lt;/h2&gt;
-&lt;div class=&#34;sectionbody&#34;&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;Nucleoボードとグラフィック液晶を使って，音声解析機を作りました．マイクに入ってきた音を高速フーリエ変換して，周波数スペクトルを表示します．&lt;/p&gt;
-&lt;/div&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on KERI's Lab</title><link>https://www.kerislab.jp/tags/fft/</link><description>Recent content in FFT on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 22 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/fft/index.xml" rel="self" type="application/rss+xml"/><item><title>高速フーリエ変換でスペクトル表示</title><link>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</link><pubDate>Sun, 22 May 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</guid><description>&lt;div class="sect1">
+&lt;h2 id="_概要">概要&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="paragraph">
+&lt;p>Nucleoボードとグラフィック液晶を使って，音声解析機を作りました．マイクに入ってきた音を高速フーリエ変換して，周波数スペクトルを表示します．&lt;/p>
+&lt;/div></description></item></channel></rss>
