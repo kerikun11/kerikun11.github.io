@@ -57,7 +57,7 @@ zipファイルでのダウンロードは [こちら](https://github.com/keriku
 
 今回はこのクラスに対して，単位 [m] を [rad] とみなして使用します．
 
-以下， [accel_designer.h](https://github.com/kerikun11/micromouse-control-module/blob/master/include/accel_designer.h) の抜粋:
+以下， [accel_designer.h](https://github.com/kerikun11/micromouse-control-module/blob/v1.0.1/include/accel_designer.h) の抜粋:
 
 ```cpp
 /**
@@ -116,7 +116,7 @@ protected:
 
 平面上の位置および姿勢を表現する座標を表します．
 
-以下， [pose.h](https://github.com/kerikun11/micromouse-control-module/blob/master/include/pose.h) の抜粋:
+以下， [pose.h](https://github.com/kerikun11/micromouse-control-module/blob/v1.0.1/include/pose.h) の抜粋:
 
 ```cpp
 /**
@@ -131,7 +131,7 @@ struct Pose {
 
 生成した軌道をやりとりするための状態変数です．
 
-以下， [state.h](https://github.com/kerikun11/micromouse-control-module/blob/master/include/state.h) の抜粋:
+以下， [state.h](https://github.com/kerikun11/micromouse-control-module/blob/v1.0.1/include/state.h) の抜粋:
 
 ```cpp
 /**
@@ -153,7 +153,7 @@ struct State {
 
 コンストラクタが2つあり，生成済みのスラローム形状を代入するものと，拘束条件を与えてスラローム形状を生成するものがあります．
 
-以下， [slalom.h](https://github.com/kerikun11/micromouse-control-module/blob/master/include/slalom.h) の抜粋:
+以下， [slalom.h](https://github.com/kerikun11/micromouse-control-module/blob/v1.0.1/include/slalom.h) の抜粋:
 
 ```cpp
 /**
@@ -219,7 +219,7 @@ public:
 
 コンストラクタにてスラローム形状オブジェクトを渡します．
 
-以下， [slalom.h](https://github.com/kerikun11/micromouse-control-module/blob/master/include/slalom.h) の抜粋:
+以下， [slalom.h](https://github.com/kerikun11/micromouse-control-module/blob/v1.0.1/include/slalom.h) の抜粋:
 
 ```cpp
 /**
