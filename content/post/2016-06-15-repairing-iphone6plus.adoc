@@ -2,7 +2,7 @@
 date: "2016-06-15"
 title: "割れちゃったiPhoneの液晶を直したお話"
 categories:
-  - "作品紹介"
+  - "説明記事"
 tags:
   - "iPhone"
   - "分解"
