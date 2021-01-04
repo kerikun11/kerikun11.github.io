@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Fri, 11 Dec 2020 18:11:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32 でマイクロマウスを作るメリットとデメリット</title><link>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</link><pubDate>Fri, 11 Dec 2020 18:11:57 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</guid><description>&lt;p>この記事は
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Mon, 04 Jan 2021 18:49:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>トラックボールマウス DEFT PRO の静音化</title><link>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</link><pubDate>Mon, 04 Jan 2021 18:49:57 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>最近マウスの代わりにトラックボールを使ってみています。&lt;br>
+腕を大きく動かさなくていいので結構いい感じです。&lt;/p>
+&lt;p>ただ、僕はクリック音が静かな &lt;strong>静音マウス&lt;/strong> が好きなのですが、
+残念ながらトラックボールで静音タイプという商品はほとんどありません。&lt;/p>
+&lt;p>そこで友人から勧められたちょっと良さげなトラックボール &lt;strong>DEFT PRO&lt;/strong> を買って、静音トラックボールに改造しました。&lt;/p>
+&lt;p>今回の記事では静音化の手順と注意点を簡単に紹介したいと思います。&lt;/p></description></item><item><title>ESP32 でマイクロマウスを作るメリットとデメリット</title><link>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</link><pubDate>Fri, 11 Dec 2020 18:11:57 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</guid><description>&lt;p>この記事は
 &lt;a href="https://adventar.org/calendars/5829" target="_blank">Micro Mouse Advent Calendar 2020&lt;/a>
 の 11 日目の記事です．&lt;/p>
 &lt;p>昨日の記事は，FND さんの「今年買ったもの」でした．&lt;br>
@@ -116,27 +123,21 @@
 」です．&lt;/p>
 &lt;p>ESP32で何か物を作るとき，電源を切っても保存しておきたいデータなどがあると思います．独自の形式やJSONなどでファイルに保存する方法もありますが，保存と復元の処理を実装するのはなかなか面倒です．&lt;/p>
 &lt;p>みんなどうせ同じようなことをするでしょうということで，ESP32ではライブラリが用意されていました．&lt;/p>
-&lt;p>不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します．&lt;/p></description></item><item><title>おすすめ PDF Viewer</title><link>https://www.kerislab.jp/posts/2016-06-14-pdf/</link><pubDate>Tue, 14 Jun 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-06-14-pdf/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します．&lt;/p></description></item><item><title>割れちゃったiPhoneの液晶を直したお話</title><link>https://www.kerislab.jp/posts/2016-06-15-repairing-iphone6plus/</link><pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-06-15-repairing-iphone6plus/</guid><description>&lt;div class="sect1">
+&lt;h2 id="_概要">概要&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="sect2">
+&lt;h3 id="_割れた_iphone_6_plus">割れた iPhone 6 Plus&lt;/h3>
+&lt;div class="paragraph">
+&lt;p>他のことに夢中になっているときに机から落として割ってしまいました．ショックです…​&lt;/p>
+&lt;/div>
+&lt;div class="paragraph img-medium">
+&lt;p>&lt;span class="image">&lt;img src="broken-iphone.jpg" alt="割れたiPhone"/>&lt;/span>&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="sect2">
+&lt;h3 id="_自力で液晶パネルを交換する">自力で液晶パネルを交換する&lt;/h3></description></item><item><title>おすすめ PDF Viewer</title><link>https://www.kerislab.jp/posts/2016-06-14-pdf/</link><pubDate>Tue, 14 Jun 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-06-14-pdf/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>世の中にはたくさんのPDF Viewerがあり一長一短である．AdobeのPDF Readerが有名であるが，もっと使いやすいものを見つけたのでそれを紹介する．&lt;/p></description></item><item><title>回路講習会2015</title><link>https://www.kerislab.jp/posts/2016-05-18-circuit-lecture/</link><pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-05-18-circuit-lecture/</guid><description>&lt;h2 id="回路講習会">回路講習会&lt;/h2>
 &lt;p>東京工業大学ロボット技術研究会の平成27年度回路講習会の資料です．&lt;br>
 講習会は90分の講義を4回行いました．&lt;br>
-気持ちを込めて作りました．スライド数は200枚を超えています．どうぞご覧ください．&lt;/p></description></item><item><title>KiCad で自動配線</title><link>https://www.kerislab.jp/posts/2016-04-22-freerouting/</link><pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-22-freerouting/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;figure >
-&lt;figcaption>
-&lt;h4>KiCad&lt;/h4>
-&lt;/figcaption>
-&lt;img src="kicad.jpg" alt="KiCad" />
-&lt;/figure>
-&lt;h3 id="自動配線ツールを使おう">自動配線ツールを使おう&lt;/h3>
-&lt;p>KiCad が流行ってきて，使う人が増えてきている．&lt;/p>
-&lt;p>しかし，自動配線ツールを使っている人は少ない．&lt;/p>
-&lt;p>それでははもったいない！！&lt;/p>
-&lt;p>今回は自動配線ツールの使い方を説明する．&lt;/p></description></item><item><title>PICでブートローダ</title><link>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</link><pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;h3 id="pic18f27j53を使おう">PIC18F27J53を使おう&lt;/h3>
-&lt;p>以前 &lt;a href="https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/">PIC18F27J53のすすめ&lt;/a>
-という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。&lt;/p>
-&lt;h3 id="ブートローダとは">ブートローダとは&lt;/h3>
-&lt;p>ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。&lt;/p>
-&lt;p>ただし、初回に一度だけブートローダ用のプログラムをPICkitなどで書きこむ必要があります。&lt;/p>
-&lt;h3 id="ユーザープログラム">ユーザープログラム&lt;/h3>
-&lt;p>ユーザープログラムとは、ブートローダーにより書き込むプログラムです。あなたが作った、実際に動かすプログラムということです。&lt;/p></description></item></channel></rss>
+気持ちを込めて作りました．スライド数は200枚を超えています．どうぞご覧ください．&lt;/p></description></item></channel></rss>
