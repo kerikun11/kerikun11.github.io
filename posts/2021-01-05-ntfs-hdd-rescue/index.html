@@ -1,0 +1,519 @@
+<!doctype html><html class=no-js lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=google-site-verification content="EGHRTn1Bed7L7Ntdi0a-iywpUXqKpLm_ISqeeMzi5sY"><title>アクセスできなくなったHDDのデータを救出した記録 - KERI's Lab</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><meta property="og:title" content="アクセスできなくなったHDDのデータを救出した記録"><meta property="og:description" content="はじめに
+こんにちは。けりです。
+年末にひとつ騒動がありました。
+親がポータブルHDDにデータをコピーしていたところ、急に転送速度が0になってそれっきりHDDにアクセスできなくなってしまったというのです。"><meta property="og:type" content="article"><meta property="og:url" content="https://www.kerislab.jp/posts/2021-01-05-ntfs-hdd-rescue/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:published_time" content="2021-01-05T18:49:57+09:00"><meta property="article:modified_time" content="2021-01-05T18:49:57+09:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="アクセスできなくなったHDDのデータを救出した記録"><meta name=twitter:description content="はじめに
+こんにちは。けりです。
+年末にひとつ騒動がありました。
+親がポータブルHDDにデータをコピーしていたところ、急に転送速度が0になってそれっきりHDDにアクセスできなくなってしまったというのです。"><meta name=twitter:site content="@kerikun11"><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/syntax.css><link rel="shortcut icon" href=/favicon.ico><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-103856564-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="KERI's Lab" rel=home><div class="logo__item logo__text"><div class=logo__title>KERI's Lab</div><div class=logo__tagline>KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li><li class=menu__item><a class=menu__link href=/works/><span class=menu__text>Works</span></a></li><li class=menu__item><a class=menu__link href=/categories/><span class=menu__text>Categories</span></a></li><li class=menu__item><a class=menu__link href=/tags/><span class=menu__text>Tags</span></a></li><li class=menu__item><a class=menu__link href=/archives/><span class=menu__text>Archives</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>アクセスできなくなったHDDのデータを救出した記録</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2021-01-05T18:49:57+09:00>2021-01-05</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E5%82%99%E5%BF%98%E9%8C%B2/ rel=category>備忘録</a></span></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><span class=meta__text><a class=meta__link href=/tags/hdd/ rel=category>HDD</a>, <a class=meta__link href=/tags/linux/ rel=category>Linux</a>, <a class=meta__link href=/tags/windows/ rel=category>Windows</a></span></div></div></header><a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script><div class="content post__content clearfix"><h2 id=はじめに>はじめに</h2><p>こんにちは。けりです。</p><p>年末にひとつ騒動がありました。</p><p>親がポータブルHDDにデータをコピーしていたところ、急に転送速度が0になってそれっきりHDDにアクセスできなくなってしまったというのです。</p><h3 id=windows-pc-からはアクセスできない>Windows PC からはアクセスできない</h3><p>症状は結構深刻で、Windows の PC に接続するとエクスプローラがフリーズしてしまうという始末です。</p><p>デバイスマネージャーには一応表示されていましたが、コンピュータの管理画面でみてもディスクは表示されていませんでした。</p><h3 id=データを救出したい>データを救出したい</h3><p>そのHDDにしか保存されていないデータがあるらしく、どうにかデータだけでも救出できないかということでいろいろ試してみました。</p><p>その結果、(おそらく)全てのデータを復元できたので、備忘録としてメモを残しておきます。</p><h2 id=故障したhdd>故障したHDD</h2><p>今回問題となったHDDは <code>Western Digital</code> 製の4TBポータブルHDDです。</p><p>型番は <code>WD Elements Portable WDBU6Y0040BBK-WESN</code> です。</p><p>価格.com でも上位の HDD なので壊れるとは思ってもいませんでした。</p><p>HDDは購入時のままで使用していたので、フォーマット形式は NTFS です。<br>(フォーマット形式も認識できなかったので、この情報はとても重要でした)</p><h2 id=必要なもの>必要なもの</h2><p>データの復旧にあたって、以下のものを使用しました。</p><ul><li>故障した 4TB の HDD</li><li>故障した 4TB より大きい別の HDD 2つ<ul><li>1つでもできるかもしれないが、2つあると安全</li><li>1つは故障HDDのバックアップイメージの保存、もう1つは作業用ディクスとして修復に使用</li></ul></li><li>Linux PC<ul><li>今回は Arch Linux を使用、おそらく Ubuntu でも可。</li></ul></li><li>Windows PC<ul><li>Windows 10 を使用</li></ul></li></ul><p>各 Linux コマンドのインストール方法は Linux のディストリビューションによって異なるので解説しません。</p><h2 id=復旧作業のログ>復旧作業のログ</h2><p>今回は以下のような手順で解析およびデータの救出を行いました。</p><p>手順はかなり長いので、読み飛ばしたい方は<a href=#%e6%89%8b%e9%a0%86%e3%81%ae%e3%81%be%e3%81%a8%e3%82%81>手順のまとめ</a>
+へどうぞ。</p><h3 id=linux-pc-に-hdd-を接続する>Linux PC に HDD を接続する</h3><p>Windows PC ではアクセスすらできなかったので、手持ちの <code>Arch Linux</code> の PC で解析を行いました。</p><p>Linux PC に HDD を接続したところ、デバイス <code>/dev/sda</code> として認識されました。</p><p>確認コマンドは以下のとおりです。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ lsblk
+
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda           8:0    0   3.6T  0 disk 
+nvme0n1     259:0    0 931.5G  0 disk 
+├─nvme0n1p1 259:1    0   300M  0 part /boot/efi
+├─nvme0n1p2 259:2    0 914.4G  0 part /
+└─nvme0n1p3 259:3    0  16.8G  0 part [SWAP]
+</code></pre></div><p><code>nvme0n1</code> が PC のメインの SSD で、 <code>sda</code> が故障した HDD です。</p><h3 id=linux-の-gdisk-コマンドで-gpt-パーティションを解析>Linux の gdisk コマンドで GPT パーティションを解析</h3><p>まずは Linux の <code>gdisk</code> コマンドでディスクのパーティションの状態をチェックします。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ sudo gdisk /dev/sda
+
+GPT fdisk (gdisk) version 1.0.5
+
+Warning! Read error 0! Misbehavior now likely!
+Caution! After loading partitions, the CRC doesn&#39;t check out!
+Warning! Main partition table CRC mismatch! Loaded backup partition table
+instead of main partition table!
+
+Warning! One or more CRCs don&#39;t match. You should repair the disk!
+Main header: OK
+Backup header: OK
+Main partition table: ERROR
+Backup partition table: OK
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: damaged
+
+****************************************************************************
+Caution: Found protective or hybrid MBR and corrupt GPT. Using GPT, but disk
+verification and recovery are STRONGLY recommended.
+****************************************************************************
+</code></pre></div><p>大事な部分を抜き出すと下記のとおりです。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: damaged
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Main header: OK
+Backup header: OK
+Main partition table: ERROR
+Backup partition table: OK
+</code></pre></div><p>GPT パーティションテーブルのうち、 <code>Main partition table</code> が破損していることがわかります。</p><p>幸いなことに、GPTパーティションテーブルはディスクの先頭と末尾の2箇所に保存されていて、 <code>Backup partition table</code> は無事なようです。</p><p><code>gdisk</code> コマンドで修復をするのですが、破損したディスクを直接いじるのは危険なので、クローンHDDを作成してそちらで作業を行うことにしました。</p><h3 id=ディスクイメージのバックアップ>ディスクイメージのバックアップ</h3><p>Linux の <code>ddrescue</code> コマンドで HDD をまるごとバックアップします。</p><p><code>ddrescue</code> コマンドは、故障したHDDからいろいろな読み出し方を試みて最大限の情報を読み取ろうと努力する優秀なコマンドです。</p><p><code>ddrescue</code> コマンドの引数として、故障したデバイス <code>/dev/sda</code> 、ディスクイメージの保存先 <code>*.img</code> 、 マップファイルの保存先 <code>*.map</code> を与えます。</p><p>マップファイルはコピーを中断したり再開するときに必要となるので、重要です。</p><p>ディスクイメージの保存先は、外付けの別の HDD になります。</p><p>今回は 4TB の HDD のバックアップだったので、8TB の HDD を使用しました。</p><p>コマンドを実行すると以下のように途中経過が表示されます。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ sudo ddrescue /dev/sda /mnt/another_8tb_hdd/wd_elements.img ddrescue_hdd.map
+
+GNU ddrescue 1.25
+Press Ctrl-C to interrupt
+     ipos:  931266 kB, non-trimmed:    49152 B,  current rate:  68091 kB/s
+     opos:  931266 kB, non-scraped:        0 B,  average rate:  19373 kB/s
+non-tried:    3999 GB,  bad-sector:        0 B,    error rate:       0 B/s
+  rescued:  891174 kB,   bad areas:        0,        run time:         45s
+pct rescued:    0.02%, read errors:        1,  remaining time:     12h 28m
+                              time since last successful read:           0
+Copying non-tried blocks... Pass 1 (forwards)
+</code></pre></div><p>今回、 HDD はやはり故障していたようなので、最終的に 99.98% でそれ以上コピーが進まなくなってしまいました。</p><p><code>time since last successful read</code> がどんどん大きくなってこれ以上進まないなと思ったら <code>Ctrl-C</code> で中断します。</p><p>4TB のバックアップに、2日以上かかりました。</p><h3 id=バックアップ中に起きたトラブル>バックアップ中に起きたトラブル</h3><p>実は、 <code>ddrescue</code> でディスクイメージをバックアップしている際に別のトラブルが発生しました。</p><p>PC の別の USB ポートにスマホを接続したところ、USB の電源供給量を超過したらしく、HDD の電源が切れてしまいました&mldr;</p><p>さすがに別の USB ポートなら大丈夫だと思っていたのですが、ノートPCの電源は思ったより非力だったようです。</p><p>つまり、コピー中のHDDをブッち抜いたわけです&mldr;</p><p>その結果、 <code>ddrescue</code> コマンドでバックアップを再開しようとしても以下のように <code>Input/output Error</code> となって再開できなくなってしまいました。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ sudo ddrescue /dev/sda wd_elements.img ddrescue_hdd.map
+
+GNU ddrescue 1.25
+
+Press Ctrl-C to interrupt
+Initial status (read from mapfile)
+rescued: 3176 GB, tried: 3776 kB, bad-sector: 0 B, bad areas: 0
+
+Current status
+     ipos:    3178 GB, non-trimmed:    3776 kB,  current rate:       0 B/s
+     opos:    3178 GB, non-scraped:        0 B,  average rate:       0 B/s
+non-tried:  824395 MB,  bad-sector:        0 B,    error rate:       0 B/s
+  rescued:    3176 GB,   bad areas:        0,        run time:          0s
+pct rescued:   79.39%, read errors:        0,  remaining time:         n/a
+                              time since last successful read:         n/a
+Copying non-tried blocks... Pass 1 (forwards)
+ddrescue: Write error: Input/output error
+</code></pre></div><p>正直、もう詰んだと思いましたが、友人の助けを借りながら Linux カーネルのログを見ながら原因を調査したところ、
+バックアップ用の 8TB の HDD の書き込みエラーが原因らしいということがわかりました。</p><p>データの書き込み中に引っこ抜いたため、NTFS論理が壊れてしまったようです。</p><p>そこで 8TB の HDD を一旦 Window PC に接続して修復を行いました。</p><p>ファイルシステム NTFS の修復アルゴリズムは Microsoft が非公開にしているので原則として Windows PC でしか実行することができません。</p><p>Windows PC に 8TB の HDD を接続して、ディスクのプロパティからエラーチェック、自動修復を行いました。</p><p>幸い、正常に修復が完了して <code>ddrescue</code> を再開することができました。</p><h3 id=クローンディスクの作成>クローンディスクの作成</h3><p><code>ddrescue</code> コマンドでディスクイメージ <code>*.img</code> にバックアップすることができたで、これをまた別の 4TB 以上の HDD に焼いて、故障したHDDのクローンディスクを作成します。</p><p>手持ちの別の 4TB の HDD が、 故障した 4TB の HDD よりも若干サイズが大きかったので、それを使用することができました。</p><p>クローンHDD は <code>/dev/sdc</code> として認識されているものとします。</p><p>下記のコマンドで故障したHDDのディスクイメージを別のHDDに焼きます。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ sudo dd if=wd_elements.img of=/dev/sdc status=progress
+</code></pre></div><p>4TBの書き込みなので、1日くらいかかりました。</p><h3 id=パーティションテーブルの修復>パーティションテーブルの修復</h3><p>ここからは上記で作成したクローンディスクに対して修復作業を行います。</p><p>まず <code>gdisk</code> コマンドでパーティションテーブルを修復します。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ sudo gdisk /dev/sdc
+
+GPT fdisk (gdisk) version 1.0.5
+
+Warning! Read error 0! Misbehavior now likely!
+Caution! After loading partitions, the CRC doesn&#39;t check out!
+Warning! Main partition table CRC mismatch! Loaded backup partition table
+instead of main partition table!
+
+Warning! One or more CRCs don&#39;t match. You should repair the disk!
+Main header: OK
+Backup header: OK
+Main partition table: ERROR
+Backup partition table: OK
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: damaged
+
+****************************************************************************
+Caution: Found protective or hybrid MBR and corrupt GPT. Using GPT, but disk
+verification and recovery are STRONGLY recommended.
+****************************************************************************
+
+Command (? for help): ?
+b	back up GPT data to a file
+c	change a partition&#39;s name
+d	delete a partition
+i	show detailed information on a partition
+l	list known partition types
+n	add a new partition
+o	create a new empty GUID partition table (GPT)
+p	print the partition table
+q	quit without saving changes
+r	recovery and transformation options (experts only)
+s	sort partitions
+t	change a partition&#39;s type code
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+
+Command (? for help): r
+
+Recovery/transformation command (? for help): ?
+b        use backup GPT header (rebuilding main)
+c        load backup partition table from disk (rebuilding main)
+d        use main GPT header (rebuilding backup)
+e        load main partition table from disk (rebuilding backup)
+f        load MBR and build fresh GPT from it
+g        convert GPT into MBR and exit
+h        make hybrid MBR
+i        show detailed information on a partition
+l        load partition data from a backup file
+m        return to main menu
+o        print protective MBR data
+p        print the partition table
+q        quit without saving changes
+t        transform BSD disklabel partition
+v        verify disk
+w        write table to disk and exit
+x        extra functionality (experts only)
+?        print this menu
+
+Recovery/transformation command (? for help): c
+Warning! This will probably do weird things if you&#39;ve converted an MBR to
+GPT form and haven&#39;t yet saved the GPT! Proceed? (Y/N): Y
+
+Recovery/transformation command (? for help): w
+
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): Y
+OK; writing new GUID partition table (GPT) to /dev/sdc.
+The operation has completed successfully.
+</code></pre></div><p>基本的には案内に従って、バックアップパーティションテーブルからメインパーティションテーブルの復元を選択します。
+最後に変更をディスクに書き込めば完了です。</p><p>ディスクを接続しなおせば、パーティション <code>/dev/sdc1</code> が認識されているはずです。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ lsblk
+
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda           8:0    0   3.6T  0 disk 
+sdb           8:0    0   7.3T  0 disk 
+├─sdb1        8:1    0    16M  0 part 
+└─sdb2        8:2    0   7.3T  0 part /mnt/another_8tb_hdd
+sdc           8:0    0   3.6T  0 disk 
+├─sdc1        8:1    0   3.6T  0 part 
+nvme0n1     259:0    0 931.5G  0 disk 
+├─nvme0n1p1 259:1    0   300M  0 part /boot/efi
+├─nvme0n1p2 259:2    0 914.4G  0 part /
+└─nvme0n1p3 259:3    0  16.8G  0 part [SWAP]
+</code></pre></div><h3 id=ntfs-としてマウントしてみる失敗>NTFS としてマウントしてみる→失敗</h3><p>パーティションテーブルが修復できて、パーティションが認識できたので、
+運が良ければこのまま NTFS としてマウントできるのですが、
+今回の場合はパーティション内も損傷していたらしく、
+まだデータの読み出しはできませんでした。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ sudo mkdir /mnt/data
+$ sudo mount -t ntfs /dev/sdc1 /mnt/data
+
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: 無効な引数です
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: 入力/出力エラーです
+Failed to mount &#39;/dev/sdc1&#39;: 入力/出力エラーです
+NTFS is either inconsistent, or there is a hardware fault, or it&#39;s a
+SoftRAID/FakeRAID hardware. In the first case run chkdsk /f on Windows
+then reboot into Windows twice. The usage of the /f parameter is very
+important! If the device is a SoftRAID/FakeRAID then first activate
+it and mount a different device under the /dev/mapper/ directory, (e.g.
+/dev/mapper/nvidia_eahaabcc1). Please see the &#39;dmraid&#39; documentation
+for more details.
+</code></pre></div><p>上記のメッセージにあるように、 Windows の PC で <code>chkdsk</code> コマンドを実行してみましたが、下記のようにエラーになりました。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>PS C:\WINDOWS\system32&gt; chkdsk d: /f
+ファイル システムの種類は NTFS です。
+ボリュームとバージョンの判断できません。CHKDSK を中止します。
+PS C:\WINDOWS\system32&gt;
+</code></pre></div><p>どうやら NTFS のブートセクタが破損してしまっていて、この方法では修復できないようです。</p><p>ちなみに Linux の <code>ntfsfix</code> コマンドも試しましたが、だめでした。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ sudo ntfsfix /dev/sdc1
+
+Mounting volume... NTFS signature is missing.
+FAILED
+Attempting to correct errors... NTFS signature is missing.
+FAILED
+Failed to startup volume: Invalid argument
+NTFS signature is missing.
+Trying the alternate boot sector
+Unrecoverable error
+Volume is corrupt. You should run chkdsk.
+</code></pre></div><h3 id=testdisk-で-ntfs-のブートセクタを再構築する>testdisk で NTFS のブートセクタを再構築する</h3><p>NTFS の ブートセクタを再構築するには Linux の <code>testdisk</code> コマンドを使用します。</p><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>$ sudo testdisk /dev/sdc1
+</code></pre></div><p>基本的にはガイドに従って操作します。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER &lt;grenier@cgsecurity.org&gt;
+https://www.cgsecurity.org
+
+  TestDisk is free software, and comes with ABSOLUTELY NO WARRANTY.
+
+Select a media (use Arrow keys, then press Enter):
+&gt;Disk /dev/sdc1 - 4000 GB / 3725 GiB
+
+&gt;[Proceed ]  [  Quit  ]
+
+Note: Disk capacity must be correctly detected for a successful recovery.
+If a disk listed above has an incorrect size, check HD jumper settings and BIOS
+detection, and install the latest OS patches and disk drivers.
+</code></pre></div><p>↑選択しているパーティションを確認し、 <code>Proceed</code> で次に進みます。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Disk /dev/sdc1 - 4000 GB / 3725 GiB
+
+Please select the partition table type, press Enter when done.
+ [Intel  ] Intel/PC partition
+ [EFI GPT] EFI GPT partition map (Mac i386, some x86_64...)
+ [Humax  ] Humax partition table
+ [Mac    ] Apple partition map (legacy)
+&gt;[None   ] Non partitioned media
+ [Sun    ] Sun Solaris partition
+ [XBox   ] XBox partition
+ [Return ] Return to disk selection
+
+Hint: None partition table type has been detected.
+</code></pre></div><p>↑ 形式は <code>None</code> を選びます。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Disk /dev/sdc1 - 4000 GB / 3725 GiB - 7813965824 sectors
+
+     Partition                  Start        End    Size in sectors
+&gt;   P NTFS                           0 7813965823 7813965824 [Elements-4TB]
+
+&gt;[  Type  ]  [  Boot  ]  [  List  ]  [Undelete]  [Image Creation]  [  Quit  ]
+              Change type, this setting will not be saved on disk
+</code></pre></div><p>↑ もし Partition が NTFS になっていなければ、 <code>Type</code> を選択して、 <code>NTFS</code> を指定します。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Disk /dev/sdc1 - 4000 GB / 3725 GiB - 7813965824 sectors
+
+     Partition                  Start        End    Size in sectors
+&gt;   P NTFS                           0 7813965823 7813965824 [Elements-4TB]
+
+ [  Type  ] &gt;[  Boot  ]  [  List  ]  [Undelete]  [Image Creation]  [  Quit  ]
+                              Boot sector recovery
+</code></pre></div><p>↑ Partition が <code>NTFS</code> であることを確認して <code>Boot</code> を選択します。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Disk /dev/sdc1 - 4000 GB / 3725 GiB - 7813965824 sectors
+
+     Partition                  Start        End    Size in sectors
+&gt;   P NTFS                           0 7813965823 7813965824 [Elements-4TB]
+
+Boot sector
+Status: Bad
+
+Backup boot sector
+Status: Bad
+
+Sectors are not identical.
+
+A valid NTFS Boot sector must be present in order to access
+any data; even if the partition is not bootable.
+
+ [  Quit  ] &gt;[Rebuild BS]  [  Dump  ]
+                              Rebuild boot sector
+</code></pre></div><p>↑ やはり NTFS ブートセクタが不正なようです。 <code>Rebuild BS</code> を選択して、NTFS のブートセクタの再構築を選択します。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Disk /dev/sdc1 - 4000 GB / 3725 GiB - 7813965824 sectors
+     Partition                  Start        End    Size in sectors
+   P NTFS                           0 7813965823 7813965824 [Elements-4TB]
+
+filesystem size           7813965824 7813965824
+sectors_per_cluster       8 8
+mft_lcn                   786432 786432
+mftmirr_lcn               2 2
+clusters_per_mft_record   -10 -10
+clusters_per_index_record 1 1
+Extrapolated boot sector and current boot sector are different.
+
+ [  Dump  ]  [  List  ] &gt;[ Write  ]  [  Quit  ]
+                                   Write boot
+</code></pre></div><p>↑ <code>Write</code> を選択すると、再構築を開始します。</p><p>最終確認画面が出るので、<code>Y</code> を選択します。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Disk /dev/sdc1 - 4000 GB / 3725 GiB - 7813965824 sectors
+     Partition                  Start        End    Size in sectors
+   P NTFS                           0 7813965823 7813965824 [Elements-4TB]
+
+Boot sector
+Status: OK
+
+Backup boot sector
+Status: OK
+
+Sectors are identical.
+
+A valid NTFS Boot sector must be present in order to access
+any data; even if the partition is not bootable.
+
+&gt;[  Quit  ]  [  List  ]  [Rebuild BS]  [Repair MFT]  [  Dump  ]
+                            Return to Advanced menu
+</code></pre></div><p>↑ 再構築が完了しました。 <code>Quit</code> を何回か押して <code>testdisk</code> を終了します。</p><h3 id=フォーマット形式がわからない場合>フォーマット形式がわからない場合</h3><p>フォーマット形式が <code>NTFS</code> である確証がない場合、 <code>testdisk</code> を使用してディスクのデータからフォーマット形式を推定することができます。</p><p><code>testdisk</code> の案内のうち、 <code>Analyse</code> を選択してパーティション形式を推定します。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Disk /dev/sdc1 - 4000 GB / 3725 GiB
+     CHS 48000 4 16 - sector size=512
+
+&gt;[ Analyse  ] Analyse current partition structure and search for lost partition
+ [ Advanced ] Filesystem Utils
+ [ Geometry ] Change disk geometry
+ [ Options  ] Modify options
+ [ MBR Code ] Write TestDisk MBR code to first sector
+ [ Delete   ] Delete all data in the partition table
+ [ Quit     ] Return to disk selection
+
+Note: Correct disk geometry is required for a successful recovery. &#39;Analyse&#39;
+process may give some warnings if it thinks the logical geometry is mismatched.
+</code></pre></div><p>しかし、今回のHDDの故障の場合は NTFS と認識されなかったので、手動で <code>NTFS</code> を設定しました。</p><h3 id=windows-pc-で-ntfs-ファイルシステムの修復を行う>Windows PC で NTFS ファイルシステムの修復を行う</h3><p>Linux の <code>testdisk</code> コマンドで NTFS のブートセクタを再構築できたので、今度は Windows の PC で NTFS論理 の修復を行います。</p><p>管理者権限で PowerShell を起動して <code>chkdsk</code> コマンドを実行します。</p><p>以下は、接続したクローンHDDを <code>Dドライブ</code> として認識した場合の例です。</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>PS C:\WINDOWS\system32&gt; chkdsk /f D:
+
+ファイル システムの種類は NTFS です。
+ボリューム ラベルは Elements-4TB です。
+
+ステージ 1: 基本のファイル システム構造を検査しています ...
+  400384 個のファイル レコードが処理されました。
+ファイルの検査を完了しました。
+ フェーズの継続時間 (ファイル レコードの検査): 3.77 秒。
+孤立ファイル レコード セグメント 1B250 を削除します。
+  3 個の大きなファイル レコードが処理されました。
+ フェーズの継続時間 (孤立ファイル レコードの回復): 0.00 ミリ秒。
+  0 個の問題のあるファイル レコードが処理されました。
+ フェーズの継続時間 (不良ファイル レコードの検査): 0.34 ミリ秒。
+
+ステージ 2: ファイル名リンケージを検査しています ...
+ファイル レコード　セグメント 5 の正しくない情報を修復しています。
+ファイル レコード　セグメント B の正しくない情報を修復しています。
+ファイル E1F のインデックス $I30 のエラーを修復します。
+CHKDSK は、ファイル E1F のインデックス $I30 のビットマップに割り当て済みとしてマークされている空き領域を検出しました。
+ファイル E1F のインデックス $I30 を並べ替えます。
+...
+  405108 個のインデックス エントリが処理されました。
+インデックスの検査を完了しました。
+ フェーズの継続時間 (インデックスの検査): 31.02 秒。
+CHKDSK は新しいルート ディレクトリを作成します。
+CHKDSK は、元のディレクトリに再接続させるために、インデックスのないファイルをスキャンしています。
+孤立したファイル $MFT (0) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $MFTMirr (1) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $LogFile (2) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $Volume (3) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $AttrDef (4) をディレクトリ ファイル 5 に回復します。
+ファイル レコード　セグメント 5 の正しくない情報を修復しています。
+孤立したファイル . (5) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $Bitmap (6) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $Boot (7) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $BadClus (8) をディレクトリ ファイル 5 に回復します。
+孤立したファイル $Secure (9) をディレクトリ ファイル 5 に回復します。
+孤立回復に関する他のメッセージをスキップします。
+  70342 個のインデックスなしファイルがスキャンされました。
+  154 個のインデックスのないファイルが元のディレクトリに回復されました。
+ フェーズの継続時間 (孤立した再接続): 0.00 ミリ秒。
+CHKDSK は、インデックスのない残りのファイルを回復しています。
+  70188 個のインデックスのないファイルが lost and found に回復されました。
+    lost and found は \found.000 にあります
+ フェーズの継続時間 (孤立を lost and found に回復): 0.00 ミリ秒。
+ファイル B のインデックス $I30 を作成しています。
+オブジェクト ID ファイルを作成しています。
+ファイル B のインデックス $I30 へインデックス エントリを挿入しています。
+ファイル 26 のインデックス $O を作成しています。
+ファイル 26 のインデックス $O へインデックス エントリを挿入しています。
+...
+  2228 個の再解析レコードが処理されました。
+ファイル 26 のインデックス $O へインデックス エントリを挿入しています。
+再解析ポイント ファイルを作成しています。
+ファイル B のインデックス $I30 へインデックス エントリを挿入しています。
+ファイル 27 のインデックス $R を作成しています。
+ フェーズの継続時間 (再解析ポイントとオブジェクト ID の検査): 20.96 秒。
+クォータ ファイルを作成しています。
+ファイル B のインデックス $I30 へインデックス エントリを挿入しています。
+ファイル 28 のインデックス $O を作成しています。
+ファイル 28 のインデックス $Q を作成しています。
+ファイル 28 のインデックス $Q に既定のクォータ レコードを挿入しています。
+
+ステージ 3: セキュリティ記述子を検査しています ...
+ファイル 9 のインデックス $SII を作成しています。
+ファイル 9 のインデックス $SDH を作成しています。
+ファイル 3 の無効なセキュリティ ID を既定のセキュリティ ID に置き換えています。
+ファイル 1BFAB の無効なセキュリティ ID を既定のセキュリティ ID に置き換えています。
+ファイル 1BFAA の無効なセキュリティ ID を既定のセキュリティ ID に置き換えています。
+ファイル 1CD22 の無効なセキュリティ ID を既定のセキュリティ ID に置き換えています。
+未定義のセキュリティ ID 100 に対する既定のセキュリティ記述子を作成しています。
+...
+セキュリティ記述子の検査を完了しました。
+ フェーズの継続時間 (セキュリティ記述子の検査): 4.81 ミリ秒。
+データ属性をファイル 4 に挿入します。
+...
+  2371 個のデータ ファイルが処理されました。
+ フェーズの継続時間 (データ属性の検査): 182.11 ミリ秒。
+マスター ファイル テーブル (MFT) のミラーでエラーを修復します。
+属性定義テーブル エラーを修復します。
+ブート ファイル エラーを修復します。
+アッパーケース ファイル エラーを修復します。
+不良クラスター ファイル エラーを修復します。
+マスター ファイル テーブル (MFT) の BITMAP 属性エラーを修復します。
+ボリューム ビットマップ エラーを修復します。
+
+Windows でファイル システムが修正されました。
+これ以上の操作は必要ありません。
+
+   3815412 MB           : 全ディスク領域
+ 261553976 KB : 151114 個のファイル
+     63548 KB : 2389 個のインデックス
+         0 KB : 不良セクター
+    585587 KB : システムで使用中
+     65536 KB : ログ ファイルが使用
+   3559355 MB           : 使用可能領域
+
+      4096 バイト : アロケーション ユニット サイズ
+ 976745727 個     : 全アロケーション ユニット
+ 911194950 個     : 利用可能アロケーション ユニット
+合計継続時間: 13.28 分 (797364 ミリ秒)。
+
+PS C:\WINDOWS\system32&gt;
+</code></pre></div><h3 id=linux-pc-に接続してデータを読み取る>Linux PC に接続してデータを読み取る</h3><p>Windows PC で NTFS の修復に成功しましたが、そのままではなぜか権限のエラーで読み取りができませんでした。</p><p>仕方ないので、クローン HDD を Linux PC に接続しました。</p><p>その結果、故障したHDD内にあったデータを無事救出することができました。</p><p>もしかすると一部のファイルに欠損があるかもしれませんが、今のところは大丈夫そうです。</p><h2 id=手順のまとめ>手順のまとめ</h2><p>今までの作業の内容をまとめると次のとおりです。</p><ol><li>Linux の <code>ddrescue</code> コマンドでディスクイメージ <code>*.img</code> をバックアップする</li><li>Linux の <code>dd</code> コマンドでクローンHDDを作成する</li><li>Linux の <code>gdisk</code> コマンドで GPT パーティションテーブルを復元する</li><li>Linux の <code>testdisk</code> コマンドで NTFS ブートセクタを再構築する</li><li>Windows の <code>chkdsk</code> コマンドで NTFS 論理を修復する</li><li>Linux 上で HDD をマウントしてデータを読み出す</li></ol><h2 id=得られた教訓>得られた教訓</h2><p>最後に今回のデータ救出で得られた教訓をいくつか紹介します。</p><h3 id=1つパーティションが大きいと解析に時間がかかって辛い>1つパーティションが大きいと解析に時間がかかって辛い</h3><p>今回、4TBのHDDがパーティション1つで使用されていたため、バックアップや解析など毎回 4TB のデータを扱わなければなりませんでした。</p><p>クローンディスクも 4TB 必要で、何かと時間がかかって大変でした。</p><p>パーティションをたくさん切る必要はありませんが、現実的な時間でコピーできるサイズのパーティションにしておくと解析がしやすいです。</p><h3 id=クローンディスクを作ってあきらめずにいろいろ試そう>クローンディスクを作ってあきらめずにいろいろ試そう</h3><p>HDDは物理的なディスクなので、たとえ一部のデータが壊れていても大部分のデータは残っています。</p><p>あきらめずにいろいろな方法を試してデータの救出を目指しましょう。</p><p>ディレクトリ構造が復元できなくても、バイナリからファイルを単位で探し出すソフトもあります。</p><p>復旧作業を行うときは、 <code>ddrescue</code> でバックアップを行ってからクローンディスクを作成して作業を行いましょう。</p><p>故障したディクスに対して直接いろいろ試すのは危険です。どんどん壊れていく可能性があります。</p><h3 id=データは2つ以上のデバイスにバックアップしよう>データは2つ以上のデバイスにバックアップしよう</h3><p>HDDもSDDも突然壊れます。</p><p>大切なデータは常に2箇所以上にバックアップして置きましょう。</p><p>小さなデータであれば、手元とクラウドの2箇所に保存するのがおすすめです。</p><h2 id=おわりに>おわりに</h2><p>GPTパーティションだけでなくNTFSのブートセクタまで破損していたのでもう無理かと思いましたが、あきらめずにいろいろ試してなんとか救出することができました。</p><p>今回紹介した方法が今後誰かの役に立てれば幸いです。</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/hdd/ rel=tag>HDD</a></li><li class=tags__item><a class="tags__link btn" href=/tags/linux/ rel=tag>Linux</a></li><li class=tags__item><a class="tags__link btn" href=/tags/windows/ rel=tag>Windows</a></li></ul></div></footer></article></main><div class=ads-horizontal><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-format=fluid data-ad-layout=in-article data-ad-client=ca-pub-1668524068659644 data-ad-slot=3045514441></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="けり avatar" src=/img/avatar.jpg class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>筆者: けり</span></div><div class=authorbox__description>趣味は電子工作．最近はマイクロマウス競技に参加しています．</div></div><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/posts/2021-01-04-silent-deft-pro/ rel=prev><span class=pager__subtitle>«&#8201;前の投稿</span><p class=pager__title>トラックボールマウス DEFT PRO の静音化</p></a></div></nav><section class=comments><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
+var d=document,s=d.createElement('script');s.async=true;s.src='//'+"kerikeri"+'.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></section></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=検索… name=q aria-label=検索…></label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=https://www.kerislab.jp/></form></div><div class="widget-toc widget"><h4 class=widget__title>目次</h4><div class=widget__content><nav id=TableOfContents><ul><li><a href=#はじめに>はじめに</a><ul><li><a href=#windows-pc-からはアクセスできない>Windows PC からはアクセスできない</a></li><li><a href=#データを救出したい>データを救出したい</a></li></ul></li><li><a href=#故障したhdd>故障したHDD</a></li><li><a href=#必要なもの>必要なもの</a></li><li><a href=#復旧作業のログ>復旧作業のログ</a><ul><li><a href=#linux-pc-に-hdd-を接続する>Linux PC に HDD を接続する</a></li><li><a href=#linux-の-gdisk-コマンドで-gpt-パーティションを解析>Linux の gdisk コマンドで GPT パーティションを解析</a></li><li><a href=#ディスクイメージのバックアップ>ディスクイメージのバックアップ</a></li><li><a href=#バックアップ中に起きたトラブル>バックアップ中に起きたトラブル</a></li><li><a href=#クローンディスクの作成>クローンディスクの作成</a></li><li><a href=#パーティションテーブルの修復>パーティションテーブルの修復</a></li><li><a href=#ntfs-としてマウントしてみる失敗>NTFS としてマウントしてみる→失敗</a></li><li><a href=#testdisk-で-ntfs-のブートセクタを再構築する>testdisk で NTFS のブートセクタを再構築する</a></li><li><a href=#フォーマット形式がわからない場合>フォーマット形式がわからない場合</a></li><li><a href=#windows-pc-で-ntfs-ファイルシステムの修復を行う>Windows PC で NTFS ファイルシステムの修復を行う</a></li><li><a href=#linux-pc-に接続してデータを読み取る>Linux PC に接続してデータを読み取る</a></li></ul></li><li><a href=#手順のまとめ>手順のまとめ</a></li><li><a href=#得られた教訓>得られた教訓</a><ul><li><a href=#1つパーティションが大きいと解析に時間がかかって辛い>1つパーティションが大きいと解析に時間がかかって辛い</a></li><li><a href=#クローンディスクを作ってあきらめずにいろいろ試そう>クローンディスクを作ってあきらめずにいろいろ試そう</a></li><li><a href=#データは2つ以上のデバイスにバックアップしよう>データは2つ以上のデバイスにバックアップしよう</a></li></ul></li><li><a href=#おわりに>おわりに</a></li></ul></nav></div></div><div class="widget-social widget"><h4 class="widget-social__title widget__title">ソーシャル</h4><div class="widget-social__content widget__content"><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Twitter rel="noopener noreferrer" href=https://twitter.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5.0-78.8 35.3-78.8 78.8.0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6.0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1.0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4.0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9.0 224.1-120 224.1-224.1.0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg><span>Twitter</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=GitHub rel="noopener noreferrer" href=https://github.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0C85.9.0.0 85.8.0 191.7c0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2.0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8.0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7.0.0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4.0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5.0 25.6-.2 46.3-.2 52.6.0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg><span>GitHub</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Email href=mailto:kerikun11+web@gmail.com><svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16V16 0h-16H16 0zm347 16-139 92.5L69 32zM199 157.5l9 5.5 9-5.5L384 46v210H32V46z"/></svg><span>E-Mail</span></a></div></div></div><div class="widget-categories widget"><h4 class=widget__title>広告</h4><div class=widget__content><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><ins class=adsbygoogle style=display:block data-ad-client=ca-pub-1668524068659644 data-ad-slot=7974159815 data-ad-format=auto></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></div><div class="widget-spotlight widget"><h4 class=widget__title>注目の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a></li><li class=widget__item><a class=widget__link href=/posts/2019-12-04-micromouse2019/>全日本マイクロマウス2019の結果報告</a></li><li class=widget__item><a class=widget__link href=/posts/2019-01-14-vscode-latex/>VSCodeでTeXを書こう</a></li><li class=widget__item><a class=widget__link href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li><li class=widget__item><a class=widget__link href=/posts/2017-09-03-pattern-of-turn/>マイクロマウスのターン一覧</a></li><li class=widget__item><a class=widget__link href=/posts/2016-07-25-how-to-use-ir-station/>IR-Stationの使い方</a></li></ul></div></div><div class="widget-recent widget"><h4 class=widget__title>最近の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2021-01-05-ntfs-hdd-rescue/>アクセスできなくなったHDDのデータを救出した記録</a></li><li class=widget__item><a class=widget__link href=/posts/2021-01-04-silent-deft-pro/>トラックボールマウス DEFT PRO の静音化</a></li><li class=widget__item><a class=widget__link href=/posts/2020-12-11-esp32-mouse/>ESP32 でマイクロマウスを作るメリットとデメリット</a></li><li class=widget__item><a class=widget__link href=/posts/2020-05-11-esp-idf-to-platformio/>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</a></li><li class=widget__item><a class=widget__link href=/posts/2020-05-04-python-maze-editor/>迷路クラスの設計と迷路エディタの実装 (Python)</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>カテゴリー</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/>イベント</a></li><li class=widget__item><a class=widget__link href=/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/>作品紹介</a></li><li class=widget__item><a class=widget__link href=/categories/%E5%82%99%E5%BF%98%E9%8C%B2/>備忘録</a></li><li class=widget__item><a class=widget__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/>説明記事</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>タグ</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/active-record/ title="Active Record">Active Record</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apache2/ title=Apache2>Apache2</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/arduino/ title=Arduino>Arduino</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/bot/ title=bot>bot</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/charge-station/ title="Charge Station">Charge Station</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cheese/ title=Cheese>Cheese</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/crontab/ title=Crontab>Crontab</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cygwin/ title=Cygwin>Cygwin</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ddns/ title=DDNS>DDNS</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/e-mail/ title=E-mail>E-mail</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp-wroom-02/ title=ESP-WROOM-02>ESP-WROOM-02</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp-wroom-32/ title=ESP-WROOM-32>ESP-WROOM-32</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp32/ title=ESP32>ESP32</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/esp8266/ title=ESP8266>ESP8266</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/exiftool/ title=Exiftool>Exiftool</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/fft/ title=FFT>FFT</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/freertos/ title=FreeRTOS>FreeRTOS</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/frisk/ title=FRISK>FRISK</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ft232rl/ title=FT232RL>FT232RL</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/git/ title=Git>Git</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/hdd/ title=HDD>HDD</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/hugo/ title=Hugo>Hugo</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphone/ title=iPhone>iPhone</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ir-station/ title=IR-Station>IR-Station</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/itunes/ title=iTunes>iTunes</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jquiry/ title=JQuiry>JQuiry</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kerise/ title=KERISE>KERISE</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kicad/ title=KiCad>KiCad</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/latex/ title=Latex>Latex</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/li-po/ title=Li-Po>Li-Po</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/linux/ title=Linux>Linux</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/maker-faire-tokyo/ title="Maker Faire Tokyo">Maker Faire Tokyo</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/matlab/ title=MATLAB>MATLAB</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mbed/ title=mbed>mbed</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/micro-sd/ title="Micro SD">Micro SD</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nas/ title=NAS>NAS</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nextcloud/ title=Nextcloud>Nextcloud</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ntp/ title=NTP>NTP</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nucleo/ title=Nucleo>Nucleo</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pdf/ title=pdf>pdf</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pic/ title=PIC>PIC</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pic18f26k22/ title=PIC18F26K22>PIC18F26K22</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pic18f27j53/ title=PIC18F27J53>PIC18F27J53</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pine64-a+/ title="PINE64 A+">PINE64 A+</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/platformio/ title=PlatformIO>PlatformIO</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/python/ title=Python>Python</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/raspberry-pi/ title="Raspberry Pi">Raspberry Pi</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/remote-control/ title="Remote Control">Remote Control</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rtcc/ title=RTCC>RTCC</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ruby/ title=Ruby>Ruby</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/samba/ title=Samba>Samba</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sinatra/ title=Sinatra>Sinatra</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/smtp/ title=SMTP>SMTP</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sqlite3/ title=SQLite3>SQLite3</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ssh/ title=SSH>SSH</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/stm32/ title=STM32>STM32</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/surface/ title=Surface>Surface</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/thingspeak/ title=ThingSpeak>ThingSpeak</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/twitter/ title=Twitter>Twitter</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/u-micro/ title=U-Micro>U-Micro</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ubuntu/ title=Ubuntu>Ubuntu</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/uefi/ title=UEFI>UEFI</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/usb/ title=USB>USB</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vim/ title=vim>vim</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/volumio/ title=Volumio>Volumio</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vscode/ title=VSCode>VSCode</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wi-fi/ title=Wi-Fi>Wi-Fi</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wifi/ title=WiFi>WiFi</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/windows/ title=Windows>Windows</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/yamy/ title=yamy>yamy</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%81%E3%81%A0%E3%81%8B/ title=めだか>めだか</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A2%E3%83%B3%E3%83%97/ title=オーディオアンプ>オーディオアンプ</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89/ title=キーボード>キーボード</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/ title=サーバー>サーバー</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/ title=シェルスクリプト>シェルスクリプト</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E9%80%9A%E4%BF%A1/ title=シリアル通信>シリアル通信</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC/ title=ソーラー>ソーラー</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB/ title=ターミナル>ターミナル</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%89%E3%83%83%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/ title=ドットインストール>ドットインストール</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%89%E3%83%83%E3%83%88%E3%83%9E%E3%83%88%E3%83%AA%E3%82%AF%E3%82%B9led/ title=ドットマトリクスLED>ドットマトリクスLED</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AB/ title=ファイアウォール>ファイアウォール</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%96%E3%83%AD%E3%82%B0/ title=ブログ>ブログ</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80/ title=ブートローダ>ブートローダ</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9A%E3%83%83%E3%83%88/ title=ペット>ペット</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ title=マイクロマウス>マイクロマウス</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3/ title=マイコン>マイコン</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/ title=ミュージックサーバー>ミュージックサーバー</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/ title=ロボコン>ロボコン</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88/ title=ロボット>ロボット</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8A%80%E8%A1%93%E7%A0%94%E7%A9%B6%E4%BC%9A/ title=ロボット技術研究会>ロボット技術研究会</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%85%85%E9%9B%BB%E5%99%A8/ title=充電器>充電器</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%88%86%E8%A7%A3/ title=分解>分解</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%88%B6%E5%BE%A1/ title=制御>制御</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E5%9B%9E%E8%B7%AF%E8%AC%9B%E7%BF%92%E4%BC%9A/ title=回路講習会>回路講習会</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E6%99%82%E8%A8%88/ title=時計>時計</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E6%B7%B1%E5%9C%B3/ title=深圳>深圳</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E7%A7%8B%E6%9C%88/ title=秋月>秋月</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%87%AA%E4%BD%9C/ title=自作>自作</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%87%AA%E5%8B%95%E9%85%8D%E7%B7%9A/ title=自動配線>自動配線</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%B5%A4%E5%A4%96%E7%B7%9A%E5%AD%A6%E7%BF%92%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/ title=赤外線学習リモコン>赤外線学習リモコン</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E8%BF%B7%E8%B7%AF/ title=迷路>迷路</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%85%89%E6%8E%B2%E7%A4%BA%E6%9D%BF/ title=電光掲示板>電光掲示板</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%8A%9B/ title=電力>電力</a></div></div></aside></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2021 KERI's Lab.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script><script src=/js/custom.js></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script></body></html>
