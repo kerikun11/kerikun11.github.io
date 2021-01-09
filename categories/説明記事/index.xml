@@ -52,18 +52,18 @@
 &lt;p>こんにちは．けりです．&lt;br>
 今回はマイクロマウスの迷路探索のお話です．&lt;/p>
 &lt;p>過去10年分のマイクロマウス全日本大会の32x32迷路を比較してみました．&lt;/p>
-&lt;p>まずは探索走行の比較を，次に最短経路の比較を紹介します．&lt;/p></description></item><item><title>VSCodeでTeXを書こう</title><link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link><pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今回は私が使っているTeXのエディタ環境を紹介します．&lt;/p>
+&lt;p>まずは探索走行の比較を，次に最短経路の比較を紹介します．&lt;/p></description></item><item><title>VSCode で TeX を書こう</title><link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link><pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>今回は私が使っている TeX のエディタ環境を紹介します．&lt;/p>
 &lt;p>注目機能は以下の通りです．&lt;/p>
 &lt;ul>
 &lt;li>コード補完&lt;/li>
 &lt;li>コード整形&lt;/li>
-&lt;li>環境に依存しにくい&lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank">.latexmk&lt;/a>
+&lt;li>環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank">.latexmk&lt;/a>
 でコンパイル&lt;/li>
 &lt;li>散らかりがちな生成物を &lt;code>build&lt;/code> ディレクトリにまとめる&lt;/li>
-&lt;li>TeXコードのとなりにPDFを表示&lt;/li>
-&lt;li>&lt;code>SyncTex&lt;/code>によりTeXコードとPDFの相互ジャンプ&lt;/li>
-&lt;li>VSCode Vim を使ってvimキーバインド (オプション)&lt;/li>
+&lt;li>TeX コードのとなりに PDF をリアルタイム表示&lt;/li>
+&lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>
+&lt;li>VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li>
 &lt;/ul></description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank">rogy Advent Calendar 2018&lt;/a>
 の
