@@ -1,6 +1,6 @@
 ---
 date: "2019-01-14T10:00:00+09:00"
-title: "VSCodeでTeXを書こう"
+title: "VSCode で TeX を書こう"
 categories:
   - "説明記事"
 tags:
@@ -11,17 +11,17 @@ spotlight: "true"
 
 ## 概要
 
-今回は私が使っているTeXのエディタ環境を紹介します．
+今回は私が使っている TeX のエディタ環境を紹介します．
 
 注目機能は以下の通りです．
 
 - コード補完
 - コード整形
-- 環境に依存しにくい[.latexmk](https://texwiki.texjp.org/?Latexmk)でコンパイル
+- 環境に依存しにくい [.latexmk](https://texwiki.texjp.org/?Latexmk) でコンパイル
 - 散らかりがちな生成物を `build` ディレクトリにまとめる
-- TeXコードのとなりにPDFを表示
-- `SyncTex`によりTeXコードとPDFの相互ジャンプ
-- VSCode Vim を使ってvimキーバインド (オプション)
+- TeX コードのとなりに PDF をリアルタイム表示
+- `SyncTex` による TeX コードと PDF の相互ジャンプ
+- VSCode Vim を使って vim キーバインドで編集 (オプション)
 
 <!--more-->
 
@@ -36,23 +36,24 @@ spotlight: "true"
 
 ### 拡張機能の追加
 
-以下のVSCode拡張機能をインストールしましょう．
+以下の VSCode 拡張機能をインストールしましょう．
 
 - LaTeX Workshop
 - Vim (オプション)
 
 サイドバーの拡張機能で検索してインストールできます．
 
-### VSCodeの設定
+### VSCode の設定
 
-デフォルトの設定ではなぜかTeXのコンパイルが通らなかったので，以下の設定を行います．
+デフォルトの設定ではなぜか TeX のコンパイルが通らなかったので，以下の設定を行います．
 
-コマンドパレット`Ctrl+Shift+P`に`open settings json`などと入力して，
-`Preferences: Open Settings (JSON)`を選び，設定ファイルに
-以下の内容を追加します．
+コマンドパレット `Ctrl+Shift+P` に `open settings json` などと入力して，
+`Preferences: Open Settings (JSON)` を選び，設定ファイルに以下の内容を追加します．
 
 ```js
+// settings.json
 {
+    // 以下を追記
     // ビルドコマンド
     "latex-workshop.latex.tools": [
         {
@@ -70,7 +71,7 @@ spotlight: "true"
     ],
     // .latexmkrc に書かれたディレクトリに設定すること
     "latex-workshop.latex.outDir": "%DIR%/build",
-    // Viewer関係
+    // Viewer 関係の設定
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.view.pdf.zoom": "page-width",
 }
@@ -78,11 +79,12 @@ spotlight: "true"
 
 ### キーボードショートカットの追加
 
-コマンドパレット`Ctrl+Shift+P`で
-`Preferences: Open Keyboard Shortcuts File`とタイプすると開かれる
-`keybindings.json`に以下の内容を追記します．
+コマンドパレット `Ctrl+Shift+P` で
+`Preferences: Open Keyboard Shortcuts File` とタイプすると開かれる
+`keybindings.json` に以下の内容を追記します．
 
-```json
+```js
+// keybindings.json
 [
     {
         "key": "ctrl+alt+b",
@@ -98,22 +100,22 @@ spotlight: "true"
         "key": "ctrl+alt+s",
         "command": "latex-workshop.synctex",
         "when": "resourceLangId == latex"
-    }
+    },
 ]
 ```
 
 ビルド，クリーン，シンクのショートカットを追加しました．
 
 なお，他のショートカットと干渉しないように，
-TeXファイルを編集中ときだけ適用されるようにしています．
+TeX ファイルを編集中ときだけ適用されるようにしています．
 
 ### .latexmkrc の追加
 
-TeXにはplatexやlualatexなど様々なコマンドがありますが，エディタのビルド設定を変更してしまうと，コマンドが違うプロジェクトごとにいちいち設定を変えなければならなくなります．
+TeX には platex や lualatex など様々なコマンドがありますが，エディタのビルド設定を変更してしまうと，コマンドが違うプロジェクトごとにいちいち設定を変えなければならなくなります．
 
-それを解決するために，[latexmk](https://texwiki.texjp.org/?Latexmk)というビルドコマンドがあります．
+それを解決するために，[latexmk](https://texwiki.texjp.org/?Latexmk) というビルドコマンドがあります．
 
-texファイルと同じディレクトリに`.latexmkrc`という設定ファイルを置くと，そのファイルに書かれたビルドコマンドでビルドしてくれるので，エディタ側の設定を変更する必要がなくなります．
+tex ファイルと同じディレクトリに `.latexmkrc` という設定ファイルを置くと，そのファイルに書かれたビルドコマンドでビルドしてくれるので，エディタ側の設定を変更する必要がなくなります．
 
 また，コンパイル時に散らかりがちな中間生成物を `build` ディレクトリにまとめる処理も書かれています．
 
@@ -140,51 +142,50 @@ $pdf_mode         = 3; # 0: none, 1: pdflatex, 2: ps2pdf, 3: dvipdfmx
 ## output directory
 $aux_dir          = "build/";
 $out_dir          = "build/";
-
 ```
 
 ## 使い方
 
 ### ビルド
 
-デフォルトではTeXファイルを保存すると自動でビルドされます．
+デフォルトでは TeX ファイルを保存すると自動でビルドされます．
 
-画像を変更したときなど，強制的にビルドしたいときは，コマンドパレットで`Latex Build`とするか，
-上記で設定したキーボードショートカット`Ctrl+Alt+B`を押します．
+画像を変更したときなど，強制的にビルドしたいときは，コマンドパレットで `Latex Build` とするか，
+上記で設定したキーボードショートカット `Ctrl+Alt+B` を押します．
 
-### PDFの表示
+### PDF の表示
 
-`Ctrl+Alt+V` でPDFが表示されます．
+`Ctrl+Alt+V` で PDF が表示されます．
 
 ### SyncTex
 
-SyncTexとは，TeXのソースファイルとPDFでカーソルの位置を同期する機能です．
+SyncTex とは，TeX のソースファイルと PDF でカーソルの位置を同期する機能です．
 
-VSCodeのPDFビューワはSyncTexに対応しているので，TeXファイルとPDFファイルの該当箇所を行き来することができます．
+VSCode の PDF ビューワは SyncTex に対応しているので，TeX ファイルと PDF ファイルの該当箇所を行き来することができます．
 
 #### PDF -> TeX
 
-PDF上の文字に対し，Ctrlを押しながらマウスでクリックします．
-すると，TeXソースファイルのその部分にジャンプします．
+PDF 上の文字に対し，Ctrl を押しながらマウスでクリックします．
+すると，TeX ソースファイルのその部分にジャンプします．
 
 #### TeX -> PDF
 
-コマンドパレット`Ctrl+Shift+P`で`SyncTex`とタイプするか，
-上記で設定した`Ctrl+Alt+S`を押します．
-すると，PDF上の該当箇所にジャンプし，ハイライトされます．
+コマンドパレット `Ctrl+Shift+P` で `SyncTex` とタイプするか，
+上記で設定した `Ctrl+Alt+S` を押します．
+すると，PDF 上の該当箇所にジャンプし，ハイライトされます．
 
 ### コード補完
 
 単語の一部を入力すると，候補が表示されます．
 
-ESCなどで候補を閉じてしまって，もう一度表示したいときは，`Ctrl+Space`で再表示できます．
+ESC などで候補を閉じてしまって，もう一度表示したいときは，`Ctrl+Space` で再表示できます．
 
 ### コード整形
 
-コマンドパレット`Ctrl+Shift+P`で`Format`とタイプするか，
-ショートカットキー`Shift+Alt+F`でインデントなどがきれいに揃います．
+コマンドパレット `Ctrl+Shift+P` で `Format` とタイプするか，
+ショートカットキー `Shift+Alt+F` でインデントなどがきれいに揃います．
 
-また，表やalignの&もそろって表示され，とても見やすくなります．
+また，表や align の&もそろって表示され，とても見やすくなります．
 
 ```tex
 \begin{align*}
@@ -201,19 +202,16 @@ ESCなどで候補を閉じてしまって，もう一度表示したいとき�
 
 ## その他
 
-VSCode の最大の魅力は
-`F1`または
-`Ctrl+Shift+P`
-を押して実行できる
-コマンドパレット
-だと思います．
+VSCode の最大の魅力は `F1` または `Ctrl+Shift+P`
+を押して実行できる **コマンドパレット** だと思います．
 
-コマンドパレットで`latex`などと入力すると，コマンドの候補がいろいろ出てきますので，是非いろいろ試してみてください！
+コマンドパレットで `latex` などと入力すると，
+便利なコマンドの候補がいろいろ出てきますので，是非いろいろ試してみてください！
 
 ## まとめ
 
-TeXの文章を書くとき，一番大事なのは書きやすさではなく，書く内容です．
+TeX の文章を書くとき，一番大事なのは書きやすさではなく **書く内容** です．
 
-しかし，書く内容に専念するためにも，心地よいTeX環境があるといいですよね！
+しかしながら，書く内容に専念するためにも心地よい TeX 環境があるといいですよね！
 
-もし時間があったら，VSCodeに移行してみてはいかがでしょうか．
+もし時間があったら，VSCode に移行してみてはいかがでしょうか．
