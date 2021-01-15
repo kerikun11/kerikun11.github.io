@@ -80,7 +80,7 @@ thumbnail: "icon.jpg"
 
 ## GitHub
 
-- [MicroMouse Maze Data](https://github.com/kerikun11/micromouse-mazedata)
+- [MicroMouse Maze Data](https://github.com/kerikun11/micromouse-maze-data)
 - [MicroMouse Maze Library](https://github.com/kerikun11/micromouse-maze-library)
 - [MicroMouse Control Module](https://github.com/kerikun11/micromouse-control-module)
 - [MicroMouse KERISE v1](https://github.com/kerikun11/micromouse-kerise-v1)

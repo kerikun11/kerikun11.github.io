@@ -29,7 +29,7 @@ Python3の勉強のためにマイクロマウスの迷路ファイルのエデ�
 
 最新のソースコードは
 
-- [GitHub - kerikun11/micromouse-mazedata](https://github.com/kerikun11/micromouse-mazedata)
+- [GitHub - kerikun11/micromouse-maze-data](https://github.com/kerikun11/micromouse-maze-data)
   
 に公開しています．
 
@@ -42,16 +42,16 @@ C++による実装に興味がある方はそちらも合わせてご覧くだ�
 
 ### 執筆時点のソースコードの取得方法
 
-以下では，[執筆時点のソースコード](https://github.com/kerikun11/micromouse-mazedata/tree/v1.0) の設計内容を説明します．
+以下では，[執筆時点のソースコード](https://github.com/kerikun11/micromouse-maze-data/tree/v1.0) の設計内容を説明します．
 
 GitHubのリポジトリに `v1.0` というタグをつけたので，以下のコマンドによって下記で説明されているバージョンのソースコードを取得できます．
 
 ```sh
-git clone -b v1.0 https://github.com/kerikun11/micromouse-mazedata.git
-cd micromouse-mazedata
+git clone -b v1.0 https://github.com/kerikun11/micromouse-maze-data.git
+cd micromouse-maze-data
 ```
 
-zipファイルでのダウンロードは [こちら](https://github.com/kerikun11/micromouse-mazedata/archive/v1.0.zip)
+zipファイルでのダウンロードは [こちら](https://github.com/kerikun11/micromouse-maze-data/archive/v1.0.zip)
 
 ## 迷路クラスの設計
 
