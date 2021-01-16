@@ -27,7 +27,7 @@ Cheese杯とは，東京工業大学ロボット技術会Cheeseが主催する�
 
 ## Cheese Timer の紹介
 
-Cheese Timer とは，Cheeseのメンバーが共同で制作した**マイクロマウスのタイム計測装置**です．
+Cheese Timer とは，Cheeseのメンバーが共同で制作した **マイクロマウスのタイム計測装置** です．
 
 マイコンや開発環境などがみんなバラバラのCheeseとしては，
 **初めての共同作業** とも言える Cheese Timer です！

@@ -11,7 +11,7 @@ thumbnail: "icon.png"
 
 ## ESP-WROOM-32のブレークアウトボード
 
-WiFiとBluetoothが載ったデュアルコアなマイコン**ESP32**のピッチ変換基板を新たに作ったので紹介します．
+WiFiとBluetoothが載ったデュアルコアなマイコン **ESP32** のピッチ変換基板を新たに作ったので紹介します．
 
 <!--more-->
 

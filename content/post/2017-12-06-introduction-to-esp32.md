@@ -122,7 +122,7 @@ ESP32は同じCPUが2つ内蔵されており，デュアルコアとなって�
 
 その筆者はさまざまな工夫を凝らしてわかりやすい記事を書くように努めていると思いますが，間違った情報や不確実な情報も含まれていると思います．
 
-是非，公式サイトが提供している**一次ドキュメント**を読む癖をつけましょう．
+是非，公式サイトが提供している **一次ドキュメント** を読む癖をつけましょう．
 
 ESP32の場合，[ESP32 Technical Reference Manual](http://espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf)を熟読すると，ESP32の魅力を再確認できます！
 

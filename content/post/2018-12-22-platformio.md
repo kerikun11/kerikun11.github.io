@@ -16,7 +16,7 @@ thumbnail: "icon.png"
 
 こんにちは．けりです．
 
-今回は，PlatformIOという強力な**マイコン開発環境**の紹介です．
+今回は，PlatformIOという強力な **マイコン開発環境** の紹介です．
 
 ### PlatformIO とは？
 

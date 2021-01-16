@@ -39,7 +39,7 @@ RAID6のダブルパリティに設定してあり，合計8TBの容量を持ち
 
 ## サーバーはラズパイ3
 
-現在，僕の自宅サーバーは，**Raspberry 3 Model B**によって運用されています．このサーバーにNextcloudをインストールしました．
+現在，僕の自宅サーバーは， **Raspberry 3 Model B** によって運用されています．このサーバーにNextcloudをインストールしました．
 
 {{< postfig src="raspi3.jpg" title="Raspberry 3 Model B" width="240px" >}}
 

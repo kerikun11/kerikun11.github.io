@@ -1,6 +1,6 @@
 ---
 date: "2015-11-03"
-title: "Surface Pro 3 に Ubuntu15.10を入れる(UEFI環境のデュアルブート)"
+title: "Surface Pro 3 に Ubuntu 15.10 を入れる (UEFI環境のデュアルブート)"
 categories:
   - "説明記事"
 tags:
@@ -149,7 +149,7 @@ Bluetoothドライバをインストール
 
 	$ git clone git://git.marvell.com/mwifiex-firmware.git
 	$ mkdir -p /lib/firmware/mrvl/
-	$ sudo cp mwifiex-firmware/mrvl/\* /lib/firmware/mrvl/
+	$ sudo cp mwifiex-firmware/mrvl/* /lib/firmware/mrvl/
 
 ### 8.必要に応じてLinux-kernelをインストールする。
 
