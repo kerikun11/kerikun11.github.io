@@ -51,7 +51,7 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;/ul>
 &lt;p>を作りましたが，今回は短冊形のものを作りました．&lt;/p>
 &lt;p>Micro-USBコネクタとシリアル変換ICが乗っているので，PCにつなぐだけですぐに使うことができます．&lt;/p></description></item><item><title>KERIESP32 Trapezoid</title><link>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</guid><description>&lt;h2 id="esp-wroom-32のブレークアウトボード">ESP-WROOM-32のブレークアウトボード&lt;/h2>
-&lt;p>WiFiとBluetoothが載ったデュアルコアなマイコン&lt;strong>ESP32&lt;/strong>のピッチ変換基板を新たに作ったので紹介します．&lt;/p></description></item><item><title>秋月の時計キットをNTP時計化</title><link>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</guid><description>&lt;h2 id="家の玄関で地味に役に立っていた時計">家の玄関で地味に役に立っていた時計&lt;/h2>
+&lt;p>WiFiとBluetoothが載ったデュアルコアなマイコン &lt;strong>ESP32&lt;/strong> のピッチ変換基板を新たに作ったので紹介します．&lt;/p></description></item><item><title>秋月の時計キットをNTP時計化</title><link>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</guid><description>&lt;h2 id="家の玄関で地味に役に立っていた時計">家の玄関で地味に役に立っていた時計&lt;/h2>
 &lt;p>かなり前に秋月電子で買った&lt;a href="http://akizukidenshi.com/catalog/g/gK-04379/" target="_blank">時計キット&lt;/a>
 ．&lt;br>
 数字が大きく，遠くからでもよく見えるので自宅の玄関で地味に役立っていました．&lt;/p>

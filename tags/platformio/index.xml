@@ -10,7 +10,7 @@
 の
 22日目の記事です．&lt;/p>
 &lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>今回は，PlatformIOという強力な&lt;strong>マイコン開発環境&lt;/strong>の紹介です．&lt;/p>
+&lt;p>今回は，PlatformIOという強力な &lt;strong>マイコン開発環境&lt;/strong> の紹介です．&lt;/p>
 &lt;h3 id="platformio-とは">PlatformIO とは？&lt;/h3>
 &lt;p>&lt;a href="https://platformio.org/" target="_blank">PlatformIO&lt;/a>
 とは，mbedやArduinoと似たような感じで，さまざまなボードやライブラリを統一的に開発できる開発環境です．&lt;/p>

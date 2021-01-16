@@ -10,7 +10,7 @@
 &lt;/ul>
 &lt;p>を作りましたが，今回は短冊形のものを作りました．&lt;/p>
 &lt;p>Micro-USBコネクタとシリアル変換ICが乗っているので，PCにつなぐだけですぐに使うことができます．&lt;/p></description></item><item><title>KERIESP32 Trapezoid</title><link>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</guid><description>&lt;h2 id="esp-wroom-32のブレークアウトボード">ESP-WROOM-32のブレークアウトボード&lt;/h2>
-&lt;p>WiFiとBluetoothが載ったデュアルコアなマイコン&lt;strong>ESP32&lt;/strong>のピッチ変換基板を新たに作ったので紹介します．&lt;/p></description></item><item><title>ESP-WROOM-32のブレイクアウトボード</title><link>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</link><pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</guid><description>&lt;h2 id="esp-wroom-32とは">ESP-WROOM-32とは&lt;/h2>
+&lt;p>WiFiとBluetoothが載ったデュアルコアなマイコン &lt;strong>ESP32&lt;/strong> のピッチ変換基板を新たに作ったので紹介します．&lt;/p></description></item><item><title>ESP-WROOM-32のブレイクアウトボード</title><link>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</link><pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</guid><description>&lt;h2 id="esp-wroom-32とは">ESP-WROOM-32とは&lt;/h2>
 &lt;p>ESP-WROOM-32とは，ESP32というハイスペックなマイコンが搭載されたWiFi&amp;amp;Bluetoothモジュールです．無線モジュールとしてだけでなく，メインマイコンとしても十分使用できます．&lt;/p>
 &lt;p>ESP-WROOM-32のすごいところはその価格です．ハイスペックなマイコンとWiFiとBluetoothがついているのに，2017年2月現在たったの700円なのです！！&lt;/p>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/" target="_blank">秋月電子&lt;/a>

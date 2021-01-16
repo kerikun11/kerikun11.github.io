@@ -19,7 +19,7 @@
 &lt;p>この記事では，設計1の曲線加速を組み合わせて，走行距離を考慮した速度設計について考えます．&lt;/p></description></item><item><title>なめらかな加速の設計② 曲線加速の設計</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</link><pubDate>Sun, 29 Apr 2018 13:35:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</guid><description>&lt;h2 id="設計1加速曲線の設計">設計1・加速曲線の設計&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer1/">前回の記事&lt;/a>
 の続きです．&lt;/p>
-&lt;p>この記事では，前回紹介した&lt;strong>設計1&lt;/strong>の曲線加速の設計について考えます．&lt;/p></description></item><item><title>なめらかな加速の設計① 台形加速と曲線加速</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</link><pubDate>Sun, 29 Apr 2018 12:35:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>この記事では，前回紹介した &lt;strong>設計1&lt;/strong> の曲線加速の設計について考えます．&lt;/p></description></item><item><title>なめらかな加速の設計① 台形加速と曲線加速</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</link><pubDate>Sun, 29 Apr 2018 12:35:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>今回はマイクロマウスにおける速度設計のお話です．&lt;/p>
 &lt;p>長い直線などを走行するとき，タイムを縮めるため，最大速度まで加速して，ターン直前に減速します．&lt;/p>
 &lt;p>ここで注意したのが，途中経過の如何にかかわらず，終点の位置や速度は守らなければならないということです．&lt;/p>
