@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Mon, 04 Jan 2021 18:49:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>トラックボールマウス DEFT PRO の静音化</title><link>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</link><pubDate>Mon, 04 Jan 2021 18:49:57 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sat, 16 Jan 2021 16:49:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>ターミナルから VSCode の SSH リモートディレクトリを開く</title><link>https://www.kerislab.jp/posts/2021-01-16-sshcode/</link><pubDate>Sat, 16 Jan 2021 16:49:57 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2021-01-16-sshcode/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>今回紹介するのは VSCode の SSH リモートディレクトリをターミナルから直接開くときに使う便利なコマンドです。&lt;/p>
+&lt;p>VSCode には &lt;a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank">Remote SSH&lt;/a>
+という拡張機能があり、
+SSH 接続先のディレクトリをワークスペースとして起動することができます。&lt;/p>
+&lt;p>しかし、手元のターミナルから &lt;code>code&lt;/code> コマンドを使って &lt;code>code user@host&lt;/code> などと実行しても開くことはできません。&lt;/p>
+&lt;p>そこで今回は &lt;code>sshcode&lt;/code> というコマンドを新たに作って、
+ターミナルからサクッと SSH ディレクトリを開く方法を紹介します。&lt;/p></description></item><item><title>トラックボールマウス DEFT PRO の静音化</title><link>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</link><pubDate>Mon, 04 Jan 2021 18:49:57 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは。けりです。&lt;/p>
 &lt;p>最近マウスの代わりにトラックボールを使ってみています。&lt;br>
 腕を大きく動かさなくていいので結構いい感じです。&lt;/p>
@@ -137,7 +144,4 @@
 &lt;/div>
 &lt;div class="sect2">
 &lt;h3 id="_自力で液晶パネルを交換する">自力で液晶パネルを交換する&lt;/h3></description></item><item><title>おすすめ PDF Viewer</title><link>https://www.kerislab.jp/posts/2016-06-14-pdf/</link><pubDate>Tue, 14 Jun 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-06-14-pdf/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>世の中にはたくさんのPDF Viewerがあり一長一短である．AdobeのPDF Readerが有名であるが，もっと使いやすいものを見つけたのでそれを紹介する．&lt;/p></description></item><item><title>回路講習会2015</title><link>https://www.kerislab.jp/posts/2016-05-18-circuit-lecture/</link><pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-05-18-circuit-lecture/</guid><description>&lt;h2 id="回路講習会">回路講習会&lt;/h2>
-&lt;p>東京工業大学ロボット技術研究会の平成27年度回路講習会の資料です．&lt;br>
-講習会は90分の講義を4回行いました．&lt;br>
-気持ちを込めて作りました．スライド数は200枚を超えています．どうぞご覧ください．&lt;/p></description></item></channel></rss>
+&lt;p>世の中にはたくさんのPDF Viewerがあり一長一短である．AdobeのPDF Readerが有名であるが，もっと使いやすいものを見つけたのでそれを紹介する．&lt;/p></description></item></channel></rss>
