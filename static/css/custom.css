@@ -161,6 +161,9 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 	background: rgba(230, 230, 230, 0.7);
 }
+.authorbox__header {
+	margin-top: 5px;
+}
 
 /* archives */
 ul.archives__list {

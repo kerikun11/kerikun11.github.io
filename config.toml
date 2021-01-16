@@ -24,7 +24,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Author] # Used in authorbox
     name = "けり"
-    bio = "趣味は電子工作．最近はマイクロマウス競技に参加しています．"
+    bio = "趣味は電子工作。ぼちぼちマイクロマウス作ってます。"
     avatar = "/img/avatar.jpg"
     email = "kerikun11+web@gmail.com"
     location = "Earth"
