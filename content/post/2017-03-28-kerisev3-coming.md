@@ -13,7 +13,7 @@ pickup: true
 
 ## KERISEv3
 
-{{< postfig src="kerisev3-front-side.jpg" title="KERISEv3" width="240px" >}}
+{{< postfig src="kerisev3-front-side.jpg" title="KERISE v3" width="240px" >}}
 
 ### 3台目のマウス
 
@@ -44,7 +44,7 @@ pickup: true
 
 Fusion360が流行っています．習得するにはまず使わないといけないので，今回のマウスはFusion360で設計してみました．
 
-{{< postfig src="kerisev3-fusion.png" title="KERISEv3-fusion" width="240px" >}}
+{{< postfig src="kerisev3-fusion.png" title="KERISE v3 Fusion 360" width="240px" >}}
 
 ### Fusionの埋め込み表示
 
@@ -59,7 +59,7 @@ Fusion360はクラウド上にデータを保存できるので，HTMLに埋め�
 
 Fusion360にはレンダリングという機能があり，設計した立体の光の反射などを計算して実物みたいな画像を生成してくれます．
 
-{{< postfig src="kerisev3-rendering.png" title="KERISEv3-fusion" width="480px" >}}
+{{< postfig src="kerisev3-rendering.png" title="KERISE v3 Fusion 360" width="480px" >}}
 
 ## 写真集
 

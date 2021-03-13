@@ -65,11 +65,11 @@ The latest information is [here](https://github.com/kerikun11/IR-station)
 
 ### Meanings of LED Indicator
 
-|Color	|Status		|
-|:------|:----------|
-|Red	|Error		|
-|Green	|Processing	|
-|Blue	|Listening	|
+| Color | Status     |
+| :---- | :--------- |
+| Red   | Error      |
+| Green | Processing |
+| Blue  | Listening  |
 
 ## How to Make
 
@@ -91,52 +91,52 @@ Please Add the Libraries below to your Arduino IDE
   1. Add the required libraries to your Arduino IDE in the Arduino IDE Library Manager or zip files.
   1. Open IR-station firmware in the Arduino IDE.
   1. Select "Generic ESP8266 Module" and configure each item of board settings properly. See Arduino Board Settings below.
-  1. Select correct serial COM port and upload program to the device. When upload program, GPIO0 and GPIO2 must be pulled-up, and GPIO15 must be pulled-down. It's necessary to reset the devie immediately before upload. It's a little difficult.
+  1. Select correct serial COM port and upload program to the device. When upload program, GPIO0 and GPIO2 must be pulled-up, and GPIO15 must be pulled-down. It's necessary to reset the device immediately before upload. It's a little difficult.
   1. The uploading takes about 30 seconds.
   1. Upload the SPIFFS data: menu -> tool -> ESP8266 Sketch Data Upload. (See https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md)
   1. Process termination.
 
 ### Arduino Board Settings
 
-| item | select |
-| :---- | :---------------------- |
-| Board | ESPino (ESP-12 Module) |
-| Flash Mode | QIO |
-| CPU Frequency | 80MHz |
-| Flash Size | 4M\(3M SPIFFS\) |
-| Reset Method | ck |
-| Upload Speed | 115200 |
+| item          | select                 |
+| :------------ | :--------------------- |
+| Board         | ESPino (ESP-12 Module) |
+| Flash Mode    | QIO                    |
+| CPU Frequency | 80MHz                  |
+| Flash Size    | 4M\(3M SPIFFS\)        |
+| Reset Method  | ck                     |
+| Upload Speed  | 115200                 |
 
 ### Components
 
 #### Device Components
 
-|Components						|Details			|Quantity	|Remarks				|
-|:------------------------------|:------------------|:----------|:----------------------|
-|ESP8266 WiFi Module			|ESP-WROOM-02		| 1 		|						|
-|IR receiver					|OSRB38C9AA			| 1 		|Power: 3.3V			|
-|IR LED							|OSI5FU3A11C		| 4		 	|anything maybe OK		|
-|Voltage Regulator				|NJU7223-33			| 1 		|output: 3.3V 500mA		|
-|Nch MOS-FET					|IRLML6344			| 1 		|						|
-|Resistor for IR LED			|4.7 ohms, 1W		| 2		 	|						|
-|Pull-up/down Resistor			|10k ohms 			| 5 		|						|
-|Indicator LED					|OSTBABS4C2B		| 1 		|						|
-|Resistor for LED				|100~220 ohms		| 3 		|						|
-|Resistor for IR receiver		|220 ohms			| 1 		|						|
-|Capacitor for IR receiver		|4.7uF 				| 3 		|						|
-|Power Stabilization Capacitor	|100uF				| 1			|						|
-|Bypass Capacitor				|0.1uF 				| 3 		|						|
-|User Button					|SKRPACE010 		| 1			|						|
-|Poly Switch					|MICROSMD035F-02	| 1			|up to 350mA			|
-|USB Conncector					|USB-Micro-B		| 1			|Power Only				|
+| Components                    | Details         | Quantity | Remarks            |
+| :---------------------------- | :-------------- | :------- | :----------------- |
+| ESP8266 WiFi Module           | ESP-WROOM-02    | 1        |                    |
+| IR receiver                   | OSRB38C9AA      | 1        | Power: 3.3V        |
+| IR LED                        | OSI5FU3A11C     | 4        | anything maybe OK  |
+| Voltage Regulator             | NJU7223-33      | 1        | output: 3.3V 500mA |
+| Nch MOS-FET                   | IRLML6344       | 1        |                    |
+| Resistor for IR LED           | 4.7 ohms, 1W    | 2        |                    |
+| Pull-up/down Resistor         | 10k ohms        | 5        |                    |
+| Indicator LED                 | OSTBABS4C2B     | 1        |                    |
+| Resistor for LED              | 100~220 ohms    | 3        |                    |
+| Resistor for IR receiver      | 220 ohms        | 1        |                    |
+| Capacitor for IR receiver     | 4.7uF           | 3        |                    |
+| Power Stabilization Capacitor | 100uF           | 1        |                    |
+| Bypass Capacitor              | 0.1uF           | 3        |                    |
+| User Button                   | SKRPACE010      | 1        |                    |
+| Poly Switch                   | MICROSMD035F-02 | 1        | up to 350mA        |
+| USB Conncector                | USB-Micro-B     | 1        | Power Only         |
 
 {{< postfig src="images/components.jpg" title="Components" >}}
 
 #### Requires
 
-| Requires |Details|Quantity|
-|:------|:-------|:--------|
-| Serial-to-USB conversion Module | such as FT232  | 1 |
+| Requires                        | Details       | Quantity |
+| :------------------------------ | :------------ | :------- |
+| Serial-to-USB conversion Module | such as FT232 | 1        |
 
 ### Circuit Diagram
 
@@ -176,32 +176,32 @@ Please Add the Libraries below to your Arduino IDE
 
 ### Setup Form
 
-|Path				|Method	|Parameter(s)	|Return	|Remarks	|
-|:------------------|:------|:--------------|:------|:----------|
-|/					|GET	|				|index.html	|setup form page	|
-|/wifi/list			|GET	|				|a list of (string)	|a list of existing WiFi SSID 	|
-|/wifi/confirm		|POST	|				|IP Address or "false"		|confirm if WiFi connection is established and reboot the device	|
-|/mode/station		|POST	|ssid, password, stealth, hostname	|message	|set the device as Station Mode	|
-|/mode/accesspoint	|POST	|hostname	|message	|set the device as AP Mode	|
-|/dbg				|GET	|ssid, password	|local_ip or "false"	|
+| Path              | Method | Parameter(s)                      | Return                | Remarks                                                         |
+| :---------------- | :----- | :-------------------------------- | :-------------------- | :-------------------------------------------------------------- |
+| /                 | GET    |                                   | index.html            | setup form page                                                 |
+| /wifi/list        | GET    |                                   | a list of (string)    | a list of existing WiFi SSID                                    |
+| /wifi/confirm     | POST   |                                   | IP Address or "false" | confirm if WiFi connection is established and reboot the device |
+| /mode/station     | POST   | ssid, password, stealth, hostname | message               | set the device as Station Mode                                  |
+| /mode/accesspoint | POST   | hostname                          | message               | set the device as AP Mode                                       |
+| /dbg              | GET    | ssid, password                    | local_ip or "false"   |
 
 ### Main Page
 
-|Path				|Method	|Parameter(s)			|Return		|Remarks	|
-|:------------------|:------|:----------------------|:----------|:----------|
-|/					|GET	|						|index.html	|main page of IR-Station	|
-|/info				|GET	|						|station.json	|a json includes the device information	|
-|/signals/send		|POST	|id						|message	|			|
-|/signals/record	|POST	|row, column, name		|message	|			|
-|/signals/rename	|POST	|id, name				|message	|			|
-|/signals/move		|POST	|id, row, column		|message	|			|
-|/signals/upload	|POST	|irJson, row, column	|message	|			|
-|/signals/clear		|POST	|id						|message	|			|
-|/signals/clear-all	|POST	|						|message	|			|
-|/schedule/new		|POST	|id, time				|message	|			|
-|/schedule/delete	|POST	|schedule_id			|message	|			|
-|/wifi/disconnect	|POST	|						|none		|			|
-|/wifi/change-ip	|POST	|local_ip, subnetmask, gateway	|message|		|
+| Path               | Method | Parameter(s)                  | Return       | Remarks                                |
+| :----------------- | :----- | :---------------------------- | :----------- | :------------------------------------- |
+| /                  | GET    |                               | index.html   | main page of IR-Station                |
+| /info              | GET    |                               | station.json | a json includes the device information |
+| /signals/send      | POST   | id                            | message      |                                        |
+| /signals/record    | POST   | row, column, name             | message      |                                        |
+| /signals/rename    | POST   | id, name                      | message      |                                        |
+| /signals/move      | POST   | id, row, column               | message      |                                        |
+| /signals/upload    | POST   | irJson, row, column           | message      |                                        |
+| /signals/clear     | POST   | id                            | message      |                                        |
+| /signals/clear-all | POST   |                               | message      |                                        |
+| /schedule/new      | POST   | id, time                      | message      |                                        |
+| /schedule/delete   | POST   | schedule_id                   | message      |                                        |
+| /wifi/disconnect   | POST   |                               | none         |                                        |
+| /wifi/change-ip    | POST   | local_ip, subnetmask, gateway | message      |                                        |
 
 #### result json
 

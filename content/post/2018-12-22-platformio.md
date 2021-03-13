@@ -11,7 +11,7 @@ thumbnail: "icon.png"
 
 ## 概要
 
-この記事は [rogy Advent Calendar 2018](https://adventar.org/calendars/3279) の
+この記事は [東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018](https://adventar.org/calendars/3279) の
 22日目の記事です．
 
 こんにちは．けりです．

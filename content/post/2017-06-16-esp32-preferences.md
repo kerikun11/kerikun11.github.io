@@ -32,7 +32,7 @@ Arduino core for ESP32 に含まれているので，特に何もインストー
 
 ### Preferences.h
 
-~~~c
+~~~cpp
 // Copyright 2015-2016 Espressif Systems (Shanghai) PTE LTD
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -108,7 +108,7 @@ class Preferences {
 
 起動回数をPreferencesとして保存し，再起動を繰り返してもデータが消えないというサンプルです．
 
-~~~c
+~~~cpp
 /*
  ESP32 start counter example with Preferences library
 

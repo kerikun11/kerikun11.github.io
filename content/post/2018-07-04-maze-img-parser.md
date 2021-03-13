@@ -30,7 +30,7 @@ thumbnail: "icon.png"
 
 ```m
 %% 入力
-[filename, pathname] = uigetfile({'*.jpg;*.png;*.gif'}, 'Select the Maze Imgae');
+[filename, pathname] = uigetfile({'*.jpg;*.png;*.gif'}, 'Select the Maze Image');
 
 %% 二値化＆色反転(壁を1にするため)
 original = imread([pathname, filename]);

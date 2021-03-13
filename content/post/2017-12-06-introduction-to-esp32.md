@@ -10,7 +10,7 @@ thumbnail: "icon.jpg"
 ---
 
 こんにちは，けりです．  
-これは [rogy Advent Calender 2017](https://adventar.org/calendars/2361) の6日目の記事です.
+これは [東京工業大学ロボット技術研究会(rogy) Advent Calender 2017](https://adventar.org/calendars/2361) の6日目の記事です.
 
 本日は，私が愛用しているマイコン「ESP32」を紹介します．
 
@@ -135,4 +135,4 @@ ESP32の場合，[ESP32 Technical Reference Manual](http://espressif.com/sites/d
   * [Arduino core for ESP32 WiFi chip](https://github.com/espressif/arduino-esp32)
 
 最後までお読み頂きありがとうございました．  
-明日の [rogy Advent Calender 2017](https://adventar.org/calendars/2361) は，Aktzkさんです．お楽しみに！
+明日の [東京工業大学ロボット技術研究会(rogy) Advent Calender 2017](https://adventar.org/calendars/2361) は，Aktzkさんです．お楽しみに！

@@ -131,7 +131,7 @@ typedef uint32_t wall_size_t;
 ### Dir構造体
 
 ~~~cpp
-/** @struc Dir
+/** @struct Dir
 *  @brief 迷路上の方向を定義
 */
 struct Dir{

@@ -24,20 +24,20 @@ Charge Station は，自作の携帯電話充電器です．僕が命名しま�
 
 ### Charge Station Ver.1　(2014.10)
 
-下図がCharge Staion Ver.1です．18pinのPIC16F1827を使用し，ユニバーサル基板で作りました．電計が充電対象のローサイドにあるため，USBコネクタのGNDが共通化されるとそれぞれの充電ポートを個別に，電流を測ることができないという重大な不具合を抱えています．
+下図がCharge Station Ver.1です．18pinのPIC16F1827を使用し，ユニバーサル基板で作りました．電流計が充電対象のローサイドにあるため，USBコネクタのGNDが共通化されるとそれぞれの充電ポートを個別に，電流を測ることができないという重大な不具合を抱えています．
 
 {{< postfig src="CS1-1.jpg" title="Charge Station Ver.1外観" width="360px" >}}
 {{< postfig src="CS1-2.jpg" title="Charge Station Ver.1内部" width="360px" >}}
 
 ### Charge Station Ver.2　(2014.12)
 
-Charge Statin Ver.2では，Ver.1の欠陥回路を修正して，切削のプリント基板に起こしました．欠陥を修復するのは容易ではありませんでした．オペアンプを1から勉強して，差動増幅回路により解決しています．Ver.2は基板のみの製作です．
+Charge Station Ver.2では，Ver.1の欠陥回路を修正して，切削のプリント基板に起こしました．欠陥を修復するのは容易ではありませんでした．オペアンプを1から勉強して，差動増幅回路により解決しています．Ver.2は基板のみの製作です．
 
 {{< postfig src="CS2-1.jpg" title="Charge Station Ver.2基板" width="360px" >}}
 
 ### Charge Station Ver.3　(2015.1)
 
-Charge Statin Ver.3では，プラスチックケースに組み込むために基板を小型化しました．また，シリアル通信によるデータ出力機能が付きました．3番目の図のようにドットマトリクスLEDを使って文字スクロール表示器も作ってみました．
+Charge Station Ver.3では，プラスチックケースに組み込むために基板を小型化しました．また，シリアル通信によるデータ出力機能が付きました．3番目の図のようにドットマトリクスLEDを使って文字スクロール表示器も作ってみました．
 
 {{< postfig src="CS3-1.jpg" title="Charge Station Ver.3外観" width="360px" >}}
 
@@ -47,19 +47,19 @@ Charge Statin Ver.3では，プラスチックケースに組み込むために�
 
 ### Charge Station Ver.3.5　(2015.2)
 
-Charge Statin Ver.3.5では，Charge Statin Ver.3に液晶を付け加えました．それにより，充電電流などをいつでも確認することができます．
+Charge Station Ver.3.5では，Charge Station Ver.3に液晶を付け加えました．それにより，充電電流などをいつでも確認することができます．
 
 {{< postfig src="CS3-4.jpg" title="Charge Station Ver.3.5外観" width="360px" >}}
 
 ### Charge Station Ver.4　(2015.2)
 
-Charge Statin Ver.4では，実用のため，コンパクトな別のプラスチックケース用に設計しました．Ver.3となかみは変わりません．
+Charge Station Ver.4では，実用のため，コンパクトな別のプラスチックケース用に設計しました．Ver.3となかみは変わりません．
 
 {{< postfig src="CS4-1.jpg" title="Charge Station Ver.4外観" width="360px" >}}
 
 ### Charge Station Ver.5　(2015.3)
 
-Charge Statin Ver.5では，人生初のプリント基板発注に挑戦しました．Elecrowという，プリント基板を受注生産をしている会社があります．基板製作$10＋送料$20くらいで作ってくれます．日本円では3500円くらいでした．ユニバーサル基板や切削基板と違い，発注のプリント基板は，両面基板なので，とてもコンパクトに作ることができます．表面実装部品も，手ではんだ付けします．
+Charge Station Ver.5では，人生初のプリント基板発注に挑戦しました．Elecrowという，プリント基板を受注生産をしている会社があります．基板製作$10＋送料$20くらいで作ってくれます．日本円では3500円くらいでした．ユニバーサル基板や切削基板と違い，発注のプリント基板は，両面基板なので，とてもコンパクトに作ることができます．表面実装部品も，手ではんだ付けします．
 
 {{< postfig src="CS5-1.jpg" title="Charge Station Ver.5外観" width="360px" >}}
 
@@ -69,7 +69,7 @@ Charge Statin Ver.5では，人生初のプリント基板発注に挑戦しま�
 
 ### Charge Station Ver.6　(2015.6)
 
-Charge Statin Ver.6からはメインマイコンを変更しました．28pinのPIC18F27J53という前に比べてかなりスペックの高いものに変わっています．このマイコンには，RTCC（リアルタイムクロック&カレンダー）機能が備わっていて，時計が組み込まれています．これを使って，充電時間のカウント機能をつけました．また，CTMU(Charge Time Measurement Unit)という，静電容量センサがついているので，ユーザーインターフェースのボタンをすべてタッチスイッチにしました．
+Charge Station Ver.6からはメインマイコンを変更しました．28pinのPIC18F27J53という前に比べてかなりスペックの高いものに変わっています．このマイコンには，RTCC（リアルタイムクロック&カレンダー）機能が備わっていて，時計が組み込まれています．これを使って，充電時間のカウント機能をつけました．また，CTMU(Charge Time Measurement Unit)という，静電容量センサがついているので，ユーザーインターフェースのボタンをすべてタッチスイッチにしました．
 
 {{< postfig src="CS6-1.jpg" title="Charge Station Ver.6外観" width="360px" >}}
 
@@ -113,7 +113,7 @@ Charge Statin Ver.6からはメインマイコンを変更しました．28pin�
 
 ### 積算リセット機能
 
-各ポートのタッチセンサを長押しすると「Integrat Reset?」と表示されます．この状態で指を離すと，積算電流と積算充電時間がリセット（ゼロクリア）されます．指を離さずに放置すると表示が切り替わり，リセットされません．
+各ポートのタッチセンサを長押しすると「Integrate Reset?」と表示されます．この状態で指を離すと，積算電流と積算充電時間がリセット（ゼロクリア）されます．指を離さずに放置すると表示が切り替わり，リセットされません．
 
 {{< postfig src="CS6-7.jpg" title="Charge Station Ver.6積算充電時間表示" width="360px" >}}
 

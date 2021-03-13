@@ -15,7 +15,7 @@ thumbnail: "icon.png"
 マイクロマウスでよく使われるリチウムポリマー電池「Hyperion」シリーズですが，「U-Micro」という1.27mmピッチの謎のコネクタが付属しています．それの正体がなんとなくわかったので記事にしました．
 
 <!--more-->
- 
+
 {{< postfig src="li-po.png" title="Hyperion G3 リチウムポリマーバッテリー " >}}
 
 

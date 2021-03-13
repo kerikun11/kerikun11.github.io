@@ -12,22 +12,22 @@ thumbnail: "icon.jpg"
 
 こんにちは．けりです．
 
-ようやく形になった今年の新作「KERISEv4」を紹介します．
+ようやく形になった今年の新作「KERISE v4」を紹介します．
 
 <!--more-->
 
-{{< postfig src="kerisev4.jpg" title="KERISEv4" width="360px" >}}
+{{< postfig src="kerisev4.jpg" title="KERISE v4" width="360px" >}}
 
-## KERISEv4
+## KERISE v4
 
-見た目はKERISEv3とそっくりですが，中身はいろいろ変わったKERISEv4です．
+見た目は KERISE v3 とそっくりですが，中身はいろいろ変わった KERISE v4 です．
 
-{{< postfig src="kerisev4-front1.jpg" title="KERISEv4" width="360px" >}}
-{{< postfig src="kerisev4-front.jpg" title="KERISEv4" width="360px" >}}
-{{< postfig src="kerisev4-left.jpg" title="KERISEv4" width="360px" >}}
-{{< postfig src="kerisev4-right.jpg" title="KERISEv4" width="360px" >}}
-{{< postfig src="kerisev4-back.jpg" title="KERISEv4" width="360px" >}}
-{{< postfig src="kerisev4-bottom.jpg" title="KERISEv4" width="360px" >}}
+{{< postfig src="kerisev4-front1.jpg" title="KERISE v4" width="360px" >}}
+{{< postfig src="kerisev4-front.jpg" title="KERISE v4" width="360px" >}}
+{{< postfig src="kerisev4-left.jpg" title="KERISE v4" width="360px" >}}
+{{< postfig src="kerisev4-right.jpg" title="KERISE v4" width="360px" >}}
+{{< postfig src="kerisev4-back.jpg" title="KERISE v4" width="360px" >}}
+{{< postfig src="kerisev4-bottom.jpg" title="KERISE v4" width="360px" >}}
 
 <!-- ## スペック
 
@@ -42,14 +42,14 @@ thumbnail: "icon.jpg"
 | モータードライバ | DRV8835                 |
 | 6軸センサ        | ICM-20602               | --> |
 
-## KERISEv3 との比較
+## KERISE v3 との比較
 
-KERISEv3と比較すると，一回り小さくなったことが分かります．
+KERISE v3 と比較すると，一回り小さくなったことが分かります．
 
-{{< postfig src="kerise_cmp1.jpg" title="KERISEv3 と KERISEv4 と 100円玉" width="480px" >}}
-{{< postfig src="kerise_cmp2.jpg" title="KERISEv3 と KERISEv4 と 100円玉" width="480px" >}}
+{{< postfig src="kerise_cmp1.jpg" title="KERISE v3 と KERISE v4 と 100円玉" width="480px" >}}
+{{< postfig src="kerise_cmp2.jpg" title="KERISE v3 と KERISE v4 と 100円玉" width="480px" >}}
 
-| サイズ    | KERISEv3 | KERISEv4 |
+| サイズ    | KERISE v3 | KERISE v4 |
 | :-------- | :------- | :------- |
 | 縦 [mm]   | 46       | 43       |
 | 横 [mm]   | 37       | 33       |
@@ -64,7 +64,7 @@ KERISEv3と比較すると，一回り小さくなったことが分かります
 
 これは，角加速度を測定するためです．PID制御のD成分を計算する際に役立つと思います．
 
-{{< postfig src="board.jpg" title="KERISEv4 基板" width="360px" >}}
+{{< postfig src="board.jpg" title="KERISE v4 基板" width="360px" >}}
 
 細い部分の両サイドについている正方形の黒いICが6軸センサです．
 

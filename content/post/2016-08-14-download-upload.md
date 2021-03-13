@@ -85,7 +85,7 @@ thumbnail: "icon.png"
 
 ### 注意
 
-JSONデータのフォーマットは，今後のアップデートで変更される可能性があります．最新情報は，[Githab/kerikun11/IR-Station](http://github.com/kerikun11/IR-station.git)にあるのでそちらをご覧下さい．
+JSONデータのフォーマットは，今後のアップデートで変更される可能性があります．最新情報は，[GitHub/kerikun11/IR-Station](http://github.com/kerikun11/IR-station.git)にあるのでそちらをご覧下さい．
 
 ## まとめ
 

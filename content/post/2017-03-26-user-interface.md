@@ -309,7 +309,7 @@ void loop(){
     bz.play(Buzzer::SELECT);
   }
 
-  if(btn.long_pressed_1 || btn.long_presssin_2){
+  if(btn.long_pressed_1 || btn.long_pressing_2){
     btn.flags = 0; // まとめてクリア
     bz.play(Buzzer::CANCEL);
   }
