@@ -112,7 +112,7 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>
 &lt;li>VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li>
 &lt;/ul></description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank">rogy Advent Calendar 2018&lt;/a>
+&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a>
 の
 22日目の記事です．&lt;/p>
 &lt;p>こんにちは．けりです．&lt;/p>
@@ -126,7 +126,7 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p>マイクロマウスでは，User Interface (UI) のために，スピーカーを載せることが多いです．&lt;/p>
 &lt;p>しかしながら，小さなマウスを作るうえで，そのわずかなスペースでも惜しいものです．&lt;/p>
 &lt;p>今回は，既にマウスに乗っている &lt;strong>モーター&lt;/strong> で音を鳴らすことができたので紹介します．&lt;/p>
-&lt;p>偶然ですが，&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/">KERISEv4&lt;/a>
+&lt;p>偶然ですが，&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/">KERISE v4&lt;/a>
 には(ほとんど使われていない) &lt;strong>吸引ファン&lt;/strong> がついていたので，今回はそれを使ってみました．&lt;/p></description></item><item><title>MATLABで迷路画像をパースする</title><link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link><pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
 &lt;p>今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p>
 &lt;p>自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p></description></item></channel></rss>

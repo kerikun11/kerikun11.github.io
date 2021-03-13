@@ -28,7 +28,7 @@ Cheese主催のマイクロマウス・プチ大会
 マイクロマウス KERISE v4 に
 最近搭載した，
 新機能「未知区間加速」を紹介します．&lt;/p></description></item><item><title>New KERISE v4, 登場</title><link>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</link><pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>ようやく形になった今年の新作「KERISEv4」を紹介します．&lt;/p></description></item><item><title>アセンブリ言語で書いた電光掲示板</title><link>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</link><pubDate>Wed, 14 Feb 2018 22:02:45 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ようやく形になった今年の新作「KERISE v4」を紹介します．&lt;/p></description></item><item><title>アセンブリ言語で書いた電光掲示板</title><link>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</link><pubDate>Wed, 14 Feb 2018 22:02:45 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>今回の記事は，高校生の時に作った電光掲示板のコードの紹介です．&lt;/p>
 &lt;p>PICのアセンブリ言語で書かれています．&lt;/p></description></item><item><title>調整用の小さな迷路</title><link>https://www.kerislab.jp/posts/2017-11-05-small-maze/</link><pubDate>Sun, 05 Nov 2017 15:26:06 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-05-small-maze/</guid><description>&lt;p>こんにちは．&lt;/p>
 &lt;p>エクストリーム新作のKERISEv3-2を諦めてKERISEv3-1を必死に調整している，けりです．&lt;/p>
@@ -62,9 +62,9 @@ Cheese主催のマイクロマウス・プチ大会
 商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ，在庫数と売場が表示されます．&lt;/p></description></item><item><title>KERISE v3 ができました！</title><link>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</link><pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</guid><description>&lt;h2 id="kerisev3">KERISEv3&lt;/h2>
 &lt;figure >
 &lt;figcaption>
-&lt;h4>KERISEv3&lt;/h4>
+&lt;h4>KERISE v3&lt;/h4>
 &lt;/figcaption>
-&lt;img src="kerisev3-front-side.jpg" alt="KERISEv3" style="width: 240px;"/>
+&lt;img src="kerisev3-front-side.jpg" alt="KERISE v3" style="width: 240px;"/>
 &lt;/figure>
 &lt;h3 id="3台目のマウス">3台目のマウス&lt;/h3>
 &lt;p>マイクロマウスを始めて8か月目になりました．けりです．&lt;br>
@@ -93,14 +93,14 @@ Cheese主催のマイクロマウス・プチ大会
 ができてついにハーフにデビューしました！&lt;br>
 しかし，自宅には迷路がないので試しに自分で作ってみることにしました．&lt;/p></description></item><item><title>ハーフ迷路を走ってみました！</title><link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link><pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid><description>&lt;h2 id="ハーフサイズの迷路を走ってみました">ハーフサイズの迷路を走ってみました&lt;/h2>
 &lt;p>こんにちは，けりです．&lt;br>
-KERISEv2の制御が落ち着てきたので，ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p></description></item><item><title>KERISE v2 ができました！</title><link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link><pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid><description>&lt;h2 id="マイクロマウスクラシックハーフ兼用マウス">マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2>
+KERISE v2の制御が落ち着てきたので，ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p></description></item><item><title>KERISE v2 ができました！</title><link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link><pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid><description>&lt;h2 id="マイクロマウスクラシックハーフ兼用マウス">マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">昨年の大会&lt;/a>
 ではクラシッククラスに出場しましたが，今度はハーフにも出場したい！ということで，試しにハーフ迷路も走れる大きさのマウスを作ってみました．&lt;/p>
 &lt;figure >
 &lt;figcaption>
-&lt;h4>KERISEv2&lt;/h4>
+&lt;h4>KERISE v2&lt;/h4>
 &lt;/figcaption>
-&lt;img src="with-hand.jpg" alt="KERISEv2" style="width: 480px;"/>
+&lt;img src="with-hand.jpg" alt="KERISE v2" style="width: 480px;"/>
 &lt;/figure></description></item><item><title>KERISE v1の設計(回路編)</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1．今回はその回路設計を紹介します．&lt;/p>
 &lt;p>全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">こちら&lt;/a>

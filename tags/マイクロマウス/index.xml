@@ -71,11 +71,11 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p>マイクロマウスでは，User Interface (UI) のために，スピーカーを載せることが多いです．&lt;/p>
 &lt;p>しかしながら，小さなマウスを作るうえで，そのわずかなスペースでも惜しいものです．&lt;/p>
 &lt;p>今回は，既にマウスに乗っている &lt;strong>モーター&lt;/strong> で音を鳴らすことができたので紹介します．&lt;/p>
-&lt;p>偶然ですが，&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/">KERISEv4&lt;/a>
+&lt;p>偶然ですが，&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/">KERISE v4&lt;/a>
 には(ほとんど使われていない) &lt;strong>吸引ファン&lt;/strong> がついていたので，今回はそれを使ってみました．&lt;/p></description></item><item><title>MATLABで迷路画像をパースする</title><link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link><pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
 &lt;p>今回は，マイクロマウス公式から配布される迷路画像を，プログラムなどで読める形式に変換するMATLABコードを紹介します．&lt;/p>
 &lt;p>自分向けに作ったものなので，あまり高機能ではありませんが，参考になれば幸いです．&lt;/p></description></item><item><title>New KERISE v4, 登場</title><link>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</link><pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>ようやく形になった今年の新作「KERISEv4」を紹介します．&lt;/p></description></item><item><title>なめらかな加速の設計④ C++による実装例</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</link><pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ようやく形になった今年の新作「KERISE v4」を紹介します．&lt;/p></description></item><item><title>なめらかな加速の設計④ C++による実装例</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</link><pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer3/">前回の記事&lt;/a>
 の続きです．&lt;/p>
 &lt;p>今回の記事では，今までに示した設計法のC++による実装例を紹介します．&lt;/p></description></item><item><title>なめらかな加速の設計③ 走行距離を考慮した速度設計</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</link><pubDate>Sun, 29 Apr 2018 14:35:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</guid><description>&lt;h2 id="設計2走行距離を考慮した速度設計">設計2・走行距離を考慮した速度設計&lt;/h2>

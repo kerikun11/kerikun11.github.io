@@ -71,7 +71,7 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>
 &lt;li>VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li>
 &lt;/ul></description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank">rogy Advent Calendar 2018&lt;/a>
+&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a>
 の
 22日目の記事です．&lt;/p>
 &lt;p>こんにちは．けりです．&lt;/p>
@@ -85,7 +85,7 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;p>マイクロマウスでは，User Interface (UI) のために，スピーカーを載せることが多いです．&lt;/p>
 &lt;p>しかしながら，小さなマウスを作るうえで，そのわずかなスペースでも惜しいものです．&lt;/p>
 &lt;p>今回は，既にマウスに乗っている &lt;strong>モーター&lt;/strong> で音を鳴らすことができたので紹介します．&lt;/p>
-&lt;p>偶然ですが，&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/">KERISEv4&lt;/a>
+&lt;p>偶然ですが，&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/">KERISE v4&lt;/a>
 には(ほとんど使われていない) &lt;strong>吸引ファン&lt;/strong> がついていたので，今回はそれを使ってみました．&lt;/p></description></item><item><title>ESP32 の Power Management 機能</title><link>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</link><pubDate>Thu, 28 Jun 2018 08:50:59 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</guid><description>&lt;p>この記事では，ESP32をバッテリー駆動するためのヒントをお届けします．&lt;/p></description></item><item><title>なめらかな加速の設計④ C++による実装例</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</link><pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer3/">前回の記事&lt;/a>
 の続きです．&lt;/p>
@@ -106,7 +106,7 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;p>以前は&lt;a href="https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/">SDカードを使ってWiFi情報を伝える方法&lt;/a>
 を紹介しましたが，これも割と手間でした．&lt;/p>
 &lt;p>SmartConfigとは，そんな悩みをスマホで解決する機能です．&lt;/p></description></item><item><title>ESP32のすゝめ</title><link>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</link><pubDate>Wed, 06 Dec 2017 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</guid><description>&lt;p>こんにちは，けりです．&lt;br>
-これは &lt;a href="https://adventar.org/calendars/2361" target="_blank">rogy Advent Calender 2017&lt;/a>
+これは &lt;a href="https://adventar.org/calendars/2361" target="_blank">東京工業大学ロボット技術研究会(rogy) Advent Calender 2017&lt;/a>
 の6日目の記事です.&lt;/p>
 &lt;p>本日は，私が愛用しているマイコン「ESP32」を紹介します．&lt;/p></description></item><item><title>フォトリフレクタの感度をソフトで調整</title><link>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</link><pubDate>Fri, 20 Oct 2017 12:15:04 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</guid><description>&lt;p>こんにちは．けりです．&lt;br>
 今回は，マイクロマウスに使っているフォトリフレクタのお話です．&lt;/p></description></item><item><title>マイクロマウスのターン一覧</title><link>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</link><pubDate>Sun, 03 Sep 2017 18:32:03 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
