@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FreeRTOS on KERI's Lab</title><link>https://www.kerislab.jp/tags/freertos/</link><description>Recent content in FreeRTOS on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/freertos/index.xml" rel="self" type="application/rss+xml"/><item><title>FreeRTOSのTaskにC++のメンバ関数を割り当てる</title><link>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>FreeRTOSはC言語で書かれているので，C++のメンバ関数をそのまま渡すことができない．今回の記事ではその解決策のひとつを紹介する．&lt;/p></description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>FreeRTOSはC言語で書かれているので、C++のメンバ関数をそのまま渡すことができない。今回の記事ではその解決策のひとつを紹介する。&lt;/p></description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="esp32-とは">ESP32 とは&lt;/h3>
 &lt;figure >
 &lt;figcaption>
@@ -9,5 +9,5 @@
 &lt;/figure>
 &lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank">ESP32 Overview | Espressif Systems&lt;/a>
 &lt;/p>
-&lt;p>ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです．
-同時に gcc で開発できるマイコンでもあります．&lt;/p></description></item></channel></rss>
+&lt;p>ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
+同時に gcc で開発できるマイコンでもあります。&lt;/p></description></item></channel></rss>

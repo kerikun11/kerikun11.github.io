@@ -2,5 +2,5 @@
 &lt;h2 id="_概要">概要&lt;/h2>
 &lt;div class="sectionbody">
 &lt;div class="paragraph">
-&lt;p>Nucleoボードとグラフィック液晶を使って，音声解析機を作りました．マイクに入ってきた音を高速フーリエ変換して，周波数スペクトルを表示します．&lt;/p>
+&lt;p>Nucleoボードとグラフィック液晶を使って、音声解析機を作りました。マイクに入ってきた音を高速フーリエ変換して、周波数スペクトルを表示します。&lt;/p>
 &lt;/div></description></item></channel></rss>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP8266 on KERI's Lab</title><link>https://www.kerislab.jp/tags/esp8266/</link><description>Recent content in ESP8266 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 14 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/esp8266/index.xml" rel="self" type="application/rss+xml"/><item><title>IR-Stationの赤外線ダウンロード機能</title><link>https://www.kerislab.jp/posts/2016-08-14-download-upload/</link><pubDate>Sun, 14 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-14-download-upload/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
-&lt;p>自作のWiFi接続の赤外線学習リモコンです．IR-Stationを使えば，スマホやPCから家電製品をコントロールすることができます．&lt;/p>
-&lt;p>詳しくは，&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
-をご覧ください．&lt;/p>
+&lt;p>自作のWiFi接続の赤外線学習リモコンです。IR-Stationを使えば、スマホやPCから家電製品をコントロールすることができます。&lt;/p>
+&lt;p>詳しくは、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
+をご覧ください。&lt;/p>
 &lt;h2 id="ir-stationの新機能">IR-Stationの新機能&lt;/h2>
-&lt;p>夏休みになり，IR-Stationを本格的に開発しています．今回は，いくつかの新機能を紹介します．&lt;/p></description></item><item><title>IR-Stationの使い方</title><link>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</link><pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
-&lt;p>IR-Station とは，自作のWiFi接続の赤外線学習リモコンです．&lt;/p>
-&lt;p>IR-Stationを使えば，スマホやPCから家電製品をコントロールすることができます．&lt;/p></description></item><item><title>赤外線学習リモコン完成</title><link>https://www.kerislab.jp/posts/2016-07-18-ir-station/</link><pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-18-ir-station/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>赤外線学習リモコンとは，市販の家電製品などのリモコンの赤外線信号を記憶し，送信することができるものです．&lt;/p>
-&lt;p>今回は，WiFi接続に対応した赤外線学習リモコンを作りました．スマートフォンやパソコンなどから，家電製品をコントロールすることができます．&lt;/p></description></item><item><title>ソーラー発電量モニター</title><link>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>夏休みになり、IR-Stationを本格的に開発しています。今回は、いくつかの新機能を紹介します。&lt;/p></description></item><item><title>IR-Stationの使い方</title><link>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</link><pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
+&lt;p>IR-Station とは、自作のWiFi接続の赤外線学習リモコンです。&lt;/p>
+&lt;p>IR-Stationを使えば、スマホやPCから家電製品をコントロールすることができます。&lt;/p></description></item><item><title>赤外線学習リモコン完成</title><link>https://www.kerislab.jp/posts/2016-07-18-ir-station/</link><pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-18-ir-station/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>赤外線学習リモコンとは、市販の家電製品などのリモコンの赤外線信号を記憶し、送信することができるものです。&lt;/p>
+&lt;p>今回は、WiFi接続に対応した赤外線学習リモコンを作りました。スマートフォンやパソコンなどから、家電製品をコントロールすることができます。&lt;/p></description></item><item><title>ソーラー発電量モニター</title><link>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">100W級ソーラーシステム&lt;/a>
 の発電量を&lt;a href="https://thingspeak.com/" target="_blank">ThingSpeak.com&lt;/a>
 というサイトに送ってグラフ化しました。&lt;/p>

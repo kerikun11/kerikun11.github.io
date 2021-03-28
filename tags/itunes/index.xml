@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iTunes on KERI's Lab</title><link>https://www.kerislab.jp/tags/itunes/</link><description>Recent content in iTunes on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Wed, 31 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/itunes/index.xml" rel="self" type="application/rss+xml"/><item><title>VolumioでiTunesのプレイリストを使う</title><link>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</link><pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="volumio">Volumio&lt;/h3>
-&lt;p>&lt;strong>Volumio&lt;/strong>というミュージックサーバーソフトウェアがある．&lt;/p>
-&lt;p>ラズベリーパイにVolumioのOSを書き込むだけで，ミュージックサーバーが出来上がるし，Air Playや，SMBにも対応していて，素晴らしいものだ．&lt;/p>
+&lt;p>&lt;strong>Volumio&lt;/strong>というミュージックサーバーソフトウェアがある。&lt;/p>
+&lt;p>ラズベリーパイにVolumioのOSを書き込むだけで、ミュージックサーバーが出来上がるし、Air Playや、SMBにも対応していて、素晴らしいものだ。&lt;/p>
 &lt;h3 id="プレイリスト問題">プレイリスト問題&lt;/h3>
-&lt;p>しかし，そのプレイリストは独自の形式で，iTunesなどのプレイリストを読み込むことができず，新たに作らなくてはならない．&lt;/p>
+&lt;p>しかし、そのプレイリストは独自の形式で、iTunesなどのプレイリストを読み込むことができず、新たに作らなくてはならない。&lt;/p>
 &lt;p>&lt;strong>めんどくさい！&lt;/strong>&lt;/p>
-&lt;p>ということで，今回は，iTunesのプレイリストをvolumioのプレイリストに変換するスクリプトを紹介する．&lt;/p></description></item></channel></rss>
+&lt;p>ということで、今回は、iTunesのプレイリストをvolumioのプレイリストに変換するスクリプトを紹介する。&lt;/p></description></item></channel></rss>

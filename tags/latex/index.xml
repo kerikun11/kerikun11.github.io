@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Latex on KERI's Lab</title><link>https://www.kerislab.jp/tags/latex/</link><description>Recent content in Latex on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Mon, 14 Jan 2019 10:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/latex/index.xml" rel="self" type="application/rss+xml"/><item><title>VSCode で TeX を書こう</title><link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link><pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今回は私が使っている TeX のエディタ環境を紹介します．&lt;/p>
-&lt;p>注目機能は以下の通りです．&lt;/p>
+&lt;p>今回は私が使っている TeX のエディタ環境を紹介します。&lt;/p>
+&lt;p>注目機能は以下の通りです。&lt;/p>
 &lt;ul>
 &lt;li>コード補完&lt;/li>
 &lt;li>コード整形&lt;/li>

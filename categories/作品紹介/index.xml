@@ -1,47 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>作品紹介 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link><description>Recent content in 作品紹介 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Mon, 04 May 2020 17:16:53 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>迷路クラスの設計と迷路エディタの実装 (Python)</title><link>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</link><pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>今回はPythonで記述した迷路クラスと迷路エディタの紹介です．&lt;/p></description></item><item><title>New KERISE v5，登場</title><link>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</link><pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>今回の記事では，新作マイクロマウス「KERISE v5」を紹介します．&lt;/p></description></item><item><title>マイクロマウス迷路の自動生成</title><link>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</link><pubDate>Mon, 23 Mar 2020 17:51:37 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>マイクロマウスを作るにあたり，
-普段は迷路を解くことばかり考えていますが，
-今回はその迷路を作成するお話です．&lt;/p>
-&lt;p>試してみたのは，
-ランダムウォークによる迷路の自動生成です．&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>作品紹介 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link><description>Recent content in 作品紹介 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Mon, 04 May 2020 17:16:53 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>迷路クラスの設計と迷路エディタの実装 (Python)</title><link>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</link><pubDate>Mon, 04 May 2020 17:16:53 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-05-04-python-maze-editor/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>今回はPythonで記述した迷路クラスと迷路エディタの紹介です。&lt;/p></description></item><item><title>New KERISE v5、登場</title><link>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</link><pubDate>Wed, 15 Apr 2020 21:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-04-15-kerise-v5-coming/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>今回の記事では、新作マイクロマウス「KERISE v5」を紹介します。&lt;/p></description></item><item><title>マイクロマウス迷路の自動生成</title><link>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</link><pubDate>Mon, 23 Mar 2020 17:51:37 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>マイクロマウスを作るにあたり、
+普段は迷路を解くことばかり考えていますが、
+今回はその迷路を作成するお話です。&lt;/p>
+&lt;p>試してみたのは、
+ランダムウォークによる迷路の自動生成です。&lt;/p>
 &lt;p>果たしてマイクロマウスっぽい迷路はできるのでしょうか？&lt;/p></description></item><item><title>M5Stackで作るマイクロマウスのタイム表示機</title><link>https://www.kerislab.jp/posts/2020-03-07-m5stack-micromouse-timer/</link><pubDate>Sat, 07 Mar 2020 12:08:12 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-03-07-m5stack-micromouse-timer/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは．
-春休みに行きたい予定が重なっていてどちらに行くか迷っていたのに，
-どちらの予定も中止になって虚無になったけりです．&lt;/p>
-&lt;p>今回は先日制作したマイクロマウスのタイム表示機の紹介です．&lt;/p></description></item><item><title>Cheese Timer の紹介</title><link>https://www.kerislab.jp/posts/2019-12-23-cheese-timer/</link><pubDate>Mon, 23 Dec 2019 09:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-23-cheese-timer/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>先日，12月15日(日) に &lt;strong>第3回Cheese杯&lt;/strong> を開催しました．&lt;/p>
-&lt;p>Cheese杯とは，東京工業大学ロボット技術会Cheeseが主催するマイクロマウスのプチ大会です．&lt;/p>
-&lt;p>おかげさまで，今年，第3回目を開催することができました！&lt;/p>
-&lt;p>今回の記事では，そのとき登場した，
-マイクロマウス計測装置 &lt;strong>Cheese Timer&lt;/strong> を簡単に紹介します．&lt;/p></description></item><item><title>Cheese杯2019の迷路紹介</title><link>https://www.kerislab.jp/posts/2019-12-21-cheese-cup-2019-maze/</link><pubDate>Sat, 21 Dec 2019 21:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-21-cheese-cup-2019-maze/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>先日，12/15(日) に
+&lt;p>こんにちは。
+春休みに行きたい予定が重なっていてどちらに行くか迷っていたのに、
+どちらの予定も中止になって虚無になったけりです。&lt;/p>
+&lt;p>今回は先日制作したマイクロマウスのタイム表示機の紹介です。&lt;/p></description></item><item><title>Cheese Timer の紹介</title><link>https://www.kerislab.jp/posts/2019-12-23-cheese-timer/</link><pubDate>Mon, 23 Dec 2019 09:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-23-cheese-timer/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>先日、12月15日(日) に &lt;strong>第3回Cheese杯&lt;/strong> を開催しました。&lt;/p>
+&lt;p>Cheese杯とは、東京工業大学ロボット技術会Cheeseが主催するマイクロマウスのプチ大会です。&lt;/p>
+&lt;p>おかげさまで、今年、第3回目を開催することができました！&lt;/p>
+&lt;p>今回の記事では、そのとき登場した、
+マイクロマウス計測装置 &lt;strong>Cheese Timer&lt;/strong> を簡単に紹介します。&lt;/p></description></item><item><title>Cheese杯2019の迷路紹介</title><link>https://www.kerislab.jp/posts/2019-12-21-cheese-cup-2019-maze/</link><pubDate>Sat, 21 Dec 2019 21:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-21-cheese-cup-2019-maze/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>先日、12/15(日) に
 Cheese主催のマイクロマウス・プチ大会
-&lt;strong>第3回Cheese杯&lt;/strong> を開催しました．&lt;/p>
-&lt;p>今回はそのとき出題された迷路を簡単に紹介します．&lt;/p></description></item><item><title>新機能・クラッシュ後の自動復帰！</title><link>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</link><pubDate>Wed, 18 Dec 2019 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</guid><description>&lt;p>この記事は，&lt;a href="https://adventar.org/calendars/4007" target="_blank">Micro Mouse Advent Calendar&lt;/a>
-18日目の記事です．&lt;/p></description></item><item><title>新機能・未知区間加速！</title><link>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</link><pubDate>Sat, 12 Oct 2019 01:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは．そろそろ修論研究が佳境になってきた けり です．&lt;/p>
-&lt;p>今回の記事では，
+&lt;strong>第3回Cheese杯&lt;/strong> を開催しました。&lt;/p>
+&lt;p>今回はそのとき出題された迷路を簡単に紹介します。&lt;/p></description></item><item><title>新機能・クラッシュ後の自動復帰！</title><link>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</link><pubDate>Wed, 18 Dec 2019 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-18-auto-recovery-micromouse/</guid><description>&lt;p>この記事は、&lt;a href="https://adventar.org/calendars/4007" target="_blank">Micro Mouse Advent Calendar&lt;/a>
+18日目の記事です。&lt;/p></description></item><item><title>新機能・未知区間加速！</title><link>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</link><pubDate>Sat, 12 Oct 2019 01:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは。そろそろ修論研究が佳境になってきた けり です。&lt;/p>
+&lt;p>今回の記事では、
 マイクロマウス KERISE v4 に
-最近搭載した，
-新機能「未知区間加速」を紹介します．&lt;/p></description></item><item><title>New KERISE v4, 登場</title><link>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</link><pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>ようやく形になった今年の新作「KERISE v4」を紹介します．&lt;/p></description></item><item><title>アセンブリ言語で書いた電光掲示板</title><link>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</link><pubDate>Wed, 14 Feb 2018 22:02:45 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今回の記事は，高校生の時に作った電光掲示板のコードの紹介です．&lt;/p>
-&lt;p>PICのアセンブリ言語で書かれています．&lt;/p></description></item><item><title>調整用の小さな迷路</title><link>https://www.kerislab.jp/posts/2017-11-05-small-maze/</link><pubDate>Sun, 05 Nov 2017 15:26:06 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-05-small-maze/</guid><description>&lt;p>こんにちは．&lt;/p>
-&lt;p>エクストリーム新作のKERISEv3-2を諦めてKERISEv3-1を必死に調整している，けりです．&lt;/p>
-&lt;p>今回は自作の調整用迷路の紹介です．&lt;/p></description></item><item><title>僕の迷路クラスの紹介</title><link>https://www.kerislab.jp/posts/2017-11-01-maze-class/</link><pubDate>Wed, 01 Nov 2017 10:31:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-01-maze-class/</guid><description>&lt;p>こんにちは．けりです．&lt;/p>
-&lt;p>今回もマイクロマウスの話題です．僕が使っている迷路クラスを紹介します．&lt;/p></description></item><item><title>CNCでM0.3のギアを作った</title><link>https://www.kerislab.jp/posts/2017-09-21-cnc-gear/</link><pubDate>Thu, 21 Sep 2017 11:25:11 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-21-cnc-gear/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>こんにちは，ESP32と格闘していてなかなか前に進めないけりです．&lt;/p>
-&lt;p>今回は，自作したギアの紹介です．&lt;/p>
-&lt;p>マイクロマウスのハーフサイズで使用する小さなギアをCNCフライスで作ってみました．&lt;/p></description></item><item><title>MATLABでスラローム軌道生成</title><link>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</link><pubDate>Mon, 04 Sep 2017 14:55:01 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+最近搭載した、
+新機能「未知区間加速」を紹介します。&lt;/p></description></item><item><title>New KERISE v4, 登場</title><link>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</link><pubDate>Wed, 02 May 2018 14:53:42 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>ようやく形になった今年の新作「KERISE v4」を紹介します。&lt;/p></description></item><item><title>アセンブリ言語で書いた電光掲示板</title><link>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</link><pubDate>Wed, 14 Feb 2018 22:02:45 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-14-pic-scroll-board-asm/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>今回の記事は、高校生の時に作った電光掲示板のコードの紹介です。&lt;/p>
+&lt;p>PICのアセンブリ言語で書かれています。&lt;/p></description></item><item><title>調整用の小さな迷路</title><link>https://www.kerislab.jp/posts/2017-11-05-small-maze/</link><pubDate>Sun, 05 Nov 2017 15:26:06 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-05-small-maze/</guid><description>&lt;p>こんにちは。&lt;/p>
+&lt;p>エクストリーム新作のKERISEv3-2を諦めてKERISEv3-1を必死に調整している、けりです。&lt;/p>
+&lt;p>今回は自作の調整用迷路の紹介です。&lt;/p></description></item><item><title>僕の迷路クラスの紹介</title><link>https://www.kerislab.jp/posts/2017-11-01-maze-class/</link><pubDate>Wed, 01 Nov 2017 10:31:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-01-maze-class/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>今回もマイクロマウスの話題です。僕が使っている迷路クラスを紹介します。&lt;/p></description></item><item><title>CNCでM0.3のギアを作った</title><link>https://www.kerislab.jp/posts/2017-09-21-cnc-gear/</link><pubDate>Thu, 21 Sep 2017 11:25:11 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-21-cnc-gear/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>こんにちは、ESP32と格闘していてなかなか前に進めないけりです。&lt;/p>
+&lt;p>今回は、自作したギアの紹介です。&lt;/p>
+&lt;p>マイクロマウスのハーフサイズで使用する小さなギアをCNCフライスで作ってみました。&lt;/p></description></item><item><title>MATLABでスラローム軌道生成</title><link>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</link><pubDate>Mon, 04 Sep 2017 14:55:01 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-04-matlab-trajectory/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/">前回&lt;/a>
-の記事ではマイクロマウスのターンの紹介をしました．今回は，そのカーブの軌道の生成方法を紹介したいと思います．&lt;/p></description></item><item><title>ESP32 Timeライブラリを作りました</title><link>https://www.kerislab.jp/posts/2017-08-30-esp32-time-lib/</link><pubDate>Wed, 30 Aug 2017 10:55:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-08-30-esp32-time-lib/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>こんにちは，けりです．
-みなさん，ESP32使ってますか？&lt;/p>
-&lt;p>今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します．&lt;/p></description></item><item><title>ESP-WROOM-32の短冊基板の紹介</title><link>https://www.kerislab.jp/posts/2017-08-18-esp32-sip-board/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-08-18-esp32-sip-board/</guid><description>&lt;h2 id="また作ったesp-wroom-32の変換基板">また作ったESP-WROOM-32の変換基板&lt;/h2>
+の記事ではマイクロマウスのターンの紹介をしました。今回は、そのカーブの軌道の生成方法を紹介したいと思います。&lt;/p></description></item><item><title>ESP32 Timeライブラリを作りました</title><link>https://www.kerislab.jp/posts/2017-08-30-esp32-time-lib/</link><pubDate>Wed, 30 Aug 2017 10:55:38 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-08-30-esp32-time-lib/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>こんにちは、けりです。
+みなさん、ESP32使ってますか？&lt;/p>
+&lt;p>今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します。&lt;/p></description></item><item><title>ESP-WROOM-32の短冊基板の紹介</title><link>https://www.kerislab.jp/posts/2017-08-18-esp32-sip-board/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-08-18-esp32-sip-board/</guid><description>&lt;h2 id="また作ったesp-wroom-32の変換基板">また作ったESP-WROOM-32の変換基板&lt;/h2>
 &lt;p>以前にも&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.kerislab.jp/posts/2017-03-02-keriesp32/">C基板型ESP-WROOM-32ブレークアウト基板&lt;/a>
@@ -49,17 +49,17 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;li>&lt;a href="https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/">台形型ESP32-WROOM-32ブレークアウト基板&lt;/a>
 &lt;/li>
 &lt;/ul>
-&lt;p>を作りましたが，今回は短冊形のものを作りました．&lt;/p>
-&lt;p>Micro-USBコネクタとシリアル変換ICが乗っているので，PCにつなぐだけですぐに使うことができます．&lt;/p></description></item><item><title>KERIESP32 Trapezoid</title><link>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</guid><description>&lt;h2 id="esp-wroom-32のブレークアウトボード">ESP-WROOM-32のブレークアウトボード&lt;/h2>
-&lt;p>WiFiとBluetoothが載ったデュアルコアなマイコン &lt;strong>ESP32&lt;/strong> のピッチ変換基板を新たに作ったので紹介します．&lt;/p></description></item><item><title>秋月の時計キットをNTP時計化</title><link>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</guid><description>&lt;h2 id="家の玄関で地味に役に立っていた時計">家の玄関で地味に役に立っていた時計&lt;/h2>
+&lt;p>を作りましたが、今回は短冊形のものを作りました。&lt;/p>
+&lt;p>Micro-USBコネクタとシリアル変換ICが乗っているので、PCにつなぐだけですぐに使うことができます。&lt;/p></description></item><item><title>KERIESP32 Trapezoid</title><link>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-keriesp32-trapezoid/</guid><description>&lt;h2 id="esp-wroom-32のブレークアウトボード">ESP-WROOM-32のブレークアウトボード&lt;/h2>
+&lt;p>WiFiとBluetoothが載ったデュアルコアなマイコン &lt;strong>ESP32&lt;/strong> のピッチ変換基板を新たに作ったので紹介します。&lt;/p></description></item><item><title>秋月の時計キットをNTP時計化</title><link>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</guid><description>&lt;h2 id="家の玄関で地味に役に立っていた時計">家の玄関で地味に役に立っていた時計&lt;/h2>
 &lt;p>かなり前に秋月電子で買った&lt;a href="http://akizukidenshi.com/catalog/g/gK-04379/" target="_blank">時計キット&lt;/a>
-．&lt;br>
-数字が大きく，遠くからでもよく見えるので自宅の玄関で地味に役立っていました．&lt;/p>
-&lt;p>しかし，水晶の精度がいまいちでよくズレるので，7セグの表示部だけを残してESP32によるNTP時計にアップデートしました．&lt;/p></description></item><item><title>ESP-WROOM-32で秋月の売場表示</title><link>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</link><pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</guid><description>&lt;h2 id="まずはじめに">まずはじめに&lt;/h2>
+。&lt;br>
+数字が大きく、遠くからでもよく見えるので自宅の玄関で地味に役立っていました。&lt;/p>
+&lt;p>しかし、水晶の精度がいまいちでよくズレるので、7セグの表示部だけを残してESP32によるNTP時計にアップデートしました。&lt;/p></description></item><item><title>ESP-WROOM-32で秋月の売場表示</title><link>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</link><pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</guid><description>&lt;h2 id="まずはじめに">まずはじめに&lt;/h2>
 &lt;h3 id="秋月の通販サイトが進化">秋月の通販サイトが進化&lt;/h3>
-&lt;p>少し前から，&lt;a href="http://akizukidenshi.com/" target="_blank">秋月の通販サイト&lt;/a>
-で店舗の在庫数と売場の場所が見れるようになりました．&lt;br>
-商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ，在庫数と売場が表示されます．&lt;/p></description></item><item><title>KERISE v3 ができました！</title><link>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</link><pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</guid><description>&lt;h2 id="kerisev3">KERISEv3&lt;/h2>
+&lt;p>少し前から、&lt;a href="http://akizukidenshi.com/" target="_blank">秋月の通販サイト&lt;/a>
+で店舗の在庫数と売場の場所が見れるようになりました。&lt;br>
+商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ、在庫数と売場が表示されます。&lt;/p></description></item><item><title>KERISE v3 ができました！</title><link>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</link><pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</guid><description>&lt;h2 id="kerisev3">KERISEv3&lt;/h2>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>KERISE v3&lt;/h4>
@@ -67,19 +67,19 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;img src="kerisev3-front-side.jpg" alt="KERISE v3" style="width: 240px;"/>
 &lt;/figure>
 &lt;h3 id="3台目のマウス">3台目のマウス&lt;/h3>
-&lt;p>マイクロマウスを始めて8か月目になりました．けりです．&lt;br>
-作っては壊しを繰り返してはや3台目になります．なぜこんなに壊れるのでしょうか&amp;hellip;&lt;/p></description></item><item><title>ESP-WROOM-32のブレイクアウトボード</title><link>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</link><pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</guid><description>&lt;h2 id="esp-wroom-32とは">ESP-WROOM-32とは&lt;/h2>
-&lt;p>ESP-WROOM-32とは，ESP32というハイスペックなマイコンが搭載されたWiFi&amp;amp;Bluetoothモジュールです．無線モジュールとしてだけでなく，メインマイコンとしても十分使用できます．&lt;/p>
-&lt;p>ESP-WROOM-32のすごいところはその価格です．ハイスペックなマイコンとWiFiとBluetoothがついているのに，2017年2月現在たったの700円なのです！！&lt;/p>
+&lt;p>マイクロマウスを始めて8か月目になりました。けりです。&lt;br>
+作っては壊しを繰り返してはや3台目になります。なぜこんなに壊れるのでしょうか&amp;hellip;&lt;/p></description></item><item><title>ESP-WROOM-32のブレイクアウトボード</title><link>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</link><pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</guid><description>&lt;h2 id="esp-wroom-32とは">ESP-WROOM-32とは&lt;/h2>
+&lt;p>ESP-WROOM-32とは、ESP32というハイスペックなマイコンが搭載されたWiFi&amp;amp;Bluetoothモジュールです。無線モジュールとしてだけでなく、メインマイコンとしても十分使用できます。&lt;/p>
+&lt;p>ESP-WROOM-32のすごいところはその価格です。ハイスペックなマイコンとWiFiとBluetoothがついているのに、2017年2月現在たったの700円なのです！！&lt;/p>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/" target="_blank">秋月電子&lt;/a>
-で購入できます．&lt;/p>
+で購入できます。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>ESP-WROOM-32&lt;/h4>
 &lt;/figcaption>
 &lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
 &lt;/figure></description></item><item><title>ESP-WROOM-32のピッチ変換</title><link>https://www.kerislab.jp/posts/2017-02-05-first-esp32/</link><pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-02-05-first-esp32/</guid><description>&lt;h2 id="格安wifibleモジュールesp-wroom-32">格安WiFi+BLEモジュール「ESP-WROOM-32」&lt;/h2>
-&lt;p>ついにESP32が日本にやってまいりました．海外では既に話題になっていたのですが，日本では技適を取得するまで使うことができなかったのであまり知っている人はいないかもしれません．これから話題になるでしょう．&lt;/p>
+&lt;p>ついにESP32が日本にやってまいりました。海外では既に話題になっていたのですが、日本では技適を取得するまで使うことができなかったのであまり知っている人はいないかもしれません。これから話題になるでしょう。&lt;/p>
 &lt;p>秋月電子で買うことができます→&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/" target="_blank">リンク&lt;/a>
 &lt;/p>
 &lt;figure >
@@ -88,21 +88,21 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;/figcaption>
 &lt;img src="esp32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
 &lt;/figure></description></item><item><title>ハーフサイズ迷路の自作</title><link>https://www.kerislab.jp/posts/2017-01-13-half-maze/</link><pubDate>Fri, 13 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-13-half-maze/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>昨年夏に始めたマイクロマウス．&lt;br>
+&lt;p>昨年夏に始めたマイクロマウス。&lt;br>
 &lt;a href="https://www.kerislab.jp/tags/kerisev2">KERISEv2&lt;/a>
 ができてついにハーフにデビューしました！&lt;br>
-しかし，自宅には迷路がないので試しに自分で作ってみることにしました．&lt;/p></description></item><item><title>ハーフ迷路を走ってみました！</title><link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link><pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid><description>&lt;h2 id="ハーフサイズの迷路を走ってみました">ハーフサイズの迷路を走ってみました&lt;/h2>
-&lt;p>こんにちは，けりです．&lt;br>
-KERISE v2の制御が落ち着てきたので，ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p></description></item><item><title>KERISE v2 ができました！</title><link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link><pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid><description>&lt;h2 id="マイクロマウスクラシックハーフ兼用マウス">マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2>
+しかし、自宅には迷路がないので試しに自分で作ってみることにしました。&lt;/p></description></item><item><title>ハーフ迷路を走ってみました！</title><link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link><pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid><description>&lt;h2 id="ハーフサイズの迷路を走ってみました">ハーフサイズの迷路を走ってみました&lt;/h2>
+&lt;p>こんにちは、けりです。&lt;br>
+KERISE v2の制御が落ち着てきたので、ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p></description></item><item><title>KERISE v2 ができました！</title><link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link><pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid><description>&lt;h2 id="マイクロマウスクラシックハーフ兼用マウス">マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">昨年の大会&lt;/a>
-ではクラシッククラスに出場しましたが，今度はハーフにも出場したい！ということで，試しにハーフ迷路も走れる大きさのマウスを作ってみました．&lt;/p>
+ではクラシッククラスに出場しましたが、今度はハーフにも出場したい！ということで、試しにハーフ迷路も走れる大きさのマウスを作ってみました。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>KERISE v2&lt;/h4>
 &lt;/figcaption>
 &lt;img src="with-hand.jpg" alt="KERISE v2" style="width: 480px;"/>
 &lt;/figure></description></item><item><title>KERISE v1の設計(回路編)</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1．今回はその回路設計を紹介します．&lt;/p>
+&lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p>
 &lt;p>全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">こちら&lt;/a>
 &lt;/p>
 &lt;figure >
@@ -112,21 +112,21 @@ KERISE v2の制御が落ち着てきたので，ついにハーフサイズの�
 &lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
 &lt;/figure></description></item><item><title>IR-Stationのデモンストレーションサイト</title><link>https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/</link><pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/</guid><description>&lt;h2 id="ir-stationの操作を体験できます">IR-Stationの操作を体験できます！&lt;/h2>
 &lt;h3 id="ir-stationとは">IR-Stationとは&lt;/h3>
-&lt;p>IR-Stationとは，WiFi接続に対応した赤外線学習リモコンです．これがあればスマートフォンなどから家電製品をコントロールすることができます．&lt;/p>
-&lt;p>IR-Stationについては，&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
-をご覧ください．&lt;/p>
+&lt;p>IR-Stationとは、WiFi接続に対応した赤外線学習リモコンです。これがあればスマートフォンなどから家電製品をコントロールすることができます。&lt;/p>
+&lt;p>IR-Stationについては、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
+をご覧ください。&lt;/p>
 &lt;h3 id="ir-stationのデモンストレーション">IR-Stationのデモンストレーション&lt;/h3>
-&lt;p>IR-Stationを持っていない方でもIR-Stationの操作を体験できるように，操作画面を再現したサイトを作りました．&lt;/p>
+&lt;p>IR-Stationを持っていない方でもIR-Stationの操作を体験できるように、操作画面を再現したサイトを作りました。&lt;/p>
 &lt;p>&lt;a href="http://ir-station.kerikun11.mydns.jp" target="_blank">IR-Stationのデモンストレーションサイト&lt;/a>
 &lt;/p></description></item><item><title>IR-Station v1.5.0 アップデート</title><link>https://www.kerislab.jp/posts/2016-10-16-ir-station-v1.5.0/</link><pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-10-16-ir-station-v1.5.0/</guid><description>&lt;h2 id="ir-stationがv150にアップデート">IR-Stationがv1.5.0にアップデート&lt;/h2>
-&lt;p>この度，IR-Stationのファームウェアがv1.5.0にアップデートされ，新機能が追加されました．&lt;/p>
-&lt;p>IR-Stationについては，&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
-をご覧ください．&lt;/p></description></item><item><title>PICで省エネ時計を作る</title><link>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</link><pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>この度、IR-Stationのファームウェアがv1.5.0にアップデートされ、新機能が追加されました。&lt;/p>
+&lt;p>IR-Stationについては、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
+をご覧ください。&lt;/p></description></item><item><title>PICで省エネ時計を作る</title><link>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</link><pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="picで時計">PICで時計&lt;/h3>
-&lt;p>久しぶりにPICの話題です．しばらくESP8266やARMマイコンなど，上級のマイコンを使っていましたが，またPICを使ってみたくなりました．&lt;/p>
-&lt;p>他のマイコンには真似できないような超低消費電力の時計を作ってみました．&lt;/p></description></item><item><title>ラズパイでミュージックサーバー</title><link>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</link><pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</guid><description>&lt;h2 id="作ったもの">作ったもの&lt;/h2>
+&lt;p>久しぶりにPICの話題です。しばらくESP8266やARMマイコンなど、上級のマイコンを使っていましたが、またPICを使ってみたくなりました。&lt;/p>
+&lt;p>他のマイコンには真似できないような超低消費電力の時計を作ってみました。&lt;/p></description></item><item><title>ラズパイでミュージックサーバー</title><link>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</link><pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</guid><description>&lt;h2 id="作ったもの">作ったもの&lt;/h2>
 &lt;h3 id="ラズパイミュージックサーバー">ラズパイミュージックサーバー&lt;/h3>
-&lt;p>スマートフォンでコントロールできるステレオコンポです．&lt;/p>
+&lt;p>スマートフォンでコントロールできるステレオコンポです。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>ミュージックサーバー&lt;/h4>

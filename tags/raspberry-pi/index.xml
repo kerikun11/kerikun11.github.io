@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raspberry Pi on KERI's Lab</title><link>https://www.kerislab.jp/tags/raspberry-pi/</link><description>Recent content in Raspberry Pi on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 11 Feb 2018 14:58:18 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml"/><item><title>自宅サーバーにNextcloudを導入した</title><link>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</link><pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</guid><description>&lt;p>こんにちは．
-今回は久しぶりにサーバーの話題です．&lt;/p>
-&lt;p>自宅のサーバーにNextcloudを導入したので，それを紹介します．&lt;/p></description></item><item><title>ブログのサーバーをラズパイ3からPINE64 A+に移行</title><link>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</link><pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</guid><description>&lt;h2 id="新登場のpine64を購入">新登場のPINE64を購入&lt;/h2>
-&lt;p>秋月電子の新商品で，「PINE64」というボードが登場しました．CPUのスペックはほぼラズパイ3と同等ですが，Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p>
-&lt;p>さらに，ラズパイ3の価格が$35なのに対して，PINE64は$19です．半額近いです．&lt;/p>
-&lt;p>そのかわり，WiFiやBluetoothが技適の関係かわかりませんが今は載っていません．ただ，ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません．&lt;/p></description></item><item><title>Apache2でIR-Stationデモ</title><link>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る．&lt;/p>
-&lt;p>この記事は，デモサイトを作るときのメモ．&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raspberry Pi on KERI's Lab</title><link>https://www.kerislab.jp/tags/raspberry-pi/</link><description>Recent content in Raspberry Pi on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 11 Feb 2018 14:58:18 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml"/><item><title>自宅サーバーにNextcloudを導入した</title><link>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</link><pubDate>Sun, 11 Feb 2018 14:58:18 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-02-11-nextcloud/</guid><description>&lt;p>こんにちは。
+今回は久しぶりにサーバーの話題です。&lt;/p>
+&lt;p>自宅のサーバーにNextcloudを導入したので、それを紹介します。&lt;/p></description></item><item><title>ブログのサーバーをラズパイ3からPINE64 A+に移行</title><link>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</link><pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</guid><description>&lt;h2 id="新登場のpine64を購入">新登場のPINE64を購入&lt;/h2>
+&lt;p>秋月電子の新商品で、「PINE64」というボードが登場しました。CPUのスペックはほぼラズパイ3と同等ですが、Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p>
+&lt;p>さらに、ラズパイ3の価格が$35なのに対して、PINE64は$19です。半額近いです。&lt;/p>
+&lt;p>そのかわり、WiFiやBluetoothが技適の関係かわかりませんが今は載っていません。ただ、ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません。&lt;/p></description></item><item><title>Apache2でIR-Stationデモ</title><link>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る。&lt;/p>
+&lt;p>この記事は、デモサイトを作るときのメモ。&lt;br>
 デモサイト紹介記事は&lt;a href="https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/">こちら&lt;/a>
 &lt;/p></description></item><item><title>ラズパイでミュージックサーバー</title><link>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</link><pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</guid><description>&lt;h2 id="作ったもの">作ったもの&lt;/h2>
 &lt;h3 id="ラズパイミュージックサーバー">ラズパイミュージックサーバー&lt;/h3>
-&lt;p>スマートフォンでコントロールできるステレオコンポです．&lt;/p>
+&lt;p>スマートフォンでコントロールできるステレオコンポです。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>ミュージックサーバー&lt;/h4>
@@ -17,21 +17,21 @@
 &lt;img src="music-server.jpg" alt="ミュージックサーバー" style="width: 480px;"/>
 &lt;/figure></description></item><item><title>VolumioでiTunesのプレイリストを使う</title><link>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</link><pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="volumio">Volumio&lt;/h3>
-&lt;p>&lt;strong>Volumio&lt;/strong>というミュージックサーバーソフトウェアがある．&lt;/p>
-&lt;p>ラズベリーパイにVolumioのOSを書き込むだけで，ミュージックサーバーが出来上がるし，Air Playや，SMBにも対応していて，素晴らしいものだ．&lt;/p>
+&lt;p>&lt;strong>Volumio&lt;/strong>というミュージックサーバーソフトウェアがある。&lt;/p>
+&lt;p>ラズベリーパイにVolumioのOSを書き込むだけで、ミュージックサーバーが出来上がるし、Air Playや、SMBにも対応していて、素晴らしいものだ。&lt;/p>
 &lt;h3 id="プレイリスト問題">プレイリスト問題&lt;/h3>
-&lt;p>しかし，そのプレイリストは独自の形式で，iTunesなどのプレイリストを読み込むことができず，新たに作らなくてはならない．&lt;/p>
+&lt;p>しかし、そのプレイリストは独自の形式で、iTunesなどのプレイリストを読み込むことができず、新たに作らなくてはならない。&lt;/p>
 &lt;p>&lt;strong>めんどくさい！&lt;/strong>&lt;/p>
-&lt;p>ということで，今回は，iTunesのプレイリストをvolumioのプレイリストに変換するスクリプトを紹介する．&lt;/p></description></item><item><title>ブログを更新するスクリプト</title><link>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</link><pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</guid><description>&lt;h2 id="github上にあるブログを同期するシェルスクリプト">github上にあるブログを同期するシェルスクリプト&lt;/h2>
+&lt;p>ということで、今回は、iTunesのプレイリストをvolumioのプレイリストに変換するスクリプトを紹介する。&lt;/p></description></item><item><title>ブログを更新するスクリプト</title><link>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</link><pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-28-update-blog-script/</guid><description>&lt;h2 id="github上にあるブログを同期するシェルスクリプト">github上にあるブログを同期するシェルスクリプト&lt;/h2>
 &lt;p>自分用のメモ&lt;/p></description></item><item><title>ラズパイセットアップのコマンド群</title><link>https://www.kerislab.jp/posts/2016-08-28-raspi-setup/</link><pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-28-raspi-setup/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>これらの作業はすべてSSHで行う．fingなどを使ってIPアドレスを調べる．&lt;/p>
+&lt;p>これらの作業はすべてSSHで行う。fingなどを使ってIPアドレスを調べる。&lt;/p>
 &lt;pre>&lt;code>$ ssh pi@192.168.11.13
 &lt;/code>&lt;/pre></description></item><item><title>ブログのサーバーが新しくなりました！</title><link>https://www.kerislab.jp/posts/2016-08-21-raspi3/</link><pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-21-raspi3/</guid><description>&lt;h2 id="ラズパイ3を購入">ラズパイ3を購入&lt;/h2>
 &lt;h3 id="ハイスペックなラズパイ3">ハイスペックなラズパイ3&lt;/h3>
-&lt;p>64bitのARM-CPUが搭載されたラズパイ3が話題になったのは記憶に新しいですが，ラズパイ3は，秋月では6,200円ですし，公式でも5,000円ほどします．&lt;/p>
+&lt;p>64bitのARM-CPUが搭載されたラズパイ3が話題になったのは記憶に新しいですが、ラズパイ3は、秋月では6,200円ですし、公式でも5,000円ほどします。&lt;/p>
 &lt;h3 id="税込4000円かつカード払いok">税込4,000円かつカード払いOK！&lt;/h3>
-&lt;p>そんなラズパイ3が，Maker Faire Tokyo 2016 で税込4,000円かつカード払いOKで販売しているではありませんか！！&lt;/p>
-&lt;p>これは安い！と思い，使う予定もないのに衝動買いしちゃいました&amp;hellip;(汗&lt;/p></description></item><item><title>ラズパイでシリアルモニタを使うには</title><link>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>そんなラズパイ3が、Maker Faire Tokyo 2016 で税込4,000円かつカード払いOKで販売しているではありませんか！！&lt;/p>
+&lt;p>これは安い！と思い、使う予定もないのに衝動買いしちゃいました&amp;hellip;(汗&lt;/p></description></item><item><title>ラズパイでシリアルモニタを使うには</title><link>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-raspi-serial/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>ラズパイのシリアルを使うときや、ラズパイにFT232などをつないだ時にターミナルをシリアルモニタにする。&lt;/p></description></item><item><title>Raspberry Pi で NAS 作り</title><link>https://www.kerislab.jp/posts/2015-11-23-samba/</link><pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-11-23-samba/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>NASがほしい！&lt;br>
 じゃあ作ろう。&lt;/p>
@@ -40,7 +40,7 @@
 HDD：Western Digital 2TB 3.5 inch&lt;br>
 転送速度：10MB/s（ラズパイのイーサーネットが100Baseなので仕方ない&amp;hellip;）&lt;/p></description></item><item><title>ファイアウォールの設定</title><link>https://www.kerislab.jp/posts/2015-11-17-firewall/</link><pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-11-17-firewall/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="ufw">ufw&lt;/h3>
-&lt;p>iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので，今回は初心者でも使いやすいufwというソフトを使う．&lt;/p></description></item><item><title>Raspberry Pi 2 Type Bでサーバー作り</title><link>https://www.kerislab.jp/posts/2015-10-05-raspi-server/</link><pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-10-05-raspi-server/</guid><description>&lt;h2 id="ラズパイの用意">ラズパイの用意&lt;/h2>
+&lt;p>iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので、今回は初心者でも使いやすいufwというソフトを使う。&lt;/p></description></item><item><title>Raspberry Pi 2 Type Bでサーバー作り</title><link>https://www.kerislab.jp/posts/2015-10-05-raspi-server/</link><pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-10-05-raspi-server/</guid><description>&lt;h2 id="ラズパイの用意">ラズパイの用意&lt;/h2>
 &lt;ol>
 &lt;li>ラズパイ用のOS「NOOBS」を&lt;a href="http://raspberrypi.org/downloads/" target="_blank">raspberrypi.org&lt;/a>
 からDLして解凍する。&lt;/li>
