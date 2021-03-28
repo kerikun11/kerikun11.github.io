@@ -14,9 +14,9 @@ tags:
 
 ## 概要
 
-ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る．
+ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る。
 
-この記事は，デモサイトを作るときのメモ．  
+この記事は、デモサイトを作るときのメモ。  
 デモサイト紹介記事は[こちら](/posts/2016-10-20-ir-station-demo/)
 
 <!--more-->
@@ -31,7 +31,7 @@ $ sudo gem install sinatra-contrib
 $ sudo gem install passenger
 $ sudo apt-get install -y libcurl4-openssl-dev apache2-threaded-dev ruby-dev libapr1-dev libaprutil1-dev
 $ sudo passenger-install-apache2-module
-いろいろ聞いてくるのでEnterを押しまくる．エラーがなければOK
+いろいろ聞いてくるのでEnterを押しまくる。エラーがなければOK
 ~~~
 
 ## アプリケーションの用意

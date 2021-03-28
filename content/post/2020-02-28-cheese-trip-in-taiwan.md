@@ -8,7 +8,7 @@ tags:
 thumbnail: "icon.jpg"
 ---
 
-2020年2月23日から4泊5日，Cheeseの6人で行った台湾旅行のメモ．
+2020年2月23日から4泊5日、Cheeseの6人で行った台湾旅行のメモ。
 
 <!--more-->
 
@@ -18,12 +18,12 @@ thumbnail: "icon.jpg"
 
 ## 宿泊場所
 
-到着してすぐの1日目と郊外の九份に行く3日目の宿だけ事前に予約して，
-それ以外の宿泊は翌日に行きたい場所を考えながら現地で確保した．
+到着してすぐの1日目と郊外の九份に行く3日目の宿だけ事前に予約して、
+それ以外の宿泊は翌日に行きたい場所を考えながら現地で確保した。
 
-台湾の宿は日本に比べてとても安いが，安すぎるところは壁が薄くてやばい．
+台湾の宿は日本に比べてとても安いが、安すぎるところは壁が薄くてやばい。
 
-耳栓必須．
+耳栓必須。
 
 |       | 宿泊場所                | 1人分の1泊料金      |
 | ----- | ----------------------- | ------------------- |
@@ -38,21 +38,21 @@ thumbnail: "icon.jpg"
 
 ### 2泊目 Mono Hostel
 
-士林の夜市のすぐそばでとてもよかった．防音部屋．
+士林の夜市のすぐそばでとてもよかった。防音部屋。
 
 ### 3泊目 Liu House
 
-九份の繁華街のすぐそばの1戸建てを借りた．  
-管理人のおばちゃんが日本語しゃべれて最高だった．  
-今回の旅行で唯一，朝ごはんが付いていた．
+九份の繁華街のすぐそばの1戸建てを借りた。  
+管理人のおばちゃんが日本語しゃべれて最高だった。  
+今回の旅行で唯一、朝ごはんが付いていた。
 
 ### 4泊目 Papa Whale
 
-台北の超普通のホテル．可もなく，不可もなく．
+台北の超普通のホテル。可もなく、不可もなく。
 
 ## 使用したお金
 
-旅行時の為替レートは，1 NTD (新台湾ドル) = 3.7 JPY (日本円) 程度だった．
+旅行時の為替レートは、1 NTD (新台湾ドル) = 3.7 JPY (日本円) 程度だった。
 
 ### 現金の入手
 
@@ -61,7 +61,7 @@ thumbnail: "icon.jpg"
 
 ### 使用目的
 
-今回の旅行では，合計約6,000NTD (22,200 JPY) を使用しました．
+今回の旅行では、合計約6,000NTD (22,200 JPY) を使用しました。
 
 | 目的   | 金額       |
 | :----- | :--------- |
@@ -73,19 +73,19 @@ thumbnail: "icon.jpg"
 
 ## SIMカード
 
-Amazonで見つけた以下のSIMカードを使用．  
-5日間使えて575円，しかも通信料無制限という超オトクなSIMカード！
+Amazonで見つけた以下のSIMカードを使用。  
+5日間使えて575円、しかも通信料無制限という超オトクなSIMカード！
 
 - [台湾プリペイドSIM / Amazon](https://www.amazon.co.jp/dp/B081PSN22Z)
 
-何もトラブルなく使用することができた．
+何もトラブルなく使用することができた。
 
 ## 所感
 
-ほとんどトラブルがなく，充実した旅行になった．  
-Cheeseのみんな，ありがとう！
+ほとんどトラブルがなく、充実した旅行になった。  
+Cheeseのみんな、ありがとう！
 
-## 以下，旅行Tweet
+## 以下、旅行Tweet
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">さあ出発！ <a href="https://twitter.com/hashtag/Cheese%E6%97%85%E8%A1%8Cin%E5%8F%B0%E6%B9%BE?src=hash&amp;ref_src=twsrc%5Etfw">#Cheese旅行in台湾</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1231328960631341056?ref_src=twsrc%5Etfw">February 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">成田空港 第2ターミナル <a href="https://twitter.com/hashtag/Cheese%E6%97%85%E8%A1%8Cin%E5%8F%B0%E6%B9%BE?src=hash&amp;ref_src=twsrc%5Etfw">#Cheese旅行in台湾</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1231368852614733824?ref_src=twsrc%5Etfw">February 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -23,19 +23,20 @@ GitHub: [kerikun11](http://github.com/kerikun11)
 
 こんにちは。けりです。電子工作が大好きです。
 
-このホームページでは、電子工作やプログラミングなどの情報を発信していこうと思います。どうぞよろしくお願い致します。
+このホームページでは電子工作やプログラミングなどの情報を発信していこうと思います。  
+どうぞよろしくお願い致します。
 
 けりの作品集は [こちら](/works/)
 
 ## このホームページについて
 
-私のホームページ「KERI's Lab」は、私が大学2年生だった2015年に設立しました。
+ホームページ「KERI's Lab」は、私が大学2年生だった2015年に設立しました。
 
 当初は静的サイトジェネレータ [Jekyll](http://jekyllrb-ja.github.io/) でコンテンツを作成して、シングルボードコンピュータ [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) による自宅サーバーで運用しておりました。
 
 {{< postfig src="/img/raspi2.jpg" title="Raspberry Pi 2 Model B" width="180px" link="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/" >}}
 
-2017年にはラズパイ2によるサーバーをギガビット対応のシングルボードコンピュータ [PINE64 A+](https://www.pine64.org/devices/single-board-computers/pine-a64/) に [移行](/posts/2017-05-07-new-pine64/) したこともありましたが、速さをあまり実感できなかったのでラズパイ2に戻っていました。
+2017年にはギガビット対応のシングルボードコンピュータ [PINE64 A+](https://www.pine64.org/devices/single-board-computers/pine-a64/) に [移行](/posts/2017-05-07-new-pine64/) したこともありましたが、速さをあまり実感できなかったのでラズパイ2に戻っていました。
 
 {{< postfig src="/img/pine64.jpg" title="PINE64 A+" width="180px" link="https://www.pine64.org/devices/single-board-computers/pine-a64/" >}}
 

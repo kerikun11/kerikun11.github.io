@@ -23,7 +23,7 @@ namespace ctrl {
  * @brief 拘束条件を満たす曲線加減速の軌道を生成するクラス
  *
  * - 移動距離の拘束条件を満たす曲線加速軌道を生成する
- * - 各時刻 $t$ における躍度 $j(t)$，加速度 $a(t)$，速度 $v(t)$，位置 $x(t)$
+ * - 各時刻 $t$ における躍度 $j(t)$、加速度 $a(t)$、速度 $v(t)$、位置 $x(t)$
  * を提供する
  * - 最大加速度 $a_{\max}$ と始点速度 $v_s$
  * など拘束次第では目標速度に達することができない場合があるので注意する
@@ -33,9 +33,9 @@ public:
   /**
    * @brief 初期化付きコンストラクタ
    *
-   * @param j_max     最大躍度の大きさ [m/s/s/s]，正であること
+   * @param j_max     最大躍度の大きさ [m/s/s/s]、正であること
    * @param a_max     最大加速度の大きさ [m/s/s], 正であること
-   * @param v_sat     飽和速度の大きさ [m/s]，正であること
+   * @param v_sat     飽和速度の大きさ [m/s]、正であること
    * @param v_start   始点速度 [m/s]
    * @param v_target  目標速度 [m/s]
    * @param v_end     終点速度 [m/s]
@@ -49,16 +49,16 @@ public:
     reset(j_max, a_max, v_sat, v_start, v_target, dist, x_start, t_start);
   }
   /**
-   * @brief 空のコンストラクタ．あとで reset() により初期化すること．
+   * @brief 空のコンストラクタ。あとで reset() により初期化すること。
    */
   AccelDesigner() { t0 = t1 = t2 = t3 = x0 = x3 = 0; }
   /**
-   * @brief 引数の拘束条件から曲線を生成する．
-   * この関数によって，すべての変数が初期化される．(漏れはない)
+   * @brief 引数の拘束条件から曲線を生成する。
+   * この関数によって、すべての変数が初期化される。(漏れはない)
    *
-   * @param j_max     最大躍度の大きさ [m/s/s/s]，正であること
+   * @param j_max     最大躍度の大きさ [m/s/s/s]、正であること
    * @param a_max     最大加速度の大きさ [m/s/s], 正であること
-   * @param v_sat     飽和速度の大きさ [m/s]，正であること
+   * @param v_sat     飽和速度の大きさ [m/s]、正であること
    * @param v_start   始点速度 [m/s]
    * @param v_target  目標速度 [m/s]
    * @param v_end     終点速度 [m/s]
@@ -79,10 +79,10 @@ public:
     // logd << "dist_min: " << dist_min << std::endl;
     if (std::abs(dist) < std::abs(dist_min)) {
       logd << "vs -> ve != vt" << std::endl;
-      /* 目標速度$v_t$に向かい，走行距離$d$で到達し得る終点速度$v_e$を算出 */
+      /* 目標速度$v_t$に向かい、走行距離$d$で到達し得る終点速度$v_e$を算出 */
       v_end =
           AccelCurve::calcVelocityEnd(j_max, a_max, v_start, v_target, dist);
-      v_max = v_end; //< 走行距離の拘束を満たすため，飽和速度まで加速できない
+      v_max = v_end; //< 走行距離の拘束を満たすため、飽和速度まで加速できない
       // logd << "ve: " << v_end << std::endl;
     }
     /* 曲線を生成 */
@@ -213,13 +213,13 @@ public:
   float t_2() const { return t2; }
   float t_3() const { return t3; }
   /**
-   * @brief stdout に軌道のcsvを出力する関数．
+   * @brief stdout に軌道のcsvを出力する関数。
    */
   void printCsv(const float t_interval = 0.001f) const {
     printCsv(std::cout, t_interval);
   }
   /**
-   * @brief std::ostream に軌道のcsvを出力する関数．
+   * @brief std::ostream に軌道のcsvを出力する関数。
    */
   void printCsv(std::ostream &os, const float t_interval = 0.001f) const {
     for (float t = t0; t < t_end(); t += t_interval)
@@ -261,7 +261,7 @@ public:
 protected:
   float t0, t1, t2, t3; /**< @brief 境界点の時刻 [s] */
   float x0, x3;         /**< @brief 境界点の位置 [m] */
-  AccelCurve ac, dc; /**< @brief 曲線加速，曲線減速オブジェクト */
+  AccelCurve ac, dc; /**< @brief 曲線加速、曲線減速オブジェクト */
 };
 
 } // namespace ctrl

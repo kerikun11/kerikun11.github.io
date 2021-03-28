@@ -12,17 +12,17 @@ thumbnail: "icon.jpg"
 
 ## 概要
 
-今回の記事は，高校生の時に作った電光掲示板のコードの紹介です．
+今回の記事は、高校生の時に作った電光掲示板のコードの紹介です。
 
-PICのアセンブリ言語で書かれています．
+PICのアセンブリ言語で書かれています。
 
 <!--more-->
 
 ## 作ったもの
 
-あらかじめ書き込んでおいた文字列がスクロールしながら表示される電光掲示板です．
+あらかじめ書き込んでおいた文字列がスクロールしながら表示される電光掲示板です。
 
-裏側にボタンがついていて，そのボタンに割り当てられた文字列が表示されます．
+裏側にボタンがついていて、そのボタンに割り当てられた文字列が表示されます。
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/QIU8WSNL__I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -32,10 +32,10 @@ PICのアセンブリ言語で書かれています．
 
 ## 回路図
 
-高校の時に作ったものなのでかなり雑です．
+高校の時に作ったものなのでかなり雑です。
 
-PICはPIC16F887です．  
-Dotは適当な8x8のドットマトリックスLED2つです．
+PICはPIC16F887です。  
+Dotは適当な8x8のドットマトリックスLED2つです。
 
 {{< postfig src="pic-scroll.png" title="回路図" width="360px" link="pic-scroll.png">}}
 

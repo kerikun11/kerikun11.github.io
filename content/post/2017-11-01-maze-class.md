@@ -9,9 +9,9 @@ tags:
 thumbnail: "icon.png"
 ---
 
-こんにちは．けりです．  
+こんにちは。けりです。  
 
-今回もマイクロマウスの話題です．僕が使っている迷路クラスを紹介します．
+今回もマイクロマウスの話題です。僕が使っている迷路クラスを紹介します。
 
 <!--more-->
 
@@ -19,7 +19,7 @@ thumbnail: "icon.png"
 
 ### 壁の冗長表現を廃止
 
-よく使われている壁の変数定義方法に，各区画に1バイト確保して，下位4bitを壁情報，上位4bitを既知壁情報として保存する方法があります．
+よく使われている壁の変数定義方法に、各区画に1バイト確保して、下位4bitを壁情報、上位4bitを既知壁情報として保存する方法があります。
 
 ~~~cpp
 /* 1区画の壁構造体 */
@@ -41,20 +41,20 @@ union Wall{
 Wall wall[MAZE_SIZE][MAZE_SIZE];
 ~~~
 
-しかしこの方法では，1つの壁に対して隣接する2つの区画がそれぞれ壁情報を保持するので冗長な表現になってしまいます．
+しかしこの方法では、1つの壁に対して隣接する2つの区画がそれぞれ壁情報を保持するので冗長な表現になってしまいます。
 
-冗長表現の矛盾を無くすために，壁を更新する際に毎回2つの変数を書き換えるのは無駄です．
+冗長表現の矛盾を無くすために、壁を更新する際に毎回2つの変数を書き換えるのは無駄です。
 
-メモリを多く消費してしまいますので，迷路のバックアップなどにも時間がかかるでしょう．
+メモリを多く消費してしまいますので、迷路のバックアップなどにも時間がかかるでしょう。
 
 ### 最小限の壁情報
 
 そこで今回の定義方法は
 
 - 直線状に並んだ32枚の壁を32bitの変数の各bitに割り当て
-- 迷路の外周に壁があることは既知なので，変数には含めない
+- 迷路の外周に壁があることは既知なので、変数には含めない
 
-とし，壁の情報を最小限にとどめます．
+とし、壁の情報を最小限にとどめます。
 
 ~~~cpp
 #define MAZE_SIZE      32
@@ -71,7 +71,7 @@ wall[1] //< 縦並びの壁
 
 ### 情報量の比較
 
-32 x 32 のハーフ迷路の場合，
+32 x 32 のハーフ迷路の場合、
 
 各区画を1バイトとすると
 
@@ -81,7 +81,7 @@ wall[1] //< 縦並びの壁
 
     32bit * (31列 + 31行) * 2 (壁・既知壁) = 496 Bytes
 
-サイズは半分以下になりました．しかも冗長表現はないので，矛盾が生じることはありません．
+サイズは半分以下になりました。しかも冗長表現はないので、矛盾が生じることはありません。
 
 迷路データのサイズの一覧表
 
@@ -94,7 +94,7 @@ wall[1] //< 縦並びの壁
 
 ## ソースコード
 
-[Maze.h](Maze.h)について，以下の内容を紹介します．
+[Maze.h](Maze.h)について、以下の内容を紹介します。
 
   * includeとマクロ
   * Dir 方向構造体
@@ -123,7 +123,7 @@ wall[1] //< 縦並びの壁
 #define MAZE_SIZE      32
 /** @typedef
 *   @brief 迷路のサイズのbit数の整数型
-*   32x32の迷路ならuint32_t，16x16ならuint16_t，8x8ならuint8_t
+*   32x32の迷路ならuint32_t、16x16ならuint16_t、8x8ならuint8_t
 */
 typedef uint32_t wall_size_t;
 ~~~
@@ -158,13 +158,13 @@ public:
     inline const Dir operator=(const Dir& obj) { this->d = obj.d; return *this; }
 
     /** @function getRelative
-    *  @brief 自オブジェクト方向から見た引数方向を返す．
+    *  @brief 自オブジェクト方向から見た引数方向を返す。
     *  @param rd 対象方向
     *  @return 相対方向
     */
     inline const Dir getRelative(const enum RelativeDir& rd) const { return Dir(rd-d); }
     /** @function ordered
-    *  @brief 「正面，左，右，後」の順序の方向配列を生成する関数
+    *  @brief 「正面、左、右、後」の順序の方向配列を生成する関数
     */
     inline const std::array<Dir, 4> ordered() const ;
     /** @function All
@@ -180,7 +180,7 @@ private:
 
 ~~~cpp
 /** @struct Vector
-*  @brief 迷路上の座標を定義．左下の区画が (0,0) の (x,y) 平面
+*  @brief 迷路上の座標を定義。左下の区画が (0,0) の (x,y) 平面
 */
 struct Vector{
 public:
@@ -214,21 +214,21 @@ public:
     /** @brief 配列から迷路を読み込むコンストラクタ
     *  @param data 各区画16進表記の文字列配列
     *  例：{"abaf", "1234", "abab", "aaff"}
-    *  @param east_origin true: 東から反時計回り，false: 北から時計回り に0bitから格納されている
+    *  @param east_origin true: 東から反時計回り、false: 北から時計回り に0bitから格納されている
     */
     Maze(const char data[MAZE_SIZE+1][MAZE_SIZE+1], bool east_origin = true);
-    /** @brief 代入演算子のオーバーロード，データのコピー
+    /** @brief 代入演算子のオーバーロード、データのコピー
     */
     const Maze& operator=(const Maze& obj);
     /** @function reset
-    *  @brief 迷路の初期化．壁を削除し，スタート区画を既知に
+    *  @brief 迷路の初期化。壁を削除し、スタート区画を既知に
     */
     void reset();
     /** @function isWall
     *  @brief 壁の有無を返す
     *  @param v 区画の座標
     *  @param d 壁の方向
-    *  @return true: 壁あり，false: 壁なし
+    *  @return true: 壁あり、false: 壁なし
     */
     bool isWall(const Vector& v, const Dir& d) const { return isWall(v.x, v.y, d); }
     bool isWall(const int8_t& x, const int8_t& y, const Dir& d) const ;
@@ -236,7 +236,7 @@ public:
     *  @brief 壁を更新をする
     *  @param v 区画の座標
     *  @param d 壁の方向
-    *  @param b 壁の有無 true:壁あり，false:壁なし
+    *  @param b 壁の有無 true:壁あり、false:壁なし
     */
     void setWall(const Vector& v, const Dir& d, const bool& b) { return setWall(v.x, v.y, d, b); }
     void setWall(const int8_t& x, const int8_t& y, const Dir& d, const bool& b) ;
@@ -244,7 +244,7 @@ public:
     *  @brief 壁が探索済みかを返す
     *  @param v 区画の座標
     *  @param d 壁の方向
-    *  @return true: 探索済み，false: 未探索
+    *  @return true: 探索済み、false: 未探索
     */
     bool isKnown(const Vector& v, const Dir& d) const { return isKnown(v.x, v.y, d); }
     bool isKnown(const int8_t& x, const int8_t& y, const Dir& d) const ;
@@ -252,7 +252,7 @@ public:
     *  @brief 壁の既知を更新する
     *  @param v 区画の座標
     *  @param d 壁の方向
-    *  @param b 壁の未知既知 true:既知，false:未知
+    *  @param b 壁の未知既知 true:既知、false:未知
     */
     void setKnown(const Vector& v, const Dir& d, const bool& b) { return setKnown(v.x, v.y, d, b); }
     void setKnown(const int8_t& x, const int8_t& y, const Dir& d, const bool& b) ;
@@ -260,7 +260,7 @@ public:
     *  @brief 通過可能かどうかを返す
     *  @param v 区画の座標
     *  @param d 壁の方向
-    *  @return true:既知かつ壁なし，false:それ以外
+    *  @return true:既知かつ壁なし、false:それ以外
     */
     bool canGo(const Vector& v, const Dir& d) const ;
     /** @function wallCount
@@ -300,4 +300,4 @@ private:
 
 ## まとめ
 
-迷路の管理方法は様々なものがあります．もっといい方法がありましたら教えてくださいね！
+迷路の管理方法は様々なものがあります。もっといい方法がありましたら教えてくださいね！

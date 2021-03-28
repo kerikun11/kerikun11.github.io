@@ -11,7 +11,7 @@ tags:
 
 ## 概要
 
-家のIPアドレスは固定ではないのでDDNSで追いかける．
+家のIPアドレスは固定ではないのでDDNSで追いかける。
 
 <!--more-->
 
@@ -19,7 +19,7 @@ tags:
 
 ### mydns.sh
 
-たったこれだけ．
+たったこれだけ。
 
 ~~~sh
 #!/bin/sh
@@ -28,7 +28,7 @@ wget -O- 'http://mydns012345:XXXXXXXXXXX@www.mydns.jp/login.html'
 echo "end"
 ~~~
 
-実行権限をつけるのをお忘れなく．
+実行権限をつけるのをお忘れなく。
 
 ## Crontabの設定
 
@@ -36,7 +36,7 @@ echo "end"
 $ crontab -e
 ~~~
 
-5分ごとに通知する．
+5分ごとに通知する。
 
 ~~~
 # Edit this file to introduce tasks to be run by cron.

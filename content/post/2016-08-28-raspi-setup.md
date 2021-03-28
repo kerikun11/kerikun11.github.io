@@ -11,7 +11,7 @@ thumbnail: "icon.png"
 
 ## はじめに
 
-これらの作業はすべてSSHで行う．fingなどを使ってIPアドレスを調べる．
+これらの作業はすべてSSHで行う。fingなどを使ってIPアドレスを調べる。
 
 	$ ssh pi@192.168.11.13
 
@@ -47,7 +47,7 @@ thumbnail: "icon.png"
 
 ### 静的IPの設定
 
-あらかじめルーターの管理画面で，192.168.11.2をDHCPの割り当て範囲から外しておく．
+あらかじめルーターの管理画面で、192.168.11.2をDHCPの割り当て範囲から外しておく。
 
 	$ sudo vim /etc/network/interfaces
 
@@ -140,7 +140,7 @@ iface wlan1 inet manual
 
 	$ ssh hoge@192.168.11.2 -p 22 -i ~/.ssh/id_ecdsa
 
-## SSHポートの変更，パスワード認証の禁止
+## SSHポートの変更、パスワード認証の禁止
 
 	$ sudo vim /etc/ssh/sshd_config
 

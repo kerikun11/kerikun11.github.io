@@ -7,7 +7,7 @@ tags:
   - "ESP32"
 ---
 
-この記事では，ESP32をバッテリー駆動するためのヒントをお届けします．
+この記事では、ESP32をバッテリー駆動するためのヒントをお届けします。
 
 <!--more-->
 
@@ -15,45 +15,45 @@ tags:
 
 ### ESP32とは？
 
-ESP32とは，WiFi/BLEを搭載したIoTマイコンです．
+ESP32とは、WiFi/BLEを搭載したIoTマイコンです。
 
-CPUが240MHzのデュアルコアで，RAMも520kBと，
-マイコンにしてはスペックが高いところが魅力です．
+CPUが240MHzのデュアルコアで、RAMも520kBと、
+マイコンにしてはスペックが高いところが魅力です。
 
-シリアル通信などのペリフェラルも充実していて，
+シリアル通信などのペリフェラルも充実していて、
 UART, I2C, SPIなどのピンを好きなGPIOピンに割り当てることができて超便利です！！
 
-また，公式のSDKにFreeRTOSというRTOSが組み込まれていて，
-容易にマルチタスクのアプリケーションを動作させることができます．
+また、公式のSDKにFreeRTOSというRTOSが組み込まれていて、
+容易にマルチタスクのアプリケーションを動作させることができます。
 
 ESP32についての記事一覧は[こちら](/tags/esp32)
 
 ### 電流消費ハンパないって！！
 
-そんなESP32は，省エネ仕様を謳っています．
+そんなESP32は、省エネ仕様を謳っています。
 
-バッテリー駆動も普通にできるのかと思いきや，
-スリープなどを考えずに使用すると，
-CPUだけでも常時50mA程度消費し，
-WiFiと同時に起動すると100mAを超えるほどになります．
+バッテリー駆動も普通にできるのかと思いきや、
+スリープなどを考えずに使用すると、
+CPUだけでも常時50mA程度消費し、
+WiFiと同時に起動すると100mAを超えるほどになります。
 
-これでは，どんなに大きなバッテリーを用意しても数日しか持ちません．
+これでは、どんなに大きなバッテリーを用意しても数日しか持ちません。
 
-そこで今回は，ESP32をバッテリー駆動させるため，Power Management 機能について紹介します．
+そこで今回は、ESP32をバッテリー駆動させるため、Power Management 機能について紹介します。
 
 ## Power Management
 
 ### 概要
 
-ESP32 の Power Management は，ESP32公式でサポートされている機能です．
+ESP32 の Power Management は、ESP32公式でサポートされている機能です。
 
-以下の3つを制御して，省エネを図ります．
+以下の3つを制御して、省エネを図ります。
 
 - CPUの周波数
 - APB (ペリフェラルのクロック) の周波数
 - Light-Sleep
 
-実際には，Power Management 機能を有効化した状態で，
+実際には、Power Management 機能を有効化した状態で、
 
 ~~~cpp
   // FreeRTOS の delay 関数
@@ -61,7 +61,7 @@ ESP32 の Power Management は，ESP32公式でサポートされている機能
   vTaskDelay(1000 / portTICK_PERIOD_MS);
 ~~~
 
-などを実行すると，その間はCPUのクロックを止めてくれるというものです．
+などを実行すると、その間はCPUのクロックを止めてくれるというものです。
 
 ### 参考
 
@@ -69,9 +69,9 @@ ESP32 の Power Management は，ESP32公式でサポートされている機能
 
 ### 動作環境は ESP-IDF
 
-PowerManagementのLight-Sleepを使用するためには，
-`make menuconfig` を編集する必要があるので，
-ESP-IDF環境で実行する必要があります．
+PowerManagementのLight-Sleepを使用するためには、
+`make menuconfig` を編集する必要があるので、
+ESP-IDF環境で実行する必要があります。
 
 ESP-IDFの導入は[こちら](http://esp-idf.readthedocs.io/en/latest/get-started/index.html)
 
@@ -79,16 +79,16 @@ ESP-IDFの導入は[こちら](http://esp-idf.readthedocs.io/en/latest/get-start
 
 ### `make menuconfig`の設定
 
-Power Management における Light-Sleep を有効化するためには，
+Power Management における Light-Sleep を有効化するためには、
 `make menuconfig` の 
 
 - `Component config/FreeRTOS/Tickless idle support`
 
-にチェックを入れます．
+にチェックを入れます。
 
-これで，FreeRTOSのdelay中にクロックを止めることができます．(FreeRTOSにそういう機能がちゃんとある)
+これで、FreeRTOSのdelay中にクロックを止めることができます。(FreeRTOSにそういう機能がちゃんとある)
 
-Light-Sleepを使用しない場合，Arduino環境でも一応動作するようですが，240MHzが40MHzに落ちるだけなので，あまり効果がないかもしれません．
+Light-Sleepを使用しない場合、Arduino環境でも一応動作するようですが、240MHzが40MHzに落ちるだけなので、あまり効果がないかもしれません。
 
 ### インクルードファイル
 
@@ -98,7 +98,7 @@ Light-Sleepを使用しない場合，Arduino環境でも一応動作するよ�
 
 ### 初期化
 
-以下のコードを実行すると，PowerManagement機能がスタートします．
+以下のコードを実行すると、PowerManagement機能がスタートします。
 
 ~~~cpp
 #include "esp_pm.h"
@@ -114,7 +114,7 @@ void pm_init() {
 
 ### 省エネ動作
 
-例えば，以下のような関数を呼べば，その間スリープとなります．
+例えば、以下のような関数を呼べば、その間スリープとなります。
 
 ~~~cpp
 #include "freertos/FreeRTOS.h"
@@ -127,10 +127,10 @@ void sleep_ms(uint32_t ms) {
 
 ### スリープの禁止
 
-シリアル通信をするときや，何かを駆動するときなど，
-delayはするけどCPUのクロックを変えたくない場合があります．
+シリアル通信をするときや、何かを駆動するときなど、
+delayはするけどCPUのクロックを変えたくない場合があります。
 
-そんなときは，[Power Management Locks](http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html#power-management-locks)を使います．
+そんなときは、[Power Management Locks](http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html#power-management-locks)を使います。
 
 PowerManagementの各機能
 
@@ -138,10 +138,10 @@ PowerManagementの各機能
 - APB (ペリフェラルのクロック) の周波数
 - Light-Sleep
 
-に対して，ロックハンドルを生成し，
-ロックの獲得，解放を行います．
+に対して、ロックハンドルを生成し、
+ロックの獲得、解放を行います。
 
-実行例は以下の通りです．
+実行例は以下の通りです。
 
 ~~~cpp
 #include "esp_pm.h"
@@ -185,14 +185,14 @@ void pm_lock_example(){
 
 ## C++ ラッパ
 
-C言語はわかりづらいので，C++のラッパを作ってみました．
+C言語はわかりづらいので、C++のラッパを作ってみました。
 
 - [ESP32_PowerManagement](https://github.com/kerikun11/ESP32_PowerManagement)
 
-GitHub上のコードが最新です．以下の説明は古い可能性があります．
+GitHub上のコードが最新です。以下の説明は古い可能性があります。
 
 ### PowerManagement クラス
-直観的に使えるようになっています．
+直観的に使えるようになっています。
 ~~~cpp
 class PowerManagement {
 public:
@@ -252,9 +252,9 @@ extern "C" void app_main() {
 
 - [PowerManagement.zip](PowerManagement.zip)
 
-上記のサンプルコードにログ出力のコードを追加したものです．
+上記のサンプルコードにログ出力のコードを追加したものです。
 
-一応，そのまま動くはずです．
+一応、そのまま動くはずです。
 
 実行例
 
@@ -269,13 +269,13 @@ extern "C" void app_main() {
 
 ### Light-Sleepの注意
 
-Light-Sleepの間は，普通のGPIOはオープン状態になります．
+Light-Sleepの間は、普通のGPIOはオープン状態になります。
 
-例えば，LEDを繋いでいた場合は，消えてしまいます．
+例えば、LEDを繋いでいた場合は、消えてしまいます。
 
-代わりに，RTC_GPIOを使うことで，Light-Sleep中もキープさせることができます．
+代わりに、RTC_GPIOを使うことで、Light-Sleep中もキープさせることができます。
 
-例えば，Light-Sleep中でもLEDを光らせたければ，以下のようにします．
+例えば、Light-Sleep中でもLEDを光らせたければ、以下のようにします。
 
 ~~~cpp
 #include "driver/rtc_io.h"
@@ -294,16 +294,16 @@ void rtc_gpio_test() {
 }
 ~~~
 
-詳しくは，[公式リファレンス - GPIO](http://esp-idf.readthedocs.io/en/latest/api-reference/peripherals/gpio.html#api-reference-rtc-gpio)
-をご覧ください．
+詳しくは、[公式リファレンス - GPIO](http://esp-idf.readthedocs.io/en/latest/api-reference/peripherals/gpio.html#api-reference-rtc-gpio)
+をご覧ください。
 
 ## まとめ
 
-今回の内容でESP32のバッテリー駆動への足掛かりになりました．
+今回の内容でESP32のバッテリー駆動への足掛かりになりました。
 
-さらに，Modem-Sleepという，Wi-Fiの省エネを図るスリープもあるので，後日紹介したいと思います．
+さらに、Modem-Sleepという、Wi-Fiの省エネを図るスリープもあるので、後日紹介したいと思います。
 
-では，みなさんも良きESP32ライフを！
+では、みなさんも良きESP32ライフを！
 
 ## 参考
 

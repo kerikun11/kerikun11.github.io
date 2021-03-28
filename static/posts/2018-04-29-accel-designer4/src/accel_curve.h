@@ -2,7 +2,7 @@
  * @file accel_curve.h
  * @author Ryotaro Onuki (kerikun11+github@gmail.com)
  * @ref https://www.kerislab.jp/posts/2018-04-29-accel-designer4/
- * @brief 躍度0次，加速度1次，速度2次，位置3次関数により，なめらかな加速を実現する
+ * @brief 躍度0次、加速度1次、速度2次、位置3次関数により、なめらかな加速を実現する
  * @date 2020-04-19
  */
 #pragma once
@@ -57,12 +57,12 @@ namespace ctrl {
  * - 引数の拘束に従って加速曲線を生成する
  * - 始点速度と終点速度をなめらかにつなぐ
  * - 移動距離の拘束はない
- * - 始点速度および終点速度は，正でも負でも可
+ * - 始点速度および終点速度は、正でも負でも可
  */
 class AccelCurve {
 public:
   /**
-   * @brief 初期化付きのコンストラクタ．
+   * @brief 初期化付きのコンストラクタ。
    *
    * @param j_max   最大躍度の大きさ [m/s/s/s], 正であること
    * @param a_max   最大加速度の大きさ [m/s/s], 正であること
@@ -74,14 +74,14 @@ public:
     reset(j_max, a_max, v_start, v_end);
   }
   /**
-   * @brief 空のコンストラクタ．あとで reset() により初期化すること．
+   * @brief 空のコンストラクタ。あとで reset() により初期化すること。
    */
   AccelCurve() {
     jm = am = t0 = t1 = t2 = t3 = v0 = v1 = v2 = v3 = x0 = x1 = x2 = x3 = 0;
   }
   /**
-   * @brief 引数の拘束条件から曲線を生成する．
-   * この関数によって，すべての変数が初期化される．(漏れはない)
+   * @brief 引数の拘束条件から曲線を生成する。
+   * この関数によって、すべての変数が初期化される。(漏れはない)
    *
    * @param j_max   最大躍度の大きさ [m/s/s/s], 正であること
    * @param a_max   最大加速度の大きさ [m/s/s], 正であること
@@ -211,7 +211,7 @@ public:
   float t_2() const { return t2; }
   float t_3() const { return t3; }
   /**
-   * @brief std::ostream に軌道のcsvを出力する関数．
+   * @brief std::ostream に軌道のcsvを出力する関数。
    */
   void printCsv(std::ostream &os, const float t_interval = 0.001f) const {
     for (float t = t0; t < t_end(); t += t_interval) {
@@ -267,8 +267,8 @@ public:
       return (-amtc + (d > 0 ? sqrtD : -sqrtD)) / 2;
     }
     /* 曲線・曲線 (走行距離が短すぎる) */
-    /* 3次方程式を解いて，終点速度を算出;
-     * 簡単のため，値を一度すべて正に変換して，計算結果に符号を付与して返送 */
+    /* 3次方程式を解いて、終点速度を算出;
+     * 簡単のため、値を一度すべて正に変換して、計算結果に符号を付与して返送 */
     const auto a = std::abs(vs);
     const auto b = (d > 0 ? 1 : -1) * jm * d * d;
     const auto aaa = a * a * a;

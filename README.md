@@ -4,7 +4,7 @@
 
 ## 構成
 
-以下の要領でホームページを公開しています．
+以下の要領でホームページを公開しています。
 
 1. Markdown 形式で記事を書く
 2. 静的サイトジェネレータ [Hugo](https://gohugo.io/) で HTML 形式のウェブサイトを生成する
@@ -15,7 +15,7 @@
 
 ### GitHubのブランチ構成
 
-GitHub Pages で公開するにあたって，次のようなブランチ構成になっています．
+GitHub Pages で公開するにあたって、次のようなブランチ構成になっています。
 
 - html
   - 生成したホームページの HTML などを含む静的サイトディレクトリ
@@ -24,6 +24,6 @@ GitHub Pages で公開するにあたって，次のようなブランチ構成�
 
 ### サイトのテーマ
 
-以下のテーマを Git Submodule として配置して使用しています．
+以下のテーマを Git Submodule として配置して使用しています。
 
 - [Mainroad Theme](https://github.com/Vimux/Mainroad)

@@ -9,21 +9,21 @@ tags:
 
 ## WiFiのSSIDとパスワードをどう伝えるか問題
 
-ESP32はWiFiに接続することができますが，ソースコードにWiFiのSSIDとパスワードを書いてしまうと，後から変更できません．
+ESP32はWiFiに接続することができますが、ソースコードにWiFiのSSIDとパスワードを書いてしまうと、後から変更できません。
 
-さらに，ソースコードを公開するときは，SSIDとパスワードの部分をいちいち削除しなければならず，けっこう面倒です．
+さらに、ソースコードを公開するときは、SSIDとパスワードの部分をいちいち削除しなければならず、けっこう面倒です。
 
-以前は[SDカードを使ってWiFi情報を伝える方法](/posts/2017-07-29-esp32-wifi-sd/)を紹介しましたが，これも割と手間でした．
+以前は[SDカードを使ってWiFi情報を伝える方法](/posts/2017-07-29-esp32-wifi-sd/)を紹介しましたが、これも割と手間でした。
 
-SmartConfigとは，そんな悩みをスマホで解決する機能です．
+SmartConfigとは、そんな悩みをスマホで解決する機能です。
 
 <!--more-->
 
 ## SmartConfigとは
 
-ESP32のSmartConfig機能は，ESP32がWiFiのアクセスポイントになることで，スマホからWiFi情報を伝えてやろうというものです．
+ESP32のSmartConfig機能は、ESP32がWiFiのアクセスポイントになることで、スマホからWiFi情報を伝えてやろうというものです。
 
-既にESP8266のときからある機能で，スマホのアプリがあります．
+既にESP8266のときからある機能で、スマホのアプリがあります。
 
 - [Google Play ESP8266 SmartConfig](https://play.google.com/store/apps/details?id=com.cmmakerclub.iot.esptouch&hl=ja)
 - [AppStore SmartConfig](https://itunes.apple.com/us/app/smartconfig/id1233975749?mt=8)
@@ -32,11 +32,11 @@ ESP32のSmartConfig機能は，ESP32がWiFiのアクセスポイントになる�
 
 ### ESP32側
 
-ここでは例によって [Arduino core for the ESP32](https://github.com/espressif/arduino-esp32) 環境でのやり方を紹介します．
+ここでは例によって [Arduino core for the ESP32](https://github.com/espressif/arduino-esp32) 環境でのやり方を紹介します。
 
-[ここ](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/WiFiSmartConfig/WiFiSmartConfig.ino)に公式のサンプルコードがあります．
+[ここ](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/WiFiSmartConfig/WiFiSmartConfig.ino)に公式のサンプルコードがあります。
 
-SmartConfigの関数はWiFiクラスに宣言されていますので，そのまますぐに使うことができます．
+SmartConfigの関数はWiFiクラスに宣言されていますので、そのまますぐに使うことができます。
 
 {{< highlight cpp >}}
 #include "WiFi.h"
@@ -72,7 +72,7 @@ void loop() {
 
 ### スマホ側
 
-アプリを起動して，WiFiのパスワードを入力するだけです．
+アプリを起動して、WiFiのパスワードを入力するだけです。
 
 - [Google Play ESP8266 SmartConfig](https://play.google.com/store/apps/details?id=com.cmmakerclub.iot.esptouch&hl=ja)
 - [AppStore SmartConfig](https://itunes.apple.com/us/app/smartconfig/id1233975749?mt=8)
@@ -80,6 +80,6 @@ void loop() {
 
 ## まとめ
 
-驚くほど簡単にWiFi情報の伝達ができてしまいました．
+驚くほど簡単にWiFi情報の伝達ができてしまいました。
 
-いい時代になったものです．
+いい時代になったものです。

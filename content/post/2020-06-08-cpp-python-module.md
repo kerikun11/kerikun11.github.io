@@ -11,9 +11,9 @@ draft: "true"
 
 ## はじめに
 
-こんにちは．けりです．
+こんにちは。けりです。
 
-今回の記事ではC++で実装したライブラリをPythonから呼び出す方法を紹介します．
+今回の記事ではC++で実装したライブラリをPythonから呼び出す方法を紹介します。
 
 <!--more-->
 
@@ -21,11 +21,11 @@ draft: "true"
 
 ## 使用したライブラリ
 
-今回使用したライブラリは `pybind11` です．
+今回使用したライブラリは `pybind11` です。
 
 {{< postfig src="https://github.com/pybind/pybind11/raw/master/docs/pybind11-logo.png" title="pybind11" width="240px" link="https://github.com/pybind/pybind11" >}}
 
-`Boost` にも似たようなライブラリがありますが，余計なものが少なく使いやすそうだったこちらを選びました．
+`Boost` にも似たようなライブラリがありますが、余計なものが少なく使いやすそうだったこちらを選びました。
 
 ## 実装
 
@@ -47,7 +47,7 @@ pacman -S --needed \
 
 ### 依存ライブラリのリンク
 
-ビルドのために必要なBoostとPythonのライブラリをリンクするために，`CMakeLists.txt`に以下の内容を記述します．
+ビルドのために必要なBoostとPythonのライブラリをリンクするために、`CMakeLists.txt`に以下の内容を記述します。
 
 #### pybind11/CMakeLists.txt
 

@@ -10,7 +10,7 @@ thumbnail: "icon.jpg"
 ---
 
 == 概要
-Nucleoボードとグラフィック液晶を使って，音声解析機を作りました．マイクに入ってきた音を高速フーリエ変換して，周波数スペクトルを表示します．
+Nucleoボードとグラフィック液晶を使って、音声解析機を作りました。マイクに入ってきた音を高速フーリエ変換して、周波数スペクトルを表示します。
 
 [.img-medium]
 image:fft-lcd.jpg["FFTしてLCDで表示"]
@@ -21,15 +21,15 @@ image:fft-lcd.jpg["FFTしてLCDで表示"]
 
 
 == スペクトルグラフ
-横軸は周波数です． +
-縦軸はdBで，データの最大値を0dBとした相対値で表示しています．
+横軸は周波数です。 +
+縦軸はdBで、データの最大値を0dBとした相対値で表示しています。
 
 [.img-medium]
 image:spectrum.jpg["スペクトルグラフ",link]
 
 == 動画
-実際に口笛を吹いてみました．動画の音声をオンにして聞いてみてください． +
-※動画サイズは，2.22MBです
+実際に口笛を吹いてみました。動画の音声をオンにして聞いてみてください。 +
+※動画サイズは、2.22MBです
 
 ++++
 <div class="video"><video src="fft-lcd.mp4" width="100%" controls loop preload="metadata"></video></div>
@@ -38,22 +38,22 @@ image:spectrum.jpg["スペクトルグラフ",link]
 == 使用部品
 
 === Nucleo STM32F401RE
-かなりスペックの高いマイコンボードです． +
-秋月で1,500円です． +
+かなりスペックの高いマイコンボードです。 +
+秋月で1,500円です。 +
 link:http://akizukidenshi.com/catalog/g/gM-07723/[]
 
 [.img-small]
 image:nucleo.jpg["Nucleo STM32F401RE"]
 
 === シャープモノクロTFT液晶
-400x240ピクセルの高精細液晶ディスプレイです． +
+400x240ピクセルの高精細液晶ディスプレイです。 +
 link:http://akizukidenshi.com/catalog/g/gP-04944/[]
 
 [.img-small]
 image:lcd.jpg["TFT-LCD"]
 
 === マイクアンプキット
-今回は手を抜いて，秋月のお手軽キットを使用しました． +
+今回は手を抜いて、秋月のお手軽キットを使用しました。 +
 link:http://akizukidenshi.com/catalog/g/gK-05757/[]
 
 [.img-small]
@@ -62,11 +62,11 @@ image:mic.jpg["AE-MICAMP"]
 == ソースファイル
 
 link:FFT_Sampling_zip_nucleo_f401re.zip[]
-一応載せておきますが，他人に見せるつもりで書いてなかったのでかなりひどいです．mbedで読み込めば実行できます． +
+一応載せておきますが、他人に見せるつもりで書いてなかったのでかなりひどいです。mbedで読み込めば実行できます。 +
  +
-FFTのプログラムはmbedにあったライブラリを使わせていただきました． +
+FFTのプログラムはmbedにあったライブラリを使わせていただきました。 +
 LCDの表示プログラムは自分で頑張って作りました！
 
 == まとめ
-mbedを使ったら意外と簡単にできてしまいました．いい時代になったものですね～
+mbedを使ったら意外と簡単にできてしまいました。いい時代になったものですね～
 
