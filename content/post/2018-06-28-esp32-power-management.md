@@ -7,11 +7,11 @@ tags:
   - "ESP32"
 ---
 
+## はじめに
+
 この記事では、ESP32をバッテリー駆動するためのヒントをお届けします。
 
 <!--more-->
-
-## はじめに
 
 ### ESP32とは？
 
@@ -104,11 +104,11 @@ Light-Sleepを使用しない場合、Arduino環境でも一応動作するよ�
 #include "esp_pm.h"
 
 void pm_init() {
-	esp_pm_config_esp32_t esp_pm_config_esp32;
-	esp_pm_config_esp32.max_cpu_freq = RTC_CPU_FREQ_240M; //< make menuconfigで設定したCPU周波数
-	esp_pm_config_esp32.min_cpu_freq = RTC_CPU_FREQ_XTAL;
-	esp_pm_config_esp32.light_sleep_enable = true;
-	esp_pm_configure(&esp_pm_config_esp32);
+  esp_pm_config_esp32_t esp_pm_config_esp32;
+  esp_pm_config_esp32.max_cpu_freq = RTC_CPU_FREQ_240M; //< make menuconfigで設定したCPU周波数
+  esp_pm_config_esp32.min_cpu_freq = RTC_CPU_FREQ_XTAL;
+  esp_pm_config_esp32.light_sleep_enable = true;
+  esp_pm_configure(&esp_pm_config_esp32);
 }
 ~~~
 
@@ -156,11 +156,11 @@ esp_pm_lock_handle_t lock_handle_light;
 // ハンドルの初期化
 void pm_lock_init() {
   // CPU の周波数固定ハンドル
-	esp_pm_lock_create(ESP_PM_CPU_FREQ_MAX, 0, "cpu", &lock_handle_cpu);
+  esp_pm_lock_create(ESP_PM_CPU_FREQ_MAX, 0, "cpu", &lock_handle_cpu);
   // APB の周波数固定ハンドル
-	esp_pm_lock_create(ESP_PM_APB_FREQ_MAX, 0, "apb", &lock_handle_apb);
+  esp_pm_lock_create(ESP_PM_APB_FREQ_MAX, 0, "apb", &lock_handle_apb);
   // Light-Sleepの禁止ハンドル
-	esp_pm_lock_create(ESP_PM_NO_LIGHT_SLEEP, 0, "light", &lock_handle_light);
+  esp_pm_lock_create(ESP_PM_NO_LIGHT_SLEEP, 0, "light", &lock_handle_light);
 }
 
 // ロックの獲得
@@ -170,7 +170,7 @@ void acquire(esp_pm_lock_handle_t lock_handle) {
 
 // ロックの解放
 void release(esp_pm_lock_handle_t lock_handle) {
-	esp_pm_lock_release(out_handle);
+  esp_pm_lock_release(out_handle);
 }
 
 // 実行例
