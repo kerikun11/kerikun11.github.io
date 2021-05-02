@@ -6,6 +6,7 @@ categories:
 tags:
   - "FFT"
   - "Nucleo"
+  - "mbed"
 thumbnail: "icon.jpg"
 ---
 

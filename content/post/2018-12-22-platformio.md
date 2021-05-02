@@ -6,6 +6,7 @@ categories:
 tags:
   - "ESP32"
   - "PlatformIO"
+  - "VSCode"
 thumbnail: "icon.png"
 ---
 
