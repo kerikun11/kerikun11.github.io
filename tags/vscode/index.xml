@@ -17,4 +17,15 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;li>TeX コードのとなりに PDF をリアルタイム表示&lt;/li>
 &lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>
 &lt;li>VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a>
+の
+22日目の記事です。&lt;/p>
+&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>今回は、PlatformIOという強力な &lt;strong>マイコン開発環境&lt;/strong> の紹介です。&lt;/p>
+&lt;h3 id="platformio-とは">PlatformIO とは？&lt;/h3>
+&lt;p>&lt;a href="https://platformio.org/" target="_blank">PlatformIO&lt;/a>
+とは、mbedやArduinoと似たような感じで、さまざまなボードやライブラリを統一的に開発できる開発環境です。&lt;/p>
+&lt;p>PlatformIO はESP32マイコンを公式にサポートしていて、&lt;a href="https://github.com/espressif/esp-idf" target="_blank">ESP-IDF&lt;/a>
+と&lt;a href="https://github.com/espressif/arduino-esp32" target="_blank">Arduino Core for the ESP32&lt;/a>
+から選んで開発することができます。&lt;/p></description></item></channel></rss>
