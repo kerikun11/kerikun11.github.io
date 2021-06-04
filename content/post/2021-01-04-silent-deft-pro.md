@@ -78,7 +78,7 @@ thumbnail: "icon.jpg"
 {{< postfig src="silent-deft-pro-19.png" title="外すネジは合計7個" width="360px" >}}
 {{< postfig src="silent-deft-pro-21.jpg" title="外すネジは合計7個" width="240px" >}}
 {{< postfig src="silent-deft-pro-6.jpg" title="ねじは星型T6ドライバに対応" width="360px" >}}
-{{< postfig src="silent-deft-pro-29.jpg" title="使用したドライバセット" width="360px" >}}
+{{< postfig src="silent-deft-pro-29.jpg" title="使用したドライバセット: EPS-652" width="360px" >}}
 
 ### ふたを外す
 
