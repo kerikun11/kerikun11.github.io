@@ -41,22 +41,22 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 <span class=cm>/** STRUCTURE ******************************************************/</span>
 <span class=c1>// epoch型を定義。2000年1月1日0時00分からの総秒数。
 </span><span class=c1></span>
-<span class=k>typedef</span> <span class=n>uint32_t</span> <span class=n>epoch_t</span><span class=p>;</span>
+<span class=k>typedef</span> <span class=kt>uint32_t</span> <span class=n>epoch_t</span><span class=p>;</span>
 
 <span class=c1>// 時刻合わせ用のフラグの構造体を定義。
 </span><span class=c1></span>
 <span class=k>typedef</span> <span class=k>struct</span> <span class=p>{</span>
 
     <span class=k>union</span> <span class=p>{</span>
-        <span class=n>uint8_t</span> <span class=n>flags</span><span class=p>;</span>
+        <span class=kt>uint8_t</span> <span class=n>flags</span><span class=p>;</span>
 
         <span class=k>struct</span> <span class=p>{</span>
-            <span class=n>uint8_t</span> <span class=nl>ss</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>mm</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>hh</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>DD</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>MM</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>YY</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>ss</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>mm</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>hh</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>DD</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>MM</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>YY</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
         <span class=p>}</span> <span class=n>flag</span><span class=p>;</span>
     <span class=p>};</span>
 <span class=p>}</span> <span class=n>edit_t</span><span class=p>;</span>
@@ -65,15 +65,15 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 </span><span class=c1></span>
 <span class=k>typedef</span> <span class=k>struct</span> <span class=p>{</span>
     <span class=n>epoch_t</span> <span class=n>epoch</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>ss</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>mm</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>hh</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>EE</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>DD</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>MM</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>YY</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>colon</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>halfsec</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>ss</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>mm</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>hh</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>EE</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>DD</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>MM</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>YY</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>colon</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>halfsec</span><span class=p>;</span>
     <span class=n>edit_t</span> <span class=n>edit</span><span class=p>;</span>
 <span class=p>}</span> <span class=n>time_t</span><span class=p>;</span>
 
@@ -83,7 +83,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 <span class=c1>// 現在時刻
 </span><span class=c1></span><span class=k>extern</span> <span class=n>time_t</span> <span class=n>now</span><span class=p>;</span>
 <span class=c1>// 時間が変わった時だけフラグが経つ。表示器の時刻の更新はこのフラグの監視をして行えばよい。
-</span><span class=c1></span><span class=k>extern</span> <span class=n>uint8_t</span> <span class=n>time_change_flag</span><span class=p>;</span>
+</span><span class=c1></span><span class=k>extern</span> <span class=kt>uint8_t</span> <span class=n>time_change_flag</span><span class=p>;</span>
 <span class=c1>// main_init()に書くこと。
 </span><span class=c1></span><span class=kt>void</span> <span class=nf>RTCC_init</span><span class=p>(</span><span class=kt>void</span><span class=p>);</span>
 <span class=c1>// Call this in the main loop
@@ -98,11 +98,11 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 <span class=c1>// 時刻をエポック基準でそろえる
 </span><span class=c1></span><span class=kt>void</span> <span class=nf>RTCC_from_epoch</span><span class=p>(</span><span class=n>time_t</span> <span class=o>*</span><span class=n>tm</span><span class=p>);</span>
 <span class=c1>// return month length
-</span><span class=c1></span><span class=n>uint8_t</span> <span class=nf>month_length</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>year</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>month</span><span class=p>);</span>
+</span><span class=c1></span><span class=kt>uint8_t</span> <span class=nf>month_length</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>year</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>month</span><span class=p>);</span>
 
 <span class=cm>/** LCD display **/</span>
 <span class=c1>// 各項目表示用関数。ユーザーは使わない。
-</span><span class=c1></span><span class=k>static</span> <span class=kt>void</span> <span class=nf>display_dec</span><span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=n>str</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>dec</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>edit</span><span class=p>);</span>
+</span><span class=c1></span><span class=k>static</span> <span class=kt>void</span> <span class=nf>display_dec</span><span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=n>str</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>dec</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>edit</span><span class=p>);</span>
 <span class=c1>// 0802サイズ液晶用、文字列作成関数
 </span><span class=c1></span><span class=kt>void</span> <span class=nf>display_time_0802</span><span class=p>(</span><span class=n>time_t</span> <span class=o>*</span><span class=n>tm</span><span class=p>,</span> <span class=kt>char</span> <span class=o>*</span><span class=n>line0</span><span class=p>,</span> <span class=kt>char</span> <span class=o>*</span><span class=n>line1</span><span class=p>);</span>
 <span class=c1>// 1608サイズ液晶用、文字列作成関数
@@ -123,11 +123,11 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 <span class=cm>/** FUNCTIONS ******************************************************/</span>
 <span class=cm>/** en/decode number **/</span>
 <span class=c1>// from decimal to hex
-</span><span class=c1></span><span class=k>static</span> <span class=n>uint8_t</span> <span class=nf>d_to_x</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>dec</span><span class=p>);</span>
+</span><span class=c1></span><span class=k>static</span> <span class=kt>uint8_t</span> <span class=nf>d_to_x</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>dec</span><span class=p>);</span>
 <span class=c1>// from hex to decimal
-</span><span class=c1></span><span class=k>static</span> <span class=n>uint8_t</span> <span class=nf>x_to_d</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>hex</span><span class=p>);</span>
+</span><span class=c1></span><span class=k>static</span> <span class=kt>uint8_t</span> <span class=nf>x_to_d</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>hex</span><span class=p>);</span>
 <span class=c1>// quotをdivで割って、余りを返す。よく使うので関数化した。
-</span><span class=c1></span><span class=k>static</span> <span class=n>epoch_t</span> <span class=nf>get_quot_rem</span><span class=p>(</span><span class=n>epoch_t</span> <span class=o>*</span><span class=n>quot</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>div</span><span class=p>);</span>
+</span><span class=c1></span><span class=k>static</span> <span class=n>epoch_t</span> <span class=nf>get_quot_rem</span><span class=p>(</span><span class=n>epoch_t</span> <span class=o>*</span><span class=n>quot</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>div</span><span class=p>);</span>
 
 <span class=cm>/** Transform time **/</span>
 <span class=c1>// RTCCをカレンダタイムに変換、上書き。
@@ -152,7 +152,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 <span class=cm>/** VARIABLES ******************************************************/</span>
 <span class=k>const</span> <span class=kt>char</span> <span class=n>weekday_3char</span><span class=p>[</span><span class=mi>7</span><span class=p>][</span><span class=mi>4</span><span class=p>]</span> <span class=o>=</span> <span class=p>{</span><span class=s>&#34;SUN&#34;</span><span class=p>,</span> <span class=s>&#34;MON&#34;</span><span class=p>,</span> <span class=s>&#34;TUE&#34;</span><span class=p>,</span> <span class=s>&#34;WED&#34;</span><span class=p>,</span> <span class=s>&#34;THU&#34;</span><span class=p>,</span> <span class=s>&#34;FRI&#34;</span><span class=p>,</span> <span class=s>&#34;SAT&#34;</span><span class=p>};</span>
 <span class=n>time_t</span> <span class=n>now</span><span class=p>;</span>
-<span class=n>uint8_t</span> <span class=n>time_change_flag</span><span class=p>;</span>
+<span class=kt>uint8_t</span> <span class=n>time_change_flag</span><span class=p>;</span>
 
 <span class=cm>/** USER FUNCTIONS *************************************************/</span>
 
@@ -178,7 +178,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 <span class=p>}</span>
 
 <span class=kt>void</span> <span class=nf>RTCC_task</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span>
-    <span class=k>static</span> <span class=n>uint8_t</span> <span class=n>prev_halfsec</span><span class=p>;</span>
+    <span class=k>static</span> <span class=kt>uint8_t</span> <span class=n>prev_halfsec</span><span class=p>;</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCSYNC</span><span class=p>)</span><span class=k>return</span><span class=p>;</span>
     <span class=n>now</span><span class=p>.</span><span class=n>halfsec</span> <span class=o>=</span> <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>HALFSEC</span><span class=p>;</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>prev_halfsec</span> <span class=o>!=</span> <span class=n>now</span><span class=p>.</span><span class=n>halfsec</span><span class=p>)</span> <span class=p>{</span>
@@ -207,7 +207,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
     <span class=n>caltime_to_RTCC</span><span class=p>(</span><span class=n>tm</span><span class=p>);</span>
 <span class=p>}</span>
 
-<span class=n>uint8_t</span> <span class=nf>month_length</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>year</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>month</span><span class=p>)</span> <span class=p>{</span>
+<span class=kt>uint8_t</span> <span class=nf>month_length</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>year</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>month</span><span class=p>)</span> <span class=p>{</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>month</span> <span class=o>==</span> <span class=mi>2</span><span class=p>)</span> <span class=k>return</span> <span class=mi>28</span> <span class=o>+</span> <span class=o>!</span><span class=p>(</span><span class=n>year</span> <span class=o>&amp;</span> <span class=mi>3</span><span class=p>)</span><span class=o>-!</span><span class=p>(</span><span class=n>year</span> <span class=o>%</span> <span class=mi>100</span><span class=p>)</span><span class=o>+!</span><span class=p>(</span><span class=n>year</span> <span class=o>%</span> <span class=mi>400</span><span class=p>);</span>
     <span class=k>else</span> <span class=k>return</span> <span class=mi>31</span> <span class=o>-</span> <span class=p>(((</span><span class=o>-</span><span class=p>(</span><span class=n>month</span> <span class=o>&amp;</span> <span class=mi>1</span><span class=p>)</span><span class=o>^</span><span class=n>month</span><span class=p>)</span><span class=o>&amp;</span><span class=mi>13</span><span class=p>)</span> <span class=o>==</span> <span class=mi>4</span><span class=p>);</span>
 
@@ -234,7 +234,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 
 <span class=cm>/** LCD display **/</span>
 
-<span class=k>static</span> <span class=kt>void</span> <span class=nf>display_dec</span><span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=n>str</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>dec</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>edit</span><span class=p>)</span> <span class=p>{</span>
+<span class=k>static</span> <span class=kt>void</span> <span class=nf>display_dec</span><span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=n>str</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>dec</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>edit</span><span class=p>)</span> <span class=p>{</span>
     <span class=kt>char</span> <span class=n>s</span><span class=p>[</span><span class=mi>4</span><span class=p>];</span>
     <span class=n>sprintf</span><span class=p>(</span><span class=n>s</span><span class=p>,</span> <span class=s>&#34;%02d&#34;</span><span class=p>,</span> <span class=n>dec</span><span class=p>);</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>edit</span> <span class=o>&amp;&amp;</span> <span class=n>now</span><span class=p>.</span><span class=n>halfsec</span><span class=p>)</span><span class=n>strcat</span><span class=p>(</span><span class=n>str</span><span class=p>,</span> <span class=s>&#34;  &#34;</span><span class=p>);</span>
@@ -311,10 +311,10 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
     <span class=k>if</span> <span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>edit</span><span class=p>.</span><span class=n>flag</span><span class=p>.</span><span class=n>DD</span><span class=p>)</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>+=</span> <span class=n>DAY</span><span class=p>;</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>edit</span><span class=p>.</span><span class=n>flag</span><span class=p>.</span><span class=n>MM</span><span class=p>)</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>+=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span><span class=p>,</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>);</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>edit</span><span class=p>.</span><span class=n>flag</span><span class=p>.</span><span class=n>YY</span><span class=p>)</span> <span class=p>{</span>
-        <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=mi>12</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;=</span> <span class=mi>12</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
             <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>+=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span><span class=p>,</span> <span class=n>i</span><span class=p>);</span>
         <span class=p>}</span>
-        <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
             <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>+=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span> <span class=o>+</span> <span class=mi>1</span><span class=p>,</span> <span class=n>i</span><span class=p>);</span>
         <span class=p>}</span>
     <span class=p>}</span>
@@ -332,10 +332,10 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
     <span class=k>if</span> <span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>edit</span><span class=p>.</span><span class=n>flag</span><span class=p>.</span><span class=n>DD</span><span class=p>)</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>-=</span> <span class=n>DAY</span><span class=p>;</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>edit</span><span class=p>.</span><span class=n>flag</span><span class=p>.</span><span class=n>MM</span><span class=p>)</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>-=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span><span class=p>,</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>);</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>edit</span><span class=p>.</span><span class=n>flag</span><span class=p>.</span><span class=n>YY</span><span class=p>)</span> <span class=p>{</span>
-        <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span> <span class=o>&gt;=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span><span class=o>--</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span> <span class=o>&gt;=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span><span class=o>--</span><span class=p>)</span> <span class=p>{</span>
             <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>-=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span><span class=p>,</span> <span class=n>i</span><span class=p>);</span>
         <span class=p>}</span>
-        <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>12</span><span class=p>;</span> <span class=n>i</span> <span class=o>&gt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span><span class=o>--</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>12</span><span class=p>;</span> <span class=n>i</span> <span class=o>&gt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>i</span><span class=o>--</span><span class=p>)</span> <span class=p>{</span>
             <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span> <span class=o>-=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span> <span class=o>-</span> <span class=mi>1</span><span class=p>,</span> <span class=n>i</span><span class=p>);</span>
         <span class=p>}</span>
     <span class=p>}</span>
@@ -373,17 +373,17 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 
 <span class=cm>/** en/decode number **/</span>
 
-<span class=k>static</span> <span class=n>uint8_t</span> <span class=nf>d_to_x</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>dec</span><span class=p>)</span> <span class=p>{</span>
+<span class=k>static</span> <span class=kt>uint8_t</span> <span class=nf>d_to_x</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>dec</span><span class=p>)</span> <span class=p>{</span>
     <span class=c1>// uint8_t quot = dec / 10;
 </span><span class=c1></span>    <span class=c1>// return quot * 16 + dec - quot * 10;
 </span><span class=c1></span>    <span class=k>return</span> <span class=n>dec</span> <span class=o>/</span> <span class=mi>10</span> <span class=o>*</span> <span class=mi>6</span> <span class=o>+</span> <span class=n>dec</span><span class=p>;</span>
 <span class=p>}</span>
 
-<span class=k>static</span> <span class=n>uint8_t</span> <span class=nf>x_to_d</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>hex</span><span class=p>)</span> <span class=p>{</span>
+<span class=k>static</span> <span class=kt>uint8_t</span> <span class=nf>x_to_d</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>hex</span><span class=p>)</span> <span class=p>{</span>
     <span class=k>return</span> <span class=mi>10</span> <span class=o>*</span> <span class=p>(</span><span class=mh>0x0F</span> <span class=o>&amp;</span> <span class=p>(</span><span class=n>hex</span> <span class=o>&gt;&gt;</span> <span class=mi>4</span><span class=p>))</span> <span class=o>+</span> <span class=p>(</span><span class=mh>0x0F</span> <span class=o>&amp;</span> <span class=n>hex</span><span class=p>);</span>
 <span class=p>}</span>
 
-<span class=k>static</span> <span class=n>epoch_t</span> <span class=nf>get_quot_rem</span><span class=p>(</span><span class=n>epoch_t</span> <span class=o>*</span><span class=n>quot</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>div</span><span class=p>)</span> <span class=p>{</span>
+<span class=k>static</span> <span class=n>epoch_t</span> <span class=nf>get_quot_rem</span><span class=p>(</span><span class=n>epoch_t</span> <span class=o>*</span><span class=n>quot</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>div</span><span class=p>)</span> <span class=p>{</span>
     <span class=c1>// num /= div;
 </span><span class=c1></span>    <span class=c1>// return rem;
 </span><span class=c1></span>    <span class=n>epoch_t</span> <span class=n>num</span> <span class=o>=</span> <span class=o>*</span><span class=n>quot</span><span class=p>;</span>
@@ -399,7 +399,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
     <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR1</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
 
     <span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span> <span class=o>=</span> <span class=n>x_to_d</span><span class=p>(</span><span class=n>RTCVALL</span><span class=p>);</span> <span class=c1>// YY
-</span><span class=c1></span>    <span class=n>uint8_t</span> <span class=n>dumy</span> <span class=o>=</span> <span class=n>RTCVALH</span><span class=p>;</span> <span class=c1>// Reserved
+</span><span class=c1></span>    <span class=kt>uint8_t</span> <span class=n>dumy</span> <span class=o>=</span> <span class=n>RTCVALH</span><span class=p>;</span> <span class=c1>// Reserved
 </span><span class=c1></span>    <span class=n>tm</span><span class=o>-&gt;</span><span class=n>DD</span> <span class=o>=</span> <span class=n>x_to_d</span><span class=p>(</span><span class=n>RTCVALL</span><span class=p>);</span> <span class=c1>// DD
 </span><span class=c1></span>    <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span> <span class=o>=</span> <span class=n>x_to_d</span><span class=p>(</span><span class=n>RTCVALH</span><span class=p>);</span> <span class=c1>// MM
 </span><span class=c1></span>    <span class=n>tm</span><span class=o>-&gt;</span><span class=n>hh</span> <span class=o>=</span> <span class=n>x_to_d</span><span class=p>(</span><span class=n>RTCVALL</span><span class=p>);</span> <span class=c1>// hh
@@ -431,13 +431,13 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 <span class=k>static</span> <span class=kt>void</span> <span class=nf>epoch_to_caltime</span><span class=p>(</span><span class=n>time_t</span> <span class=o>*</span><span class=n>tm</span><span class=p>)</span> <span class=p>{</span>
     <span class=c1>// to get epoch on terminal
 </span><span class=c1></span>    <span class=c1>// echo $(( (`date -d &#39;2015/03/01&#39; &#39;+%s&#39;` - `date -d &#39;2000/01/01&#39; &#39;+%s&#39;`) / 86400 ))
-</span><span class=c1></span>    <span class=k>static</span> <span class=n>uint16_t</span> <span class=n>day_cache</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=c1>//2015.03.01
-</span><span class=c1></span>    <span class=k>static</span> <span class=n>uint8_t</span> <span class=n>month_cache</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
-    <span class=k>static</span> <span class=n>uint8_t</span> <span class=n>year_cache</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
-    <span class=n>uint16_t</span> <span class=n>day_since_epoch</span><span class=p>;</span>
-    <span class=n>uint16_t</span> <span class=n>day</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>year</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>month</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=c1>// month is one-based.
+</span><span class=c1></span>    <span class=k>static</span> <span class=kt>uint16_t</span> <span class=n>day_cache</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=c1>//2015.03.01
+</span><span class=c1></span>    <span class=k>static</span> <span class=kt>uint8_t</span> <span class=n>month_cache</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+    <span class=k>static</span> <span class=kt>uint8_t</span> <span class=n>year_cache</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+    <span class=kt>uint16_t</span> <span class=n>day_since_epoch</span><span class=p>;</span>
+    <span class=kt>uint16_t</span> <span class=n>day</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>year</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>month</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=c1>// month is one-based.
 </span><span class=c1></span>    <span class=n>epoch_t</span> <span class=n>num</span><span class=p>;</span>
 
     <span class=n>num</span> <span class=o>=</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>epoch</span><span class=p>;</span>
@@ -484,12 +484,12 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 
 <span class=k>static</span> <span class=kt>void</span> <span class=nf>caltime_to_epoch</span><span class=p>(</span><span class=n>time_t</span> <span class=o>*</span><span class=n>tm</span><span class=p>)</span> <span class=p>{</span>
     <span class=n>epoch_t</span> <span class=n>epoch</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
-    <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>year</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>year</span> <span class=o>&lt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span><span class=p>;</span> <span class=n>year</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
-        <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>month</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>month</span> <span class=o>&lt;=</span> <span class=mi>12</span><span class=p>;</span> <span class=n>month</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>year</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>year</span> <span class=o>&lt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span><span class=p>;</span> <span class=n>year</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>month</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>month</span> <span class=o>&lt;=</span> <span class=mi>12</span><span class=p>;</span> <span class=n>month</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
             <span class=n>epoch</span> <span class=o>+=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>year</span><span class=p>,</span> <span class=n>month</span><span class=p>);</span>
         <span class=p>}</span>
     <span class=p>}</span>
-    <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>month</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>month</span> <span class=o>&lt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>month</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>month</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>month</span> <span class=o>&lt;</span> <span class=n>tm</span><span class=o>-&gt;</span><span class=n>MM</span><span class=p>;</span> <span class=n>month</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
         <span class=n>epoch</span> <span class=o>+=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=n>month_length</span><span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>YY</span><span class=p>,</span> <span class=n>month</span><span class=p>);</span>
     <span class=p>}</span>
     <span class=n>epoch</span> <span class=o>+=</span> <span class=n>DAY</span> <span class=o>*</span> <span class=p>(</span><span class=n>tm</span><span class=o>-&gt;</span><span class=n>DD</span> <span class=o>-</span> <span class=mi>1</span><span class=p>);</span> <span class=c1>//day is one-based.
@@ -525,38 +525,38 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
 </span><span class=cp>#define LONG_HOLD_LEVEL7  900
 </span><span class=cp></span>
 <span class=k>typedef</span> <span class=k>struct</span> <span class=n>button</span> <span class=p>{</span>
-    <span class=n>uint16_t</span> <span class=n>cnt_sw</span><span class=p>;</span>
+    <span class=kt>uint16_t</span> <span class=n>cnt_sw</span><span class=p>;</span>
 
     <span class=k>union</span> <span class=p>{</span>
-        <span class=n>uint16_t</span> <span class=n>flags</span><span class=p>;</span>
+        <span class=kt>uint16_t</span> <span class=n>flags</span><span class=p>;</span>
 
         <span class=k>struct</span> <span class=p>{</span>
-            <span class=n>uint8_t</span> <span class=nl>press</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_hold_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_hold_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_hold_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_hold_4</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_hold_5</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_hold_6</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_hold_7</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>pressing</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_holding_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_holding_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_holding_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_holding_4</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_holding_5</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_holding_6</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
-            <span class=n>uint8_t</span> <span class=nl>long_holding_7</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>press</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_hold_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_hold_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_hold_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_hold_4</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_hold_5</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_hold_6</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_hold_7</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>pressing</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_holding_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_holding_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_holding_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_holding_4</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_holding_5</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_holding_6</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=nl>long_holding_7</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>
         <span class=p>}</span> <span class=n>flag</span><span class=p>;</span>
     <span class=p>};</span>
 <span class=p>}</span> <span class=n>button_t</span><span class=p>;</span>
 
-<span class=kt>void</span> <span class=nf>button_timer_interrupt</span><span class=p>(</span><span class=n>button_t</span> <span class=o>*</span><span class=n>bt</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>sw_value</span><span class=p>);</span>
+<span class=kt>void</span> <span class=nf>button_timer_interrupt</span><span class=p>(</span><span class=n>button_t</span> <span class=o>*</span><span class=n>bt</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>sw_value</span><span class=p>);</span>
 
 <span class=cp>#endif	</span><span class=cm>/* MY_BUTTON_H */</span><span class=cp>
 </span></code></pre></div><h4 id=my_buttonh-1>My_button.h</h4><div class=highlight><pre class=chroma><code class=language-c data-lang=c><span class=cp>#include</span> <span class=cpf>&#34;My_button.h&#34;</span><span class=cp>
 </span><span class=cp></span>
-<span class=kt>void</span> <span class=nf>button_timer_interrupt</span><span class=p>(</span><span class=n>button_t</span> <span class=o>*</span><span class=n>bt</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>sw_value</span><span class=p>)</span> <span class=p>{</span>
+<span class=kt>void</span> <span class=nf>button_timer_interrupt</span><span class=p>(</span><span class=n>button_t</span> <span class=o>*</span><span class=n>bt</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>sw_value</span><span class=p>)</span> <span class=p>{</span>
     <span class=k>if</span> <span class=p>(</span><span class=n>sw_value</span><span class=p>)</span> <span class=p>{</span>
         <span class=k>if</span> <span class=p>(</span><span class=n>bt</span><span class=o>-&gt;</span><span class=n>cnt_sw</span> <span class=o>==</span> <span class=n>LONG_HOLD_LEVEL7</span><span class=p>)</span><span class=n>bt</span><span class=o>-&gt;</span><span class=n>flag</span><span class=p>.</span><span class=n>long_holding_7</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
         <span class=k>if</span> <span class=p>(</span><span class=n>bt</span><span class=o>-&gt;</span><span class=n>cnt_sw</span> <span class=o>==</span> <span class=n>LONG_HOLD_LEVEL6</span><span class=p>)</span><span class=n>bt</span><span class=o>-&gt;</span><span class=n>flag</span><span class=p>.</span><span class=n>long_holding_6</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
@@ -690,7 +690,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
     <span class=n>INTCONbits</span><span class=p>.</span><span class=n>PEIE</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
 <span class=p>}</span>
 
-<span class=kt>void</span> <span class=nf>delay</span><span class=p>(</span><span class=n>uint16_t</span> <span class=n>t</span><span class=p>)</span> <span class=p>{</span>
+<span class=kt>void</span> <span class=nf>delay</span><span class=p>(</span><span class=kt>uint16_t</span> <span class=n>t</span><span class=p>)</span> <span class=p>{</span>
     <span class=k>while</span> <span class=p>(</span><span class=n>t</span><span class=o>--</span><span class=p>)</span><span class=n>__delay_ms</span><span class=p>(</span><span class=mi>1</span><span class=p>);</span>
 <span class=p>}</span>
 
@@ -713,7 +713,7 @@ PIC18F27J53は、リアルタイムクロック&カレンダー(RTCC)モジュ�
                     <span class=n>now</span><span class=p>.</span><span class=n>hh</span><span class=p>,</span>
                     <span class=n>now</span><span class=p>.</span><span class=n>mm</span><span class=p>,</span>
                     <span class=n>now</span><span class=p>.</span><span class=n>ss</span><span class=p>);</span>
-            <span class=k>for</span> <span class=p>(</span><span class=n>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>str</span><span class=p>[</span><span class=n>i</span><span class=p>];</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+            <span class=k>for</span> <span class=p>(</span><span class=kt>uint8_t</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>str</span><span class=p>[</span><span class=n>i</span><span class=p>];</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
                 <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>PIR1bits</span><span class=p>.</span><span class=n>TXIF</span><span class=p>);</span> <span class=c1>//送信完了まで待つ
 </span><span class=c1></span>                <span class=n>TXREG1</span> <span class=o>=</span> <span class=n>str</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
             <span class=p>}</span>

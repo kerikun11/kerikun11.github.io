@@ -22,7 +22,7 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
   <span class=nl>public</span><span class=p>:</span>
     <span class=n>TaskBase</span><span class=p>()</span> <span class=o>=</span> <span class=n>delete</span><span class=p>;</span>
 
-    <span class=n>TaskBase</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span> <span class=o>*</span><span class=n>_name</span><span class=p>,</span> <span class=kt>int</span> <span class=n>_priority</span><span class=p>,</span> <span class=n>uint32_t</span> <span class=n>_stack_size</span> <span class=o>=</span> <span class=n>configMINIMAL_STACK_SIZE</span><span class=p>)</span>
+    <span class=n>TaskBase</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span> <span class=o>*</span><span class=n>_name</span><span class=p>,</span> <span class=kt>int</span> <span class=n>_priority</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>_stack_size</span> <span class=o>=</span> <span class=n>configMINIMAL_STACK_SIZE</span><span class=p>)</span>
       <span class=o>:</span> <span class=n>name</span><span class=p>(</span><span class=n>_name</span><span class=p>),</span> <span class=n>priority</span><span class=p>(</span><span class=n>_priority</span><span class=p>),</span> <span class=n>stack_size</span><span class=p>(</span><span class=n>_stack_size</span><span class=p>)</span> <span class=p>{</span>
     <span class=p>}</span>
     <span class=n>virtual</span> <span class=o>~</span><span class=n>TaskBase</span><span class=p>()</span> <span class=p>{</span>
@@ -47,7 +47,7 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
     <span class=n>xTaskHandle</span> <span class=n>handle</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
     <span class=k>const</span> <span class=kt>char</span> <span class=o>*</span><span class=n>name</span><span class=p>;</span>
     <span class=kt>int</span> <span class=n>priority</span><span class=p>;</span>
-    <span class=n>uint32_t</span> <span class=n>stack_size</span><span class=p>;</span>
+    <span class=kt>uint32_t</span> <span class=n>stack_size</span><span class=p>;</span>
 
     <span class=n>virtual</span> <span class=kt>void</span> <span class=nf>task</span><span class=p>()</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
 
@@ -55,7 +55,7 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
       <span class=n>static_cast</span><span class=o>&lt;</span><span class=n>TaskBase</span><span class=o>*&gt;</span><span class=p>(</span><span class=n>task_instance</span><span class=p>)</span><span class=o>-&gt;</span><span class=n>task</span><span class=p>();</span>
     <span class=p>}</span>
 <span class=p>};</span>
-</code></pre></div><h2 id=ブザークラス>ブザークラス</h2><p>圧電スピーカを鳴らすライブラリです。</p><div class=highlight><pre class=chroma><code class=language-c data-lang=c><span class=kt>void</span> <span class=n>Buzzer</span><span class=o>::</span><span class=n>sound</span><span class=p>(</span><span class=n>note_t</span> <span class=n>note</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>octave</span><span class=p>,</span> <span class=n>uint32_t</span> <span class=n>time_ms</span><span class=p>);</span>
+</code></pre></div><h2 id=ブザークラス>ブザークラス</h2><p>圧電スピーカを鳴らすライブラリです。</p><div class=highlight><pre class=chroma><code class=language-c data-lang=c><span class=kt>void</span> <span class=n>Buzzer</span><span class=o>::</span><span class=n>sound</span><span class=p>(</span><span class=n>note_t</span> <span class=n>note</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>octave</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>time_ms</span><span class=p>);</span>
 </code></pre></div><p>この関数に音階、オクターブ、鳴らす時間を与えると自分で好きなメロディを作ることができます。その時は<code>enum Music</code>に新しいエントリを追加して、下のswitch文の中に書いてください。</p><h3 id=buzzerh>Buzzer.h</h3><div class=highlight><pre class=chroma><code class=language-c data-lang=c><span class=cp>#pragma once
 </span><span class=cp></span>
 <span class=cp>#include</span> <span class=cpf>&lt;Arduino.h&gt;</span><span class=cp>
@@ -67,7 +67,7 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
 </span><span class=cp></span>
 <span class=n>class</span> <span class=nl>Buzzer</span> <span class=p>:</span> <span class=n>TaskBase</span> <span class=p>{</span>
   <span class=nl>public</span><span class=p>:</span>
-    <span class=n>Buzzer</span><span class=p>(</span><span class=kt>int</span> <span class=n>pin</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>ledc_channel</span><span class=p>)</span><span class=o>:</span> <span class=n>TaskBase</span><span class=p>(</span><span class=s>&#34;Buzzer Task&#34;</span><span class=p>,</span> <span class=n>BUZZER_TASK_PRIORITY</span><span class=p>,</span> <span class=n>BUZZER_TASK_STACK_SIZE</span><span class=p>),</span> <span class=n>pin</span><span class=p>(</span><span class=n>pin</span><span class=p>),</span> <span class=n>ledc_channel</span><span class=p>(</span><span class=n>ledc_channel</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>Buzzer</span><span class=p>(</span><span class=kt>int</span> <span class=n>pin</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>ledc_channel</span><span class=p>)</span><span class=o>:</span> <span class=n>TaskBase</span><span class=p>(</span><span class=s>&#34;Buzzer Task&#34;</span><span class=p>,</span> <span class=n>BUZZER_TASK_PRIORITY</span><span class=p>,</span> <span class=n>BUZZER_TASK_STACK_SIZE</span><span class=p>),</span> <span class=n>pin</span><span class=p>(</span><span class=n>pin</span><span class=p>),</span> <span class=n>ledc_channel</span><span class=p>(</span><span class=n>ledc_channel</span><span class=p>)</span> <span class=p>{</span>
       <span class=n>playList</span> <span class=o>=</span> <span class=n>xQueueCreate</span><span class=p>(</span><span class=n>BUZZER_QUEUE_SIZE</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=k>enum</span> <span class=n>Music</span><span class=p>));</span>
       <span class=n>ledcSetup</span><span class=p>(</span><span class=n>ledc_channel</span><span class=p>,</span> <span class=mi>880</span><span class=p>,</span> <span class=mi>4</span><span class=p>);</span>
       <span class=n>ledcAttachPin</span><span class=p>(</span><span class=n>pin</span><span class=p>,</span> <span class=n>ledc_channel</span><span class=p>);</span>
@@ -87,13 +87,13 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
     <span class=p>}</span>
   <span class=nl>private</span><span class=p>:</span>
     <span class=kt>int</span> <span class=n>pin</span><span class=p>;</span>
-    <span class=n>uint8_t</span> <span class=n>ledc_channel</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>ledc_channel</span><span class=p>;</span>
     <span class=n>xQueueHandle</span> <span class=n>playList</span><span class=p>;</span>
-    <span class=kt>void</span> <span class=nf>sound</span><span class=p>(</span><span class=k>const</span> <span class=n>note_t</span> <span class=n>note</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>octave</span><span class=p>,</span> <span class=n>uint32_t</span> <span class=n>time_ms</span><span class=p>)</span> <span class=p>{</span>
+    <span class=kt>void</span> <span class=nf>sound</span><span class=p>(</span><span class=k>const</span> <span class=n>note_t</span> <span class=n>note</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>octave</span><span class=p>,</span> <span class=kt>uint32_t</span> <span class=n>time_ms</span><span class=p>)</span> <span class=p>{</span>
       <span class=n>ledcWriteNote</span><span class=p>(</span><span class=n>ledc_channel</span><span class=p>,</span> <span class=n>note</span><span class=p>,</span> <span class=n>octave</span><span class=p>);</span>
       <span class=n>vTaskDelay</span><span class=p>(</span><span class=n>time_ms</span> <span class=o>/</span> <span class=n>portTICK_RATE_MS</span><span class=p>);</span>
     <span class=p>}</span>
-    <span class=kt>void</span> <span class=nf>mute</span><span class=p>(</span><span class=n>uint32_t</span> <span class=n>time_ms</span> <span class=o>=</span> <span class=mi>400</span><span class=p>)</span> <span class=p>{</span>
+    <span class=kt>void</span> <span class=nf>mute</span><span class=p>(</span><span class=kt>uint32_t</span> <span class=n>time_ms</span> <span class=o>=</span> <span class=mi>400</span><span class=p>)</span> <span class=p>{</span>
       <span class=n>ledcWrite</span><span class=p>(</span><span class=n>ledc_channel</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
       <span class=n>vTaskDelay</span><span class=p>(</span><span class=n>time_ms</span> <span class=o>/</span> <span class=n>portTICK_RATE_MS</span><span class=p>);</span>
     <span class=p>}</span>
@@ -189,16 +189,16 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
     <span class=n>virtual</span> <span class=o>~</span><span class=n>Button</span><span class=p>()</span> <span class=p>{}</span>
 
     <span class=k>union</span> <span class=p>{</span>
-      <span class=n>uint8_t</span> <span class=n>flags</span><span class=p>;</span>                 <span class=cm>/**&lt; all flags             */</span>
+      <span class=kt>uint8_t</span> <span class=n>flags</span><span class=p>;</span>                 <span class=cm>/**&lt; all flags             */</span>
       <span class=k>struct</span> <span class=p>{</span>
-        <span class=n>uint8_t</span> <span class=nl>pressed</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>         <span class=cm>/**&lt; pressed               */</span>
-        <span class=n>uint8_t</span> <span class=nl>long_pressed_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>  <span class=cm>/**&lt; long-pressed level 1  */</span>
-        <span class=n>uint8_t</span> <span class=nl>long_pressed_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>  <span class=cm>/**&lt; long-pressed level 2  */</span>
-        <span class=n>uint8_t</span> <span class=nl>long_pressed_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>  <span class=cm>/**&lt; long-pressed level 3  */</span>
-        <span class=n>uint8_t</span> <span class=nl>pressing</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>        <span class=cm>/**&lt; pressing              */</span>
-        <span class=n>uint8_t</span> <span class=nl>long_pressing_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=cm>/**&lt; long-pressing level 1 */</span>
-        <span class=n>uint8_t</span> <span class=nl>long_pressing_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=cm>/**&lt; long-pressing level 2 */</span>
-        <span class=n>uint8_t</span> <span class=nl>long_pressing_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=cm>/**&lt; long-pressing level 3 */</span>
+        <span class=kt>uint8_t</span> <span class=nl>pressed</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>         <span class=cm>/**&lt; pressed               */</span>
+        <span class=kt>uint8_t</span> <span class=nl>long_pressed_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>  <span class=cm>/**&lt; long-pressed level 1  */</span>
+        <span class=kt>uint8_t</span> <span class=nl>long_pressed_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>  <span class=cm>/**&lt; long-pressed level 2  */</span>
+        <span class=kt>uint8_t</span> <span class=nl>long_pressed_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>  <span class=cm>/**&lt; long-pressed level 3  */</span>
+        <span class=kt>uint8_t</span> <span class=nl>pressing</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span>        <span class=cm>/**&lt; pressing              */</span>
+        <span class=kt>uint8_t</span> <span class=nl>long_pressing_1</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=cm>/**&lt; long-pressing level 1 */</span>
+        <span class=kt>uint8_t</span> <span class=nl>long_pressing_2</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=cm>/**&lt; long-pressing level 2 */</span>
+        <span class=kt>uint8_t</span> <span class=nl>long_pressing_3</span> <span class=p>:</span> <span class=mi>1</span><span class=p>;</span> <span class=cm>/**&lt; long-pressing level 3 */</span>
       <span class=p>};</span>
     <span class=p>};</span>
   <span class=nl>private</span><span class=p>:</span>

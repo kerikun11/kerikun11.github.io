@@ -63,11 +63,11 @@
 
 <span class=cm>/** FUNCTIONS *****************************************************/</span>
 <span class=k>static</span> <span class=kt>void</span> <span class=nf>USB_CDC_buffer_init</span><span class=p>(</span><span class=kt>void</span><span class=p>);</span>
-<span class=k>static</span> <span class=kt>void</span> <span class=nf>USB_CDC_send</span><span class=p>(</span><span class=n>uint16_t</span> <span class=n>length</span><span class=p>);</span>
-<span class=k>static</span> <span class=n>uint8_t</span> <span class=nf>USB_CDC_get</span><span class=p>(</span><span class=kt>void</span><span class=p>);</span>
+<span class=k>static</span> <span class=kt>void</span> <span class=nf>USB_CDC_send</span><span class=p>(</span><span class=kt>uint16_t</span> <span class=n>length</span><span class=p>);</span>
+<span class=k>static</span> <span class=kt>uint8_t</span> <span class=nf>USB_CDC_get</span><span class=p>(</span><span class=kt>void</span><span class=p>);</span>
 
 <span class=k>static</span> <span class=kt>void</span> <span class=nf>APP_DeviceCDCBasicDemoInitialize</span><span class=p>();</span>
-<span class=kt>bool</span> <span class=nf>USER_USB_CALLBACK_EVENT_HANDLER</span><span class=p>(</span><span class=n>USB_EVENT</span> <span class=n>event</span><span class=p>,</span> <span class=kt>void</span> <span class=o>*</span><span class=n>pdata</span><span class=p>,</span> <span class=n>uint16_t</span> <span class=n>size</span><span class=p>);</span>
+<span class=kt>bool</span> <span class=nf>USER_USB_CALLBACK_EVENT_HANDLER</span><span class=p>(</span><span class=n>USB_EVENT</span> <span class=n>event</span><span class=p>,</span> <span class=kt>void</span> <span class=o>*</span><span class=n>pdata</span><span class=p>,</span> <span class=kt>uint16_t</span> <span class=n>size</span><span class=p>);</span>
 
 <span class=cp>#endif
 </span></code></pre></div><h4 id=my_ringbufh>My_ringbuf.h</h4><div class=highlight><pre class=chroma><code class=language-c data-lang=c><span class=cm>/* 
@@ -86,23 +86,23 @@
 </span><span class=c1>// headは次に入れるバッファを指す。tailは次に出すバッファを指す。
 </span><span class=c1></span>
 <span class=k>typedef</span> <span class=k>struct</span> <span class=n>ringbuf</span> <span class=p>{</span>
-    <span class=n>uint8_t</span> <span class=o>*</span><span class=n>buf</span><span class=p>;</span>
-    <span class=n>uint16_t</span> <span class=n>size</span><span class=p>;</span>
-    <span class=n>uint16_t</span> <span class=n>head</span><span class=p>;</span>
-    <span class=n>uint16_t</span> <span class=n>tail</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=o>*</span><span class=n>buf</span><span class=p>;</span>
+    <span class=kt>uint16_t</span> <span class=n>size</span><span class=p>;</span>
+    <span class=kt>uint16_t</span> <span class=n>head</span><span class=p>;</span>
+    <span class=kt>uint16_t</span> <span class=n>tail</span><span class=p>;</span>
 <span class=p>}</span> <span class=n>ringbuf_t</span><span class=p>;</span>
 
-<span class=kt>void</span> <span class=nf>ringbuf_init</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=o>*</span><span class=n>internal_buf</span><span class=p>,</span> <span class=n>uint16_t</span> <span class=n>bufsize</span><span class=p>);</span>
+<span class=kt>void</span> <span class=nf>ringbuf_init</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=o>*</span><span class=n>internal_buf</span><span class=p>,</span> <span class=kt>uint16_t</span> <span class=n>bufsize</span><span class=p>);</span>
 
-<span class=n>uint16_t</span> <span class=nf>ringbuf_num</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>);</span>
+<span class=kt>uint16_t</span> <span class=nf>ringbuf_num</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>);</span>
 
-<span class=kt>void</span> <span class=nf>ringbuf_put</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>data</span><span class=p>);</span>
+<span class=kt>void</span> <span class=nf>ringbuf_put</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>data</span><span class=p>);</span>
 
-<span class=kt>void</span> <span class=nf>ringbuf_put_num</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>,</span> <span class=k>const</span> <span class=n>uint16_t</span> <span class=n>value</span><span class=p>,</span> <span class=n>uint8_t</span> <span class=n>digits</span><span class=p>);</span>
+<span class=kt>void</span> <span class=nf>ringbuf_put_num</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>,</span> <span class=k>const</span> <span class=kt>uint16_t</span> <span class=n>value</span><span class=p>,</span> <span class=kt>uint8_t</span> <span class=n>digits</span><span class=p>);</span>
 
 <span class=kt>void</span> <span class=nf>ringbuf_put_str</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>,</span> <span class=k>const</span> <span class=kt>char</span> <span class=o>*</span><span class=n>str</span><span class=p>);</span>
 
-<span class=n>uint8_t</span> <span class=nf>ringbuf_pop</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>);</span>
+<span class=kt>uint8_t</span> <span class=nf>ringbuf_pop</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>);</span>
 
 <span class=kt>void</span> <span class=nf>ringbuf_backspace</span><span class=p>(</span><span class=n>ringbuf_t</span> <span class=o>*</span><span class=n>rb</span><span class=p>);</span>
 
@@ -185,7 +185,7 @@
 	<span class=n>INTCONbits</span><span class=p>.</span><span class=n>GIE</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=c1>// 関数の二重呼び出しを防ぐために割り込み禁止
 </span><span class=c1></span>	<span class=c1>// 受信したデータをそのまま送信する。
 </span><span class=c1></span>	<span class=k>if</span> <span class=p>(</span><span class=n>ringbuf_num</span><span class=p>(</span><span class=o>&amp;</span><span class=n>usb_rx</span><span class=p>))</span> <span class=p>{</span>
-	    <span class=n>uint8_t</span> <span class=n>data</span> <span class=o>=</span> <span class=n>ringbuf_pop</span><span class=p>(</span><span class=o>&amp;</span><span class=n>usb_rx</span><span class=p>);</span>
+	    <span class=kt>uint8_t</span> <span class=n>data</span> <span class=o>=</span> <span class=n>ringbuf_pop</span><span class=p>(</span><span class=o>&amp;</span><span class=n>usb_rx</span><span class=p>);</span>
 	    <span class=n>ringbuf_put</span><span class=p>(</span><span class=o>&amp;</span><span class=n>usb_tx</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
 	<span class=p>}</span>
 	<span class=n>USB_CDC_task</span><span class=p>();</span>

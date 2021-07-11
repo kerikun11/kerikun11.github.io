@@ -56,8 +56,8 @@ PICで時計
 <span class=cp>#define _XTAL_FREQ 4000000
 </span><span class=cp></span>
 <span class=kt>void</span> <span class=nf>dinamic</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span>
-    <span class=k>static</span> <span class=n>uint8_t</span> <span class=n>dinamic_counter</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
-    <span class=k>static</span> <span class=n>uint8_t</span> <span class=n>sec</span><span class=p>,</span> <span class=n>min</span><span class=p>,</span> <span class=n>hou</span><span class=p>,</span> <span class=n>wkd</span><span class=p>;</span>
+    <span class=k>static</span> <span class=kt>uint8_t</span> <span class=n>dinamic_counter</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+    <span class=k>static</span> <span class=kt>uint8_t</span> <span class=n>sec</span><span class=p>,</span> <span class=n>min</span><span class=p>,</span> <span class=n>hou</span><span class=p>,</span> <span class=n>wkd</span><span class=p>;</span>
     <span class=k>switch</span> <span class=p>(</span><span class=n>dinamic_counter</span><span class=p>)</span> <span class=p>{</span>
         <span class=k>case</span> <span class=mi>1</span><span class=o>:</span>
             <span class=n>print_7seg</span><span class=p>(</span><span class=mi>4</span><span class=p>,</span> <span class=sc>&#39;0&#39;</span> <span class=o>+</span> <span class=p>(</span><span class=n>min</span> <span class=o>&amp;</span> <span class=mh>0x0F</span><span class=p>));</span>
@@ -110,7 +110,7 @@ PICで時計
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR0</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR1</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
             <span class=k>while</span> <span class=p>(</span><span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCSYNC</span><span class=p>);</span>
-            <span class=n>uint8_t</span> <span class=n>val</span> <span class=o>=</span> <span class=n>RTCVALH</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=n>val</span> <span class=o>=</span> <span class=n>RTCVALH</span><span class=p>;</span>
             <span class=n>val</span> <span class=o>=</span> <span class=p>((</span><span class=n>val</span> <span class=o>&gt;&gt;</span> <span class=mi>4</span><span class=p>)</span><span class=o>*</span><span class=mi>10</span> <span class=o>+</span> <span class=p>(</span><span class=n>val</span> <span class=o>&amp;</span> <span class=mh>0x0F</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>)</span> <span class=o>%</span> <span class=mi>60</span><span class=p>;</span>
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR0</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR1</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
@@ -125,7 +125,7 @@ PICで時計
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR0</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR1</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
             <span class=k>while</span> <span class=p>(</span><span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCSYNC</span><span class=p>);</span>
-            <span class=n>uint8_t</span> <span class=n>val</span> <span class=o>=</span> <span class=n>RTCVALL</span><span class=p>;</span>
+            <span class=kt>uint8_t</span> <span class=n>val</span> <span class=o>=</span> <span class=n>RTCVALL</span><span class=p>;</span>
             <span class=n>val</span> <span class=o>=</span> <span class=p>((</span><span class=n>val</span> <span class=o>&gt;&gt;</span> <span class=mi>4</span><span class=p>)</span><span class=o>*</span><span class=mi>10</span> <span class=o>+</span> <span class=p>(</span><span class=n>val</span> <span class=o>&amp;</span> <span class=mh>0x0F</span><span class=p>)</span> <span class=o>+</span> <span class=mi>1</span><span class=p>)</span> <span class=o>%</span> <span class=mi>24</span><span class=p>;</span>
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR0</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
             <span class=n>RTCCFGbits</span><span class=p>.</span><span class=n>RTCPTR1</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
@@ -203,7 +203,7 @@ PICで時計
 <span class=cp>#include</span> <span class=cpf>&lt;xc.h&gt;</span><span class=cp>
 </span><span class=cp>#include</span> <span class=cpf>&lt;stdint.h&gt;</span><span class=cp>
 </span><span class=cp></span>
-    <span class=kt>void</span> <span class=n>print_7seg</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>col</span><span class=p>,</span> <span class=kt>char</span> <span class=n>c</span><span class=p>);</span>
+    <span class=kt>void</span> <span class=n>print_7seg</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>col</span><span class=p>,</span> <span class=kt>char</span> <span class=n>c</span><span class=p>);</span>
 
 <span class=cp>#ifdef	__cplusplus
 </span><span class=cp></span><span class=p>}</span>
@@ -218,7 +218,7 @@ PICで時計
 </span><span class=cp>#define SEG_4   LATC6
 </span><span class=cp>#define SEG_5   LATA3
 </span><span class=cp></span>
-<span class=k>static</span> <span class=kt>void</span> <span class=nf>print_column</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>col</span><span class=p>)</span> <span class=p>{</span>
+<span class=k>static</span> <span class=kt>void</span> <span class=nf>print_column</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>col</span><span class=p>)</span> <span class=p>{</span>
     <span class=n>SEG_1</span> <span class=o>=</span> <span class=p>(</span><span class=n>col</span> <span class=o>==</span> <span class=mi>1</span><span class=p>);</span>
     <span class=n>SEG_2</span> <span class=o>=</span> <span class=p>(</span><span class=n>col</span> <span class=o>==</span> <span class=mi>2</span><span class=p>);</span>
     <span class=n>SEG_3</span> <span class=o>=</span> <span class=p>(</span><span class=n>col</span> <span class=o>==</span> <span class=mi>3</span><span class=p>);</span>
@@ -226,13 +226,13 @@ PICで時計
     <span class=n>SEG_5</span> <span class=o>=</span> <span class=p>(</span><span class=n>col</span> <span class=o>==</span> <span class=mi>5</span><span class=p>);</span>
 <span class=p>}</span>
 
-<span class=k>static</span> <span class=kt>void</span> <span class=nf>print_pattern</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>pat</span><span class=p>)</span> <span class=p>{</span>
+<span class=k>static</span> <span class=kt>void</span> <span class=nf>print_pattern</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>pat</span><span class=p>)</span> <span class=p>{</span>
     <span class=n>LATB</span> <span class=o>=</span> <span class=o>~</span><span class=n>pat</span><span class=p>;</span>
 <span class=p>}</span>
 
-<span class=kt>void</span> <span class=nf>print_7seg</span><span class=p>(</span><span class=n>uint8_t</span> <span class=n>col</span><span class=p>,</span> <span class=kt>char</span> <span class=n>c</span><span class=p>)</span> <span class=p>{</span>
+<span class=kt>void</span> <span class=nf>print_7seg</span><span class=p>(</span><span class=kt>uint8_t</span> <span class=n>col</span><span class=p>,</span> <span class=kt>char</span> <span class=n>c</span><span class=p>)</span> <span class=p>{</span>
     <span class=c1>// BGACDEHF
-</span><span class=c1></span>    <span class=k>static</span> <span class=n>uint8_t</span> <span class=n>pattern</span><span class=p>[</span><span class=mi>10</span><span class=p>]</span> <span class=o>=</span> <span class=p>{</span>
+</span><span class=c1></span>    <span class=k>static</span> <span class=kt>uint8_t</span> <span class=n>pattern</span><span class=p>[</span><span class=mi>10</span><span class=p>]</span> <span class=o>=</span> <span class=p>{</span>
         <span class=mi>0</span><span class=n>b10111110</span><span class=p>,</span> <span class=c1>//0
 </span><span class=c1></span>        <span class=mi>0</span><span class=n>b10010000</span><span class=p>,</span> <span class=c1>//1
 </span><span class=c1></span>        <span class=mi>0</span><span class=n>b11101100</span><span class=p>,</span> <span class=c1>//2
@@ -244,7 +244,7 @@ PICで時計
 </span><span class=c1></span>        <span class=mi>0</span><span class=n>b11111110</span><span class=p>,</span> <span class=c1>//8
 </span><span class=c1></span>        <span class=mi>0</span><span class=n>b11111010</span><span class=p>,</span> <span class=c1>//9
 </span><span class=c1></span>    <span class=p>};</span>
-    <span class=n>uint8_t</span> <span class=n>pat</span><span class=p>;</span>
+    <span class=kt>uint8_t</span> <span class=n>pat</span><span class=p>;</span>
     <span class=k>switch</span> <span class=p>(</span><span class=n>c</span><span class=p>)</span> <span class=p>{</span>
         <span class=k>case</span> <span class=sc>&#39; &#39;</span><span class=o>:</span>
             <span class=n>pat</span> <span class=o>=</span> <span class=mi>0</span><span class=n>b00000000</span><span class=p>;</span>

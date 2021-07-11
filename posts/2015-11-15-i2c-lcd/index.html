@@ -59,7 +59,7 @@
 </span><span class=cp></span>
 <span class=n>st7032_state_t</span> <span class=n>st7032_state</span><span class=p>;</span>
 <span class=n>ringbuf_t</span> <span class=n>lcd_tx</span><span class=p>;</span>
-<span class=n>uint8_t</span> <span class=n>st7032_flag</span><span class=p>;</span>
+<span class=kt>uint8_t</span> <span class=n>st7032_flag</span><span class=p>;</span>
 
 <span class=kt>void</span> <span class=nf>ST7032_put</span><span class=p>(</span><span class=kt>char</span> <span class=n>c</span><span class=p>)</span> <span class=p>{</span>
 	<span class=n>ringbuf_put</span><span class=p>(</span><span class=o>&amp;</span><span class=n>lcd_tx</span><span class=p>,</span> <span class=p>(</span><span class=n>ST7032_ADDRESS</span> <span class=o>&lt;&lt;</span> <span class=mi>1</span><span class=p>)</span> <span class=o>+</span> <span class=n>W_0</span><span class=p>);</span>
@@ -83,7 +83,7 @@
 		<span class=c1>// SSP is busy
 </span><span class=c1></span>		<span class=k>return</span><span class=p>;</span>
 	<span class=p>}</span>
-	<span class=k>static</span> <span class=n>uint16_t</span> <span class=n>wait</span><span class=p>;</span>
+	<span class=k>static</span> <span class=kt>uint16_t</span> <span class=n>wait</span><span class=p>;</span>
 	<span class=k>static</span> <span class=n>st7032_state_t</span> <span class=n>st7032_state</span> <span class=o>=</span> <span class=n>ST7032_IDLE</span><span class=p>;</span>
 
 	<span class=k>switch</span> <span class=p>(</span><span class=n>st7032_state</span><span class=p>)</span> <span class=p>{</span>
