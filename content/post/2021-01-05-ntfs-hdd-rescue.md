@@ -732,3 +732,9 @@ HDDもSDDも突然壊れます。
 GPTパーティションだけでなくNTFSのブートセクタまで破損していたのでもう無理かと思いましたが、あきらめずにいろいろ試してなんとか救出することができました。
 
 今回紹介した方法が今後誰かの役に立てれば幸いです。
+
+### 参考文献
+
+- [GNU ddrescue Manual](https://www.gnu.org/software/ddrescue/manual/ddrescue_manual.html#Invoking-ddrescue)
+- [dd したWindowsのディスクイメージ（NTFS）をマウントする方法](https://takuya-1st.hatenablog.jp/entry/20101004/1286200142)
+- [破損または削除されたNTFSパーティションの回復](https://qastack.jp/ubuntu/775579/recovering-broken-or-deleted-ntfs-partitions)
