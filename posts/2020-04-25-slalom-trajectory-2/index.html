@@ -1,43 +1,435 @@
-<!doctype html><html class=no-js lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=google-site-verification content="EGHRTn1Bed7L7Ntdi0a-iywpUXqKpLm_ISqeeMzi5sY"><title>なめらかなスラロームの設計② 設計方法 - KERI's Lab</title><script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><meta property="og:title" content="なめらかなスラロームの設計② 設計方法"><meta property="og:description" content="前回の記事
+<!doctype html><html class=no-js lang=ja>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=google-site-verification content="EGHRTn1Bed7L7Ntdi0a-iywpUXqKpLm_ISqeeMzi5sY">
+<title>なめらかなスラロームの設計② 設計方法 - KERI's Lab</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<meta property="og:title" content="なめらかなスラロームの設計② 設計方法">
+<meta property="og:description" content="前回の記事
 の続きです。
-今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。"><meta property="og:type" content="article"><meta property="og:url" content="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/icon.png"><meta property="article:published_time" content="2020-04-25T12:00:00+09:00"><meta property="article:modified_time" content="2020-04-25T12:00:00+09:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="なめらかなスラロームの設計② 設計方法"><meta name=twitter:description content="前回の記事
+今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/icon.png">
+<meta property="article:published_time" content="2020-04-25T12:00:00+09:00">
+<meta property="article:modified_time" content="2020-04-25T12:00:00+09:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="なめらかなスラロームの設計② 設計方法">
+<meta name=twitter:description content="前回の記事
 の続きです。
-今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。"><meta name=twitter:site content="@kerikun11"><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/syntax.css><link rel="shortcut icon" href=/favicon.ico><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-103856564-1','auto'),ga('send','pageview'))</script><script async src=https://www.google-analytics.com/analytics.js></script></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="KERI's Lab" rel=home><div class="logo__item logo__text"><div class=logo__title>KERI's Lab</div><div class=logo__tagline>KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
-<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li><li class=menu__item><a class=menu__link href=/works/><span class=menu__text>Works</span></a></li><li class=menu__item><a class=menu__link href=/categories/><span class=menu__text>Categories</span></a></li><li class=menu__item><a class=menu__link href=/tags/><span class=menu__text>Tags</span></a></li><li class=menu__item><a class=menu__link href=/archives/><span class=menu__text>Archives</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><figure class=post__thumbnail><img src=icon.png alt="なめらかなスラロームの設計② 設計方法"></figure><h1 class=post__title>なめらかなスラロームの設計② 設計方法</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2020-04-25T12:00:00+09:00>2020-04-25</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/ rel=category>説明記事</a></span></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><span class=meta__text><a class=meta__link href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=category>マイクロマウス</a>, <a class=meta__link href=/tags/%E5%88%B6%E5%BE%A1/ rel=category>制御</a></span></div></div></header><a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script><div class="content post__content clearfix"><p><a href=/posts/2020-04-25-slalom-trajectory-1/>前回の記事</a>
-の続きです。</p><p>今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。</p><h3 id=なめらかなスラロームの設計-目次>なめらかなスラロームの設計 目次</h3><ul><li><a href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a></li><li><a href=/posts/2020-04-25-slalom-trajectory-2/>なめらかなスラロームの設計② 設計方法</a></li><li><a href=/posts/2020-04-25-slalom-trajectory-3/>なめらかなスラロームの設計③ C++による実装</a></li><li><a href=/posts/2020-04-25-slalom-trajectory-4/>なめらかなスラロームの設計④ 生成結果</a></li></ul><h2 id=手順の概要>手順の概要</h2><p>今回のスラローム設計は、事前の軌道設計と走行時の適用に分けて考えることができます。</p><ol><li>事前にコンピュータで、 <strong>スラローム軌道の形状</strong> を設計する</li><li>走行時にマイコンで、そのときの並進速度をもとに <strong>軌道をスケーリング</strong> する</li></ol><p>まずはじめに、それぞれの概要を説明します。</p><h3 id=事前の形状設計の概要>事前の形状設計の概要</h3><p>スラローム走行をするときには、ターンの角度や移動距離などさまざまな拘束条件があります。</p><p>事前の形状設計では、それらを満たすような軌道の <strong>形状</strong> を設計します。</p><p>このときに、スラローム <strong>前後に追加する直線</strong> の長さも決定します。</p><h3 id=走行時のスケーリングの概要>走行時のスケーリングの概要</h3><p>事前設計したスラローム形状は、設計した並進速度と角速度を同時に守って走行したときに実現する形状です。</p><p>そのため、走行中の並進速度でターンを走行したい場合は、その並進速度にあった角速度を再設計しなければなりません。</p><p>今回紹介する方法では角速度の関数形に注目して、適切にスケーリングを行うことで角速度を再設計します。</p><p>この方法を用いることで、任意の並進速度でターンに差し掛かったとしても、その並進速度を維持した状態でターンをすることができます。</p><p>走行時に行う必要があるので、このスケーリング処理はマイコン上で行うことになります。</p><h2 id=事前の概形設計>事前の概形設計</h2><p>それでは、具体的な設計方法を説明します。</p><p>例えば、マイクロマウスの探索90度ターンの軌道を設計する場合を考えます。</p><p><img src=slalom_xy.svg alt=スラローム形状></p><p>ターンの前後には、5 mm の直線を追加したので、カーブ部分の $(x,y)$ 変位は (40 mm, 40 mm) となります。</p><h3 id=座標のとり方>座標のとり方</h3><p>今回の記事では、$x$-$y$ 座標系を考え、初期状態の機体進行方向を $x$ 軸にとります。</p><p>姿勢角 $\theta$ は、$x$ 軸となす角を表します。</p><p>つまり、前進すると $x$ 座標が正になり、左折をすると $y$ 座標と角度 $\theta$ が正になり、右折ならば負になるという形です。</p><p><img src=coordinate.svg alt=座標系></p><h3 id=事前設計時に与える情報>事前設計時に与える情報</h3><p>ここで、今回スラローム形状を設計する上で必要な拘束条件を列挙します。</p><table><thead><tr><th>項目</th><th>変数</th><th>探索90度ターンの例</th><th>備考</th></tr></thead><tbody><tr><td>移動<strong>位置</strong></td><td>$(x_\mathrm{end},~y_\mathrm{end})$</td><td>(45, 45) [mm]</td><td>前後の追加直線を含めた変位</td></tr><tr><td>移動<strong>角度</strong></td><td>$\theta_\mathrm{end}$</td><td>$\pi/2$ [rad]</td><td>ターンの角度</td></tr><tr><td>曲線の$y$成分</td><td>$y_\mathrm{curve}$</td><td>40 [mm]</td><td>前後の追加直線の調整に使用</td></tr><tr><td>最大<strong>角躍度</strong></td><td>$\dddot{\theta}_{\max}$</td><td>1200 $\pi$ [rad/s/s/s]</td><td>応答を見ながら調整</td></tr><tr><td>最大<strong>角加速度</strong></td><td>$\ddot{\theta}_{\max}$</td><td>36 $\pi$ [rad/s/s]</td><td>応答を見ながら調整</td></tr><tr><td>最大<strong>角速度</strong></td><td>$\dot{\theta}_{\max}$</td><td>3 $\pi$ [rad/s]</td><td>応答を見ながら調整</td></tr></tbody></table><p><img src=input.svg alt=与える情報></p><h3 id=事前設計時に得られる情報>事前設計時に得られる情報</h3><p>次に、事前設計によって得られる情報です。</p><table><thead><tr><th>項目</th><th>変数</th><th>探索90度ターンの例</th><th>備考</th></tr></thead><tbody><tr><td>曲線変位</td><td>$(x_\mathrm{curve},~y_\mathrm{curve})$</td><td>(40, 40) [mm]</td><td>カーブ部分の変位</td></tr><tr><td>旋回 <strong>前直線</strong> 長</td><td>$l_1$</td><td>5 [mm]</td><td>カーブ前の直線の長さ</td></tr><tr><td>旋回 <strong>後直線</strong> 長</td><td>$l_2$</td><td>5 [mm]</td><td>カーブ後の直線の長さ</td></tr><tr><td>基準旋回<strong>時間</strong></td><td>$t_\mathrm{ref}$</td><td>0.28 [s]</td><td>カーブ部分にかかる時間</td></tr><tr><td>基準並進<strong>速度</strong></td><td>$v_\mathrm{ref}$</td><td>241.59 [mm/s]</td><td>後の計算で用いる定数</td></tr><tr><td>基準 <strong>角躍度</strong> 関数</td><td>$\dddot{\theta}_\mathrm{ref}(t)$</td><td>下図にプロット</td><td>$\ddot{\theta}_\mathrm{ref}(t)$ の時間微分</td></tr><tr><td>基準 <strong>角加速度</strong> 関数</td><td>$\ddot{\theta}_\mathrm{ref}(t)$</td><td>下図にプロット</td><td>$\omega_\mathrm{ref}(t)$ の時間微分</td></tr><tr><td>基準 <strong>角速度</strong> 関数</td><td>$\omega_\mathrm{ref}(t)$</td><td>下図にプロット</td><td>積分結果が移動角度 $\theta_\mathrm{end}$ と一致</td></tr><tr><td>基準 <strong>角度</strong> 関数</td><td>$\theta_\mathrm{ref}(t)$</td><td>下図にプロット</td><td>$\theta_\mathrm{ref}(0)=0$, $\theta_\mathrm{ref}(t_\mathrm{ref}) = \theta_\mathrm{end}$</td></tr></tbody></table><p>関数の具体的な形は<a href=/posts/2018-04-29-accel-designer1>参考記事</a>
-をご覧ください。</p><p><img src=curve_t.svg alt=角速度分布></p><h3 id=導出手順>導出手順</h3><ol><li>積分結果が移動角度 $\theta_\mathrm{end}$ となるなめらかな <strong>角速度分布</strong> 関数 $\omega_\mathrm{ref}(t)$ を求める</li><li>位置 $(x,y)$ の数値積分によって <strong>カーブの終点位置</strong> を求める</li><li>カーブの終点位置が目標位置 $(x_\mathrm{curve},y_\mathrm{curve})$ になるような基準並進速度 $v_\mathrm{ref}$ を求める</li><li>前後の直線を含めた移動距離が $(x_\mathrm{end},y_\mathrm{end})$ と一致するようにカーブ前後の直線の長さを求める</li></ol><p>それぞれの手順について、以下で説明していきます。</p><h3 id=なめらかな角速度の設計>なめらかな角速度の設計</h3><p>過去に紹介した<a href=/posts/2018-04-29-accel-designer1>なめらかな加速の設計方法</a>
-を利用して、なめらかな角速度の関数 $\omega(t)$ を求めます。</p><p>具体的には、参考記事の変数を以下のように割り当てて、各関数を入手します。</p><table><thead><tr><th>項目</th><th><a href=/posts/2018-04-29-accel-designer1>参考記事</a>
-における表記</th><th>本記事で設定する変数</th></tr></thead><tbody><tr><td><strong>拘束条件</strong></td><td></td><td></td></tr><tr><td>最大角躍度</td><td>$j_\max$</td><td>$\dddot{\theta}_{\max}$</td></tr><tr><td>最大角加速度</td><td>$a_\max$</td><td>$\ddot{\theta}_{\max}$</td></tr><tr><td>最大角速度</td><td>$v_\max$</td><td>$\dot{\theta}_{\max}$</td></tr><tr><td>始点速度</td><td>$v_\mathrm{start}$</td><td>0</td></tr><tr><td>目標速度</td><td>$v_\mathrm{target}$</td><td>0</td></tr><tr><td>移動距離</td><td>$d$</td><td>$\theta_\mathrm{end}$</td></tr><tr><td><strong>導出結果</strong></td><td></td><td></td></tr><tr><td>基準角躍度</td><td>$j(t)$</td><td>$\dddot{\theta}_\mathrm{ref}(t)$</td></tr><tr><td>基準角加速度</td><td>$a(t)$</td><td>$\ddot{\theta}_\mathrm{ref}(t)$</td></tr><tr><td>基準角速度</td><td>$v(t)$</td><td>$\dot{\theta}_\mathrm{ref}(t) =\omega_\mathrm{ref}(t)$</td></tr><tr><td>基準角度</td><td>$x(t)$</td><td>$\theta_\mathrm{ref}(t)$</td></tr></tbody></table><p>参考記事では並進速度の曲線加速について述べられているので、それを回転の角速度に変換して考えています。</p><p>この表のように設定することで以下のようななめらかな角速度軌道が得られます。</p><h3 id=数値積分>数値積分</h3><p>上記の方法で角度の関数 $\theta_\mathrm{ref}(t),~0\leq t \leq t_\mathrm{ref}$ が得られました。</p><p>この軌道を並進速度 $v$ で走行した場合、各時刻 $t$ における位置 $(x, y)$ は以下のように表されます。</p><div>$$
+今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。">
+<meta name=twitter:site content="@kerikun11">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/syntax.css>
+<link rel="shortcut icon" href=/favicon.ico>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-103856564-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class=logo>
+<a class=logo__link href=/ title="KERI's Lab" rel=home>
+<div class="logo__item logo__text">
+<div class=logo__title>KERI's Lab</div>
+<div class=logo__tagline>KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。</div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ul class=menu__list>
+<li class=menu__item>
+<a class=menu__link href=/>
+<span class=menu__text>Home</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/about/>
+<span class=menu__text>About</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/works/>
+<span class=menu__text>Works</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/categories/>
+<span class=menu__text>Categories</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/tags/>
+<span class=menu__text>Tags</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/archives/>
+<span class=menu__text>Archives</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<figure class=post__thumbnail>
+<img src=icon.png alt="なめらかなスラロームの設計② 設計方法">
+</figure>
+<h1 class=post__title>なめらかなスラロームの設計② 設計方法</h1>
+<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2020-04-25T12:00:00+09:00>2020-04-25</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/ rel=category>説明記事</a>
+</span>
+</div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><span class=meta__text><a class=meta__link href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=category>マイクロマウス</a>, <a class=meta__link href=/tags/%E5%88%B6%E5%BE%A1/ rel=category>制御</a>
+</span>
+</div></div>
+</header>
+<a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
+<div class="content post__content clearfix">
+<p><a href=/posts/2020-04-25-slalom-trajectory-1/>前回の記事</a>
+の続きです。</p>
+<p>今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。</p>
+<h3 id=なめらかなスラロームの設計-目次>なめらかなスラロームの設計 目次</h3>
+<ul>
+<li><a href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a>
+</li>
+<li><a href=/posts/2020-04-25-slalom-trajectory-2/>なめらかなスラロームの設計② 設計方法</a>
+</li>
+<li><a href=/posts/2020-04-25-slalom-trajectory-3/>なめらかなスラロームの設計③ C++による実装</a>
+</li>
+<li><a href=/posts/2020-04-25-slalom-trajectory-4/>なめらかなスラロームの設計④ 生成結果</a>
+</li>
+</ul>
+<h2 id=手順の概要>手順の概要</h2>
+<p>今回のスラローム設計は、事前の軌道設計と走行時の適用に分けて考えることができます。</p>
+<ol>
+<li>事前にコンピュータで、 <strong>スラローム軌道の形状</strong> を設計する</li>
+<li>走行時にマイコンで、そのときの並進速度をもとに <strong>軌道をスケーリング</strong> する</li>
+</ol>
+<p>まずはじめに、それぞれの概要を説明します。</p>
+<h3 id=事前の形状設計の概要>事前の形状設計の概要</h3>
+<p>スラローム走行をするときには、ターンの角度や移動距離などさまざまな拘束条件があります。</p>
+<p>事前の形状設計では、それらを満たすような軌道の <strong>形状</strong> を設計します。</p>
+<p>このときに、スラローム <strong>前後に追加する直線</strong> の長さも決定します。</p>
+<h3 id=走行時のスケーリングの概要>走行時のスケーリングの概要</h3>
+<p>事前設計したスラローム形状は、設計した並進速度と角速度を同時に守って走行したときに実現する形状です。</p>
+<p>そのため、走行中の並進速度でターンを走行したい場合は、その並進速度にあった角速度を再設計しなければなりません。</p>
+<p>今回紹介する方法では角速度の関数形に注目して、適切にスケーリングを行うことで角速度を再設計します。</p>
+<p>この方法を用いることで、任意の並進速度でターンに差し掛かったとしても、その並進速度を維持した状態でターンをすることができます。</p>
+<p>走行時に行う必要があるので、このスケーリング処理はマイコン上で行うことになります。</p>
+<h2 id=事前の概形設計>事前の概形設計</h2>
+<p>それでは、具体的な設計方法を説明します。</p>
+<p>例えば、マイクロマウスの探索90度ターンの軌道を設計する場合を考えます。</p>
+<p><img src=slalom_xy.svg alt=スラローム形状></p>
+<p>ターンの前後には、5 mm の直線を追加したので、カーブ部分の $(x,y)$ 変位は (40 mm, 40 mm) となります。</p>
+<h3 id=座標のとり方>座標のとり方</h3>
+<p>今回の記事では、$x$-$y$ 座標系を考え、初期状態の機体進行方向を $x$ 軸にとります。</p>
+<p>姿勢角 $\theta$ は、$x$ 軸となす角を表します。</p>
+<p>つまり、前進すると $x$ 座標が正になり、左折をすると $y$ 座標と角度 $\theta$ が正になり、右折ならば負になるという形です。</p>
+<p><img src=coordinate.svg alt=座標系></p>
+<h3 id=事前設計時に与える情報>事前設計時に与える情報</h3>
+<p>ここで、今回スラローム形状を設計する上で必要な拘束条件を列挙します。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>変数</th>
+<th>探索90度ターンの例</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>移動<strong>位置</strong></td>
+<td>$(x_\mathrm{end},~y_\mathrm{end})$</td>
+<td>(45, 45) [mm]</td>
+<td>前後の追加直線を含めた変位</td>
+</tr>
+<tr>
+<td>移動<strong>角度</strong></td>
+<td>$\theta_\mathrm{end}$</td>
+<td>$\pi/2$ [rad]</td>
+<td>ターンの角度</td>
+</tr>
+<tr>
+<td>曲線の$y$成分</td>
+<td>$y_\mathrm{curve}$</td>
+<td>40 [mm]</td>
+<td>前後の追加直線の調整に使用</td>
+</tr>
+<tr>
+<td>最大<strong>角躍度</strong></td>
+<td>$\dddot{\theta}_{\max}$</td>
+<td>1200 $\pi$ [rad/s/s/s]</td>
+<td>応答を見ながら調整</td>
+</tr>
+<tr>
+<td>最大<strong>角加速度</strong></td>
+<td>$\ddot{\theta}_{\max}$</td>
+<td>36 $\pi$ [rad/s/s]</td>
+<td>応答を見ながら調整</td>
+</tr>
+<tr>
+<td>最大<strong>角速度</strong></td>
+<td>$\dot{\theta}_{\max}$</td>
+<td>3 $\pi$ [rad/s]</td>
+<td>応答を見ながら調整</td>
+</tr>
+</tbody>
+</table>
+<p><img src=input.svg alt=与える情報></p>
+<h3 id=事前設計時に得られる情報>事前設計時に得られる情報</h3>
+<p>次に、事前設計によって得られる情報です。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>変数</th>
+<th>探索90度ターンの例</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>曲線変位</td>
+<td>$(x_\mathrm{curve},~y_\mathrm{curve})$</td>
+<td>(40, 40) [mm]</td>
+<td>カーブ部分の変位</td>
+</tr>
+<tr>
+<td>旋回 <strong>前直線</strong> 長</td>
+<td>$l_1$</td>
+<td>5 [mm]</td>
+<td>カーブ前の直線の長さ</td>
+</tr>
+<tr>
+<td>旋回 <strong>後直線</strong> 長</td>
+<td>$l_2$</td>
+<td>5 [mm]</td>
+<td>カーブ後の直線の長さ</td>
+</tr>
+<tr>
+<td>基準旋回<strong>時間</strong></td>
+<td>$t_\mathrm{ref}$</td>
+<td>0.28 [s]</td>
+<td>カーブ部分にかかる時間</td>
+</tr>
+<tr>
+<td>基準並進<strong>速度</strong></td>
+<td>$v_\mathrm{ref}$</td>
+<td>241.59 [mm/s]</td>
+<td>後の計算で用いる定数</td>
+</tr>
+<tr>
+<td>基準 <strong>角躍度</strong> 関数</td>
+<td>$\dddot{\theta}_\mathrm{ref}(t)$</td>
+<td>下図にプロット</td>
+<td>$\ddot{\theta}_\mathrm{ref}(t)$ の時間微分</td>
+</tr>
+<tr>
+<td>基準 <strong>角加速度</strong> 関数</td>
+<td>$\ddot{\theta}_\mathrm{ref}(t)$</td>
+<td>下図にプロット</td>
+<td>$\omega_\mathrm{ref}(t)$ の時間微分</td>
+</tr>
+<tr>
+<td>基準 <strong>角速度</strong> 関数</td>
+<td>$\omega_\mathrm{ref}(t)$</td>
+<td>下図にプロット</td>
+<td>積分結果が移動角度 $\theta_\mathrm{end}$ と一致</td>
+</tr>
+<tr>
+<td>基準 <strong>角度</strong> 関数</td>
+<td>$\theta_\mathrm{ref}(t)$</td>
+<td>下図にプロット</td>
+<td>$\theta_\mathrm{ref}(0)=0$, $\theta_\mathrm{ref}(t_\mathrm{ref}) = \theta_\mathrm{end}$</td>
+</tr>
+</tbody>
+</table>
+<p>関数の具体的な形は<a href=/posts/2018-04-29-accel-designer1>参考記事</a>
+をご覧ください。</p>
+<p><img src=curve_t.svg alt=角速度分布></p>
+<h3 id=導出手順>導出手順</h3>
+<ol>
+<li>積分結果が移動角度 $\theta_\mathrm{end}$ となるなめらかな <strong>角速度分布</strong> 関数 $\omega_\mathrm{ref}(t)$ を求める</li>
+<li>位置 $(x,y)$ の数値積分によって <strong>カーブの終点位置</strong> を求める</li>
+<li>カーブの終点位置が目標位置 $(x_\mathrm{curve},y_\mathrm{curve})$ になるような基準並進速度 $v_\mathrm{ref}$ を求める</li>
+<li>前後の直線を含めた移動距離が $(x_\mathrm{end},y_\mathrm{end})$ と一致するようにカーブ前後の直線の長さを求める</li>
+</ol>
+<p>それぞれの手順について、以下で説明していきます。</p>
+<h3 id=なめらかな角速度の設計>なめらかな角速度の設計</h3>
+<p>過去に紹介した<a href=/posts/2018-04-29-accel-designer1>なめらかな加速の設計方法</a>
+を利用して、なめらかな角速度の関数 $\omega(t)$ を求めます。</p>
+<p>具体的には、参考記事の変数を以下のように割り当てて、各関数を入手します。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th><a href=/posts/2018-04-29-accel-designer1>参考記事</a>
+における表記</th>
+<th>本記事で設定する変数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>拘束条件</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>最大角躍度</td>
+<td>$j_\max$</td>
+<td>$\dddot{\theta}_{\max}$</td>
+</tr>
+<tr>
+<td>最大角加速度</td>
+<td>$a_\max$</td>
+<td>$\ddot{\theta}_{\max}$</td>
+</tr>
+<tr>
+<td>最大角速度</td>
+<td>$v_\max$</td>
+<td>$\dot{\theta}_{\max}$</td>
+</tr>
+<tr>
+<td>始点速度</td>
+<td>$v_\mathrm{start}$</td>
+<td>0</td>
+</tr>
+<tr>
+<td>目標速度</td>
+<td>$v_\mathrm{target}$</td>
+<td>0</td>
+</tr>
+<tr>
+<td>移動距離</td>
+<td>$d$</td>
+<td>$\theta_\mathrm{end}$</td>
+</tr>
+<tr>
+<td><strong>導出結果</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>基準角躍度</td>
+<td>$j(t)$</td>
+<td>$\dddot{\theta}_\mathrm{ref}(t)$</td>
+</tr>
+<tr>
+<td>基準角加速度</td>
+<td>$a(t)$</td>
+<td>$\ddot{\theta}_\mathrm{ref}(t)$</td>
+</tr>
+<tr>
+<td>基準角速度</td>
+<td>$v(t)$</td>
+<td>$\dot{\theta}_\mathrm{ref}(t) =\omega_\mathrm{ref}(t)$</td>
+</tr>
+<tr>
+<td>基準角度</td>
+<td>$x(t)$</td>
+<td>$\theta_\mathrm{ref}(t)$</td>
+</tr>
+</tbody>
+</table>
+<p>参考記事では並進速度の曲線加速について述べられているので、それを回転の角速度に変換して考えています。</p>
+<p>この表のように設定することで以下のようななめらかな角速度軌道が得られます。</p>
+<h3 id=数値積分>数値積分</h3>
+<p>上記の方法で角度の関数 $\theta_\mathrm{ref}(t),~0\leq t \leq t_\mathrm{ref}$ が得られました。</p>
+<p>この軌道を並進速度 $v$ で走行した場合、各時刻 $t$ における位置 $(x, y)$ は以下のように表されます。</p>
+<div>
+$$
 \begin{align}
 x(t) &= \int_0^t v \cos(\theta(t)) dt
   \\
 y(t) &= \int_0^t v \sin(\theta(t)) dt
 \end{align}
-$$</div><p>この関数を解析的に積分できればいいのですが、一般にはできないといわれています。</p><p>そこで並進速度 $v_0$ (600 [mm/s] など現実的な速度) を適当に与えて数値積分によって終点位置を求めます。</p><div>$$
+$$
+</div>
+<p>この関数を解析的に積分できればいいのですが、一般にはできないといわれています。</p>
+<p>そこで並進速度 $v_0$ (600 [mm/s] など現実的な速度) を適当に与えて数値積分によって終点位置を求めます。</p>
+<div>
+$$
 \begin{align}
 x_0 &= \int_0^{t_\mathrm{end}} v_0 \cos(\theta_\mathrm{ref}(t)) dt
 \\
 y_0 &= \int_0^{t_\mathrm{end}} v_0 \sin(\theta_\mathrm{ref}(t)) dt
 \end{align}
-$$</div><p>このとき、関数 $\theta_\mathrm{ref}(t)$ は連続な関数として求められているので、単に<a href=https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%A4%E3%83%A9%E3%83%BC%E7%A9%8D%E5%88%86 target=_blank>オイラー積分</a>
+$$
+</div>
+<p>このとき、関数 $\theta_\mathrm{ref}(t)$ は連続な関数として求められているので、単に<a href=https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%A4%E3%83%A9%E3%83%BC%E7%A9%8D%E5%88%86 target=_blank>オイラー積分</a>
 するのではなく、
 <a href=https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%B3%E3%82%B2%EF%BC%9D%E3%82%AF%E3%83%83%E3%82%BF%E6%B3%95 target=_blank>ルンゲ=クッタ法</a>
-によって4次関数近似をして積分することで、かなりの高精度で積分することが可能です。</p><p>詳しくは上記リンク先のWikipediaまたは次回の記事のC++による実装をご覧ください。</p><h3 id=基準並進速度を求める>基準並進速度を求める</h3><p>上記の方法によって適当な並進速度 $v_0$ で走行したときの終点位置 $(x_0,y_0)$ が求まりました。</p><p>もちろん、並進速度 $v_0$ は適当に与えたものなので、$(x_0,y_0)$ はまだ $(x_\mathrm{curve},y_\mathrm{curve})$ とはなりません。</p><p>そこで基準並進速度 $v_\mathrm{ref}$ を次のように定義します。</p><div>$$
+によって4次関数近似をして積分することで、かなりの高精度で積分することが可能です。</p>
+<p>詳しくは上記リンク先のWikipediaまたは次回の記事のC++による実装をご覧ください。</p>
+<h3 id=基準並進速度を求める>基準並進速度を求める</h3>
+<p>上記の方法によって適当な並進速度 $v_0$ で走行したときの終点位置 $(x_0,y_0)$ が求まりました。</p>
+<p>もちろん、並進速度 $v_0$ は適当に与えたものなので、$(x_0,y_0)$ はまだ $(x_\mathrm{curve},y_\mathrm{curve})$ とはなりません。</p>
+<p>そこで基準並進速度 $v_\mathrm{ref}$ を次のように定義します。</p>
+<div>
+$$
 \begin{align}
 v_\mathrm{ref} = \frac{y_\mathrm{curve}}{y_0} v_0
 \end{align}
-$$</div><p>こうすると、並進速度 $v_\mathrm{ref}$ および角速度 $\omega_\mathrm{ref}(t)$ で走行したとき、走行位置はちょうど $(x_\mathrm{curve},y_\mathrm{curve})$ となります。</p><h3 id=前後の直線の長さを求める>前後の直線の長さを求める</h3><p>ここまでの計算で必要な情報が揃ったので、前後の直線の長さは次式によって求めることができます。</p><div>$$
+$$
+</div>
+<p>こうすると、並進速度 $v_\mathrm{ref}$ および角速度 $\omega_\mathrm{ref}(t)$ で走行したとき、走行位置はちょうど $(x_\mathrm{curve},y_\mathrm{curve})$ となります。</p>
+<h3 id=前後の直線の長さを求める>前後の直線の長さを求める</h3>
+<p>ここまでの計算で必要な情報が揃ったので、前後の直線の長さは次式によって求めることができます。</p>
+<div>
+$$
 \begin{align}
 l_1 &= x_\mathrm{end} - x_\mathrm{curve} - \frac{y_\mathrm{end} - y_\mathrm{curve}}{\tan\theta_\mathrm{end}}
 \\
 l_2 &= \frac{y_\mathrm{end} - y_\mathrm{curve}}{\sin\theta_\mathrm{end}}
 \end{align}
-$$</div><p>ただし、 $\sin\theta_\mathrm{end} = 0$ となる180度ターンなどの場合はこの式では計算できないので、例外的に対応します。</p><p>よくよく考えてみると、180度ターンの場合は前後の直線はターンを平行移動させるだけなので、自由に設定できることがわかります。</p><p><img src=shape_4_xy.svg alt=180度ターン></p><p>この場合、ターンの内側が柱にぶつからない程度に直線長を設定しましょう。</p><h3 id=事前設計のまとめ>事前設計のまとめ</h3><p>以上までの事前設計により、基準並進速度 $v_\mathrm{ref}$ および 基準角速度 $\omega_\mathrm{ref}(t)$ と前後の直線長 $l_1,l_2$ が求まりました。</p><p>これらの速度で走行すると $(x,y,\theta)$ の積分結果が $(x_\mathrm{curve},y_\mathrm{curve},\theta_\mathrm{end})$ となり、前後の直線をあわせると総移動位置は $(x_\mathrm{end},y_\mathrm{end})$ に一致します。</p><p>以上の手順でスラロームの形状を設計することができました。</p><h2 id=走行時のスケーリング方法>走行時のスケーリング方法</h2><p>次に、設計したスラローム形状をそのときの並進速度で走行する方法を紹介します。</p><ol><li>走行する並進速度 $v$ を用いて、積分結果が事前設計の概形になるような角速度 $\omega(t)$ を生成する。</li><li>並進速度 $v$ と求めた角速度 $\omega(t)$ で走行する。</li><li>各時刻で数値積分を行うことで、位置 $(x, y)$ が得られる。</li></ol><h3 id=並進速度を用いて角速度分布を求める>並進速度を用いて角速度分布を求める</h3><p>さて、事前設計では基準速度 $v_\mathrm{ref}$ で走行したときに所望の形状になるスラローム形状を設計しました。</p><p>それをそのまま走行時の並進速度 $v$ で走行すると、積分結果の位置 $(x,y)$ がズレてしまいます。</p><p>そこで、以下のようなスケーリング係数を定義します。</p><div>$$
+$$
+</div>
+<p>ただし、 $\sin\theta_\mathrm{end} = 0$ となる180度ターンなどの場合はこの式では計算できないので、例外的に対応します。</p>
+<p>よくよく考えてみると、180度ターンの場合は前後の直線はターンを平行移動させるだけなので、自由に設定できることがわかります。</p>
+<p><img src=shape_4_xy.svg alt=180度ターン></p>
+<p>この場合、ターンの内側が柱にぶつからない程度に直線長を設定しましょう。</p>
+<h3 id=事前設計のまとめ>事前設計のまとめ</h3>
+<p>以上までの事前設計により、基準並進速度 $v_\mathrm{ref}$ および 基準角速度 $\omega_\mathrm{ref}(t)$ と前後の直線長 $l_1,l_2$ が求まりました。</p>
+<p>これらの速度で走行すると $(x,y,\theta)$ の積分結果が $(x_\mathrm{curve},y_\mathrm{curve},\theta_\mathrm{end})$ となり、前後の直線をあわせると総移動位置は $(x_\mathrm{end},y_\mathrm{end})$ に一致します。</p>
+<p>以上の手順でスラロームの形状を設計することができました。</p>
+<h2 id=走行時のスケーリング方法>走行時のスケーリング方法</h2>
+<p>次に、設計したスラローム形状をそのときの並進速度で走行する方法を紹介します。</p>
+<ol>
+<li>走行する並進速度 $v$ を用いて、積分結果が事前設計の概形になるような角速度 $\omega(t)$ を生成する。</li>
+<li>並進速度 $v$ と求めた角速度 $\omega(t)$ で走行する。</li>
+<li>各時刻で数値積分を行うことで、位置 $(x, y)$ が得られる。</li>
+</ol>
+<h3 id=並進速度を用いて角速度分布を求める>並進速度を用いて角速度分布を求める</h3>
+<p>さて、事前設計では基準速度 $v_\mathrm{ref}$ で走行したときに所望の形状になるスラローム形状を設計しました。</p>
+<p>それをそのまま走行時の並進速度 $v$ で走行すると、積分結果の位置 $(x,y)$ がズレてしまいます。</p>
+<p>そこで、以下のようなスケーリング係数を定義します。</p>
+<div>
+$$
 \begin{align}
 k &:= \frac{v}{v_\mathrm{ref}}
 \end{align}
-$$</div><p>ここで、
-角躍度が0次関数、角加速度が1次関数、角速度が2次関数となっていることを利用すると、</p><p>最大角躍度を
+$$
+</div>
+<p>ここで、
+角躍度が0次関数、角加速度が1次関数、角速度が2次関数となっていることを利用すると、</p>
+<p>最大角躍度を
 $k^3 \dddot{\theta}_\max$,
 最大角加速度を
 $k^2 \ddot{\theta}_\max$,
@@ -46,17 +438,249 @@ $k \dot{\theta}_\max$,
 移動角度を
 $\theta_\mathrm{end}$
 として、事前設計と同様に角速度分布 $v(t)$ を求めると、並進速度 $v$ で走行したときの位置の積分結果が
-$(x,y) = (x_\mathrm{curve},y_\mathrm{curve})$ となり、求めていた軌道が得られれます。</p><p>なお、この処理はターンに差し掛かったときに1度計算するだけで大丈夫です。</p><h3 id=数値積分によって各時刻の位置を求める>数値積分によって各時刻の位置を求める</h3><p>上記の方法で並進速度と角速度が得られたので、スラロームの走行自体は可能なのですが、速度だけでなく位置のフィードバック制御を行うためには、各時刻の位置 $x(t),~y(t)$ が必要となります。</p><p>そこで、事前設計のときと同様に、ルンゲ=クッタ法を用いて数値積分することによって、各時刻の位置を算出します。</p><p>この処理は、走行をしながら各時刻に計算するといいでしょう。</p><h3 id=走行時の処理のまとめ>走行時の処理のまとめ</h3><p>以上の方法で、走行時にそのときの並進速度 $v$ を用いて、走行すべき角速度や位置を求めることができました。</p><p>これが走行する目標軌道となるので、あとは任意のフィードバック制御則で軌道追従を行うことになります。</p><p>その方法については、<a href=http://idken.net/posts/2018-11-07-trajectory_tracking1/ target=_blank>こちら</a>
-の記事が参考になります。</p><h2 id=入出力情報のまとめ>入出力情報のまとめ</h2><p>上記までがなめらかなスラローム軌道の設計方法です。</p><p>ここで、本設計で与える情報と得られる情報をまとめると、次のようになります。</p><h3 id=設計時に与える情報>設計時に与える情報</h3><ul><li>最大角躍度 $\dddot{\theta}_{\max}$</li><li>最大角加速度 $\ddot{\theta}_{\max}$</li><li>最大角速度 $\dot{\theta}_{\max}$</li><li>旋回角度 $\theta_{\rm end}$</li><li>移動位置 $x_{\rm end},~ y_{\rm end}$</li><li>曲線部分の$y$成分 $y_\mathrm{curve}$</li></ul><h3 id=設計時に得られる情報>設計時に得られる情報</h3><ul><li>基準並進速度 $v_{\rm ref}$</li><li>曲線部分 $x_\mathrm{curve}, y_\mathrm{curve}$</li><li>旋回前 直線長 $l_1$</li><li>旋回後 直線長 $l_2$</li></ul><h3 id=走行時に与える情報>走行時に与える情報</h3><ul><li>並進速度 $v$</li></ul><h3 id=走行時に得られる情報>走行時に得られる情報</h3><ul><li>時刻 $t$ における以下の値<ul><li>角躍度 $\dddot{\theta}(t)$</li><li>角加速度 $\ddot{\theta}(t)$</li><li>角速度 $\dot{\theta}(t)$</li><li>角度 $\theta(t)$</li><li>位置 $x(t)$, $y(t)$</li></ul></li></ul><h2 id=まとめ>まとめ</h2><p>今回の記事では、なめらかなスラローム軌道の具体的な設計方法について述べました。</p><p><a href=/posts/2020-04-25-slalom-trajectory-3/>次回の記事</a>
-では、C++による実装例を紹介します。</p><script type=text/x-mathjax-config>
+$(x,y) = (x_\mathrm{curve},y_\mathrm{curve})$ となり、求めていた軌道が得られれます。</p>
+<p>なお、この処理はターンに差し掛かったときに1度計算するだけで大丈夫です。</p>
+<h3 id=数値積分によって各時刻の位置を求める>数値積分によって各時刻の位置を求める</h3>
+<p>上記の方法で並進速度と角速度が得られたので、スラロームの走行自体は可能なのですが、速度だけでなく位置のフィードバック制御を行うためには、各時刻の位置 $x(t),~y(t)$ が必要となります。</p>
+<p>そこで、事前設計のときと同様に、ルンゲ=クッタ法を用いて数値積分することによって、各時刻の位置を算出します。</p>
+<p>この処理は、走行をしながら各時刻に計算するといいでしょう。</p>
+<h3 id=走行時の処理のまとめ>走行時の処理のまとめ</h3>
+<p>以上の方法で、走行時にそのときの並進速度 $v$ を用いて、走行すべき角速度や位置を求めることができました。</p>
+<p>これが走行する目標軌道となるので、あとは任意のフィードバック制御則で軌道追従を行うことになります。</p>
+<p>その方法については、<a href=http://idken.net/posts/2018-11-07-trajectory_tracking1/ target=_blank>こちら</a>
+の記事が参考になります。</p>
+<h2 id=入出力情報のまとめ>入出力情報のまとめ</h2>
+<p>上記までがなめらかなスラローム軌道の設計方法です。</p>
+<p>ここで、本設計で与える情報と得られる情報をまとめると、次のようになります。</p>
+<h3 id=設計時に与える情報>設計時に与える情報</h3>
+<ul>
+<li>最大角躍度 $\dddot{\theta}_{\max}$</li>
+<li>最大角加速度 $\ddot{\theta}_{\max}$</li>
+<li>最大角速度 $\dot{\theta}_{\max}$</li>
+<li>旋回角度 $\theta_{\rm end}$</li>
+<li>移動位置 $x_{\rm end},~ y_{\rm end}$</li>
+<li>曲線部分の$y$成分 $y_\mathrm{curve}$</li>
+</ul>
+<h3 id=設計時に得られる情報>設計時に得られる情報</h3>
+<ul>
+<li>基準並進速度 $v_{\rm ref}$</li>
+<li>曲線部分 $x_\mathrm{curve}, y_\mathrm{curve}$</li>
+<li>旋回前 直線長 $l_1$</li>
+<li>旋回後 直線長 $l_2$</li>
+</ul>
+<h3 id=走行時に与える情報>走行時に与える情報</h3>
+<ul>
+<li>並進速度 $v$</li>
+</ul>
+<h3 id=走行時に得られる情報>走行時に得られる情報</h3>
+<ul>
+<li>時刻 $t$ における以下の値
+<ul>
+<li>角躍度 $\dddot{\theta}(t)$</li>
+<li>角加速度 $\ddot{\theta}(t)$</li>
+<li>角速度 $\dot{\theta}(t)$</li>
+<li>角度 $\theta(t)$</li>
+<li>位置 $x(t)$, $y(t)$</li>
+</ul>
+</li>
+</ul>
+<h2 id=まとめ>まとめ</h2>
+<p>今回の記事では、なめらかなスラローム軌道の具体的な設計方法について述べました。</p>
+<p><a href=/posts/2020-04-25-slalom-trajectory-3/>次回の記事</a>
+では、C++による実装例を紹介します。</p>
+<script type=text/x-mathjax-config>
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=tag>マイクロマウス</a></li><li class=tags__item><a class="tags__link btn" href=/tags/%E5%88%B6%E5%BE%A1/ rel=tag>制御</a></li></ul></div></footer></article></main><div class=ads-horizontal><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><ins class=adsbygoogle style=display:block;text-align:center data-ad-format=fluid data-ad-layout=in-article data-ad-client=ca-pub-1668524068659644 data-ad-slot=3045514441></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="けり avatar" src=/img/avatar.jpg class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>筆者: けり</span></div><div class=authorbox__description>趣味は電子工作。ぼちぼちマイクロマウス作ってます。</div></div><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/posts/2020-04-25-slalom-trajectory-1/ rel=prev><span class=pager__subtitle>«&#8201;前の投稿</span><p class=pager__title>なめらかなスラロームの設計① スラローム概要</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/posts/2020-04-25-slalom-trajectory-3/ rel=next><span class=pager__subtitle>次の投稿&#8201;»</span><p class=pager__title>なめらかなスラロームの設計③ C++による実装</p></a></div></nav><section class=comments><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//kerikeri.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></section></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=検索… name=q aria-label=検索…></label>
+</script>
+</div>
+<footer class=post__footer>
+<div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg>
+<ul class=tags__list>
+<li class=tags__item>
+<a class="tags__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=tag>マイクロマウス</a>
+</li>
+<li class=tags__item>
+<a class="tags__link btn" href=/tags/%E5%88%B6%E5%BE%A1/ rel=tag>制御</a>
+</li>
+</ul>
+</div>
+</footer>
+</article>
+</main>
+<div class=ads-horizontal>
+<script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<ins class=adsbygoogle style=display:block;text-align:center data-ad-format=fluid data-ad-layout=in-article data-ad-client=ca-pub-1668524068659644 data-ad-slot=3045514441></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+<div class="authorbox clearfix">
+<figure class=authorbox__avatar>
+<img alt="けり avatar" src=/img/avatar.jpg class=avatar height=90 width=90>
+</figure>
+<div class=authorbox__header>
+<span class=authorbox__name>筆者: けり</span>
+</div>
+<div class=authorbox__description>
+趣味は電子工作。ぼちぼちマイクロマウス作ってます。
+</div>
+</div>
+<nav class="pager flex">
+<div class="pager__item pager__item--prev">
+<a class=pager__link href=/posts/2020-04-25-slalom-trajectory-1/ rel=prev>
+<span class=pager__subtitle>«&#8201;前の投稿</span>
+<p class=pager__title>なめらかなスラロームの設計① スラローム概要</p>
+</a>
+</div>
+<div class="pager__item pager__item--next">
+<a class=pager__link href=/posts/2020-04-25-slalom-trajectory-3/ rel=next>
+<span class=pager__subtitle>次の投稿&#8201;»</span>
+<p class=pager__title>なめらかなスラロームの設計③ C++による実装</p>
+</a>
+</div>
+</nav>
+<section class=comments>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//kerikeri.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</section>
+</div>
+<aside class=sidebar><div class="widget-search widget">
+<form class=widget-search__form role=search method=get action=https://google.com/search>
+<label>
+<input class=widget-search__field type=search placeholder=検索… name=q aria-label=検索…>
+</label>
 <input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://www.kerislab.jp/></form></div><div class="widget-toc widget"><h4 class=widget__title>目次</h4><div class=widget__content><nav id=TableOfContents><ul><li><ul><li><a href=#なめらかなスラロームの設計-目次>なめらかなスラロームの設計 目次</a></li></ul></li><li><a href=#手順の概要>手順の概要</a><ul><li><a href=#事前の形状設計の概要>事前の形状設計の概要</a></li><li><a href=#走行時のスケーリングの概要>走行時のスケーリングの概要</a></li></ul></li><li><a href=#事前の概形設計>事前の概形設計</a><ul><li><a href=#座標のとり方>座標のとり方</a></li><li><a href=#事前設計時に与える情報>事前設計時に与える情報</a></li><li><a href=#事前設計時に得られる情報>事前設計時に得られる情報</a></li><li><a href=#導出手順>導出手順</a></li><li><a href=#なめらかな角速度の設計>なめらかな角速度の設計</a></li><li><a href=#数値積分>数値積分</a></li><li><a href=#基準並進速度を求める>基準並進速度を求める</a></li><li><a href=#前後の直線の長さを求める>前後の直線の長さを求める</a></li><li><a href=#事前設計のまとめ>事前設計のまとめ</a></li></ul></li><li><a href=#走行時のスケーリング方法>走行時のスケーリング方法</a><ul><li><a href=#並進速度を用いて角速度分布を求める>並進速度を用いて角速度分布を求める</a></li><li><a href=#数値積分によって各時刻の位置を求める>数値積分によって各時刻の位置を求める</a></li><li><a href=#走行時の処理のまとめ>走行時の処理のまとめ</a></li></ul></li><li><a href=#入出力情報のまとめ>入出力情報のまとめ</a><ul><li><a href=#設計時に与える情報>設計時に与える情報</a></li><li><a href=#設計時に得られる情報>設計時に得られる情報</a></li><li><a href=#走行時に与える情報>走行時に与える情報</a></li><li><a href=#走行時に得られる情報>走行時に得られる情報</a></li></ul></li><li><a href=#まとめ>まとめ</a></li></ul></nav></div></div><div class="widget-social widget"><h4 class="widget-social__title widget__title">ソーシャル</h4><div class="widget-social__content widget__content"><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Twitter rel="noopener noreferrer" href=https://twitter.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5.0-78.8 35.3-78.8 78.8.0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3C20 26 16.1 39.6 16.1 54c0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1.0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4.0-12.6-.4-18.8-1.1C34.9 299 76.3 312 120.8 312c144.9.0 224.1-120 224.1-224.1.0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg><span>Twitter</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=GitHub rel="noopener noreferrer" href=https://github.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0C85.9.0.0 85.8.0 191.7c0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2.0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8.0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7.0.0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4.0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5.0 25.6-.2 46.3-.2 52.6.0 5.1 3.5 11.1 13.2 9.2C329 348.2 384 276.4 384 191.7 384 85.8 298 0 192 0z"/></svg><span>GitHub</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Email href=mailto:kerikun11+web@gmail.com><svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16V16 0h-16H16 0zm347 16-139 92.5L69 32zM199 157.5l9 5.5 9-5.5L384 46v210H32V46z"/></svg><span>E-Mail</span></a></div></div></div><div class="widget-categories widget"><h4 class=widget__title>広告</h4><div class=widget__content><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><ins class=adsbygoogle style=display:block data-ad-client=ca-pub-1668524068659644 data-ad-slot=7974159815 data-ad-format=auto></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div></div><div class="widget-spotlight widget"><h4 class=widget__title>注目の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a></li><li class=widget__item><a class=widget__link href=/posts/2019-12-04-micromouse2019/>全日本マイクロマウス2019の結果報告</a></li><li class=widget__item><a class=widget__link href=/posts/2019-01-14-vscode-latex/>VSCode で TeX を書こう</a></li><li class=widget__item><a class=widget__link href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li><li class=widget__item><a class=widget__link href=/posts/2017-09-03-pattern-of-turn/>マイクロマウスのターン一覧</a></li><li class=widget__item><a class=widget__link href=/posts/2016-07-25-how-to-use-ir-station/>IR-Stationの使い方</a></li></ul></div></div><div class="widget-recent widget"><h4 class=widget__title>最近の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2021-01-16-sshcode/>ターミナルから VSCode の SSH リモートディレクトリを開く</a></li><li class=widget__item><a class=widget__link href=/posts/2021-01-05-ntfs-hdd-rescue/>アクセスできなくなったHDDのデータを救出した記録</a></li><li class=widget__item><a class=widget__link href=/posts/2021-01-04-silent-deft-pro/>トラックボールマウス DEFT PRO の静音化</a></li><li class=widget__item><a class=widget__link href=/posts/2020-12-11-esp32-mouse/>ESP32 でマイクロマウスを作るメリットとデメリット</a></li><li class=widget__item><a class=widget__link href=/posts/2020-05-11-esp-idf-to-platformio/>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>カテゴリー</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/>イベント</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">14</span></li><li class=widget__item><a class=widget__link href=/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/>作品紹介</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">54</span></li><li class=widget__item><a class=widget__link href=/categories/%E5%82%99%E5%BF%98%E9%8C%B2/>備忘録</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">28</span></li><li class=widget__item><a class=widget__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/>説明記事</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">38</span></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>タグ</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/active-record/ title="Active Record">Active Record (1)</a>
+<input type=hidden name=sitesearch value=https://www.kerislab.jp/>
+</form>
+</div>
+<div class="widget-toc widget">
+<h4 class=widget__title>目次</h4>
+<div class=widget__content>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#なめらかなスラロームの設計-目次>なめらかなスラロームの設計 目次</a></li>
+</ul>
+</li>
+<li><a href=#手順の概要>手順の概要</a>
+<ul>
+<li><a href=#事前の形状設計の概要>事前の形状設計の概要</a></li>
+<li><a href=#走行時のスケーリングの概要>走行時のスケーリングの概要</a></li>
+</ul>
+</li>
+<li><a href=#事前の概形設計>事前の概形設計</a>
+<ul>
+<li><a href=#座標のとり方>座標のとり方</a></li>
+<li><a href=#事前設計時に与える情報>事前設計時に与える情報</a></li>
+<li><a href=#事前設計時に得られる情報>事前設計時に得られる情報</a></li>
+<li><a href=#導出手順>導出手順</a></li>
+<li><a href=#なめらかな角速度の設計>なめらかな角速度の設計</a></li>
+<li><a href=#数値積分>数値積分</a></li>
+<li><a href=#基準並進速度を求める>基準並進速度を求める</a></li>
+<li><a href=#前後の直線の長さを求める>前後の直線の長さを求める</a></li>
+<li><a href=#事前設計のまとめ>事前設計のまとめ</a></li>
+</ul>
+</li>
+<li><a href=#走行時のスケーリング方法>走行時のスケーリング方法</a>
+<ul>
+<li><a href=#並進速度を用いて角速度分布を求める>並進速度を用いて角速度分布を求める</a></li>
+<li><a href=#数値積分によって各時刻の位置を求める>数値積分によって各時刻の位置を求める</a></li>
+<li><a href=#走行時の処理のまとめ>走行時の処理のまとめ</a></li>
+</ul>
+</li>
+<li><a href=#入出力情報のまとめ>入出力情報のまとめ</a>
+<ul>
+<li><a href=#設計時に与える情報>設計時に与える情報</a></li>
+<li><a href=#設計時に得られる情報>設計時に得られる情報</a></li>
+<li><a href=#走行時に与える情報>走行時に与える情報</a></li>
+<li><a href=#走行時に得られる情報>走行時に得られる情報</a></li>
+</ul>
+</li>
+<li><a href=#まとめ>まとめ</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="widget-social widget">
+<h4 class="widget-social__title widget__title">ソーシャル</h4>
+<div class="widget-social__content widget__content">
+<div class="widget-social__item widget__item">
+<a class="widget-social__link widget__link btn" title=Twitter rel="noopener noreferrer" href=https://twitter.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5.0-78.8 35.3-78.8 78.8.0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3C20 26 16.1 39.6 16.1 54c0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1.0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4.0-12.6-.4-18.8-1.1C34.9 299 76.3 312 120.8 312c144.9.0 224.1-120 224.1-224.1.0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+<span>Twitter</span>
+</a>
+</div>
+<div class="widget-social__item widget__item">
+<a class="widget-social__link widget__link btn" title=GitHub rel="noopener noreferrer" href=https://github.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0C85.9.0.0 85.8.0 191.7c0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2.0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8.0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7.0.0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4.0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5.0 25.6-.2 46.3-.2 52.6.0 5.1 3.5 11.1 13.2 9.2C329 348.2 384 276.4 384 191.7 384 85.8 298 0 192 0z"/></svg>
+<span>GitHub</span>
+</a>
+</div>
+<div class="widget-social__item widget__item">
+<a class="widget-social__link widget__link btn" title=Email href=mailto:kerikun11+web@gmail.com><svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16V16 0h-16H16 0zm347 16-139 92.5L69 32zM199 157.5l9 5.5 9-5.5L384 46v210H32V46z"/></svg>
+<span>E-Mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="widget-categories widget">
+<h4 class=widget__title>広告</h4>
+<div class=widget__content>
+<script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-1668524068659644 data-ad-slot=7974159815 data-ad-format=auto></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+</div>
+</div>
+<div class="widget-spotlight widget">
+<h4 class=widget__title>注目の投稿</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2019-12-04-micromouse2019/>全日本マイクロマウス2019の結果報告</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2019-01-14-vscode-latex/>VSCode で TeX を書こう</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2017-09-03-pattern-of-turn/>マイクロマウスのターン一覧</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2016-07-25-how-to-use-ir-station/>IR-Stationの使い方</a></li>
+</ul>
+</div>
+</div>
+<div class="widget-recent widget">
+<h4 class=widget__title>最近の投稿</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item><a class=widget__link href=/posts/2021-01-16-sshcode/>ターミナルから VSCode の SSH リモートディレクトリを開く</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2021-01-05-ntfs-hdd-rescue/>アクセスできなくなったHDDのデータを救出した記録</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2021-01-04-silent-deft-pro/>トラックボールマウス DEFT PRO の静音化</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2020-12-11-esp32-mouse/>ESP32 でマイクロマウスを作るメリットとデメリット</a></li>
+<li class=widget__item><a class=widget__link href=/posts/2020-05-11-esp-idf-to-platformio/>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</a></li>
+</ul>
+</div>
+</div>
+<div class="widget-categories widget">
+<h4 class=widget__title>カテゴリー</h4>
+<div class=widget__content>
+<ul class=widget__list>
+<li class=widget__item>
+<a class=widget__link href=/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/>イベント</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">14</span>
+</li>
+<li class=widget__item>
+<a class=widget__link href=/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/>作品紹介</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">54</span>
+</li>
+<li class=widget__item>
+<a class=widget__link href=/categories/%E5%82%99%E5%BF%98%E9%8C%B2/>備忘録</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">28</span>
+</li>
+<li class=widget__item>
+<a class=widget__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/>説明記事</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">38</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="widget-taglist widget">
+<h4 class=widget__title>タグ</h4>
+<div class=widget__content>
+<a class="widget-taglist__link widget__link btn" href=/tags/active-record/ title="Active Record">Active Record (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/apache2/ title=Apache2>Apache2 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/arduino/ title=Arduino>Arduino (12)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/bot/ title=bot>bot (1)</a>
@@ -159,5 +783,22 @@ $(x,y) = (x_\mathrm{curve},y_\mathrm{curve})$ となり、求めていた軌道�
 <a class="widget-taglist__link widget__link btn" href=/tags/%E8%B5%A4%E5%A4%96%E7%B7%9A%E5%AD%A6%E7%BF%92%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/ title=赤外線学習リモコン>赤外線学習リモコン (5)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/%E8%BF%B7%E8%B7%AF/ title=迷路>迷路 (13)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%85%89%E6%8E%B2%E7%A4%BA%E6%9D%BF/ title=電光掲示板>電光掲示板 (3)</a>
-<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%8A%9B/ title=電力>電力 (4)</a></div></div></aside></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2021 KERI's Lab.
-<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script><script src=/js/custom.js></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script></body></html>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%8A%9B/ title=電力>電力 (4)</a>
+</div>
+</div>
+</aside>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2021 KERI's Lab.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+<script src=/js/custom.js></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
