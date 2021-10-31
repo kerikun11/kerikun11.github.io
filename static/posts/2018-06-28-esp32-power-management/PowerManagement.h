@@ -1,6 +1,6 @@
 /**
  * @file PowerManagement.h
- * @author KERI kerikun11@gmail.com
+ * @author kerikun11
  * @date 2018.06.28
  */
 #pragma once

@@ -202,8 +202,8 @@ thumbnail: "icon.png"
 
 ![課題迷路](2020-03-23-maze-generator-keri.png)
 
-この迷路ファイルのダウンロードは[こちら](2020-03-23-maze-generator-keri.maze)。
-経路の例は[こちら](2020-03-23-maze-generator-keri-path.png)。
+この[迷路ファイル](https://github.com/kerikun11/micromouse-maze-data)のダウンロードは[こちら](2020-03-23-maze-generator-keri.maze)。
+最短経路の例は[こちら](2020-03-23-maze-generator-keri-path.png)。
 
 どうですか？マイクロマウスっぽい迷路ですよね！
 
