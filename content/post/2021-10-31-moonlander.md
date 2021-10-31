@@ -1,6 +1,6 @@
 ---
-title: "左右分離キーボード MoonLander Mark I を購入した"
-date: "2021-08-27T14:49:57+09:00"
+title: "左右分離キーボード MoonLander Mark I の紹介"
+date: "2021-10-31T22:49:57+09:00"
 categories:
   - "説明記事"
 tags:
