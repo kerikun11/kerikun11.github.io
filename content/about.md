@@ -17,7 +17,7 @@ authorbox: false
 趣味：電子工作  
 
 Twitter: [@kerikun11](http://twitter.com/kerikun11)  
-GitHub: [kerikun11](http://github.com/kerikun11)
+GitHub: [@kerikun11](http://github.com/kerikun11)
 
 ## あいさつ
 
