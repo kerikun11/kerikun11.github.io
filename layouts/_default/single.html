@@ -2,11 +2,7 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			{{- if .Params.thumbnail }}
-			<figure class="post__thumbnail">
-				<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
-			</figure>
-			{{- end }}
+			{{ partial "post_thumbnail.html" (dict "class" "post" "page" .) }}
 			<h1 class="post__title">{{ .Title }}</h1>
 			{{- with .Params.lead }}
 			<p class="post__lead">{{ . }}</p>

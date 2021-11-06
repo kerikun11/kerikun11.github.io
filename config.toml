@@ -25,31 +25,38 @@ pygmentsCodefencesGuessSyntax = true
 [Author] # Used in authorbox
     name = "けり"
     bio = "趣味は電子工作。ぼちぼちマイクロマウス作ってます。"
-    avatar = "/img/avatar.jpg"
+    avatar = "img/avatar.jpg"
     email = "kerikun11+web@gmail.com"
-    location = "Earth"
 
 [Params]
     description = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Site description. Used in meta description
     copyright = "KERI's Lab" # copyright holder, otherwise will use site title
     opengraph = true # Enable OpenGraph if true
+    schema = true # Enable Schema
     twitter_cards = true # Enable Twitter Cards if true
     readmore = true # Show "Read more" button in list if true
     authorbox = true # Show authorbox at bottom of pages if true
     # toc = true # Enable Table of Contents
     pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
     post_meta = ["date", "categories", "tags", "translations"] # Order of post meta information
-    dateformat = "2006-01-02" # change the format of dates
+    mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+    dateformat = "2006-01-02" # Change the format of dates
     mathjax = true # Enable MathJax
     mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
     mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-    highlightColor = "#0000ff" # Override highlight color
-    customCSS = ["css/custom.css", "/css/syntax.css"] # Include custom CSS files
+    googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+    customCSS = ["css/custom.css", "css/syntax.css"] # Include custom CSS files
     customJS = ["js/custom.js"] # Include custom JS files
-    thumbnailDefault = "/img/avatar.jpg"
+
+[Params.style.vars]
+  highlightColor = "#0000ff" # Override highlight color
 
 [Params.logo]
     subtitle = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Logo subtitle
+
+[Params.thumbnail]
+    visibility = ["list", "post"] # Control thumbnail visibility
+    default = "img/avatar.jpg"
 
 [Params.sidebar]
     home = "right" # Configure layout for home page
@@ -59,8 +66,8 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params.widgets]
     recent_num = 5 # Set the number of articles in the "Recent articles" widget
-    tags_counter = true # Enable counter for each tag in "Tags" widget
     categories_counter = true # Enable counter for each categories in "Categories" widget
+    tags_counter = true # Enable counter for each tag in "Tags" widget
 
 [Params.widgets.social]
     # facebook = "username"
@@ -72,9 +79,6 @@ pygmentsCodefencesGuessSyntax = true
     # gitlab = "username"
     # bitbucket = "username"
     email = "kerikun11+web@gmail.com"
-
-[Social]
-    twitter = "kerikun11"
 
 [permalinks]
     post = "/posts/:filename/"
