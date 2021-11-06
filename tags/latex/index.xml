@@ -4,8 +4,7 @@
 &lt;ul>
 &lt;li>コード補完&lt;/li>
 &lt;li>コード整形&lt;/li>
-&lt;li>環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank">.latexmk&lt;/a>
-でコンパイル&lt;/li>
+&lt;li>環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk">.latexmk&lt;/a> でコンパイル&lt;/li>
 &lt;li>散らかりがちな生成物を &lt;code>build&lt;/code> ディレクトリにまとめる&lt;/li>
 &lt;li>TeX コードのとなりに PDF をリアルタイム表示&lt;/li>
 &lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>

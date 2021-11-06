@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP-WROOM-02 on KERI's Lab</title><link>https://www.kerislab.jp/tags/esp-wroom-02/</link><description>Recent content in ESP-WROOM-02 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 16 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/esp-wroom-02/index.xml" rel="self" type="application/rss+xml"/><item><title>IR-Station v1.5.0 アップデート</title><link>https://www.kerislab.jp/posts/2016-10-16-ir-station-v1.5.0/</link><pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-10-16-ir-station-v1.5.0/</guid><description>&lt;h2 id="ir-stationがv150にアップデート">IR-Stationがv1.5.0にアップデート&lt;/h2>
 &lt;p>この度、IR-Stationのファームウェアがv1.5.0にアップデートされ、新機能が追加されました。&lt;/p>
-&lt;p>IR-Stationについては、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
-をご覧ください。&lt;/p></description></item><item><title>IR-Stationの赤外線ダウンロード機能</title><link>https://www.kerislab.jp/posts/2016-08-14-download-upload/</link><pubDate>Sun, 14 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-14-download-upload/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
+&lt;p>IR-Stationについては、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>をご覧ください。&lt;/p></description></item><item><title>IR-Stationの赤外線ダウンロード機能</title><link>https://www.kerislab.jp/posts/2016-08-14-download-upload/</link><pubDate>Sun, 14 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-14-download-upload/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
 &lt;p>自作のWiFi接続の赤外線学習リモコンです。IR-Stationを使えば、スマホやPCから家電製品をコントロールすることができます。&lt;/p>
-&lt;p>詳しくは、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
-をご覧ください。&lt;/p>
+&lt;p>詳しくは、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>をご覧ください。&lt;/p>
 &lt;h2 id="ir-stationの新機能">IR-Stationの新機能&lt;/h2>
 &lt;p>夏休みになり、IR-Stationを本格的に開発しています。今回は、いくつかの新機能を紹介します。&lt;/p></description></item><item><title>IR-Stationの使い方</title><link>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</link><pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
 &lt;p>IR-Station とは、自作のWiFi接続の赤外線学習リモコンです。&lt;/p>
@@ -12,11 +10,9 @@
 &lt;p>赤外線学習リモコンとは、市販の家電製品などのリモコンの赤外線信号を記憶し、送信することができるものです。&lt;/p>
 &lt;p>今回は、WiFi接続に対応した赤外線学習リモコンを作りました。スマートフォンやパソコンなどから、家電製品をコントロールすることができます。&lt;/p></description></item><item><title>電力つぶやきbot</title><link>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</link><pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="中継型電力計">中継型電力計&lt;/h3>
-&lt;p>先日の記事で&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">ESP-WROOM-02による中継型電力計&lt;/a>
-を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p>
+&lt;p>先日の記事で&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">ESP-WROOM-02による中継型電力計&lt;/a>を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p>
 &lt;h3 id="何の電力をつぶやくのか">何の電力をつぶやくのか&lt;/h3>
-&lt;p>僕の家には&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">自作の100W級ソーラーシステム&lt;/a>
-があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p>
+&lt;p>僕の家には&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">自作の100W級ソーラーシステム&lt;/a>があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>Solar&lt;/h4>
@@ -39,8 +35,7 @@
 &lt;h3 id="wifi経由でサーバーへ">WiFi経由でサーバーへ&lt;/h3>
 &lt;p>測定した電力データはWiFiを使って任意のサーバーに送ることができます。&lt;/p></description></item><item><title>メダカの照明 Ver.2</title><link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link><pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="メダカの水槽の照明">メダカの水槽の照明&lt;/h3>
-&lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>
-(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
+&lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>めだか&lt;/h4>
@@ -51,13 +46,10 @@
 &lt;p>今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p>
 &lt;p>このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://www.kerislab.jp/posts/2015-12-30-ir-station/">赤外線学習リモコン（日本語による紹介記事）&lt;/a>
-&lt;/li>
-&lt;li>&lt;a href="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/">赤外線学習リモコン（英語によるリファレンス）&lt;/a>
-&lt;/li>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2015-12-30-ir-station/">赤外線学習リモコン（日本語による紹介記事）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/">赤外線学習リモコン（英語によるリファレンス）&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="_blank">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>
-&lt;/p>
+&lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>ESP-WROOM-02&lt;/h4>
@@ -68,8 +60,7 @@
 &lt;p>ESP8266とはWiFi制御用マイコンです。もともと中国で流行っていました。そのマイコンを内蔵したESP-WROOM-02というWiFiモジュールが日本の技適を取得したので、日本でも人気になりました。&lt;/p>
 &lt;h3 id="とにかく安い">とにかく安い！&lt;/h3>
 &lt;p>その価格はなんと、たったの &lt;strong>550円&lt;/strong> です！！&lt;br>
-&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="_blank">ESP-WROOM-02&lt;/a>
-←秋月電子などで売っています。&lt;br>
+&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02&lt;/a>←秋月電子などで売っています。&lt;br>
 &lt;figure >
 &lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="blank">
 &lt;figcaption>

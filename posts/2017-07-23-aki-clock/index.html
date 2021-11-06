@@ -9,22 +9,27 @@
 <meta name=description content>
 <meta property="og:title" content="秋月の時計キットをNTP時計化">
 <meta property="og:description" content="家の玄関で地味に役に立っていた時計
-かなり前に秋月電子で買った時計キット
-。
+かなり前に秋月電子で買った時計キット。
 数字が大きく、遠くからでもよく見えるので自宅の玄関で地味に役立っていました。
 しかし、水晶の精度がいまいちでよくズレるので、7セグの表示部だけを残してESP32によるNTP時計にアップデートしました。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-07-23-aki-clock/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-07-23-aki-clock/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-07-23-aki-clock/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-07-23-aki-clock/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-07-23T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-07-23T00:00:00+00:00">
+<meta itemprop=name content="秋月の時計キットをNTP時計化">
+<meta itemprop=description content="家の玄関で地味に役に立っていた時計
+かなり前に秋月電子で買った時計キット。
+数字が大きく、遠くからでもよく見えるので自宅の玄関で地味に役立っていました。
+しかし、水晶の精度がいまいちでよくズレるので、7セグの表示部だけを残してESP32によるNTP時計にアップデートしました。"><meta itemprop=datePublished content="2017-07-23T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-07-23T00:00:00+00:00">
+<meta itemprop=wordCount content="1542">
+<meta itemprop=keywords content="ESP32,ESP-WROOM-32,NTP,時計,秋月,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="秋月の時計キットをNTP時計化">
 <meta name=twitter:description content="家の玄関で地味に役に立っていた時計
-かなり前に秋月電子で買った時計キット
-。
+かなり前に秋月電子で買った時計キット。
 数字が大きく、遠くからでもよく見えるので自宅の玄関で地味に役立っていました。
 しかし、水晶の精度がいまいちでよくズレるので、7セグの表示部だけを残してESP32によるNTP時計にアップデートしました。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -91,8 +96,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt=秋月の時計キットをNTP時計化>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2017-07-23-aki-clock/icon.jpg alt=秋月の時計キットをNTP時計化>
 </figure>
 <h1 class=post__title>秋月の時計キットをNTP時計化</h1>
 <div class="post__meta meta">
@@ -106,8 +111,7 @@
 <a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
 <div class="content post__content clearfix">
 <h2 id=家の玄関で地味に役に立っていた時計>家の玄関で地味に役に立っていた時計</h2>
-<p>かなり前に秋月電子で買った<a href=http://akizukidenshi.com/catalog/g/gK-04379/ target=_blank>時計キット</a>
-。<br>
+<p>かなり前に秋月電子で買った<a href=http://akizukidenshi.com/catalog/g/gK-04379/>時計キット</a>。<br>
 数字が大きく、遠くからでもよく見えるので自宅の玄関で地味に役立っていました。</p>
 <p>しかし、水晶の精度がいまいちでよくズレるので、7セグの表示部だけを残してESP32によるNTP時計にアップデートしました。</p>
 <figure>
@@ -127,10 +131,8 @@
 </figure>
 </p>
 <h2 id=ソースコード>ソースコード</h2>
-<p><a href=https://github.com/espressif/arduino-esp32 target=_blank>Arduino core for the ESP32</a>
-環境で動作するコードです。</p>
-<p><a href=aki-clock.zip>ここ</a>
-からダウンロードできます。</p>
+<p><a href=https://github.com/espressif/arduino-esp32>Arduino core for the ESP32</a> 環境で動作するコードです。</p>
+<p><a href=aki-clock.zip>ここ</a>からダウンロードできます。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cm>/**
 </span><span class=cm>  @title ESP32 AKI-RETROFIT-TOKEI
 </span><span class=cm>  @author  kerikun11 (GitHub: kerikun11)

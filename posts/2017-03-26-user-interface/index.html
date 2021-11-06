@@ -16,10 +16,20 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
 
 今回のコードは、ESP32用に書かれています。ご注意ください。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-03-26-user-interface/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-03-26-user-interface/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-03-26T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-03-26T00:00:00+00:00">
+<meta itemprop=name content="ESP32用UIライブラリ">
+<meta itemprop=description content="概要
+ESP32も徐々に使い慣れてきました。今回の記事では、ちょっとした工作には欠かせないユーザーインターフェースのコードを紹介します。
+
+スピーカーから音階を鳴らすブザークラス
+タクトスイッチなどのボタンを扱うボタンクラス
+
+今回のコードは、ESP32用に書かれています。ご注意ください。"><meta itemprop=datePublished content="2017-03-26T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-03-26T00:00:00+00:00">
+<meta itemprop=wordCount content="1224">
+<meta itemprop=keywords content="ESP32,Arduino,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP32用UIライブラリ">
 <meta name=twitter:description content="概要
@@ -29,7 +39,6 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
 タクトスイッチなどのボタンを扱うボタンクラス
 
 今回のコードは、ESP32用に書かれています。ご注意ください。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -117,8 +126,7 @@ ESP32も徐々に使い慣れてきました。今回の記事では、ちょっ
 <h2 id=必要なライブラリ>必要なライブラリ</h2>
 <h3 id=taskbaseh>TaskBase.h</h3>
 <p>C++のメンバ関数をFreeRTOSに渡すためのクラスです。タスクを作るときはこのクラスを継承して使います。
-こちらのコードは、<a href=http://idken.net/posts/2017-02-01-freertos_task_cpp/ target=_blank>id研</a>
-さんから教えて頂いたものを改変しております。</p>
+こちらのコードは、<a href=http://idken.net/posts/2017-02-01-freertos_task_cpp/>id研</a>さんから教えて頂いたものを改変しております。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=cp>#pragma once
 </span><span class=cp></span>
 <span class=cp>#include</span> <span class=cpf>&#34;freertos/FreeRTOS.h&#34;</span><span class=cp>

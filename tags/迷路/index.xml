@@ -6,8 +6,7 @@
 マイクロマウスの迷路探索アルゴリズムに必要な処理とアルゴリズムの概要について記述する。&lt;/p>
 &lt;p>なお、この記事は下記リポジトリのドキュメントの転載である。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://github.com/kerikun11/micromouse-maze-library" target="_blank">MicroMouse Maze Library - GitHub&lt;/a>
-&lt;/li>
+&lt;li>&lt;a href="https://github.com/kerikun11/micromouse-maze-library">MicroMouse Maze Library - GitHub&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>探索アルゴリズムの実装例や使用例はこのリポジトリを参照のこと。&lt;/p></description></item><item><title>マイクロマウス迷路の自動生成</title><link>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</link><pubDate>Mon, 23 Mar 2020 17:51:37 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>こんにちは。けりです。&lt;/p>
@@ -32,17 +31,14 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;strong>第3回Cheese杯&lt;/strong> を開催しました。&lt;/p>
 &lt;p>今回はそのとき出題された迷路を簡単に紹介します。&lt;/p></description></item><item><title>MATLABで迷路画像をパースする</title><link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link><pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
 &lt;p>今回は、マイクロマウス公式から配布される迷路画像を、プログラムなどで読める形式に変換するMATLABコードを紹介します。&lt;/p>
-&lt;p>自分向けに作ったものなので、あまり高機能ではありませんが、参考になれば幸いです。&lt;/p></description></item><item><title>マイクロマウス2017HX決勝迷路の探索結果</title><link>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</link><pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</guid><description>&lt;p>先日、&lt;a href="http://www.ntf.or.jp/mouse/micromouse2017/" target="_blank">全日本マイクロマウス大会2017&lt;/a>
-が開催されました。結果報告の記事は&lt;a href="https://www.kerislab.jp/posts/2017-11-22-micromouse2017/">こちら&lt;/a>
-&lt;/p>
+&lt;p>自分向けに作ったものなので、あまり高機能ではありませんが、参考になれば幸いです。&lt;/p></description></item><item><title>マイクロマウス2017HX決勝迷路の探索結果</title><link>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</link><pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</guid><description>&lt;p>先日、&lt;a href="http://www.ntf.or.jp/mouse/micromouse2017/">全日本マイクロマウス大会2017&lt;/a>が開催されました。結果報告の記事は&lt;a href="https://www.kerislab.jp/posts/2017-11-22-micromouse2017/">こちら&lt;/a>&lt;/p>
 &lt;p>ハーフサイズエキスパートクラス決勝の32x32迷路は、サイズが大きすぎて(私の知る限り)どの団体も所持しておらず、年に一回全日本大会でしか見ることができない激レア迷路となっています。&lt;/p>
 &lt;p>今回はその迷路の探索結果についてお話しします。&lt;/p></description></item><item><title>調整用の小さな迷路</title><link>https://www.kerislab.jp/posts/2017-11-05-small-maze/</link><pubDate>Sun, 05 Nov 2017 15:26:06 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-05-small-maze/</guid><description>&lt;p>こんにちは。&lt;/p>
 &lt;p>エクストリーム新作のKERISEv3-2を諦めてKERISEv3-1を必死に調整している、けりです。&lt;/p>
 &lt;p>今回は自作の調整用迷路の紹介です。&lt;/p></description></item><item><title>僕の迷路クラスの紹介</title><link>https://www.kerislab.jp/posts/2017-11-01-maze-class/</link><pubDate>Wed, 01 Nov 2017 10:31:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-01-maze-class/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
 &lt;p>今回もマイクロマウスの話題です。僕が使っている迷路クラスを紹介します。&lt;/p></description></item><item><title>ハーフサイズ迷路の自作</title><link>https://www.kerislab.jp/posts/2017-01-13-half-maze/</link><pubDate>Fri, 13 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-13-half-maze/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>昨年夏に始めたマイクロマウス。&lt;br>
-&lt;a href="https://www.kerislab.jp/tags/kerisev2">KERISEv2&lt;/a>
-ができてついにハーフにデビューしました！&lt;br>
+&lt;a href="https://www.kerislab.jp/tags/kerisev2">KERISEv2&lt;/a>ができてついにハーフにデビューしました！&lt;br>
 しかし、自宅には迷路がないので試しに自分で作ってみることにしました。&lt;/p></description></item><item><title>ハーフ迷路を走ってみました！</title><link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link><pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid><description>&lt;h2 id="ハーフサイズの迷路を走ってみました">ハーフサイズの迷路を走ってみました&lt;/h2>
 &lt;p>こんにちは、けりです。&lt;br>
 KERISE v2の制御が落ち着てきたので、ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p></description></item></channel></rss>

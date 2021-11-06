@@ -9,8 +9,7 @@
 <meta name=description content>
 <meta property="og:title" content="PICでUSB通信">
 <meta property="og:description" content="概要
-以前 PIC18F27J53のすすめ
- という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。
+以前 PIC18F27J53のすすめ という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。
 今回紹介する方法では、USBをUARTの代わりに使えるようにするものです。PICをPCにつなぐとCOMポートが現れます。
 これならUSBシリアル変換モジュールを使う必要はなくります。
 
@@ -24,14 +23,31 @@
 	
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2016-01-10-pic-usb/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-01-10-pic-usb/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2016-01-10-pic-usb/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-01-10-pic-usb/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2016-01-10T00:00:00+00:00">
 <meta property="article:modified_time" content="2016-01-10T00:00:00+00:00">
+<meta itemprop=name content="PICでUSB通信">
+<meta itemprop=description content="概要
+以前 PIC18F27J53のすすめ という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。
+今回紹介する方法では、USBをUARTの代わりに使えるようにするものです。PICをPCにつなぐとCOMポートが現れます。
+これならUSBシリアル変換モジュールを使う必要はなくります。
+
+	
+		
+		
+			AE-FT232
+		
+		
+		
+	
+"><meta itemprop=datePublished content="2016-01-10T00:00:00+00:00">
+<meta itemprop=dateModified content="2016-01-10T00:00:00+00:00">
+<meta itemprop=wordCount content="2499">
+<meta itemprop=keywords content="PIC,PIC18F27J53,USB,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="PICでUSB通信">
 <meta name=twitter:description content="概要
-以前 PIC18F27J53のすすめ
- という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。
+以前 PIC18F27J53のすすめ という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。
 今回紹介する方法では、USBをUARTの代わりに使えるようにするものです。PICをPCにつなぐとCOMポートが現れます。
 これならUSBシリアル変換モジュールを使う必要はなくります。
 
@@ -44,7 +60,6 @@
 		
 	
 ">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -111,8 +126,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt=PICでUSB通信>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2016-01-10-pic-usb/icon.jpg alt=PICでUSB通信>
 </figure>
 <h1 class=post__title>PICでUSB通信</h1>
 <div class="post__meta meta">
@@ -126,8 +141,7 @@
 <a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
 <div class="content post__content clearfix">
 <h2 id=概要>概要</h2>
-<p>以前 <a href=/posts/2016-01-08-pic18f27j53/>PIC18F27J53のすすめ</a>
-という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。</p>
+<p>以前 <a href=/posts/2016-01-08-pic18f27j53/>PIC18F27J53のすすめ</a> という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。</p>
 <p>今回紹介する方法では、USBをUARTの代わりに使えるようにするものです。PICをPCにつなぐとCOMポートが現れます。</p>
 <p>これならUSBシリアル変換モジュールを使う必要はなくります。</p>
 <figure>
@@ -183,8 +197,7 @@
 <li>My_ringbuf.h</li>
 <li>My_ringbuf.c</li>
 </ul>
-<p>これらのファイルは<a href=USB_CDC.zip>ここ</a>
-からダウンロードできます。</p>
+<p>これらのファイルは<a href=USB_CDC.zip>ここ</a>からダウンロードできます。</p>
 <h3 id=ユーザーが使う関数>ユーザーが使う関数</h3>
 <p>このうちユーザーが使う関数が含まれるのは、</p>
 <ul>
@@ -357,8 +370,7 @@
 <span class=p>}</span>
 
 </code></pre></div><h2 id=プログラムの例>プログラムの例</h2>
-<p>以上の設定がすでにされているMPLAB Xのプロジェクトファイルは<a href=PIC18F27J53-USB_CDC-sample.zip>ここ</a>
-からダウンロードできます。</p>
+<p>以上の設定がすでにされているMPLAB Xのプロジェクトファイルは<a href=PIC18F27J53-USB_CDC-sample.zip>ここ</a>からダウンロードできます。</p>
 <p>コンパイルすると大量の警告が出ますが、これはライブラリ中の未使用関数の警告です。無視して大丈夫です。</p>
 <h3 id=mainc>main.c</h3>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=cm>/*

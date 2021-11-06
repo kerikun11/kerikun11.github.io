@@ -6,9 +6,7 @@
 &lt;p>KiCad の基板エディタ Pcbnew では、デフォルトでPythonスクリプトエディタが付属していて、すでにフットプリントがオブジェクトとして定義されています。&lt;/p>
 &lt;p>今回は私がよく使う一括変更を紹介します。&lt;/p></description></item><item><title>MATLABで迷路画像をパースする</title><link>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</link><pubDate>Wed, 04 Jul 2018 15:18:17 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2018-07-04-maze-img-parser/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
 &lt;p>今回は、マイクロマウス公式から配布される迷路画像を、プログラムなどで読める形式に変換するMATLABコードを紹介します。&lt;/p>
-&lt;p>自分向けに作ったものなので、あまり高機能ではありませんが、参考になれば幸いです。&lt;/p></description></item><item><title>マイクロマウス2017HX決勝迷路の探索結果</title><link>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</link><pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</guid><description>&lt;p>先日、&lt;a href="http://www.ntf.or.jp/mouse/micromouse2017/" target="_blank">全日本マイクロマウス大会2017&lt;/a>
-が開催されました。結果報告の記事は&lt;a href="https://www.kerislab.jp/posts/2017-11-22-micromouse2017/">こちら&lt;/a>
-&lt;/p>
+&lt;p>自分向けに作ったものなので、あまり高機能ではありませんが、参考になれば幸いです。&lt;/p></description></item><item><title>マイクロマウス2017HX決勝迷路の探索結果</title><link>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</link><pubDate>Mon, 27 Nov 2017 12:39:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-27-result-of-hx2017-maze/</guid><description>&lt;p>先日、&lt;a href="http://www.ntf.or.jp/mouse/micromouse2017/">全日本マイクロマウス大会2017&lt;/a>が開催されました。結果報告の記事は&lt;a href="https://www.kerislab.jp/posts/2017-11-22-micromouse2017/">こちら&lt;/a>&lt;/p>
 &lt;p>ハーフサイズエキスパートクラス決勝の32x32迷路は、サイズが大きすぎて(私の知る限り)どの団体も所持しておらず、年に一回全日本大会でしか見ることができない激レア迷路となっています。&lt;/p>
 &lt;p>今回はその迷路の探索結果についてお話しします。&lt;/p></description></item><item><title>FreeRTOSのTaskにC++のメンバ関数を割り当てる</title><link>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>FreeRTOSはC言語で書かれているので、C++のメンバ関数をそのまま渡すことができない。今回の記事ではその解決策のひとつを紹介する。&lt;/p></description></item><item><title>U-Microコネクタの正体</title><link>https://www.kerislab.jp/posts/2017-07-02-u-micro-connector/</link><pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-07-02-u-micro-connector/</guid><description>&lt;h2 id="u-microコネクタとは">U-Microコネクタとは&lt;/h2>
@@ -25,8 +23,7 @@
 &lt;p>今回のコードは、ESP32用に書かれています。ご注意ください。&lt;/p></description></item><item><title>Apache2でIR-Stationデモ</title><link>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る。&lt;/p>
 &lt;p>この記事は、デモサイトを作るときのメモ。&lt;br>
-デモサイト紹介記事は&lt;a href="https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/">こちら&lt;/a>
-&lt;/p></description></item><item><title>CrontabでMyDNS.jpのIP通知</title><link>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+デモサイト紹介記事は&lt;a href="https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/">こちら&lt;/a>&lt;/p></description></item><item><title>CrontabでMyDNS.jpのIP通知</title><link>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-update-mydns/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>家のIPアドレスは固定ではないのでDDNSで追いかける。&lt;/p></description></item><item><title>PICでリアルタイムクロック</title><link>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</link><pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>PIC18F27J53は、リアルタイムクロック&amp;amp;カレンダー(RTCC)モジュールをハードウェアで持っています。今回はそれを使用するためのライブラリを作ったので紹介します。&lt;/p></description></item><item><title>VolumioでiTunesのプレイリストを使う</title><link>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</link><pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="volumio">Volumio&lt;/h3>
@@ -55,8 +52,7 @@ HDD：Western Digital 2TB 3.5 inch&lt;br>
 &lt;p>iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので、今回は初心者でも使いやすいufwというソフトを使う。&lt;/p></description></item><item><title>delayやwhileを使わないI2C液晶表示プログラム</title><link>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</link><pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>秋月やaitendoで売っているI2C液晶を使っている人は多い。しかし、ほとんどのサンプルプログラムは、I2Cの通信をwhile文などにより送信完了待ちしていて、その間に（割り込みを除く）他のプログラムが実行できない。そこで今回は、I2C液晶に表示させる内容を送信バッファに入れておけば自動で送信してくれるプログラムを書く。&lt;/p>
 &lt;p>秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。&lt;br>
-&lt;a href="http://akizukidenshi.com/catalog/g/gK-06795/" target="_blank">秋月のI2C液晶(AQM0802)&lt;/a>
-&lt;br>
+&lt;a href="http://akizukidenshi.com/catalog/g/gK-06795/">秋月のI2C液晶(AQM0802)&lt;/a>&lt;br>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>AQM0802&lt;/h4>

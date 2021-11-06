@@ -10,13 +10,11 @@
 &lt;/figcaption>
 &lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/>
 &lt;/figure>
-&lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank">ESP32 Overview | Espressif Systems&lt;/a>
-&lt;/p>
+&lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview">ESP32 Overview | Espressif Systems&lt;/a>&lt;/p>
 &lt;p>ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
 同時に gcc で開発できるマイコンでもあります。&lt;/p></description></item><item><title>ESP32の設定管理ライブラリの紹介</title><link>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</link><pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>みなさん、ESP32使ってますか？僕は使っています。その偉大さには驚くばかりです。&lt;/p>
-&lt;p>さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「&lt;a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences" target="_blank">Preferences&lt;/a>
-」です。&lt;/p>
+&lt;p>さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「&lt;a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences">Preferences&lt;/a>」です。&lt;/p>
 &lt;p>ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。&lt;/p>
 &lt;p>みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。&lt;/p>
 &lt;p>不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します。&lt;/p></description></item><item><title>ESP32からメールを送る</title><link>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</link><pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-04-08-esp32-mail/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
@@ -30,17 +28,12 @@
 &lt;p>今回のコードは、ESP32用に書かれています。ご注意ください。&lt;/p></description></item><item><title>赤外線学習リモコン完成</title><link>https://www.kerislab.jp/posts/2016-07-18-ir-station/</link><pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-18-ir-station/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>赤外線学習リモコンとは、市販の家電製品などのリモコンの赤外線信号を記憶し、送信することができるものです。&lt;/p>
 &lt;p>今回は、WiFi接続に対応した赤外線学習リモコンを作りました。スマートフォンやパソコンなどから、家電製品をコントロールすることができます。&lt;/p></description></item><item><title>ソーラー発電量モニター</title><link>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">100W級ソーラーシステム&lt;/a>
-の発電量を&lt;a href="https://thingspeak.com/" target="_blank">ThingSpeak.com&lt;/a>
-というサイトに送ってグラフ化しました。&lt;/p>
-&lt;p>データの送信には、自作の&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">中継型電力計&lt;/a>
-を使用しています。&lt;/p></description></item><item><title>電力つぶやきbot</title><link>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</link><pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">100W級ソーラーシステム&lt;/a>の発電量を&lt;a href="https://thingspeak.com/">ThingSpeak.com&lt;/a>というサイトに送ってグラフ化しました。&lt;/p>
+&lt;p>データの送信には、自作の&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">中継型電力計&lt;/a>を使用しています。&lt;/p></description></item><item><title>電力つぶやきbot</title><link>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</link><pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="中継型電力計">中継型電力計&lt;/h3>
-&lt;p>先日の記事で&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">ESP-WROOM-02による中継型電力計&lt;/a>
-を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p>
+&lt;p>先日の記事で&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">ESP-WROOM-02による中継型電力計&lt;/a>を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p>
 &lt;h3 id="何の電力をつぶやくのか">何の電力をつぶやくのか&lt;/h3>
-&lt;p>僕の家には&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">自作の100W級ソーラーシステム&lt;/a>
-があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p>
+&lt;p>僕の家には&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">自作の100W級ソーラーシステム&lt;/a>があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>Solar&lt;/h4>
@@ -63,8 +56,7 @@
 &lt;h3 id="wifi経由でサーバーへ">WiFi経由でサーバーへ&lt;/h3>
 &lt;p>測定した電力データはWiFiを使って任意のサーバーに送ることができます。&lt;/p></description></item><item><title>メダカの照明 Ver.2</title><link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link><pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="メダカの水槽の照明">メダカの水槽の照明&lt;/h3>
-&lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>
-(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
+&lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>めだか&lt;/h4>
@@ -75,13 +67,10 @@
 &lt;p>今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p>
 &lt;p>このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://www.kerislab.jp/posts/2015-12-30-ir-station/">赤外線学習リモコン（日本語による紹介記事）&lt;/a>
-&lt;/li>
-&lt;li>&lt;a href="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/">赤外線学習リモコン（英語によるリファレンス）&lt;/a>
-&lt;/li>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2015-12-30-ir-station/">赤外線学習リモコン（日本語による紹介記事）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/">赤外線学習リモコン（英語によるリファレンス）&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="_blank">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>
-&lt;/p>
+&lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>ESP-WROOM-02&lt;/h4>
@@ -92,8 +81,7 @@
 &lt;p>ESP8266とはWiFi制御用マイコンです。もともと中国で流行っていました。そのマイコンを内蔵したESP-WROOM-02というWiFiモジュールが日本の技適を取得したので、日本でも人気になりました。&lt;/p>
 &lt;h3 id="とにかく安い">とにかく安い！&lt;/h3>
 &lt;p>その価格はなんと、たったの &lt;strong>550円&lt;/strong> です！！&lt;br>
-&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="_blank">ESP-WROOM-02&lt;/a>
-←秋月電子などで売っています。&lt;br>
+&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02&lt;/a>←秋月電子などで売っています。&lt;br>
 &lt;figure >
 &lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="blank">
 &lt;figcaption>

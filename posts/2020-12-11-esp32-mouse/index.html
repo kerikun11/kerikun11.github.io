@@ -10,7 +10,6 @@
 <meta property="og:title" content="ESP32 でマイクロマウスを作るメリットとデメリット">
 <meta property="og:description" content="この記事は
 Micro Mouse Advent Calendar 2020
-
 の 11 日目の記事です。
 昨日の記事は、FND さんの「今年買ったもの」でした。
 めっちゃいろんなもの買っててやっぱ社会人パワー最高ですね！！
@@ -19,14 +18,26 @@ Micro Mouse Advent Calendar 2020
 さてさて今回の記事では、私が今までに ESP32 でマウスを作ってきてよかったことと辛かったことを紹介したいと思います。
 今後 ESP32 でマウスを作ろうと思っている方の参考になれば幸いです。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2020-12-11T18:11:57+09:00">
 <meta property="article:modified_time" content="2020-12-11T18:11:57+09:00">
+<meta itemprop=name content="ESP32 でマイクロマウスを作るメリットとデメリット">
+<meta itemprop=description content="この記事は
+Micro Mouse Advent Calendar 2020
+の 11 日目の記事です。
+昨日の記事は、FND さんの「今年買ったもの」でした。
+めっちゃいろんなもの買っててやっぱ社会人パワー最高ですね！！
+ぼくもグラボほしーーー
+はじめに
+さてさて今回の記事では、私が今までに ESP32 でマウスを作ってきてよかったことと辛かったことを紹介したいと思います。
+今後 ESP32 でマウスを作ろうと思っている方の参考になれば幸いです。"><meta itemprop=datePublished content="2020-12-11T18:11:57+09:00">
+<meta itemprop=dateModified content="2020-12-11T18:11:57+09:00">
+<meta itemprop=wordCount content="2327">
+<meta itemprop=keywords content="マイクロマウス,ESP32,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP32 でマイクロマウスを作るメリットとデメリット">
 <meta name=twitter:description content="この記事は
 Micro Mouse Advent Calendar 2020
-
 の 11 日目の記事です。
 昨日の記事は、FND さんの「今年買ったもの」でした。
 めっちゃいろんなもの買っててやっぱ社会人パワー最高ですね！！
@@ -34,7 +45,6 @@ Micro Mouse Advent Calendar 2020
 はじめに
 さてさて今回の記事では、私が今までに ESP32 でマウスを作ってきてよかったことと辛かったことを紹介したいと思います。
 今後 ESP32 でマウスを作ろうと思っている方の参考になれば幸いです。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -101,8 +111,8 @@ Micro Mouse Advent Calendar 2020
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt="ESP32 でマイクロマウスを作るメリットとデメリット">
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2020-12-11-esp32-mouse/icon.jpg alt="ESP32 でマイクロマウスを作るメリットとデメリット">
 </figure>
 <h1 class=post__title>ESP32 でマイクロマウスを作るメリットとデメリット</h1>
 <div class="post__meta meta">
@@ -116,7 +126,7 @@ Micro Mouse Advent Calendar 2020
 <a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
 <div class="content post__content clearfix">
 <p>この記事は
-<a href=https://adventar.org/calendars/5829 target=_blank>Micro Mouse Advent Calendar 2020</a>
+<a href=https://adventar.org/calendars/5829>Micro Mouse Advent Calendar 2020</a>
 の 11 日目の記事です。</p>
 <p>昨日の記事は、FND さんの「今年買ったもの」でした。<br>
 めっちゃいろんなもの買っててやっぱ社会人パワー最高ですね！！<br>
@@ -125,10 +135,8 @@ Micro Mouse Advent Calendar 2020
 <p>さてさて今回の記事では、私が今までに ESP32 でマウスを作ってきてよかったことと辛かったことを紹介したいと思います。</p>
 <p>今後 ESP32 でマウスを作ろうと思っている方の参考になれば幸いです。</p>
 <h2 id=esp32-とは>ESP32 とは？</h2>
-<p><a href=https://www.espressif.com/en/products/socs/esp32 target=_blank>ESP32</a>
-とは、
-<a href=https://www.espressif.com/ target=_blank>Espressif Systems</a>
-社が発売しているワンチップマイコンです。</p>
+<p><a href=https://www.espressif.com/en/products/socs/esp32>ESP32</a> とは、
+<a href=https://www.espressif.com/>Espressif Systems</a> 社が発売しているワンチップマイコンです。</p>
 <p>WiFi & Bluetooth を搭載しているにも関わらず 500 円以下という安価なので、
 IoT 界隈でかなり注目されているマイコンです。</p>
 <p>私はこのマイコンの前身である ESP8266 を愛用していたので、
@@ -151,8 +159,7 @@ KERISE v1, KERISE v2 は STM32F405RGT6 マイコンを使用していました�
 <p>Flash メモリも 4MB もあって、メモリに困ることはほとんどありません。</p>
 <p>ちなみに、Dual-Core は RTOS によってマネジメントされており、
 簡単にマルチスレッドのプログラムを書くことができます。</p>
-<p>詳しくは <a href=/posts/2017-06-24-esp32-dual-core/>こちら</a>
-の記事をご覧ください。</p>
+<p>詳しくは <a href=/posts/2017-06-24-esp32-dual-core/>こちら</a> の記事をご覧ください。</p>
 <h3 id=io-ピンの割り当てが楽>I/O ピンの割り当てが楽</h3>
 <p>ESP32 のペリフェラルの I/O ピンは一部のピンを除いて再割り当て可能となっています。</p>
 <p>PWM, SPI, I2C などのピンを好きなピンに割り当てることができるので、機能の重複を避けたりする必要がありません。</p>
@@ -163,9 +170,7 @@ KERISE v1, KERISE v2 は STM32F405RGT6 マイコンを使用していました�
 <p>例えばシステムクロック <code>std::chrono</code> やマルチスレッド <code>std::thread</code> なども使用可能です。</p>
 <p>マイコンというよりも PC のプログラムを書いているかのようにコーディングが可能です。</p>
 <h3 id=公式ドキュメントがめっちゃわかりやすい>公式ドキュメントがめっちゃわかりやすい</h3>
-<p>ESP32 は製造元の Espressif がけっこう熱心で、<a href=https://docs.espressif.com/projects/esp-idf/en/latest/esp32/index.html target=_blank>ドキュメント</a>
-や <a href=https://github.com/espressif/esp-idf/tree/master/examples target=_blank>サンプルコード</a>
-がかなりわかりやすく書いてあります。</p>
+<p>ESP32 は製造元の Espressif がけっこう熱心で、<a href=https://docs.espressif.com/projects/esp-idf/en/latest/esp32/index.html>ドキュメント</a> や <a href=https://github.com/espressif/esp-idf/tree/master/examples>サンプルコード</a> がかなりわかりやすく書いてあります。</p>
 <p>ESP32 のコードを書こうとしたとき、ググって調べることはほとんどなくて公式ドキュメントだけですべて解決してしまいます。</p>
 <h3 id=ハードフォルトの際にはコアダンプでどの部分で落ちたか教えてくれる>ハードフォルトの際にはコアダンプでどの部分で落ちたか教えてくれる</h3>
 <p>ESP32 は RTOS の組み込みやベース実装がしっかりしていて、
@@ -223,7 +228,7 @@ Flash メモリのファイルシステムにデータを書き込もうとす�
 まだ使ったことがない方はぜひ使ってみてください。</p>
 <p>この記事がこれから ESP32 マウスを作ろうとしている方の参考になれば幸いです。</p>
 <p>明日の
-<a href=https://adventar.org/calendars/5829 target=_blank>Micro Mouse Advent Calendar 2020</a>
+<a href=https://adventar.org/calendars/5829>Micro Mouse Advent Calendar 2020</a>
 の担当はそらさんです。
 お楽しみに！</p>
 </div>

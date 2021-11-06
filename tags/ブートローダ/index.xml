@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ブートローダ on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80/</link><description>Recent content in ブートローダ on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Wed, 13 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80/index.xml" rel="self" type="application/rss+xml"/><item><title>PICでブートローダ</title><link>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</link><pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="pic18f27j53を使おう">PIC18F27J53を使おう&lt;/h3>
-&lt;p>以前 &lt;a href="https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/">PIC18F27J53のすすめ&lt;/a>
-という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。&lt;/p>
+&lt;p>以前 &lt;a href="https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/">PIC18F27J53のすすめ&lt;/a> という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。&lt;/p>
 &lt;h3 id="ブートローダとは">ブートローダとは&lt;/h3>
 &lt;p>ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。&lt;/p>
 &lt;p>ただし、初回に一度だけブートローダ用のプログラムをPICkitなどで書きこむ必要があります。&lt;/p>

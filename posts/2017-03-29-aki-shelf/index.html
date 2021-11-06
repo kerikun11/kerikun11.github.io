@@ -10,21 +10,26 @@
 <meta property="og:title" content="ESP-WROOM-32で秋月の売場表示">
 <meta property="og:description" content="まずはじめに
 秋月の通販サイトが進化
-少し前から、秋月の通販サイト
-で店舗の在庫数と売場の場所が見れるようになりました。
+少し前から、秋月の通販サイトで店舗の在庫数と売場の場所が見れるようになりました。
 商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ、在庫数と売場が表示されます。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-03-29-aki-shelf/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-03-29-aki-shelf/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-03-29-aki-shelf/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-03-29-aki-shelf/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-03-29T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-03-29T00:00:00+00:00">
+<meta itemprop=name content="ESP-WROOM-32で秋月の売場表示">
+<meta itemprop=description content="まずはじめに
+秋月の通販サイトが進化
+少し前から、秋月の通販サイトで店舗の在庫数と売場の場所が見れるようになりました。
+商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ、在庫数と売場が表示されます。"><meta itemprop=datePublished content="2017-03-29T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-03-29T00:00:00+00:00">
+<meta itemprop=wordCount content="1342">
+<meta itemprop=keywords content="秋月,ESP-WROOM-32,ESP32,WiFi,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP-WROOM-32で秋月の売場表示">
 <meta name=twitter:description content="まずはじめに
 秋月の通販サイトが進化
-少し前から、秋月の通販サイト
-で店舗の在庫数と売場の場所が見れるようになりました。
+少し前から、秋月の通販サイトで店舗の在庫数と売場の場所が見れるようになりました。
 商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ、在庫数と売場が表示されます。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -91,8 +96,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt=ESP-WROOM-32で秋月の売場表示>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2017-03-29-aki-shelf/icon.jpg alt=ESP-WROOM-32で秋月の売場表示>
 </figure>
 <h1 class=post__title>ESP-WROOM-32で秋月の売場表示</h1>
 <div class="post__meta meta">
@@ -107,8 +112,7 @@
 <div class="content post__content clearfix">
 <h2 id=まずはじめに>まずはじめに</h2>
 <h3 id=秋月の通販サイトが進化>秋月の通販サイトが進化</h3>
-<p>少し前から、<a href=http://akizukidenshi.com/ target=_blank>秋月の通販サイト</a>
-で店舗の在庫数と売場の場所が見れるようになりました。<br>
+<p>少し前から、<a href=http://akizukidenshi.com/>秋月の通販サイト</a>で店舗の在庫数と売場の場所が見れるようになりました。<br>
 商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ、在庫数と売場が表示されます。</p>
 <figure>
 <figcaption>
@@ -129,8 +133,7 @@
 </figcaption>
 <img src=esp-wroom-32.jpg alt=ESP-WROOM-32 style=width:240px>
 </figure>
-<p>先日、<a href=http://akizukidenshi.com/catalog/g/gM-11647/ target=_blank>ESP-WROOM-32</a>
-というWiFiモジュールが発売されました。以前からあるESP-WROOM-02の進化版で、同じように使うことができます。しかし、スペックが圧倒的に高くなりました。</p>
+<p>先日、<a href=http://akizukidenshi.com/catalog/g/gM-11647/>ESP-WROOM-32</a>というWiFiモジュールが発売されました。以前からあるESP-WROOM-02の進化版で、同じように使うことができます。しかし、スペックが圧倒的に高くなりました。</p>
 <p>32bitマイコンで、240MHz動作、なんとデュアルコアです。電子工作の世界にもマルチコアがやってきました！！</p>
 <h2 id=作ったもの>作ったもの</h2>
 <h3 id=動画通販コードから在庫数と棚番を表示>【動画】通販コードから在庫数と棚番を表示</h3>
@@ -138,8 +141,7 @@
 <p>秋月の通販コードを入力すると、秋葉原店での在庫数と、売場番号が表示されます。</p>
 <iframe width=640 height=360 src=https://www.youtube.com/embed/H1CoFhkhqEY frameborder=0 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h3 id=keriesp32を使用>KERIESP32を使用</h3>
-<p>以前紹介した<a href=/posts/2017-03-02-keriesp32/>KERIESP32基板</a>
-を使用して作りました。製作時間は3時間くらいです。</p>
+<p>以前紹介した<a href=/posts/2017-03-02-keriesp32/>KERIESP32基板</a>を使用して作りました。製作時間は3時間くらいです。</p>
 <p><figure>
 <figcaption>
 <h4>斜めから見た様子</h4>
@@ -191,8 +193,7 @@ Connection: close\r\n
 <p>HTMLのパースがかなり雑なので、秋月のサーバーの仕様が変わるとすぐに使えなくなりそうですが、おもしろいものができました。</p>
 <h2 id=新歓展示に出します>新歓展示に出します</h2>
 <p>こちらの作品は、東工大ロボット技術研究会の2017年度新歓展示に出す予定です。使ってみたい方は是非お越しください！<br>
-詳しくは<a href=https://www.rogiken.org/shinkan/2016/ target=_blank>東京工業大学ロボット技術研究会新歓ページ</a>
-へ。</p>
+詳しくは<a href=https://www.rogiken.org/shinkan/2016/>東京工業大学ロボット技術研究会新歓ページ</a>へ。</p>
 </div>
 <footer class=post__footer>
 <div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg>

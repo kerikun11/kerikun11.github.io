@@ -14,18 +14,32 @@
 
 コード補完
 コード整形
-環境に依存しにくい .latexmk
- でコンパイル
+環境に依存しにくい .latexmk でコンパイル
 散らかりがちな生成物を build ディレクトリにまとめる
 TeX コードのとなりに PDF をリアルタイム表示
 SyncTex による TeX コードと PDF の相互ジャンプ
 VSCode Vim を使って vim キーバインドで編集 (オプション)
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2019-01-14-vscode-latex/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2019-01-14-vscode-latex/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2019-01-14T10:00:00+09:00">
 <meta property="article:modified_time" content="2019-01-14T10:00:00+09:00">
+<meta itemprop=name content="VSCode で TeX を書こう">
+<meta itemprop=description content="概要
+今回は私が使っている TeX のエディタ環境を紹介します。
+注目機能は以下の通りです。
+
+コード補完
+コード整形
+環境に依存しにくい .latexmk でコンパイル
+散らかりがちな生成物を build ディレクトリにまとめる
+TeX コードのとなりに PDF をリアルタイム表示
+SyncTex による TeX コードと PDF の相互ジャンプ
+VSCode Vim を使って vim キーバインドで編集 (オプション)
+"><meta itemprop=datePublished content="2019-01-14T10:00:00+09:00">
+<meta itemprop=dateModified content="2019-01-14T10:00:00+09:00">
+<meta itemprop=wordCount content="1679">
+<meta itemprop=keywords content="VSCode,Latex,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="VSCode で TeX を書こう">
 <meta name=twitter:description content="概要
@@ -34,14 +48,12 @@ VSCode Vim を使って vim キーバインドで編集 (オプション)
 
 コード補完
 コード整形
-環境に依存しにくい .latexmk
- でコンパイル
+環境に依存しにくい .latexmk でコンパイル
 散らかりがちな生成物を build ディレクトリにまとめる
 TeX コードのとなりに PDF をリアルタイム表示
 SyncTex による TeX コードと PDF の相互ジャンプ
 VSCode Vim を使って vim キーバインドで編集 (オプション)
 ">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -125,8 +137,7 @@ VSCode Vim を使って vim キーバインドで編集 (オプション)
 <ul>
 <li>コード補完</li>
 <li>コード整形</li>
-<li>環境に依存しにくい <a href=https://texwiki.texjp.org/?Latexmk target=_blank>.latexmk</a>
-でコンパイル</li>
+<li>環境に依存しにくい <a href=https://texwiki.texjp.org/?Latexmk>.latexmk</a> でコンパイル</li>
 <li>散らかりがちな生成物を <code>build</code> ディレクトリにまとめる</li>
 <li>TeX コードのとなりに PDF をリアルタイム表示</li>
 <li><code>SyncTex</code> による TeX コードと PDF の相互ジャンプ</li>
@@ -136,10 +147,8 @@ VSCode Vim を使って vim キーバインドで編集 (オプション)
 <h3 id=インストール>インストール</h3>
 <p>次のリンクにしたがってインストールしてください。</p>
 <ul>
-<li><a href=https://texwiki.texjp.org/?TeX%20Live#w628bee6 target=_blank>TexLive</a>
-</li>
-<li><a href=https://code.visualstudio.com/ target=_blank>Microsoft Visual Studio Code</a>
-</li>
+<li><a href=https://texwiki.texjp.org/?TeX%20Live#w628bee6>TexLive</a></li>
+<li><a href=https://code.visualstudio.com/>Microsoft Visual Studio Code</a></li>
 </ul>
 <h3 id=拡張機能の追加>拡張機能の追加</h3>
 <p>以下の VSCode 拡張機能をインストールしましょう。</p>
@@ -203,12 +212,10 @@ VSCode Vim を使って vim キーバインドで編集 (オプション)
 TeX ファイルを編集中ときだけ適用されるようにしています。</p>
 <h3 id=latexmkrc-の追加>.latexmkrc の追加</h3>
 <p>TeX には platex や lualatex など様々なコマンドがありますが、エディタのビルド設定を変更してしまうと、コマンドが違うプロジェクトごとにいちいち設定を変えなければならなくなります。</p>
-<p>それを解決するために、<a href=https://texwiki.texjp.org/?Latexmk target=_blank>latexmk</a>
-というビルドコマンドがあります。</p>
+<p>それを解決するために、<a href=https://texwiki.texjp.org/?Latexmk>latexmk</a> というビルドコマンドがあります。</p>
 <p>tex ファイルと同じディレクトリに <code>.latexmkrc</code> という設定ファイルを置くと、そのファイルに書かれたビルドコマンドでビルドしてくれるので、エディタ側の設定を変更する必要がなくなります。</p>
 <p>また、コンパイル時に散らかりがちな中間生成物を <code>build</code> ディレクトリにまとめる処理も書かれています。</p>
-<p>ダウンロード: <a href=.latexmkrc>.latexmkrc</a>
-</p>
+<p>ダウンロード: <a href=.latexmkrc>.latexmkrc</a></p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-perl data-lang=perl><span class=ch>#!/usr/bin/env perl</span>
 <span class=c1># file          .latexmkrc</span>
 <span class=c1># author        Ryotaro Onuki</span>

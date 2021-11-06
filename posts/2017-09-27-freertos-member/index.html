@@ -11,15 +11,19 @@
 <meta property="og:description" content="概要
 FreeRTOSはC言語で書かれているので、C++のメンバ関数をそのまま渡すことができない。今回の記事ではその解決策のひとつを紹介する。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-09-27-freertos-member/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-09-27-freertos-member/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-09-27T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-09-27T00:00:00+00:00">
+<meta itemprop=name content="FreeRTOSのTaskにC++のメンバ関数を割り当てる">
+<meta itemprop=description content="概要
+FreeRTOSはC言語で書かれているので、C++のメンバ関数をそのまま渡すことができない。今回の記事ではその解決策のひとつを紹介する。"><meta itemprop=datePublished content="2017-09-27T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-09-27T00:00:00+00:00">
+<meta itemprop=wordCount content="697">
+<meta itemprop=keywords content="FreeRTOS,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="FreeRTOSのTaskにC++のメンバ関数を割り当てる">
 <meta name=twitter:description content="概要
 FreeRTOSはC言語で書かれているので、C++のメンバ関数をそのまま渡すことができない。今回の記事ではその解決策のひとつを紹介する。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -163,8 +167,7 @@ FreeRTOSはC言語で書かれているので、C++のメンバ関数をその�
 <p>受け取ったポインタは<code>void*</code>になっているので、<code>static_cast&lt;>()</code>によりクラスのポインタに直し、メンバ関数を呼ぶ。</p>
 <h2 id=参考記事>参考記事</h2>
 <ul>
-<li><a href=http://idken.net/posts/2017-02-01-freertos_task_cpp/ target=_blank>C++でFreeRTOSのタスクをいい感じにつくる</a>
-</li>
+<li><a href=http://idken.net/posts/2017-02-01-freertos_task_cpp/>C++でFreeRTOSのタスクをいい感じにつくる</a></li>
 </ul>
 </div>
 <footer class=post__footer>

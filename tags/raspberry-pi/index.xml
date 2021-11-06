@@ -6,8 +6,7 @@
 &lt;p>そのかわり、WiFiやBluetoothが技適の関係かわかりませんが今は載っていません。ただ、ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません。&lt;/p></description></item><item><title>Apache2でIR-Stationデモ</title><link>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</link><pubDate>Sun, 04 Dec 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-12-04-ir-station-demo-apache2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>ラズパイ+Apache2+SinatraでIR-Stationのデモサイトを作る。&lt;/p>
 &lt;p>この記事は、デモサイトを作るときのメモ。&lt;br>
-デモサイト紹介記事は&lt;a href="https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/">こちら&lt;/a>
-&lt;/p></description></item><item><title>ラズパイでミュージックサーバー</title><link>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</link><pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</guid><description>&lt;h2 id="作ったもの">作ったもの&lt;/h2>
+デモサイト紹介記事は&lt;a href="https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/">こちら&lt;/a>&lt;/p></description></item><item><title>ラズパイでミュージックサーバー</title><link>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</link><pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/</guid><description>&lt;h2 id="作ったもの">作ったもの&lt;/h2>
 &lt;h3 id="ラズパイミュージックサーバー">ラズパイミュージックサーバー&lt;/h3>
 &lt;p>スマートフォンでコントロールできるステレオコンポです。&lt;/p>
 &lt;figure >
@@ -42,8 +41,7 @@ HDD：Western Digital 2TB 3.5 inch&lt;br>
 &lt;h3 id="ufw">ufw&lt;/h3>
 &lt;p>iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので、今回は初心者でも使いやすいufwというソフトを使う。&lt;/p></description></item><item><title>Raspberry Pi 2 Type Bでサーバー作り</title><link>https://www.kerislab.jp/posts/2015-10-05-raspi-server/</link><pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-10-05-raspi-server/</guid><description>&lt;h2 id="ラズパイの用意">ラズパイの用意&lt;/h2>
 &lt;ol>
-&lt;li>ラズパイ用のOS「NOOBS」を&lt;a href="http://raspberrypi.org/downloads/" target="_blank">raspberrypi.org&lt;/a>
-からDLして解凍する。&lt;/li>
+&lt;li>ラズパイ用のOS「NOOBS」を&lt;a href="http://raspberrypi.org/downloads/">raspberrypi.org&lt;/a>からDLして解凍する。&lt;/li>
 &lt;li>microSDカードをFAT32でフォーマットする。&lt;/li>
 &lt;li>解凍したファイルをSDカードにコピーする。&lt;/li>
 &lt;li>ラズパイにSDカード、キーボード、LANケーブル（またはWiFiドングル）をつないで電源を入れる。&lt;/li>

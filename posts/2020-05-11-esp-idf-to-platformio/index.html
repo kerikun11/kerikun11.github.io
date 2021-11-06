@@ -9,29 +9,30 @@
 <meta name=description content>
 <meta property="og:title" content="ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する">
 <meta property="og:description" content="概要
-ESP32 の公式開発環境は ESP-IDF
- ですが、コマンドライン開発環境なので初心者向けではないかもしれません。
-一方、以前の記事 PlatformIOでESP32の開発をしよう
-で紹介した PlatformIO
- では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。
+ESP32 の公式開発環境は ESP-IDF ですが、コマンドライン開発環境なので初心者向けではないかもしれません。
+一方、以前の記事 PlatformIOでESP32の開発をしようで紹介した PlatformIO では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。
 しかしながら、ESP-IDFやGitHubなどにあるたくさんのサンプルコードは、PlatformIOで直接実行することができません。
 そこで今回は、単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2020-05-11T23:11:57+09:00">
 <meta property="article:modified_time" content="2020-05-11T23:11:57+09:00">
+<meta itemprop=name content="ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する">
+<meta itemprop=description content="概要
+ESP32 の公式開発環境は ESP-IDF ですが、コマンドライン開発環境なので初心者向けではないかもしれません。
+一方、以前の記事 PlatformIOでESP32の開発をしようで紹介した PlatformIO では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。
+しかしながら、ESP-IDFやGitHubなどにあるたくさんのサンプルコードは、PlatformIOで直接実行することができません。
+そこで今回は、単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します。"><meta itemprop=datePublished content="2020-05-11T23:11:57+09:00">
+<meta itemprop=dateModified content="2020-05-11T23:11:57+09:00">
+<meta itemprop=wordCount content="929">
+<meta itemprop=keywords content="ESP32,PlatformIO,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する">
 <meta name=twitter:description content="概要
-ESP32 の公式開発環境は ESP-IDF
- ですが、コマンドライン開発環境なので初心者向けではないかもしれません。
-一方、以前の記事 PlatformIOでESP32の開発をしよう
-で紹介した PlatformIO
- では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。
+ESP32 の公式開発環境は ESP-IDF ですが、コマンドライン開発環境なので初心者向けではないかもしれません。
+一方、以前の記事 PlatformIOでESP32の開発をしようで紹介した PlatformIO では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。
 しかしながら、ESP-IDFやGitHubなどにあるたくさんのサンプルコードは、PlatformIOで直接実行することができません。
 そこで今回は、単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -110,18 +111,14 @@ ESP32 の公式開発環境は ESP-IDF
 <a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
 <div class="content post__content clearfix">
 <h2 id=概要>概要</h2>
-<p>ESP32 の公式開発環境は <a href=https://github.com/espressif/esp-idf target=_blank>ESP-IDF</a>
-ですが、コマンドライン開発環境なので初心者向けではないかもしれません。</p>
-<p>一方、以前の記事 <a href=/posts/2018-12-22-platformio/>PlatformIOでESP32の開発をしよう</a>
-で紹介した <a href=https://platformio.org/ target=_blank>PlatformIO</a>
-では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。</p>
+<p>ESP32 の公式開発環境は <a href=https://github.com/espressif/esp-idf>ESP-IDF</a> ですが、コマンドライン開発環境なので初心者向けではないかもしれません。</p>
+<p>一方、以前の記事 <a href=/posts/2018-12-22-platformio/>PlatformIOでESP32の開発をしよう</a>で紹介した <a href=https://platformio.org/>PlatformIO</a> では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。</p>
 <p>しかしながら、ESP-IDFやGitHubなどにあるたくさんのサンプルコードは、PlatformIOで直接実行することができません。</p>
 <p>そこで今回は、単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します。</p>
 <h2 id=方法>方法</h2>
 <h3 id=esp-idf-プロジェクトを作成>ESP-IDF プロジェクトを作成</h3>
 <p>まずはじめに、ESP-IDFのプロジェクトを用意します。ただし、 ESP-IDF の開発環境は必要ありません。</p>
-<p>例えば、ESP-IDF のリポジトリから <a href=https://github.com/espressif/esp-idf/tree/master/examples/get-started/hello_world target=_blank>ESP-IDF Hello World Example</a>
-などのサンプルプロジェクトをコピーします。</p>
+<p>例えば、ESP-IDF のリポジトリから <a href=https://github.com/espressif/esp-idf/tree/master/examples/get-started/hello_world>ESP-IDF Hello World Example</a> などのサンプルプロジェクトをコピーします。</p>
 <p>サンプルプロジェクトをコピーすると、ディレクトリ構造は下記のようになります。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>hello_world
 ├── CMakeLists.txt
@@ -192,8 +189,7 @@ build
 </span></code></pre></div><h2 id=まとめ>まとめ</h2>
 <p>今回は簡単な例でしたが、下記のドキュメントには様々な機能が書かれているので是非ご一読ください！</p>
 <ul>
-<li><a href=https://docs.platformio.org/en/latest/frameworks/espidf.html target=_blank>https://docs.platformio.org/en/latest/frameworks/espidf.html</a>
-</li>
+<li><a href=https://docs.platformio.org/en/latest/frameworks/espidf.html>https://docs.platformio.org/en/latest/frameworks/espidf.html</a></li>
 </ul>
 <p>例えば、 <code>menuconfig</code> を実行して <code>sdkconfig</code> を編集することも可能です。</p>
 </div>

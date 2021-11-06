@@ -11,15 +11,19 @@
 <meta property="og:description" content="概要
 今回は、ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-07-29T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-07-29T00:00:00+00:00">
+<meta itemprop=name content="ESP32とMicro SDカード">
+<meta itemprop=description content="概要
+今回は、ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です。"><meta itemprop=datePublished content="2017-07-29T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-07-29T00:00:00+00:00">
+<meta itemprop=wordCount content="1076">
+<meta itemprop=keywords content="Arduino,ESP32,Micro SD,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP32とMicro SDカード">
 <meta name=twitter:description content="概要
 今回は、ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -116,8 +120,7 @@
 <ul>
 <li>SSIDとPasswordはスペースで区切って記述</li>
 <li>#から行末まではコメントとみなす</li>
-<li>SSIDとパスワードを複数個書けば、上から順に接続を試みる(<a href=https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/WiFiMulti/WiFiMulti.ino target=_blank>WiFiMulti</a>
-)</li>
+<li>SSIDとパスワードを複数個書けば、上から順に接続を試みる(<a href=https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/WiFiMulti/WiFiMulti.ino>WiFiMulti</a>)</li>
 </ul>
 <p>wifi.txt</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback># This is treated as a comment.
@@ -131,8 +134,7 @@ SSID1 password1 # 1st
 SSID2 password2 # 2nd
 SSID3 password3 # 3rd
 </code></pre></div><h3 id=サンプルコード>サンプルコード</h3>
-<p><a href=https://github.com/espressif/arduino-esp32 target=_blank>Arduino Core for ESP32</a>
-で動くコードです。バージョンはなるべく新しいものがいいと思います。</p>
+<p><a href=https://github.com/espressif/arduino-esp32>Arduino Core for ESP32</a> で動くコードです。バージョンはなるべく新しいものがいいと思います。</p>
 <p>SSIDとパスワードが書かれた<em>wifi.txt</em>はSDカードのルートディレクトリに置いておいてください。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cm>/*
 </span><span class=cm>   File:    WiFiConfigWithSD.ino

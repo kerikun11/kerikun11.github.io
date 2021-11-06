@@ -10,25 +10,32 @@
 <meta property="og:title" content="ESP32の設定管理ライブラリの紹介">
 <meta property="og:description" content="概要
 みなさん、ESP32使ってますか？僕は使っています。その偉大さには驚くばかりです。
-さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「Preferences
-」です。
+さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「Preferences」です。
 ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。
 みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。
 不揮発性のフラッシュ領域を使ってデータを保存&復元します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-06-16T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-06-16T00:00:00+00:00">
+<meta itemprop=name content="ESP32の設定管理ライブラリの紹介">
+<meta itemprop=description content="概要
+みなさん、ESP32使ってますか？僕は使っています。その偉大さには驚くばかりです。
+さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「Preferences」です。
+ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。
+みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。
+不揮発性のフラッシュ領域を使ってデータを保存&復元します。"><meta itemprop=datePublished content="2017-06-16T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-06-16T00:00:00+00:00">
+<meta itemprop=wordCount content="1341">
+<meta itemprop=keywords content="ESP32,Arduino,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP32の設定管理ライブラリの紹介">
 <meta name=twitter:description content="概要
 みなさん、ESP32使ってますか？僕は使っています。その偉大さには驚くばかりです。
-さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「Preferences
-」です。
+さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「Preferences」です。
 ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。
 みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。
 不揮発性のフラッシュ領域を使ってデータを保存&復元します。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -95,8 +102,8 @@ ESP32で何か物を作るとき、電源を切っても保存しておきたい
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt=ESP32の設定管理ライブラリの紹介>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2017-06-16-esp32-preferences/icon.jpg alt=ESP32の設定管理ライブラリの紹介>
 </figure>
 <h1 class=post__title>ESP32の設定管理ライブラリの紹介</h1>
 <div class="post__meta meta">
@@ -111,15 +118,13 @@ ESP32で何か物を作るとき、電源を切っても保存しておきたい
 <div class="content post__content clearfix">
 <h2 id=概要>概要</h2>
 <p>みなさん、ESP32使ってますか？僕は使っています。その偉大さには驚くばかりです。</p>
-<p>さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「<a href=https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences target=_blank>Preferences</a>
-」です。</p>
+<p>さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「<a href=https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences>Preferences</a>」です。</p>
 <p>ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。</p>
 <p>みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。</p>
 <p>不揮発性のフラッシュ領域を使ってデータを保存&復元します。</p>
 <h2 id=preferencesライブラリ>Preferencesライブラリ</h2>
 <p>ライブラリのヘッダーファイルとサンプルコードをコピペします。<br>
-ソースは<a href=https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences target=_blank>ここ</a>
-</p>
+ソースは<a href=https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences>ここ</a></p>
 <p>Arduino core for ESP32 に含まれているので、特に何もインストールすることなく使うことができます。バージョンが古い場合は最新にアップデートしましょう。</p>
 <h3 id=preferencesh>Preferences.h</h3>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=c1>// Copyright 2015-2016 Espressif Systems (Shanghai) PTE LTD

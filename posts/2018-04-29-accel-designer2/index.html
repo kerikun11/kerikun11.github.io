@@ -9,20 +9,24 @@
 <meta name=description content>
 <meta property="og:title" content="なめらかな加速の設計② 曲線加速の設計">
 <meta property="og:description" content="設計1・加速曲線の設計
-前回の記事
-の続きです。
+前回の記事の続きです。
 この記事では、前回紹介した 設計1 の曲線加速の設計について考えます。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer2/"><meta property="og:image" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer2/icon.png">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer2/"><meta property="og:image" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer2/icon.png"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2018-04-29T13:35:38+09:00">
 <meta property="article:modified_time" content="2018-04-29T13:35:38+09:00">
+<meta itemprop=name content="なめらかな加速の設計② 曲線加速の設計">
+<meta itemprop=description content="設計1・加速曲線の設計
+前回の記事の続きです。
+この記事では、前回紹介した 設計1 の曲線加速の設計について考えます。"><meta itemprop=datePublished content="2018-04-29T13:35:38+09:00">
+<meta itemprop=dateModified content="2018-04-29T13:35:38+09:00">
+<meta itemprop=wordCount content="1666">
+<meta itemprop=keywords content="マイクロマウス,制御,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="なめらかな加速の設計② 曲線加速の設計">
 <meta name=twitter:description content="設計1・加速曲線の設計
-前回の記事
-の続きです。
+前回の記事の続きです。
 この記事では、前回紹介した 設計1 の曲線加速の設計について考えます。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -89,8 +93,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.png alt="なめらかな加速の設計② 曲線加速の設計">
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2018-04-29-accel-designer2/icon.png alt="なめらかな加速の設計② 曲線加速の設計">
 </figure>
 <h1 class=post__title>なめらかな加速の設計② 曲線加速の設計</h1>
 <div class="post__meta meta">
@@ -104,19 +108,14 @@
 <a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
 <div class="content post__content clearfix">
 <h2 id=設計1加速曲線の設計>設計1・加速曲線の設計</h2>
-<p><a href=/posts/2018-04-29-accel-designer1/>前回の記事</a>
-の続きです。</p>
+<p><a href=/posts/2018-04-29-accel-designer1/>前回の記事</a>の続きです。</p>
 <p>この記事では、前回紹介した <strong>設計1</strong> の曲線加速の設計について考えます。</p>
 <h3 id=なめらかな加速の設計-目次>なめらかな加速の設計 目次</h3>
 <ul>
-<li><a href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a>
-</li>
-<li><a href=/posts/2018-04-29-accel-designer2/>なめらかな加速の設計② 曲線加速の設計</a>
-</li>
-<li><a href=/posts/2018-04-29-accel-designer3/>なめらかな加速の設計③ 走行距離を考慮した速度設計</a>
-</li>
-<li><a href=/posts/2018-04-29-accel-designer4/>なめらかな加速の設計④ C++による実装例</a>
-</li>
+<li><a href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li>
+<li><a href=/posts/2018-04-29-accel-designer2/>なめらかな加速の設計② 曲線加速の設計</a></li>
+<li><a href=/posts/2018-04-29-accel-designer3/>なめらかな加速の設計③ 走行距離を考慮した速度設計</a></li>
+<li><a href=/posts/2018-04-29-accel-designer4/>なめらかな加速の設計④ C++による実装例</a></li>
 </ul>
 <h2 id=設計内容>設計内容</h2>
 <p>今回の記事では、下図のように、始点速度 $v_s$ から最大加速度 $a_m$ で加速して終点速度 $v_e$ に達するような速度設計を考えます。</p>
@@ -205,8 +204,7 @@ a_m & = \mathrm{sign}(v_e-v_s) \times|a_{\max}|
 \end{align}
 $$
 </div>
-<p>$\mathrm{sign}(\cdot)$ は、<a href=https://ja.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E9%96%A2%E6%95%B0 target=_blank>引数の符号を返す関数</a>
-です。</p>
+<p>$\mathrm{sign}(\cdot)$ は、<a href=https://ja.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E9%96%A2%E6%95%B0>引数の符号を返す関数</a>です。</p>
 <p>このように符号を決定することで、減速の場合にも上記の関数をそのまま使用できるようになります。</p>
 <h3 id=その他の定数>その他の定数</h3>
 <p>等加速度運動となる時間 $t_m$ および加速度が変化する時間 $t_c$</p>
@@ -319,8 +317,7 @@ $$
 <h2 id=まとめ>まとめ</h2>
 <p>今回の記事では、始点速度と終点速度をなめらかにつなぐ曲線加速の設計を行いました。</p>
 <p>この時点ではまだ走行距離の拘束については考えられていません。</p>
-<p><a href=/posts/2018-04-29-accel-designer3/>次回の記事</a>
-では、走行距離の拘束条件を満たすように、今回設計した曲線加速を組み合わせていきます。</p>
+<p><a href=/posts/2018-04-29-accel-designer3/>次回の記事</a>では、走行距離の拘束条件を満たすように、今回設計した曲線加速を組み合わせていきます。</p>
 <script type=text/x-mathjax-config>
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>

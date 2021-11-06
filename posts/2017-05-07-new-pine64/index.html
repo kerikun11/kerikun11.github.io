@@ -13,16 +13,23 @@
 さらに、ラズパイ3の価格が$35なのに対して、PINE64は$19です。半額近いです。
 そのかわり、WiFiやBluetoothが技適の関係かわかりませんが今は載っていません。ただ、ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-05-07-new-pine64/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-05-07-new-pine64/icon.png">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-05-07-new-pine64/"><meta property="og:image" content="https://www.kerislab.jp/posts/2017-05-07-new-pine64/icon.png"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-05-07T00:00:00+00:00">
 <meta property="article:modified_time" content="2017-05-07T00:00:00+00:00">
+<meta itemprop=name content="ブログのサーバーをラズパイ3からPINE64 A+に移行">
+<meta itemprop=description content="新登場のPINE64を購入
+秋月電子の新商品で、「PINE64」というボードが登場しました。CPUのスペックはほぼラズパイ3と同等ですが、Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！
+さらに、ラズパイ3の価格が$35なのに対して、PINE64は$19です。半額近いです。
+そのかわり、WiFiやBluetoothが技適の関係かわかりませんが今は載っていません。ただ、ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません。"><meta itemprop=datePublished content="2017-05-07T00:00:00+00:00">
+<meta itemprop=dateModified content="2017-05-07T00:00:00+00:00">
+<meta itemprop=wordCount content="842">
+<meta itemprop=keywords content="PINE64 A+,Raspberry Pi,サーバー,ブログ,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ブログのサーバーをラズパイ3からPINE64 A+に移行">
 <meta name=twitter:description content="新登場のPINE64を購入
 秋月電子の新商品で、「PINE64」というボードが登場しました。CPUのスペックはほぼラズパイ3と同等ですが、Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！
 さらに、ラズパイ3の価格が$35なのに対して、PINE64は$19です。半額近いです。
 そのかわり、WiFiやBluetoothが技適の関係かわかりませんが今は載っていません。ただ、ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -89,8 +96,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.png alt="ブログのサーバーをラズパイ3からPINE64 A+に移行">
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2017-05-07-new-pine64/icon.png alt="ブログのサーバーをラズパイ3からPINE64 A+に移行">
 </figure>
 <h1 class=post__title>ブログのサーバーをラズパイ3からPINE64 A+に移行</h1>
 <div class="post__meta meta">
@@ -107,10 +114,8 @@
 <p>秋月電子の新商品で、「PINE64」というボードが登場しました。CPUのスペックはほぼラズパイ3と同等ですが、Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！</p>
 <p>さらに、ラズパイ3の価格が$35なのに対して、PINE64は$19です。半額近いです。</p>
 <p>そのかわり、WiFiやBluetoothが技適の関係かわかりませんが今は載っていません。ただ、ブログなどのWebサーバー用途なら無線は使わないので特に問題ありません。</p>
-<p><a href=http://wiki.pine64.org/index.php/Main_Page target=_blank>公式のサポートページはこちら</a>
-<br>
-<a href=http://akizukidenshi.com/catalog/g/gM-11954/ target=_blank>秋月の購入ページはこちら</a>
-</p>
+<p><a href=http://wiki.pine64.org/index.php/Main_Page>公式のサポートページはこちら</a><br>
+<a href=http://akizukidenshi.com/catalog/g/gM-11954/>秋月の購入ページはこちら</a></p>
 <p><figure>
 <figcaption>
 <h4>Box</h4>
@@ -147,8 +152,7 @@
 </tr>
 </tbody>
 </table>
-<p><a href=http://wiki.pine64.org/index.php/Main_Page#Ubuntu target=_blank>ここ</a>
-からPINE64用のものをダウンロードしました。</p>
+<p><a href=http://wiki.pine64.org/index.php/Main_Page#Ubuntu>ここ</a>からPINE64用のものをダウンロードしました。</p>
 <h3 id=遠隔セットアップ>遠隔セットアップ</h3>
 <p>このOSはデフォルト状態でSSHが開いているので、HDMIモニタやUSBキーボードを接続しなくても、LANケーブルさえ繋がっていれば別のPCからセットアップできます。</p>
 <h3 id=セットアップの流れ>セットアップの流れ</h3>
@@ -159,8 +163,7 @@
 <li>スマホの「Fing」というアプリを使ってPINE64っぽいデバイスを探し、IPアドレスを知る</li>
 <li>LAN内の別のPCのターミナルからSSHでログインし、いろいろ設定</li>
 </ol>
-<p>SSHにログインした後は<a href=/posts/2016-08-28-raspi-setup/>こちらの記事</a>
-を参照のこと。</p>
+<p>SSHにログインした後は<a href=/posts/2016-08-28-raspi-setup/>こちらの記事</a>を参照のこと。</p>
 <h2 id=ブログのサーバーを移行>ブログのサーバーを移行</h2>
 <figure>
 <figcaption>

@@ -13,17 +13,23 @@
 みなさん、ESP32使ってますか？
 今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2017-08-30-esp32-time-lib/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2017-08-30-esp32-time-lib/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2017-08-30T10:55:38+09:00">
 <meta property="article:modified_time" content="2017-08-30T10:55:38+09:00">
+<meta itemprop=name content="ESP32 Timeライブラリを作りました">
+<meta itemprop=description content="概要
+こんにちは、けりです。
+みなさん、ESP32使ってますか？
+今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します。"><meta itemprop=datePublished content="2017-08-30T10:55:38+09:00">
+<meta itemprop=dateModified content="2017-08-30T10:55:38+09:00">
+<meta itemprop=wordCount content="657">
+<meta itemprop=keywords content="ESP32,Arduino,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP32 Timeライブラリを作りました">
 <meta name=twitter:description content="概要
 こんにちは、けりです。
 みなさん、ESP32使ってますか？
 今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -106,8 +112,7 @@
 みなさん、ESP32使ってますか？</p>
 <p>今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します。</p>
 <h2 id=esp32time>ESP32Time</h2>
-<p><a href=https://github.com/kerikun11/ESP32Time target=_blank>ESP32Time - Arduino Library for ESP32 Time Adjustment</a>
-</p>
+<p><a href=https://github.com/kerikun11/ESP32Time>ESP32Time - Arduino Library for ESP32 Time Adjustment</a></p>
 <p>こちらはArduinoのライブラリです。zipファイルをダウンロードして、Arduino IDEで読み込めば簡単に使うことができます。ライブラリを読み込むと、自動的にサンプルプログラムも追加されます。</p>
 <h2 id=ライブラリの概要>ライブラリの概要</h2>
 <ul>
@@ -120,11 +125,9 @@
 <li><code>setup()</code>内で<code>ESP32Time.begin()</code>を呼んで時刻合わせタスクを起動する</li>
 </ol>
 <h2 id=動作環境>動作環境</h2>
-<p><a href=https://github.com/espressif/arduino-esp32 target=_blank>Arduino core for ESP32 WiFi chip</a>
-環境があれば動作します。</p>
+<p><a href=https://github.com/espressif/arduino-esp32>Arduino core for ESP32 WiFi chip</a>環境があれば動作します。</p>
 <h2 id=コード>コード</h2>
-<p>最新のコードは<a href=https://github.com/kerikun11/ESP32Time target=_blank>こちら</a>
-</p>
+<p>最新のコードは<a href=https://github.com/kerikun11/ESP32Time>こちら</a></p>
 <h3 id=esp32timeh>ESP32Time.h</h3>
 <p>ESP32Timeクラスの実体は既に定義されていますが、<code>ESP32.begin()</code>をしない限りCPUリソースを消費することはありません。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cp>#pragma once

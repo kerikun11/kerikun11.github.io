@@ -17,9 +17,21 @@
 ランダムウォークによる迷路の自動生成です。
 果たしてマイクロマウスっぽい迷路はできるのでしょうか？">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2020-03-23-maze-generator/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-03-23-maze-generator/icon.png">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2020-03-23-maze-generator/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-03-23-maze-generator/icon.png"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2020-03-23T17:51:37+09:00">
 <meta property="article:modified_time" content="2020-03-23T17:51:37+09:00">
+<meta itemprop=name content="マイクロマウス迷路の自動生成">
+<meta itemprop=description content="概要
+こんにちは。けりです。
+マイクロマウスを作るにあたり、
+普段は迷路を解くことばかり考えていますが、
+今回はその迷路を作成するお話です。
+試してみたのは、
+ランダムウォークによる迷路の自動生成です。
+果たしてマイクロマウスっぽい迷路はできるのでしょうか？"><meta itemprop=datePublished content="2020-03-23T17:51:37+09:00">
+<meta itemprop=dateModified content="2020-03-23T17:51:37+09:00">
+<meta itemprop=wordCount content="2539">
+<meta itemprop=keywords content="マイクロマウス,迷路,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="マイクロマウス迷路の自動生成">
 <meta name=twitter:description content="概要
@@ -30,7 +42,6 @@
 試してみたのは、
 ランダムウォークによる迷路の自動生成です。
 果たしてマイクロマウスっぽい迷路はできるのでしょうか？">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -97,8 +108,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.png alt=マイクロマウス迷路の自動生成>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2020-03-23-maze-generator/icon.png alt=マイクロマウス迷路の自動生成>
 </figure>
 <h1 class=post__title>マイクロマウス迷路の自動生成</h1>
 <div class="post__meta meta">
@@ -121,8 +132,7 @@
 <p>果たしてマイクロマウスっぽい迷路はできるのでしょうか？</p>
 <h2 id=迷路生成アルゴリズム>迷路生成アルゴリズム</h2>
 <p>実は、マイクロマウスに限らなければ、
-迷路の自動生成アルゴリズムは<a href=https://en.wikipedia.org/wiki/Maze_generation_algorithm target=_blank>代表的なもの</a>
-がいくつか存在します。</p>
+迷路の自動生成アルゴリズムは<a href=https://en.wikipedia.org/wiki/Maze_generation_algorithm>代表的なもの</a>がいくつか存在します。</p>
 <p>そこで、今回は以下の迷路生成アルゴリズムを試してみました。</p>
 <ol>
 <li>棒倒し法</li>
@@ -249,11 +259,8 @@
 <p>せっかくなので、実際に競技で使えそうな32x32の課題迷路をひとつ作成してみました。</p>
 <p>上記アルゴリズムによって自動生成して、適当にゴール区画を3x3区画に直したものです。</p>
 <p><img src=2020-03-23-maze-generator-keri.png alt=課題迷路></p>
-<p>この<a href=https://github.com/kerikun11/micromouse-maze-data target=_blank>迷路ファイル</a>
-のダウンロードは<a href=2020-03-23-maze-generator-keri.maze>こちら</a>
-。
-最短経路の例は<a href=2020-03-23-maze-generator-keri-path.png>こちら</a>
-。</p>
+<p>この<a href=https://github.com/kerikun11/micromouse-maze-data>迷路ファイル</a>のダウンロードは<a href=2020-03-23-maze-generator-keri.maze>こちら</a>。
+最短経路の例は<a href=2020-03-23-maze-generator-keri-path.png>こちら</a>。</p>
 <p>どうですか？マイクロマウスっぽい迷路ですよね！</p>
 <h2 id=まとめ>まとめ</h2>
 <p>今回の記事ではマイクロマウス迷路の自動生成について紹介しました。</p>
@@ -269,10 +276,8 @@
 <p>それではまた！</p>
 <h2 id=参考文献>参考文献</h2>
 <ul>
-<li><a href=http://www5d.biglobe.ne.jp/stssk/maze/make.html target=_blank>http://www5d.biglobe.ne.jp/stssk/maze/make.html</a>
-</li>
-<li><a href=https://en.wikipedia.org/wiki/Maze_generation_algorithm target=_blank>https://en.wikipedia.org/wiki/Maze_generation_algorithm</a>
-</li>
+<li><a href=http://www5d.biglobe.ne.jp/stssk/maze/make.html>http://www5d.biglobe.ne.jp/stssk/maze/make.html</a></li>
+<li><a href=https://en.wikipedia.org/wiki/Maze_generation_algorithm>https://en.wikipedia.org/wiki/Maze_generation_algorithm</a></li>
 </ul>
 </div>
 <footer class=post__footer>

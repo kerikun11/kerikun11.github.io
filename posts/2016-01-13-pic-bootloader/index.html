@@ -10,29 +10,38 @@
 <meta property="og:title" content="PICでブートローダ">
 <meta property="og:description" content="概要
 PIC18F27J53を使おう
-以前 PIC18F27J53のすすめ
- という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。
+以前 PIC18F27J53のすすめ という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。
 ブートローダとは
 ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。
 ただし、初回に一度だけブートローダ用のプログラムをPICkitなどで書きこむ必要があります。
 ユーザープログラム
 ユーザープログラムとは、ブートローダーにより書き込むプログラムです。あなたが作った、実際に動かすプログラムということです。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2016-01-13T00:00:00+00:00">
 <meta property="article:modified_time" content="2016-01-13T00:00:00+00:00">
+<meta itemprop=name content="PICでブートローダ">
+<meta itemprop=description content="概要
+PIC18F27J53を使おう
+以前 PIC18F27J53のすすめ という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。
+ブートローダとは
+ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。
+ただし、初回に一度だけブートローダ用のプログラムをPICkitなどで書きこむ必要があります。
+ユーザープログラム
+ユーザープログラムとは、ブートローダーにより書き込むプログラムです。あなたが作った、実際に動かすプログラムということです。"><meta itemprop=datePublished content="2016-01-13T00:00:00+00:00">
+<meta itemprop=dateModified content="2016-01-13T00:00:00+00:00">
+<meta itemprop=wordCount content="1898">
+<meta itemprop=keywords content="PIC,PIC18F27J53,USB,ブートローダ,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="PICでブートローダ">
 <meta name=twitter:description content="概要
 PIC18F27J53を使おう
-以前 PIC18F27J53のすすめ
- という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。
+以前 PIC18F27J53のすすめ という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。
 ブートローダとは
 ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。
 ただし、初回に一度だけブートローダ用のプログラムをPICkitなどで書きこむ必要があります。
 ユーザープログラム
 ユーザープログラムとは、ブートローダーにより書き込むプログラムです。あなたが作った、実際に動かすプログラムということです。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -99,8 +108,8 @@ PIC18F27J53を使おう
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt=PICでブートローダ>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2016-01-13-pic-bootloader/icon.jpg alt=PICでブートローダ>
 </figure>
 <h1 class=post__title>PICでブートローダ</h1>
 <div class="post__meta meta">
@@ -115,8 +124,7 @@ PIC18F27J53を使おう
 <div class="content post__content clearfix">
 <h2 id=概要>概要</h2>
 <h3 id=pic18f27j53を使おう>PIC18F27J53を使おう</h3>
-<p>以前 <a href=/posts/2016-01-08-pic18f27j53/>PIC18F27J53のすすめ</a>
-という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。</p>
+<p>以前 <a href=/posts/2016-01-08-pic18f27j53/>PIC18F27J53のすすめ</a> という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。</p>
 <h3 id=ブートローダとは>ブートローダとは</h3>
 <p>ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。</p>
 <p>ただし、初回に一度だけブートローダ用のプログラムをPICkitなどで書きこむ必要があります。</p>
@@ -141,11 +149,9 @@ PIC18F27J53を使おう
 <p>以下のHEXファイルをPICに書き込むだけで動作します。HEXファイルをPICに書き込むには、MPLAB X IDEと一緒についてきた<code>MPLAB IPE.exe</code>を使います。</p>
 <p>以下のHEXファイルはMicrochip公式ライブラリ(MLA)のソースをPIC18F27J53用に編集して作りました。コンパイルにはXC8のPRO版が必要なため、ソースではなくHEXファイルを配布します。(XC8には60日間無料のPRO体験版があります)</p>
 <p>ソフトウェアまたはハードウェアでブートモードへ切り替えHEX（推奨）<br>
-<a href=HID_Bootloader_PIC18F27J53%28RB0-software-enter%29.hex>HID_Bootloader_PIC18F27J53(RB0-software-enter).hex</a>
-<br>
+<a href=HID_Bootloader_PIC18F27J53(RB0-software-enter).hex>HID_Bootloader_PIC18F27J53(RB0-software-enter).hex</a><br>
 ソフトウェアでブートロードモードへ切り替えHEX(I/Oピンを減らしたくない人向け)<br>
-<a href=HID_Bootloader_PIC18F27J53%28software-enter%29.hex>HID_Bootloader_PIC18F27J53(software-enter).hex</a>
-</p>
+<a href=HID_Bootloader_PIC18F27J53(software-enter).hex>HID_Bootloader_PIC18F27J53(software-enter).hex</a></p>
 <h2 id=ユーザープログラムの書き方>ユーザープログラムの書き方</h2>
 <h3 id=configration-bitsは不要>Configration Bitsは不要</h3>
 <p>Configration Bitsはハードウェアにかなり寄り添ったプログラムなため、ブートローダで書き換えることができません。上のHEXファイルでは、以下のConfigration Bitsがあらかじめ書き込まれています。</p>
@@ -199,8 +205,7 @@ PIC18F27J53を使おう
 <p>PICに電源を投入またはPICをリセットしたときに、RB0端子がHIGHならばユーザープログラム、LOWならばブートローダプログラムが起動します。</p>
 <h2 id=ユーザープログラムを書き込み>ユーザープログラムを書き込み</h2>
 <ol>
-<li><a href=http://www.microchip.com/pagehandler/en-us/devtools/mla/home.html target=_blank>ここ</a>
-からMicrochip Libraris for Applicationsをダウンロードし、インストールする。</li>
+<li><a href=http://www.microchip.com/pagehandler/en-us/devtools/mla/home.html>ここ</a>からMicrochip Libraris for Applicationsをダウンロードし、インストールする。</li>
 <li>インストール場所/mla_v2014_07_22/ apps/usb/device/bootloaders/ utilities/bin/win/ HIDBootloader.exeを起動する。</li>
 <li>ブートロードモードのPICをUSBで接続する。</li>
 <li>上手く接続できると、右下に<code>connected</code>と表示されるので、ユーザープログラムのHEXファイルをロードして書き込めばOK。</li>

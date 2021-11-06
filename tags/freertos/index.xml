@@ -7,7 +7,6 @@
 &lt;/figcaption>
 &lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/>
 &lt;/figure>
-&lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank">ESP32 Overview | Espressif Systems&lt;/a>
-&lt;/p>
+&lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview">ESP32 Overview | Espressif Systems&lt;/a>&lt;/p>
 &lt;p>ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
 同時に gcc で開発できるマイコンでもあります。&lt;/p></description></item></channel></rss>

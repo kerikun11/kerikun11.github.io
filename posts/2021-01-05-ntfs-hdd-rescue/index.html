@@ -13,17 +13,23 @@
 年末にひとつ騒動がありました。
 親がポータブルHDDにデータをコピーしていたところ、急に転送速度が0になってそれっきりHDDにアクセスできなくなってしまったというのです。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2021-01-05-ntfs-hdd-rescue/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2021-01-05-ntfs-hdd-rescue/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2021-01-05T18:49:57+09:00">
 <meta property="article:modified_time" content="2021-01-05T18:49:57+09:00">
+<meta itemprop=name content="アクセスできなくなったHDDのデータを救出した記録">
+<meta itemprop=description content="はじめに
+こんにちは。けりです。
+年末にひとつ騒動がありました。
+親がポータブルHDDにデータをコピーしていたところ、急に転送速度が0になってそれっきりHDDにアクセスできなくなってしまったというのです。"><meta itemprop=datePublished content="2021-01-05T18:49:57+09:00">
+<meta itemprop=dateModified content="2021-01-05T18:49:57+09:00">
+<meta itemprop=wordCount content="8123">
+<meta itemprop=keywords content="HDD,Linux,Windows,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="アクセスできなくなったHDDのデータを救出した記録">
 <meta name=twitter:description content="はじめに
 こんにちは。けりです。
 年末にひとつ騒動がありました。
 親がポータブルHDDにデータをコピーしていたところ、急に転送速度が0になってそれっきりHDDにアクセスできなくなってしまったというのです。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -141,8 +147,7 @@
 <p>各 Linux コマンドのインストール方法は Linux のディストリビューションによって異なるので解説しません。</p>
 <h2 id=復旧作業のログ>復旧作業のログ</h2>
 <p>今回は以下のような手順で解析およびデータの救出を行いました。</p>
-<p>手順はかなり長いので、読み飛ばしたい方は<a href=#%e6%89%8b%e9%a0%86%e3%81%ae%e3%81%be%e3%81%a8%e3%82%81>手順のまとめ</a>
-へどうぞ。</p>
+<p>手順はかなり長いので、読み飛ばしたい方は<a href=#%E6%89%8B%E9%A0%86%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81>手順のまとめ</a>へどうぞ。</p>
 <h3 id=linux-pc-に-hdd-を接続する>Linux PC に HDD を接続する</h3>
 <p>Windows PC ではアクセスすらできなかったので、手持ちの <code>Arch Linux</code> の PC で解析を行いました。</p>
 <p>Linux PC に HDD を接続したところ、デバイス <code>/dev/sda</code> として認識されました。</p>
@@ -653,12 +658,9 @@ PS C:\WINDOWS\system32&gt;
 <p>今回紹介した方法が今後誰かの役に立てれば幸いです。</p>
 <h3 id=参考文献>参考文献</h3>
 <ul>
-<li><a href=https://www.gnu.org/software/ddrescue/manual/ddrescue_manual.html#Invoking-ddrescue target=_blank>GNU ddrescue Manual</a>
-</li>
-<li><a href=https://takuya-1st.hatenablog.jp/entry/20101004/1286200142 target=_blank>dd したWindowsのディスクイメージ（NTFS）をマウントする方法</a>
-</li>
-<li><a href=https://qastack.jp/ubuntu/775579/recovering-broken-or-deleted-ntfs-partitions target=_blank>破損または削除されたNTFSパーティションの回復</a>
-</li>
+<li><a href=https://www.gnu.org/software/ddrescue/manual/ddrescue_manual.html#Invoking-ddrescue>GNU ddrescue Manual</a></li>
+<li><a href=https://takuya-1st.hatenablog.jp/entry/20101004/1286200142>dd したWindowsのディスクイメージ（NTFS）をマウントする方法</a></li>
+<li><a href=https://qastack.jp/ubuntu/775579/recovering-broken-or-deleted-ntfs-partitions>破損または削除されたNTFSパーティションの回復</a></li>
 </ul>
 </div>
 <footer class=post__footer>

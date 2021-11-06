@@ -10,27 +10,35 @@
 <meta property="og:title" content="Raspberry Pi 2 Type Bでサーバー作り">
 <meta property="og:description" content="ラズパイの用意
 
-ラズパイ用のOS「NOOBS」をraspberrypi.org
-からDLして解凍する。
+ラズパイ用のOS「NOOBS」をraspberrypi.orgからDLして解凍する。
 microSDカードをFAT32でフォーマットする。
 解凍したファイルをSDカードにコピーする。
 ラズパイにSDカード、キーボード、LANケーブル（またはWiFiドングル）をつないで電源を入れる。
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2015-10-05-raspi-server/"><meta property="og:image" content="https://www.kerislab.jp/posts/2015-10-05-raspi-server/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2015-10-05-raspi-server/"><meta property="og:image" content="https://www.kerislab.jp/posts/2015-10-05-raspi-server/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2015-10-05T00:00:00+00:00">
 <meta property="article:modified_time" content="2015-10-05T00:00:00+00:00">
+<meta itemprop=name content="Raspberry Pi 2 Type Bでサーバー作り">
+<meta itemprop=description content="ラズパイの用意
+
+ラズパイ用のOS「NOOBS」をraspberrypi.orgからDLして解凍する。
+microSDカードをFAT32でフォーマットする。
+解凍したファイルをSDカードにコピーする。
+ラズパイにSDカード、キーボード、LANケーブル（またはWiFiドングル）をつないで電源を入れる。
+"><meta itemprop=datePublished content="2015-10-05T00:00:00+00:00">
+<meta itemprop=dateModified content="2015-10-05T00:00:00+00:00">
+<meta itemprop=wordCount content="2364">
+<meta itemprop=keywords content="Raspberry Pi,サーバー,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Raspberry Pi 2 Type Bでサーバー作り">
 <meta name=twitter:description content="ラズパイの用意
 
-ラズパイ用のOS「NOOBS」をraspberrypi.org
-からDLして解凍する。
+ラズパイ用のOS「NOOBS」をraspberrypi.orgからDLして解凍する。
 microSDカードをFAT32でフォーマットする。
 解凍したファイルをSDカードにコピーする。
 ラズパイにSDカード、キーボード、LANケーブル（またはWiFiドングル）をつないで電源を入れる。
 ">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -97,8 +105,8 @@ microSDカードをFAT32でフォーマットする。
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt="Raspberry Pi 2 Type Bでサーバー作り">
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2015-10-05-raspi-server/icon.jpg alt="Raspberry Pi 2 Type Bでサーバー作り">
 </figure>
 <h1 class=post__title>Raspberry Pi 2 Type Bでサーバー作り</h1>
 <div class="post__meta meta">
@@ -113,8 +121,7 @@ microSDカードをFAT32でフォーマットする。
 <div class="content post__content clearfix">
 <h2 id=ラズパイの用意>ラズパイの用意</h2>
 <ol>
-<li>ラズパイ用のOS「NOOBS」を<a href=http://raspberrypi.org/downloads/ target=_blank>raspberrypi.org</a>
-からDLして解凍する。</li>
+<li>ラズパイ用のOS「NOOBS」を<a href=http://raspberrypi.org/downloads/>raspberrypi.org</a>からDLして解凍する。</li>
 <li>microSDカードをFAT32でフォーマットする。</li>
 <li>解凍したファイルをSDカードにコピーする。</li>
 <li>ラズパイにSDカード、キーボード、LANケーブル（またはWiFiドングル）をつないで電源を入れる。</li>
@@ -194,13 +201,11 @@ network={
 </ol>
 <pre><code>$ nmap
 </code></pre>
-<p>　次に、<a href=http://www.ugtop.com/spill.shtml target=_blank>確認くん</a>
-により自分の家のグローバルIPアドレスを確認する。家のネットワークからアクセスしましょう。<br>
+<p>　次に、<a href=http://www.ugtop.com/spill.shtml>確認くん</a>により自分の家のグローバルIPアドレスを確認する。家のネットワークからアクセスしましょう。<br>
 　これで、適当なブラウザから、このグローバルIPアドレスにアクセスすれば、どこからでもラズパイのWebサーバーにアクセスできる。（ドメインはまだ取得していないので、IPアドレスを直打ちして接続している）</p>
 <h2 id=独自ドメインを取得する>独自ドメインを取得する</h2>
 <p>　ポートの開放により外部からサーバーにアクセスできるようになった。しかし、今のままではIPアドレスにアクセスなのでいまいち。そこで次は独自ドメインを取得して自分専用のURLをGETする。<br>
-　ドメイン取得をできるサイトはいくつかあるが、ネット上で評価のよかった「<a href=http://www.muumuudomain.com target=_blank>ムームードメイン</a>
-」で取得した。<code>.top</code>一番安くて、なんと77円＋税/年！とても安い。</p>
+　ドメイン取得をできるサイトはいくつかあるが、ネット上で評価のよかった「<a href=http://www.muumuudomain.com>ムームードメイン</a>」で取得した。<code>.top</code>一番安くて、なんと77円＋税/年！とても安い。</p>
 <h2 id=dnsサーバーとは>DNSサーバーとは</h2>
 <p>　独自ドメインを取得しましたが、取得したドメインはまだラズパイのIPアドレス（家のグローバルIPアドレス）に紐ついていません。それを紐つけるのがDNSサーバーです。DNS情報はあまりにも多いので、一つのDNSサーバーで管理しているわけではなく、ネット上に無数に散らばっています。したがってあるDNSサーバーに登録すれば、いろいろなDNSサーバーを経由して目的のIPアドレスを知ることができます。DNS情報のことをレコードと言い、以下に分類されます。</p>
 <ol>
@@ -210,13 +215,11 @@ network={
 <li>NSレコード：「再起問い合わせ」や「反復問い合わせ」の際に、「ここへ問い合わせよ」と教えてくれる</li>
 </ol>
 <h2 id=mydnsjpの登録>MyDNS.jpの登録</h2>
-<p>　普通、グローバルIPアドレスは動的に割り当てられるので、それとホスト名（ドメイン名）を動的に登録・管理するのがDDNSです。無料DDNSのひとつに<a href=http://www.mydns.jp target=_blank>MyDNS.jp</a>
-があるので、今回はそれを使います。まずは会員登録をします。そして「IP ADDR DIRECT」のところに家のグローバルIPアドレスを記載します。次に、「DOMAIN INFO」のところに自分の取得したホスト名（独自ドメイン）を記載します。欄が多いですが、それ以外は何も書かなくて大丈夫です。</p>
+<p>　普通、グローバルIPアドレスは動的に割り当てられるので、それとホスト名（ドメイン名）を動的に登録・管理するのがDDNSです。無料DDNSのひとつに<a href=http://www.mydns.jp>MyDNS.jp</a>があるので、今回はそれを使います。まずは会員登録をします。そして「IP ADDR DIRECT」のところに家のグローバルIPアドレスを記載します。次に、「DOMAIN INFO」のところに自分の取得したホスト名（独自ドメイン）を記載します。欄が多いですが、それ以外は何も書かなくて大丈夫です。</p>
 <h2 id=dnsの浸透時間>DNSの浸透時間</h2>
 <p>　ここまでの作業をすれば、取得した独自ドメインをブラウザのURLに書くだけで自分のサーバーにつなことができます。しかし、すぐにつなぐことはできません。先にも書いたようにDNSサーバーはネット上に無数に散らばっていますので、最初にアクセスしたDNSが自分のドメインとIPの関連付けを持っているとは限りません。DNSからDNSへと広がっていき、次第に世界中からアクセスできるようになります。</p>
 <h2 id=動的ipの自動更新>動的IPの自動更新</h2>
-<p>　ムームードメインで、独自ドメインを取得した。MyDNS.jpにも登録した。次にやることは、動的IPアドレスの自動更新である。定期的にグローバルIPの変更をチェックして<a href=http://www.mydns.jp target=_blank>MyDNS.jp</a>
-に通知をすればよい。それには以下のコマンドを実行する。</p>
+<p>　ムームードメインで、独自ドメインを取得した。MyDNS.jpにも登録した。次にやることは、動的IPアドレスの自動更新である。定期的にグローバルIPの変更をチェックして<a href=http://www.mydns.jp>MyDNS.jp</a>に通知をすればよい。それには以下のコマンドを実行する。</p>
 <pre><code>$ wget -O- 'http://mydnsXXXXXX:PASSWORD@www.mydns.jp/login.html'
 </code></pre>
 <p>これをcronなどを使って定期的に実行すればよい。</p>

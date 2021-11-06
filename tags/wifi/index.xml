@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WiFi on KERI's Lab</title><link>https://www.kerislab.jp/tags/wifi/</link><description>Recent content in WiFi on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Wed, 29 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/wifi/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP-WROOM-32で秋月の売場表示</title><link>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</link><pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-03-29-aki-shelf/</guid><description>&lt;h2 id="まずはじめに">まずはじめに&lt;/h2>
 &lt;h3 id="秋月の通販サイトが進化">秋月の通販サイトが進化&lt;/h3>
-&lt;p>少し前から、&lt;a href="http://akizukidenshi.com/" target="_blank">秋月の通販サイト&lt;/a>
-で店舗の在庫数と売場の場所が見れるようになりました。&lt;br>
+&lt;p>少し前から、&lt;a href="http://akizukidenshi.com/">秋月の通販サイト&lt;/a>で店舗の在庫数と売場の場所が見れるようになりました。&lt;br>
 商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ、在庫数と売場が表示されます。&lt;/p></description></item><item><title>赤外線学習リモコン完成</title><link>https://www.kerislab.jp/posts/2016-07-18-ir-station/</link><pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-18-ir-station/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>赤外線学習リモコンとは、市販の家電製品などのリモコンの赤外線信号を記憶し、送信することができるものです。&lt;/p>
 &lt;p>今回は、WiFi接続に対応した赤外線学習リモコンを作りました。スマートフォンやパソコンなどから、家電製品をコントロールすることができます。&lt;/p></description></item><item><title>メダカの照明 Ver.2</title><link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link><pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="メダカの水槽の照明">メダカの水槽の照明&lt;/h3>
-&lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>
-(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
+&lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>めだか&lt;/h4>
@@ -18,13 +16,10 @@
 &lt;p>今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p>
 &lt;p>このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://www.kerislab.jp/posts/2015-12-30-ir-station/">赤外線学習リモコン（日本語による紹介記事）&lt;/a>
-&lt;/li>
-&lt;li>&lt;a href="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/">赤外線学習リモコン（英語によるリファレンス）&lt;/a>
-&lt;/li>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2015-12-30-ir-station/">赤外線学習リモコン（日本語による紹介記事）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/">赤外線学習リモコン（英語によるリファレンス）&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="_blank">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>
-&lt;/p>
+&lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>&lt;/p>
 &lt;figure >
 &lt;figcaption>
 &lt;h4>ESP-WROOM-02&lt;/h4>
@@ -35,8 +30,7 @@
 &lt;p>ESP8266とはWiFi制御用マイコンです。もともと中国で流行っていました。そのマイコンを内蔵したESP-WROOM-02というWiFiモジュールが日本の技適を取得したので、日本でも人気になりました。&lt;/p>
 &lt;h3 id="とにかく安い">とにかく安い！&lt;/h3>
 &lt;p>その価格はなんと、たったの &lt;strong>550円&lt;/strong> です！！&lt;br>
-&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="_blank">ESP-WROOM-02&lt;/a>
-←秋月電子などで売っています。&lt;br>
+&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02&lt;/a>←秋月電子などで売っています。&lt;br>
 &lt;figure >
 &lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="blank">
 &lt;figcaption>

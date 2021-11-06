@@ -14,9 +14,18 @@
 これらをまとめて .dotfiles と呼んでいます。
 GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2020-04-06-dotfiles/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-04-06-dotfiles/icon.png">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2020-04-06-dotfiles/"><meta property="og:image" content="https://www.kerislab.jp/posts/2020-04-06-dotfiles/icon.png"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2020-04-06T10:17:40+09:00">
 <meta property="article:modified_time" content="2020-04-06T10:17:40+09:00">
+<meta itemprop=name content="UNIX環境の設定ファイルの管理">
+<meta itemprop=description content="はじめに
+今回は、ターミナルなどの設定ファイルの管理方法の紹介です。
+設定ファイルの多くは .zshrc というようにドットから始まる隠しファイルになっているので、
+これらをまとめて .dotfiles と呼んでいます。
+GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。"><meta itemprop=datePublished content="2020-04-06T10:17:40+09:00">
+<meta itemprop=dateModified content="2020-04-06T10:17:40+09:00">
+<meta itemprop=wordCount content="581">
+<meta itemprop=keywords content="Linux,シェルスクリプト,ターミナル,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="UNIX環境の設定ファイルの管理">
 <meta name=twitter:description content="はじめに
@@ -24,7 +33,6 @@ GitHubに.dotfilesを保存していつでも最新のものを使えるよう�
 設定ファイルの多くは .zshrc というようにドットから始まる隠しファイルになっているので、
 これらをまとめて .dotfiles と呼んでいます。
 GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -91,8 +99,8 @@ GitHubに.dotfilesを保存していつでも最新のものを使えるよう�
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.png alt=UNIX環境の設定ファイルの管理>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2020-04-06-dotfiles/icon.png alt=UNIX環境の設定ファイルの管理>
 </figure>
 <h1 class=post__title>UNIX環境の設定ファイルの管理</h1>
 <div class="post__meta meta">
@@ -113,19 +121,15 @@ GitHubに.dotfilesを保存していつでも最新のものを使えるよう�
 <h2 id=githubリポジトリ>GitHubリポジトリ</h2>
 <p>以下のリポジトリに僕の設定ファイルが保管されています。</p>
 <ul>
-<li><a href=https://github.com/kerikun11/.dotfiles target=_blank>kerikun11/.dotfiles</a>
-</li>
+<li><a href=https://github.com/kerikun11/.dotfiles>kerikun11/.dotfiles</a></li>
 </ul>
 <h2 id=設定内容>設定内容</h2>
-<p><a href=https://github.com/kerikun11/.dotfiles target=_blank>README.md</a>
-にも書いてある1行のコマンドを実行することで、
+<p><a href=https://github.com/kerikun11/.dotfiles>README.md</a> にも書いてある1行のコマンドを実行することで、
 以下のすべての設定を僕の好みのものに変更することができます。</p>
 <p>このコマンドを実行すると既存の設定を僕の設定に上書きしてしまうのでご注意を。</p>
-<p>詳しくは <a href=https://github.com/kerikun11/.dotfiles/blob/master/install.sh target=_blank>install.sh</a>
-をご覧ください。</p>
+<p>詳しくは <a href=https://github.com/kerikun11/.dotfiles/blob/master/install.sh>install.sh</a> をご覧ください。</p>
 <h3 id=設定ファイルのインストール>設定ファイルのインストール</h3>
-<p>リポジトリの <a href=https://github.com/kerikun11/.dotfiles/tree/master/dotfiles_link target=_blank>dotfiles_link</a>
-ディレクトリの内容がホームディレクトリに展開されます。</p>
+<p>リポジトリの <a href=https://github.com/kerikun11/.dotfiles/tree/master/dotfiles_link>dotfiles_link</a> ディレクトリの内容がホームディレクトリに展開されます。</p>
 <p>現時点では、主に次の設定ファイルを管理しています。</p>
 <ul>
 <li>.zshrc</li>
@@ -138,12 +142,10 @@ GitHubに.dotfilesを保存していつでも最新のものを使えるよう�
 </ul>
 <p>ターミナルの設定やGUIの設定です。</p>
 <h3 id=oh-my-zshの導入>oh-my-zshの導入</h3>
-<p>ターミナルを簡単にカスタマイズできるフレームワーク <a href=https://ohmyz.sh/ target=_blank>Oh-My-Zsh</a>
-を導入します。</p>
+<p>ターミナルを簡単にカスタマイズできるフレームワーク <a href=https://ohmyz.sh/>Oh-My-Zsh</a> を導入します。</p>
 <h3 id=その他の便利スクリプト>その他の便利スクリプト</h3>
 <p>その他、OSごとに異なる設定などは、次のディレクトリにスクリプトとして保管しています。</p>
-<p><a href=https://github.com/kerikun11/.dotfiles/tree/master/tools target=_blank>kerikun11/.dotfiles/tools</a>
-</p>
+<p><a href=https://github.com/kerikun11/.dotfiles/tree/master/tools>kerikun11/.dotfiles/tools</a></p>
 <h2 id=まとめ>まとめ</h2>
 <p>PCを使っているとだんだんゴミがたまってくるので、定期的にクリーンインストールをしましょう！</p>
 <p>このように設定ファイルを管理することで、どんなPCでもすぐに好みの環境に設定することができてとても便利です。</p>

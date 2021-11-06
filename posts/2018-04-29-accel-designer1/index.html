@@ -15,9 +15,19 @@
 今回の記事では、終点位置、終点速度や最大速度などの拘束条件から、走行途中の速度軌道を算出するアルゴリズムを紹介します。
 最後にはC++での実装したクラスも簡単に紹介します。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer1/"><meta property="og:image" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer1/icon.png">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer1/"><meta property="og:image" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer1/icon.png"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2018-04-29T12:35:38+09:00">
 <meta property="article:modified_time" content="2018-04-29T12:35:38+09:00">
+<meta itemprop=name content="なめらかな加速の設計① 台形加速と曲線加速">
+<meta itemprop=description content="概要
+今回はマイクロマウスにおける速度設計のお話です。
+長い直線などを走行するとき、タイムを縮めるため、最大速度まで加速して、ターン直前に減速します。
+ここで注意したのが、途中経過の如何にかかわらず、終点の位置や速度は守らなければならないということです。
+今回の記事では、終点位置、終点速度や最大速度などの拘束条件から、走行途中の速度軌道を算出するアルゴリズムを紹介します。
+最後にはC++での実装したクラスも簡単に紹介します。"><meta itemprop=datePublished content="2018-04-29T12:35:38+09:00">
+<meta itemprop=dateModified content="2018-04-29T12:35:38+09:00">
+<meta itemprop=wordCount content="1044">
+<meta itemprop=keywords content="マイクロマウス,制御,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="なめらかな加速の設計① 台形加速と曲線加速">
 <meta name=twitter:description content="概要
@@ -26,7 +36,6 @@
 ここで注意したのが、途中経過の如何にかかわらず、終点の位置や速度は守らなければならないということです。
 今回の記事では、終点位置、終点速度や最大速度などの拘束条件から、走行途中の速度軌道を算出するアルゴリズムを紹介します。
 最後にはC++での実装したクラスも簡単に紹介します。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -93,8 +102,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.png alt="なめらかな加速の設計① 台形加速と曲線加速">
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2018-04-29-accel-designer1/icon.png alt="なめらかな加速の設計① 台形加速と曲線加速">
 </figure>
 <h1 class=post__title>なめらかな加速の設計① 台形加速と曲線加速</h1>
 <div class="post__meta meta">
@@ -115,14 +124,10 @@
 <p>最後にはC++での実装したクラスも簡単に紹介します。</p>
 <h3 id=なめらかな加速の設計-目次>なめらかな加速の設計 目次</h3>
 <ul>
-<li><a href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a>
-</li>
-<li><a href=/posts/2018-04-29-accel-designer2/>なめらかな加速の設計② 曲線加速の設計</a>
-</li>
-<li><a href=/posts/2018-04-29-accel-designer3/>なめらかな加速の設計③ 走行距離を考慮した速度設計</a>
-</li>
-<li><a href=/posts/2018-04-29-accel-designer4/>なめらかな加速の設計④ C++による実装例</a>
-</li>
+<li><a href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li>
+<li><a href=/posts/2018-04-29-accel-designer2/>なめらかな加速の設計② 曲線加速の設計</a></li>
+<li><a href=/posts/2018-04-29-accel-designer3/>なめらかな加速の設計③ 走行距離を考慮した速度設計</a></li>
+<li><a href=/posts/2018-04-29-accel-designer4/>なめらかな加速の設計④ C++による実装例</a></li>
 </ul>
 <h2 id=台形加速の問題点>台形加速の問題点</h2>
 <p>よく使われる速度設計として、台形加速があります。</p>
@@ -182,8 +187,7 @@
 </figure>
 <h2 id=まとめ>まとめ</h2>
 <p>本記事では、台形加速の問題点を指摘し、曲線加速の必要性を述べました。</p>
-<p><a href=/posts/2018-04-29-accel-designer2/>次回の記事</a>
-では、その曲線加速の設計法を述べていきます。</p>
+<p><a href=/posts/2018-04-29-accel-designer2/>次回の記事</a>では、その曲線加速の設計法を述べていきます。</p>
 <script type=text/x-mathjax-config>
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>

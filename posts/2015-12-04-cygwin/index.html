@@ -11,14 +11,19 @@
 <meta property="og:description" content="概要
 Cygwinとは仮想UNIX環境をつくるソフトである。WindowsはUNIXベースの環境ではないので、コマンドライン操作がとてもやりづらい。Cygwinを使えば、C言語をはじめとしてrubyやpythonなど様々な開発をWindows上でできる。しかも、GUIでなくCUIなのでとても軽い。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2015-12-04-cygwin/"><meta property="og:image" content="https://www.kerislab.jp/posts/2015-12-04-cygwin/icon.png">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2015-12-04-cygwin/"><meta property="og:image" content="https://www.kerislab.jp/posts/2015-12-04-cygwin/icon.png"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2015-12-04T00:00:00+00:00">
 <meta property="article:modified_time" content="2015-12-04T00:00:00+00:00">
+<meta itemprop=name content="Cygwinの使い方">
+<meta itemprop=description content="概要
+Cygwinとは仮想UNIX環境をつくるソフトである。WindowsはUNIXベースの環境ではないので、コマンドライン操作がとてもやりづらい。Cygwinを使えば、C言語をはじめとしてrubyやpythonなど様々な開発をWindows上でできる。しかも、GUIでなくCUIなのでとても軽い。"><meta itemprop=datePublished content="2015-12-04T00:00:00+00:00">
+<meta itemprop=dateModified content="2015-12-04T00:00:00+00:00">
+<meta itemprop=wordCount content="1765">
+<meta itemprop=keywords content="ターミナル,Cygwin,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Cygwinの使い方">
 <meta name=twitter:description content="概要
 Cygwinとは仮想UNIX環境をつくるソフトである。WindowsはUNIXベースの環境ではないので、コマンドライン操作がとてもやりづらい。Cygwinを使えば、C言語をはじめとしてrubyやpythonなど様々な開発をWindows上でできる。しかも、GUIでなくCUIなのでとても軽い。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -85,8 +90,8 @@ Cygwinとは仮想UNIX環境をつくるソフトである。WindowsはUNIXベ�
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.png alt=Cygwinの使い方>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2015-12-04-cygwin/icon.png alt=Cygwinの使い方>
 </figure>
 <h1 class=post__title>Cygwinの使い方</h1>
 <div class="post__meta meta">
@@ -103,8 +108,7 @@ Cygwinとは仮想UNIX環境をつくるソフトである。WindowsはUNIXベ�
 <p>Cygwinとは仮想UNIX環境をつくるソフトである。WindowsはUNIXベースの環境ではないので、コマンドライン操作がとてもやりづらい。Cygwinを使えば、C言語をはじめとしてrubyやpythonなど様々な開発をWindows上でできる。しかも、GUIでなくCUIなのでとても軽い。</p>
 <h2 id=cygwinのインストール手順>Cygwinのインストール手順</h2>
 <ol>
-<li><a href=https://www.cygwin.com/ target=_blank>Cygwin.com</a>
-からCygwinのインストーラをダウンロードする。32bitマシン用と64bitマシン用があるので適当なほうを選ぶ。</li>
+<li><a href=https://www.cygwin.com/>Cygwin.com</a>からCygwinのインストーラをダウンロードする。32bitマシン用と64bitマシン用があるので適当なほうを選ぶ。</li>
 <li>DLしたインストーラを起動する。</li>
 <li>デフォルトの設定で次へを押す。</li>
 <li>URLを選択するところでは<code>~~~.jp</code>など、日本のURLを選ぶとダウンロードが早く終わる。</li>
@@ -257,8 +261,7 @@ $ ls /etc/passwd
 <p>一番下のほうの自分のユーザー名のところで、<code>/bin/bash</code>を<code>/bin/zsh</code>に変更する。<br>
 あとはCygwinを再起動すればデフォルトがzshellになっている。</p>
 <p>ついでに僕の<code>.zshrc</code>を書いておく。</p>
-<p><a href=https://github.com/kerikun11/dotfiles/blob/master/.zshrc target=_blank>.zshrc</a>
-</p>
+<p><a href=https://github.com/kerikun11/dotfiles/blob/master/.zshrc>.zshrc</a></p>
 <p>シェルを起動するとsshのkeyを求められるので入力すると、2回目からは自動で入力してくれるようになってる。</p>
 </div>
 <footer class=post__footer>

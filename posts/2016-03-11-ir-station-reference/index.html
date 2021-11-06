@@ -10,13 +10,17 @@
 <meta property="og:title" content="IR Station">
 <meta property="og:description" content="IR-Station Infrared Remote Controller with ESP8266 WiFi-module You can control your home appliances with your smartphone or laptop. The latest information is here Main parts ESP-WROOM-02 (ESP8266 WiFi Module) IR Receiver IR LED Indicator LED Looks The Device&rsquo;s Appearance body Display Sample display How to Use Setup the Device Supply power to the device. Connect your cellphone or laptop to Wi-Fi SSID &ldquo;IR-Station&rdquo;. Access http://192.168.4.1 in a browser Enter Wi-Fi">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2016-03-11T00:00:00+00:00">
 <meta property="article:modified_time" content="2016-03-11T00:00:00+00:00">
+<meta itemprop=name content="IR Station">
+<meta itemprop=description content="IR-Station Infrared Remote Controller with ESP8266 WiFi-module You can control your home appliances with your smartphone or laptop. The latest information is here Main parts ESP-WROOM-02 (ESP8266 WiFi Module) IR Receiver IR LED Indicator LED Looks The Device&rsquo;s Appearance body Display Sample display How to Use Setup the Device Supply power to the device. Connect your cellphone or laptop to Wi-Fi SSID &ldquo;IR-Station&rdquo;. Access http://192.168.4.1 in a browser Enter Wi-Fi"><meta itemprop=datePublished content="2016-03-11T00:00:00+00:00">
+<meta itemprop=dateModified content="2016-03-11T00:00:00+00:00">
+<meta itemprop=wordCount content="751">
+<meta itemprop=keywords content="IR-Station,Remote Control,Wi-Fi,ESP-WROOM-02,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="IR Station">
 <meta name=twitter:description content="IR-Station Infrared Remote Controller with ESP8266 WiFi-module You can control your home appliances with your smartphone or laptop. The latest information is here Main parts ESP-WROOM-02 (ESP8266 WiFi Module) IR Receiver IR LED Indicator LED Looks The Device&rsquo;s Appearance body Display Sample display How to Use Setup the Device Supply power to the device. Connect your cellphone or laptop to Wi-Fi SSID &ldquo;IR-Station&rdquo;. Access http://192.168.4.1 in a browser Enter Wi-Fi">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -83,8 +87,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt="IR Station">
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2016-03-11-ir-station-reference/icon.jpg alt="IR Station">
 </figure>
 <h1 class=post__title>IR Station</h1>
 <div class="post__meta meta">
@@ -100,8 +104,7 @@
 <h2 id=ir-station>IR-Station</h2>
 <p>Infrared Remote Controller with ESP8266 WiFi-module<br>
 You can control your home appliances with your smartphone or laptop.</p>
-<p>The latest information is <a href=https://github.com/kerikun11/IR-station target=_blank>here</a>
-</p>
+<p>The latest information is <a href=https://github.com/kerikun11/IR-station>here</a></p>
 <h2 id=main-parts>Main parts</h2>
 <ul>
 <li>ESP-WROOM-02 (ESP8266 WiFi Module)</li>
@@ -178,10 +181,8 @@ You can control your home appliances with your smartphone or laptop.</p>
 <h3 id=required-library>Required Library</h3>
 <p>Please Add the Libraries below to your Arduino IDE</p>
 <ul>
-<li>Arduino Json (<a href=https://github.com/bblanchon/ArduinoJson target=_blank>https://github.com/bblanchon/ArduinoJson</a>
-)</li>
-<li>Arduino Time Library (<a href=https://github.com/PaulStoffregen/Time target=_blank>https://github.com/PaulStoffregen/Time</a>
-)</li>
+<li>Arduino Json (<a href=https://github.com/bblanchon/ArduinoJson>https://github.com/bblanchon/ArduinoJson</a>)</li>
+<li>Arduino Time Library (<a href=https://github.com/PaulStoffregen/Time>https://github.com/PaulStoffregen/Time</a>)</li>
 </ul>
 <h3 id=steps>Steps</h3>
 <ol>
@@ -189,16 +190,14 @@ You can control your home appliances with your smartphone or laptop.</p>
 <li>Assemble the components according to the circuit diagram.</li>
 <li>Connect the device and the PC with a serial-to-USB conversion module.</li>
 <li>Prepare Arduino IDE and serial-USB converter&rsquo;s driver.</li>
-<li>Open the preferences of Arduino IDE and fill in this URL: <a href=http://arduino.esp8266.com/stable/package_esp8266com_index.json target=_blank>http://arduino.esp8266.com/stable/package_esp8266com_index.json</a>
-to &ldquo;Additional Boards Manager URLs&rdquo;.</li>
+<li>Open the preferences of Arduino IDE and fill in this URL: <a href=http://arduino.esp8266.com/stable/package_esp8266com_index.json>http://arduino.esp8266.com/stable/package_esp8266com_index.json</a> to &ldquo;Additional Boards Manager URLs&rdquo;.</li>
 <li>Add &ldquo;Generic ESP8266 Module&rdquo; in the Arduino IDE Board Manager.</li>
 <li>Add the required libraries to your Arduino IDE in the Arduino IDE Library Manager or zip files.</li>
 <li>Open IR-station firmware in the Arduino IDE.</li>
 <li>Select &ldquo;Generic ESP8266 Module&rdquo; and configure each item of board settings properly. See Arduino Board Settings below.</li>
 <li>Select correct serial COM port and upload program to the device. When upload program, GPIO0 and GPIO2 must be pulled-up, and GPIO15 must be pulled-down. It&rsquo;s necessary to reset the device immediately before upload. It&rsquo;s a little difficult.</li>
 <li>The uploading takes about 30 seconds.</li>
-<li>Upload the SPIFFS data: menu -> tool -> ESP8266 Sketch Data Upload. (See <a href=https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md target=_blank>https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md</a>
-)</li>
+<li>Upload the SPIFFS data: menu -> tool -> ESP8266 Sketch Data Upload. (See <a href=https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md>https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md</a>)</li>
 <li>Process termination.</li>
 </ol>
 <h3 id=arduino-board-settings>Arduino Board Settings</h3>

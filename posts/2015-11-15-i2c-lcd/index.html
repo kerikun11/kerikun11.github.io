@@ -13,7 +13,6 @@
 秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。
 秋月のI2C液晶(AQM0802)
 
-
 	
 		
 		
@@ -25,16 +24,34 @@
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/"><meta property="og:image" content="https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/icon.png">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/"><meta property="og:image" content="https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/icon.png"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2015-11-15T00:00:00+00:00">
 <meta property="article:modified_time" content="2015-11-15T00:00:00+00:00">
+<meta itemprop=name content="delayやwhileを使わないI2C液晶表示プログラム">
+<meta itemprop=description content="概要
+秋月やaitendoで売っているI2C液晶を使っている人は多い。しかし、ほとんどのサンプルプログラムは、I2Cの通信をwhile文などにより送信完了待ちしていて、その間に（割り込みを除く）他のプログラムが実行できない。そこで今回は、I2C液晶に表示させる内容を送信バッファに入れておけば自動で送信してくれるプログラムを書く。
+秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。
+秋月のI2C液晶(AQM0802)
+
+	
+		
+		
+			AQM0802
+		
+		
+		
+	
+
+"><meta itemprop=datePublished content="2015-11-15T00:00:00+00:00">
+<meta itemprop=dateModified content="2015-11-15T00:00:00+00:00">
+<meta itemprop=wordCount content="1094">
+<meta itemprop=keywords content>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="delayやwhileを使わないI2C液晶表示プログラム">
 <meta name=twitter:description content="概要
 秋月やaitendoで売っているI2C液晶を使っている人は多い。しかし、ほとんどのサンプルプログラムは、I2Cの通信をwhile文などにより送信完了待ちしていて、その間に（割り込みを除く）他のプログラムが実行できない。そこで今回は、I2C液晶に表示させる内容を送信バッファに入れておけば自動で送信してくれるプログラムを書く。
 秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。
 秋月のI2C液晶(AQM0802)
-
 
 	
 		
@@ -46,7 +63,6 @@
 	
 
 ">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -113,8 +129,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.png alt=delayやwhileを使わないI2C液晶表示プログラム>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2015-11-15-i2c-lcd/icon.png alt=delayやwhileを使わないI2C液晶表示プログラム>
 </figure>
 <h1 class=post__title>delayやwhileを使わないI2C液晶表示プログラム</h1>
 <div class="post__meta meta">
@@ -128,8 +144,7 @@
 <h2 id=概要>概要</h2>
 <p>秋月やaitendoで売っているI2C液晶を使っている人は多い。しかし、ほとんどのサンプルプログラムは、I2Cの通信をwhile文などにより送信完了待ちしていて、その間に（割り込みを除く）他のプログラムが実行できない。そこで今回は、I2C液晶に表示させる内容を送信バッファに入れておけば自動で送信してくれるプログラムを書く。</p>
 <p>秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。<br>
-<a href=http://akizukidenshi.com/catalog/g/gK-06795/ target=_blank>秋月のI2C液晶(AQM0802)</a>
-<br>
+<a href=http://akizukidenshi.com/catalog/g/gK-06795/>秋月のI2C液晶(AQM0802)</a><br>
 <figure>
 <figcaption>
 <h4>AQM0802</h4>
@@ -164,11 +179,9 @@
 <h2 id=プログラム>プログラム</h2>
 <p>僕は普段からPICを使っているので、PIC18F27J53用のプログラムを書いた。</p>
 <p>ダメな方<br>
-<a href=PIC18F27J53-I2C_LCD_old01.zip>PIC18F27J53-I2C-LCD-old.zip</a>
-<br>
+<a href=PIC18F27J53-I2C_LCD_old01.zip>PIC18F27J53-I2C-LCD-old.zip</a><br>
 良い方<br>
-<a href=PIC18F27J53-I2C_LCD_new01.zip>PIC18F27J53-I2C-LCD-new.zip</a>
-<br>
+<a href=PIC18F27J53-I2C_LCD_new01.zip>PIC18F27J53-I2C-LCD-new.zip</a><br>
 （MPLAB.Xプロジェクトファイルなので、そのままMPLABXで読み込めます。)</p>
 <p>以下はプログラムの要点だけ抜粋<br>
 mainループに<code>ST7032_task();</code>があり、中のswitch文で状態遷移をしていく。何もアクションがなければすぐに関数から抜ける。割り込み関数内には<code>ST7032_ISR();</code>があり、送信完了割り込みなどで任意のフラグを上げる。<code>ST7032_task();</code>ではフラグがあがるのを監視しているが、while文での監視ではなく、何もなければすぐ関数からbreakして、なにかフラグが上がっていた時だけ、その瞬間にできる仕事をだけをしてまた関数から抜ける。</p>
@@ -191,8 +204,7 @@ main.c</p>
 	<span class=p>}</span>
 	<span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
 <span class=p>}</span>
-</code></pre></div><p><a href=https://github.com/kerikun11/MPLABXProjects/blob/master/My_library/My_ST7032.h target=_blank>My_ST7032.h</a>
-←リンク</p>
+</code></pre></div><p><a href=https://github.com/kerikun11/MPLABXProjects/blob/master/My_library/My_ST7032.h>My_ST7032.h</a>←リンク</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=k>typedef</span> <span class=k>enum</span> <span class=n>ST7032_STATE</span> <span class=p>{</span>
 	<span class=n>ST7032_IDLE</span><span class=p>,</span>
 	<span class=n>ST7032_START</span><span class=p>,</span>
@@ -200,8 +212,7 @@ main.c</p>
 	<span class=n>ST7032_STOP</span><span class=p>,</span>
 	<span class=n>ST7032_WAIT</span>
 <span class=p>}</span> <span class=n>st7032_state_t</span><span class=p>;</span>
-</code></pre></div><p><a href=https://github.com/kerikun11/MPLABXProjects/blob/master/My_library/My_ST7032.c target=_blank>My_ST7032.c</a>
-←リンク</p>
+</code></pre></div><p><a href=https://github.com/kerikun11/MPLABXProjects/blob/master/My_library/My_ST7032.c>My_ST7032.c</a>←リンク</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=cp>#include</span> <span class=cpf>&#34;My_ST7032.h&#34;</span><span class=cp>
 </span><span class=cp></span>
 <span class=n>st7032_state_t</span> <span class=n>st7032_state</span><span class=p>;</span>

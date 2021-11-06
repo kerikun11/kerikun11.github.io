@@ -11,15 +11,19 @@
 <meta property="og:description" content="はじめに
 この記事では、ESP32をバッテリー駆動するためのヒントをお届けします。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/">
-<meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/"><meta property="og:image" content="https://www.kerislab.jp/img/avatar.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2018-06-28T08:50:59+09:00">
 <meta property="article:modified_time" content="2018-06-28T08:50:59+09:00">
+<meta itemprop=name content="ESP32 の Power Management 機能">
+<meta itemprop=description content="はじめに
+この記事では、ESP32をバッテリー駆動するためのヒントをお届けします。"><meta itemprop=datePublished content="2018-06-28T08:50:59+09:00">
+<meta itemprop=dateModified content="2018-06-28T08:50:59+09:00">
+<meta itemprop=wordCount content="2172">
+<meta itemprop=keywords content="ESP32,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ESP32 の Power Management 機能">
 <meta name=twitter:description content="はじめに
 この記事では、ESP32をバッテリー駆動するためのヒントをお届けします。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -107,8 +111,7 @@
 UART, I2C, SPIなどのピンを好きなGPIOピンに割り当てることができて超便利です！！</p>
 <p>また、公式のSDKにFreeRTOSというRTOSが組み込まれていて、
 容易にマルチタスクのアプリケーションを動作させることができます。</p>
-<p>ESP32についての記事一覧は<a href=/tags/esp32>こちら</a>
-</p>
+<p>ESP32についての記事一覧は<a href=/tags/esp32>こちら</a></p>
 <h3 id=電流消費ハンパないって>電流消費ハンパないって！！</h3>
 <p>そんなESP32は、省エネ仕様を謳っています。</p>
 <p>バッテリー駆動も普通にできるのかと思いきや、
@@ -133,15 +136,13 @@ WiFiと同時に起動すると100mAを超えるほどになります。</p>
 </code></pre></div><p>などを実行すると、その間はCPUのクロックを止めてくれるというものです。</p>
 <h3 id=参考>参考</h3>
 <ul>
-<li>ESP-IDF Programming Guide - <a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html target=_blank>Power Management</a>
-</li>
+<li>ESP-IDF Programming Guide - <a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html>Power Management</a></li>
 </ul>
 <h3 id=動作環境は-esp-idf>動作環境は ESP-IDF</h3>
 <p>PowerManagementのLight-Sleepを使用するためには、
 <code>make menuconfig</code> を編集する必要があるので、
 ESP-IDF環境で実行する必要があります。</p>
-<p>ESP-IDFの導入は<a href=http://esp-idf.readthedocs.io/en/latest/get-started/index.html target=_blank>こちら</a>
-</p>
+<p>ESP-IDFの導入は<a href=http://esp-idf.readthedocs.io/en/latest/get-started/index.html>こちら</a></p>
 <h2 id=power-management-機能の使い方>Power Management 機能の使い方</h2>
 <h3 id=make-menuconfigの設定><code>make menuconfig</code>の設定</h3>
 <p>Power Management における Light-Sleep を有効化するためには、
@@ -176,8 +177,7 @@ ESP-IDF環境で実行する必要があります。</p>
 </code></pre></div><h3 id=スリープの禁止>スリープの禁止</h3>
 <p>シリアル通信をするときや、何かを駆動するときなど、
 delayはするけどCPUのクロックを変えたくない場合があります。</p>
-<p>そんなときは、<a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html#power-management-locks target=_blank>Power Management Locks</a>
-を使います。</p>
+<p>そんなときは、<a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html#power-management-locks>Power Management Locks</a>を使います。</p>
 <p>PowerManagementの各機能</p>
 <ul>
 <li>CPUの周波数</li>
@@ -227,8 +227,7 @@ delayはするけどCPUのクロックを変えたくない場合があります
 </code></pre></div><h2 id=c-ラッパ>C++ ラッパ</h2>
 <p>C言語はわかりづらいので、C++のラッパを作ってみました。</p>
 <ul>
-<li><a href=https://github.com/kerikun11/ESP32_PowerManagement target=_blank>ESP32_PowerManagement</a>
-</li>
+<li><a href=https://github.com/kerikun11/ESP32_PowerManagement>ESP32_PowerManagement</a></li>
 </ul>
 <p>GitHub上のコードが最新です。以下の説明は古い可能性があります。</p>
 <h3 id=powermanagement-クラス>PowerManagement クラス</h3>
@@ -283,8 +282,7 @@ delayはするけどCPUのクロックを変えたくない場合があります
 </span><span class=c1></span><span class=p>}</span>
 </code></pre></div><h2 id=サンプルプロジェクト>サンプルプロジェクト</h2>
 <ul>
-<li><a href=PowerManagement.zip>PowerManagement.zip</a>
-</li>
+<li><a href=PowerManagement.zip>PowerManagement.zip</a></li>
 </ul>
 <p>上記のサンプルコードにログ出力のコードを追加したものです。</p>
 <p>一応、そのまま動くはずです。</p>
@@ -313,7 +311,7 @@ delayはするけどCPUのクロックを変えたくない場合があります
 </span><span class=c1></span>  <span class=n>vTaskDelay</span><span class=p>(</span><span class=mi>1000</span> <span class=o>/</span> <span class=n>portTICK_PERIOD_MS</span><span class=p>);</span> <span class=c1>//&lt; Light-Sleep
 </span><span class=c1></span>  <span class=n>rtc_gpio_hold_dis</span><span class=p>(</span><span class=n>pin_led</span><span class=p>);</span> <span class=c1>//&lt; 持続を無効化
 </span><span class=c1></span><span class=p>}</span>
-</code></pre></div><p>詳しくは、<a href=http://esp-idf.readthedocs.io/en/latest/api-reference/peripherals/gpio.html#api-reference-rtc-gpio target=_blank>公式リファレンス - GPIO</a>
+</code></pre></div><p>詳しくは、<a href=http://esp-idf.readthedocs.io/en/latest/api-reference/peripherals/gpio.html#api-reference-rtc-gpio>公式リファレンス - GPIO</a>
 をご覧ください。</p>
 <h2 id=まとめ>まとめ</h2>
 <p>今回の内容でESP32のバッテリー駆動への足掛かりになりました。</p>
@@ -321,12 +319,9 @@ delayはするけどCPUのクロックを変えたくない場合があります
 <p>では、みなさんも良きESP32ライフを！</p>
 <h2 id=参考-1>参考</h2>
 <ul>
-<li><a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html target=_blank>Power Management</a>
-</li>
-<li><a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/sleep_modes.html target=_blank>Sleep Modes</a>
-</li>
-<li><a href=http://esp-idf.readthedocs.io/en/latest/api-guides/wifi.html#esp32-wi-fi-power-saving-mode target=_blank>Wi-Fi Power-saving Mode</a>
-</li>
+<li><a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/power_management.html>Power Management</a></li>
+<li><a href=http://esp-idf.readthedocs.io/en/latest/api-reference/system/sleep_modes.html>Sleep Modes</a></li>
+<li><a href=http://esp-idf.readthedocs.io/en/latest/api-guides/wifi.html#esp32-wi-fi-power-saving-mode>Wi-Fi Power-saving Mode</a></li>
 </ul>
 </div>
 <footer class=post__footer>

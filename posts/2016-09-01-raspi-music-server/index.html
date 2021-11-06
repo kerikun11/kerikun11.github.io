@@ -22,9 +22,26 @@
 	
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-09-01-raspi-music-server/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2016-09-01T00:00:00+00:00">
 <meta property="article:modified_time" content="2016-09-01T00:00:00+00:00">
+<meta itemprop=name content="ラズパイでミュージックサーバー">
+<meta itemprop=description content="作ったもの
+ラズパイミュージックサーバー
+スマートフォンでコントロールできるステレオコンポです。
+
+	
+		
+		
+			ミュージックサーバー
+		
+		
+		
+	
+"><meta itemprop=datePublished content="2016-09-01T00:00:00+00:00">
+<meta itemprop=dateModified content="2016-09-01T00:00:00+00:00">
+<meta itemprop=wordCount content="742">
+<meta itemprop=keywords content="Raspberry Pi,ミュージックサーバー,Volumio,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="ラズパイでミュージックサーバー">
 <meta name=twitter:description content="作ったもの
@@ -40,7 +57,6 @@
 		
 	
 ">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -107,8 +123,8 @@
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt=ラズパイでミュージックサーバー>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2016-09-01-raspi-music-server/icon.jpg alt=ラズパイでミュージックサーバー>
 </figure>
 <h1 class=post__title>ラズパイでミュージックサーバー</h1>
 <div class="post__meta meta">
@@ -132,8 +148,7 @@
 </figure>
 <h2 id=構成>構成</h2>
 <h3 id=raspberry-pi-3-type-b>Raspberry Pi 3 Type B</h3>
-<p><a href=http://akizukidenshi.com/catalog/g/gM-10414/ target=_blank>http://akizukidenshi.com/catalog/g/gM-10414/</a>
-</p>
+<p><a href=http://akizukidenshi.com/catalog/g/gM-10414/>http://akizukidenshi.com/catalog/g/gM-10414/</a></p>
 <figure>
 <figcaption>
 <h4>ラズパイ3</h4>
@@ -141,8 +156,7 @@
 <img src=raspi3.jpg alt=ラズパイ3 style=width:240px>
 </figure>
 <h3 id=micro-sdxc-64gb>Micro SDXC 64GB</h3>
-<p><a href=https://www.amazon.co.jp/dp/B010SERHJY target=_blank>https://www.amazon.co.jp/dp/B010SERHJY</a>
-</p>
+<p><a href=https://www.amazon.co.jp/dp/B010SERHJY>https://www.amazon.co.jp/dp/B010SERHJY</a></p>
 <figure>
 <figcaption>
 <h4>micro SD</h4>
@@ -150,8 +164,7 @@
 <img src=sd.jpg alt="micro SD" style=width:240px>
 </figure>
 <h3 id=akidac-u2704-revc>AKI.DAC-U2704 REV.C</h3>
-<p><a href=http://akizukidenshi.com/catalog/g/gK-05369/ target=_blank>http://akizukidenshi.com/catalog/g/gK-05369/</a>
-</p>
+<p><a href=http://akizukidenshi.com/catalog/g/gK-05369/>http://akizukidenshi.com/catalog/g/gK-05369/</a></p>
 <figure>
 <figcaption>
 <h4>DAC</h4>
@@ -174,8 +187,7 @@
 <img src=speaker.jpg alt=スピーカー style=width:240px>
 </figure>
 <h3 id=25a出力acアダプタ>2.5A出力ACアダプタ</h3>
-<p><a href=http://akizukidenshi.com/catalog/g/gM-10507/ target=_blank>http://akizukidenshi.com/catalog/g/gM-10507/</a>
-</p>
+<p><a href=http://akizukidenshi.com/catalog/g/gM-10507/>http://akizukidenshi.com/catalog/g/gM-10507/</a></p>
 <figure>
 <figcaption>
 <h4>ACアダプタ</h4>
@@ -183,8 +195,7 @@
 <img src=acadapter.jpg alt=ACアダプタ style=width:240px>
 </figure>
 <h3 id=マイクロusbケーブル>マイクロUSBケーブル</h3>
-<p><a href=http://akizukidenshi.com/catalog/g/gC-09314/ target=_blank>http://akizukidenshi.com/catalog/g/gC-09314/</a>
-</p>
+<p><a href=http://akizukidenshi.com/catalog/g/gC-09314/>http://akizukidenshi.com/catalog/g/gC-09314/</a></p>
 <figure>
 <figcaption>
 <h4>USB-micro-Bケーブル</h4>
@@ -209,8 +220,7 @@
 <h2 id=ソフトウェア>ソフトウェア</h2>
 <h3 id=volumio>Volumio</h3>
 <p>Volumioとはラズパイ用OSであるraspbeanをもとに作られたミュージックサーバーOSです。ダウンロードしたimgファイルをマイクロSDカードに焼くだけで即使うことができます。</p>
-<p><a href=https://volumio.org/ target=_blank>Volumio.org</a>
-よりダウンロードできます。</p>
+<p><a href=https://volumio.org/>Volumio.org</a>よりダウンロードできます。</p>
 <h2 id=作り方>作り方</h2>
 <ol>
 <li>SDカードにVolumioのOSを焼いて、ラズパイにセットする。</li>
@@ -218,8 +228,7 @@
 <li>ラズパイにLANケーブルをさして、電源を投入する。</li>
 <li>パソコンでネットワーク上のPCを検索し、Volumioを見つける。</li>
 <li>見つけたVolumioドライブに曲をコピーする。</li>
-<li>ブラウザで<a href=http://volumio.local/ target=_blank>http://volumio.local/</a>
-にアクセスする。</li>
+<li>ブラウザで<a href=http://volumio.local/>http://volumio.local/</a>にアクセスする。</li>
 <li>あとは使えばわかる。</li>
 </ol>
 <h2 id=操作画面>操作画面</h2>

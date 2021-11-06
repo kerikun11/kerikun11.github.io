@@ -13,16 +13,23 @@ PICで時計
 久しぶりにPICの話題です。しばらくESP8266やARMマイコンなど、上級のマイコンを使っていましたが、またPICを使ってみたくなりました。
 他のマイコンには真似できないような超低消費電力の時計を作ってみました。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2016-09-12-low-power-clock/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-09-12-low-power-clock/icon.jpg">
+<meta property="og:url" content="https://www.kerislab.jp/posts/2016-09-12-low-power-clock/"><meta property="og:image" content="https://www.kerislab.jp/posts/2016-09-12-low-power-clock/icon.jpg"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2016-09-12T00:00:00+00:00">
 <meta property="article:modified_time" content="2016-09-12T00:00:00+00:00">
+<meta itemprop=name content="PICで省エネ時計を作る">
+<meta itemprop=description content="概要
+PICで時計
+久しぶりにPICの話題です。しばらくESP8266やARMマイコンなど、上級のマイコンを使っていましたが、またPICを使ってみたくなりました。
+他のマイコンには真似できないような超低消費電力の時計を作ってみました。"><meta itemprop=datePublished content="2016-09-12T00:00:00+00:00">
+<meta itemprop=dateModified content="2016-09-12T00:00:00+00:00">
+<meta itemprop=wordCount content="2177">
+<meta itemprop=keywords content="PIC,PIC18F27J53,時計,">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="PICで省エネ時計を作る">
 <meta name=twitter:description content="概要
 PICで時計
 久しぶりにPICの話題です。しばらくESP8266やARMマイコンなど、上級のマイコンを使っていましたが、またPICを使ってみたくなりました。
 他のマイコンには真似できないような超低消費電力の時計を作ってみました。">
-<meta name=twitter:site content="@kerikun11">
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=dns-prefetch href=//fonts.googleapis.com>
 <link rel=dns-prefetch href=//fonts.gstatic.com>
@@ -89,8 +96,8 @@ PICで時計
 <main class=main role=main>
 <article class=post>
 <header class=post__header>
-<figure class=post__thumbnail>
-<img src=icon.jpg alt=PICで省エネ時計を作る>
+<figure class="post__thumbnail thumbnail">
+<img class=thumbnail__image src=/posts/2016-09-12-low-power-clock/icon.jpg alt=PICで省エネ時計を作る>
 </figure>
 <h1 class=post__title>PICで省エネ時計を作る</h1>
 <div class="post__meta meta">
@@ -108,8 +115,7 @@ PICで時計
 <p>久しぶりにPICの話題です。しばらくESP8266やARMマイコンなど、上級のマイコンを使っていましたが、またPICを使ってみたくなりました。</p>
 <p>他のマイコンには真似できないような超低消費電力の時計を作ってみました。</p>
 <h2 id=pic18f27j53の機能>PIC18F27J53の機能</h2>
-<p>今回用いるPICマイコンは、以前このブログでも紹介した<a href=/posts/2016-01-08-pic18f27j53/>PIC18F27J53</a>
-です。</p>
+<p>今回用いるPICマイコンは、以前このブログでも紹介した<a href=/posts/2016-01-08-pic18f27j53/>PIC18F27J53</a>です。</p>
 <h3 id=リアルタイムクロック内蔵>リアルタイムクロック内蔵</h3>
 <p>32.768kHzの水晶発振子をつなぐだけで時計をカウントしてくれるのがリアルタイムクロックモジュールです。</p>
 <p>時計なんてソフトウェアでカウントしても数行のコードで作ることができますが、リアルタイムクロックモジュールはスリープ中やリセット中でも動作を続けるという魅力的な特徴があります。</p>
@@ -134,8 +140,7 @@ PICで時計
 <p>この時計の精度は、水晶発振子に依存するので、いい水晶発振子を使えば、精度は高くなります。</p>
 <p>さらに、ソフトウェアで微調整をすることができます。</p>
 <h2 id=実際に電力を測ってみる>実際に電力を測ってみる</h2>
-<p><a href=http://akizukidenshi.com/catalog/g/gM-07738/ target=_blank>Analog Discovery</a>
-でどのくらい電流を消費しているのかを調べてみます。</p>
+<p><a href=http://akizukidenshi.com/catalog/g/gM-07738/>Analog Discovery</a>でどのくらい電流を消費しているのかを調べてみます。</p>
 <h3 id=7セグledのダイナミック点灯の様子>7セグLEDのダイナミック点灯の様子</h3>
 <p>7セグLED表示中が2.5mA程で、スリープ中はほぼ0mAです。</p>
 <figure>
@@ -160,8 +165,7 @@ PICで時計
 <h3 id=表示をオフにした場合>表示をオフにした場合</h3>
 <p>平均電流は、1.5uAなので、約146,000時間=6,100日間、つまり16年ほど持つ計算になります。すごいですね！！！</p>
 <h2 id=ソフトウェア>ソフトウェア</h2>
-<p>最新のプログラムは<a href=https://github.com/kerikun11/Low-Power-Clock target=_blank>こちら</a>
-にあります。</p>
+<p>最新のプログラムは<a href=https://github.com/kerikun11/Low-Power-Clock>こちら</a>にあります。</p>
 <h3 id=mainc>main.c</h3>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=cm>/*
 </span><span class=cm> * Title:   PIC18F27J53 Low Power Clock
@@ -433,8 +437,7 @@ PICで時計
     <span class=n>print_column</span><span class=p>(</span><span class=n>col</span><span class=p>);</span>
 <span class=p>}</span>
 </code></pre></div><h2 id=回路図>回路図</h2>
-<p>7セグLEDは<a href=http://akizukidenshi.com/catalog/g/gI-09964/ target=_blank>こちら</a>
-を使いました。</p>
+<p>7セグLEDは<a href=http://akizukidenshi.com/catalog/g/gI-09964/>こちら</a>を使いました。</p>
 <figure>
 <a href=circuit-diagram.png target=blank>
 <figcaption>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>イベント on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link><description>Recent content in イベント on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Fri, 28 Feb 2020 15:33:09 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml"/><item><title>台湾旅行のメモ</title><link>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</link><pubDate>Fri, 28 Feb 2020 15:33:09 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</guid><description>&lt;p>2020年2月23日から4泊5日、Cheeseの6人で行った台湾旅行のメモ。&lt;/p></description></item><item><title>全日本マイクロマウス2019の結果報告</title><link>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</link><pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</guid><description>&lt;p>この記事は
-&lt;a href="https://adventar.org/calendars/4126" target="_blank">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a>
-の
+&lt;a href="https://adventar.org/calendars/4126">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a>の
 4日目の記事です。&lt;/p>
 &lt;p>こんにちは。けりです。&lt;br>
 今回は、2019年12月1日(日) に行われた、&lt;br>
@@ -20,8 +19,7 @@
 &lt;p>さて、11月17日(金)～19日(日)の3日間、全日本マイクロマウス2017が開催されました。&lt;/p>
 &lt;p>僕は去年に引き続き、2回目となる参加をしてきました！&lt;/p></description></item><item><title>HPをHugoに移行しました</title><link>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</link><pubDate>Tue, 29 Aug 2017 09:09:01 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</guid><description>&lt;h2 id="以前のkeris-lab">以前のKERI&amp;rsquo;s Lab&lt;/h2>
 &lt;h3 id="jekyllを使っていた">Jekyllを使っていた&lt;/h3>
-&lt;p>以前のKERI&amp;rsquo;s LabのHPは、静的ブログジェネレータである&lt;a href="https://jekyllrb-ja.github.io://jekyllrb-ja.github.io/" target="_blank">Jekyll&lt;/a>
-で生成されていました。&lt;/p>
+&lt;p>以前のKERI&amp;rsquo;s LabのHPは、静的ブログジェネレータである&lt;a href="https://jekyllrb-ja.github.io://jekyllrb-ja.github.io/">Jekyll&lt;/a>で生成されていました。&lt;/p>
 &lt;p>Jekyllは、静的ブログジェネレータの中で最も有名なものの1つです。&lt;/p></description></item><item><title>ブログのサーバーをラズパイ3からPINE64 A+に移行</title><link>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</link><pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</guid><description>&lt;h2 id="新登場のpine64を購入">新登場のPINE64を購入&lt;/h2>
 &lt;p>秋月電子の新商品で、「PINE64」というボードが登場しました。CPUのスペックはほぼラズパイ3と同等ですが、Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p>
 &lt;p>さらに、ラズパイ3の価格が$35なのに対して、PINE64は$19です。半額近いです。&lt;/p>
