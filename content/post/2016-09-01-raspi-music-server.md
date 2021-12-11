@@ -29,7 +29,7 @@ thumbnail: "icon.jpg"
 {{< postfig src="raspi3.jpg" title="ラズパイ3" width="240px" >}}
 
 ### Micro SDXC 64GB
-[https://www.amazon.co.jp/dp/B010SERHJY](https://www.amazon.co.jp/dp/B010SERHJY)
+[https://www.amazon.co.jp/dp/B010SDWF92](https://www.amazon.co.jp/dp/B010SDWF92)
 
 {{< postfig src="sd.jpg" title="micro SD" width="240px" >}}
 
@@ -86,7 +86,7 @@ Volumioとはラズパイ用OSであるraspbeanをもとに作られたミュー
   1. ラズパイにLANケーブルをさして、電源を投入する。
   1. パソコンでネットワーク上のPCを検索し、Volumioを見つける。
   1. 見つけたVolumioドライブに曲をコピーする。
-  1. ブラウザで[http://volumio.local/](http://volumio.local/)にアクセスする。
+  1. ブラウザで http://volumio.local にアクセスする。
   1. あとは使えばわかる。
 
 ## 操作画面

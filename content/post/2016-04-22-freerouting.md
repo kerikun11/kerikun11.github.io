@@ -73,11 +73,11 @@ KiCad が流行ってきて、使う人が増えてきている。
 
 ### 必要なもの
 
-  * 自動配線ツール：Freerouting.exe
+  * 自動配線ツール：FreeRouting.exe
   * Java SE Runtime Environment 8 (JRE8)
 
 以下からダウンロードできる。  
-[Freerouting](https://github.com/freerouting/freerouting/raw/master/binaries/FreeRouting.exe)  
+[FreeRouting](https://github.com/freerouting/freerouting/raw/master/binaries/FreeRouting.exe)  
 [JRE8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)  
 
 ### インストール
@@ -85,7 +85,7 @@ KiCad が流行ってきて、使う人が増えてきている。
   1. 自分の OS にあった JRE をダウンロードする。
   1. 案内に従って JRE8 をインストールする。
 
-Freerouting.exe はインストールする必要はなく、使うときに起動するだけよい。
+FreeRouting.exe はインストールする必要はなく、使うときに起動するだけよい。
 
 ## 使い方
 
@@ -118,10 +118,10 @@ KiCad でいつも通りにできるだけ配線が楽になるように部品�
 
 ### 自動配線ツールの起動
 
-  1. ダウンロードした`Freerouting.exe`を起動する。
+  1. ダウンロードした`FreeRouting.exe`を起動する。
   1. 先ほどエクスポートした dsn ファイルを読み込む。
 
-{{< postfig src="freerouting.png" title="Freerouting" >}}
+{{< postfig src="freerouting.png" title="FreeRouting" >}}
 
 ### 自動配線のパラメータの設定
 
@@ -130,9 +130,9 @@ KiCad でいつも通りにできるだけ配線が楽になるように部品�
   1. さらに出てきた画面でコストの設定をすることができる。
   1. 特に、切削基板の場合は、表面 (F.Cu) のコストを高く設定する。
 
-{{< postfig src="menu.png" title="Freerouting" width="480px" >}}
-{{< postfig src="layer.png" title="Freerouting" >}}
-{{< postfig src="param.png" title="Freerouting" >}}
+{{< postfig src="menu.png" title="FreeRouting" width="480px" >}}
+{{< postfig src="layer.png" title="FreeRouting" >}}
+{{< postfig src="param.png" title="FreeRouting" >}}
 
 ### 自動配線開始
 
@@ -140,7 +140,7 @@ KiCad でいつも通りにできるだけ配線が楽になるように部品�
 
 パソコンのスペックや配線の複雑さによってはかなり時間がかかることがある。僕の場合、長いときは 4 時間くらいかかった。
 
-{{< postfig src="board.png" title="Freerouting" width="480px" >}}
+{{< postfig src="board.png" title="FreeRouting" width="480px" >}}
 
 ### 配線結果を ses ファイルに書き出し
 
@@ -148,14 +148,14 @@ KiCad でいつも通りにできるだけ配線が楽になるように部品�
 
 そうなったら、メニューバーの`File`→`Export Specctra Session FIle`をクリックして ses ファイルを作成する。
 
-{{< postfig src="save.png" title="Freerouting" width="480px" >}}
+{{< postfig src="save.png" title="FreeRouting" width="480px" >}}
 
 ### 配線結果を KiCad へ取り込む
 
 KiCad に戻り、dsn ファイルを書き出した時と同じ画面で今度は ses ファイルをインポートしたら完成。読み込むときに結線情報データを再構築しますか？と聞かれるのではいを押す。
 
-{{< postfig src="import.png" title="Freerouting" >}}
-{{< postfig src="complete.png" title="Freerouting" width="480px" >}}
+{{< postfig src="import.png" title="FreeRouting" >}}
+{{< postfig src="complete.png" title="FreeRouting" width="480px" >}}
 
 ## トラブルシューティング
 

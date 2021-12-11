@@ -293,7 +293,7 @@ g++ continuous.cpp
 matlab -nodesktop -r plotout
 ```
 
-[continuous.cpp](continuous.cpp):
+[continuous.cpp](src/continuous.cpp):
 
 ```cpp
 #include <fstream>

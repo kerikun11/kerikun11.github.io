@@ -171,7 +171,7 @@ ESP32 の性能を最大限に使っていきましょう！
 
 ## 参考リンク
 
-  * [www.espressif.com Resources](https://www.espressif.com/en/products/hardware/esp32/resources)
+  * [www.espressif.com Resources](https://www.espressif.com/en/products/socs/esp32/resources)
   * [Espressif IoT Development Framework](https://github.com/espressif/esp-idf)
   * [Arduino core for ESP32 WiFi chip](https://github.com/espressif/arduino-esp32)
 

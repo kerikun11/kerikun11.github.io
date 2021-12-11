@@ -64,7 +64,7 @@ ESP32の開発環境は主に以下の2つです。どちらもEspressif公式�
 
 |開発環境|概要|コメント|
 |:--|:--|:--|
-|[ESP-IDF](https://github.com/espressif/esp-id://github.com/espressif/esp-idf)|公式の開発環境(Espressif IoT Development Framework)|ESP32をフル活用したいならこれを使おう|
+|[ESP-IDF](https://github.com/espressif/esp-idf)|公式の開発環境(Espressif IoT Development Framework)|ESP32をフル活用したいならこれを使おう|
 |[Arduino core for the ESP32](https://github.com/espressif/arduino-esp32)|ESP-IDFをベースとしたArduino IDEプラグイン|簡単に使えてびっくり！|
 
 ## 開発に必要なもの
