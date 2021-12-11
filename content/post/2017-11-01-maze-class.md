@@ -1,6 +1,6 @@
 ---
 date: "2017-11-01T10:31:52+09:00"
-title: "僕の迷路クラスの紹介"
+title: "マイクロマウスの迷路クラスの紹介"
 categories:
   - "作品紹介"
 tags:
@@ -87,7 +87,7 @@ wall[1] //< 縦並びの壁
 
 | 迷路の一辺の区画数 | 各区画1Byte表現 [Bytes] | 最小表現 [Bytes] |
 | :----------------- | :---------------------- | :--------------- |
-| n                  | n^2                     | 1/2*n*(n-1)      |
+| n                  | n^2                     | 1/2\*n\*(n-1)    |
 | 8                  | 64                      | 28               |
 | 16                 | 256                     | 120              |
 | 32                 | 1024                    | 496              |
@@ -155,18 +155,18 @@ public:
     operator int8_t() const { return d; }
     /** @brief 代入演算子のオーバーロード
     */
-    inline const Dir operator=(const Dir& obj) { this->d = obj.d; return *this; }
+    const Dir operator=(const Dir& obj) { this->d = obj.d; return *this; }
 
     /** @function getRelative
     *  @brief 自オブジェクト方向から見た引数方向を返す。
     *  @param rd 対象方向
     *  @return 相対方向
     */
-    inline const Dir getRelative(const enum RelativeDir& rd) const { return Dir(rd-d); }
+    const Dir getRelative(const enum RelativeDir& rd) const { return Dir(rd-d); }
     /** @function ordered
     *  @brief 「正面、左、右、後」の順序の方向配列を生成する関数
     */
-    inline const std::array<Dir, 4> ordered() const ;
+    const std::array<Dir, 4> ordered() const ;
     /** @function All
     *  @brief 全方向の方向配列を生成する静的関数
     */
@@ -189,15 +189,15 @@ public:
     Vector(const Vector& obj) : x(obj.x), y(obj.y) {} /**< @brief コンストラクタ */
     /** @brief 演算子のオーバーロード
     */
-    inline const Vector& operator=(const Vector& obj) { x=obj.x; y=obj.y; return *this; }
-    inline const bool operator==(const Vector& obj) const { return x==obj.x && y==obj.y; }
-    inline const bool operator!=(const Vector& obj) const { return x!=obj.x || y!=obj.y; }
+    const Vector& operator=(const Vector& obj) { x=obj.x; y=obj.y; return *this; }
+    const bool operator==(const Vector& obj) const { return x==obj.x && y==obj.y; }
+    const bool operator!=(const Vector& obj) const { return x!=obj.x || y!=obj.y; }
     /** @function next
     *  @brief 自分の引数方向に隣接した区画のVectorを返す
     *  @param 隣接方向
     *  @return 隣接座標
     */
-    inline const Vector next(const Dir &dir) const ;
+    const Vector next(const Dir &dir) const ;
 };
 ~~~
 
