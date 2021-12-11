@@ -31,7 +31,7 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p>今回の記事は、高校生の時に作った電光掲示板のコードの紹介です。&lt;/p>
 &lt;p>PICのアセンブリ言語で書かれています。&lt;/p></description></item><item><title>調整用の小さな迷路</title><link>https://www.kerislab.jp/posts/2017-11-05-small-maze/</link><pubDate>Sun, 05 Nov 2017 15:26:06 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-05-small-maze/</guid><description>&lt;p>こんにちは。&lt;/p>
 &lt;p>エクストリーム新作のKERISEv3-2を諦めてKERISEv3-1を必死に調整している、けりです。&lt;/p>
-&lt;p>今回は自作の調整用迷路の紹介です。&lt;/p></description></item><item><title>僕の迷路クラスの紹介</title><link>https://www.kerislab.jp/posts/2017-11-01-maze-class/</link><pubDate>Wed, 01 Nov 2017 10:31:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-01-maze-class/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
+&lt;p>今回は自作の調整用迷路の紹介です。&lt;/p></description></item><item><title>マイクロマウスの迷路クラスの紹介</title><link>https://www.kerislab.jp/posts/2017-11-01-maze-class/</link><pubDate>Wed, 01 Nov 2017 10:31:52 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-11-01-maze-class/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
 &lt;p>今回もマイクロマウスの話題です。僕が使っている迷路クラスを紹介します。&lt;/p></description></item><item><title>CNCでM0.3のギアを作った</title><link>https://www.kerislab.jp/posts/2017-09-21-cnc-gear/</link><pubDate>Thu, 21 Sep 2017 11:25:11 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2017-09-21-cnc-gear/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>こんにちは、ESP32と格闘していてなかなか前に進めないけりです。&lt;/p>
 &lt;p>今回は、自作したギアの紹介です。&lt;/p>
