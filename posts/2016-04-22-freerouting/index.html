@@ -194,18 +194,18 @@ KiCad が流行ってきて、使う人が増えてきている。
 <h2 id=自動配線ツールのインストール>自動配線ツールのインストール</h2>
 <h3 id=必要なもの>必要なもの</h3>
 <ul>
-<li>自動配線ツール：Freerouting.exe</li>
+<li>自動配線ツール：FreeRouting.exe</li>
 <li>Java SE Runtime Environment 8 (JRE8)</li>
 </ul>
 <p>以下からダウンロードできる。<br>
-<a href=https://github.com/freerouting/freerouting/raw/master/binaries/FreeRouting.exe>Freerouting</a><br>
+<a href=https://github.com/freerouting/freerouting/raw/master/binaries/FreeRouting.exe>FreeRouting</a><br>
 <a href=http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html>JRE8</a></p>
 <h3 id=インストール>インストール</h3>
 <ol>
 <li>自分の OS にあった JRE をダウンロードする。</li>
 <li>案内に従って JRE8 をインストールする。</li>
 </ol>
-<p>Freerouting.exe はインストールする必要はなく、使うときに起動するだけよい。</p>
+<p>FreeRouting.exe はインストールする必要はなく、使うときに起動するだけよい。</p>
 <h2 id=使い方>使い方</h2>
 <p>執筆時点での最新版 KiCad 4.x での使用方法を説明する。</p>
 <h3 id=まずは部品を配置する>まずは部品を配置する</h3>
@@ -240,14 +240,14 @@ KiCad が流行ってきて、使う人が増えてきている。
 </figure>
 <h3 id=自動配線ツールの起動>自動配線ツールの起動</h3>
 <ol>
-<li>ダウンロードした<code>Freerouting.exe</code>を起動する。</li>
+<li>ダウンロードした<code>FreeRouting.exe</code>を起動する。</li>
 <li>先ほどエクスポートした dsn ファイルを読み込む。</li>
 </ol>
 <figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=freerouting.png alt=Freerouting>
+<img src=freerouting.png alt=FreeRouting>
 </figure>
 <h3 id=自動配線のパラメータの設定>自動配線のパラメータの設定</h3>
 <ol>
@@ -258,21 +258,21 @@ KiCad が流行ってきて、使う人が増えてきている。
 </ol>
 <p><figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=menu.png alt=Freerouting style=width:480px>
+<img src=menu.png alt=FreeRouting style=width:480px>
 </figure>
 <figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=layer.png alt=Freerouting>
+<img src=layer.png alt=FreeRouting>
 </figure>
 <figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=param.png alt=Freerouting>
+<img src=param.png alt=FreeRouting>
 </figure>
 </p>
 <h3 id=自動配線開始>自動配線開始</h3>
@@ -280,32 +280,32 @@ KiCad が流行ってきて、使う人が増えてきている。
 <p>パソコンのスペックや配線の複雑さによってはかなり時間がかかることがある。僕の場合、長いときは 4 時間くらいかかった。</p>
 <figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=board.png alt=Freerouting style=width:480px>
+<img src=board.png alt=FreeRouting style=width:480px>
 </figure>
 <h3 id=配線結果を-ses-ファイルに書き出し>配線結果を ses ファイルに書き出し</h3>
 <p>配線が終わると画面下のステータスバーに<code>Routing Complete</code>と出る。</p>
 <p>そうなったら、メニューバーの<code>File</code>→<code>Export Specctra Session FIle</code>をクリックして ses ファイルを作成する。</p>
 <figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=save.png alt=Freerouting style=width:480px>
+<img src=save.png alt=FreeRouting style=width:480px>
 </figure>
 <h3 id=配線結果を-kicad-へ取り込む>配線結果を KiCad へ取り込む</h3>
 <p>KiCad に戻り、dsn ファイルを書き出した時と同じ画面で今度は ses ファイルをインポートしたら完成。読み込むときに結線情報データを再構築しますか？と聞かれるのではいを押す。</p>
 <p><figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=import.png alt=Freerouting>
+<img src=import.png alt=FreeRouting>
 </figure>
 <figure>
 <figcaption>
-<h4>Freerouting</h4>
+<h4>FreeRouting</h4>
 </figcaption>
-<img src=complete.png alt=Freerouting style=width:480px>
+<img src=complete.png alt=FreeRouting style=width:480px>
 </figure>
 </p>
 <h2 id=トラブルシューティング>トラブルシューティング</h2>
