@@ -17,8 +17,8 @@ authorbox: false
 2016年から [マイクロマウス](https://www.ntf.or.jp/mouse/) というロボット競技に参加しています。  
 手のひらサイズのロボットが巨大な迷路を駆け抜けるとても魅力的な競技です。
 
-[マイクロマウスについての記事一覧](/tags/マイクロマウス/)
-{{< postfig src="kerisev4.jpg" title="KERISE v4" width="240px" link="/tags/マイクロマウス/" >}}
+[マイクロマウスについての記事一覧](/works/micromouse/)
+{{< postfig src="kerisev4.jpg" title="KERISE v4" width="240px" link="/works/micromouse/" >}}
 
 ## IR-Station
 
