@@ -20,7 +20,7 @@ pygmentsCodefencesGuessSyntax = true
 
 # allow raw html in markdown
 [markup.goldmark.renderer]
-  unsafe = true
+    unsafe = true
 
 [Author] # Used in authorbox
     name = "けり"
@@ -49,7 +49,7 @@ pygmentsCodefencesGuessSyntax = true
     customJS = ["js/custom.js"] # Include custom JS files
 
 [Params.style.vars]
-  highlightColor = "#0000ff" # Override highlight color
+    highlightColor = "#0000ff" # Override highlight color
 
 [Params.logo]
     subtitle = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Logo subtitle
@@ -99,3 +99,6 @@ pygmentsCodefencesGuessSyntax = true
     name = "Tags"
     url = "/tags/"
     weight = 5
+
+[security.exec]
+    allow = ['^asciidoctor$']
