@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>マイクロマウスの壁情報を安全にバックアップする</title><link>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</link><pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 30 Jan 2022 17:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows のユーザーフォルダの日本語表示名を英語に戻す</title><link>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</link><pubDate>Sun, 30 Jan 2022 17:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>日本語版のWindowsでは、ユーザーフォルダの「ダウンロード」や「ドキュメント」が日本語表記になっている。&lt;/p>
+&lt;p>しかし、実際のパスを見ると英語表記であることがわかる。&lt;br>
+(例: &lt;code>C:\Users\your_name\Downloads&lt;/code>)&lt;/p>
+&lt;p>この記事では表面上の日本語表記をやめて、実際のパスと同じ英語表記に変更する方法を紹介する。&lt;/p></description></item><item><title>マイクロマウスの壁情報を安全にバックアップする</title><link>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</link><pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは。&lt;br>
 社会人2年目となり「新人なので&amp;hellip;」と言い訳ができなくなって困っている けり です。&lt;/p>
 &lt;p>最近はマウス進捗がほとんどできていないのですが、モチベーションを高めるためにも頑張って記事を書きました。&lt;/p></description></item><item><title>左右分離キーボード MoonLander Mark I の紹介</title><link>https://www.kerislab.jp/posts/2021-10-31-moonlander/</link><pubDate>Sun, 31 Oct 2021 22:49:57 +0900</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2021-10-31-moonlander/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
@@ -114,17 +118,4 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;p>さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「&lt;a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences">Preferences&lt;/a>」です。&lt;/p>
 &lt;p>ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。&lt;/p>
 &lt;p>みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。&lt;/p>
-&lt;p>不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します。&lt;/p></description></item><item><title>割れちゃったiPhoneの液晶を直したお話</title><link>https://www.kerislab.jp/posts/2016-06-15-repairing-iphone6plus/</link><pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-06-15-repairing-iphone6plus/</guid><description>&lt;div class="sect1">
-&lt;h2 id="_概要">概要&lt;/h2>
-&lt;div class="sectionbody">
-&lt;div class="sect2">
-&lt;h3 id="_割れた_iphone_6_plus">割れた iPhone 6 Plus&lt;/h3>
-&lt;div class="paragraph">
-&lt;p>他のことに夢中になっているときに机から落として割ってしまいました。ショックです…​&lt;/p>
-&lt;/div>
-&lt;div class="paragraph img-medium">
-&lt;p>&lt;span class="image">&lt;img src="broken-iphone.jpg" alt="割れたiPhone"/>&lt;/span>&lt;/p>
-&lt;/div>
-&lt;/div>
-&lt;div class="sect2">
-&lt;h3 id="_自力で液晶パネルを交換する">自力で液晶パネルを交換する&lt;/h3></description></item></channel></rss>
+&lt;p>不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します。&lt;/p></description></item></channel></rss>
