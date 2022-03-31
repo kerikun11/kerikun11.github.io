@@ -1,624 +1,292 @@
-<!doctype html><html class=no-js lang=ja>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=google-site-verification content="EGHRTn1Bed7L7Ntdi0a-iywpUXqKpLm_ISqeeMzi5sY">
-<title>なめらかな加速の設計④ C++による実装例 - KERI's Lab</title>
-<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
-<meta name=description content>
-<meta property="og:title" content="なめらかな加速の設計④ C++による実装例">
-<meta property="og:description" content="概要
+<!doctype html><html class=no-js lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=google-site-verification content="EGHRTn1Bed7L7Ntdi0a-iywpUXqKpLm_ISqeeMzi5sY"><title>なめらかな加速の設計④ C++による実装例 - KERI's Lab</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><meta property="og:title" content="なめらかな加速の設計④ C++による実装例"><meta property="og:description" content="概要
 前回の記事の続きです。
-今回の記事では、今までに示した設計法のC++による実装例を紹介します。">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer4/"><meta property="og:image" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer4/icon.png"><meta property="article:section" content="post">
-<meta property="article:published_time" content="2018-04-29T15:35:38+09:00">
-<meta property="article:modified_time" content="2018-04-29T15:35:38+09:00">
-<meta itemprop=name content="なめらかな加速の設計④ C++による実装例">
-<meta itemprop=description content="概要
+今回の記事では、今までに示した設計法のC++による実装例を紹介します。"><meta property="og:type" content="article"><meta property="og:url" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer4/"><meta property="og:image" content="https://www.kerislab.jp/posts/2018-04-29-accel-designer4/icon.png"><meta property="article:section" content="post"><meta property="article:published_time" content="2018-04-29T15:35:38+09:00"><meta property="article:modified_time" content="2018-04-29T15:35:38+09:00"><meta itemprop=name content="なめらかな加速の設計④ C++による実装例"><meta itemprop=description content="概要
 前回の記事の続きです。
-今回の記事では、今までに示した設計法のC++による実装例を紹介します。"><meta itemprop=datePublished content="2018-04-29T15:35:38+09:00">
-<meta itemprop=dateModified content="2018-04-29T15:35:38+09:00">
-<meta itemprop=wordCount content="2759">
-<meta itemprop=keywords content="マイクロマウス,制御,">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="なめらかな加速の設計④ C++による実装例">
-<meta name=twitter:description content="概要
+今回の記事では、今までに示した設計法のC++による実装例を紹介します。"><meta itemprop=datePublished content="2018-04-29T15:35:38+09:00"><meta itemprop=dateModified content="2018-04-29T15:35:38+09:00"><meta itemprop=wordCount content="2759"><meta itemprop=keywords content="マイクロマウス,制御,"><meta name=twitter:card content="summary"><meta name=twitter:title content="なめらかな加速の設計④ C++による実装例"><meta name=twitter:description content="概要
 前回の記事の続きです。
-今回の記事では、今までに示した設計法のC++による実装例を紹介します。">
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link rel=dns-prefetch href=//fonts.googleapis.com>
-<link rel=dns-prefetch href=//fonts.gstatic.com>
-<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-<link rel=stylesheet href=/css/style.css>
-<link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/syntax.css>
-<link rel="shortcut icon" href=/favicon.ico>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-103856564-1','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-</head>
-<body class=body>
-<div class="container container--outer">
-<header class=header>
-<div class="container header__container">
-<div class=logo>
-<a class=logo__link href=/ title="KERI's Lab" rel=home>
-<div class="logo__item logo__text">
-<div class=logo__title>KERI's Lab</div>
-<div class=logo__tagline>KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。</div>
-</div>
-</a>
-</div>
-<nav class=menu>
-<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
-<span class=menu__btn-title tabindex=-1>Menu</span>
-</button>
-<ul class=menu__list>
-<li class=menu__item>
-<a class=menu__link href=/>
-<span class=menu__text>Home</span>
-</a>
-</li>
-<li class=menu__item>
-<a class=menu__link href=/about/>
-<span class=menu__text>About</span>
-</a>
-</li>
-<li class=menu__item>
-<a class=menu__link href=/works/>
-<span class=menu__text>Works</span>
-</a>
-</li>
-<li class=menu__item>
-<a class=menu__link href=/categories/>
-<span class=menu__text>Categories</span>
-</a>
-</li>
-<li class=menu__item>
-<a class=menu__link href=/tags/>
-<span class=menu__text>Tags</span>
-</a>
-</li>
-<li class=menu__item>
-<a class=menu__link href=/archives/>
-<span class=menu__text>Archives</span>
-</a>
-</li>
-</ul>
-</nav>
-</div>
-</header>
-<div class="wrapper flex">
-<div class=primary>
-<main class=main role=main>
-<article class=post>
-<header class=post__header>
-<figure class="post__thumbnail thumbnail">
-<img class=thumbnail__image src=/posts/2018-04-29-accel-designer4/icon.png alt="なめらかな加速の設計④ C++による実装例">
-</figure>
-<h1 class=post__title>なめらかな加速の設計④ C++による実装例</h1>
-<div class="post__meta meta">
-<div class="meta__item-datetime meta__item">
-<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2018-04-29T15:35:38+09:00>2018-04-29</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/ rel=category>説明記事</a>
-</span>
-</div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><span class=meta__text><a class=meta__link href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=category>マイクロマウス</a>, <a class=meta__link href=/tags/%E5%88%B6%E5%BE%A1/ rel=category>制御</a>
-</span>
-</div></div>
-</header>
-<a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
-<div class="content post__content clearfix">
-<h2 id=概要>概要</h2>
-<p><a href=/posts/2018-04-29-accel-designer3/>前回の記事</a>の続きです。</p>
-<p>今回の記事では、今までに示した設計法のC++による実装例を紹介します。</p>
-<h3 id=なめらかな加速の設計-目次>なめらかな加速の設計 目次</h3>
-<ul>
-<li><a href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li>
-<li><a href=/posts/2018-04-29-accel-designer2/>なめらかな加速の設計② 曲線加速の設計</a></li>
-<li><a href=/posts/2018-04-29-accel-designer3/>なめらかな加速の設計③ 走行距離を考慮した速度設計</a></li>
-<li><a href=/posts/2018-04-29-accel-designer4/>なめらかな加速の設計④ C++による実装例</a></li>
-</ul>
-<h2 id=ソースコード>ソースコード</h2>
-<p>以下のソースコードは、まとめて<a href=src.zip>ここ</a>からダウンロードできます。</p>
-<p>このライブラリには実体はなく、クラスの宣言が書かれたヘッダファイルのみです。</p>
-<ul>
-<li>ライブラリ <code>accel_curve.h</code>, <code>accel_designer.h</code></li>
-<li>使用例 <code>simple.cpp</code>, <code>continuous.cpp</code></li>
-<li>出力された CSV をプロットする MATLAB コード <code>plotout.m</code></li>
-</ul>
-<p>※使用する際は、これらのファイルはすべて同じディレクトリにおいてください。</p>
-<h2 id=設計1-曲線加速>設計1 曲線加速</h2>
-<p>まず、移動距離の拘束がない速度設計クラス <code>AccelCurve</code> を紹介します。</p>
-<p>以下のコードは、
+今回の記事では、今までに示した設計法のC++による実装例を紹介します。"><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/syntax.css><link rel="shortcut icon" href=/favicon.ico><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-103856564-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="KERI's Lab" rel=home><div class="logo__item logo__text"><div class=logo__title>KERI's Lab</div><div class=logo__tagline>KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/><span class=menu__text>Home</span></a></li><li class=menu__item><a class=menu__link href=/about/><span class=menu__text>About</span></a></li><li class=menu__item><a class=menu__link href=/works/><span class=menu__text>Works</span></a></li><li class=menu__item><a class=menu__link href=/categories/><span class=menu__text>Categories</span></a></li><li class=menu__item><a class=menu__link href=/tags/><span class=menu__text>Tags</span></a></li><li class=menu__item><a class=menu__link href=/archives/><span class=menu__text>Archives</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><figure class="post__thumbnail thumbnail"><img class=thumbnail__image src=/posts/2018-04-29-accel-designer4/icon.png alt="なめらかな加速の設計④ C++による実装例"></figure><h1 class=post__title>なめらかな加速の設計④ C++による実装例</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2018-04-29T15:35:38+09:00>2018-04-29</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/ rel=category>説明記事</a></span></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><span class=meta__text><a class=meta__link href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=category>マイクロマウス</a>, <a class=meta__link href=/tags/%E5%88%B6%E5%BE%A1/ rel=category>制御</a></span></div></div></header><a href=https://twitter.com/share class=twitter-share-button data-size=large>Tweet</a> <script>!function(e,n,s){var t,o=e.getElementsByTagName(n)[0],i=/^http:/.test(e.location)?"http":"https";e.getElementById(s)||(t=e.createElement(n),t.id=s,t.src=i+"://platform.twitter.com/widgets.js",o.parentNode.insertBefore(t,o))}(document,"script","twitter-wjs")</script><div class="content post__content clearfix"><h2 id=概要>概要</h2><p><a href=/posts/2018-04-29-accel-designer3/>前回の記事</a>の続きです。</p><p>今回の記事では、今までに示した設計法のC++による実装例を紹介します。</p><h3 id=なめらかな加速の設計-目次>なめらかな加速の設計 目次</h3><ul><li><a href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li><li><a href=/posts/2018-04-29-accel-designer2/>なめらかな加速の設計② 曲線加速の設計</a></li><li><a href=/posts/2018-04-29-accel-designer3/>なめらかな加速の設計③ 走行距離を考慮した速度設計</a></li><li><a href=/posts/2018-04-29-accel-designer4/>なめらかな加速の設計④ C++による実装例</a></li></ul><h2 id=ソースコード>ソースコード</h2><p>以下のソースコードは、まとめて<a href=src.zip>ここ</a>からダウンロードできます。</p><p>このライブラリには実体はなく、クラスの宣言が書かれたヘッダファイルのみです。</p><ul><li>ライブラリ <code>accel_curve.h</code>, <code>accel_designer.h</code></li><li>使用例 <code>simple.cpp</code>, <code>continuous.cpp</code></li><li>出力された CSV をプロットする MATLAB コード <code>plotout.m</code></li></ul><p>※使用する際は、これらのファイルはすべて同じディレクトリにおいてください。</p><h2 id=設計1-曲線加速>設計1 曲線加速</h2><p>まず、移動距離の拘束がない速度設計クラス <code>AccelCurve</code> を紹介します。</p><p>以下のコードは、
 <a href=src/accel_curve.h>accel_curve.h</a>
-の抜粋です。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cm>/**
-</span><span class=cm> * @brief 加速曲線を生成するクラス
-</span><span class=cm> *
-</span><span class=cm> * - 引数の拘束に従って加速曲線を生成する
-</span><span class=cm> * - 始点速度と終点速度をなめらかにつなぐ
-</span><span class=cm> * - 移動距離の拘束はない
-</span><span class=cm> * - 始点速度および終点速度は、正でも負でも可
-</span><span class=cm> */</span>
-<span class=k>class</span> <span class=nc>AccelCurve</span> <span class=p>{</span>
-<span class=k>public</span><span class=o>:</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 初期化付きのコンストラクタ。
-</span><span class=cm>   *
-</span><span class=cm>   * @param j_max   最大躍度の大きさ [m/s/s/s], 正であること
-</span><span class=cm>   * @param a_max   最大加速度の大きさ [m/s/s], 正であること
-</span><span class=cm>   * @param v_start 始点速度 [m/s]
-</span><span class=cm>   * @param v_end   終点速度 [m/s]
-</span><span class=cm>   */</span>
-  <span class=n>AccelCurve</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span><span class=p>,</span>
-             <span class=k>const</span> <span class=kt>float</span> <span class=n>v_end</span><span class=p>);</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における躍度 $j$
-</span><span class=cm>   * @param t 時刻 [s]
-</span><span class=cm>   * @return j 躍度 [m/s/s/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>j</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における加速度 $a$
-</span><span class=cm>   * @param t 時刻 [s]
-</span><span class=cm>   * @return a 加速度 [m/s/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>a</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における速度 $v$
-</span><span class=cm>   * @param t 時刻 [s]
-</span><span class=cm>   * @return v 速度 [m/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>v</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における位置 $x$
-</span><span class=cm>   * @param t 時刻 [s]
-</span><span class=cm>   * @return x 位置 [m]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>x</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 終点時刻 [s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>t_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 終点速度 [m/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>v_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 終点位置 [m]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>x_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
-
-<span class=k>public</span><span class=o>:</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 走行距離から達しうる終点速度を算出する関数
-</span><span class=cm>   *
-</span><span class=cm>   * @param j_max 最大躍度の大きさ [m/s/s/s], 正であること
-</span><span class=cm>   * @param a_max 最大加速度の大きさ [m/s/s], 正であること
-</span><span class=cm>   * @param vs    始点速度 [m/s]
-</span><span class=cm>   * @param vt    目標速度 [m/s]
-</span><span class=cm>   * @param d     走行距離 [m]
-</span><span class=cm>   * @return ve   終点速度 [m/s]
-</span><span class=cm>   */</span>
-  <span class=k>static</span> <span class=kt>float</span> <span class=n>calcVelocityEnd</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span>
-                               <span class=k>const</span> <span class=kt>float</span> <span class=n>vs</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>vt</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>d</span><span class=p>);</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 走行距離から達しうる最大速度を算出する関数
-</span><span class=cm>   *
-</span><span class=cm>   * @param j_max 最大躍度の大きさ [m/s/s/s], 正であること
-</span><span class=cm>   * @param a_max 最大加速度の大きさ [m/s/s], 正であること
-</span><span class=cm>   * @param vs    始点速度 [m/s]
-</span><span class=cm>   * @param ve    終点速度 [m/s]
-</span><span class=cm>   * @param d     走行距離 [m]
-</span><span class=cm>   * @return vm   最大速度 [m/s]
-</span><span class=cm>   */</span>
-  <span class=k>static</span> <span class=kt>float</span> <span class=nf>calcVelocityMax</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span>
-                               <span class=k>const</span> <span class=kt>float</span> <span class=n>vs</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>ve</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>d</span><span class=p>);</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 速度差から変位を算出する関数
-</span><span class=cm>   *
-</span><span class=cm>   * @param j_max   最大躍度の大きさ [m/s/s/s], 正であること
-</span><span class=cm>   * @param a_max   最大加速度の大きさ [m/s/s], 正であること
-</span><span class=cm>   * @param v_start 始点速度 [m/s]
-</span><span class=cm>   * @param v_end   終点速度 [m/s]
-</span><span class=cm>   * @return d      変位 [m]
-</span><span class=cm>   */</span>
-  <span class=k>static</span> <span class=kt>float</span> <span class=nf>calcMinDistance</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span>
-                               <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_end</span><span class=p>);</span>
-
-<span class=k>protected</span><span class=o>:</span>
-  <span class=kt>float</span> <span class=n>jm</span><span class=p>;</span>             <span class=cm>/**&lt; @brief 躍度定数 [m/s/s/s] */</span>
-  <span class=kt>float</span> <span class=n>am</span><span class=p>;</span>             <span class=cm>/**&lt; @brief 加速度定数 [m/s/s] */</span>
-  <span class=kt>float</span> <span class=n>t0</span><span class=p>,</span> <span class=n>t1</span><span class=p>,</span> <span class=n>t2</span><span class=p>,</span> <span class=n>t3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 時刻定数 [s] */</span>
-  <span class=kt>float</span> <span class=n>v0</span><span class=p>,</span> <span class=n>v1</span><span class=p>,</span> <span class=n>v2</span><span class=p>,</span> <span class=n>v3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 速度定数 [m/s] */</span>
-  <span class=kt>float</span> <span class=n>x0</span><span class=p>,</span> <span class=n>x1</span><span class=p>,</span> <span class=n>x2</span><span class=p>,</span> <span class=n>x3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 位置定数 [m] */</span>
-<span class=p>};</span>
-</code></pre></div><h2 id=設計2-曲線加減速>設計2 曲線加減速</h2>
-<p>次は、移動距離などの拘束条件を満たす加減速設計クラス <code>AccelDesigner</code> を紹介します。</p>
-<p>以下のコードは、
+の抜粋です。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm> * @brief 加速曲線を生成するクラス
+</span></span></span><span class=line><span class=cl><span class=cm> *
+</span></span></span><span class=line><span class=cl><span class=cm> * - 引数の拘束に従って加速曲線を生成する
+</span></span></span><span class=line><span class=cl><span class=cm> * - 始点速度と終点速度をなめらかにつなぐ
+</span></span></span><span class=line><span class=cl><span class=cm> * - 移動距離の拘束はない
+</span></span></span><span class=line><span class=cl><span class=cm> * - 始点速度および終点速度は、正でも負でも可
+</span></span></span><span class=line><span class=cl><span class=cm> */</span>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>AccelCurve</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 初期化付きのコンストラクタ。
+</span></span></span><span class=line><span class=cl><span class=cm>   *
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param j_max   最大躍度の大きさ [m/s/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param a_max   最大加速度の大きさ [m/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_start 始点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_end   終点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=n>AccelCurve</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>             <span class=k>const</span> <span class=kt>float</span> <span class=n>v_end</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における躍度 $j$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return j 躍度 [m/s/s/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>j</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における加速度 $a$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return a 加速度 [m/s/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>a</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における速度 $v$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return v 速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>v</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における位置 $x$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return x 位置 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>x</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 終点時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>t_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 終点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>v_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 終点位置 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>x_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 走行距離から達しうる終点速度を算出する関数
+</span></span></span><span class=line><span class=cl><span class=cm>   *
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param j_max 最大躍度の大きさ [m/s/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param a_max 最大加速度の大きさ [m/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param vs    始点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param vt    目標速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param d     走行距離 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return ve   終点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=k>static</span> <span class=kt>float</span> <span class=n>calcVelocityEnd</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                               <span class=k>const</span> <span class=kt>float</span> <span class=n>vs</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>vt</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>d</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 走行距離から達しうる最大速度を算出する関数
+</span></span></span><span class=line><span class=cl><span class=cm>   *
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param j_max 最大躍度の大きさ [m/s/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param a_max 最大加速度の大きさ [m/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param vs    始点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param ve    終点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param d     走行距離 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return vm   最大速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=k>static</span> <span class=kt>float</span> <span class=nf>calcVelocityMax</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                               <span class=k>const</span> <span class=kt>float</span> <span class=n>vs</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>ve</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>d</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 速度差から変位を算出する関数
+</span></span></span><span class=line><span class=cl><span class=cm>   *
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param j_max   最大躍度の大きさ [m/s/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param a_max   最大加速度の大きさ [m/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_start 始点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_end   終点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return d      変位 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=k>static</span> <span class=kt>float</span> <span class=nf>calcMinDistance</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                               <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_end</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>protected</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=n>jm</span><span class=p>;</span>             <span class=cm>/**&lt; @brief 躍度定数 [m/s/s/s] */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=n>am</span><span class=p>;</span>             <span class=cm>/**&lt; @brief 加速度定数 [m/s/s] */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=n>t0</span><span class=p>,</span> <span class=n>t1</span><span class=p>,</span> <span class=n>t2</span><span class=p>,</span> <span class=n>t3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 時刻定数 [s] */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=n>v0</span><span class=p>,</span> <span class=n>v1</span><span class=p>,</span> <span class=n>v2</span><span class=p>,</span> <span class=n>v3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 速度定数 [m/s] */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=n>x0</span><span class=p>,</span> <span class=n>x1</span><span class=p>,</span> <span class=n>x2</span><span class=p>,</span> <span class=n>x3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 位置定数 [m] */</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></div><h2 id=設計2-曲線加減速>設計2 曲線加減速</h2><p>次は、移動距離などの拘束条件を満たす加減速設計クラス <code>AccelDesigner</code> を紹介します。</p><p>以下のコードは、
 <a href=src/accel_designer.h>accel_designer.h</a>
-の抜粋です。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cm>/**
-</span><span class=cm> * @brief 拘束条件を満たす曲線加減速の軌道を生成するクラス
-</span><span class=cm> *
-</span><span class=cm> * - 移動距離の拘束条件を満たす曲線加速軌道を生成する
-</span><span class=cm> * - 各時刻 $t$ における躍度 $j(t)$、加速度 $a(t)$、速度 $v(t)$、位置 $x(t)$
-</span><span class=cm> * を提供する
-</span><span class=cm> * - 最大加速度 $a_{\max}$ と始点速度 $v_s$
-</span><span class=cm> * など拘束次第では目標速度に達することができない場合があるので注意する
-</span><span class=cm> */</span>
-<span class=k>class</span> <span class=nc>AccelDesigner</span> <span class=p>{</span>
-<span class=k>public</span><span class=o>:</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 初期化付きコンストラクタ
-</span><span class=cm>   *
-</span><span class=cm>   * @param j_max     最大躍度の大きさ [m/s/s/s]、正であること
-</span><span class=cm>   * @param a_max     最大加速度の大きさ [m/s/s], 正であること
-</span><span class=cm>   * @param v_sat     飽和速度の大きさ [m/s]、正であること
-</span><span class=cm>   * @param v_start   始点速度 [m/s]
-</span><span class=cm>   * @param v_target  目標速度 [m/s]
-</span><span class=cm>   * @param v_end     終点速度 [m/s]
-</span><span class=cm>   * @param dist      移動距離 [m]
-</span><span class=cm>   * @param x_start   始点位置 [m] (オプション)
-</span><span class=cm>   * @param t_start   始点時刻 [s] (オプション)
-</span><span class=cm>   */</span>
-  <span class=n>AccelDesigner</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_sat</span><span class=p>,</span>
-                <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_target</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>dist</span><span class=p>,</span>
-                <span class=k>const</span> <span class=kt>float</span> <span class=n>x_start</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>t_start</span> <span class=o>=</span> <span class=mi>0</span><span class=p>);</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における躍度 $j$
-</span><span class=cm>   * @param t 時刻[s]
-</span><span class=cm>   * @return j 躍度[m/s/s/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>j</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における加速度 $a$
-</span><span class=cm>   * @param t 時刻 [s]
-</span><span class=cm>   * @return a 加速度 [m/s/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>a</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における速度 $v$
-</span><span class=cm>   * @param t 時刻 [s]
-</span><span class=cm>   * @return v 速度 [m/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>v</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 時刻 $t$ における位置 $x$
-</span><span class=cm>   * @param t 時刻 [s]
-</span><span class=cm>   * @return x 位置 [m]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>x</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 終点時刻 [s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>t_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 終点速度 [m/s]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>v_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 終点位置 [m]
-</span><span class=cm>   */</span>
-  <span class=kt>float</span> <span class=nf>x_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief std::ostream に軌道のcsvを出力する関数。
-</span><span class=cm>   */</span>
-  <span class=kt>void</span> <span class=nf>printCsv</span><span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>ostream</span> <span class=o>&amp;</span><span class=n>os</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>t_interval</span> <span class=o>=</span> <span class=mf>0.001f</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
-  <span class=cm>/**
-</span><span class=cm>   * @brief 情報の表示
-</span><span class=cm>   */</span>
-  <span class=k>friend</span> <span class=n>std</span><span class=o>::</span><span class=n>ostream</span> <span class=o>&amp;</span><span class=k>operator</span><span class=o>&lt;&lt;</span><span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>ostream</span> <span class=o>&amp;</span><span class=n>os</span><span class=p>,</span> <span class=k>const</span> <span class=n>AccelDesigner</span> <span class=o>&amp;</span><span class=n>obj</span><span class=p>);</span>
-
-<span class=k>protected</span><span class=o>:</span>
-  <span class=kt>float</span> <span class=n>t0</span><span class=p>,</span> <span class=n>t1</span><span class=p>,</span> <span class=n>t2</span><span class=p>,</span> <span class=n>t3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 境界点の時刻 [s] */</span>
-  <span class=kt>float</span> <span class=n>x0</span><span class=p>,</span> <span class=n>x3</span><span class=p>;</span>         <span class=cm>/**&lt; @brief 境界点の位置 [m] */</span>
-  <span class=n>AccelCurve</span> <span class=n>ac</span><span class=p>,</span> <span class=n>dc</span><span class=p>;</span> <span class=cm>/**&lt; @brief 曲線加速、曲線減速オブジェクト */</span>
-<span class=p>};</span>
-</code></pre></div><h2 id=使用例>使用例</h2>
-<p>次に、 <code>AccelDesigner</code> の使用例を紹介します。</p>
-<h3 id=シンプル>シンプル</h3>
-<p>一番簡単な例として以下の C++コードをご覧ください。
-実行すると、標準出力に CSV が表示されます。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=c1># Linux コマンド実行例</span>
-g++ sample.cpp
-./a.out
-</code></pre></div><p><a href=src/simple.cpp>simple.cpp</a>:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cp>#include</span> <span class=cpf>&lt;cstdio&gt;</span><span class=cp>
-</span><span class=cp>#include</span> <span class=cpf>&lt;fstream&gt;</span><span class=cp>
-</span><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
-</span><span class=cp></span>
-<span class=cp>#include</span> <span class=cpf>&#34;accel_designer.h&#34;</span><span class=cp>
-</span><span class=cp></span>
-<span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span>
-  <span class=c1>// パラメータを設定
-</span><span class=c1></span>  <span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span> <span class=o>=</span> <span class=mi>120000</span><span class=p>;</span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span> <span class=o>=</span> <span class=mi>9000</span><span class=p>;</span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_max</span> <span class=o>=</span> <span class=mi>1800</span><span class=p>;</span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_target</span> <span class=o>=</span> <span class=mi>600</span><span class=p>;</span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>distance</span> <span class=o>=</span> <span class=mi>720</span><span class=p>;</span>
-  <span class=c1>// 曲線を生成
-</span><span class=c1></span>  <span class=n>ctrl</span><span class=o>::</span><span class=n>AccelDesigner</span> <span class=n>ad</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>v_start</span><span class=p>,</span> <span class=n>v_target</span><span class=p>,</span> <span class=n>distance</span><span class=p>);</span>
-  <span class=c1>// CSV出力
-</span><span class=c1></span>  <span class=k>for</span> <span class=p>(</span><span class=kt>float</span> <span class=n>t</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>t</span> <span class=o>&lt;</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>();</span> <span class=n>t</span> <span class=o>+=</span> <span class=mf>0.001f</span><span class=p>)</span> <span class=p>{</span>
-    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%f,%f,%f,%f,%f</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>j</span><span class=p>(</span><span class=n>t</span><span class=p>),</span> <span class=n>ad</span><span class=p>.</span><span class=n>a</span><span class=p>(</span><span class=n>t</span><span class=p>),</span> <span class=n>ad</span><span class=p>.</span><span class=n>v</span><span class=p>(</span><span class=n>t</span><span class=p>),</span> <span class=n>ad</span><span class=p>.</span><span class=n>x</span><span class=p>(</span><span class=n>t</span><span class=p>));</span>
-  <span class=p>}</span>
-
-  <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
-<span class=p>}</span>
-</code></pre></div><h3 id=連続使用>連続使用</h3>
-<p>加減速をいくつか繰り返して、<code>out.csv</code> ファイルに書き込む例です。</p>
-<p>前回の終点の速度や位置を、次回の始点速度、位置に使っています。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=c1># Linux コマンド実行例</span>
-g++ continuous.cpp
-./a.out
-<span class=c1># MATLAB でプロット</span>
-matlab -nodesktop -r plotout
-</code></pre></div><p><a href=src/continuous.cpp>continuous.cpp</a>:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cp>#include</span> <span class=cpf>&lt;fstream&gt;</span><span class=cp>
-</span><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
-</span><span class=cp></span>
-<span class=cp>#include</span> <span class=cpf>&#34;accel_designer.h&#34;</span><span class=cp>
-</span><span class=cp></span>
-<span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span>
-  <span class=n>std</span><span class=o>::</span><span class=n>ofstream</span> <span class=n>of</span><span class=p>(</span><span class=s>&#34;out.csv&#34;</span><span class=p>);</span> <span class=c1>//&lt; 出力ファイル名
-</span><span class=c1></span>  <span class=n>ctrl</span><span class=o>::</span><span class=n>AccelDesigner</span> <span class=n>ad</span><span class=p>;</span> <span class=c1>//&lt; 曲線加速設計器
-</span><span class=c1></span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span> <span class=o>=</span> <span class=mi>120000</span><span class=p>;</span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span> <span class=o>=</span> <span class=mi>9000</span><span class=p>;</span>
-  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_max</span> <span class=o>=</span> <span class=mi>2400</span><span class=p>;</span>
-  <span class=n>ad</span><span class=p>.</span><span class=n>reset</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>v_end</span><span class=p>(),</span> <span class=mi>1200</span><span class=p>,</span> <span class=mi>1080</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>x_end</span><span class=p>(),</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>());</span> <span class=c1>//&lt; 曲線の生成
-</span><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>printCsv</span><span class=p>(</span><span class=n>of</span><span class=p>);</span> <span class=c1>//&lt; CSVファイル出力
-</span><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>reset</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>v_end</span><span class=p>(),</span> <span class=mi>600</span><span class=p>,</span> <span class=mi>360</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>x_end</span><span class=p>(),</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>());</span> <span class=c1>//&lt; 曲線の生成
-</span><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>printCsv</span><span class=p>(</span><span class=n>of</span><span class=p>);</span> <span class=c1>//&lt; CSVファイル出力
-</span><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>reset</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>v_end</span><span class=p>(),</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>720</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>x_end</span><span class=p>(),</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>());</span> <span class=c1>//&lt; 曲線の生成
-</span><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>printCsv</span><span class=p>(</span><span class=n>of</span><span class=p>);</span> <span class=c1>//&lt; CSVファイル出力
-</span><span class=c1></span>
-  <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
-<span class=p>}</span>
-</code></pre></div><h3 id=csv-を-matlab-でプロット>CSV を MATLAB でプロット</h3>
-<p>以下の MATLAB コードで、生成された <code>out.csv</code> をプロットできます。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-m data-lang=m><span class=c>%% cleaning</span>
-<span class=n>clear</span><span class=p>;</span>
-<span class=n>set</span><span class=p>(</span><span class=n>groot</span><span class=p>,</span> <span class=s>&#39;DefaultTextInterpreter&#39;</span><span class=p>,</span> <span class=s>&#39;Latex&#39;</span><span class=p>);</span>
-<span class=n>set</span><span class=p>(</span><span class=n>groot</span><span class=p>,</span> <span class=s>&#39;DefaultLegendInterpreter&#39;</span><span class=p>,</span> <span class=s>&#39;Latex&#39;</span><span class=p>);</span>
-<span class=n>set</span><span class=p>(</span><span class=n>groot</span><span class=p>,</span> <span class=s>&#39;DefaultLineLineWidth&#39;</span><span class=p>,</span> <span class=mi>2</span><span class=p>);</span>
-
-<span class=c>%% load</span>
-<span class=n>rawdata</span> <span class=p>=</span> <span class=n>csvread</span><span class=p>(</span><span class=s>&#39;out.csv&#39;</span><span class=p>);</span>
-<span class=n>t</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>1</span><span class=p>);</span>
-<span class=nb>j</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>2</span><span class=p>);</span>
-<span class=n>a</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>3</span><span class=p>);</span>
-<span class=n>v</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>4</span><span class=p>);</span>
-<span class=n>x</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>5</span><span class=p>);</span>
-
-<span class=c>%% plot</span>
-<span class=n>titles</span><span class=p>=</span> <span class=p>{</span><span class=s>&#39;Jerk&#39;</span><span class=p>,</span> <span class=s>&#39;Acceleration&#39;</span><span class=p>,</span> <span class=s>&#39;Velocity&#39;</span><span class=p>,</span> <span class=s>&#39;Position&#39;</span><span class=p>};</span>
-<span class=n>ylabels</span><span class=p>=</span> <span class=p>{</span><span class=s>&#39;$j$ [mm/s/s/s]&#39;</span><span class=p>,</span> <span class=s>&#39;$a$ [mm/s/s]&#39;</span><span class=p>,</span> <span class=s>&#39;$v$ [mm/s]&#39;</span><span class=p>,</span> <span class=s>&#39;$x$ [mm]&#39;</span><span class=p>};</span>
-<span class=n>xlabelstr</span> <span class=p>=</span> <span class=s>&#39;$t$ [s]&#39;</span><span class=p>;</span>
-
-<span class=n>figure</span><span class=p>(</span><span class=mi>1</span><span class=p>);</span>
-<span class=n>data</span> <span class=p>=</span> <span class=p>[</span><span class=nb>j</span> <span class=n>a</span> <span class=n>v</span> <span class=n>x</span><span class=p>];</span>
-<span class=k>for</span> <span class=nb>i</span> <span class=p>=</span> <span class=mi>1</span> <span class=p>:</span> <span class=mi>4</span>
-    <span class=n>subplot</span><span class=p>(</span><span class=mi>4</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=nb>i</span><span class=p>);</span>
-    <span class=n>hold</span> <span class=n>off</span><span class=p>;</span> <span class=n>plot</span><span class=p>(</span><span class=nb>nan</span><span class=p>,</span> <span class=nb>nan</span><span class=p>);</span> <span class=c>% clean</span>
-    <span class=n>hold</span> <span class=n>on</span><span class=p>;</span>
-    <span class=n>ax</span> <span class=p>=</span> <span class=n>gca</span><span class=p>;</span> <span class=n>ax</span><span class=p>.</span><span class=n>ColorOrderIndex</span> <span class=p>=</span> <span class=nb>i</span><span class=p>;</span>
-    <span class=n>plot</span><span class=p>(</span><span class=n>t</span><span class=p>,</span> <span class=n>data</span><span class=p>(:,</span> <span class=nb>i</span><span class=p>));</span>
-    <span class=n>grid</span> <span class=n>on</span><span class=p>;</span>
-    <span class=n>xlabel</span><span class=p>(</span><span class=n>xlabelstr</span><span class=p>);</span>
-    <span class=n>ylabel</span><span class=p>(</span><span class=n>ylabels</span><span class=p>(</span><span class=nb>i</span><span class=p>));</span>
-    <span class=n>title</span><span class=p>(</span><span class=n>titles</span><span class=p>(</span><span class=nb>i</span><span class=p>));</span>
-<span class=k>end</span>
-</code></pre></div><p>上記の連続使用のコード例をプロットしたのが以下の図です。</p>
-<figure>
-<figcaption>
-<h4>CSVをMATLABでプロット</h4>
-</figcaption>
-<img src=main.png alt=CSVをMATLABでプロット style=width:480px>
-</figure>
-<p>なめらかな曲線加速になっていることがわかります。</p>
-<h2 id=実装上の工夫>実装上の工夫</h2>
-<h3 id=使いやすさ>使いやすさ</h3>
-<p>今回作ったライブラリでは、コンストラクタや <code>reset()</code> 関数でパラメータを設定してあげれは
-あとは $v(t)$ のように時間の関数として使えるようにしました。</p>
-<p>複雑な場合分けは内部で行われていて、使い方はとてもシンプルになっています。</p>
-<h3 id=移植性の考慮>移植性の考慮</h3>
-<p>今回のクラス設計では、</p>
-<ul>
-<li>走行距離 $d$ を考慮して終点速度 $v_e$ を求める関数 <code>AccelCurve::calcVelocityEnd()</code></li>
-<li>走行距離 $d$ を考慮して最大速度 $v_m$ を求める関数 <code>AccelCurve::calcVelocityMax()</code></li>
-</ul>
-<p>は、設計1の <code>AccelCurve</code> クラスに実装しました。</p>
-<p>というのも、曲線生成部分がすべて <code>AccelCurve</code> クラスにまとまっているので、
-今後、曲線部分を2次関数ではない別の関数に変えたくなったら、 <code>AccelCurve</code> クラスの中身を変更するだけで済むようになっています。</p>
-<h2 id=まとめ>まとめ</h2>
-<p>さて、なめらかな加速について考えてきました。</p>
-<p>今回の設計によって、拘束条件を満たす走行軌道を生成することができました。</p>
-<p>あとは、機体がこれを追従するコードを書くだけですね！</p>
-<p>といっても、それもまた難しいですが&mldr;</p>
-<h3 id=免責>免責</h3>
-<p>設計には欠陥やミスがあるかもしれません。くれぐれも自己責任ご使用ください。</p>
-<p>もしミスや改良点を見つけたら是非教えてください！<a href=https://twitter.com/kerikun11>@kerikun11</a></p>
-<script type=text/x-mathjax-config>
+の抜粋です。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm> * @brief 拘束条件を満たす曲線加減速の軌道を生成するクラス
+</span></span></span><span class=line><span class=cl><span class=cm> *
+</span></span></span><span class=line><span class=cl><span class=cm> * - 移動距離の拘束条件を満たす曲線加速軌道を生成する
+</span></span></span><span class=line><span class=cl><span class=cm> * - 各時刻 $t$ における躍度 $j(t)$、加速度 $a(t)$、速度 $v(t)$、位置 $x(t)$
+</span></span></span><span class=line><span class=cl><span class=cm> * を提供する
+</span></span></span><span class=line><span class=cl><span class=cm> * - 最大加速度 $a_{\max}$ と始点速度 $v_s$
+</span></span></span><span class=line><span class=cl><span class=cm> * など拘束次第では目標速度に達することができない場合があるので注意する
+</span></span></span><span class=line><span class=cl><span class=cm> */</span>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>AccelDesigner</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=k>public</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 初期化付きコンストラクタ
+</span></span></span><span class=line><span class=cl><span class=cm>   *
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param j_max     最大躍度の大きさ [m/s/s/s]、正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param a_max     最大加速度の大きさ [m/s/s], 正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_sat     飽和速度の大きさ [m/s]、正であること
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_start   始点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_target  目標速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param v_end     終点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param dist      移動距離 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param x_start   始点位置 [m] (オプション)
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t_start   始点時刻 [s] (オプション)
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=n>AccelDesigner</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_sat</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>v_target</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>dist</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                <span class=k>const</span> <span class=kt>float</span> <span class=n>x_start</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>t_start</span> <span class=o>=</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における躍度 $j$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻[s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return j 躍度[m/s/s/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>j</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における加速度 $a$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return a 加速度 [m/s/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>a</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における速度 $v$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return v 速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>v</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 時刻 $t$ における位置 $x$
+</span></span></span><span class=line><span class=cl><span class=cm>   * @param t 時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   * @return x 位置 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>x</span><span class=p>(</span><span class=k>const</span> <span class=kt>float</span> <span class=n>t</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 終点時刻 [s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>t_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 終点速度 [m/s]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>v_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 終点位置 [m]
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=nf>x_end</span><span class=p>()</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief std::ostream に軌道のcsvを出力する関数。
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>void</span> <span class=nf>printCsv</span><span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>ostream</span> <span class=o>&amp;</span><span class=n>os</span><span class=p>,</span> <span class=k>const</span> <span class=kt>float</span> <span class=n>t_interval</span> <span class=o>=</span> <span class=mf>0.001f</span><span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * @brief 情報の表示
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=k>friend</span> <span class=n>std</span><span class=o>::</span><span class=n>ostream</span> <span class=o>&amp;</span><span class=k>operator</span><span class=o>&lt;&lt;</span><span class=p>(</span><span class=n>std</span><span class=o>::</span><span class=n>ostream</span> <span class=o>&amp;</span><span class=n>os</span><span class=p>,</span> <span class=k>const</span> <span class=n>AccelDesigner</span> <span class=o>&amp;</span><span class=n>obj</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>protected</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=n>t0</span><span class=p>,</span> <span class=n>t1</span><span class=p>,</span> <span class=n>t2</span><span class=p>,</span> <span class=n>t3</span><span class=p>;</span> <span class=cm>/**&lt; @brief 境界点の時刻 [s] */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>float</span> <span class=n>x0</span><span class=p>,</span> <span class=n>x3</span><span class=p>;</span>         <span class=cm>/**&lt; @brief 境界点の位置 [m] */</span>
+</span></span><span class=line><span class=cl>  <span class=n>AccelCurve</span> <span class=n>ac</span><span class=p>,</span> <span class=n>dc</span><span class=p>;</span> <span class=cm>/**&lt; @brief 曲線加速、曲線減速オブジェクト */</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></div><h2 id=使用例>使用例</h2><p>次に、 <code>AccelDesigner</code> の使用例を紹介します。</p><h3 id=シンプル>シンプル</h3><p>一番簡単な例として以下の C++コードをご覧ください。
+実行すると、標準出力に CSV が表示されます。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=c1># Linux コマンド実行例</span>
+</span></span><span class=line><span class=cl>g++ sample.cpp
+</span></span><span class=line><span class=cl>./a.out
+</span></span></code></pre></div><p><a href=src/simple.cpp>simple.cpp</a>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cstdio&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;fstream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;accel_designer.h&#34;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// パラメータを設定
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span> <span class=o>=</span> <span class=mi>120000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span> <span class=o>=</span> <span class=mi>9000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_max</span> <span class=o>=</span> <span class=mi>1800</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_start</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_target</span> <span class=o>=</span> <span class=mi>600</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>distance</span> <span class=o>=</span> <span class=mi>720</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// 曲線を生成
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ctrl</span><span class=o>::</span><span class=n>AccelDesigner</span> <span class=n>ad</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>v_start</span><span class=p>,</span> <span class=n>v_target</span><span class=p>,</span> <span class=n>distance</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// CSV出力
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>for</span> <span class=p>(</span><span class=kt>float</span> <span class=n>t</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>t</span> <span class=o>&lt;</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>();</span> <span class=n>t</span> <span class=o>+=</span> <span class=mf>0.001f</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%f,%f,%f,%f,%f</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>t</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>j</span><span class=p>(</span><span class=n>t</span><span class=p>),</span> <span class=n>ad</span><span class=p>.</span><span class=n>a</span><span class=p>(</span><span class=n>t</span><span class=p>),</span> <span class=n>ad</span><span class=p>.</span><span class=n>v</span><span class=p>(</span><span class=n>t</span><span class=p>),</span> <span class=n>ad</span><span class=p>.</span><span class=n>x</span><span class=p>(</span><span class=n>t</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h3 id=連続使用>連続使用</h3><p>加減速をいくつか繰り返して、<code>out.csv</code> ファイルに書き込む例です。</p><p>前回の終点の速度や位置を、次回の始点速度、位置に使っています。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=c1># Linux コマンド実行例</span>
+</span></span><span class=line><span class=cl>g++ continuous.cpp
+</span></span><span class=line><span class=cl>./a.out
+</span></span><span class=line><span class=cl><span class=c1># MATLAB でプロット</span>
+</span></span><span class=line><span class=cl>matlab -nodesktop -r plotout
+</span></span></code></pre></div><p><a href=src/continuous.cpp>continuous.cpp</a>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;fstream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;accel_designer.h&#34;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>std</span><span class=o>::</span><span class=n>ofstream</span> <span class=n>of</span><span class=p>(</span><span class=s>&#34;out.csv&#34;</span><span class=p>);</span> <span class=c1>//&lt; 出力ファイル名
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ctrl</span><span class=o>::</span><span class=n>AccelDesigner</span> <span class=n>ad</span><span class=p>;</span> <span class=c1>//&lt; 曲線加速設計器
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>j_max</span> <span class=o>=</span> <span class=mi>120000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>a_max</span> <span class=o>=</span> <span class=mi>9000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>const</span> <span class=kt>float</span> <span class=n>v_max</span> <span class=o>=</span> <span class=mi>2400</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>ad</span><span class=p>.</span><span class=n>reset</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>v_end</span><span class=p>(),</span> <span class=mi>1200</span><span class=p>,</span> <span class=mi>1080</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>x_end</span><span class=p>(),</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>());</span> <span class=c1>//&lt; 曲線の生成
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>printCsv</span><span class=p>(</span><span class=n>of</span><span class=p>);</span> <span class=c1>//&lt; CSVファイル出力
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>reset</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>v_end</span><span class=p>(),</span> <span class=mi>600</span><span class=p>,</span> <span class=mi>360</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>x_end</span><span class=p>(),</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>());</span> <span class=c1>//&lt; 曲線の生成
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>printCsv</span><span class=p>(</span><span class=n>of</span><span class=p>);</span> <span class=c1>//&lt; CSVファイル出力
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>reset</span><span class=p>(</span><span class=n>j_max</span><span class=p>,</span> <span class=n>a_max</span><span class=p>,</span> <span class=n>v_max</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>v_end</span><span class=p>(),</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>720</span><span class=p>,</span> <span class=n>ad</span><span class=p>.</span><span class=n>x_end</span><span class=p>(),</span> <span class=n>ad</span><span class=p>.</span><span class=n>t_end</span><span class=p>());</span> <span class=c1>//&lt; 曲線の生成
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>ad</span><span class=p>.</span><span class=n>printCsv</span><span class=p>(</span><span class=n>of</span><span class=p>);</span> <span class=c1>//&lt; CSVファイル出力
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h3 id=csv-を-matlab-でプロット>CSV を MATLAB でプロット</h3><p>以下の MATLAB コードで、生成された <code>out.csv</code> をプロットできます。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-m data-lang=m><span class=line><span class=cl><span class=c>%% cleaning</span>
+</span></span><span class=line><span class=cl><span class=n>clear</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=n>set</span><span class=p>(</span><span class=n>groot</span><span class=p>,</span> <span class=s>&#39;DefaultTextInterpreter&#39;</span><span class=p>,</span> <span class=s>&#39;Latex&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>set</span><span class=p>(</span><span class=n>groot</span><span class=p>,</span> <span class=s>&#39;DefaultLegendInterpreter&#39;</span><span class=p>,</span> <span class=s>&#39;Latex&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>set</span><span class=p>(</span><span class=n>groot</span><span class=p>,</span> <span class=s>&#39;DefaultLineLineWidth&#39;</span><span class=p>,</span> <span class=mi>2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>%% load</span>
+</span></span><span class=line><span class=cl><span class=n>rawdata</span> <span class=p>=</span> <span class=n>csvread</span><span class=p>(</span><span class=s>&#39;out.csv&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>t</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=nb>j</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>a</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>3</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>v</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>4</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>x</span> <span class=p>=</span> <span class=n>rawdata</span><span class=p>(:,</span> <span class=mi>5</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>%% plot</span>
+</span></span><span class=line><span class=cl><span class=n>titles</span><span class=p>=</span> <span class=p>{</span><span class=s>&#39;Jerk&#39;</span><span class=p>,</span> <span class=s>&#39;Acceleration&#39;</span><span class=p>,</span> <span class=s>&#39;Velocity&#39;</span><span class=p>,</span> <span class=s>&#39;Position&#39;</span><span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=n>ylabels</span><span class=p>=</span> <span class=p>{</span><span class=s>&#39;$j$ [mm/s/s/s]&#39;</span><span class=p>,</span> <span class=s>&#39;$a$ [mm/s/s]&#39;</span><span class=p>,</span> <span class=s>&#39;$v$ [mm/s]&#39;</span><span class=p>,</span> <span class=s>&#39;$x$ [mm]&#39;</span><span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=n>xlabelstr</span> <span class=p>=</span> <span class=s>&#39;$t$ [s]&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>figure</span><span class=p>(</span><span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>data</span> <span class=p>=</span> <span class=p>[</span><span class=nb>j</span> <span class=n>a</span> <span class=n>v</span> <span class=n>x</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=nb>i</span> <span class=p>=</span> <span class=mi>1</span> <span class=p>:</span> <span class=mi>4</span>
+</span></span><span class=line><span class=cl>    <span class=n>subplot</span><span class=p>(</span><span class=mi>4</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=nb>i</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>hold</span> <span class=n>off</span><span class=p>;</span> <span class=n>plot</span><span class=p>(</span><span class=nb>nan</span><span class=p>,</span> <span class=nb>nan</span><span class=p>);</span> <span class=c>% clean</span>
+</span></span><span class=line><span class=cl>    <span class=n>hold</span> <span class=n>on</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ax</span> <span class=p>=</span> <span class=n>gca</span><span class=p>;</span> <span class=n>ax</span><span class=p>.</span><span class=n>ColorOrderIndex</span> <span class=p>=</span> <span class=nb>i</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>plot</span><span class=p>(</span><span class=n>t</span><span class=p>,</span> <span class=n>data</span><span class=p>(:,</span> <span class=nb>i</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>grid</span> <span class=n>on</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>xlabel</span><span class=p>(</span><span class=n>xlabelstr</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=n>ylabel</span><span class=p>(</span><span class=n>ylabels</span><span class=p>(</span><span class=nb>i</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=n>title</span><span class=p>(</span><span class=n>titles</span><span class=p>(</span><span class=nb>i</span><span class=p>));</span>
+</span></span><span class=line><span class=cl><span class=k>end</span>
+</span></span></code></pre></div><p>上記の連続使用のコード例をプロットしたのが以下の図です。</p><figure><figcaption><h4>CSVをMATLABでプロット</h4></figcaption><img src=main.png alt=CSVをMATLABでプロット style=width:480px></figure><p>なめらかな曲線加速になっていることがわかります。</p><h2 id=実装上の工夫>実装上の工夫</h2><h3 id=使いやすさ>使いやすさ</h3><p>今回作ったライブラリでは、コンストラクタや <code>reset()</code> 関数でパラメータを設定してあげれは
+あとは $v(t)$ のように時間の関数として使えるようにしました。</p><p>複雑な場合分けは内部で行われていて、使い方はとてもシンプルになっています。</p><h3 id=移植性の考慮>移植性の考慮</h3><p>今回のクラス設計では、</p><ul><li>走行距離 $d$ を考慮して終点速度 $v_e$ を求める関数 <code>AccelCurve::calcVelocityEnd()</code></li><li>走行距離 $d$ を考慮して最大速度 $v_m$ を求める関数 <code>AccelCurve::calcVelocityMax()</code></li></ul><p>は、設計1の <code>AccelCurve</code> クラスに実装しました。</p><p>というのも、曲線生成部分がすべて <code>AccelCurve</code> クラスにまとまっているので、
+今後、曲線部分を2次関数ではない別の関数に変えたくなったら、 <code>AccelCurve</code> クラスの中身を変更するだけで済むようになっています。</p><h2 id=まとめ>まとめ</h2><p>さて、なめらかな加速について考えてきました。</p><p>今回の設計によって、拘束条件を満たす走行軌道を生成することができました。</p><p>あとは、機体がこれを追従するコードを書くだけですね！</p><p>といっても、それもまた難しいですが&mldr;</p><h3 id=免責>免責</h3><p>設計には欠陥やミスがあるかもしれません。くれぐれも自己責任ご使用ください。</p><p>もしミスや改良点を見つけたら是非教えてください！<a href=https://twitter.com/kerikun11>@kerikun11</a></p><script type=text/x-mathjax-config>
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-</div>
-<footer class=post__footer>
-<div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg>
-<ul class=tags__list>
-<li class=tags__item>
-<a class="tags__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=tag>マイクロマウス</a>
-</li>
-<li class=tags__item>
-<a class="tags__link btn" href=/tags/%E5%88%B6%E5%BE%A1/ rel=tag>制御</a>
-</li>
-</ul>
-</div>
-</footer>
-</article>
-</main>
-<div class=ads-horizontal>
-<script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+</script></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%9E%E3%82%A6%E3%82%B9/ rel=tag>マイクロマウス</a></li><li class=tags__item><a class="tags__link btn" href=/tags/%E5%88%B6%E5%BE%A1/ rel=tag>制御</a></li></ul></div></footer></article></main><div class=ads-horizontal><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
 <ins class=adsbygoogle style=display:block;text-align:center data-ad-format=fluid data-ad-layout=in-article data-ad-client=ca-pub-1668524068659644 data-ad-slot=3045514441></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-</div>
-<div class="authorbox clearfix">
-<figure class=authorbox__avatar>
-<img alt="けり avatar" src=/img/avatar.jpg class=avatar height=90 width=90>
-</figure>
-<div class=authorbox__header>
-<span class=authorbox__name>筆者: けり</span>
-</div>
-<div class=authorbox__description>
-趣味は電子工作。ぼちぼちマイクロマウス作ってます。
-</div>
-</div>
-<nav class="pager flex">
-<div class="pager__item pager__item--prev">
-<a class=pager__link href=/posts/2018-04-29-accel-designer3/ rel=prev>
-<span class=pager__subtitle>«&#8201;前の投稿</span>
-<p class=pager__title>なめらかな加速の設計③ 走行距離を考慮した速度設計</p>
-</a>
-</div>
-<div class="pager__item pager__item--next">
-<a class=pager__link href=/posts/2018-05-03-kerise-v4-coming/ rel=next>
-<span class=pager__subtitle>次の投稿&#8201;»</span>
-<p class=pager__title>New KERISE v4, 登場</p>
-</a>
-</div>
-</nav>
-<section class=comments>
-<div id=disqus_thread></div>
-<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//kerikeri.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-</section>
-</div>
-<aside class=sidebar><div class="widget-search widget">
-<form class=widget-search__form role=search method=get action=https://google.com/search>
-<label>
-<input class=widget-search__field type=search placeholder=検索… name=q aria-label=検索…>
-</label>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="けり avatar" src=/img/avatar.jpg class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>筆者: けり</span></div><div class=authorbox__description>趣味は電子工作。ぼちぼちマイクロマウス作ってます。</div></div><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/posts/2018-04-29-accel-designer3/ rel=prev><span class=pager__subtitle>«&#8201;前の投稿</span><p class=pager__title>なめらかな加速の設計③ 走行距離を考慮した速度設計</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/posts/2018-05-03-kerise-v4-coming/ rel=next><span class=pager__subtitle>次の投稿&#8201;»</span><p class=pager__title>New KERISE v4, 登場</p></a></div></nav><section class=comments><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//kerikeri.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></section></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=検索… name=q aria-label=検索…></label>
 <input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://www.kerislab.jp/>
-</form>
-</div>
-<div class="widget-toc widget">
-<h4 class=widget__title>目次</h4>
-<div class=widget__content>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#概要>概要</a>
-<ul>
-<li><a href=#なめらかな加速の設計-目次>なめらかな加速の設計 目次</a></li>
-</ul>
-</li>
-<li><a href=#ソースコード>ソースコード</a></li>
-<li><a href=#設計1-曲線加速>設計1 曲線加速</a></li>
-<li><a href=#設計2-曲線加減速>設計2 曲線加減速</a></li>
-<li><a href=#使用例>使用例</a>
-<ul>
-<li><a href=#シンプル>シンプル</a></li>
-<li><a href=#連続使用>連続使用</a></li>
-<li><a href=#csv-を-matlab-でプロット>CSV を MATLAB でプロット</a></li>
-</ul>
-</li>
-<li><a href=#実装上の工夫>実装上の工夫</a>
-<ul>
-<li><a href=#使いやすさ>使いやすさ</a></li>
-<li><a href=#移植性の考慮>移植性の考慮</a></li>
-</ul>
-</li>
-<li><a href=#まとめ>まとめ</a>
-<ul>
-<li><a href=#免責>免責</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="widget-social widget">
-<h4 class="widget-social__title widget__title">ソーシャル</h4>
-<div class="widget-social__content widget__content">
-<div class="widget-social__item widget__item">
-<a class="widget-social__link widget__link btn" title=Twitter rel="noopener noreferrer" href=https://twitter.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5.0-78.8 35.3-78.8 78.8.0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3C20 26 16.1 39.6 16.1 54c0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1.0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4.0-12.6-.4-18.8-1.1C34.9 299 76.3 312 120.8 312c144.9.0 224.1-120 224.1-224.1.0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
-<span>Twitter</span>
-</a>
-</div>
-<div class="widget-social__item widget__item">
-<a class="widget-social__link widget__link btn" title=GitHub rel="noopener noreferrer" href=https://github.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0C85.9.0.0 85.8.0 191.7c0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2.0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8.0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7.0.0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4.0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5.0 25.6-.2 46.3-.2 52.6.0 5.1 3.5 11.1 13.2 9.2C329 348.2 384 276.4 384 191.7 384 85.8 298 0 192 0z"/></svg>
-<span>GitHub</span>
-</a>
-</div>
-<div class="widget-social__item widget__item">
-<a class="widget-social__link widget__link btn" title=Email href=mailto:kerikun11+web@gmail.com><svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16V16 0h-16H16 0zm347 16-139 92.5L69 32zM199 157.5l9 5.5 9-5.5L384 46v210H32V46z"/></svg>
-<span>E-Mail</span>
-</a>
-</div>
-</div>
-</div>
-<div class="widget-categories widget">
-<h4 class=widget__title>広告</h4>
-<div class=widget__content>
-<script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<input type=hidden name=sitesearch value=https://www.kerislab.jp/></form></div><div class="widget-toc widget"><h4 class=widget__title>目次</h4><div class=widget__content><nav id=TableOfContents><ul><li><a href=#概要>概要</a><ul><li><a href=#なめらかな加速の設計-目次>なめらかな加速の設計 目次</a></li></ul></li><li><a href=#ソースコード>ソースコード</a></li><li><a href=#設計1-曲線加速>設計1 曲線加速</a></li><li><a href=#設計2-曲線加減速>設計2 曲線加減速</a></li><li><a href=#使用例>使用例</a><ul><li><a href=#シンプル>シンプル</a></li><li><a href=#連続使用>連続使用</a></li><li><a href=#csv-を-matlab-でプロット>CSV を MATLAB でプロット</a></li></ul></li><li><a href=#実装上の工夫>実装上の工夫</a><ul><li><a href=#使いやすさ>使いやすさ</a></li><li><a href=#移植性の考慮>移植性の考慮</a></li></ul></li><li><a href=#まとめ>まとめ</a><ul><li><a href=#免責>免責</a></li></ul></li></ul></nav></div></div><div class="widget-social widget"><h4 class="widget-social__title widget__title">ソーシャル</h4><div class="widget-social__content widget__content"><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Twitter rel="noopener noreferrer" href=https://twitter.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5.0-78.8 35.3-78.8 78.8.0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3C20 26 16.1 39.6 16.1 54c0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1.0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4.0-12.6-.4-18.8-1.1C34.9 299 76.3 312 120.8 312c144.9.0 224.1-120 224.1-224.1.0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg><span>Twitter</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=GitHub rel="noopener noreferrer" href=https://github.com/kerikun11 target=_blank><svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0C85.9.0.0 85.8.0 191.7c0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2.0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8.0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7.0.0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4.0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5.0 25.6-.2 46.3-.2 52.6.0 5.1 3.5 11.1 13.2 9.2C329 348.2 384 276.4 384 191.7 384 85.8 298 0 192 0z"/></svg><span>GitHub</span></a></div><div class="widget-social__item widget__item"><a class="widget-social__link widget__link btn" title=Email href=mailto:kerikun11+web@gmail.com><svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16V16 0h-16H16 0zm347 16-139 92.5L69 32zM199 157.5l9 5.5 9-5.5L384 46v210H32V46z"/></svg><span>E-Mail</span></a></div></div></div><div class="widget-categories widget"><h4 class=widget__title>広告</h4><div class=widget__content><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
 <ins class=adsbygoogle style=display:block data-ad-client=ca-pub-1668524068659644 data-ad-slot=7974159815 data-ad-format=auto></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-</div>
-</div>
-<div class="widget-spotlight widget">
-<h4 class=widget__title>注目の投稿</h4>
-<div class=widget__content>
-<ul class=widget__list>
-<li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2019-12-04-micromouse2019/>全日本マイクロマウス2019の結果報告</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2019-01-14-vscode-latex/>VSCode で TeX を書こう</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2017-09-03-pattern-of-turn/>マイクロマウスのターン一覧</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2016-07-25-how-to-use-ir-station/>IR-Stationの使い方</a></li>
-</ul>
-</div>
-</div>
-<div class="widget-recent widget">
-<h4 class=widget__title>最近の投稿</h4>
-<div class=widget__content>
-<ul class=widget__list>
-<li class=widget__item><a class=widget__link href=/posts/2022-01-30-windows-explorer-display-name/>Windowsのダウンロードフォルダなどの日本語表示名を英語に変更する</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2021-12-12-maze-saving-method/>マイクロマウスの壁情報を安全にバックアップする</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2021-10-31-moonlander/>左右分離キーボード MoonLander Mark I の紹介</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2021-01-16-sshcode/>ターミナルから VSCode の SSH リモートディレクトリを開く</a></li>
-<li class=widget__item><a class=widget__link href=/posts/2021-01-05-ntfs-hdd-rescue/>アクセスできなくなったHDDのデータを救出した記録</a></li>
-</ul>
-</div>
-</div>
-<div class="widget-categories widget">
-<h4 class=widget__title>カテゴリー</h4>
-<div class=widget__content>
-<ul class=widget__list>
-<li class=widget__item>
-<a class=widget__link href=/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/>イベント</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">14</span>
-</li>
-<li class=widget__item>
-<a class=widget__link href=/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/>作品紹介</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">54</span>
-</li>
-<li class=widget__item>
-<a class=widget__link href=/categories/%E5%82%99%E5%BF%98%E9%8C%B2/>備忘録</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">28</span>
-</li>
-<li class=widget__item>
-<a class=widget__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/>説明記事</a>&nbsp;
-<span class="widget__counter widget__counter--bubble">41</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="widget-taglist widget">
-<h4 class=widget__title>タグ</h4>
-<div class=widget__content>
-<a class="widget-taglist__link widget__link btn" href=/tags/active-record/ title="Active Record">Active Record (1)</a>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></div></div><div class="widget-spotlight widget"><h4 class=widget__title>注目の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2020-04-25-slalom-trajectory-1/>なめらかなスラロームの設計① スラローム概要</a></li><li class=widget__item><a class=widget__link href=/posts/2019-12-04-micromouse2019/>全日本マイクロマウス2019の結果報告</a></li><li class=widget__item><a class=widget__link href=/posts/2019-01-14-vscode-latex/>VSCode で TeX を書こう</a></li><li class=widget__item><a class=widget__link href=/posts/2018-04-29-accel-designer1/>なめらかな加速の設計① 台形加速と曲線加速</a></li><li class=widget__item><a class=widget__link href=/posts/2017-09-03-pattern-of-turn/>マイクロマウスのターン一覧</a></li><li class=widget__item><a class=widget__link href=/posts/2016-07-25-how-to-use-ir-station/>IR-Stationの使い方</a></li></ul></div></div><div class="widget-recent widget"><h4 class=widget__title>最近の投稿</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/posts/2022-01-30-windows-explorer-display-name/>Windowsのダウンロードフォルダなどの日本語表示名を英語に変更する</a></li><li class=widget__item><a class=widget__link href=/posts/2021-12-12-maze-saving-method/>マイクロマウスの壁情報を安全にバックアップする</a></li><li class=widget__item><a class=widget__link href=/posts/2021-10-31-moonlander/>左右分離キーボード MoonLander Mark I の紹介</a></li><li class=widget__item><a class=widget__link href=/posts/2021-01-16-sshcode/>ターミナルから VSCode の SSH リモートディレクトリを開く</a></li><li class=widget__item><a class=widget__link href=/posts/2021-01-05-ntfs-hdd-rescue/>アクセスできなくなったHDDのデータを救出した記録</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>カテゴリー</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/>イベント</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">14</span></li><li class=widget__item><a class=widget__link href=/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/>作品紹介</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">54</span></li><li class=widget__item><a class=widget__link href=/categories/%E5%82%99%E5%BF%98%E9%8C%B2/>備忘録</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">28</span></li><li class=widget__item><a class=widget__link href=/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/>説明記事</a>&nbsp;
+<span class="widget__counter widget__counter--bubble">41</span></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>タグ</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/active-record/ title="Active Record">Active Record (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/apache2/ title=Apache2>Apache2 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/arduino/ title=Arduino>Arduino (12)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/bot/ title=bot>bot (1)</a>
@@ -721,22 +389,7 @@ matlab -nodesktop -r plotout
 <a class="widget-taglist__link widget__link btn" href=/tags/%E8%B5%A4%E5%A4%96%E7%B7%9A%E5%AD%A6%E7%BF%92%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/ title=赤外線学習リモコン>赤外線学習リモコン (5)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/%E8%BF%B7%E8%B7%AF/ title=迷路>迷路 (13)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%85%89%E6%8E%B2%E7%A4%BA%E6%9D%BF/ title=電光掲示板>電光掲示板 (3)</a>
-<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%8A%9B/ title=電力>電力 (4)</a>
-</div>
-</div>
-</aside>
-</div>
-<footer class=footer>
-<div class="container footer__container flex">
-<div class=footer__copyright>
-&copy; 2022 KERI's Lab.
-<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
-</div>
-</div>
-</footer>
-</div>
-<script async defer src=/js/menu.js></script>
+<a class="widget-taglist__link widget__link btn" href=/tags/%E9%9B%BB%E5%8A%9B/ title=電力>電力 (4)</a></div></div></aside></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2022 KERI's Lab.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script>
 <script src=/js/custom.js></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
-</body>
-</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script></body></html>
