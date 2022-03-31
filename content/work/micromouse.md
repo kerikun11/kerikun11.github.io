@@ -1,5 +1,5 @@
 ---
-date: "2021-12-12T12:00:00+09:00"
+date: "2022-03-31T12:00:00+09:00"
 title: "マイクロマウス記事のまとめ"
 tags:
   - "マイクロマウス"
@@ -87,3 +87,5 @@ thumbnail: "icon.jpg"
 - [MicroMouse KERISE v1](https://github.com/kerikun11/micromouse-kerise-v1)
 - [MicroMouse KERISE v2](https://github.com/kerikun11/micromouse-kerise-v2)
 - [MicroMouse KERISE v3](https://github.com/kerikun11/micromouse-kerise-v3)
+- [MicroMouse KERISE v4](https://github.com/kerikun11/micromouse-kerise-v4)
+- [MicroMouse KERISE v5](https://github.com/kerikun11/micromouse-kerise-v5)
