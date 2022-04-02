@@ -121,7 +121,7 @@ MoonLander とはカナダの [ZSA Technology Labs, Inc.](https://ergodox-ez.com
 
 ### 2. 数字と十字キーレイヤー
 
-左手親指あたりにある `Navi` キーを押している間は
+右手親指あたりにある `Navi` キーを押している間は
 [こちら](https://configure.zsa.io/moonlander/layouts/ENJNb/latest/2)
 の数字・十字キーレイヤーに切り替わります。
 
