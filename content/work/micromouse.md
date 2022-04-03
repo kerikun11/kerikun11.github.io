@@ -19,18 +19,18 @@ thumbnail: "icon.jpg"
 
 ## 機体紹介
 
-- [KERISE v1](/posts/2016-12-27-kerisev1)
-- [KERISE v2](/posts/2017-01-08-kerise-v2-1st)
-- [KERISE v3](/posts/2017-03-28-kerisev3-coming)
-- [KERISE v4](/posts/2018-05-03-kerise-v4-coming)
-- [KERISE v5](/posts/2020-04-15-kerise-v5-coming)
+- [KERISE v1](/posts/2016-12-27-kerisev1/)
+- [KERISE v2](/posts/2017-01-08-kerise-v2-1st/)
+- [KERISE v3](/posts/2017-03-28-kerisev3-coming/)
+- [KERISE v4](/posts/2018-05-03-kerise-v4-coming/)
+- [KERISE v5](/posts/2020-04-15-kerise-v5-coming/)
 
 ## 大会の参加報告
 
-- [全日本マイクロマウス2016の結果報告](/posts/2016-11-21-micromouse2016)
-- [全日本マイクロマウス2017の結果報告](/posts/2017-11-22-micromouse2017)
-- ~~全日本マイクロマウス2018の結果報告~~
-- [全日本マイクロマウス2019の結果報告](/posts/2019-12-04-micromouse2019)
+- [全日本マイクロマウス2016の結果報告](/posts/2016-11-21-micromouse2016/)
+- [全日本マイクロマウス2017の結果報告](/posts/2017-11-22-micromouse2017/)
+- [全日本マイクロマウス2019の結果報告](/posts/2019-12-04-micromouse2019/)
+- [全日本マイクロマウス2021の結果報告](/posts/2022-04-02-micromouse2021/)
 
 ## 機能紹介
 
@@ -42,7 +42,7 @@ thumbnail: "icon.jpg"
 
 - [マイクロマウスのターン一覧](/posts/2017-09-03-pattern-of-turn/)
 - [僕の迷路クラスの紹介](/posts/2017-11-01-maze-class/)
-- [MATLABで迷路画像をパースする](/posts/2018-07-04-maze-img-parser)
+- [MATLABで迷路画像をパースする](/posts/2018-07-04-maze-img-parser/)
 - [マイクロマウス2017HX決勝迷路の探索結果](/posts/2017-11-27-result-of-hx2017-maze/)
 - [Cheese杯2019の迷路紹介](/posts/2019-12-21-cheese-cup-2019-maze/)
 - [過去の全日本マイクロマウス大会32x32迷路の分析](/posts/2020-03-08-all-japan-32x32-maze/)
@@ -53,15 +53,20 @@ thumbnail: "icon.jpg"
 ## 制御
 
 - [マイクロマウスのターン一覧](/posts/2017-09-03-pattern-of-turn/)
-- [なめらかな加速の設計](/posts/2018-04-29-accel-designer1)
+- [なめらかな加速の設計](/posts/2018-04-29-accel-designer1/)
 - [なめらかなスラロームの設計](/posts/2020-04-25-slalom-trajectory-1/)
 - [MATLABでスラローム軌道生成](/posts/2017-09-04-matlab-trajectory/)
 
 ## 回路
 
 - [フォトリフレクタの感度をソフトで調整](/posts/2017-10-20-2range-reflector/)
-- [KERISE v1 (回路編)](/posts/2016-12-27-kerisev1)
-- [KERISE v4 (フォトリフレクタ)](/posts/2018-05-03-kerise-v4-coming)
+- [KERISE v1 (回路編)](/posts/2016-12-27-kerisev1/)
+- [KERISE v4 (フォトリフレクタ)](/posts/2018-05-03-kerise-v4-coming/)
+
+## 機構
+
+- [KERISE v4 (車軸)](/posts/2018-05-03-kerise-v4-coming/)
+- [KERISE v5 (車軸)](/posts/2020-04-15-kerise-v5-coming/)
 
 ## 加工
 
