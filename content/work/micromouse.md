@@ -15,8 +15,6 @@ thumbnail: "icon.jpg"
 
 <!--more-->
 
-[マイクロマウスのタグがついた記事一覧](/tags/マイクロマウス/)
-
 ## 機体紹介
 
 - [KERISE v1](/posts/2016-12-27-kerisev1/)
