@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PIC18F27J53 on KERI's Lab</title><link>https://www.kerislab.jp/tags/pic18f27j53/</link><description>Recent content in PIC18F27J53 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Mon, 12 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/pic18f27j53/index.xml" rel="self" type="application/rss+xml"/><item><title>PICで省エネ時計を作る</title><link>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</link><pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PIC18F27J53 on KERI's Lab</title><link>https://www.kerislab.jp/tags/pic18f27j53/</link><description>Recent content in PIC18F27J53 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Mon, 12 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/pic18f27j53/index.xml" rel="self" type="application/rss+xml"/><item><title>PICで省エネ時計を作る</title><link>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</link><pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-09-12-low-power-clock/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="picで時計">PICで時計&lt;/h3>
 &lt;p>久しぶりにPICの話題です。しばらくESP8266やARMマイコンなど、上級のマイコンを使っていましたが、またPICを使ってみたくなりました。&lt;/p>
-&lt;p>他のマイコンには真似できないような超低消費電力の時計を作ってみました。&lt;/p></description></item><item><title>PICでリアルタイムクロック</title><link>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</link><pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>PIC18F27J53は、リアルタイムクロック&amp;amp;カレンダー(RTCC)モジュールをハードウェアで持っています。今回はそれを使用するためのライブラリを作ったので紹介します。&lt;/p></description></item><item><title>PICでブートローダ</title><link>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</link><pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>他のマイコンには真似できないような超低消費電力の時計を作ってみました。&lt;/p></description></item><item><title>PICでリアルタイムクロック</title><link>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</link><pubDate>Fri, 02 Sep 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-09-02-pic-rtcc/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>PIC18F27J53は、リアルタイムクロック&amp;amp;カレンダー(RTCC)モジュールをハードウェアで持っています。今回はそれを使用するためのライブラリを作ったので紹介します。&lt;/p></description></item><item><title>PICでブートローダ</title><link>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</link><pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-01-13-pic-bootloader/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="pic18f27j53を使おう">PIC18F27J53を使おう&lt;/h3>
 &lt;p>以前 &lt;a href="https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/">PIC18F27J53のすすめ&lt;/a> という記事を書きました。それの続きで、今回はUSBブートローダの使い方について書きたいと思います。&lt;/p>
 &lt;h3 id="ブートローダとは">ブートローダとは&lt;/h3>
 &lt;p>ブートローダとは自分自身にプログラムを書きこむプログラムです。これを使うとPICkitなどのライタを使わなくてもプログラムの書き込みをすることができるようになります。&lt;/p>
 &lt;p>ただし、初回に一度だけブートローダ用のプログラムをPICkitなどで書きこむ必要があります。&lt;/p>
 &lt;h3 id="ユーザープログラム">ユーザープログラム&lt;/h3>
-&lt;p>ユーザープログラムとは、ブートローダーにより書き込むプログラムです。あなたが作った、実際に動かすプログラムということです。&lt;/p></description></item><item><title>PICでUSB通信</title><link>https://www.kerislab.jp/posts/2016-01-10-pic-usb/</link><pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-01-10-pic-usb/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>ユーザープログラムとは、ブートローダーにより書き込むプログラムです。あなたが作った、実際に動かすプログラムということです。&lt;/p></description></item><item><title>PICでUSB通信</title><link>https://www.kerislab.jp/posts/2016-01-10-pic-usb/</link><pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-01-10-pic-usb/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>以前 &lt;a href="https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/">PIC18F27J53のすすめ&lt;/a> という記事を書きました。それの続きで、今回はUSBの使い方について書きたいと思います。&lt;/p>
 &lt;p>今回紹介する方法では、USBをUARTの代わりに使えるようにするものです。PICをPCにつなぐとCOMポートが現れます。&lt;/p>
 &lt;p>これならUSBシリアル変換モジュールを使う必要はなくります。&lt;/p>
@@ -18,7 +18,7 @@
 &lt;h4>AE-FT232&lt;/h4>
 &lt;/figcaption>
 &lt;img src="FT232.jpg" alt="AE-FT232" />
-&lt;/figure></description></item><item><title>PIC18F27J53のすすめ</title><link>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</link><pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</guid><description>&lt;h2 id="pic18f27j53のいいところ">PIC18F27J53のいいところ&lt;/h2>
+&lt;/figure></description></item><item><title>PIC18F27J53のすすめ</title><link>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</link><pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</guid><description>&lt;h2 id="pic18f27j53のいいところ">PIC18F27J53のいいところ&lt;/h2>
 &lt;h3 id="秋月で売っていること">秋月で売っていること&lt;/h3>
 &lt;p>電子工作をするうえでこれはとても大事なこと。「秋月で売っているなら使ってみるか」ってなりますよね。&lt;/p>
 &lt;p>もちろん、秋月なので値段が安い！！&lt;br>
@@ -28,4 +28,4 @@
 &lt;h4>PIC18F27J53&lt;/h4>
 &lt;/figcaption>
 &lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/>
-&lt;/figure></description></item><item><title>メダカの照明の自作</title><link>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</link><pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</guid><description>こんにちは。 けり(@kerikun11)です。 みなさん、進捗いかがですか？ 僕は、ぼちぼちです。 今回紹介するのは、 メダカの水槽の照明です。 高校</description></item></channel></rss>
+&lt;/figure></description></item><item><title>メダカの照明の自作</title><link>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</link><pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</guid><description>こんにちは。 けり(@kerikun11)です。 みなさん、進捗いかがですか？ 僕は、ぼちぼちです。 今回紹介するのは、 メダカの水槽の照明です。 高校</description></item></channel></rss>

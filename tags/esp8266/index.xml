@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP8266 on KERI's Lab</title><link>https://www.kerislab.jp/tags/esp8266/</link><description>Recent content in ESP8266 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><managingEditor>kerikun11+web@gmail.com (けり)</managingEditor><webMaster>kerikun11+web@gmail.com (けり)</webMaster><lastBuildDate>Sun, 14 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/esp8266/index.xml" rel="self" type="application/rss+xml"/><item><title>IR-Stationの赤外線ダウンロード機能</title><link>https://www.kerislab.jp/posts/2016-08-14-download-upload/</link><pubDate>Sun, 14 Aug 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-08-14-download-upload/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESP8266 on KERI's Lab</title><link>https://www.kerislab.jp/tags/esp8266/</link><description>Recent content in ESP8266 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 14 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/esp8266/index.xml" rel="self" type="application/rss+xml"/><item><title>IR-Stationの赤外線ダウンロード機能</title><link>https://www.kerislab.jp/posts/2016-08-14-download-upload/</link><pubDate>Sun, 14 Aug 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-08-14-download-upload/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
 &lt;p>自作のWiFi接続の赤外線学習リモコンです。IR-Stationを使えば、スマホやPCから家電製品をコントロールすることができます。&lt;/p>
 &lt;p>詳しくは、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>をご覧ください。&lt;/p>
 &lt;h2 id="ir-stationの新機能">IR-Stationの新機能&lt;/h2>
-&lt;p>夏休みになり、IR-Stationを本格的に開発しています。今回は、いくつかの新機能を紹介します。&lt;/p></description></item><item><title>IR-Stationの使い方</title><link>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</link><pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
+&lt;p>夏休みになり、IR-Stationを本格的に開発しています。今回は、いくつかの新機能を紹介します。&lt;/p></description></item><item><title>IR-Stationの使い方</title><link>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</link><pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-07-25-how-to-use-ir-station/</guid><description>&lt;h2 id="ir-stationとは">IR-Stationとは&lt;/h2>
 &lt;p>IR-Station とは、自作のWiFi接続の赤外線学習リモコンです。&lt;/p>
-&lt;p>IR-Stationを使えば、スマホやPCから家電製品をコントロールすることができます。&lt;/p></description></item><item><title>赤外線学習リモコン完成</title><link>https://www.kerislab.jp/posts/2016-07-18-ir-station/</link><pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-07-18-ir-station/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>IR-Stationを使えば、スマホやPCから家電製品をコントロールすることができます。&lt;/p></description></item><item><title>赤外線学習リモコン完成</title><link>https://www.kerislab.jp/posts/2016-07-18-ir-station/</link><pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-07-18-ir-station/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>赤外線学習リモコンとは、市販の家電製品などのリモコンの赤外線信号を記憶し、送信することができるものです。&lt;/p>
-&lt;p>今回は、WiFi接続に対応した赤外線学習リモコンを作りました。スマートフォンやパソコンなどから、家電製品をコントロールすることができます。&lt;/p></description></item><item><title>ソーラー発電量モニター</title><link>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>今回は、WiFi接続に対応した赤外線学習リモコンを作りました。スマートフォンやパソコンなどから、家電製品をコントロールすることができます。&lt;/p></description></item><item><title>ソーラー発電量モニター</title><link>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-04-20-power-monitor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">100W級ソーラーシステム&lt;/a>の発電量を&lt;a href="https://thingspeak.com/">ThingSpeak.com&lt;/a>というサイトに送ってグラフ化しました。&lt;/p>
-&lt;p>データの送信には、自作の&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">中継型電力計&lt;/a>を使用しています。&lt;/p></description></item><item><title>電力つぶやきbot</title><link>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</link><pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>データの送信には、自作の&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">中継型電力計&lt;/a>を使用しています。&lt;/p></description></item><item><title>電力つぶやきbot</title><link>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</link><pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-04-03-power-tweeter/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="中継型電力計">中継型電力計&lt;/h3>
 &lt;p>先日の記事で&lt;a href="https://www.kerislab.jp/posts/2016-03-23-relay-sensor/">ESP-WROOM-02による中継型電力計&lt;/a>を紹介しましたが、それを使って、電力を自動でつぶやくbotを作りました。&lt;/p>
 &lt;h3 id="何の電力をつぶやくのか">何の電力をつぶやくのか&lt;/h3>
@@ -18,7 +18,7 @@
 &lt;h4>Solar&lt;/h4>
 &lt;/figcaption>
 &lt;img src="solar.jpg" alt="Solar" style="width: 480px;"/>
-&lt;/figure></description></item><item><title>ESP-WROOM-02による中継型電力計</title><link>https://www.kerislab.jp/posts/2016-03-23-relay-sensor/</link><pubDate>Wed, 23 Mar 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-03-23-relay-sensor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;/figure></description></item><item><title>ESP-WROOM-02による中継型電力計</title><link>https://www.kerislab.jp/posts/2016-03-23-relay-sensor/</link><pubDate>Wed, 23 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-23-relay-sensor/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="話題のesp-wroom-02">話題のESP-WROOM-02&lt;/h3>
 &lt;p>ESP8266という高性能マイコンを積んだ話題のESP-WROOM-02モジュール。&lt;/p>
 &lt;p>今回はこれを使って中継型電力計を作りました。&lt;/p>
@@ -33,7 +33,7 @@
 &lt;h3 id="中継型とは">中継型とは&lt;/h3>
 &lt;p>電源端子としてよく使われてるDCジャックに中継するだけで、そこから電力をもらいつつ電力を計測します。&lt;/p>
 &lt;h3 id="wifi経由でサーバーへ">WiFi経由でサーバーへ&lt;/h3>
-&lt;p>測定した電力データはWiFiを使って任意のサーバーに送ることができます。&lt;/p></description></item><item><title>メダカの照明 Ver.2</title><link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link><pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>測定した電力データはWiFiを使って任意のサーバーに送ることができます。&lt;/p></description></item><item><title>メダカの照明 Ver.2</title><link>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</link><pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-14-killifish-light-2/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="メダカの水槽の照明">メダカの水槽の照明&lt;/h3>
 &lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
 &lt;figure >
@@ -55,7 +55,7 @@
 &lt;h4>ESP-WROOM-02&lt;/h4>
 &lt;/figcaption>
 &lt;img src="esp-wroom-02.jpg" alt="ESP-WROOM-02" style="width: 240px;"/>
-&lt;/figure></description></item><item><title>ESP8266で赤外線学習リモコン</title><link>https://www.kerislab.jp/posts/2015-12-30-ir-station/</link><pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate><author>kerikun11+web@gmail.com (けり)</author><guid>https://www.kerislab.jp/posts/2015-12-30-ir-station/</guid><description>&lt;h2 id="esp8266とは">ESP8266とは&lt;/h2>
+&lt;/figure></description></item><item><title>ESP8266で赤外線学習リモコン</title><link>https://www.kerislab.jp/posts/2015-12-30-ir-station/</link><pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-12-30-ir-station/</guid><description>&lt;h2 id="esp8266とは">ESP8266とは&lt;/h2>
 &lt;h3 id="日本の技適を取得済みwifiモジュール">日本の技適を取得済みWiFiモジュール！！&lt;/h3>
 &lt;p>ESP8266とはWiFi制御用マイコンです。もともと中国で流行っていました。そのマイコンを内蔵したESP-WROOM-02というWiFiモジュールが日本の技適を取得したので、日本でも人気になりました。&lt;/p>
 &lt;h3 id="とにかく安い">とにかく安い！&lt;/h3>
