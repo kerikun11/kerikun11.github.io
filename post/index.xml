@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 03 Apr 2022 10:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>全日本マイクロマウス大会2021の結果報告</title><link>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</link><pubDate>Sun, 03 Apr 2022 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Mon, 03 Jul 2023 15:45:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>単眼鏡をスマホに固定する治具の作成</title><link>https://www.kerislab.jp/posts/2023-07-03-monocular-jig/</link><pubDate>Mon, 03 Jul 2023 15:45:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2023-07-03-monocular-jig/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは。&lt;br>
+マウス合宿に参加して開発モチベーションを少し取り戻したけりです。&lt;/p>
+&lt;p>今回の記事はマウスとは関係ありませんが、&lt;br>
+3Dプリンタで作った単眼鏡の固定治具を紹介します。&lt;/p></description></item><item><title>全日本マイクロマウス大会2021の結果報告</title><link>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</link><pubDate>Sun, 03 Apr 2022 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは。3回目ワクチンを接種して頭痛と戦っているけりです。&lt;/p>
 &lt;p>先日参加したマイクロマウスの全日本大会について、簡単に報告します。&lt;/p></description></item><item><title>Windowsのダウンロードフォルダなどの日本語表示名を英語に変更する</title><link>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</link><pubDate>Sun, 30 Jan 2022 17:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>日本語版のWindowsでは、ユーザーフォルダの「ダウンロード」や「ドキュメント」が日本語表記になっている。&lt;/p>
@@ -98,6 +102,4 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p>今回の記事では、
 マイクロマウス KERISE v4 に
 最近搭載した、
-新機能「未知区間加速」を紹介します。&lt;/p></description></item><item><title>KiCadのフットプリントをPythonで一括編集</title><link>https://www.kerislab.jp/posts/2019-05-25-kicad-script/</link><pubDate>Sat, 25 May 2019 13:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2019-05-25-kicad-script/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>KiCad の基板エディタ Pcbnew では、デフォルトでPythonスクリプトエディタが付属していて、すでにフットプリントがオブジェクトとして定義されています。&lt;/p>
-&lt;p>今回は私がよく使う一括変更を紹介します。&lt;/p></description></item></channel></rss>
+新機能「未知区間加速」を紹介します。&lt;/p></description></item></channel></rss>
