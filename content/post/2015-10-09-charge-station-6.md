@@ -5,6 +5,7 @@ categories:
   - "作品紹介"
 tags:
   - "Charge Station"
+  - "PIC"
 thumbnail: "icon.jpg"
 ---
 

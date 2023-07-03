@@ -4,6 +4,7 @@ title: "CPUの創り方"
 categories:
   - "作品紹介"
 tags:
+  - "CPU"
 thumbnail: "icon.jpg"
 ---
 

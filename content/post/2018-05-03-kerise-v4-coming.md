@@ -6,7 +6,7 @@ categories:
 tags:
   - "マイクロマウス"
   - "ロボット"
-  - "KERISE"
+  - "KERISEv4"
 thumbnail: "icon.jpg"
 ---
 
