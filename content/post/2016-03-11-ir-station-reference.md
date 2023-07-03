@@ -16,7 +16,7 @@ thumbnail: "icon.jpg"
 Infrared Remote Controller with ESP8266 WiFi-module  
 You can control your home appliances with your smartphone or laptop.
 
-The latest information is [here](https://github.com/kerikun11/IR-station)
+The latest information is [here](https://github.com/kerikun11/IR-Station)
 
 ## Main parts
 
@@ -89,7 +89,7 @@ Please Add the Libraries below to your Arduino IDE
   1. Open the preferences of Arduino IDE and fill in this URL: http://arduino.esp8266.com/stable/package_esp8266com_index.json to "Additional Boards Manager URLs".
   1. Add "Generic ESP8266 Module" in the Arduino IDE Board Manager.
   1. Add the required libraries to your Arduino IDE in the Arduino IDE Library Manager or zip files.
-  1. Open IR-station firmware in the Arduino IDE.
+  1. Open IR-Station firmware in the Arduino IDE.
   1. Select "Generic ESP8266 Module" and configure each item of board settings properly. See Arduino Board Settings below.
   1. Select correct serial COM port and upload program to the device. When upload program, GPIO0 and GPIO2 must be pulled-up, and GPIO15 must be pulled-down. It's necessary to reset the device immediately before upload. It's a little difficult.
   1. The uploading takes about 30 seconds.

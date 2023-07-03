@@ -5,6 +5,7 @@ categories:
   - "備忘録"
 tags:
   - "FreeRTOS"
+  - "C++"
 ---
 
 ## 概要

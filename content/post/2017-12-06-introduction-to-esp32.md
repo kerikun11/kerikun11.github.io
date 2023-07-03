@@ -6,6 +6,7 @@ categories:
 tags:
   - "ESP32"
   - "ESP-WROOM-32"
+  - "マイコン"
 thumbnail: "icon.jpg"
 ---
 

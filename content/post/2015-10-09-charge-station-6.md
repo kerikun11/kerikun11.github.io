@@ -1,6 +1,6 @@
 ---
 date: "2015-10-09"
-title: "Charge Station Ver.6"
+title: "Charge Station Ver. 6"
 categories:
   - "作品紹介"
 tags:
