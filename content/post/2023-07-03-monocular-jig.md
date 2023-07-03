@@ -84,6 +84,10 @@ Fusion 360 はクラウド型の CAD なので、ブログに埋め込みがで�
 
 {{< postfig src="monocular-jig-test-zoom.jpg" title="中央だけトリミングした結果" width="360px" >}}
 
+ちなみに、単眼鏡をつける前のスマホで撮った写真はこちらです。全前違いますね。
+
+{{< postfig src="monocular-jig-test-original.jpg" title="単眼鏡をつける前の画角" width="360px" >}}
+
 ## おわりに
 
 3Dプリンタがあるとこのような治具をすぐに作ることができて楽しいですね。
@@ -92,4 +96,4 @@ Fusion 360 はクラウド型の CAD なので、ブログに埋め込みがで�
 
 それではまた！
 
-{{< postfig src="monocular-jig-mt-fuji.jpg" title="単眼鏡を通した富士山" width="360px" >}}
+{{< postfig src="monocular-jig-mt-fuji.jpg" title="単眼鏡を使って撮影した富士山" width="360px" >}}
