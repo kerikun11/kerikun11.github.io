@@ -18,15 +18,10 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 
-# allow raw html in markdown
-[markup.goldmark.renderer]
-    unsafe = true
-
 [Author] # Used in authorbox
     name = "けり"
     bio = "趣味は電子工作。ぼちぼちマイクロマウス作ってます。"
     avatar = "img/avatar.jpg"
-    email = "kerikun11+web@gmail.com"
 
 [Params]
     description = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Site description. Used in meta description
@@ -99,6 +94,10 @@ pygmentsCodefencesGuessSyntax = true
     name = "Tags"
     url = "/tags/"
     weight = 5
+
+# allow raw html in markdown
+[markup.goldmark.renderer]
+    unsafe = true
 
 [security.exec]
     allow = ['^asciidoctor$']
