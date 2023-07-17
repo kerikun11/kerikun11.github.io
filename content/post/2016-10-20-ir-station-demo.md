@@ -22,8 +22,6 @@ IR-Stationについては、[IR-Stationについての記事一覧](/tags/ir-sta
 
 IR-Stationを持っていない方でもIR-Stationの操作を体験できるように、操作画面を再現したサイトを作りました。
 
-[IR-Stationのデモンストレーションサイト](http://ir-station.kerikun11.mydns.jp)
-
 <!--more-->
 
 ## 使い方
@@ -48,6 +46,10 @@ IR-Stationの使い方は、[過去の記事](/tags/ir-station)をご覧くだ�
 ### Sinatra
 
 サーバーアプリケーションはRubyのSinatraにより動いています。
+
+### ソースコード
+
+ソースコードは[こちら](https://github.com/kerikun11/IR-Station/tree/master/server_demo)にあります。
 
 ## まとめ
 
