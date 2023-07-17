@@ -6,6 +6,5 @@
 &lt;p>IR-Stationとは、WiFi接続に対応した赤外線学習リモコンです。これがあればスマートフォンなどから家電製品をコントロールすることができます。&lt;/p>
 &lt;p>IR-Stationについては、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>をご覧ください。&lt;/p>
 &lt;h3 id="ir-stationのデモンストレーション">IR-Stationのデモンストレーション&lt;/h3>
-&lt;p>IR-Stationを持っていない方でもIR-Stationの操作を体験できるように、操作画面を再現したサイトを作りました。&lt;/p>
-&lt;p>&lt;a href="http://ir-station.kerikun11.mydns.jp">IR-Stationのデモンストレーションサイト&lt;/a>&lt;/p></description></item><item><title>Sinatraでアプリケーションを作る</title><link>https://www.kerislab.jp/posts/2016-03-12-sinatra/</link><pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-12-sinatra/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
+&lt;p>IR-Stationを持っていない方でもIR-Stationの操作を体験できるように、操作画面を再現したサイトを作りました。&lt;/p></description></item><item><title>Sinatraでアプリケーションを作る</title><link>https://www.kerislab.jp/posts/2016-03-12-sinatra/</link><pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-12-sinatra/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>格安WiFiモジュールESP-WROOM-02を使って電流を計測してそれを受信し表示するアプリケーションを作りました。&lt;/p></description></item></channel></rss>
