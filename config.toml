@@ -18,11 +18,6 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 
-[Author] # Used in authorbox
-    name = "けり"
-    bio = "趣味は電子工作。ぼちぼちマイクロマウス作ってます。"
-    avatar = "img/avatar.jpg"
-
 [Params]
     description = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Site description. Used in meta description
     copyright = "KERI's Lab" # copyright holder, otherwise will use site title
@@ -42,6 +37,11 @@ pygmentsCodefencesGuessSyntax = true
     googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
     customCSS = ["css/custom.css", "css/syntax.css"] # Include custom CSS files
     customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.author] # Used in authorbox
+    name = "けり"
+    bio = "趣味は電子工作。ぼちぼちマイクロマウス作ってます。"
+    avatar = "img/avatar.jpg"
 
 [Params.style.vars]
     highlightColor = "#0000ff" # Override highlight color
