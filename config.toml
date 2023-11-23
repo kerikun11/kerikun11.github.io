@@ -38,7 +38,7 @@ pygmentsCodefencesGuessSyntax = true
     customCSS = ["css/custom.css", "css/syntax.css"] # Include custom CSS files
     customJS = ["js/custom.js"] # Include custom JS files
 
-[Params.author] # Used in authorbox
+[Params.author] # Used in AuthorBox
     name = "けり"
     bio = "趣味は電子工作。ぼちぼちマイクロマウス作ってます。"
     avatar = "img/avatar.jpg"
