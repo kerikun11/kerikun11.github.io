@@ -259,10 +259,10 @@ union WallRecord {
 
 なお、壁の方向は8方位で定義していますが、壁ログでは4方位しか使っていません。
 
-KERISE の実装で使用している最新版は [GitHub](https://github.com/kerikun11/micromouse-maze-library/blob/806ec5fce91746c1eec89366e1f7ef5f382208f3/include/Maze.h#L488) に公開しています。
+KERISE の実装で使用している最新版は [GitHub](https://github.com/kerikun11/micromouse-maze-library/blob/806ec5fce91746c1eec89366e1f7ef5f382208f3/include/Maze.h#L495) に公開しています。
 こちらは結構複雑になってしまったので、興味がある方は解読してみてください。
 
-以前の記事 [僕の迷路クラスの紹介](/posts/2017-11-01-maze-class/) で紹介したものからいろいろ改良が重ねられています。
+以前の記事 [迷路クラスの紹介](/posts/2017-11-01-maze-class/) で紹介したものからいろいろ改良が重ねられています。
 
 ## おわりに
 
