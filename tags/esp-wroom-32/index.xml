@@ -19,16 +19,24 @@
 &lt;p>ESP-WROOM-32のすごいところはその価格です。ハイスペックなマイコンとWiFiとBluetoothがついているのに、2017年2月現在たったの700円なのです！！&lt;/p>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/">秋月電子&lt;/a>で購入できます。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-32&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-32&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>ESP-WROOM-32のピッチ変換</title><link>https://www.kerislab.jp/posts/2017-02-05-first-esp32/</link><pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-02-05-first-esp32/</guid><description>&lt;h2 id="格安wifibleモジュールesp-wroom-32">格安WiFi+BLEモジュール「ESP-WROOM-32」&lt;/h2>
 &lt;p>ついにESP32が日本にやってまいりました。海外では既に話題になっていたのですが、日本では技適を取得するまで使うことができなかったのであまり知っている人はいないかもしれません。これから話題になるでしょう。&lt;/p>
 &lt;p>秋月電子で買うことができます→&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/">リンク&lt;/a>&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-32&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-32&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
 &lt;/figure></description></item></channel></rss>

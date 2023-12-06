@@ -5,11 +5,16 @@
 &lt;h3 id="メダカの水槽の照明">メダカの水槽の照明&lt;/h3>
 &lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>めだか&lt;/h4>
-&lt;/figcaption>
-&lt;img src="fish.jpg" alt="めだか" />
+	
+		
+		&lt;figcaption>
+			&lt;h4>めだか&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="fish.jpg" alt="めだか" />
+	
 &lt;/figure>
+
 &lt;h3 id="格安wifiモジュール">格安WiFiモジュール&lt;/h3>
 &lt;p>今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p>
 &lt;p>このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p>
@@ -19,8 +24,12 @@
 &lt;/ul>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-02&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp-wroom-02.jpg" alt="ESP-WROOM-02" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-02&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp-wroom-02.jpg" alt="ESP-WROOM-02" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>メダカの照明の自作</title><link>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</link><pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</guid><description>こんにちは。 けり(@kerikun11)です。 みなさん、進捗いかがですか？ 僕は、ぼちぼちです。 今回紹介するのは、 メダカの水槽の照明です。 高校</description></item></channel></rss>

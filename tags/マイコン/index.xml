@@ -6,8 +6,12 @@
 &lt;p>もちろん、秋月なので値段が安い！！&lt;br>
 &lt;strong>1個270円&lt;/strong>です(2016年1月現在)。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>PIC18F27J53&lt;/h4>
-&lt;/figcaption>
-&lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>PIC18F27J53&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/>
+	
 &lt;/figure></description></item></channel></rss>

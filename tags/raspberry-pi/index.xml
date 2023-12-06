@@ -10,10 +10,14 @@
 &lt;h3 id="ラズパイミュージックサーバー">ラズパイミュージックサーバー&lt;/h3>
 &lt;p>スマートフォンでコントロールできるステレオコンポです。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ミュージックサーバー&lt;/h4>
-&lt;/figcaption>
-&lt;img src="music-server.jpg" alt="ミュージックサーバー" style="width: 480px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ミュージックサーバー&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="music-server.jpg" alt="ミュージックサーバー" style="width: 480px;"/>
+	
 &lt;/figure></description></item><item><title>VolumioでiTunesのプレイリストを使う</title><link>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</link><pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-08-31-volumio-playlist/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="volumio">Volumio&lt;/h3>
 &lt;p>&lt;strong>Volumio&lt;/strong>というミュージックサーバーソフトウェアがある。&lt;/p>

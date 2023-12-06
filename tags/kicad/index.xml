@@ -13,25 +13,38 @@
 &lt;p>ESP-WROOM-32のすごいところはその価格です。ハイスペックなマイコンとWiFiとBluetoothがついているのに、2017年2月現在たったの700円なのです！！&lt;/p>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/">秋月電子&lt;/a>で購入できます。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-32&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-32&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>KERISE v1の回路設計</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p>
 &lt;p>全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">こちら&lt;/a>&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>KERISEv1&lt;/h4>
-&lt;/figcaption>
-&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>KERISEv1&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>KiCad で自動配線</title><link>https://www.kerislab.jp/posts/2016-04-22-freerouting/</link><pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-04-22-freerouting/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>KiCad&lt;/h4>
-&lt;/figcaption>
-&lt;img src="kicad.jpg" alt="KiCad" />
+	
+		
+		&lt;figcaption>
+			&lt;h4>KiCad&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="kicad.jpg" alt="KiCad" />
+	
 &lt;/figure>
+
 &lt;h3 id="自動配線ツールを使おう">自動配線ツールを使おう&lt;/h3>
 &lt;p>KiCad が流行ってきて、使う人が増えてきている。&lt;/p>
 &lt;p>しかし、自動配線ツールを使っている人は少ない。&lt;/p>

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PIC18F26K22 on KERI's Lab</title><link>https://www.kerislab.jp/tags/pic18f26k22/</link><description>Recent content in PIC18F26K22 on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Tue, 05 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/pic18f26k22/index.xml" rel="self" type="application/rss+xml"/><item><title>変なキーボード</title><link>https://www.kerislab.jp/posts/2016-04-05-strange-keyboard/</link><pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-04-05-strange-keyboard/</guid><description>&lt;h2 id="つくったもの">つくったもの&lt;/h2>
 &lt;p>ASCIIキーボードとスクロール表示器を作りました。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>figure&lt;/h4>
-&lt;/figcaption>
-&lt;img src="figure.png" alt="figure" />
+	
+		
+		&lt;figcaption>
+			&lt;h4>figure&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="figure.png" alt="figure" />
+	
 &lt;/figure>
+
 &lt;h2 id="変なキーボード">変なキーボード&lt;/h2>
 &lt;ol>
 &lt;li>キーボードの表面には２つのロータリースイッチがついています。それらを回すことで文字を選び、送信ボタンを押して送信します。&lt;/li>

@@ -10,18 +10,26 @@
 &lt;p>今回紹介する方法では、USBをUARTの代わりに使えるようにするものです。PICをPCにつなぐとCOMポートが現れます。&lt;/p>
 &lt;p>これならUSBシリアル変換モジュールを使う必要はなくります。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>AE-FT232&lt;/h4>
-&lt;/figcaption>
-&lt;img src="FT232.jpg" alt="AE-FT232" />
+	
+		
+		&lt;figcaption>
+			&lt;h4>AE-FT232&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="FT232.jpg" alt="AE-FT232" />
+	
 &lt;/figure></description></item><item><title>PIC18F27J53のすすめ</title><link>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</link><pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</guid><description>&lt;h2 id="pic18f27j53のいいところ">PIC18F27J53のいいところ&lt;/h2>
 &lt;h3 id="秋月で売っていること">秋月で売っていること&lt;/h3>
 &lt;p>電子工作をするうえでこれはとても大事なこと。「秋月で売っているなら使ってみるか」ってなりますよね。&lt;/p>
 &lt;p>もちろん、秋月なので値段が安い！！&lt;br>
 &lt;strong>1個270円&lt;/strong>です(2016年1月現在)。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>PIC18F27J53&lt;/h4>
-&lt;/figcaption>
-&lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>PIC18F27J53&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/>
+	
 &lt;/figure></description></item></channel></rss>

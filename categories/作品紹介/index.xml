@@ -59,11 +59,16 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p>少し前から、&lt;a href="http://akizukidenshi.com/">秋月の通販サイト&lt;/a>で店舗の在庫数と売場の場所が見れるようになりました。&lt;br>
 商品写真の下の「店舗情報」というボタンを押すとポップアップが現れ、在庫数と売場が表示されます。&lt;/p></description></item><item><title>KERISE v3 ができました！</title><link>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</link><pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-03-28-kerisev3-coming/</guid><description>&lt;h2 id="kerisev3">KERISEv3&lt;/h2>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>KERISE v3&lt;/h4>
-&lt;/figcaption>
-&lt;img src="kerisev3-front-side.jpg" alt="KERISE v3" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>KERISE v3&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="kerisev3-front-side.jpg" alt="KERISE v3" style="width: 240px;"/>
+	
 &lt;/figure>
+
 &lt;h3 id="3台目のマウス">3台目のマウス&lt;/h3>
 &lt;p>マイクロマウスを始めて8か月目になりました。けりです。&lt;br>
 作っては壊しを繰り返してはや3台目になります。なぜこんなに壊れるのでしょうか&amp;hellip;&lt;/p></description></item><item><title>ESP-WROOM-32のブレイクアウトボード</title><link>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</link><pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-03-02-keriesp32/</guid><description>&lt;h2 id="esp-wroom-32とは">ESP-WROOM-32とは&lt;/h2>
@@ -71,18 +76,26 @@ Cheese主催のマイクロマウス・プチ大会
 &lt;p>ESP-WROOM-32のすごいところはその価格です。ハイスペックなマイコンとWiFiとBluetoothがついているのに、2017年2月現在たったの700円なのです！！&lt;/p>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/">秋月電子&lt;/a>で購入できます。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-32&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-32&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>ESP-WROOM-32のピッチ変換</title><link>https://www.kerislab.jp/posts/2017-02-05-first-esp32/</link><pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-02-05-first-esp32/</guid><description>&lt;h2 id="格安wifibleモジュールesp-wroom-32">格安WiFi+BLEモジュール「ESP-WROOM-32」&lt;/h2>
 &lt;p>ついにESP32が日本にやってまいりました。海外では既に話題になっていたのですが、日本では技適を取得するまで使うことができなかったのであまり知っている人はいないかもしれません。これから話題になるでしょう。&lt;/p>
 &lt;p>秋月電子で買うことができます→&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/">リンク&lt;/a>&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-32&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-32&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>ハーフサイズ迷路の自作</title><link>https://www.kerislab.jp/posts/2017-01-13-half-maze/</link><pubDate>Fri, 13 Jan 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-01-13-half-maze/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>昨年夏に始めたマイクロマウス。&lt;br>
 &lt;a href="https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/">KERISEv2&lt;/a>ができてついにハーフにデビューしました！&lt;br>
@@ -91,18 +104,26 @@ Cheese主催のマイクロマウス・プチ大会
 KERISE v2の制御が落ち着てきたので、ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p></description></item><item><title>KERISE v2 ができました！</title><link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link><pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid><description>&lt;h2 id="マイクロマウスクラシックハーフ兼用マウス">マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2>
 &lt;p>&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">昨年の大会&lt;/a>ではクラシッククラスに出場しましたが、今度はハーフにも出場したい！ということで、試しにハーフ迷路も走れる大きさのマウスを作ってみました。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>KERISE v2&lt;/h4>
-&lt;/figcaption>
-&lt;img src="with-hand.jpg" alt="KERISE v2" style="width: 480px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>KERISE v2&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="with-hand.jpg" alt="KERISE v2" style="width: 480px;"/>
+	
 &lt;/figure></description></item><item><title>KERISE v1の回路設計</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p>
 &lt;p>全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">こちら&lt;/a>&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>KERISEv1&lt;/h4>
-&lt;/figcaption>
-&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>KERISEv1&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>IR-Stationのデモンストレーションサイト</title><link>https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/</link><pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/</guid><description>&lt;h2 id="ir-stationの操作を体験できます">IR-Stationの操作を体験できます！&lt;/h2>
 &lt;h3 id="ir-stationとは">IR-Stationとは&lt;/h3>
 &lt;p>IR-Stationとは、WiFi接続に対応した赤外線学習リモコンです。これがあればスマートフォンなどから家電製品をコントロールすることができます。&lt;/p>

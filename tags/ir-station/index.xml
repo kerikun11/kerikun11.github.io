@@ -27,11 +27,13 @@
 &lt;p>その価格はなんと、たったの &lt;strong>550円&lt;/strong> です！！&lt;br>
 &lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02&lt;/a>←秋月電子などで売っています。&lt;br>
 &lt;figure >
-&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="blank">
-&lt;figcaption>
-&lt;h4>ESP8266&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp8266.jpg" alt="ESP8266" style="width: 240px;"/>
-&lt;/a>
+	&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/" target="blank">
+		
+		&lt;figcaption>
+			&lt;h4>ESP8266&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp8266.jpg" alt="ESP8266" style="width: 240px;"/>
+	&lt;/a>
 &lt;/figure>
 &lt;/p></description></item></channel></rss>

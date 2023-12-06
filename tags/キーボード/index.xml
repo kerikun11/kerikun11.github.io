@@ -4,11 +4,16 @@
 &lt;p>今回の記事では最近購入した左右分離キーボード &lt;strong>MoonLander Mark I&lt;/strong> を紹介します。&lt;/p></description></item><item><title>変なキーボード</title><link>https://www.kerislab.jp/posts/2016-04-05-strange-keyboard/</link><pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-04-05-strange-keyboard/</guid><description>&lt;h2 id="つくったもの">つくったもの&lt;/h2>
 &lt;p>ASCIIキーボードとスクロール表示器を作りました。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>figure&lt;/h4>
-&lt;/figcaption>
-&lt;img src="figure.png" alt="figure" />
+	
+		
+		&lt;figcaption>
+			&lt;h4>figure&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="figure.png" alt="figure" />
+	
 &lt;/figure>
+
 &lt;h2 id="変なキーボード">変なキーボード&lt;/h2>
 &lt;ol>
 &lt;li>キーボードの表面には２つのロータリースイッチがついています。それらを回すことで文字を選び、送信ボタンを押して送信します。&lt;/li>

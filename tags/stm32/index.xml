@@ -2,8 +2,12 @@
 &lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p>
 &lt;p>全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">こちら&lt;/a>&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>KERISEv1&lt;/h4>
-&lt;/figcaption>
-&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>KERISEv1&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+	
 &lt;/figure></description></item></channel></rss>

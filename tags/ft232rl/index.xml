@@ -3,8 +3,12 @@
 &lt;p>ESP-WROOM-32のすごいところはその価格です。ハイスペックなマイコンとWiFiとBluetoothがついているのに、2017年2月現在たったの700円なのです！！&lt;/p>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-11647/">秋月電子&lt;/a>で購入できます。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-32&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-32&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp-wroom-32.jpg" alt="ESP-WROOM-32" style="width: 240px;"/>
+	
 &lt;/figure></description></item></channel></rss>

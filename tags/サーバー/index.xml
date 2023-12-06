@@ -14,11 +14,16 @@
 &lt;h3 id="メダカの水槽の照明">メダカの水槽の照明&lt;/h3>
 &lt;p>以前、PICで作った&lt;a href="https://www.kerislab.jp/posts/2015-06-04-killifish-light/">メダカの水槽の照明&lt;/a>(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>めだか&lt;/h4>
-&lt;/figcaption>
-&lt;img src="fish.jpg" alt="めだか" />
+	
+		
+		&lt;figcaption>
+			&lt;h4>めだか&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="fish.jpg" alt="めだか" />
+	
 &lt;/figure>
+
 &lt;h3 id="格安wifiモジュール">格安WiFiモジュール&lt;/h3>
 &lt;p>今注目のWiFiモジュールであるESP-WROOM-02を使ってWiFiに対応しました。これにより、スマートフォンなどからブラウザ経由で操作できます。&lt;/p>
 &lt;p>このWiFiモジュールを使った赤外線学習リモコンの記事も書きましたので合わせてご覧ください。&lt;/p>
@@ -28,10 +33,14 @@
 &lt;/ul>
 &lt;p>&lt;a href="http://akizukidenshi.com/catalog/g/gM-09607/">ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)&lt;/a>&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP-WROOM-02&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp-wroom-02.jpg" alt="ESP-WROOM-02" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP-WROOM-02&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp-wroom-02.jpg" alt="ESP-WROOM-02" style="width: 240px;"/>
+	
 &lt;/figure></description></item><item><title>Sinatraでアプリケーションを作る</title><link>https://www.kerislab.jp/posts/2016-03-12-sinatra/</link><pubDate>Sat, 12 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-12-sinatra/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>格安WiFiモジュールESP-WROOM-02を使って電流を計測してそれを受信し表示するアプリケーションを作りました。&lt;/p></description></item><item><title>Raspberry Pi で NAS 作り</title><link>https://www.kerislab.jp/posts/2015-11-23-samba/</link><pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-11-23-samba/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>NASがほしい！&lt;br>

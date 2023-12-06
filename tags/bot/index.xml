@@ -4,8 +4,12 @@
 &lt;h3 id="何の電力をつぶやくのか">何の電力をつぶやくのか&lt;/h3>
 &lt;p>僕の家には&lt;a href="https://www.kerislab.jp/posts/2014-09-14-solar-system/">自作の100W級ソーラーシステム&lt;/a>があります。このソーラーシステムの発電量を定期的にツイートすることにしました。&lt;/p>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>Solar&lt;/h4>
-&lt;/figcaption>
-&lt;img src="solar.jpg" alt="Solar" style="width: 480px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>Solar&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="solar.jpg" alt="Solar" style="width: 480px;"/>
+	
 &lt;/figure></description></item></channel></rss>

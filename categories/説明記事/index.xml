@@ -106,11 +106,16 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;p>今回は、ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です。&lt;/p></description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="esp32-とは">ESP32 とは&lt;/h3>
 &lt;figure >
-&lt;figcaption>
-&lt;h4>ESP32&lt;/h4>
-&lt;/figcaption>
-&lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/>
+	
+		
+		&lt;figcaption>
+			&lt;h4>ESP32&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/>
+	
 &lt;/figure>
+
 &lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview">ESP32 Overview | Espressif Systems&lt;/a>&lt;/p>
 &lt;p>ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
 同時に gcc で開発できるマイコンでもあります。&lt;/p></description></item><item><title>ESP32の設定管理ライブラリの紹介</title><link>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</link><pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
