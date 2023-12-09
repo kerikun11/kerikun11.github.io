@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Mon, 03 Jul 2023 15:45:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>単眼鏡をスマホに固定する治具の作成</title><link>https://www.kerislab.jp/posts/2023-07-03-monocular-jig/</link><pubDate>Mon, 03 Jul 2023 15:45:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2023-07-03-monocular-jig/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sun, 10 Dec 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>2023年の進捗報告</title><link>https://www.kerislab.jp/posts/2023-12-10-my-progress-in-2023/</link><pubDate>Sun, 10 Dec 2023 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2023-12-10-my-progress-in-2023/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは。&lt;br>
+つい最近コロナ実績を解除してしまったけりです&amp;hellip;。&lt;/p>
+&lt;h3 id="マイクロマウス-advent-calender-2023">マイクロマウス Advent Calender 2023&lt;/h3>
+&lt;p>この記事は &lt;a href="https://adventar.org/calendars/8811">マイクロマウス Advent Calender 2023&lt;/a> の10日目の記事です。&lt;/p></description></item><item><title>単眼鏡をスマホに固定する治具の作成</title><link>https://www.kerislab.jp/posts/2023-07-03-monocular-jig/</link><pubDate>Mon, 03 Jul 2023 15:45:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2023-07-03-monocular-jig/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは。&lt;br>
 マウス合宿に参加して開発モチベーションを少し取り戻したけりです。&lt;/p>
 &lt;p>今回の記事はマウスとは関係ありませんが、&lt;br>
@@ -97,9 +101,4 @@ Cheese主催のマイクロマウス・プチ大会
 4日目の記事です。&lt;/p>
 &lt;p>こんにちは。けりです。&lt;br>
 今回は、2019年12月1日(日) に行われた、&lt;br>
-&lt;strong>第40回全日本マイクロマウス大会2019&lt;/strong>の結果報告です。&lt;/p></description></item><item><title>新機能・未知区間加速！</title><link>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</link><pubDate>Sat, 12 Oct 2019 01:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2019-10-12-unknown-accel/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは。そろそろ修論研究が佳境になってきた けり です。&lt;/p>
-&lt;p>今回の記事では、
-マイクロマウス KERISE v4 に
-最近搭載した、
-新機能「未知区間加速」を紹介します。&lt;/p></description></item></channel></rss>
+&lt;strong>第40回全日本マイクロマウス大会2019&lt;/strong>の結果報告です。&lt;/p></description></item></channel></rss>
