@@ -1,5 +1,5 @@
 ---
-date: "2022-04-03T18:00:00+09:00"
+date: "2023-12-30T18:00:00+09:00"
 title: "マイクロマウス記事のまとめ"
 tags:
   - "マイクロマウス"
@@ -79,6 +79,7 @@ thumbnail: "icon.jpg"
 
 - [ハーフ迷路を走ってみました！](/posts/2017-01-12-1st-half/)
 - [ESP32 でマイクロマウスを作るメリットとデメリット](/posts/2020-12-11-esp32-mouse/)
+- [2023年の進捗報告](/post/2023-12-10-my-progress-in-2023)
 
 ## GitHub
 
@@ -90,3 +91,4 @@ thumbnail: "icon.jpg"
 - [MicroMouse KERISE v3](https://github.com/kerikun11/micromouse-kerise-v3)
 - [MicroMouse KERISE v4](https://github.com/kerikun11/micromouse-kerise-v4)
 - [MicroMouse KERISE v5](https://github.com/kerikun11/micromouse-kerise-v5)
+- [MicroMouse KERISE Firmware](https://github.com/kerikun11/micromouse-kerise-firmware)
