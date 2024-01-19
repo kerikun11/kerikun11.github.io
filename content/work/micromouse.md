@@ -79,7 +79,7 @@ thumbnail: "icon.jpg"
 
 - [ハーフ迷路を走ってみました！](/posts/2017-01-12-1st-half/)
 - [ESP32 でマイクロマウスを作るメリットとデメリット](/posts/2020-12-11-esp32-mouse/)
-- [2023年の進捗報告](/post/2023-12-10-my-progress-in-2023)
+- [2023年の進捗報告](/posts/2023-12-10-my-progress-in-2023/)
 
 ## GitHub
 
