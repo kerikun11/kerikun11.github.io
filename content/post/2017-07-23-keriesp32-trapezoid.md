@@ -15,7 +15,7 @@ WiFiとBluetoothが載ったデュアルコアなマイコン **ESP32** のピ�
 
 <!--more-->
 
-{{< postfig src="esp-wroom-32.jpg" title="ESP-WROOM-32" link="http://akizukidenshi.com/catalog/g/gM-11647/" width="240px" >}}
+{{< postfig src="esp-wroom-32.jpg" title="ESP-WROOM-32" link="https://akizukidenshi.com/catalog/g/g111647/" width="240px" >}}
 
 ## 基板名: KERIESP32 Trapezoid
 

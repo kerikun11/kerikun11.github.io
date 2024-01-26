@@ -24,7 +24,7 @@ thumbnail: "icon.jpg"
 
 ### Raspberry Pi 3 Type B
 
-[http://akizukidenshi.com/catalog/g/gM-10414/](http://akizukidenshi.com/catalog/g/gM-10414/)
+[https://akizukidenshi.com/catalog/g/g110414/](https://akizukidenshi.com/catalog/g/g110414/)
 
 {{< postfig src="raspi3.jpg" title="ラズパイ3" width="240px" >}}
 
@@ -35,7 +35,7 @@ thumbnail: "icon.jpg"
 
 ### AKI.DAC-U2704 REV.C
 
-[http://akizukidenshi.com/catalog/g/gK-05369/](http://akizukidenshi.com/catalog/g/gK-05369/)
+[https://akizukidenshi.com/catalog/g/g105369/](https://akizukidenshi.com/catalog/g/g105369/)
 
 {{< postfig src="dac.jpg" title="DAC" width="240px" >}}
 
@@ -51,13 +51,13 @@ thumbnail: "icon.jpg"
 
 ### 2.5A出力ACアダプタ
 
-[http://akizukidenshi.com/catalog/g/gM-10507/](http://akizukidenshi.com/catalog/g/gM-10507/)
+[https://akizukidenshi.com/catalog/g/g110507/](https://akizukidenshi.com/catalog/g/g110507/)
 
 {{< postfig src="acadapter.jpg" title="ACアダプタ" width="240px" >}}
 
 ### マイクロUSBケーブル
 
-[http://akizukidenshi.com/catalog/g/gC-09314/](http://akizukidenshi.com/catalog/g/gC-09314/)
+[https://akizukidenshi.com/catalog/g/g109314/](https://akizukidenshi.com/catalog/g/g109314/)
 
 {{< postfig src="usb.jpg" title="USB-micro-Bケーブル" width="240px" >}}
 

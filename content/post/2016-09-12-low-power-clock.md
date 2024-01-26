@@ -62,7 +62,7 @@ PICの電源を完全に切って、消費電力を極限まで抑えます。�
 
 ## 実際に電力を測ってみる
 
-[Analog Discovery](http://akizukidenshi.com/catalog/g/gM-07738/)でどのくらい電流を消費しているのかを調べてみます。
+[Analog Discovery](https://akizukidenshi.com/catalog/g/g107738/)でどのくらい電流を消費しているのかを調べてみます。
 
 ### 7セグLEDのダイナミック点灯の様子
 
@@ -379,7 +379,7 @@ void print_7seg(uint8_t col, char c) {
 
 ## 回路図
 
-7セグLEDは[こちら](http://akizukidenshi.com/catalog/g/gI-09964/)を使いました。
+7セグLEDは[こちら](https://akizukidenshi.com/catalog/g/g109964/)を使いました。
 
 {{< postfig src="circuit-diagram.png" title="回路図" link="circuit-diagram.png" >}}
 

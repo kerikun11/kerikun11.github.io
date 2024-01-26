@@ -30,7 +30,7 @@ thumbnail: "icon.png"
   * [赤外線学習リモコン（日本語による紹介記事）](/posts/2015-12-30-ir-station/)
   * [赤外線学習リモコン（英語によるリファレンス）](/posts/2016-03-11-ir-station-reference/)
 
-[ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)](http://akizukidenshi.com/catalog/g/gM-09607/)
+[ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)](https://akizukidenshi.com/catalog/g/g109607/)
 
 {{< postfig src="esp-wroom-02.jpg" title="ESP-WROOM-02" width="240px" >}}
 <!--more-->

@@ -41,21 +41,21 @@ image:spectrum.jpg["スペクトルグラフ",link]
 === Nucleo STM32F401RE
 かなりスペックの高いマイコンボードです。 +
 秋月で1,500円です。 +
-link:http://akizukidenshi.com/catalog/g/gM-07723/[]
+link:https://akizukidenshi.com/catalog/g/g107723/[]
 
 [.img-small]
 image:nucleo.jpg["Nucleo STM32F401RE"]
 
 === シャープモノクロTFT液晶
 400x240ピクセルの高精細液晶ディスプレイです。 +
-link:http://akizukidenshi.com/catalog/g/gP-04944/[]
+link:https://akizukidenshi.com/catalog/g/g104944/[]
 
 [.img-small]
 image:lcd.jpg["TFT-LCD"]
 
 === マイクアンプキット
 今回は手を抜いて、秋月のお手軽キットを使用しました。 +
-link:http://akizukidenshi.com/catalog/g/gK-05757/[]
+link:https://akizukidenshi.com/catalog/g/g105757/[]
 
 [.img-small]
 image:mic.jpg["AE-MICAMP"]

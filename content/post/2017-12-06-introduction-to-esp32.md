@@ -31,7 +31,7 @@ ESP32とは上海にある[Espressif Systems](http://espressif.com/)という会
 
 ESP32はWiFiのコントローラでもあるので、日本で使用するには技適が必要です。
 
-その技適を取得したモジュールが[ESP-WROOM-32](http://akizukidenshi.com/catalog/g/gM-11647/)です。
+その技適を取得したモジュールが[ESP-WROOM-32](https://akizukidenshi.com/catalog/g/g111647/)です。
 
 モジュールになったことでパスコンや無線周りの回路がすべて内蔵されており、電源をつなぐだけで使うことができます。
 
@@ -39,7 +39,7 @@ ESP32はWiFiのコントローラでもあるので、日本で使用するに�
 
 ## どこで買えるの？
 
-ESP-WROOM-32は[秋月電子](http://akizukidenshi.com/catalog/g/gM-11647/)で購入できますので、日本ですぐに買うことができます！
+ESP-WROOM-32は[秋月電子](https://akizukidenshi.com/catalog/g/g111647/)で購入できますので、日本ですぐに買うことができます！
 
 ## ESP32の長所と短所
 
@@ -72,7 +72,7 @@ ESP32の開発環境は主に以下の2つです。どちらもEspressif公式�
 
 とりあえず、以下のものがあれば動作確認はできます。
 
-  * [ESP32-DevKitC](http://akizukidenshi.com/catalog/g/gM-11819/)
+  * [ESP32-DevKitC](https://akizukidenshi.com/catalog/g/g111819/)
   * Micro-B USBケーブル
   * パソコン
 

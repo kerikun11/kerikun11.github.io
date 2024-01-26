@@ -40,9 +40,9 @@ ESP32をを横向きにおいて基板をなるべく小さくしました。
 
 今回使っている部品はすべて秋月電子と千石電商で手に入るものでできています。なので、基板さえあればすぐに作ることができます。
 
-ちなみに、USB-UART変換ICは秋月電子に売っている[FT231X](http://akizukidenshi.com/catalog/g/gI-06713/)を使用しています。
+ちなみに、USB-UART変換ICは秋月電子に売っている[FT231X](https://akizukidenshi.com/catalog/g/g106713/)を使用しています。
 
-有名なICである[FT232RL](http://akizukidenshi.com/catalog/g/gI-01739/)よりも安価なのでこちらを使いました。
+有名なICである[FT232RL](https://akizukidenshi.com/catalog/g/g101739/)よりも安価なのでこちらを使いました。
 
 ### 二つ並んだボタン
 
@@ -62,19 +62,19 @@ ESP32を開発する際、プログラムを修正しては書き込んでを繰
 
 |リファレンス|部品|型番|備考|
 |:----|:----|:----|:----|
-|U1|ESP32|[ESP-WROOM-32](http://akizukidenshi.com/catalog/g/gM-11647/)||
-|U2|レギュレータ|[NJM2884U1-33](http://akizukidenshi.com/catalog/g/gI-10673/)|SOT-89-5|
-|U3|USB-UART変換IC|[FT231X](http://akizukidenshi.com/catalog/g/gI-06713/)|
-|C1,2,3,5,6|チップコンデンサ|[0.1uF・1608サイズ](http://akizukidenshi.com/catalog/g/gP-04940/)|パスコン|
-|C4|チップコンデンサ|[47uF・3216サイズ](http://akizukidenshi.com/catalog/g/gP-06039/)|電源安定化用|
+|U1|ESP32|[ESP-WROOM-32](https://akizukidenshi.com/catalog/g/g111647/)||
+|U2|レギュレータ|[NJM2884U1-33](https://akizukidenshi.com/catalog/g/g110673/)|SOT-89-5|
+|U3|USB-UART変換IC|[FT231X](https://akizukidenshi.com/catalog/g/g106713/)|
+|C1,2,3,5,6|チップコンデンサ|[0.1uF・1608サイズ](https://akizukidenshi.com/catalog/g/g104940/)|パスコン|
+|C4|チップコンデンサ|[47uF・3216サイズ](https://akizukidenshi.com/catalog/g/g106039/)|電源安定化用|
 |R1|チップ抵抗|10kΩ・1608サイズ|ESP32のEnable|
 |R2|チップ抵抗|1kΩ・1608サイズ|電源LED用|
-|F1|ポリスイッチ|[FEMTOSMDC035F-02](http://akizukidenshi.com/catalog/g/gP-09512/)||
-|SW1,2|タクトスイッチ|[SKRPACE010](http://akizukidenshi.com/catalog/g/gP-06185/)|リセット/ブートセレクト|
-|D1|電源LED|[1608サイズ](http://akizukidenshi.com/catalog/g/gI-03982/)||
-|P1|細ピンヘッダ|[1x30](http://akizukidenshi.com/catalog/g/gC-06631/)||
-|J1|USB-Micro-Bメスコネクタ|[ZX62R-B-5P](http://akizukidenshi.com/catalog/g/gC-05254/)||
-|SD1|マイクロSDスロット|[DM3AT-SF-PEJM5](http://akizukidenshi.com/catalog/g/gC-02395/)||
+|F1|ポリスイッチ|[FEMTOSMDC035F-02](https://akizukidenshi.com/catalog/g/g109512/)||
+|SW1,2|タクトスイッチ|[SKRPACE010](https://akizukidenshi.com/catalog/g/g106185/)|リセット/ブートセレクト|
+|D1|電源LED|[1608サイズ](https://akizukidenshi.com/catalog/g/g103982/)||
+|P1|細ピンヘッダ|[1x30](https://akizukidenshi.com/catalog/g/g106631/)||
+|J1|USB-Micro-Bメスコネクタ|[ZX62R-B-5P](https://akizukidenshi.com/catalog/g/g105254/)||
+|SD1|マイクロSDスロット|[DM3AT-SF-PEJM5](https://akizukidenshi.com/catalog/g/g102395/)||
 
 ## 配線パターン
 
