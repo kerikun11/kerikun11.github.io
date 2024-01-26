@@ -10,13 +10,16 @@ DefaultContentLanguage = "ja"
 hasCJKLanguage = true # handle japanese character
 theme = "mainroad" # Mainroad Theme https://github.com/vimux/mainroad/
 paginate = "20" # Number of posts per page
-disqusShortname = "kerikeri" # Enable Disqus comments by entering your Disqus shortname
-googleAnalytics = "UA-103856564-1" # Enable Google Analytics by entering your tracking id
-rssLimit = 30 # default: 15
+rssLimit = "30" # default: 15
 
 pygmentsUseClasses = true
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
+
+[services.disqus]
+    shortname = "kerikeri" # Enable Disqus by entering your Disqus shortname
+[services.googleAnalytics]
+    ID = "UA-103856564-1" # Enable Google Analytics by entering your tracking ID
 
 [Params]
     description = "KERI's Lab へようこそ。ここでは趣味の電子工作や日々の活動を紹介しています。" # Site description. Used in meta description
