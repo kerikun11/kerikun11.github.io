@@ -29,7 +29,7 @@
 みなさん、ESP32使ってますか？&lt;/p>
 &lt;p>今回はESP32の時刻合わせのArduinoライブラリを作ったので紹介します。&lt;/p></description></item><item><title>ESP32とMicro SDカード</title><link>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</link><pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>今回は、ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です。&lt;/p></description></item><item><title>秋月の時計キットをNTP時計化</title><link>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</link><pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-07-23-aki-clock/</guid><description>&lt;h2 id="家の玄関で地味に役に立っていた時計">家の玄関で地味に役に立っていた時計&lt;/h2>
-&lt;p>かなり前に秋月電子で買った&lt;a href="http://akizukidenshi.com/catalog/g/gK-04379/">時計キット&lt;/a>。&lt;br>
+&lt;p>かなり前に秋月電子で買った&lt;a href="https://akizukidenshi.com/catalog/g/g104379/">時計キット&lt;/a>。&lt;br>
 数字が大きく、遠くからでもよく見えるので自宅の玄関で地味に役立っていました。&lt;/p>
 &lt;p>しかし、水晶の精度がいまいちでよくズレるので、7セグの表示部だけを残してESP32によるNTP時計にアップデートしました。&lt;/p></description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;h3 id="esp32-とは">ESP32 とは&lt;/h3>

@@ -52,7 +52,7 @@ HDD：Western Digital 2TB 3.5 inch&lt;br>
 &lt;p>iptablesという有名なファイアウォールソフトウェアがあるが初心者には使いにくいので、今回は初心者でも使いやすいufwというソフトを使う。&lt;/p></description></item><item><title>delayやwhileを使わないI2C液晶表示プログラム</title><link>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</link><pubDate>Sun, 15 Nov 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-11-15-i2c-lcd/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
 &lt;p>秋月やaitendoで売っているI2C液晶を使っている人は多い。しかし、ほとんどのサンプルプログラムは、I2Cの通信をwhile文などにより送信完了待ちしていて、その間に（割り込みを除く）他のプログラムが実行できない。そこで今回は、I2C液晶に表示させる内容を送信バッファに入れておけば自動で送信してくれるプログラムを書く。&lt;/p>
 &lt;p>秋月の液晶もaitendoの液晶も共通の液晶制御ICを使っている。その型番が「ST7032」なので、液晶のこともその名前で呼ぶ。&lt;br>
-&lt;a href="http://akizukidenshi.com/catalog/g/gK-06795/">秋月のI2C液晶(AQM0802)&lt;/a>&lt;br>
+&lt;a href="https://akizukidenshi.com/catalog/g/g106795/">秋月のI2C液晶(AQM0802)&lt;/a>&lt;br>
 &lt;figure >
 	
 		
