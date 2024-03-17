@@ -43,7 +43,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Author] # Used in AuthorBox
     name = "けり"
-    bio = "趣味は電子工作。ぼちぼちマイクロマウス作ってます。"
+    bio = "趣味は電子工作とマイコン制御。ぼちぼちマイクロマウス作ってます。"
     avatar = "img/avatar.jpg"
 
 [Params.style.vars]
