@@ -176,6 +176,11 @@ MoonLander とはカナダの [ZSA Technology Labs, Inc.](https://ergodox-ez.com
 レイアウトを変更すると数日間程度タイプミスが多くなるので、
 レイアウト変更は結構勇気が必要です。
 
+### 最新レイアウト
+
+上記で紹介したレイアウトは執筆時点のものですが、最新版は[こちら](https://configure.zsa.io/moonlander/layouts/gd3o4/latest/0)です。
+随時更新しています。
+
 ## 各キーの LED バックライトの設定
 
 MoonLander では各キーのバックライト LED の色を個別に設定することができます。
