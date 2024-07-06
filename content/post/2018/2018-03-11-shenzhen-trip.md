@@ -4,6 +4,7 @@ title: "深圳旅行に行ってきました！"
 categories:
   - "イベント"
 tags:
+  - "旅行"
   - "深圳"
 thumbnail: "icon.jpg"
 ---

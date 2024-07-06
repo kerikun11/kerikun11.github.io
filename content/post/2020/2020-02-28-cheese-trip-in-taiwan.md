@@ -4,6 +4,8 @@ date: "2020-02-28T15:33:09+09:00"
 categories:
   - "イベント"
 tags:
+  - "旅行"
+  - "台湾"
   - "Cheese"
 thumbnail: "icon.jpg"
 ---
