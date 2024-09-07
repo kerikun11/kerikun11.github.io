@@ -20,7 +20,95 @@
 &lt;p>赤外線学習リモコンとは、市販の家電製品などのリモコンの赤外線信号を記憶し、送信することができるものです。&lt;/p>
 &lt;p>今回は、WiFi接続に対応した赤外線学習リモコンを作りました。スマートフォンやパソコンなどから、家電製品をコントロールすることができます。&lt;/p></description></item><item><title>赤外線学習リモコンの基板が届きました！</title><link>https://www.kerislab.jp/posts/2016-07-06-ir-station-board/</link><pubDate>Wed, 06 Jul 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-07-06-ir-station-board/</guid><description>&lt;h2 id="基板が届きました">基板が届きました&lt;/h2>
 &lt;h3 id="思ったより早かった">思ったより早かった&lt;/h3>
-&lt;p>基板加工サービス&lt;a href="http://www.elecrow.com/">Elecrow&lt;/a>に発注した基板が届きました！発送方法は一番安い&lt;code>Registered Airmail&lt;/code>だったのですが、なんと発注から10日で届きました！&lt;/p></description></item><item><title>IR Station</title><link>https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/</link><pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/</guid><description>IR-Station Infrared Remote Controller with ESP8266 WiFi-module You can control your home appliances with your smartphone or laptop. The latest information is here Main parts ESP-WROOM-02 (ESP8266 WiFi Module) IR Receiver IR LED Indicator LED Looks The Device&amp;rsquo;s Appearance body Display Sample display How to Use Setup the Device Supply power to the device. Connect your cellphone or laptop to Wi-Fi SSID &amp;ldquo;IR-Station&amp;rdquo;. Access http://192.168.4.1 in a browser Enter Wi-Fi</description></item><item><title>ESP8266で赤外線学習リモコン</title><link>https://www.kerislab.jp/posts/2015-12-30-ir-station/</link><pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-12-30-ir-station/</guid><description>&lt;h2 id="esp8266とは">ESP8266とは&lt;/h2>
+&lt;p>基板加工サービス&lt;a href="http://www.elecrow.com/">Elecrow&lt;/a>に発注した基板が届きました！発送方法は一番安い&lt;code>Registered Airmail&lt;/code>だったのですが、なんと発注から10日で届きました！&lt;/p></description></item><item><title>IR Station</title><link>https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/</link><pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/</guid><description>&lt;h2 id="ir-station">IR-Station&lt;/h2>
+&lt;p>Infrared Remote Controller with ESP8266 WiFi-module&lt;br>
+You can control your home appliances with your smartphone or laptop.&lt;/p>
+&lt;p>The latest information is &lt;a href="https://github.com/kerikun11/IR-Station">here&lt;/a>&lt;/p>
+&lt;h2 id="main-parts">Main parts&lt;/h2>
+&lt;ul>
+&lt;li>ESP-WROOM-02 (ESP8266 WiFi Module)&lt;/li>
+&lt;li>IR Receiver&lt;/li>
+&lt;li>IR LED&lt;/li>
+&lt;li>Indicator LED&lt;/li>
+&lt;/ul>
+&lt;h2 id="looks">Looks&lt;/h2>
+&lt;h3 id="the-devices-appearance">The Device&amp;rsquo;s Appearance&lt;/h3>
+&lt;figure >
+	
+		
+		&lt;figcaption>
+			&lt;h4>body&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="images/body.jpg" alt="body" />
+	
+&lt;/figure>
+
+&lt;h3 id="display-sample">Display Sample&lt;/h3>
+&lt;figure >
+	
+		
+		&lt;figcaption>
+			&lt;h4>display&lt;/h4>
+		&lt;/figcaption>
+		
+		&lt;img src="images/display.png" alt="display" />
+	
+&lt;/figure>
+
+&lt;h2 id="how-to-use">How to Use&lt;/h2>
+&lt;h3 id="setup-the-device">Setup the Device&lt;/h3>
+&lt;ol>
+&lt;li>Supply power to the device.&lt;/li>
+&lt;li>Connect your cellphone or laptop to Wi-Fi SSID &amp;ldquo;IR-Station&amp;rdquo;.&lt;/li>
+&lt;li>Access http://192.168.4.1 in a browser&lt;/li>
+&lt;li>Enter Wi-Fi SSID of your home and its password&lt;/li>
+&lt;li>Enter a device name you like. We call it the hostname. Because it will be a part of URL, you cannot use space character.&lt;/li>
+&lt;li>If connection succeeded, IR-Station&amp;rsquo;s local IP address is displayed. Please make a note of it.&lt;/li>
+&lt;li>Connect your cellphone or laptop to your home&amp;rsquo;s Wi-Fi.&lt;/li>
+&lt;li>Access http:/xxx.xxx.xx.xx (IR-Station&amp;rsquo;s local IP address) in a browser. (for example http://192.168.11.3 )&lt;/li>
+&lt;li>If something appears, setup is complete.&lt;/li>
+&lt;/ol>
+&lt;h3 id="store-signals">Store Signals&lt;/h3>
+&lt;ol>
+&lt;li>Access http:/192.168.xx.xx (one example) in a browser. 1. Look at the form of the bottom of the screen.&lt;/li>
+&lt;li>Select &amp;ldquo;record a new Signal&amp;rdquo; action.&lt;/li>
+&lt;li>Select a channel you want to assign a new signal.&lt;/li>
+&lt;li>Enter a name of the signal.&lt;/li>
+&lt;li>When you click the &amp;ldquo;Submit&amp;rdquo; button, the green LED of your IR-Station will light up.&lt;/li>
+&lt;li>Press a button on your remote controller toward your IR-Station to store a new signal.&lt;/li>
+&lt;/ol>
+&lt;h3 id="remote-control">Remote Control&lt;/h3>
+&lt;ol>
+&lt;li>Access your IR-Station in a browser.&lt;/li>
+&lt;li>Click a button which assigned a signal you want to send.&lt;/li>
+&lt;/ol>
+&lt;h3 id="meanings-of-led-indicator">Meanings of LED Indicator&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Color&lt;/th>
+ &lt;th style="text-align: left">Status&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Red&lt;/td>
+ &lt;td style="text-align: left">Error&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Green&lt;/td>
+ &lt;td style="text-align: left">Processing&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Blue&lt;/td>
+ &lt;td style="text-align: left">Listening&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="how-to-make">How to Make&lt;/h2>
+&lt;h3 id="required-library">Required Library&lt;/h3>
+&lt;p>Please Add the Libraries below to your Arduino IDE&lt;/p></description></item><item><title>ESP8266で赤外線学習リモコン</title><link>https://www.kerislab.jp/posts/2015-12-30-ir-station/</link><pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-12-30-ir-station/</guid><description>&lt;h2 id="esp8266とは">ESP8266とは&lt;/h2>
 &lt;h3 id="日本の技適を取得済みwifiモジュール">日本の技適を取得済みWiFiモジュール！！&lt;/h3>
 &lt;p>ESP8266とはWiFi制御用マイコンです。もともと中国で流行っていました。そのマイコンを内蔵したESP-WROOM-02というWiFiモジュールが日本の技適を取得したので、日本でも人気になりました。&lt;/p>
 &lt;h3 id="とにかく安い">とにかく安い！&lt;/h3>

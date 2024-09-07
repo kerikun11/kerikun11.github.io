@@ -36,4 +36,205 @@
 		
 		&lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/>
 	
-&lt;/figure></description></item><item><title>メダカの照明の自作</title><link>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</link><pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</guid><description>こんにちは。 けり(@kerikun11)です。 みなさん、進捗いかがですか？ 僕は、ぼちぼちです。 今回紹介するのは、 メダカの水槽の照明です。 高校</description></item></channel></rss>
+&lt;/figure></description></item><item><title>メダカの照明の自作</title><link>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</link><pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2015-06-04-killifish-light/</guid><description>こんにちは。&lt;br />
+けり(@kerikun11)です。&lt;br />
+みなさん、進捗いかがですか？&lt;br />
+僕は、ぼちぼちです。&lt;br />
+&lt;br />
+今回紹介するのは、&lt;br />
+&lt;span style="color: rgb(0, 0, 255); font-size: x-large;">メダカの水槽の照明&lt;/span>です。&lt;br />
+&lt;br />
+高校時代の親友の刺激を受け、&lt;br />
+5月ごろからメダカを飼い始めました。&lt;br />
+生き物を飼うと、実に癒されます〜&lt;br />
+&lt;a title="メダカ" href="fish1.jpg" target="_blank">&lt;img class="pict" alt="メダカ" src="fish1.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+水槽には水草があるので、&lt;br />
+程よく光を当てなければなりません。&lt;br />
+普通のLEDライトで照らしてもよいのですが、&lt;br />
+ここはロ技研民として、自分で照明を作ることにしました。&lt;br />
+&lt;br />
+ところで、皆さんが帰宅する時間は何時ごろですか？&lt;br />
+帰宅するころには暗くなってますよね？&lt;br />
+朝、家を出るときに照明をつけて置くと、帰ってきても点きっぱなしです。&lt;br />
+それでは、メダカの時間感覚が狂ってしまい、かわいそう…&lt;br />
+ということで、&lt;span style="color: rgb(0, 0, 255); font-size: large;">マイコンで明るさを自動制御&lt;/span>することにします。&lt;br />
+&lt;br />
+さらに、こんなことで電気を無駄使いしていると、親に叱られるので、&lt;br />
+電力源はソーラーにします。&lt;br />
+&lt;span style="color: rgb(0, 0, 255); font-size: large;">とても運がいいことに、&lt;/span>僕の家には&lt;a title="自作の１００Ｗ級ソーラーシステム"
+ href="https://www.kerislab.jp/posts/2014-09-14-solar-system/" target="_blank">自作の１００Ｗ級ソーラーシステム&lt;/a>（←リンク）があります。&lt;br />
+これを電力源に使います。&lt;br />
+&lt;a title="100Wソーラーパネル" href="solar.jpg" target="_blank">&lt;img class="pict" alt="solar.jpg" src="solar.jpg" border="0"
+ hspace="5">&lt;br />
+&lt;/a>&lt;br />
+メダカのことを英語でkillifishと言います。&lt;br />
+なので、今回の工作の名前は&lt;span style="color: rgb(0, 0, 255); font-size: large;"> killifish light&lt;/span>としました。&lt;br />
+&lt;br />
+&lt;span style="font-size: medium;">killifish light の&lt;span style="color: rgb(255, 0, 0);">ポイント&lt;/span>は&lt;br />
+ 1．時間に合わせて明るさが自動で変わる。&lt;br />
+ 2．ソーラーを電力源にする。&lt;br />
+ 3．電子工作を楽しむ。&lt;br />
+&lt;/span>&lt;br />
+です。&lt;br />
+&lt;br />
+マイコンは、いつも使っているPICマイコンにしました。&lt;br />
+PIC18F27J53です。↓秋月URL&lt;br />
+&lt;a title="PIC18F27J53" href="https://akizukidenshi.com/catalog/g/g105847/"
+ target="_blank">https://akizukidenshi.com/catalog/g/g105847/&lt;br />
+&lt;/a>このPICはPICの中でもかなりハイスペックです。内蔵モジュールも多く、とても便利に使えます。&lt;br />
+そのなかでも、今回の目玉は、&lt;span style="color: rgb(255, 0, 0);">RTCC（リアルタイムクロック&amp;amp;カレンダー）&lt;/span>モジュールです。&lt;br />
+クロックを取り付けるだけで自動で時計のカウントをしてくれます。&lt;br />
+これをもとに、水槽の照明の明るさを制御します。&lt;br />
+&lt;br />
+LEDは秋月電子のパワーLEDを使いました。&lt;br />
+&lt;a title="1WパワーLED" href="Power_LED.jpg" target="_blank">&lt;img class="pict" alt="I-07750" src="Power_LED.jpg" border="0"
+ hspace="5">&lt;br />
+&lt;/a>常用の1W白色パワーLEDを12個と&lt;br />
+装飾用として赤、緑、青の1WパワーLEDをそれそれ6個ずつ用意しました。&lt;br />
+LEDは全部で30個です！LED好きにはたまらないですね！&lt;br />
+&lt;br />
+それらを放熱用のアルミ板にのせて、LEDを取り付けました。&lt;br />
+けっこう熱が出ます(汗&lt;br />
+&lt;a title="LED" href="LED.jpg" target="_blank">&lt;img class="pict" alt="IMG_0562" src="LED.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="LED" href="under.jpg" target="_blank">&lt;img class="pict" alt="IMG_0563" src="under.jpg" border="0"
+ hspace="5">&lt;br />
+&lt;/a>&lt;br />
+次に基板を作ります。&lt;br />
+今回はユニバーサル基板で作りました。&lt;br />
+部品も少ないので2時間くらいでできました。こんな感じです。&lt;br />
+&lt;br />
+&lt;a title="基板" href="main_board.jpg" target="_blank">&lt;img class="pict" alt="基板" src="main_board.jpg" border="0"
+ hspace="5">&lt;br />
+&lt;/a>&lt;br />
+写真左が電源ケーブル、右がLEDのケーブルです。&lt;br />
+上の青くて丸いものは半固定抵抗です。つまみを回して明るさを変える機能も付けました。&lt;br />
+右下のコネクタは、シリアル通信UARTの端子です。PCと接続できます。&lt;br />
+&lt;br />
+&lt;a title="PC" href="with_PC.jpg" target="_blank">&lt;img class="pict" alt="PC" src="with_PC.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+今回は、&lt;span style="color: rgb(0, 0, 255); font-size: large;">ソフトウェア&lt;/span>も気合を入れて作りました！&lt;br />
+シリアル通信UARTによってPCから様々な機能を設定できるようにしました。&lt;br />
+&lt;a title="接続" href="upper.jpg" target="_blank">&lt;img class="pict" alt="transfer.jpg" src="upper.jpg" border="0"
+ hspace="5">&lt;br />
+ &lt;br />
+&lt;/a>USB⇔シリアル変換器&lt;br />
+&lt;a title="USBシリアル変換器" href="transfer.jpg" target="_blank">&lt;img class="pict" alt="IMG_0570" src="transfer.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+ターミナルを操作しているようなイメージです。&lt;br />
+コマンドを入力してENTERを押すと、レスポンスが返ってきます。&lt;br />
+PC側ではTera Termでシリアル通信をします。&lt;br />
+まず、PCで「help」と入力するとメニューが現れます。&lt;br />
+&lt;a title="help2" href="tera/help2.png" target="_blank">&lt;img class="pict" alt="help2" src="tera/help2.png" border="0"
+ hspace="5">&lt;br />
+&lt;/a>&lt;br />
+メニューにあるように「t」と入力すると現在時刻が表示されます。&lt;a title="adc" href="http://livedoor.blogimg.jp/rogyweb314/imgs/6/c/6cd173a2.png"
+ target="_blank">&lt;br />
+&lt;/a>&lt;a title="t" href="tera/t.png" target="_blank">&lt;img class="pict" alt="t" src="tera/t.png" border="0"
+ hspace="5">&lt;br />
+&lt;/a>&lt;br />
+「adjust_the_time(at)」コマンドを用いて時計合わせをします。&lt;br />
+「at y 15」と入力すると、年が2015年になります。&lt;br />
+&lt;a title="aty" href="tera/aty.png" target="_blank">&lt;img class="pict" alt="aty" src="tera/aty.png" border="0"
+ hspace="5">&lt;br />
+ &lt;br />
+&lt;/a>同様に「at M 6」と入力すると、月が6月になります。&lt;br />
+続けて、日、時、分、秒を設定して、時計合わせ完了です。&lt;a title="atM" href="tera/ats.png" target="_blank">&lt;br />
+&lt;/a>&lt;a title="ats" href="tera/ats.png" target="_blank">&lt;img class="pict" alt="ats" src="tera/ats.png" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+一度設定してしまえば、もう設定はいりません。&lt;br />
+見てわかるように、曜日も表示されます。&lt;br />
+&lt;br />
+「set sync」と入力すると、&lt;span style="color: rgb(0, 0, 255); font-size: large;">時間同期モード&lt;/span>になり、&lt;br />
+昼間は明るく、夕方には徐々に暗くなり、夜は消灯というように、&lt;br />
+&lt;span style="font-size: medium;">照明を自動制御&lt;/span>をしてくれます。&lt;br />
+&lt;a title="setsync" href="tera/setsync.png" target="_blank">&lt;img class="pict" alt="setsync" src="tera/setsync.png"
+ border="0" hspace="5">&lt;br />
+&lt;/a>&lt;br />
+こんな感じです。&lt;br />
+&lt;a title="水槽" href="white.jpg" target="_blank">&lt;img class="pict" alt="white.jpg" src="white.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+ここまでで、一応、目的の機能はできました。&lt;br />
+&lt;br />
+&lt;br />
+ここからは、&lt;span style="color: rgb(0, 0, 255); font-size: large;">フルカラーLED&lt;/span>で遊びます(^0^)/&lt;br />
+白色LEDのほかに光の三原色のLEDも付けたので、それを使います。&lt;br />
+シリアル通信でコマンドを送るとその通りに色が変わります〜&lt;br />
+&lt;br />
+まずは、「pwm clear」コマンドで全部のLEDを消灯します。&lt;br />
+&lt;a title="pwmclear" href="tera/pwmclear.png" target="_blank">&lt;img class="pict" alt="pwmclear" src="tera/pwmclear.png"
+ border="0" hspace="5">&lt;/a>&lt;br />
+&lt;a title="IMG_0571" href="black.jpg" target="_blank">&lt;img class="pict" alt="black.jpg" src="black.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+次に「pwm R 100」などと、色とパーセンテージを入力するとその明るさで光ります。&lt;br />
+&lt;a title="pwmr" href="tera/pwmr.png" target="_blank">&lt;img class="pict" alt="pwmr" src="tera/pwmr.png" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="赤" href="red.jpg" target="_blank">&lt;img class="pict" alt="赤" src="red.jpg" border="0" hspace="5">&lt;br />
+&lt;/a>&lt;br />
+&lt;br />
+緑色&lt;br />
+&lt;a title="pwmg" href="tera/pwmg.png" target="_blank">&lt;img class="pict" alt="pwmg" src="tera/pwmg.png" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="img_0579" href="green.jpg" target="_blank">&lt;img class="pict" alt="緑" src="green.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+&lt;br />
+青色&lt;br />
+&lt;a title="pwmb" href="tera/pwmb.png" target="_blank">&lt;img class="pict" alt="pwmb" src="tera/pwmb.png" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="img_0580" href="blue.jpg" target="_blank">&lt;img class="pict" alt="青" src="blue.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+&lt;br />
+赤＋青＝マゼンタ&lt;br />
+&lt;a title="pwmrb" href="tera/pwmrb.png" target="_blank">&lt;img class="pict" alt="pwmrb" src="tera/pwmrb.png" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="マゼンタ" href="magenta.jpg" target="_blank">&lt;img class="pict" alt="マゼンタ" src="magenta.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+&lt;br />
+赤＋緑＝イエロー&lt;br />
+&lt;a title="pwmrg" href="tera/pwmrg.png" target="_blank">&lt;img class="pict" alt="pwmrg" src="tera/pwmrg.png" border="0"
+ hspace="5">&lt;br />
+&lt;/a>&lt;a title="イエロー" href="yellow.jpg" target="_blank">&lt;img class="pict" alt="イエロー" src="yellow.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+&lt;br />
+緑＋青＝シアン&lt;br />
+&lt;a title="pwmgb" href="tera/pwmgb.png" target="_blank">&lt;img class="pict" alt="pwmgb" src="tera/pwmgb.png" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="シアン" href="syan.jpg" target="_blank">&lt;img class="pict" alt="シアン" src="syan.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+&lt;br />
+最後に全色をつけてみました。&lt;br />
+写真ではなんだか赤っぽいですが、直接目で見るとけっこういい感じです。&lt;br />
+&lt;a title="pwmrgb" href="tera/pwmrgb.png" target="_blank">&lt;img class="pict" alt="pwmrgb" src="tera/pwmrgb.png" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;/a>&lt;a title="白" href="RGB.jpg" target="_blank">&lt;img class="pict" alt="RGB.jpg" src="RGB.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+&lt;br />
+pcがなくても基板の上の半固定抵抗を回すことで明るさを細かく変えることができます。&lt;br />
+また、タクトスイッチで時間同期の設定やledのオンオフ設定ができます。&lt;br />
+&lt;a title="基板" href="main_board.jpg" target="_blank">&lt;img class="pict" alt="基板" src="main_board.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+&lt;br />
+&lt;br />
+まとめ&lt;br />
+メダカの照明というのをきっかけに、電子工作を繰り広げました。作っていてとても楽しいですw&lt;br />
+しかも、これはソーラーの電力で動いているので、どれだけledを光らせても電気代は0円です！！&lt;br />
+これほど素晴らしいことはほかにありますかね？？&lt;br />
+電子工作ってなんでこんなに楽しいんだろう！&lt;br />
+メダカちゃんたちも元気いっぱいです！！&lt;br />
+&lt;a title="メダカ" href="fish2.jpg" target="_blank">&lt;img class="pict" alt="メダカ" src="fish2.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br /></description></item></channel></rss>

@@ -3,4 +3,9 @@
 &lt;div class="sectionbody">
 &lt;div class="paragraph">
 &lt;p>Nucleoボードとグラフィック液晶を使って、音声解析機を作りました。マイクに入ってきた音を高速フーリエ変換して、周波数スペクトルを表示します。&lt;/p>
+&lt;/div>
+&lt;div class="paragraph img-medium">
+&lt;p>&lt;span class="image">&lt;img src="fft-lcd.jpg" alt="FFTしてLCDで表示"/>&lt;/span>&lt;/p>
+&lt;/div>
+
 &lt;/div></description></item></channel></rss>

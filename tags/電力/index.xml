@@ -15,4 +15,118 @@
 		
 		&lt;img src="solar.jpg" alt="Solar" style="width: 480px;"/>
 	
-&lt;/figure></description></item><item><title>100W級ソーラーシステムの自作</title><link>https://www.kerislab.jp/posts/2014-09-14-solar-system/</link><pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2014-09-14-solar-system/</guid><description>どーも。けり（twitter:@kerikun11）です。id研です。 夏休みにもかかわらず、バイトを入れすぎて 全然遊んでないじゃないか！ じゃ</description></item></channel></rss>
+&lt;/figure></description></item><item><title>100W級ソーラーシステムの自作</title><link>https://www.kerislab.jp/posts/2014-09-14-solar-system/</link><pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2014-09-14-solar-system/</guid><description>どーも。けり（twitter:&lt;a href="https://twitter.com/kerikun11/" target="_blank">@kerikun11&lt;/a>）です。id研です。&lt;br />
+&lt;br />
+夏休みにもかかわらず、バイトを入れすぎて&lt;br />
+全然遊んでないじゃないか！&lt;br />
+&lt;br />
+じゃあ電子工作をしよう！&lt;br />
+&lt;br />
+ということで、どん！&lt;br />
+&lt;img name="solar panel" alt="ソーラーパネル" src="solar_amazon.jpg">&lt;br />
+あれ？こんなの秋月では売ってないぞ？&lt;br />
+はい。これはAmazonでポチりましｔ…&lt;br />
+お値段&lt;br />
+&lt;span style="font-size: large;">¥13,800&lt;br />
+&lt;/span>高いよぉ...&lt;br />
+&lt;br />
+秋月での買い物はこちら。 &lt;br />
+&lt;img name="ソーラー充電コントローラー（１２／２４Ｖ）１０／１０Ａ　ＣＸＮ１０−１．１" alt="ソーラー充電コントローラー（１２／２４Ｖ）１０／１０Ａ　ＣＸＮ１０−１．１"
+ src="solar_controller.jpg">&lt;br />
+ソーラー充電コントローラー[CXN10-1.1]&lt;br />
+&lt;a href="https://akizukidenshi.com/catalog/g/g102824/"
+ target="_blank">https://akizukidenshi.com/catalog/g/g102824/&lt;/a>&lt;br />
+¥6,000&lt;br />
+&lt;br />
+&lt;img name="remote display" alt="ソーラー充電コントローラー用リモートディスプレイＣＸＭ−１．２" src="remote_display.jpg">&lt;br />
+ソーラー充電コントローラー用リモートディスプレイ[CXM-1.2]&lt;br />
+&lt;a href="https://akizukidenshi.com/catalog/g/g102826/"
+ target="_blank">https://akizukidenshi.com/catalog/g/g102826/&lt;/a>&lt;br />
+¥4,000&lt;br />
+&lt;br />
+&lt;img name="battery" alt="完全密封型鉛蓄電池（１２Ｖ２２Ａｈ）　ＷＰ２２−１２" src="battery.jpg">&lt;br />
+鉛蓄電池12V22Ah[WP22-12]&lt;br />
+&lt;a href="https://akizukidenshi.com/catalog/g/g100020/"
+ target="_blank">https://akizukidenshi.com/catalog/g/g100020/&lt;/a>&lt;br />
+¥4,500&lt;br />
+&lt;br />
+ソーラーパネルの設置には&lt;br />
+近くのホームセンターで売っていた&lt;br />
+「イレクターパイプ」という金属パイプを使用。&lt;br />
+あとはステンレス製のワイヤーで固定。&lt;br />
+パイプ、ジョイント、ワイヤー、VVFケーブル代&lt;br />
+¥5,166&lt;br />
+&lt;br />
+さらにAmazonで36Ahの鉛蓄電池を増設。¥5,000&lt;br />
+&lt;br />
+とまあ、システムに必要なものをはこんな感じ。&lt;br />
+&lt;br />
+★作り方★&lt;br />
+イレクターパイプを切って組み立てる。&lt;br />
+VVFケーブルでソーラーパネルと鉛蓄電池をつなぐ&lt;br />
+終わた＼(^o^)／&lt;br />
+&lt;br />
+はい、できました！&lt;br />
+&lt;a title="ソーラーパネル" href="solar_top.jpg" target="_blank">&lt;img class="pict" alt="ソーラーパネル" src="solar_top.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="ソーラーパネル台" href="solar_side.jpg" target="_blank">&lt;img class="pict" alt="ソーラーパネル台" src="solar_side.jpg"
+ border="0" hspace="5">&lt;/a>&lt;br />
+&lt;span style="color: rgb(0, 0, 0);">　↑ベランダにイレクターパイプを使って設置。&lt;br />
+&lt;/span>&lt;br />
+&lt;a title="ソーラーコントローラーと配電盤" href="controller.jpg" target="_blank">&lt;img class="pict" alt="ソーラーコントローラーと配電盤"
+ src="controller.jpg" border="0" hspace="5">&lt;br />
+&lt;/a>　↑部屋ではこんな感じ&lt;br />
+&lt;br />
+下の配電盤にはDCジャックがずらりと並んで&lt;br />
+様々な機器に電気を供給する。&lt;br />
+&lt;a title="配電盤" href="pwm.jpg" target="_blank">&lt;img class="pict" alt="配電盤" src="pwm.jpg" border="0" hspace="5">&lt;/a>&lt;br />
+真ん中のつまみは机の照明の明るさ調整用の可変抵抗。&lt;br />
+PICを使ってPWM制御だぜ！&lt;br />
+&lt;a title="机の照明" href="light.jpg" target="_blank">&lt;img class="pict" alt="机の照明" src="light.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+これが机の照明。1WのパワーLEDを18個も使ってチョー明るい！&lt;br />
+&lt;br />
+次にこれがUSB電源出力&lt;br />
+&lt;a title="充電器(小)" href="mini_top.jpg" target="_blank">&lt;img class="pict" alt="充電器(小)" src="mini_top.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="充電器(小)" href="mini_side.jpg" target="_blank">&lt;img class="pict" alt="充電器(小)" src="mini_side.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+DCDCコンバーターを使って5Vに安定化している。&lt;br />
+&lt;a title="iPodを充電中" href="charging.jpg" target="_blank">&lt;img class="pict" alt="iPodを充電中" src="charging.jpg" border="0"
+ hspace="5">&lt;br />
+&lt;/a>最高6Aまで出力できる超優れものだ。&lt;br />
+&lt;br />
+あと、電気が余ってるときは&lt;br />
+DC/ACインバータを使ってAC100Vを作る。&lt;br />
+&lt;a title="DC-ACインバータ" href="dcac.jpg" target="_blank">&lt;img class="pict" alt="DC-ACインバータ" src="dcac.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+この形になれば、パソコンでもテレビでもなんでも使える！&lt;br />
+ただし、やりすぎるとすぐに鉛蓄電池が空になるから注意。&lt;br />
+&lt;br />
+ここまでは2Fの自分の部屋の中で電気を使っていた。&lt;br />
+&lt;br />
+次に出窓の穴とアンテナの穴をとおして&lt;br />
+電源を1Fに通す。 &lt;br />
+&lt;a title="2Fから1Fへ" href="wire.jpg" target="_blank">&lt;img class="pict" alt="2Fから1Fへ" src="wire.jpg" border="0"
+ hspace="5">&lt;br />
+&lt;/a>このへんはテキトーに。&lt;br />
+これで1Fのリビングでも充電可能に。&lt;br />
+&lt;a title="充電器" href="slanting.jpg" target="_blank">&lt;img class="pict" alt="充電器" src="slanting.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;a title="充電器" href="top.jpg" target="_blank">&lt;img class="pict" alt="充電器" src="top.jpg" border="0" hspace="5">&lt;/a>&lt;br />
+&lt;a title="充電器" href="side.jpg" target="_blank">&lt;img class="pict" alt="充電器" src="side.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+こちらのUSB電源給電器には、アナログ電流計が取りつけてあって&lt;br />
+リアルタイムで充電電流を見ることができる。&lt;br />
+充電が終わると電流計もちゃんと0を指していてなかなかおもしろい。 &lt;br />
+&lt;br />
+今回のシステムの概要図です。&lt;br />
+&lt;a title="概要図" href="concept.jpg" target="_blank">&lt;img class="pict" alt="概要図" src="concept.jpg" border="0"
+ hspace="5">&lt;/a>&lt;br />
+&lt;br />
+まあ、今のところはこんなとこですかね&lt;br />
+費用はシステムづくりに3万円程度ってところ。&lt;br />
+照明用LED代を含めると恐ろしい金額に( ;∀;)&lt;br />
+発電でこの分を賄うのは何十年先のことやら…&lt;br />
+やはり、重要なのは自分で使う電気を自分で作り出すことですね&lt;br />
+さあ、これからも電子工作の毎日だ！</description></item></channel></rss>
