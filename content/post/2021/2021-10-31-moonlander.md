@@ -45,11 +45,11 @@ MoonLander とはカナダの [ZSA Technology Labs, Inc.](https://ergodox-ez.com
 しかも、キー配列の設定はブラウザからできるようになっていて、
 公開されている他人のレイアウトもダウンロードすることができます。
 
-ちなみに、私の作った配列は[こちら](https://configure.zsa.io/moonlander/layouts/ENJNb/latest/0)に公開しています。
+ちなみに、私が作った配列は[こちら](https://configure.zsa.io/moonlander/layouts/ENJNb/latest/0)に公開しています。
 
 私のレイアウトの詳細は下記で説明します。
 
-キーボードのファームウェアは [GitHub](https://github.com/zsa/qmk_firmware) で公開されていて、オープンソースなキーボードです。
+また、キーボードのファームウェアは [GitHub](https://github.com/zsa/qmk_firmware) で公開されていて、オープンソースなキーボードです。
 
 ### 購入金額: 43,242円
 
