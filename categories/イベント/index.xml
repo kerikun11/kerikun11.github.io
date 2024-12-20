@@ -11,10 +11,12 @@
 &lt;p>こんにちは。&lt;br>
 つい最近コロナ実績を解除してしまったけりです&amp;hellip;。&lt;/p>
 &lt;h3 id="マイクロマウス-advent-calender-2023">マイクロマウス Advent Calender 2023&lt;/h3>
-&lt;p>この記事は &lt;a href="https://adventar.org/calendars/8811">マイクロマウス Advent Calender 2023&lt;/a> の10日目の記事です。&lt;/p></description></item><item><title>全日本マイクロマウス大会2021の結果報告</title><link>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</link><pubDate>Sun, 03 Apr 2022 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>この記事は &lt;a href="https://adventar.org/calendars/8811" target="_blank" rel="noopener">マイクロマウス Advent Calender 2023&lt;/a>
+ の10日目の記事です。&lt;/p></description></item><item><title>全日本マイクロマウス大会2021の結果報告</title><link>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</link><pubDate>Sun, 03 Apr 2022 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2022-04-03-micromouse2021/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは。3回目ワクチンを接種して頭痛と戦っているけりです。&lt;/p>
 &lt;p>先日参加したマイクロマウスの全日本大会について、簡単に報告します。&lt;/p></description></item><item><title>台湾旅行のメモ</title><link>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</link><pubDate>Fri, 28 Feb 2020 15:33:09 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-02-28-cheese-trip-in-taiwan/</guid><description>&lt;p>2020年2月23日から4泊5日、Cheeseの6人で行った台湾旅行のメモ。&lt;/p></description></item><item><title>全日本マイクロマウス大会2019の結果報告</title><link>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</link><pubDate>Wed, 04 Dec 2019 21:01:24 +0900</pubDate><guid>https://www.kerislab.jp/posts/2019-12-04-micromouse2019/</guid><description>&lt;p>この記事は
-&lt;a href="https://adventar.org/calendars/4126">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a>の
+&lt;a href="https://adventar.org/calendars/4126" target="_blank" rel="noopener">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2019&lt;/a>
+の
 4日目の記事です。&lt;/p>
 &lt;p>こんにちは。けりです。&lt;br>
 今回は、2019年12月1日(日) に行われた、&lt;br>
@@ -34,7 +36,8 @@
 &lt;p>さて、11月17日(金)～19日(日)の3日間、全日本マイクロマウス大会2017が開催されました。&lt;/p>
 &lt;p>僕は去年に引き続き、2回目となる参加をしてきました！&lt;/p></description></item><item><title>HPをHugoに移行しました</title><link>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</link><pubDate>Tue, 29 Aug 2017 09:09:01 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-08-29-hugo-migration/</guid><description>&lt;h2 id="以前のkeris-lab">以前のKERI&amp;rsquo;s Lab&lt;/h2>
 &lt;h3 id="jekyllを使っていた">Jekyllを使っていた&lt;/h3>
-&lt;p>以前のKERI&amp;rsquo;s LabのHPは、静的ブログジェネレータである&lt;a href="https://jekyllrb-ja.github.io://jekyllrb-ja.github.io/">Jekyll&lt;/a>で生成されていました。&lt;/p>
+&lt;p>以前のKERI&amp;rsquo;s LabのHPは、静的ブログジェネレータである&lt;a href="https://jekyllrb-ja.github.io://jekyllrb-ja.github.io/" target="_blank" rel="noopener">Jekyll&lt;/a>
+で生成されていました。&lt;/p>
 &lt;p>Jekyllは、静的ブログジェネレータの中で最も有名なものの1つです。&lt;/p></description></item><item><title>ブログのサーバーをラズパイ3からPINE64 A+に移行</title><link>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</link><pubDate>Sun, 07 May 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-05-07-new-pine64/</guid><description>&lt;h2 id="新登場のpine64を購入">新登場のPINE64を購入&lt;/h2>
 &lt;p>秋月電子の新商品で、「PINE64」というボードが登場しました。CPUのスペックはほぼラズパイ3と同等ですが、Ethernetが1000BASE-Tと高速なのです！！これは完全にサーバー向きですね！&lt;/p>
 &lt;p>さらに、ラズパイ3の価格が$35なのに対して、PINE64は$19です。半額近いです。&lt;/p>

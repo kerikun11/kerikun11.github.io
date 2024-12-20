@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wi-Fi on KERI's Lab</title><link>https://www.kerislab.jp/tags/wi-fi/</link><description>Recent content in Wi-Fi on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Fri, 11 Mar 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/wi-fi/index.xml" rel="self" type="application/rss+xml"/><item><title>IR Station</title><link>https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/</link><pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-03-11-ir-station-reference/</guid><description>&lt;h2 id="ir-station">IR-Station&lt;/h2>
 &lt;p>Infrared Remote Controller with ESP8266 WiFi-module&lt;br>
 You can control your home appliances with your smartphone or laptop.&lt;/p>
-&lt;p>The latest information is &lt;a href="https://github.com/kerikun11/IR-Station">here&lt;/a>&lt;/p>
+&lt;p>The latest information is &lt;a href="https://github.com/kerikun11/IR-Station" target="_blank" rel="noopener">here&lt;/a>
+&lt;/p>
 &lt;h2 id="main-parts">Main parts&lt;/h2>
 &lt;ul>
 &lt;li>ESP-WROOM-02 (ESP8266 WiFi Module)&lt;/li>

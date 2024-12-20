@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VSCode on KERI's Lab</title><link>https://www.kerislab.jp/tags/vscode/</link><description>Recent content in VSCode on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sat, 16 Jan 2021 16:49:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>ターミナルからVSCodeのSSHリモートディレクトリを開く</title><link>https://www.kerislab.jp/posts/2021-01-16-sshcode/</link><pubDate>Sat, 16 Jan 2021 16:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-01-16-sshcode/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>今回紹介するのは VSCode の SSH リモートディレクトリをターミナルから直接開くときに使う便利なコマンドです。&lt;/p>
-&lt;p>VSCode には &lt;a href="https://code.visualstudio.com/docs/remote/ssh">Remote SSH&lt;/a> という拡張機能があり、
+&lt;p>VSCode には &lt;a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank" rel="noopener">Remote SSH&lt;/a>
+ という拡張機能があり、
 SSH 接続先のディレクトリをワークスペースとして起動することができます。&lt;/p>
 &lt;p>しかし、手元のターミナルから &lt;code>code&lt;/code> コマンドを使って &lt;code>code user@host&lt;/code> などと実行しても開くことはできません。&lt;/p>
 &lt;p>そこで今回は &lt;code>sshcode&lt;/code> というコマンドを新たに作って、
@@ -10,16 +11,21 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;ul>
 &lt;li>コード補完&lt;/li>
 &lt;li>コード整形&lt;/li>
-&lt;li>環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk">.latexmk&lt;/a> でコンパイル&lt;/li>
+&lt;li>環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank" rel="noopener">.latexmk&lt;/a>
+ でコンパイル&lt;/li>
 &lt;li>散らかりがちな生成物を &lt;code>build&lt;/code> ディレクトリにまとめる&lt;/li>
 &lt;li>TeX コードのとなりに PDF をリアルタイム表示&lt;/li>
 &lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>
 &lt;li>VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li>
 &lt;/ul></description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a> の
+&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank" rel="noopener">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a>
+ の
 22日目の記事です。&lt;/p>
 &lt;p>こんにちは。けりです。&lt;/p>
 &lt;p>今回は、PlatformIOという強力な &lt;strong>マイコン開発環境&lt;/strong> の紹介です。&lt;/p>
 &lt;h3 id="platformio-とは">PlatformIO とは？&lt;/h3>
-&lt;p>&lt;a href="https://platformio.org/">PlatformIO&lt;/a>とは、mbedやArduinoと似たような感じで、さまざまなボードやライブラリを統一的に開発できる開発環境です。&lt;/p>
-&lt;p>PlatformIO はESP32マイコンを公式にサポートしていて、&lt;a href="https://github.com/espressif/esp-idf">ESP-IDF&lt;/a>と&lt;a href="https://github.com/espressif/arduino-esp32">Arduino Core for the ESP32&lt;/a>から選んで開発することができます。&lt;/p></description></item></channel></rss>
+&lt;p>&lt;a href="https://platformio.org/" target="_blank" rel="noopener">PlatformIO&lt;/a>
+とは、mbedやArduinoと似たような感じで、さまざまなボードやライブラリを統一的に開発できる開発環境です。&lt;/p>
+&lt;p>PlatformIO はESP32マイコンを公式にサポートしていて、&lt;a href="https://github.com/espressif/esp-idf" target="_blank" rel="noopener">ESP-IDF&lt;/a>
+と&lt;a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="noopener">Arduino Core for the ESP32&lt;/a>
+から選んで開発することができます。&lt;/p></description></item></channel></rss>
