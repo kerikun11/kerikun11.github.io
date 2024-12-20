@@ -147,7 +147,7 @@ Corne V4は基板部分のキットなので、キースイッチなどは自前
 
 ようやくソフトウェアエンジニアの役目が来ました。
 
-今回のキーボードはオープンソースの[QMK](https://qmk.fm/)というプロジェクトに対応していて、豊富なライブラリを使用しつつ自前でファームウェアをカスタマイすることができます。
+今回のキーボードはオープンソースの[QMK](https://qmk.fm/)というプロジェクトに対応していて、豊富なライブラリを使用しつつ自前でファームウェアをカスタマイズすることができます。
 
 今回はMoonlanderのときに活用していた、キーの種類ごとにバックライトLEDの色を変える機能を追加しました。
 
@@ -163,7 +163,7 @@ Corne V4は基板部分のキットなので、キースイッチなどは自前
 
 あまりカスタマイズをしすぎるとノートPCなどのキーボードが全然打てなくなってしまうのでご注意を。
 
-ちょっとずつ変更して局所最適を探しつつ、どきどきがらっと変更して大域最適を探す旅です。
+ちょっとずつ変更して局所最適を探しつつ、時々がらっと変更して大域最適を探す旅です。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日のレイアウト <a href="https://t.co/FXKVET4Je3">pic.twitter.com/FXKVET4Je3</a></p>&mdash; けり (@kerikun11) <a href="https://twitter.com/kerikun11/status/1865394759625593334?ref_src=twsrc%5Etfw">December 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
