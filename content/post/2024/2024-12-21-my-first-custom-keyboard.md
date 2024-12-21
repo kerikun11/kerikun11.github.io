@@ -85,7 +85,7 @@ Corne V4は基板部分のキットなので、キースイッチなどは自前
 
 それに近そうなキースイッチとして、[Kailh Deep Sea Silent Mini Low Profile Key Switch (Linear)](https://www.aliexpress.com/item/1005007364820059.html)をAliExpressで購入しました。
 
-{{< postfig src="keyswitch.jpg" title="Kailh Deep Sea Silent Mini" width="480px" >}}
+{{< postfig src="keyswitch.jpg" title="Kailh Deep Sea Silent Mini (Linear)" width="480px" >}}
 
 ちなみに、AliExpressではキースイッチのテスターというのも販売されていて、さまざまなスイッチを実際に比較することもできます。
 
