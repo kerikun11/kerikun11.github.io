@@ -23,7 +23,7 @@ thumbnail: "icon.jpg"
 
 ちなみに、ここ3年くらいは[ZSA Moonlander Mark I](/posts/2021-10-31-moonlander/)という左右分離キーボードを使っていました。
 
-{{< postfig src="moonlander.jpg" title="MoonLander Mark I" width="540px" link="/posts/2021-10-31-moonlander/">}}
+{{< postfig src="moonlander.jpg" title="Moonlander Mark I" width="540px" link="/posts/2021-10-31-moonlander/">}}
 
 もうこれがないとタイピングができないほど慣れ親しんでいたのですが、親指付近のキー配置が少し手に合わないところが気になっていました。
 

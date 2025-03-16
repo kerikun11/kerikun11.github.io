@@ -19,6 +19,8 @@ thumbnail: "icon.png"
 
 以前、PICで作った[メダカの水槽の照明](/posts/2015-06-04-killifish-light/)(←リンク)を紹介しましたが、今回はこれをバージョンアップしました。めだかの照明がどのようなものかは以前の記事を参考にしてください。
 
+<!--more-->
+
 {{< postfig src="fish.jpg" title="めだか" >}}
 
 ### 格安WiFiモジュール
@@ -33,7 +35,6 @@ thumbnail: "icon.png"
 [ESP-WROOM-02 WiFiモジュール　秋月電子にて550円(2016/3/14現在)](https://akizukidenshi.com/catalog/g/g109607/)
 
 {{< postfig src="esp-wroom-02.jpg" title="ESP-WROOM-02" width="240px" >}}
-<!--more-->
 
 ## ギャラリー
 

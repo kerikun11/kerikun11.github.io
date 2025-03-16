@@ -1,5 +1,5 @@
 ---
-title: "左右分離キーボード MoonLander Mark I の紹介"
+title: "左右分離キーボード Moonlander Mark I の紹介"
 date: "2021-10-31T22:49:57+09:00"
 categories:
   - "説明記事"
@@ -14,19 +14,19 @@ thumbnail: "icon.jpg"
 
 めっちゃ久々のブログ更新です...
 
-今回の記事では最近購入した左右分離キーボード **MoonLander Mark I** を紹介します。
+今回の記事では最近購入した左右分離キーボード **Moonlander Mark I** を紹介します。
 
 <!--more-->
 
-## MoonLander とは
+## Moonlander とは
 
-MoonLander とはカナダの [ZSA Technology Labs, Inc.](https://ergodox-ez.com/) という会社のキーボードです。
+Moonlander とはカナダの [ZSA Technology Labs, Inc.](https://ergodox-ez.com/) という会社のキーボードです。
 
 人間工学に即したキーボードがいくつか販売されています。
 
-私が購入した [MoonLander Mark I](https://www.zsa.io/moonlander/) は2020年ごろに発売された最新モデルです。
+私が購入した [Moonlander Mark I](https://www.zsa.io/moonlander/) は2020年ごろに発売された最新モデルです。
 
-{{< postfig src="moonlander.jpg" title="MoonLander Mark I" width="360px" >}}
+{{< postfig src="moonlander.jpg" title="Moonlander Mark I" width="360px" >}}
 
 ### 左右分離
 
@@ -67,7 +67,7 @@ MoonLander とはカナダの [ZSA Technology Labs, Inc.](https://ergodox-ez.com
 
 | 日時             | 日数 | アクション                       |
 | ---------------- | ---- | -------------------------------- |
-| 2021.07.17 23:25 | 0日  | ZSA のサイトで MoonLander 購入   |
+| 2021.07.17 23:25 | 0日  | ZSA のサイトで Moonlander 購入   |
 | 2021.07.19 09:24 | 2日  | ZSA から英語住所の確認メール受信 |
 | 2021.07.19 09:57 | 2日  | ZSA へ英語住所の確認メール返信   |
 | 2021.07.23 11:04 | 6日  | DHL から関税の支払い依頼メール   |
@@ -183,7 +183,7 @@ MoonLander とはカナダの [ZSA Technology Labs, Inc.](https://ergodox-ez.com
 
 ## 各キーの LED バックライトの設定
 
-MoonLander では各キーのバックライト LED の色を個別に設定することができます。
+Moonlander では各キーのバックライト LED の色を個別に設定することができます。
 
 同じキーでもレイヤーによって異なる機能を割り当てているので、
 色を変えておくことでキーの割り当てを思い出しやすくなります。
@@ -204,13 +204,13 @@ MoonLander では各キーのバックライト LED の色を個別に設定す�
 
 ### 静音キースイッチ
 
-僕が MoonLander を購入したとき、静音キースイッチのオプションがありませんでした。
+僕が Moonlander を購入したとき、静音キースイッチのオプションがありませんでした。
 
 とりあえず一番静かそうな赤軸を購入したのですが、やはり音が気になったので遊舎工房で[静音ピンク軸](https://shop.yushakobo.jp/products/kailh-box-silent-switch)を購入しました。
 
 {{< postfig src="kailh-silent-pink.jpg" title="Kailh Box Silent Switch" width="240px" link="https://shop.yushakobo.jp/products/kailh-box-silent-switch" >}}
 
-MoonLander のキーは全部で72個ですが、親指付近の三角のキーは交換しなかったので 70個分を購入して交換しました。
+Moonlander のキーは全部で72個ですが、親指付近の三角のキーは交換しなかったので 70個分を購入して交換しました。
 
 キースイッチはピンソケットに入っているので、はんだ付けなしで簡単に交換することができます。
 
@@ -232,13 +232,13 @@ MoonLander のキーは全部で72個ですが、親指付近の三角のキー�
 これだけ近いと左右分離の意味があまりないのでは？
 と思われるかもしれませんが、開き角度がついているのでこの距離があれば十分リラックスしてタイピングすることができます。
 
-## MoonLander の気になった点
+## Moonlander の気になった点
 
-最後に MoonLander を使用していて気になった点をいくつか紹介します。
+最後に Moonlander を使用していて気になった点をいくつか紹介します。
 
 ### B と N の下のキーが欲しかった
 
-MoonLander は下図のように、
+Moonlander は下図のように、
 アルファベットの B と N 付近は三角状にカットされていて、
 キーがありません。
 
@@ -249,7 +249,7 @@ MoonLander は下図のように、
 
 ### 単押しと長押しで別の機能が割り当てられる機能はタイムラグがあり使いづらい
 
-MoonLander では特殊キーとして、単押しと長押しで別のキーを割り当てることが来ます。
+Moonlander では特殊キーとして、単押しと長押しで別のキーを割り当てることが来ます。
 
 例えば、単推しはスペースだが長押しするとレイヤー切り替えやAltキーとすることができます。
 
@@ -260,7 +260,7 @@ MoonLander では特殊キーとして、単押しと長押しで別のキーを
 
 ### 複雑な機能を割り当てようとしても、覚えられれない
 
-MoonLander ではキーにマクロを設定することができ、
+Moonlander ではキーにマクロを設定することができ、
 複雑な入力を一発で行うこともできるようになっています。
 
 ただ、どのキーにどの機能を割り当てたのかすぐに忘れてしまい、結局使いませんでした。
@@ -271,7 +271,7 @@ MoonLander ではキーにマクロを設定することができ、
 
 そのたびに説明しているので、説明するのに慣れてきました。
 
-MoonLander レイアウトカスタマイズは沼のようで、凝りだすと時間が無限に過ぎていきます。
+Moonlander レイアウトカスタマイズは沼のようで、凝りだすと時間が無限に過ぎていきます。
 
 そのカスタマイズ作業を楽しめる人にはおすすめです。
 

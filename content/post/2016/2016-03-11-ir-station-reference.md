@@ -16,7 +16,9 @@ thumbnail: "icon.jpg"
 Infrared Remote Controller with ESP8266 WiFi-module  
 You can control your home appliances with your smartphone or laptop.
 
-The latest information is [here](https://github.com/kerikun11/IR-Station)
+The latest information is [here](https://github.com/kerikun11/IR-Station).
+
+<!--more-->
 
 ## Main parts
 
