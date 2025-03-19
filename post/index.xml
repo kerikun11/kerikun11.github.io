@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sat, 21 Dec 2024 00:23:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>自作キーボード、はじめました。</title><link>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</link><pubDate>Sat, 21 Dec 2024 00:23:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>自作キーボード KERIgoKBD v1 の紹介</title><link>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは、自作キーボード沼に完全にハマってしまったけりです。&lt;/p>
+&lt;p>今回の記事では私がはじめて設計した自作キーボード KERIgoKBD v1 を紹介します。&lt;/p></description></item><item><title>自作キーボード、はじめました。</title><link>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</link><pubDate>Sat, 21 Dec 2024 00:23:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは、最近3Dプリンタを購入してテンションが上がっているけりです。&lt;/p>
 &lt;p>今回はついに自作キーボードに手を出してしまったので、作成したキーボードについて説明します。&lt;/p></description></item><item><title>ペルー旅行の記録</title><link>https://www.kerislab.jp/posts/2024-09-07-peru-trip/</link><pubDate>Sat, 31 Aug 2024 11:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-09-07-peru-trip/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは、けりです。&lt;/p>
@@ -107,8 +109,4 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;p>こんにちは。けりです。&lt;br>
 今回はマイクロマウスの迷路探索のお話です。&lt;/p>
 &lt;p>過去10年分のマイクロマウス全日本大会の32x32迷路を比較してみました。&lt;/p>
-&lt;p>まずは探索走行の比較を、次に最短経路の比較を紹介します。&lt;/p></description></item><item><title>M5Stackで作るマイクロマウスのタイム表示機</title><link>https://www.kerislab.jp/posts/2020-03-07-m5stack-micromouse-timer/</link><pubDate>Sat, 07 Mar 2020 12:08:12 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-03-07-m5stack-micromouse-timer/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは。
-春休みに行きたい予定が重なっていてどちらに行くか迷っていたのに、
-どちらの予定も中止になって虚無になったけりです。&lt;/p>
-&lt;p>今回は先日制作したマイクロマウスのタイム表示機の紹介です。&lt;/p></description></item></channel></rss>
+&lt;p>まずは探索走行の比較を、次に最短経路の比較を紹介します。&lt;/p></description></item></channel></rss>

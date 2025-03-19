@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KERI's Lab</title><link>https://www.kerislab.jp/</link><description>Recent content on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sat, 21 Dec 2024 00:23:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/index.xml" rel="self" type="application/rss+xml"/><item><title>管理人</title><link>https://www.kerislab.jp/about/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/about/</guid><description>&lt;h2 id="プロフィール">プロフィール&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KERI's Lab</title><link>https://www.kerislab.jp/</link><description>Recent content on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/index.xml" rel="self" type="application/rss+xml"/><item><title>管理人</title><link>https://www.kerislab.jp/about/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/about/</guid><description>&lt;h2 id="プロフィール">プロフィール&lt;/h2>
 &lt;p>管理人：けり&lt;br>
 出身：神奈川県&lt;br>
 趣味：電子工作&lt;/p>
@@ -15,7 +15,9 @@ GitHub: &lt;a href="http://github.com/kerikun11" target="_blank" rel="noopener">
 &lt;h2 id="マイクロマウス-kerise">マイクロマウス KERISE&lt;/h2>
 &lt;p>2016年から &lt;a href="https://www.ntf.or.jp/mouse/" target="_blank" rel="noopener">マイクロマウス&lt;/a>
  というロボット競技に参加しています。&lt;br>
-手のひらサイズのロボットが巨大な迷路を駆け抜けるとても魅力的な競技です。&lt;/p></description></item><item><title>記事一覧</title><link>https://www.kerislab.jp/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/archives/</guid><description/></item><item><title>自作キーボード、はじめました。</title><link>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</link><pubDate>Sat, 21 Dec 2024 00:23:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+手のひらサイズのロボットが巨大な迷路を駆け抜けるとても魅力的な競技です。&lt;/p></description></item><item><title>記事一覧</title><link>https://www.kerislab.jp/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/archives/</guid><description/></item><item><title>自作キーボード KERIgoKBD v1 の紹介</title><link>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは、自作キーボード沼に完全にハマってしまったけりです。&lt;/p>
+&lt;p>今回の記事では私がはじめて設計した自作キーボード KERIgoKBD v1 を紹介します。&lt;/p></description></item><item><title>自作キーボード、はじめました。</title><link>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</link><pubDate>Sat, 21 Dec 2024 00:23:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは、最近3Dプリンタを購入してテンションが上がっているけりです。&lt;/p>
 &lt;p>今回はついに自作キーボードに手を出してしまったので、作成したキーボードについて説明します。&lt;/p></description></item><item><title>ペルー旅行の記録</title><link>https://www.kerislab.jp/posts/2024-09-07-peru-trip/</link><pubDate>Sat, 31 Aug 2024 11:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-09-07-peru-trip/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは、けりです。&lt;/p>
@@ -110,5 +112,4 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;li>&lt;a href="https://github.com/kerikun11/micromouse-maze-library" target="_blank" rel="noopener">MicroMouse Maze Library - GitHub&lt;/a>
 &lt;/li>
 &lt;/ul>
-&lt;p>探索アルゴリズムの実装例や使用例はこのリポジトリを参照のこと。&lt;/p></description></item><item><title>Linux Mint 19.3 をインストールしたら設定すること</title><link>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</link><pubDate>Tue, 07 Apr 2020 12:33:15 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>この記事では、&lt;code>Linux Mint 19.3&lt;/code> をクリーンインストールした際に行う自己流の設定について紹介します。&lt;/p></description></item></channel></rss>
+&lt;p>探索アルゴリズムの実装例や使用例はこのリポジトリを参照のこと。&lt;/p></description></item></channel></rss>

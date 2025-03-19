@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>作品紹介 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link><description>Recent content in 作品紹介 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sat, 21 Dec 2024 00:23:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>自作キーボード、はじめました。</title><link>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</link><pubDate>Sat, 21 Dec 2024 00:23:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>作品紹介 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link><description>Recent content in 作品紹介 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>自作キーボード KERIgoKBD v1 の紹介</title><link>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
+&lt;p>こんにちは、自作キーボード沼に完全にハマってしまったけりです。&lt;/p>
+&lt;p>今回の記事では私がはじめて設計した自作キーボード KERIgoKBD v1 を紹介します。&lt;/p></description></item><item><title>自作キーボード、はじめました。</title><link>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</link><pubDate>Sat, 21 Dec 2024 00:23:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-12-21-my-first-custom-keyboard/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは、最近3Dプリンタを購入してテンションが上がっているけりです。&lt;/p>
 &lt;p>今回はついに自作キーボードに手を出してしまったので、作成したキーボードについて説明します。&lt;/p></description></item><item><title>フォロ・ロボットを改造してみた</title><link>https://www.kerislab.jp/posts/2024-03-17-folo-robot-retrofitting/</link><pubDate>Sun, 17 Mar 2024 16:10:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2024-03-17-folo-robot-retrofitting/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
 &lt;p>こんにちは、けりです。&lt;/p>
@@ -140,10 +142,4 @@ KERISE v2の制御が落ち着てきたので、ついにハーフサイズの�
 		
 		&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
 	
-&lt;/figure></description></item><item><title>IR-Stationのデモンストレーションサイト</title><link>https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/</link><pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-10-20-ir-station-demo/</guid><description>&lt;h2 id="ir-stationの操作を体験できます">IR-Stationの操作を体験できます！&lt;/h2>
-&lt;h3 id="ir-stationとは">IR-Stationとは&lt;/h3>
-&lt;p>IR-Stationとは、WiFi接続に対応した赤外線学習リモコンです。これがあればスマートフォンなどから家電製品をコントロールすることができます。&lt;/p>
-&lt;p>IR-Stationについては、&lt;a href="https://www.kerislab.jp/tags/ir-station">IR-Stationについての記事一覧&lt;/a>
-をご覧ください。&lt;/p>
-&lt;h3 id="ir-stationのデモンストレーション">IR-Stationのデモンストレーション&lt;/h3>
-&lt;p>IR-Stationを持っていない方でもIR-Stationの操作を体験できるように、操作画面を再現したサイトを作りました。&lt;/p></description></item></channel></rss>
+&lt;/figure></description></item></channel></rss>
