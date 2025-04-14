@@ -236,6 +236,7 @@ HHKB Hybrid Type-S は 540g、Moonlander は 744g だったので、かなり軽
 | フラッシュメモリ | [W25Q16JVUXIQ](https://www.digikey.jp/short/3t1bm3d5) (2MB)                                                                                         |
 | キースイッチ     | [Kailh Deep Sea Silent Mini Low Profile Key Switch (Linear)](https://www.aliexpress.com/item/1005007364820059.html) (Choc V1/V2 ホットスワップ対応) |
 | キーキャップ     | [NuPhy nSA Keycaps (Shine-through White)](https://www.aliexpress.com/item/1005006384968360.html)                                                    |
+| キーソケット     | [Hot Swap Key Socket (Kailh Low Profile 1350)](https://www.aliexpress.com/item/1005006610157756.html)                                               |
 | 左右接続ケーブル | [10cm 3.5mm AUX Cable (White 3 Pole)](https://www.aliexpress.com/item/1005002484746676.html)                                                        |
 | 滑り止めシート   | [GRIPLUS ホワイト フリーカット](http://www.amazon.co.jp/dp/B08XHMGPWW/)                                                                             |
 | USBケーブル      | [USLION Magnetic USB Type-C ケーブル](https://www.aliexpress.com/item/1005006136597761.html)                                                        |
