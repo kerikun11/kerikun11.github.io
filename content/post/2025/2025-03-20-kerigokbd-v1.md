@@ -7,6 +7,7 @@ tags:
   - "キーボード"
   - "KERIgoKBD"
 thumbnail: "icon.jpg"
+spotlight: "true"
 ---
 
 ## はじめに
