@@ -78,8 +78,8 @@ pygmentsCodefencesGuessSyntax = true
     id = "G-BHNBJY16SP" # Enable Google Analytics by entering your tracking ID
 
 [permalinks]
-    post = "/posts/:filename/"
-    work = "/works/:filename/"
+    post = "/posts/:contentbasename/"
+    work = "/works/:contentbasename/"
 
 [pagination]
     pagerSize = "20"
