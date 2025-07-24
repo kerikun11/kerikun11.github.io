@@ -69,7 +69,7 @@ pygmentsCodefencesGuessSyntax = true
     github = "kerikun11"
     # gitlab = "username"
     # bitbucket = "username"
-    email = "kerikun11+web@gmail.com"
+    # email = "kerikun11+web@gmail.com"
 
 [services.disqus]
     shortname = "kerikeri" # Enable Disqus by entering your Disqus shortname
