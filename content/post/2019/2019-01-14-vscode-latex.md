@@ -6,7 +6,6 @@ categories:
 tags:
   - "VSCode"
   - "Latex"
-spotlight: "true"
 ---
 
 ## 概要

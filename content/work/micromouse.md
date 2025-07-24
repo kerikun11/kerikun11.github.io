@@ -6,20 +6,20 @@ tags:
 thumbnail: "icon.jpg"
 ---
 
-## 概要
+## はじめに
 
-この記事では、私が書いたマイクロマウスの記事をカテゴリごとに列挙します。  
-新しい記事が追加され次第、更新していきたいと思います。
+この記事では私が書いたマイクロマウスの記事をカテゴリごとに列挙します。
+新しい記事が追加されたら随時更新していきたいと思います。
 
 <!--more-->
 
 ## 機体紹介
 
-- [KERISE v1](/posts/2016-12-27-kerisev1/)
-- [KERISE v2](/posts/2017-01-08-kerise-v2-1st/)
-- [KERISE v3](/posts/2017-03-28-kerisev3-coming/)
-- [KERISE v4](/posts/2018-05-03-kerise-v4-coming/)
-- [KERISE v5](/posts/2020-04-15-kerise-v5-coming/)
+- [KERISE v1](/posts/2016-12-27-kerisev1/) (2016年)
+- [KERISE v2](/posts/2017-01-08-kerise-v2-1st/) (2017年)
+- [KERISE v3](/posts/2017-03-28-kerisev3-coming/) (2017年)
+- [KERISE v4](/posts/2018-05-03-kerise-v4-coming/) (2018年)
+- [KERISE v5](/posts/2020-04-15-kerise-v5-coming/) (2020年)
 
 ## 大会の参加報告
 
