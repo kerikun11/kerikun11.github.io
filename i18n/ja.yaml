@@ -41,10 +41,6 @@
 - id: search_placeholder
   translation: "検索…"
 
-# Advertisement widget
-- id: advertisement_title
-  translation: "広告"
-
 # Languages widget
 - id: languages_title
   translation: "言語"
