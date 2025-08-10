@@ -14,10 +14,11 @@ authorbox: false
 
 管理人：けり  
 出身：神奈川県  
-趣味：電子工作  
+趣味：電子工作、プログラミング  
+仕事：組み込みソフトウェアエンジニア  
 
+GitHub: [@kerikun11](http://github.com/kerikun11)  
 Twitter: [@kerikun11](http://twitter.com/kerikun11)  
-GitHub: [@kerikun11](http://github.com/kerikun11)
 
 ## あいさつ
 

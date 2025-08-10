@@ -85,3 +85,14 @@ PICマイコンを使ってダイヤル式のキーボードとその表示器�
 
 [PICの記事一覧はこちら](/tags/pic/)
 {{< postfig src="strange-keyboard.png" title="変なキーボード" width="360px" link="/tags/キーボード/" >}}
+
+## 昔作った電子工作たち
+
+このブログができるよりも前、高校時代から大学初期にかけて作ってきた工作たちを紹介します。
+
+- [昔作った電子工作たち～充電・電力編～](/posts/2016-04-08-old-works-power/)
+- [昔作った電子工作たち～LEDイルミネーション編～](/posts/2016-04-08-old-works-illumination/)
+- [昔作った電子工作たち～オーディオ編～](/posts/2016-04-08-old-works-audio/)
+- [昔作った電子工作たち～ロボット編～](/posts/2016-04-08-old-works-robot/)
+- [昔作った電子工作たち～in FRISK 編～](/posts/2016-04-08-old-works-frisk/)
+- [昔作った電子工作たち～その他～](/posts/2016-04-08-old-works-other/)
