@@ -71,8 +71,8 @@ pygmentsCodefencesGuessSyntax = true
     # bitbucket = "username"
     # email = "kerikun11+web@gmail.com"
 
-[services.disqus]
-    shortname = "kerikeri" # Enable Disqus by entering your Disqus shortname
+# [services.disqus]
+#     shortname = "kerikeri" # Enable Disqus by entering your Disqus shortname
 
 [services.googleAnalytics]
     id = "G-BHNBJY16SP" # Enable Google Analytics by entering your tracking ID
