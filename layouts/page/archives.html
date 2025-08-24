@@ -18,7 +18,7 @@
         <ul class="archives__list">
             {{ range $posts }}
             <li class="archives__item">
-                {{ .PublishDate.Format "01.02. " }}
+                {{ .Date.Format "01.02. " }}
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </li>
             {{ end }}
