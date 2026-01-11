@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STM32 on KERI's Lab</title><link>https://www.kerislab.jp/tags/stm32/</link><description>Recent content in STM32 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/stm32/index.xml" rel="self" type="application/rss+xml"/><item><title>KERISE v1の回路設計</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p>
-&lt;p>全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/">こちら&lt;/a>
-&lt;/p>
-&lt;figure >
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STM32 on KERI's Lab</title><link>https://www.kerislab.jp/tags/stm32/</link><description>Recent content in STM32 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/stm32/index.xml" rel="self" type="application/rss+xml"/><item><title>KERISE v1の回路設計</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p&gt;
+&lt;p&gt;全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/"&gt;こちら&lt;/a&gt;
+&lt;/p&gt;
+&lt;figure &gt;
 	
 		
-		&lt;figcaption>
-			&lt;h4>KERISEv1&lt;/h4>
-		&lt;/figcaption>
+		&lt;figcaption&gt;
+			&lt;h4&gt;KERISEv1&lt;/h4&gt;
+		&lt;/figcaption&gt;
 		
-		&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/>
+		&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/&gt;
 	
-&lt;/figure></description></item></channel></rss>
+&lt;/figure&gt;</description></item></channel></rss>

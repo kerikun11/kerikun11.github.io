@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VSCode on KERI's Lab</title><link>https://www.kerislab.jp/tags/vscode/</link><description>Recent content in VSCode on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sat, 16 Jan 2021 16:49:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>ターミナルからVSCodeのSSHリモートディレクトリを開く</title><link>https://www.kerislab.jp/posts/2021-01-16-sshcode/</link><pubDate>Sat, 16 Jan 2021 16:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-01-16-sshcode/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>今回紹介するのは VSCode の SSH リモートディレクトリをターミナルから直接開くときに使う便利なコマンドです。&lt;/p>
-&lt;p>VSCode には &lt;a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank" rel="noopener">Remote SSH&lt;/a>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VSCode on KERI's Lab</title><link>https://www.kerislab.jp/tags/vscode/</link><description>Recent content in VSCode on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sat, 16 Jan 2021 16:49:57 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>ターミナルからVSCodeのSSHリモートディレクトリを開く</title><link>https://www.kerislab.jp/posts/2021-01-16-sshcode/</link><pubDate>Sat, 16 Jan 2021 16:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-01-16-sshcode/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;今回紹介するのは VSCode の SSH リモートディレクトリをターミナルから直接開くときに使う便利なコマンドです。&lt;/p&gt;
+&lt;p&gt;VSCode には &lt;a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank" rel="noopener"&gt;Remote SSH&lt;/a&gt;
  という拡張機能があり、
-SSH 接続先のディレクトリをワークスペースとして起動することができます。&lt;/p>
-&lt;p>しかし、手元のターミナルから &lt;code>code&lt;/code> コマンドを使って &lt;code>code user@host&lt;/code> などと実行しても開くことはできません。&lt;/p>
-&lt;p>そこで今回は &lt;code>sshcode&lt;/code> というコマンドを新たに作って、
-ターミナルからサクッと SSH ディレクトリを開く方法を紹介します。&lt;/p></description></item><item><title>VSCode で TeX を書こう</title><link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link><pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今回は私が使っている TeX のエディタ環境を紹介します。&lt;/p>
-&lt;p>注目機能は以下の通りです。&lt;/p>
-&lt;ul>
-&lt;li>コード補完&lt;/li>
-&lt;li>コード整形&lt;/li>
-&lt;li>環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank" rel="noopener">.latexmk&lt;/a>
- でコンパイル&lt;/li>
-&lt;li>散らかりがちな生成物を &lt;code>build&lt;/code> ディレクトリにまとめる&lt;/li>
-&lt;li>TeX コードのとなりに PDF をリアルタイム表示&lt;/li>
-&lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>
-&lt;li>VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li>
-&lt;/ul></description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank" rel="noopener">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a>
+SSH 接続先のディレクトリをワークスペースとして起動することができます。&lt;/p&gt;
+&lt;p&gt;しかし、手元のターミナルから &lt;code&gt;code&lt;/code&gt; コマンドを使って &lt;code&gt;code user@host&lt;/code&gt; などと実行しても開くことはできません。&lt;/p&gt;
+&lt;p&gt;そこで今回は &lt;code&gt;sshcode&lt;/code&gt; というコマンドを新たに作って、
+ターミナルからサクッと SSH ディレクトリを開く方法を紹介します。&lt;/p&gt;</description></item><item><title>VSCode で TeX を書こう</title><link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link><pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;今回は私が使っている TeX のエディタ環境を紹介します。&lt;/p&gt;
+&lt;p&gt;注目機能は以下の通りです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;コード補完&lt;/li&gt;
+&lt;li&gt;コード整形&lt;/li&gt;
+&lt;li&gt;環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank" rel="noopener"&gt;.latexmk&lt;/a&gt;
+ でコンパイル&lt;/li&gt;
+&lt;li&gt;散らかりがちな生成物を &lt;code&gt;build&lt;/code&gt; ディレクトリにまとめる&lt;/li&gt;
+&lt;li&gt;TeX コードのとなりに PDF をリアルタイム表示&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SyncTex&lt;/code&gt; による TeX コードと PDF の相互ジャンプ&lt;/li&gt;
+&lt;li&gt;VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank" rel="noopener"&gt;東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a&gt;
  の
-22日目の記事です。&lt;/p>
-&lt;p>こんにちは。けりです。&lt;/p>
-&lt;p>今回は、PlatformIOという強力な &lt;strong>マイコン開発環境&lt;/strong> の紹介です。&lt;/p>
-&lt;h3 id="platformio-とは">PlatformIO とは？&lt;/h3>
-&lt;p>&lt;a href="https://platformio.org/" target="_blank" rel="noopener">PlatformIO&lt;/a>
-とは、mbedやArduinoと似たような感じで、さまざまなボードやライブラリを統一的に開発できる開発環境です。&lt;/p>
-&lt;p>PlatformIO はESP32マイコンを公式にサポートしていて、&lt;a href="https://github.com/espressif/esp-idf" target="_blank" rel="noopener">ESP-IDF&lt;/a>
-と&lt;a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="noopener">Arduino Core for the ESP32&lt;/a>
-から選んで開発することができます。&lt;/p></description></item></channel></rss>
+22日目の記事です。&lt;/p&gt;
+&lt;p&gt;こんにちは。けりです。&lt;/p&gt;
+&lt;p&gt;今回は、PlatformIOという強力な &lt;strong&gt;マイコン開発環境&lt;/strong&gt; の紹介です。&lt;/p&gt;
+&lt;h3 id="platformio-とは"&gt;PlatformIO とは？&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://platformio.org/" target="_blank" rel="noopener"&gt;PlatformIO&lt;/a&gt;
+とは、mbedやArduinoと似たような感じで、さまざまなボードやライブラリを統一的に開発できる開発環境です。&lt;/p&gt;
+&lt;p&gt;PlatformIO はESP32マイコンを公式にサポートしていて、&lt;a href="https://github.com/espressif/esp-idf" target="_blank" rel="noopener"&gt;ESP-IDF&lt;/a&gt;
+と&lt;a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="noopener"&gt;Arduino Core for the ESP32&lt;/a&gt;
+から選んで開発することができます。&lt;/p&gt;</description></item></channel></rss>

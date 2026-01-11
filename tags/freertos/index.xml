@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FreeRTOS on KERI's Lab</title><link>https://www.kerislab.jp/tags/freertos/</link><description>Recent content in FreeRTOS on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/freertos/index.xml" rel="self" type="application/rss+xml"/><item><title>FreeRTOSのTaskにC++のメンバ関数を割り当てる</title><link>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>FreeRTOSはC言語で書かれているので、C++のメンバ関数をそのまま渡すことができない。今回の記事ではその解決策のひとつを紹介する。&lt;/p></description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;h3 id="esp32-とは">ESP32 とは&lt;/h3>
-&lt;figure >
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FreeRTOS on KERI's Lab</title><link>https://www.kerislab.jp/tags/freertos/</link><description>Recent content in FreeRTOS on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/freertos/index.xml" rel="self" type="application/rss+xml"/><item><title>FreeRTOSのTaskにC++のメンバ関数を割り当てる</title><link>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-09-27-freertos-member/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;FreeRTOSはC言語で書かれているので、C++のメンバ関数をそのまま渡すことができない。今回の記事ではその解決策のひとつを紹介する。&lt;/p&gt;</description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;h3 id="esp32-とは"&gt;ESP32 とは&lt;/h3&gt;
+&lt;figure &gt;
 	
 		
-		&lt;figcaption>
-			&lt;h4>ESP32&lt;/h4>
-		&lt;/figcaption>
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP32&lt;/h4&gt;
+		&lt;/figcaption&gt;
 		
-		&lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/>
+		&lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/&gt;
 	
-&lt;/figure>
+&lt;/figure&gt;
 
-&lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank" rel="noopener">ESP32 Overview | Espressif Systems&lt;/a>
-&lt;/p>
-&lt;p>ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
-同時に gcc で開発できるマイコンでもあります。&lt;/p></description></item></channel></rss>
+&lt;p&gt;&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank" rel="noopener"&gt;ESP32 Overview | Espressif Systems&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
+同時に gcc で開発できるマイコンでもあります。&lt;/p&gt;</description></item></channel></rss>

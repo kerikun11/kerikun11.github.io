@@ -1,149 +1,149 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sun, 30 Jan 2022 17:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Windowsのダウンロードフォルダなどの日本語表示名を英語に変更する</title><link>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</link><pubDate>Sun, 30 Jan 2022 17:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>日本語版のWindowsでは、ユーザーフォルダの「ダウンロード」や「ドキュメント」が日本語表記になっている。&lt;/p>
-&lt;p>しかし、実際のパスを見ると英語表記であることがわかる。&lt;br>
-(例: &lt;code>C:\Users\your_name\Downloads&lt;/code>)&lt;/p>
-&lt;p>この記事では表面上の日本語表記をやめて、実際のパスと同じ英語表記に変更する方法を紹介する。&lt;/p></description></item><item><title>マイクロマウスの壁情報を安全にバックアップする</title><link>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</link><pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは。&lt;br>
-社会人2年目となり「新人なので&amp;hellip;」と言い訳ができなくなって困っている けり です。&lt;/p>
-&lt;p>最近はマウス進捗がほとんどできていないのですが、モチベーションを高めるためにも頑張って記事を書きました。&lt;/p></description></item><item><title>左右分離キーボード Moonlander Mark I の紹介</title><link>https://www.kerislab.jp/posts/2021-10-31-moonlander/</link><pubDate>Sun, 31 Oct 2021 22:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-10-31-moonlander/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは。ｼｬｶｲの荒波にもまれてマイクロマウスから離れているけりです。&lt;/p>
-&lt;p>めっちゃ久々のブログ更新です&amp;hellip;&lt;/p>
-&lt;p>今回の記事では最近購入した左右分離キーボード &lt;strong>Moonlander Mark I&lt;/strong> を紹介します。&lt;/p></description></item><item><title>ターミナルからVSCodeのSSHリモートディレクトリを開く</title><link>https://www.kerislab.jp/posts/2021-01-16-sshcode/</link><pubDate>Sat, 16 Jan 2021 16:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-01-16-sshcode/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>今回紹介するのは VSCode の SSH リモートディレクトリをターミナルから直接開くときに使う便利なコマンドです。&lt;/p>
-&lt;p>VSCode には &lt;a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank" rel="noopener">Remote SSH&lt;/a>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>説明記事 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/</link><description>Recent content in 説明記事 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sun, 30 Jan 2022 17:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E8%AA%AC%E6%98%8E%E8%A8%98%E4%BA%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Windowsのダウンロードフォルダなどの日本語表示名を英語に変更する</title><link>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</link><pubDate>Sun, 30 Jan 2022 17:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2022-01-30-windows-explorer-display-name/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;日本語版のWindowsでは、ユーザーフォルダの「ダウンロード」や「ドキュメント」が日本語表記になっている。&lt;/p&gt;
+&lt;p&gt;しかし、実際のパスを見ると英語表記であることがわかる。&lt;br&gt;
+(例: &lt;code&gt;C:\Users\your_name\Downloads&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;この記事では表面上の日本語表記をやめて、実際のパスと同じ英語表記に変更する方法を紹介する。&lt;/p&gt;</description></item><item><title>マイクロマウスの壁情報を安全にバックアップする</title><link>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</link><pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-12-12-maze-saving-method/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは。&lt;br&gt;
+社会人2年目となり「新人なので&amp;hellip;」と言い訳ができなくなって困っている けり です。&lt;/p&gt;
+&lt;p&gt;最近はマウス進捗がほとんどできていないのですが、モチベーションを高めるためにも頑張って記事を書きました。&lt;/p&gt;</description></item><item><title>左右分離キーボード Moonlander Mark I の紹介</title><link>https://www.kerislab.jp/posts/2021-10-31-moonlander/</link><pubDate>Sun, 31 Oct 2021 22:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-10-31-moonlander/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは。ｼｬｶｲの荒波にもまれてマイクロマウスから離れているけりです。&lt;/p&gt;
+&lt;p&gt;めっちゃ久々のブログ更新です&amp;hellip;&lt;/p&gt;
+&lt;p&gt;今回の記事では最近購入した左右分離キーボード &lt;strong&gt;Moonlander Mark I&lt;/strong&gt; を紹介します。&lt;/p&gt;</description></item><item><title>ターミナルからVSCodeのSSHリモートディレクトリを開く</title><link>https://www.kerislab.jp/posts/2021-01-16-sshcode/</link><pubDate>Sat, 16 Jan 2021 16:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-01-16-sshcode/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;今回紹介するのは VSCode の SSH リモートディレクトリをターミナルから直接開くときに使う便利なコマンドです。&lt;/p&gt;
+&lt;p&gt;VSCode には &lt;a href="https://code.visualstudio.com/docs/remote/ssh" target="_blank" rel="noopener"&gt;Remote SSH&lt;/a&gt;
  という拡張機能があり、
-SSH 接続先のディレクトリをワークスペースとして起動することができます。&lt;/p>
-&lt;p>しかし、手元のターミナルから &lt;code>code&lt;/code> コマンドを使って &lt;code>code user@host&lt;/code> などと実行しても開くことはできません。&lt;/p>
-&lt;p>そこで今回は &lt;code>sshcode&lt;/code> というコマンドを新たに作って、
-ターミナルからサクッと SSH ディレクトリを開く方法を紹介します。&lt;/p></description></item><item><title>トラックボールマウス DEFT PRO の静音化</title><link>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</link><pubDate>Mon, 04 Jan 2021 18:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは。けりです。&lt;/p>
-&lt;p>最近マウスの代わりにトラックボールを使ってみています。&lt;br>
-腕を大きく動かさなくていいので結構いい感じです。&lt;/p>
-&lt;p>ところで、僕はクリック音が静かな &lt;strong>静音マウス&lt;/strong> が好きなのですが、
-残念ながらトラックボールで静音タイプという商品はほとんどありません。&lt;/p>
-&lt;p>そこで友人から勧められたちょっと良さげなトラックボール &lt;strong>DEFT PRO&lt;/strong> を買って、静音トラックボールに改造しました。&lt;/p>
-&lt;p>今回の記事では静音化の手順と注意点を簡単に紹介したいと思います。&lt;/p></description></item><item><title>ESP32でマイクロマウスを作るメリットとデメリット</title><link>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</link><pubDate>Fri, 11 Dec 2020 18:11:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</guid><description>&lt;p>この記事は
-&lt;a href="https://adventar.org/calendars/5829" target="_blank" rel="noopener">Micro Mouse Advent Calendar 2020&lt;/a>
+SSH 接続先のディレクトリをワークスペースとして起動することができます。&lt;/p&gt;
+&lt;p&gt;しかし、手元のターミナルから &lt;code&gt;code&lt;/code&gt; コマンドを使って &lt;code&gt;code user@host&lt;/code&gt; などと実行しても開くことはできません。&lt;/p&gt;
+&lt;p&gt;そこで今回は &lt;code&gt;sshcode&lt;/code&gt; というコマンドを新たに作って、
+ターミナルからサクッと SSH ディレクトリを開く方法を紹介します。&lt;/p&gt;</description></item><item><title>トラックボールマウス DEFT PRO の静音化</title><link>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</link><pubDate>Mon, 04 Jan 2021 18:49:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2021-01-04-silent-deft-pro/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは。けりです。&lt;/p&gt;
+&lt;p&gt;最近マウスの代わりにトラックボールを使ってみています。&lt;br&gt;
+腕を大きく動かさなくていいので結構いい感じです。&lt;/p&gt;
+&lt;p&gt;ところで、僕はクリック音が静かな &lt;strong&gt;静音マウス&lt;/strong&gt; が好きなのですが、
+残念ながらトラックボールで静音タイプという商品はほとんどありません。&lt;/p&gt;
+&lt;p&gt;そこで友人から勧められたちょっと良さげなトラックボール &lt;strong&gt;DEFT PRO&lt;/strong&gt; を買って、静音トラックボールに改造しました。&lt;/p&gt;
+&lt;p&gt;今回の記事では静音化の手順と注意点を簡単に紹介したいと思います。&lt;/p&gt;</description></item><item><title>ESP32でマイクロマウスを作るメリットとデメリット</title><link>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</link><pubDate>Fri, 11 Dec 2020 18:11:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-12-11-esp32-mouse/</guid><description>&lt;p&gt;この記事は
+&lt;a href="https://adventar.org/calendars/5829" target="_blank" rel="noopener"&gt;Micro Mouse Advent Calendar 2020&lt;/a&gt;
 
-の 11 日目の記事です。&lt;/p>
-&lt;p>昨日の記事は、FND さんの「今年買ったもの」でした。&lt;br>
-めっちゃいろんなもの買っててやっぱ社会人パワー最高ですね！！&lt;br>
-ぼくもグラボほしーーー&lt;/p>
-&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>さてさて今回の記事では、私が今までに ESP32 でマウスを作ってきてよかったことと辛かったことを紹介したいと思います。&lt;/p>
-&lt;p>今後 ESP32 でマウスを作ろうと思っている方の参考になれば幸いです。&lt;/p></description></item><item><title>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</title><link>https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/</link><pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>ESP32 の公式開発環境は &lt;a href="https://github.com/espressif/esp-idf" target="_blank" rel="noopener">ESP-IDF&lt;/a>
- ですが、コマンドライン開発環境なので初心者向けではないかもしれません。&lt;/p>
-&lt;p>一方、以前の記事 &lt;a href="https://www.kerislab.jp/posts/2018-12-22-platformio/">PlatformIOでESP32の開発をしよう&lt;/a>
-で紹介した &lt;a href="https://platformio.org/" target="_blank" rel="noopener">PlatformIO&lt;/a>
- では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。&lt;/p>
-&lt;p>しかしながら、ESP-IDFやGitHubなどにあるたくさんのサンプルコードは、PlatformIOで直接実行することができません。&lt;/p>
-&lt;p>そこで今回は、単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します。&lt;/p></description></item><item><title>なめらかなスラロームの設計④ 生成結果</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-4/</link><pubDate>Sat, 25 Apr 2020 14:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-4/</guid><description>&lt;p>&lt;a href="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/">前回の記事&lt;/a>
-の続きです。&lt;/p>
-&lt;p>今回の記事では、
+の 11 日目の記事です。&lt;/p&gt;
+&lt;p&gt;昨日の記事は、FND さんの「今年買ったもの」でした。&lt;br&gt;
+めっちゃいろんなもの買っててやっぱ社会人パワー最高ですね！！&lt;br&gt;
+ぼくもグラボほしーーー&lt;/p&gt;
+&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;さてさて今回の記事では、私が今までに ESP32 でマウスを作ってきてよかったことと辛かったことを紹介したいと思います。&lt;/p&gt;
+&lt;p&gt;今後 ESP32 でマウスを作ろうと思っている方の参考になれば幸いです。&lt;/p&gt;</description></item><item><title>ESP-IDFプロジェクトをPlatformIOプロジェクトに変換する</title><link>https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/</link><pubDate>Mon, 11 May 2020 23:11:57 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-05-11-esp-idf-to-platformio/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;ESP32 の公式開発環境は &lt;a href="https://github.com/espressif/esp-idf" target="_blank" rel="noopener"&gt;ESP-IDF&lt;/a&gt;
+ ですが、コマンドライン開発環境なので初心者向けではないかもしれません。&lt;/p&gt;
+&lt;p&gt;一方、以前の記事 &lt;a href="https://www.kerislab.jp/posts/2018-12-22-platformio/"&gt;PlatformIOでESP32の開発をしよう&lt;/a&gt;
+で紹介した &lt;a href="https://platformio.org/" target="_blank" rel="noopener"&gt;PlatformIO&lt;/a&gt;
+ では、GUIのVSCodeに拡張機能としてインストールするだけで環境が整うのでとても便利です。&lt;/p&gt;
+&lt;p&gt;しかしながら、ESP-IDFやGitHubなどにあるたくさんのサンプルコードは、PlatformIOで直接実行することができません。&lt;/p&gt;
+&lt;p&gt;そこで今回は、単純なESP-IDFのプロジェクトをPlatformIOプロジェクトに変換する方法を紹介します。&lt;/p&gt;</description></item><item><title>なめらかなスラロームの設計④ 生成結果</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-4/</link><pubDate>Sat, 25 Apr 2020 14:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-4/</guid><description>&lt;p&gt;&lt;a href="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/"&gt;前回の記事&lt;/a&gt;
+の続きです。&lt;/p&gt;
+&lt;p&gt;今回の記事では、
 前回までに紹介してきた内容をもとに、
-&lt;a href="https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/">マイクロマウスの走行パターン&lt;/a>
-の軌道設計結果を紹介します。&lt;/p></description></item><item><title>なめらかなスラロームの設計③ C++による実装</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/</link><pubDate>Sat, 25 Apr 2020 13:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/</guid><description>&lt;p>&lt;a href="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/">前回の記事&lt;/a>
-の続きです。&lt;/p>
-&lt;p>今回の記事では、なめらかなスラローム軌道の C++による実装例を紹介します。&lt;/p></description></item><item><title>なめらかなスラロームの設計② 設計方法</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/</link><pubDate>Sat, 25 Apr 2020 12:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/</guid><description>&lt;p>&lt;a href="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/">前回の記事&lt;/a>
-の続きです。&lt;/p>
-&lt;p>今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。&lt;/p></description></item><item><title>なめらかなスラロームの設計① スラローム概要</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/</link><pubDate>Sat, 25 Apr 2020 11:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>今回はマイクロマウスにおけるスラローム走行のお話です。&lt;/p>
-&lt;p>私が使っているスラローム走行の概要とその軌道の生成方法などを紹介します。&lt;/p>
-&lt;p>特にマイクロマウスを例に話を進めますが、2輪車両の軌道生成方法として汎用的に使える内容です。&lt;/p></description></item><item><title>Linuxで画面を3分割して表示する</title><link>https://www.kerislab.jp/posts/2020-04-10-linux-split-3-windows/</link><pubDate>Fri, 10 Apr 2020 11:13:33 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-10-linux-split-3-windows/</guid><description>&lt;p>こんにちは。けりです。&lt;/p>
-&lt;p>最近、縦横比が21:9のウルトラワイドモニタを購入しました。&lt;/p>
-&lt;p>今回は、そのモニタの画面を3列に分割してウィンドウを配置する方法を紹介します。&lt;/p>
-&lt;p>私のPCのOSは &lt;strong>Manjaro Linux (Cinnamon)&lt;/strong> ですが、他のLinuxでも使える方法だと思います。&lt;/p></description></item><item><title>マイクロマウスの迷路探索概要</title><link>https://www.kerislab.jp/posts/2020-04-07-maze-solving-algorithm/</link><pubDate>Tue, 07 Apr 2020 14:10:54 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-07-maze-solving-algorithm/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>この記事ではマイクロマウス探索初心者向けに、
-マイクロマウスの迷路探索アルゴリズムに必要な処理とアルゴリズムの概要について記述する。&lt;/p>
-&lt;p>なお、この記事は下記リポジトリのドキュメントの転載である。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/kerikun11/micromouse-maze-library" target="_blank" rel="noopener">MicroMouse Maze Library - GitHub&lt;/a>
-&lt;/li>
-&lt;/ul>
-&lt;p>探索アルゴリズムの実装例や使用例はこのリポジトリを参照のこと。&lt;/p></description></item><item><title>UNIX環境の設定ファイルの管理</title><link>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</link><pubDate>Mon, 06 Apr 2020 10:17:40 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>今回は、ターミナルなどの設定ファイルの管理方法の紹介です。&lt;/p>
-&lt;p>設定ファイルの多くは &lt;code>.zshrc&lt;/code> というようにドットから始まる隠しファイルになっているので、
-これらをまとめて &lt;code>.dotfiles&lt;/code> と呼んでいます。&lt;/p>
-&lt;p>GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。&lt;/p></description></item><item><title>過去の全日本マイクロマウス大会32x32迷路の分析</title><link>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</link><pubDate>Sun, 08 Mar 2020 16:26:06 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>こんにちは。けりです。&lt;br>
-今回はマイクロマウスの迷路探索のお話です。&lt;/p>
-&lt;p>過去10年分のマイクロマウス全日本大会の32x32迷路を比較してみました。&lt;/p>
-&lt;p>まずは探索走行の比較を、次に最短経路の比較を紹介します。&lt;/p></description></item><item><title>VSCode で TeX を書こう</title><link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link><pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今回は私が使っている TeX のエディタ環境を紹介します。&lt;/p>
-&lt;p>注目機能は以下の通りです。&lt;/p>
-&lt;ul>
-&lt;li>コード補完&lt;/li>
-&lt;li>コード整形&lt;/li>
-&lt;li>環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank" rel="noopener">.latexmk&lt;/a>
- でコンパイル&lt;/li>
-&lt;li>散らかりがちな生成物を &lt;code>build&lt;/code> ディレクトリにまとめる&lt;/li>
-&lt;li>TeX コードのとなりに PDF をリアルタイム表示&lt;/li>
-&lt;li>&lt;code>SyncTex&lt;/code> による TeX コードと PDF の相互ジャンプ&lt;/li>
-&lt;li>VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li>
-&lt;/ul></description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank" rel="noopener">東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a>
+&lt;a href="https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/"&gt;マイクロマウスの走行パターン&lt;/a&gt;
+の軌道設計結果を紹介します。&lt;/p&gt;</description></item><item><title>なめらかなスラロームの設計③ C++による実装</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/</link><pubDate>Sat, 25 Apr 2020 13:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-3/</guid><description>&lt;p&gt;&lt;a href="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/"&gt;前回の記事&lt;/a&gt;
+の続きです。&lt;/p&gt;
+&lt;p&gt;今回の記事では、なめらかなスラローム軌道の C++による実装例を紹介します。&lt;/p&gt;</description></item><item><title>なめらかなスラロームの設計② 設計方法</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/</link><pubDate>Sat, 25 Apr 2020 12:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-2/</guid><description>&lt;p&gt;&lt;a href="https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/"&gt;前回の記事&lt;/a&gt;
+の続きです。&lt;/p&gt;
+&lt;p&gt;今回の記事では、なめらかなスラローム軌道の具体的な設計方法を紹介します。&lt;/p&gt;</description></item><item><title>なめらかなスラロームの設計① スラローム概要</title><link>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/</link><pubDate>Sat, 25 Apr 2020 11:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-25-slalom-trajectory-1/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;今回はマイクロマウスにおけるスラローム走行のお話です。&lt;/p&gt;
+&lt;p&gt;私が使っているスラローム走行の概要とその軌道の生成方法などを紹介します。&lt;/p&gt;
+&lt;p&gt;特にマイクロマウスを例に話を進めますが、2輪車両の軌道生成方法として汎用的に使える内容です。&lt;/p&gt;</description></item><item><title>Linuxで画面を3分割して表示する</title><link>https://www.kerislab.jp/posts/2020-04-10-linux-split-3-windows/</link><pubDate>Fri, 10 Apr 2020 11:13:33 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-10-linux-split-3-windows/</guid><description>&lt;p&gt;こんにちは。けりです。&lt;/p&gt;
+&lt;p&gt;最近、縦横比が21:9のウルトラワイドモニタを購入しました。&lt;/p&gt;
+&lt;p&gt;今回は、そのモニタの画面を3列に分割してウィンドウを配置する方法を紹介します。&lt;/p&gt;
+&lt;p&gt;私のPCのOSは &lt;strong&gt;Manjaro Linux (Cinnamon)&lt;/strong&gt; ですが、他のLinuxでも使える方法だと思います。&lt;/p&gt;</description></item><item><title>マイクロマウスの迷路探索概要</title><link>https://www.kerislab.jp/posts/2020-04-07-maze-solving-algorithm/</link><pubDate>Tue, 07 Apr 2020 14:10:54 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-07-maze-solving-algorithm/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;この記事ではマイクロマウス探索初心者向けに、
+マイクロマウスの迷路探索アルゴリズムに必要な処理とアルゴリズムの概要について記述する。&lt;/p&gt;
+&lt;p&gt;なお、この記事は下記リポジトリのドキュメントの転載である。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kerikun11/micromouse-maze-library" target="_blank" rel="noopener"&gt;MicroMouse Maze Library - GitHub&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;探索アルゴリズムの実装例や使用例はこのリポジトリを参照のこと。&lt;/p&gt;</description></item><item><title>UNIX環境の設定ファイルの管理</title><link>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</link><pubDate>Mon, 06 Apr 2020 10:17:40 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;今回は、ターミナルなどの設定ファイルの管理方法の紹介です。&lt;/p&gt;
+&lt;p&gt;設定ファイルの多くは &lt;code&gt;.zshrc&lt;/code&gt; というようにドットから始まる隠しファイルになっているので、
+これらをまとめて &lt;code&gt;.dotfiles&lt;/code&gt; と呼んでいます。&lt;/p&gt;
+&lt;p&gt;GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。&lt;/p&gt;</description></item><item><title>過去の全日本マイクロマウス大会32x32迷路の分析</title><link>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</link><pubDate>Sun, 08 Mar 2020 16:26:06 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-03-08-all-japan-32x32-maze/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは。けりです。&lt;br&gt;
+今回はマイクロマウスの迷路探索のお話です。&lt;/p&gt;
+&lt;p&gt;過去10年分のマイクロマウス全日本大会の32x32迷路を比較してみました。&lt;/p&gt;
+&lt;p&gt;まずは探索走行の比較を、次に最短経路の比較を紹介します。&lt;/p&gt;</description></item><item><title>VSCode で TeX を書こう</title><link>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</link><pubDate>Mon, 14 Jan 2019 10:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2019-01-14-vscode-latex/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;今回は私が使っている TeX のエディタ環境を紹介します。&lt;/p&gt;
+&lt;p&gt;注目機能は以下の通りです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;コード補完&lt;/li&gt;
+&lt;li&gt;コード整形&lt;/li&gt;
+&lt;li&gt;環境に依存しにくい &lt;a href="https://texwiki.texjp.org/?Latexmk" target="_blank" rel="noopener"&gt;.latexmk&lt;/a&gt;
+ でコンパイル&lt;/li&gt;
+&lt;li&gt;散らかりがちな生成物を &lt;code&gt;build&lt;/code&gt; ディレクトリにまとめる&lt;/li&gt;
+&lt;li&gt;TeX コードのとなりに PDF をリアルタイム表示&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SyncTex&lt;/code&gt; による TeX コードと PDF の相互ジャンプ&lt;/li&gt;
+&lt;li&gt;VSCode Vim を使って vim キーバインドで編集 (オプション)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>PlatformIOでESP32の開発をしよう</title><link>https://www.kerislab.jp/posts/2018-12-22-platformio/</link><pubDate>Sat, 22 Dec 2018 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-12-22-platformio/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;この記事は &lt;a href="https://adventar.org/calendars/3279" target="_blank" rel="noopener"&gt;東京工業大学ロボット技術研究会(rogy) Advent Calendar 2018&lt;/a&gt;
  の
-22日目の記事です。&lt;/p>
-&lt;p>こんにちは。けりです。&lt;/p>
-&lt;p>今回は、PlatformIOという強力な &lt;strong>マイコン開発環境&lt;/strong> の紹介です。&lt;/p>
-&lt;h3 id="platformio-とは">PlatformIO とは？&lt;/h3>
-&lt;p>&lt;a href="https://platformio.org/" target="_blank" rel="noopener">PlatformIO&lt;/a>
-とは、mbedやArduinoと似たような感じで、さまざまなボードやライブラリを統一的に開発できる開発環境です。&lt;/p>
-&lt;p>PlatformIO はESP32マイコンを公式にサポートしていて、&lt;a href="https://github.com/espressif/esp-idf" target="_blank" rel="noopener">ESP-IDF&lt;/a>
-と&lt;a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="noopener">Arduino Core for the ESP32&lt;/a>
-から選んで開発することができます。&lt;/p></description></item><item><title>吸引ファンで音を鳴らす</title><link>https://www.kerislab.jp/posts/2018-11-03-fan-sound/</link><pubDate>Sat, 03 Nov 2018 18:40:42 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-11-03-fan-sound/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>マイクロマウスでは、User Interface (UI) のために、スピーカーを載せることが多いです。&lt;/p>
-&lt;p>しかしながら、小さなマウスを作るうえで、そのわずかなスペースでも惜しいものです。&lt;/p>
-&lt;p>今回は、既にマウスに乗っている &lt;strong>モーター&lt;/strong> で音を鳴らすことができたので紹介します。&lt;/p>
-&lt;p>偶然ですが、&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/">KERISE v4&lt;/a>
-には(ほとんど使われていない) &lt;strong>吸引ファン&lt;/strong> がついていたので、今回はそれを使ってみました。&lt;/p></description></item><item><title>ESP32 の Power Management 機能</title><link>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</link><pubDate>Thu, 28 Jun 2018 08:50:59 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</guid><description>&lt;h2 id="はじめに">はじめに&lt;/h2>
-&lt;p>この記事では、ESP32をバッテリー駆動するためのヒントをお届けします。&lt;/p></description></item><item><title>なめらかな加速の設計④ C++による実装例</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</link><pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer3/">前回の記事&lt;/a>
-の続きです。&lt;/p>
-&lt;p>今回の記事では、今までに示した設計法のC++による実装例を紹介します。&lt;/p></description></item><item><title>なめらかな加速の設計③ 走行距離を考慮した速度設計</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</link><pubDate>Sun, 29 Apr 2018 14:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</guid><description>&lt;h2 id="設計2走行距離を考慮した速度設計">設計2・走行距離を考慮した速度設計&lt;/h2>
-&lt;p>&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer2/">前回の記事&lt;/a>
-の続きです。&lt;/p>
-&lt;p>この記事では、設計1の曲線加速を組み合わせて、走行距離を考慮した速度設計について考えます。&lt;/p></description></item><item><title>なめらかな加速の設計② 曲線加速の設計</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</link><pubDate>Sun, 29 Apr 2018 13:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</guid><description>&lt;h2 id="設計1加速曲線の設計">設計1・加速曲線の設計&lt;/h2>
-&lt;p>&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer1/">前回の記事&lt;/a>
-の続きです。&lt;/p>
-&lt;p>この記事では、前回紹介した &lt;strong>設計1&lt;/strong> の曲線加速の設計について考えます。&lt;/p></description></item><item><title>なめらかな加速の設計① 台形加速と曲線加速</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</link><pubDate>Sun, 29 Apr 2018 12:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今回はマイクロマウスにおける速度設計のお話です。&lt;/p>
-&lt;p>長い直線などを走行するとき、タイムを縮めるため、最大速度まで加速して、ターン直前に減速します。&lt;/p>
-&lt;p>ここで注意したのが、途中経過の如何にかかわらず、終点の位置や速度は守らなければならないということです。&lt;/p>
-&lt;p>今回の記事では、終点位置、終点速度や最大速度などの拘束条件から、走行途中の速度軌道を算出するアルゴリズムを紹介します。&lt;/p>
-&lt;p>最後にはC++での実装したクラスも簡単に紹介します。&lt;/p></description></item><item><title>ESP32にSmartConfigでWiFi情報を伝える</title><link>https://www.kerislab.jp/posts/2018-02-16-esp32-smartconfig/</link><pubDate>Fri, 16 Feb 2018 18:51:25 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-02-16-esp32-smartconfig/</guid><description>&lt;h2 id="wifiのssidとパスワードをどう伝えるか問題">WiFiのSSIDとパスワードをどう伝えるか問題&lt;/h2>
-&lt;p>ESP32はWiFiに接続することができますが、ソースコードにWiFiのSSIDとパスワードを書いてしまうと、後から変更できません。&lt;/p>
-&lt;p>さらに、ソースコードを公開するときは、SSIDとパスワードの部分をいちいち削除しなければならず、けっこう面倒です。&lt;/p>
-&lt;p>以前は&lt;a href="https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/">SDカードを使ってWiFi情報を伝える方法&lt;/a>
-を紹介しましたが、これも割と手間でした。&lt;/p>
-&lt;p>SmartConfigとは、そんな悩みをスマホで解決する機能です。&lt;/p></description></item><item><title>ESP32のすゝめ</title><link>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</link><pubDate>Wed, 06 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</guid><description>&lt;p>こんにちは、けりです。&lt;br>
-これは &lt;a href="https://adventar.org/calendars/2361" target="_blank" rel="noopener">東京工業大学ロボット技術研究会(rogy) Advent Calender 2017&lt;/a>
- の6日目の記事です.&lt;/p>
-&lt;p>本日は、私が愛用しているマイコン「ESP32」を紹介します。&lt;/p></description></item><item><title>フォトリフレクタの感度をソフトで調整</title><link>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</link><pubDate>Fri, 20 Oct 2017 12:15:04 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</guid><description>&lt;p>こんにちは。けりです。&lt;br>
-今回は、マイクロマウスに使っているフォトリフレクタのお話です。&lt;/p></description></item><item><title>マイクロマウスのターン一覧</title><link>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</link><pubDate>Sun, 03 Sep 2017 18:32:03 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>こんにちは、けりです。久々にマイクロマウスの話題です。&lt;/p>
-&lt;p>今回は、私のマウスで使用しているスラロームパターンを紹介します。&lt;/p></description></item><item><title>ESP32とMicro SDカード</title><link>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</link><pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>今回は、ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です。&lt;/p></description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;h3 id="esp32-とは">ESP32 とは&lt;/h3>
-&lt;figure >
+22日目の記事です。&lt;/p&gt;
+&lt;p&gt;こんにちは。けりです。&lt;/p&gt;
+&lt;p&gt;今回は、PlatformIOという強力な &lt;strong&gt;マイコン開発環境&lt;/strong&gt; の紹介です。&lt;/p&gt;
+&lt;h3 id="platformio-とは"&gt;PlatformIO とは？&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://platformio.org/" target="_blank" rel="noopener"&gt;PlatformIO&lt;/a&gt;
+とは、mbedやArduinoと似たような感じで、さまざまなボードやライブラリを統一的に開発できる開発環境です。&lt;/p&gt;
+&lt;p&gt;PlatformIO はESP32マイコンを公式にサポートしていて、&lt;a href="https://github.com/espressif/esp-idf" target="_blank" rel="noopener"&gt;ESP-IDF&lt;/a&gt;
+と&lt;a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="noopener"&gt;Arduino Core for the ESP32&lt;/a&gt;
+から選んで開発することができます。&lt;/p&gt;</description></item><item><title>吸引ファンで音を鳴らす</title><link>https://www.kerislab.jp/posts/2018-11-03-fan-sound/</link><pubDate>Sat, 03 Nov 2018 18:40:42 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-11-03-fan-sound/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;マイクロマウスでは、User Interface (UI) のために、スピーカーを載せることが多いです。&lt;/p&gt;
+&lt;p&gt;しかしながら、小さなマウスを作るうえで、そのわずかなスペースでも惜しいものです。&lt;/p&gt;
+&lt;p&gt;今回は、既にマウスに乗っている &lt;strong&gt;モーター&lt;/strong&gt; で音を鳴らすことができたので紹介します。&lt;/p&gt;
+&lt;p&gt;偶然ですが、&lt;a href="https://www.kerislab.jp/posts/2018-05-03-kerise-v4-coming/"&gt;KERISE v4&lt;/a&gt;
+には(ほとんど使われていない) &lt;strong&gt;吸引ファン&lt;/strong&gt; がついていたので、今回はそれを使ってみました。&lt;/p&gt;</description></item><item><title>ESP32 の Power Management 機能</title><link>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</link><pubDate>Thu, 28 Jun 2018 08:50:59 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-06-28-esp32-power-management/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;この記事では、ESP32をバッテリー駆動するためのヒントをお届けします。&lt;/p&gt;</description></item><item><title>なめらかな加速の設計④ C++による実装例</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</link><pubDate>Sun, 29 Apr 2018 15:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer4/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer3/"&gt;前回の記事&lt;/a&gt;
+の続きです。&lt;/p&gt;
+&lt;p&gt;今回の記事では、今までに示した設計法のC++による実装例を紹介します。&lt;/p&gt;</description></item><item><title>なめらかな加速の設計③ 走行距離を考慮した速度設計</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</link><pubDate>Sun, 29 Apr 2018 14:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer3/</guid><description>&lt;h2 id="設計2走行距離を考慮した速度設計"&gt;設計2・走行距離を考慮した速度設計&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer2/"&gt;前回の記事&lt;/a&gt;
+の続きです。&lt;/p&gt;
+&lt;p&gt;この記事では、設計1の曲線加速を組み合わせて、走行距離を考慮した速度設計について考えます。&lt;/p&gt;</description></item><item><title>なめらかな加速の設計② 曲線加速の設計</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</link><pubDate>Sun, 29 Apr 2018 13:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer2/</guid><description>&lt;h2 id="設計1加速曲線の設計"&gt;設計1・加速曲線の設計&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.kerislab.jp/posts/2018-04-29-accel-designer1/"&gt;前回の記事&lt;/a&gt;
+の続きです。&lt;/p&gt;
+&lt;p&gt;この記事では、前回紹介した &lt;strong&gt;設計1&lt;/strong&gt; の曲線加速の設計について考えます。&lt;/p&gt;</description></item><item><title>なめらかな加速の設計① 台形加速と曲線加速</title><link>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</link><pubDate>Sun, 29 Apr 2018 12:35:38 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-04-29-accel-designer1/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;今回はマイクロマウスにおける速度設計のお話です。&lt;/p&gt;
+&lt;p&gt;長い直線などを走行するとき、タイムを縮めるため、最大速度まで加速して、ターン直前に減速します。&lt;/p&gt;
+&lt;p&gt;ここで注意したのが、途中経過の如何にかかわらず、終点の位置や速度は守らなければならないということです。&lt;/p&gt;
+&lt;p&gt;今回の記事では、終点位置、終点速度や最大速度などの拘束条件から、走行途中の速度軌道を算出するアルゴリズムを紹介します。&lt;/p&gt;
+&lt;p&gt;最後にはC++での実装したクラスも簡単に紹介します。&lt;/p&gt;</description></item><item><title>ESP32にSmartConfigでWiFi情報を伝える</title><link>https://www.kerislab.jp/posts/2018-02-16-esp32-smartconfig/</link><pubDate>Fri, 16 Feb 2018 18:51:25 +0900</pubDate><guid>https://www.kerislab.jp/posts/2018-02-16-esp32-smartconfig/</guid><description>&lt;h2 id="wifiのssidとパスワードをどう伝えるか問題"&gt;WiFiのSSIDとパスワードをどう伝えるか問題&lt;/h2&gt;
+&lt;p&gt;ESP32はWiFiに接続することができますが、ソースコードにWiFiのSSIDとパスワードを書いてしまうと、後から変更できません。&lt;/p&gt;
+&lt;p&gt;さらに、ソースコードを公開するときは、SSIDとパスワードの部分をいちいち削除しなければならず、けっこう面倒です。&lt;/p&gt;
+&lt;p&gt;以前は&lt;a href="https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/"&gt;SDカードを使ってWiFi情報を伝える方法&lt;/a&gt;
+を紹介しましたが、これも割と手間でした。&lt;/p&gt;
+&lt;p&gt;SmartConfigとは、そんな悩みをスマホで解決する機能です。&lt;/p&gt;</description></item><item><title>ESP32のすゝめ</title><link>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</link><pubDate>Wed, 06 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</guid><description>&lt;p&gt;こんにちは、けりです。&lt;br&gt;
+これは &lt;a href="https://adventar.org/calendars/2361" target="_blank" rel="noopener"&gt;東京工業大学ロボット技術研究会(rogy) Advent Calender 2017&lt;/a&gt;
+ の6日目の記事です.&lt;/p&gt;
+&lt;p&gt;本日は、私が愛用しているマイコン「ESP32」を紹介します。&lt;/p&gt;</description></item><item><title>フォトリフレクタの感度をソフトで調整</title><link>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</link><pubDate>Fri, 20 Oct 2017 12:15:04 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-10-20-2range-reflector/</guid><description>&lt;p&gt;こんにちは。けりです。&lt;br&gt;
+今回は、マイクロマウスに使っているフォトリフレクタのお話です。&lt;/p&gt;</description></item><item><title>マイクロマウスのターン一覧</title><link>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</link><pubDate>Sun, 03 Sep 2017 18:32:03 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-09-03-pattern-of-turn/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;こんにちは、けりです。久々にマイクロマウスの話題です。&lt;/p&gt;
+&lt;p&gt;今回は、私のマウスで使用しているスラロームパターンを紹介します。&lt;/p&gt;</description></item><item><title>ESP32とMicro SDカード</title><link>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</link><pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-07-29-esp32-wifi-sd/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;今回は、ESP32で何か作るときはとりあえず一緒にMicro SDスロットも載せましょうという話です。&lt;/p&gt;</description></item><item><title>ESP32 でデュアルコアを使おう！</title><link>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</link><pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-24-esp32-dual-core/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;h3 id="esp32-とは"&gt;ESP32 とは&lt;/h3&gt;
+&lt;figure &gt;
 	
 		
-		&lt;figcaption>
-			&lt;h4>ESP32&lt;/h4>
-		&lt;/figcaption>
+		&lt;figcaption&gt;
+			&lt;h4&gt;ESP32&lt;/h4&gt;
+		&lt;/figcaption&gt;
 		
-		&lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/>
+		&lt;img src="esp32.jpg" alt="ESP32" style="width: 240px;"/&gt;
 	
-&lt;/figure>
+&lt;/figure&gt;
 
-&lt;p>&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank" rel="noopener">ESP32 Overview | Espressif Systems&lt;/a>
-&lt;/p>
-&lt;p>ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
-同時に gcc で開発できるマイコンでもあります。&lt;/p></description></item><item><title>ESP32の設定管理ライブラリの紹介</title><link>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</link><pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</guid><description>&lt;h2 id="概要">概要&lt;/h2>
-&lt;p>みなさん、ESP32使ってますか？僕は使っています。その偉大さには驚くばかりです。&lt;/p>
-&lt;p>さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「&lt;a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences" target="_blank" rel="noopener">Preferences&lt;/a>
-」です。&lt;/p>
-&lt;p>ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。&lt;/p>
-&lt;p>みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。&lt;/p>
-&lt;p>不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します。&lt;/p></description></item></channel></rss>
+&lt;p&gt;&lt;a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank" rel="noopener"&gt;ESP32 Overview | Espressif Systems&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;ESP32 は上海の企業である Espressif Systems から発売されている WiFi&amp;amp;Bluetooth コントローラです。
+同時に gcc で開発できるマイコンでもあります。&lt;/p&gt;</description></item><item><title>ESP32の設定管理ライブラリの紹介</title><link>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</link><pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-06-16-esp32-preferences/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
+&lt;p&gt;みなさん、ESP32使ってますか？僕は使っています。その偉大さには驚くばかりです。&lt;/p&gt;
+&lt;p&gt;さて、今回紹介するのは、Arduino core for ESP32に含まれているライブラリ「&lt;a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/Preferences" target="_blank" rel="noopener"&gt;Preferences&lt;/a&gt;
+」です。&lt;/p&gt;
+&lt;p&gt;ESP32で何か物を作るとき、電源を切っても保存しておきたいデータなどがあると思います。独自の形式やJSONなどでファイルに保存する方法もありますが、保存と復元の処理を実装するのはなかなか面倒です。&lt;/p&gt;
+&lt;p&gt;みんなどうせ同じようなことをするでしょうということで、ESP32ではライブラリが用意されていました。&lt;/p&gt;
+&lt;p&gt;不揮発性のフラッシュ領域を使ってデータを保存&amp;amp;復元します。&lt;/p&gt;</description></item></channel></rss>
