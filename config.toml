@@ -1,14 +1,14 @@
 # file:     config.toml
 # author:   Ryotaro Onuki
 # hugo:     v0.61.0 or higher
-# base:     https://github.com/vimux/mainroad/#configtoml-example
+# base:     https://roadster.mansoorbarri.com/docs/getting-started/
 
 baseurl = "https://www.kerislab.jp/"
 title = "KERI's Lab"
 languageCode = "ja-jp"
 DefaultContentLanguage = "ja"
 hasCJKLanguage = true # handle japanese character
-theme = "mainroad" # Mainroad Theme https://github.com/vimux/mainroad/
+theme = "mainroad" # Roadster Theme https://github.com/mansoorbarri/Roadster/
 rssLimit = "30" # default: 15
 
 pygmentsUseClasses = true
@@ -62,7 +62,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [params.widgets.social]
     # facebook = "username"
-    twitter = "kerikun11"
+    x = "kerikun11"
     # instagram = "username"
     # linkedin = "username"
     # telegram = "username"

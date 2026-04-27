@@ -26,4 +26,4 @@ GitHub Pages で公開するにあたって、次のようなブランチ構成�
 
 以下のテーマを Git Submodule として配置して使用しています。
 
-- [Mainroad Theme](https://github.com/Vimux/Mainroad)
+- [Roadster Theme](https://github.com/mansoorbarri/Roadster)
