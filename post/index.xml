@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sun, 11 Jan 2026 18:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Matter対応、スマートライトコントローラの紹介</title><link>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</link><pubDate>Sun, 11 Jan 2026 18:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>自作キーボード KERIgoKBD v2 の紹介</title><link>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは、ChatGPT と Claude を行ったり来たりしているけりです。&lt;/p&gt;
+&lt;p&gt;今回の記事では私が新たに設計した自作キーボード &lt;strong&gt;KERIgoKBD v2&lt;/strong&gt; を紹介します。&lt;/p&gt;
+&lt;p&gt;KERIgoKBD v2 は、以前紹介した &lt;a href="https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/"&gt;KERIgoKBD v1&lt;/a&gt;
+ をベースに、右手側へ &lt;strong&gt;トラックパッド&lt;/strong&gt; を追加した左右分離キーボードです。&lt;/p&gt;</description></item><item><title>Matter対応、スマートライトコントローラの紹介</title><link>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</link><pubDate>Sun, 11 Jan 2026 18:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは。昨年7月に長男が誕生して、パパになったけりです。&lt;/p&gt;
 &lt;p&gt;今回は、&lt;strong&gt;部屋の照明をスマートに制御するデバイス&lt;/strong&gt;を紹介します。&lt;/p&gt;</description></item><item><title>自作キーボード KERIgoKBD v1 の紹介</title><link>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは、自作キーボード沼に完全にハマってしまったけりです。&lt;/p&gt;
@@ -100,11 +104,4 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;p&gt;今回は、ターミナルなどの設定ファイルの管理方法の紹介です。&lt;/p&gt;
 &lt;p&gt;設定ファイルの多くは &lt;code&gt;.zshrc&lt;/code&gt; というようにドットから始まる隠しファイルになっているので、
 これらをまとめて &lt;code&gt;.dotfiles&lt;/code&gt; と呼んでいます。&lt;/p&gt;
-&lt;p&gt;GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。&lt;/p&gt;</description></item><item><title>マイクロマウス迷路の自動生成</title><link>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</link><pubDate>Mon, 23 Mar 2020 17:51:37 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-03-23-maze-generator/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
-&lt;p&gt;こんにちは。けりです。&lt;/p&gt;
-&lt;p&gt;マイクロマウスを作るにあたり、
-普段は迷路を解くことばかり考えていますが、
-今回はその迷路を作成するお話です。&lt;/p&gt;
-&lt;p&gt;試してみたのは、
-ランダムウォークによる迷路の自動生成です。&lt;/p&gt;
-&lt;p&gt;果たしてマイクロマウスっぽい迷路はできるのでしょうか？&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。&lt;/p&gt;</description></item></channel></rss>

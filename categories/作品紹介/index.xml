@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>作品紹介 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link><description>Recent content in 作品紹介 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sun, 11 Jan 2026 18:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Matter対応、スマートライトコントローラの紹介</title><link>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</link><pubDate>Sun, 11 Jan 2026 18:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>作品紹介 on KERI's Lab</title><link>https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/</link><description>Recent content in 作品紹介 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/categories/%E4%BD%9C%E5%93%81%E7%B4%B9%E4%BB%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>自作キーボード KERIgoKBD v2 の紹介</title><link>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは、ChatGPT と Claude を行ったり来たりしているけりです。&lt;/p&gt;
+&lt;p&gt;今回の記事では私が新たに設計した自作キーボード &lt;strong&gt;KERIgoKBD v2&lt;/strong&gt; を紹介します。&lt;/p&gt;
+&lt;p&gt;KERIgoKBD v2 は、以前紹介した &lt;a href="https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/"&gt;KERIgoKBD v1&lt;/a&gt;
+ をベースに、右手側へ &lt;strong&gt;トラックパッド&lt;/strong&gt; を追加した左右分離キーボードです。&lt;/p&gt;</description></item><item><title>Matter対応、スマートライトコントローラの紹介</title><link>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</link><pubDate>Sun, 11 Jan 2026 18:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-01-11-esp32-matter-light/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは。昨年7月に長男が誕生して、パパになったけりです。&lt;/p&gt;
 &lt;p&gt;今回は、&lt;strong&gt;部屋の照明をスマートに制御するデバイス&lt;/strong&gt;を紹介します。&lt;/p&gt;</description></item><item><title>自作キーボード KERIgoKBD v1 の紹介</title><link>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは、自作キーボード沼に完全にハマってしまったけりです。&lt;/p&gt;
@@ -119,16 +123,4 @@ Cheese主催のマイクロマウス・プチ大会
 ができてついにハーフにデビューしました！&lt;br&gt;
 しかし、自宅には迷路がないので試しに自分で作ってみることにしました。&lt;/p&gt;</description></item><item><title>ハーフ迷路を走ってみました！</title><link>https://www.kerislab.jp/posts/2017-01-12-1st-half/</link><pubDate>Thu, 12 Jan 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-01-12-1st-half/</guid><description>&lt;h2 id="ハーフサイズの迷路を走ってみました"&gt;ハーフサイズの迷路を走ってみました&lt;/h2&gt;
 &lt;p&gt;こんにちは、けりです。&lt;br&gt;
-KERISE v2の制御が落ち着てきたので、ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p&gt;</description></item><item><title>KERISE v2 ができました！</title><link>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</link><pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2017-01-08-kerise-v2-1st/</guid><description>&lt;h2 id="マイクロマウスクラシックハーフ兼用マウス"&gt;マイクロマウスクラシック&amp;amp;ハーフ兼用マウス&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/"&gt;昨年の大会&lt;/a&gt;
-ではクラシッククラスに出場しましたが、今度はハーフにも出場したい！ということで、試しにハーフ迷路も走れる大きさのマウスを作ってみました。&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;KERISE v2&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src="with-hand.jpg" alt="KERISE v2" style="width: 480px;"/&gt;
-	
-&lt;/figure&gt;</description></item></channel></rss>
+KERISE v2の制御が落ち着てきたので、ついにハーフサイズの迷路で走らせてみることにしました！&lt;/p&gt;</description></item></channel></rss>
