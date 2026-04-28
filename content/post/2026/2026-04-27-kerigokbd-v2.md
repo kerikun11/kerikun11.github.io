@@ -102,9 +102,9 @@ KERIgoKBD v2 は右手22キー、左手24キーの合計46キー構成です。
 
 この記事の執筆時点のファームウェアでは、主に QWERTY、数字・記号、ファンクション・ナビゲーション、Auto Mouse Layer の4レイヤ構成で使用しています。
 
-{{< postfig src="layout.png" link="layout.png" title="KERIgoKBD v2 のレイアウト" width="640px" >}}
+{{< postfig src="kerigokbd_v2_layout.png" link="layout.png" title="KERIgoKBD v2 のレイアウト" width="640px" >}}
 
-親指キーの `NUM` や `FN` を押すことで、**ホームポジションに手を置いたまま** 数字、記号、ファンクションキー、矢印キーなどにアクセスできます。
+親指キーの `Num` や `Fn` を押すことで、**ホームポジションに手を置いたまま** 数字、記号、ファンクションキー、矢印キーなどにアクセスできます。
 
 また、Auto Mouse Layer により、**ポインタ操作中だけ** クリック、スクロール、ズーム系のキーをホームポジション周辺で操作できるようになります。
 
