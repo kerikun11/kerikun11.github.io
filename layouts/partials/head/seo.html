@@ -1,0 +1,76 @@
+{{- $title := cond .IsHome .Site.Title .Title -}}
+{{- $description := .Site.Params.description -}}
+{{- if not .IsHome -}}
+	{{- $description = .Description | default .Summary | default .Site.Params.description -}}
+{{- end -}}
+{{- $description = $description | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace -}}
+
+{{- $image := "" -}}
+{{- with .Params.images -}}
+	{{- $image = index . 0 -}}
+{{- else -}}
+	{{- with .Params.thumbnail -}}
+		{{- $thumbnail := . -}}
+		{{- if ne (printf "%T" $thumbnail) "string" -}}
+			{{- $thumbnail = $thumbnail.src -}}
+		{{- end -}}
+		{{- with $thumbnail -}}
+			{{- if or (hasPrefix . "http://") (hasPrefix . "https://") (hasPrefix . "/") -}}
+				{{- $image = . -}}
+			{{- else -}}
+				{{- $image = print $.RelPermalink . -}}
+			{{- end -}}
+		{{- end -}}
+	{{- else -}}
+		{{- with .Site.Params.images -}}
+			{{- $image = index . 0 -}}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+{{- $image = $image | absURL -}}
+
+<meta name="description" content="{{ $description }}">
+
+{{- if .Site.Params.opengraph }}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:locale" content="{{ replace .Site.LanguageCode "-" "_" | lower }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+{{- if .IsPage }}
+{{- with .Section }}<meta property="article:section" content="{{ . }}">{{ end }}
+{{- with .PublishDate }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{- with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{- range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
+{{- end }}
+{{- with $image }}
+<meta property="og:image" content="{{ . }}">
+<meta property="og:image:secure_url" content="{{ . }}">
+{{- end }}
+{{- end }}
+
+{{- if .Site.Params.schema }}
+<meta itemprop="name" content="{{ $title }}">
+<meta itemprop="description" content="{{ $description }}">
+{{- with .Date }}<meta itemprop="datePublished" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{- with .Lastmod }}<meta itemprop="dateModified" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{- with $image }}<meta itemprop="image" content="{{ . }}">{{ end }}
+{{- with .Params.tags }}<meta itemprop="keywords" content="{{ delimit . ", " }}">{{ end }}
+{{- end }}
+
+{{- if .Site.Params.twitter_cards }}
+<meta name="twitter:card" content="summary_large_image">
+{{- with $image }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+{{- with $image }}<meta name="twitter:image:alt" content="{{ $title }}">{{ end }}
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- $twitterUser := .Site.Params.social.twitter | default .Site.Params.widgets.social.x -}}
+{{- with $twitterUser }}<meta name="twitter:site" content="@{{ strings.TrimPrefix "@" . }}">{{ end }}
+{{- end }}
+
+{{- with .OutputFormats.Get "rss" }}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+{{- end }}
+
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
