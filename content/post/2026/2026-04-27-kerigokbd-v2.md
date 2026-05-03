@@ -20,7 +20,7 @@ KERIgoKBD v2 は、以前紹介した [KERIgoKBD v1](/posts/2025-03-20-kerigokbd
 
 <!--more-->
 
-{{< postfig src="kerigokbd_v2.jpg" title="KERIgoKBD v2" width="640px">}}
+{{< postfig src="kerigokbd_v2_light.jpg" title="KERIgoKBD v2" width="640px">}}
 
 ちなみに、KERIgoKBD とは KERI's Ergonomic Keyboard の略で、けりの人間工学キーボードという意味です。
 
@@ -54,7 +54,7 @@ KERIgoKBD v2 のいちばん大きな特徴は、右手側の親指付近に **�
 
 トラックパッドには [Cirque Trackpad TM035035](https://mou.sr/48nN2VQ) を使用しています。
 
-{{< postfig src="cirque_trackpad.jpg" title="右手側に搭載した Cirque Trackpad" width="480px">}}
+{{< postfig src="kerigokbd_v2_zoom.jpg" title="右手側に搭載した Cirque Trackpad" width="640px">}}
 
 右手の親指でそのままポインタを操作できるため、カーソルを移動する、マウスのボタンを押す、ページをスクロールする、といった操作を **キーボードに手を置いたまま** 行えます。
 
@@ -102,7 +102,7 @@ KERIgoKBD v2 は右手22キー、左手24キーの合計46キー構成です。
 
 この記事の執筆時点のファームウェアでは、主に QWERTY、数字・記号、ファンクション・ナビゲーション、Auto Mouse Layer の4レイヤ構成で使用しています。
 
-{{< postfig src="kerigokbd_v2_layout.png" link="layout.png" title="KERIgoKBD v2 のレイアウト" width="640px" >}}
+{{< postfig src="kerigokbd_v2_layout.png" link="kerigokbd_v2_layout.png" title="KERIgoKBD v2 のレイアウト" width="640px" >}}
 
 親指キーの `Num` や `Fn` を押すことで、**ホームポジションに手を置いたまま** 数字、記号、ファンクションキー、矢印キーなどにアクセスできます。
 
@@ -146,6 +146,8 @@ v2 では基板自体はそのままで、PCB に引き出しておいた **I2C 
 
 {{< postfig src="kerigokbd_v2_back.jpg" title="KERIgoKBD v2 の裏面" width="640px">}}
 
+{{< postfig src="kerigokbd_v2_back_zoom.jpg" title="トラックパッド周辺の裏面配線" width="640px">}}
+
 裏面を見ると、左右で同じ PCB を使いつつ、右手側だけトラックパッドが追加されていることがわかります。
 
 ### スペック
@@ -166,6 +168,8 @@ v2 では基板自体はそのままで、PCB に引き出しておいた **I2C 
 | 左右接続ケーブル | [3.5mm AUX Cable (White 3 Pole 10cm)](https://www.aliexpress.com/item/1005002484746676.html)                        |
 | USBケーブル      | [USLION Magnetic USB Type-C ケーブル](https://www.aliexpress.com/item/1005006136597761.html)                        |
 | 滑り止めシート   | [GRIPLUS ホワイト フリーカット](http://www.amazon.co.jp/dp/B08XHMGPWW/)                                             |
+
+{{< postfig src="kerigokbd_v2_top_light.jpg" title="KERIgoKBD v2" width="640px">}}
 
 ### 設計データ
 
