@@ -36,7 +36,7 @@
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
-<meta property="og:locale" content="{{ replace .Site.LanguageCode "-" "_" | lower }}">
+<meta property="og:locale" content="{{ replace .Site.Language.Locale "-" "_" | lower }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 {{- if .IsPage }}
 {{- with .Section }}<meta property="article:section" content="{{ . }}">{{ end }}

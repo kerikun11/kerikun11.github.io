@@ -5,7 +5,7 @@
 
 baseurl = "https://www.kerislab.jp/"
 title = "KERI's Lab"
-languageCode = "ja-jp"
+locale = "ja-jp"
 DefaultContentLanguage = "ja"
 hasCJKLanguage = true # handle japanese character
 theme = "mainroad" # Roadster Theme https://github.com/mansoorbarri/Roadster/
