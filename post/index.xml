@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>自作キーボード KERIgoKBD v2 の紹介</title><link>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on KERI's Lab</title><link>https://www.kerislab.jp/post/</link><description>Recent content in Posts on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sat, 13 Jun 2026 18:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Matter対応、Echo Show回転台の紹介</title><link>https://www.kerislab.jp/posts/2026-06-13-esp32-matter-turntable/</link><pubDate>Sat, 13 Jun 2026 18:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-06-13-esp32-matter-turntable/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;こんにちは。コーディングは完全にAIに任せっきりのけりです。&lt;/p&gt;
+&lt;p&gt;今回は、&lt;strong&gt;Amazon Echo Showの向きを音声で切り替えられる回転台&lt;/strong&gt;を作ったので紹介します。&lt;/p&gt;</description></item><item><title>自作キーボード KERIgoKBD v2 の紹介</title><link>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2026-04-27-kerigokbd-v2/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;こんにちは、ChatGPT と Claude を行ったり来たりしているけりです。&lt;/p&gt;
 &lt;p&gt;今回の記事では私が新たに設計した自作キーボード &lt;strong&gt;KERIgoKBD v2&lt;/strong&gt; を紹介します。&lt;/p&gt;
 &lt;p&gt;KERIgoKBD v2 は、以前紹介した &lt;a href="https://www.kerislab.jp/posts/2025-03-20-kerigokbd-v1/"&gt;KERIgoKBD v1&lt;/a&gt;
@@ -100,8 +102,4 @@ SSH 接続先のディレクトリをワークスペースとして起動する�
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;探索アルゴリズムの実装例や使用例はこのリポジトリを参照のこと。&lt;/p&gt;</description></item><item><title>Linux Mint 19.3 をインストールしたら設定すること</title><link>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</link><pubDate>Tue, 07 Apr 2020 12:33:15 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-07-linux-mint-19/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;この記事では、&lt;code&gt;Linux Mint 19.3&lt;/code&gt; をクリーンインストールした際に行う自己流の設定について紹介します。&lt;/p&gt;</description></item><item><title>UNIX環境の設定ファイルの管理</title><link>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</link><pubDate>Mon, 06 Apr 2020 10:17:40 +0900</pubDate><guid>https://www.kerislab.jp/posts/2020-04-06-dotfiles/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;今回は、ターミナルなどの設定ファイルの管理方法の紹介です。&lt;/p&gt;
-&lt;p&gt;設定ファイルの多くは &lt;code&gt;.zshrc&lt;/code&gt; というようにドットから始まる隠しファイルになっているので、
-これらをまとめて &lt;code&gt;.dotfiles&lt;/code&gt; と呼んでいます。&lt;/p&gt;
-&lt;p&gt;GitHubに.dotfilesを保存していつでも最新のものを使えるようにしています。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;この記事では、&lt;code&gt;Linux Mint 19.3&lt;/code&gt; をクリーンインストールした際に行う自己流の設定について紹介します。&lt;/p&gt;</description></item></channel></rss>
