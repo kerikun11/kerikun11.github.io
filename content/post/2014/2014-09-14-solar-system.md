@@ -10,8 +10,7 @@ tags:
 - "電力"
 thumbnail: "icon.jpg"
 ---
-
-どーも。けり（twitter:<a href="https://twitter.com/kerikun11/" target="_blank">@kerikun11</a>）です。id研です。<br />
+どーも。けり（twitter:<a href="https://twitter.com/kerikun11/" target="_blank">@kerikun11</a>）です。<br />
 <br />
 夏休みにもかかわらず、バイトを入れすぎて<br />
 全然遊んでないじゃないか！<br />
