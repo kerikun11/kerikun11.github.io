@@ -15,9 +15,6 @@
             {{- range .Pages }}
             <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ len .Pages }})</li>
             {{- end }}
-            {{- range .Pages }}
-                {{ .Render "li" }}
-            {{- end }}
         </ul>
     </div>
 </main>
