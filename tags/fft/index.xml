@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on KERI's Lab</title><link>https://www.kerislab.jp/tags/fft/</link><description>Recent content in FFT on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sun, 22 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/fft/index.xml" rel="self" type="application/rss+xml"/><item><title>高速フーリエ変換でスペクトル表示</title><link>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</link><pubDate>Sun, 22 May 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</guid><description>&lt;div class="sect1"&gt;
-&lt;h2 id="_概要"&gt;概要&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Nucleoボードとグラフィック液晶を使って、音声解析機を作りました。マイクに入ってきた音を高速フーリエ変換して、周波数スペクトルを表示します。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph img-medium"&gt;
-&lt;p&gt;&lt;span class="image"&gt;&lt;img src="fft-lcd.jpg" alt="FFTしてLCDで表示"/&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FFT on KERI's Lab</title><link>https://www.kerislab.jp/tags/fft/</link><description>Recent content in FFT on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Sun, 22 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/fft/index.xml" rel="self" type="application/rss+xml"/><item><title>高速フーリエ変換でスペクトル表示</title><link>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</link><pubDate>Sun, 22 May 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-05-22-fft-lcd/</guid><description>&lt;div class="sect1"&gt;&#10;&lt;h2 id="_概要"&gt;概要&lt;/h2&gt;&#10;&lt;div class="sectionbody"&gt;&#10;&lt;div class="paragraph"&gt;&#10;&lt;p&gt;Nucleoボードとグラフィック液晶を使って、音声解析機を作りました。マイクに入ってきた音を高速フーリエ変換して、周波数スペクトルを表示します。&lt;/p&gt;&#10;&lt;/div&gt;&#10;&lt;div class="paragraph img-medium"&gt;&#10;&lt;p&gt;&lt;span class="image"&gt;&lt;img src="fft-lcd.jpg" alt="FFTしてLCDで表示"/&gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;</description></item></channel></rss>

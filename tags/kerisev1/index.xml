@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KERISEv1 on KERI's Lab</title><link>https://www.kerislab.jp/tags/kerisev1/</link><description>Recent content in KERISEv1 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/kerisev1/index.xml" rel="self" type="application/rss+xml"/><item><title>KERISE v1の回路設計</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;
-&lt;p&gt;今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p&gt;
-&lt;p&gt;全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/"&gt;こちら&lt;/a&gt;
-&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;KERISEv1&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/&gt;
-	
-&lt;/figure&gt;</description></item><item><title>全日本マイクロマウス大会2016の結果報告</title><link>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</link><pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</guid><description>&lt;h2 id="全日本マイクロマウス大会2016"&gt;全日本マイクロマウス大会2016&lt;/h2&gt;
-&lt;p&gt;今年春に先輩から誘われて8月ごろから設計を始めたマイクロマウス。&lt;br&gt;
-11月に開催された全日本マイクロマウス大会2016に出場してきました！&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KERISEv1 on KERI's Lab</title><link>https://www.kerislab.jp/tags/kerisev1/</link><description>Recent content in KERISEv1 on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Tue, 27 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/kerisev1/index.xml" rel="self" type="application/rss+xml"/><item><title>KERISE v1の回路設計</title><link>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-12-27-kerisev1/</guid><description>&lt;h2 id="概要"&gt;概要&lt;/h2&gt;&#10;&lt;p&gt;今年の全日本マイクロマウス大会2016に出場したKERISE v1。今回はその回路設計を紹介します。&lt;/p&gt;&#10;&lt;p&gt;全日本マイクロマウス大会2016の結果報告は&lt;a href="https://www.kerislab.jp/posts/2016-11-21-micromouse2016/"&gt;こちら&lt;/a&gt;&#10;&lt;/p&gt;&#10;&lt;figure &gt;&#10;&#9;&#10;&#9;&#9;&#10;&#9;&#9;&lt;figcaption&gt;&#10;&#9;&#9;&#9;&lt;h4&gt;KERISEv1&lt;/h4&gt;&#10;&#9;&#9;&lt;/figcaption&gt;&#10;&#9;&#9;&#10;&#9;&#9;&lt;img src="KERISEv1.jpg" alt="KERISEv1" style="width: 240px;"/&gt;&#10;&#9;&#10;&lt;/figure&gt;</description></item><item><title>全日本マイクロマウス大会2016の結果報告</title><link>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</link><pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-11-21-micromouse2016/</guid><description>&lt;h2 id="全日本マイクロマウス大会2016"&gt;全日本マイクロマウス大会2016&lt;/h2&gt;&#10;&lt;p&gt;今年春に先輩から誘われて8月ごろから設計を始めたマイクロマウス。&lt;br&gt;&#10;11月に開催された全日本マイクロマウス大会2016に出場してきました！&lt;/p&gt;</description></item></channel></rss>

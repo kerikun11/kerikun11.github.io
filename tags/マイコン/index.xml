@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>マイコン on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3/</link><description>Recent content in マイコン on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32のすゝめ</title><link>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</link><pubDate>Wed, 06 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</guid><description>&lt;p&gt;こんにちは、けりです。&lt;br&gt;
-これは &lt;a href="https://adventar.org/calendars/2361" target="_blank" rel="noopener"&gt;東京工業大学ロボット技術研究会(rogy) Advent Calender 2017&lt;/a&gt;
- の6日目の記事です.&lt;/p&gt;
-&lt;p&gt;本日は、私が愛用しているマイコン「ESP32」を紹介します。&lt;/p&gt;</description></item><item><title>PIC18F27J53のすすめ</title><link>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</link><pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</guid><description>&lt;h2 id="pic18f27j53のいいところ"&gt;PIC18F27J53のいいところ&lt;/h2&gt;
-&lt;h3 id="秋月で売っていること"&gt;秋月で売っていること&lt;/h3&gt;
-&lt;p&gt;電子工作をするうえでこれはとても大事なこと。「秋月で売っているなら使ってみるか」ってなりますよね。&lt;/p&gt;
-&lt;p&gt;もちろん、秋月なので値段が安い！！&lt;br&gt;
-&lt;strong&gt;1個270円&lt;/strong&gt;です(2016年1月現在)。&lt;/p&gt;
-&lt;figure &gt;
-	
-		
-		&lt;figcaption&gt;
-			&lt;h4&gt;PIC18F27J53&lt;/h4&gt;
-		&lt;/figcaption&gt;
-		
-		&lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/&gt;
-	
-&lt;/figure&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>マイコン on KERI's Lab</title><link>https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3/</link><description>Recent content in マイコン on KERI's Lab</description><generator>Hugo</generator><language>ja-jp</language><lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0900</lastBuildDate><atom:link href="https://www.kerislab.jp/tags/%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32のすゝめ</title><link>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</link><pubDate>Wed, 06 Dec 2017 00:00:00 +0900</pubDate><guid>https://www.kerislab.jp/posts/2017-12-06-introduction-to-esp32/</guid><description>&lt;p&gt;こんにちは、けりです。&lt;br&gt;&#10;これは &lt;a href="https://adventar.org/calendars/2361" target="_blank" rel="noopener"&gt;東京工業大学ロボット技術研究会(rogy) Advent Calender 2017&lt;/a&gt;&#10; の6日目の記事です.&lt;/p&gt;&#10;&lt;p&gt;本日は、私が愛用しているマイコン「ESP32」を紹介します。&lt;/p&gt;</description></item><item><title>PIC18F27J53のすすめ</title><link>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</link><pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate><guid>https://www.kerislab.jp/posts/2016-01-08-pic18f27j53/</guid><description>&lt;h2 id="pic18f27j53のいいところ"&gt;PIC18F27J53のいいところ&lt;/h2&gt;&#10;&lt;h3 id="秋月で売っていること"&gt;秋月で売っていること&lt;/h3&gt;&#10;&lt;p&gt;電子工作をするうえでこれはとても大事なこと。「秋月で売っているなら使ってみるか」ってなりますよね。&lt;/p&gt;&#10;&lt;p&gt;もちろん、秋月なので値段が安い！！&lt;br&gt;&#10;&lt;strong&gt;1個270円&lt;/strong&gt;です(2016年1月現在)。&lt;/p&gt;&#10;&lt;figure &gt;&#10;&#9;&#10;&#9;&#9;&#10;&#9;&#9;&lt;figcaption&gt;&#10;&#9;&#9;&#9;&lt;h4&gt;PIC18F27J53&lt;/h4&gt;&#10;&#9;&#9;&lt;/figcaption&gt;&#10;&#9;&#9;&#10;&#9;&#9;&lt;img src="view.jpg" alt="PIC18F27J53" style="width: 240px;"/&gt;&#10;&#9;&#10;&lt;/figure&gt;</description></item></channel></rss>
