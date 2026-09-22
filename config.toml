@@ -23,6 +23,7 @@ pygmentsCodefencesGuessSyntax = true
     schema = true # Enable Schema
     twitter_cards = true # Enable Twitter Cards if true
     readmore = true # Show "Read more" button in list if true
+    CustomHeadHTML = '<script>(function(d){var t;try{t=localStorage.getItem("roadster-theme");}catch(e){}if(t!=="dark"&&t!=="light"){d.documentElement.setAttribute("data-theme","light");}})(document);</script>' # Default to the light theme instead of following prefers-color-scheme when the visitor has no saved preference; the toggle button still works and its choice is respected
     # authorbox = true # Show authorbox at bottom of pages if true
     # toc = true # Enable Table of Contents
     pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
