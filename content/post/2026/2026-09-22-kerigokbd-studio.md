@@ -35,7 +35,7 @@ KERIgoKBD では、日々キーの割り当てを少しずつ変えながら、�
 
 少ないキーでさまざまな入力をするために、**レイヤ**という仕組みも使っています。たとえば親指で Num キーを押している間は、アルファベットのキーが数字や記号のキーに変わります。
 
-これまでは、既存の **Remap アプリでキーの割り当てを変更して試していました**。
+これまでは、既存の [Remap](https://remap-keys.app/) というWebアプリでキーの割り当てを変更して試行錯誤していました。
 
 {{< postfig src="remap-editor.png" link="remap-editor.png" title="Remap で KERIgoKBD v2 のキー配置を表示した画面" width="800px" >}}
 
@@ -47,7 +47,7 @@ KERIgoKBD では、日々キーの割り当てを少しずつ変えながら、�
 
 ### これまでは Keyboard Layout Editor で頑張っていた
 
-これまでは [KLE (Key Layout Editor)](https://www.keyboard-layout-editor.com/#/gists/0d82236d0943d0b74055119b50123c59) というWebツールを使って、各レイヤの割り当てを手作業で書き込んで早見表を作成していました。
+これまでは [KLE (Key Layout Editor)](https://www.keyboard-layout-editor.com/#/gists/0d82236d0943d0b74055119b50123c59) というWebアプリを使って、各レイヤの割り当てを手作業で書き込んで早見表を作成していました。
 
 {{< postfig src="kle-layout.jpg" link="kle-layout.jpg" title="参考：KLE で作成した早見表（2026年5月9日版）" width="800px" >}}
 
